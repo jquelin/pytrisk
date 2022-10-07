@@ -16,7 +16,13 @@
 #
 
 def run():
-    print('launching pytrisk')
+    # make sure we can run the gui from dev
+    import sys
+    sys.path.append('.')
+
+    from pytrisk import config
+    print(config.get('foo.bar'))
+    config.set('foo.bar', 'zab')
 
 if __name__ == '__main__':
     run()
