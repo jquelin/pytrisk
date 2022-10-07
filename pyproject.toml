@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytrisk"
+version = "0.0.4"
+authors = [
+  { name="Jerome Quelin", email="jquelin@gmail.com" },
+]
+description = "classical Risk game"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+pytrisk = "pytrisk.__main__:run"
+
+[project.urls]
+"Homepage" = "https://github.com/jquelin/pytrisk"
+"Bug Tracker" = "https://github.com/jquelin/pytrisk/issues"
+
