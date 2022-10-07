@@ -16,11 +16,19 @@ This distribution implements a graphical interface for this game, with
 everything needed to play (including artificial intelligence opponents).
 
 
-# INSTALL
+# INSTALL AND USAGE
 
 Just install via pip:
 
     pip install pytrisk
+
+Once installed, launch the game either via the pytrisk script:
+
+    pytrisk
+
+or by loading the pytrisk module:
+
+    python -m pytrisk
 
 
 # SUPPORT
