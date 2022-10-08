@@ -15,17 +15,12 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-from pytrisk.locale import _
-print( _('this is a test'))
+import gettext
+import os
+BASE_DIR = os.path.dirname(__file__)
+LOCALE_DIR = os.path.join(BASE_DIR, 'locale')
 
-def run():
-    # make sure we can run the gui from dev
-    import sys
-    sys.path.append('.')
+gettext.bindtextdomain('pytrisk', LOCALE_DIR)
+gettext.textdomain('pytrisk')
 
-    from pytrisk import config
-    print(config.get('foo.bar'))
-    config.set('foo.bar', 'zab')
-
-if __name__ == '__main__':
-    run()
+_ = gettext.gettext
