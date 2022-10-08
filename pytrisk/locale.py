@@ -16,11 +16,11 @@
 #
 
 import gettext
-import os
-BASE_DIR = os.path.dirname(__file__)
-LOCALE_DIR = os.path.join(BASE_DIR, 'locale')
+from pathlib import Path
 
-gettext.bindtextdomain('pytrisk', LOCALE_DIR)
+locale_dir = Path(Path(__file__).parent, 'locale')
+
+gettext.bindtextdomain('pytrisk', locale_dir)
 gettext.textdomain('pytrisk')
 
 _ = gettext.gettext
