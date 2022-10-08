@@ -6,6 +6,8 @@ FRDIR   = ${POTDIR}/fr/LC_MESSAGES/
 upload: build
 	twine upload dist/*
 
+dist: build
+
 build: clean
 	python -m build
 
