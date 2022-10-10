@@ -66,11 +66,16 @@ def upload():
 
     # check version has changed
     prevver = _previous_version()
-    if prevver == toml['project']['version']:
+    newver  = toml['project']['version']
+    if prevver == newver:
         log.error(f'version {prevver} has not been updated')
+
     # git autocommit if needed
-    # git tag
-#    subprocess.run(['twin', 'upload'], check=True)
+    repo.git.commit('-m', f'v{newver}')
+    repo.create_tag(f'v{newver}')
+
+
+    subprocess.run(['twin', 'upload'], check=True)
 
 
 # l10n
