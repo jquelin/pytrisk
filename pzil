@@ -27,6 +27,7 @@ import tomlkit
 import typer
 
 from pathlib import Path
+from git import Repo
 
 app = typer.Typer(no_args_is_help=True)
 
@@ -48,11 +49,28 @@ def clean():
 @app.command()
 def upload():
     log.info(f'*** build')
+
+    # check untracked files
+    untracked = repo.untracked_files
+    if len(untracked) > 0:
+        log.error(f'files not tracked in git: {untracked}')
+        sys.exit(1)
+
     # check git dirty state
+    autocommit = ['README.md', 'pyproject.toml']
+    changed = [item.a_path for item in repo.index.diff(None)]
+    changed = [item for item in changed if item not in autocommit]
+    if len(changed) > 0:
+        log.error(f'dirty files not committed in git: {changed}')
+        sys.exit(1)
+
     # check version has changed
+    prevver = _previous_version()
+    if prevver == toml['project']['version']:
+        log.error(f'version {prevver} has not been updated')
     # git autocommit if needed
     # git tag
-    subprocess.run(['twin', 'upload'], check=True)
+#    subprocess.run(['twin', 'upload'], check=True)
 
 
 # l10n
@@ -108,8 +126,6 @@ def major():
 
 #
 def _previous_version():
-    from git import Repo
-    repo = Repo(rootdir)
     tags = sorted(repo.tags, key=lambda t: t.commit.committed_datetime)
     previous = str(tags[-1]).replace('v', '')
     log.debug(f'previous version: {previous}')
@@ -130,6 +146,7 @@ pytriskdir = Path(rootdir, 'pytrisk')
 localedir  = Path(pytriskdir, 'locale')
 toml_file = Path(rootdir, 'pyproject.toml')
 toml = tomlkit.parse(toml_file.read_text())
+repo = Repo(rootdir)
 
 
 # processing commands
