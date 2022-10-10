@@ -45,6 +45,16 @@ def clean():
         with contextlib.suppress(FileNotFoundError):
             shutil.rmtree(Path(rootdir, d))
 
+@app.command()
+def upload():
+    log.info(f'*** build')
+    # check git dirty state
+    # check version has changed
+    # git autocommit if needed
+    # git tag
+    subprocess.run(['twin', 'upload'], check=True)
+
+
 # l10n
 
 @app.command()
