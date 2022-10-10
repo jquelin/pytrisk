@@ -22,37 +22,49 @@ import logging
 import colorlog
 import subprocess
 import tomlkit
+import typer
 
 from pathlib import Path
 
+app = typer.Typer(no_args_is_help=True)
 
 # command definition
 
+@app.command()
 def build():
+    log.info(f'*** build')
     subprocess.run(['python', '-m' , 'build'], check=True)
 
+@app.command()
 def clean():
+    log.info(f'*** clean')
     import shutil
     for d in ['dist', 'pytrisk.egg-info']:
         log.debug(f'removing {d}')
         with contextlib.suppress(FileNotFoundError):
             shutil.rmtree(Path(rootdir, d))
 
+@app.command()
 def patch():
+    log.info(f'*** patch')
     (x, y, z) = _previous_version().split('.')
     newver = f'{x}.{y}.{int(z)+1}'
     log.debug(f'new version: {newver}')
     toml['project']['version'] = newver
     toml_file.write_text(tomlkit.dumps(toml))
 
+@app.command()
 def minor():
+    log.info(f'*** minor')
     (x, y, z) = _previous_version().split('.')
     newver = f'{x}.{int(y)+1}.0'
     log.debug(f'new version: {newver}')
     toml['project']['version'] = newver
     toml_file.write_text(tomlkit.dumps(toml))
 
+@app.command()
 def major():
+    log.info(f'*** major')
     (x, y, z) = _previous_version().split('.')
     newver = f'{int(x)+1}.0.0'
     log.debug(f'new version: {newver}')
@@ -85,15 +97,4 @@ toml = tomlkit.parse(toml_file.read_text())
 
 
 # processing commands
-if len(sys.argv) == 1:
-    sys.argv.append('build')
-valid = locals()
-for arg in sys.argv[1:]:
-    if arg in valid:
-        log.info(f'*** {arg}')
-        valid[arg]()
-    else:
-        log.warning(f'unknown command {arg}, ignoring')
-
-
-
+app()
