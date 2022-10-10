@@ -22,11 +22,11 @@ clean:
 
 upload: build
 	@tput setaf ${COLOR} && echo $@ && tput sgr 0
+	[ "${LASTVER}" == "${CURVER}" ] && echo "version has not changed" && exit 1 || exit 0
 	twine upload dist/*
 
 build: clean
 	@tput setaf ${COLOR} && echo $@ && tput sgr 0
-	[ "${LASTVER}" == "${CURVER}" ] && echo "version has not changed" && exit 1 || exit 0
 	python -m build
 
 # l10n
