@@ -20,6 +20,8 @@ import contextlib
 import sys
 import logging
 import colorlog
+import os
+import shutil
 import subprocess
 import tomlkit
 import typer
@@ -38,11 +40,25 @@ def build():
 @app.command()
 def clean():
     log.info(f'*** clean')
-    import shutil
     for d in ['dist', 'pytrisk.egg-info']:
         log.debug(f'removing {d}')
         with contextlib.suppress(FileNotFoundError):
             shutil.rmtree(Path(rootdir, d))
+
+# l10n
+
+@app.command()
+def pot():
+    log.info('*** pot')
+    potdir = Path(pytriskdir, 'locale')
+    pyfiles = []
+    for root, dirs, files in os.walk(pytriskdir):
+        for file in files:
+            if file.endswith('.txt'):
+                pyfiles.append(file)
+    subprocess.run(['pygettext.py', '-p', potdir, *pyfiles], check=True)
+
+# version update
 
 @app.command()
 def patch():
@@ -91,7 +107,8 @@ log.setLevel(logging.DEBUG)
 log.addHandler(handler)
 
 # common vars
-rootdir   = Path(__file__).parent
+rootdir    = Path(__file__).parent
+pytriskdir = Path(rootdir, 'pytrisk')
 toml_file = Path(rootdir, 'pyproject.toml')
 toml = tomlkit.parse(toml_file.read_text())
 
