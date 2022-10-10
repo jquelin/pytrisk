@@ -50,13 +50,21 @@ def clean():
 @app.command()
 def pot():
     log.info('*** pot')
-    potdir = Path(pytriskdir, 'locale')
     pyfiles = []
     for root, dirs, files in os.walk(pytriskdir):
         for file in files:
             if file.endswith('.txt'):
                 pyfiles.append(file)
-    subprocess.run(['pygettext.py', '-p', potdir, *pyfiles], check=True)
+    subprocess.run(['pygettext.py', '-p', localedir, *pyfiles], check=True)
+
+@app.command()
+def mo():
+    for root, dirs, files in os.walk(localedir):
+        for file in files:
+            if file.endswith('.po'):
+                pofile = Path(root, file).as_posix()
+                mofile = pofile.replace('.po', '.mo')
+                subprocess.run(['msgfmt', pofile, '-o', mofile])
 
 # version update
 
@@ -109,6 +117,7 @@ log.addHandler(handler)
 # common vars
 rootdir    = Path(__file__).parent
 pytriskdir = Path(rootdir, 'pytrisk')
+localedir  = Path(pytriskdir, 'locale')
 toml_file = Path(rootdir, 'pyproject.toml')
 toml = tomlkit.parse(toml_file.read_text())
 
