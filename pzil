@@ -1,0 +1,99 @@
+#!/usr/bin/python
+#
+# This file is part of pytrisk.
+#
+# pytrisk is free software: you can redistribute it and/or modify it
+# under the # terms of the GNU General Public License as published by
+# the Free Software # Foundation, either version 3 of the License, or
+# (at your option) any later # version.
+#
+# pytrisk is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+# for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
+#
+
+import contextlib
+import sys
+import logging
+import colorlog
+import subprocess
+import tomlkit
+
+from pathlib import Path
+
+
+# command definition
+
+def build():
+    subprocess.run(['python', '-m' , 'build'], check=True)
+
+def clean():
+    import shutil
+    for d in ['dist', 'pytrisk.egg-info']:
+        log.debug(f'removing {d}')
+        with contextlib.suppress(FileNotFoundError):
+            shutil.rmtree(Path(rootdir, d))
+
+def patch():
+    (x, y, z) = _previous_version().split('.')
+    newver = f'{x}.{y}.{int(z)+1}'
+    log.debug(f'new version: {newver}')
+    toml['project']['version'] = newver
+    toml_file.write_text(tomlkit.dumps(toml))
+
+def minor():
+    (x, y, z) = _previous_version().split('.')
+    newver = f'{x}.{int(y)+1}.0'
+    log.debug(f'new version: {newver}')
+    toml['project']['version'] = newver
+    toml_file.write_text(tomlkit.dumps(toml))
+
+def major():
+    (x, y, z) = _previous_version().split('.')
+    newver = f'{int(x)+1}.0.0'
+    log.debug(f'new version: {newver}')
+    toml['project']['version'] = newver
+    toml_file.write_text(tomlkit.dumps(toml))
+
+
+#
+def _previous_version():
+    from git import Repo
+    repo = Repo(rootdir)
+    tags = sorted(repo.tags, key=lambda t: t.commit.committed_datetime)
+    previous = str(tags[-1]).replace('v', '')
+    log.debug(f'previous version: {previous}')
+    return previous
+
+
+# creating logging facility
+log = logging.getLogger('pzil')
+handler = colorlog.StreamHandler()
+handler.setFormatter(colorlog.ColoredFormatter(
+        '%(log_color)s%(message)s'))
+log.setLevel(logging.DEBUG)
+log.addHandler(handler)
+
+# common vars
+rootdir   = Path(__file__).parent
+toml_file = Path(rootdir, 'pyproject.toml')
+toml = tomlkit.parse(toml_file.read_text())
+
+
+# processing commands
+if len(sys.argv) == 1:
+    sys.argv.append('build')
+valid = locals()
+for arg in sys.argv[1:]:
+    if arg in valid:
+        log.info(f'*** {arg}')
+        valid[arg]()
+    else:
+        log.warning(f'unknown command {arg}, ignoring')
+
+
+
