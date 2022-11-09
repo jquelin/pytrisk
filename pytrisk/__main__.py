@@ -15,17 +15,23 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
+from pytrisk import config
 from pytrisk.locale import _
+from pytrisk.logging import log
+from pytrisk import gui
+from pytrisk import maps
+
 print( _('this is a test'))
+m = maps.load_maps()
+print(m)
 
 def run():
     # make sure we can run the gui from dev
     import sys
     sys.path.append('.')
+    gui.run()
 
-    from pytrisk import config
-    print(config.get('foo.bar'))
-    config.set('foo.bar', 'zab')
+
 
 if __name__ == '__main__':
     run()
