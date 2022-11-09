@@ -57,7 +57,7 @@ def upload():
         sys.exit(1)
 
     # check git dirty state
-    autocommit = ['README.md', 'pyproject.toml']
+    autocommit = ['README.md', 'pyproject.toml', 'CHANGES.md']
     changed = [item.a_path for item in repo.index.diff(None)]
     changed = [item for item in changed if item not in autocommit]
     if len(changed) > 0:
@@ -86,9 +86,9 @@ def pot():
     pyfiles = []
     for root, dirs, files in os.walk(pytriskdir):
         for file in files:
-            if file.endswith('.txt'):
-                pyfiles.append(file)
-    subprocess.run(['pygettext.py', '-p', localedir, *pyfiles], check=True)
+            if file.endswith('.py') or file.endswith('.csv'):
+                pyfiles.append(Path(root, file).as_posix())
+    subprocess.run(['pygettext.py', '-p', localedir.as_posix(), *pyfiles], check=True)
 
 @app.command()
 def mo():
