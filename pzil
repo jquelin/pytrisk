@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/bin/bash
 #
 # This file is part of pytrisk.
 #
@@ -16,143 +16,142 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-import contextlib
-import sys
-import logging
-import colorlog
-import os
-import shutil
-import subprocess
-import tomlkit
-import typer
 
-from pathlib import Path
-from git import Repo
+localedir=pytrisk/locale
+prevver=$(git tag |egrep '^v' | tail -1 |sed -e 's/v//')
+prevmajor=$(echo $prevver |cut -d. -f1)
+prevminor=$(echo $prevver |cut -d. -f2)
+prevpatch=$(echo $prevver |cut -d. -f3)
 
-app = typer.Typer(no_args_is_help=True)
+log () {
+    color=3
+    tput setaf $color && echo "$1" && tput sgr 0
+}
 
-# command definition
+update_version () {
+    newversion=$1
+    log "updating to $newversion"
+    perl -pi -E "s{version = .*}{version = '$newversion'}" pyproject.toml
+}
 
-@app.command()
-def build():
-    log.info(f'*** build')
-    subprocess.run(['python', '-m' , 'build'], check=True)
+case $1 in
+    clean)
+        log "** $1"
+        rm -rf dist pytrisk.egg-info
+        exit
+        ;;
 
-@app.command()
-def clean():
-    log.info(f'*** clean')
-    for d in ['dist', 'pytrisk.egg-info']:
-        log.debug(f'removing {d}')
-        with contextlib.suppress(FileNotFoundError):
-            shutil.rmtree(Path(rootdir, d))
+    build)
+        $0 clean
+        $0 mo
+        log "** $1"
+        python -m build
+        exit
+        ;;
 
-@app.command()
-def upload():
-    log.info(f'*** build')
+    release)
+        log "** $1"
 
-    # check untracked files
-    untracked = repo.untracked_files
-    if len(untracked) > 0:
-        log.error(f'files not tracked in git: {untracked}')
-        sys.exit(1)
+        # check version has been updated
+        log "- check version has been changed"
+        curver=$(egrep 'version' pyproject.toml |cut -d\' -f2)
+        if test $curver == $prevver
+        then
+            echo "current version $curver has not been changed"
+            echo "aborting"
+            exit 1
+        fi
 
-    # check git dirty state
-    autocommit = ['README.md', 'pyproject.toml', 'CHANGES.md']
-    changed = [item.a_path for item in repo.index.diff(None)]
-    changed = [item for item in changed if item not in autocommit]
-    if len(changed) > 0:
-        log.error(f'dirty files not committed in git: {changed}')
-        sys.exit(1)
+        # check untracked files
+        log "- check untracked files"
+        untracked=$(git ls-files --others --exclude-standard)
+        if ! test -z "$untracked"
+        then
+            echo "untracked files: $(echo $untracked| tr -d "\n")"
+            echo "aborting"
+            exit 1
+        fi
 
-    # check version has changed
-    prevver = _previous_version()
-    newver  = toml['project']['version']
-    if prevver == newver:
-        log.error(f'version {prevver} has not been updated')
+        # check dirty files
+        log "- check dirty files"
+        autocommit="CHANGES.md|pyproject.toml"
+        dirty=$(git status --porcelain | egrep -v "$autocommit" |awk '{print $2}')
+        if ! test -z "$dirty"
+        then
+            echo "dirty files: $(echo $dirty| tr -d "\n")"
+            echo "aborting"
+            exit 1
+        fi
 
-    # git autocommit if needed
-    repo.git.commit('-m', f'v{newver}')
-    repo.create_tag(f'v{newver}')
+        # adding version + date to changelog
+        sed -i "1s/^/$curver $(date +%F)\n\n/" CHANGES.md
 
+        # autocommit
+        log "- autocommitting"
+        git ci -a -m "v$curver"
+        log "- tagging v$curver"
+        git tag "v$curver"
+        #git push
+        #git push --tags
 
-    subprocess.run(['twin', 'upload'], check=True)
+        $0 build
 
+        # finally, upload on pypi
+        log "** $1"
+        twine upload
 
-# l10n
+        exit
+        ;;
 
-@app.command()
-def pot():
-    log.info('*** pot')
-    pyfiles = []
-    for root, dirs, files in os.walk(pytriskdir):
-        for file in files:
-            if file.endswith('.py') or file.endswith('.csv'):
-                pyfiles.append(Path(root, file).as_posix())
-    subprocess.run(['pygettext.py', '-p', localedir.as_posix(), *pyfiles], check=True)
+    # l10n
+    pot)
+        log "** $1"
+        find pytrisk -name '*.csv' -o -name '*.py' | \
+            xargs pygettext.py -p $localedir
+        exit
+        ;;
 
-@app.command()
-def mo():
-    for root, dirs, files in os.walk(localedir):
-        for file in files:
-            if file.endswith('.po'):
-                pofile = Path(root, file).as_posix()
-                mofile = pofile.replace('.po', '.mo')
-                subprocess.run(['msgfmt', pofile, '-o', mofile])
+    mo)
+        log "** $1"
+        for po in $(find $localedir -name '*.po')
+        do
+            mo=$(echo $po | sed -e 's/\.po/.mo/')
+            echo "$po -> $mo"
+            msgfmt $po -o $mo
+        done
+        exit
+        ;;
 
-# version update
+    # version update
+    major)
+        log "** $1"
+        newmajor=$((prevmajor+1))
+        newminor=0
+        newpatch=0
+        newversion="$newmajor.$newminor.$newpatch"
+        update_version $newversion
+        ;;
 
-@app.command()
-def patch():
-    log.info(f'*** patch')
-    (x, y, z) = _previous_version().split('.')
-    newver = f'{x}.{y}.{int(z)+1}'
-    log.debug(f'new version: {newver}')
-    toml['project']['version'] = newver
-    toml_file.write_text(tomlkit.dumps(toml))
+    minor)
+        log "** $1"
+        newmajor=$prevmajor
+        newminor=$((prevminor+1))
+        newpatch=0
+        newversion="$newmajor.$newminor.$newpatch"
+        update_version $newversion
+        ;;
 
-@app.command()
-def minor():
-    log.info(f'*** minor')
-    (x, y, z) = _previous_version().split('.')
-    newver = f'{x}.{int(y)+1}.0'
-    log.debug(f'new version: {newver}')
-    toml['project']['version'] = newver
-    toml_file.write_text(tomlkit.dumps(toml))
+    patch)
+        log "** $1"
+        newmajor=$prevmajor
+        newminor=$prevminor
+        newpatch=$((prevpatch+1))
+        newversion="$newmajor.$newminor.$newpatch"
+        update_version $newversion
+        ;;
 
-@app.command()
-def major():
-    log.info(f'*** major')
-    (x, y, z) = _previous_version().split('.')
-    newver = f'{int(x)+1}.0.0'
-    log.debug(f'new version: {newver}')
-    toml['project']['version'] = newver
-    toml_file.write_text(tomlkit.dumps(toml))
+    *)
+        echo "unknown command"
+        ;;
+esac
 
-
-#
-def _previous_version():
-    tags = sorted(repo.tags, key=lambda t: t.commit.committed_datetime)
-    previous = str(tags[-1]).replace('v', '')
-    log.debug(f'previous version: {previous}')
-    return previous
-
-
-# creating logging facility
-log = logging.getLogger('pzil')
-handler = colorlog.StreamHandler()
-handler.setFormatter(colorlog.ColoredFormatter(
-        '%(log_color)s%(message)s'))
-log.setLevel(logging.DEBUG)
-log.addHandler(handler)
-
-# common vars
-rootdir    = Path(__file__).parent
-pytriskdir = Path(rootdir, 'pytrisk')
-localedir  = Path(pytriskdir, 'locale')
-toml_file = Path(rootdir, 'pyproject.toml')
-toml = tomlkit.parse(toml_file.read_text())
-repo = Repo(rootdir)
-
-
-# processing commands
-app()
