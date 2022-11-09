@@ -1,0 +1,386 @@
+#map,greyscale,name,continent id,x,y
+ameroki,1,_('Siberia'),1,329,152
+ameroki,2,_('Worrick'),1,308,199
+ameroki,3,_('Yazteck'),1,284,260
+ameroki,4,_('Kongrolo'),1,278,295
+ameroki,5,_('China'),1,311,350
+ameroki,6,_('Middle East'),1,339,299
+ameroki,7,_('Sluci'),1,358,376
+ameroki,8,_('Afganistan'),1,400,350
+ameroki,9,_('Kancheria'),1,388,313
+ameroki,10,_('India'),1,405,229
+ameroki,11,_('Japan'),1,462,236
+ameroki,12,_('New Guinia'),6,513,314
+ameroki,13,_('Western Ulstrailia'),6,525,340
+ameroki,14,_('Eastern Ulstarilia'),6,567,355
+ameroki,15,_('Jacuncail'),6,561,300
+ameroki,16,_('Tungu'),5,537,178
+ameroki,17,_('South Afrori'),5,538,210
+ameroki,18,_('North Afrori'),5,486,131
+ameroki,19,_('East afrori'),5,540,144
+ameroki,20,_('Egypt'),5,443,100
+ameroki,21,_('Maganar'),5,578,110
+ameroki,22,_('Pero'),4,374,25
+ameroki,23,_('Heaurt'),4,428,32
+ameroki,24,_('Vagnagale'),4,327,40
+ameroki,25,_('Argentina'),4,277,36
+ameroki,26,_('Ireland'),3,128,127
+ameroki,27,_('Ihesia'),3,130,96
+ameroki,28,_('Western Utropa'),3,181,112
+ameroki,29,_('Souther Utropa'),3,235,133
+ameroki,30,_('Northern Utropa'),3,253,82
+ameroki,31,_('Senadlavin'),3,177,155
+ameroki,32,_('Great Britain'),3,244,168
+ameroki,33,_('Teramar'),2,103,249
+ameroki,34,_('Western United States'),2,164,235
+ameroki,35,_('Czeck'),2,222,257
+ameroki,36,_('Alberta'),2,122,295
+ameroki,37,_('Central Ameroki'),2,182,329
+ameroki,38,_('Albania'),2,205,305
+ameroki,39,_('Duiestie'),2,164,355
+ameroki,40,_('Quebeck'),2,203,366
+ameroki,41,_('Vinenlant'),2,128,373
+ameroki,42,_('Heal'),1,271,397
+france,1,_('Ain'),10,343,230
+france,2,_('Aisne'),4,290,77
+france,3,_('Allier'),21,284,216
+france,4,_('Alpes de Haute Provence'),11,381,323
+france,5,_('Hautes Alpes'),11,380,301
+france,6,_('Alpes Maritimes'),11,414,333
+france,7,_('Ardèche'),10,324,298
+france,8,_('Ardennes'),6,321,71
+france,9,_('Ariège'),14,226,378
+france,10,_('Aube'),6,305,136
+france,11,_('Aude'),13,254,369
+france,12,_('Aveyron'),14,261,317
+france,13,_('Bouches du Rhone'),11,354,354
+france,14,_('Calvados'),2,172,97
+france,15,_('Cantal'),21,256,288
+france,16,_('Charente'),16,182,254
+france,17,_('Charente Maritime'),16,151,246
+france,18,_('Cher'),18,258,191
+france,19,_('Corrèze'),22,235,271
+france,20,_('Corse du Sud'),12,443,398
+france,21,_("Côte d'Or"),20,335,178
+france,22,_("Côtes d'Armor"),1,100,128
+france,23,_('Creuse'),22,247,237
+france,24,_('Dordogne'),15,202,281
+france,25,_('Doubs'),9,376,182
+france,26,_('Drôme'),10,342,301
+france,27,_('Eure'),3,212,103
+france,28,_('Eure et Loire'),18,224,131
+france,29,_('Finistère'),1,63,126
+france,30,_('Gard'),13,320,336
+france,31,_('Haute Garonne'),14,223,351
+france,32,_('Gers'),14,195,344
+france,33,_('Gironde'),15,155,299
+france,34,_('Hérault'),13,296,346
+france,35,_('Ille et Vilaine'),1,131,141
+france,36,_('Indre'),18,233,203
+france,37,_('Indre et Loire'),18,201,181
+france,38,_('Isère'),10,363,276
+france,39,_('Jura'),9,360,208
+france,40,_('Landes'),15,150,335
+france,41,_('Loire et Cher'),18,221,165
+france,42,_('Loire'),10,315,261
+france,43,_('Haute Loire'),21,304,281
+france,44,_('Loire Atlantique'),17,132,176
+france,45,_('Loiret'),18,248,155
+france,46,_('Lot'),14,226,309
+france,47,_('Lot et Garonne'),15,190,317
+france,48,_('Lozère'),13,292,308
+france,49,_('Maine et Loire'),17,168,175
+france,50,_('Manche'),2,143,94
+france,51,_('Marne'),6,314,106
+france,52,_('Haute Marne'),6,342,145
+france,53,_('Mayenne'),17,161,144
+france,54,_('Meurthe et Moselle'),7,370,115
+france,55,_('Meuse'),7,344,99
+france,56,_('Morbihan'),1,102,153
+france,57,_('Moselle'),7,379,94
+france,58,_('Nièvre'),20,292,191
+france,59,_('Nord'),5,274,29
+france,60,_('Oise'),4,251,85
+france,61,_('Orne'),2,191,117
+france,62,_('Pas de Calais'),5,262,45
+france,63,_('Puy de Dome'),21,278,249
+france,64,_('Pyrénées Atlantiques'),15,159,360
+france,65,_('Hautes Pyrénées'),14,187,378
+france,66,_('Pyrénées Orientales'),13,261,395
+france,67,_('Bas Rhin'),8,410,112
+france,68,_('Haut Rhin'),8,404,146
+france,69,_('Rhône'),10,329,250
+france,70,_('Haute Saône'),9,368,160
+france,71,_('Saône et Loire'),20,323,208
+france,72,_('Sarthe'),17,190,147
+france,73,_('Savoie'),10,388,264
+france,74,_('Haute Savoie'),10,382,236
+france,75,_('Paris'),19,49,208
+france,76,_('Seine Maritime'),3,216,74
+france,77,_('Seine et Marne'),19,271,118
+france,78,_('Yvelines'),19,239,116
+france,79,_('Deux Sèvres'),16,170,224
+france,80,_('Somme'),4,252,63
+france,81,_('Tarn'),14,249,341
+france,82,_('Tarn et Garonne'),14,216,330
+france,83,_('Var'),11,381,361
+france,84,_('Vaucluse'),11,346,333
+france,85,_('Vendée'),17,142,211
+france,86,_('Vienne'),16,193,215
+france,87,_('Haute Vienne'),22,218,249
+france,88,_('Vosges'),7,378,139
+france,89,_('Yonne'),20,291,157
+france,90,_('Territoire de Belfort'),9,395,163
+france,91,_('Essonne'),19,252,124
+france,92,_('Hauts de Seine'),19,15,204
+france,93,_('Seine Saint Denis'),19,71,189
+france,94,_('Val de Marne'),19,64,233
+france,95,_("Val d'Oise"),19,252,101
+france,96,_('Haute Corse'),12,447,366
+godstorm,1,_('Dacia'),5,355,175
+godstorm,2,_('Thracia'),5,403,196
+godstorm,3,_('Dalmatia'),5,316,214
+godstorm,4,_('Liguria'),5,265,229
+godstorm,5,_('Roma'),5,294,287
+godstorm,6,_('Apulia'),5,327,300
+godstorm,7,_('Corsica'),5,259,310
+godstorm,8,_('Sicilia'),5,343,347
+godstorm,9,_('Graecia'),5,401,263
+godstorm,10,_('Minoa'),5,445,290
+godstorm,11,_('Ionia'),5,476,218
+godstorm,12,_('Anatolia'),5,540,177
+godstorm,13,_('Hibernia'),1,86,169
+godstorm,14,_('Caledonia'),1,142,135
+godstorm,15,_('Anglia'),1,142,184
+godstorm,16,_('Thule'),1,210,78
+godstorm,17,_('Varangia'),1,314,16
+godstorm,18,_('Galicia'),1,330,90
+godstorm,19,_('Alemannia'),1,231,189
+godstorm,20,_('Gaul'),1,188,258
+godstorm,21,_('Iberia'),1,148,343
+godstorm,22,_('Atlas'),4,173,404
+godstorm,23,_('Carthage'),4,290,361
+godstorm,24,_('Gaitulia'),4,257,409
+godstorm,25,_('Cyrenaica'),4,386,375
+godstorm,26,_('Nubia'),4,447,410
+godstorm,27,_('Egypt'),4,517,365
+godstorm,28,_('Kush'),4,583,398
+godstorm,29,_('Parthia'),3,648,154
+godstorm,30,_('Sumer'),3,667,234
+godstorm,31,_('Assyria'),3,611,231
+godstorm,32,_('Phoenicia'),3,545,267
+godstorm,33,_('Babylon'),3,614,283
+godstorm,34,_('Sheba'),3,631,359
+godstorm,35,_('Hesperide'),2,37,245
+godstorm,36,_('Tritonis'),2,35,306
+godstorm,37,_('Poseidonis'),2,18,371
+godstorm,38,_('Oricalcos'),2,55,412
+godstorm,39,_('Rus'),6,475,39
+godstorm,40,_('Scythia'),6,422,103
+godstorm,41,_('Cimmeria'),6,512,91
+godstorm,42,_('Sarmathia'),6,621,67
+lotr,1,_('Forodwaith'),5,13,150
+lotr,2,_('Eastern Angmar'),5,56,154
+lotr,3,_('Borderlands'),5,78,251
+lotr,4,_('Angmar'),5,79,210
+lotr,5,_('North Downs'),5,117,251
+lotr,6,_('Fornost'),5,150,258
+lotr,7,_('Buckland'),5,188,275
+lotr,8,_('Old Forest'),5,187,249
+lotr,9,_('South Downs'),5,222,249
+lotr,10,_('Weather Hills'),5,161,225
+lotr,11,_('Rhudaur'),5,148,180
+lotr,12,_('Carrock'),2,115,140
+lotr,13,_('North Mirkwood'),2,112,105
+lotr,14,_('Eastern Mirkwood'),2,194,90
+lotr,15,_('Anduin Valley'),2,227,116
+lotr,16,_('South Mirkwood'),2,260,90
+lotr,17,_('Eregion'),3,220,204
+lotr,18,_('Minhiriath'),3,276,295
+lotr,19,_('Dunland'),3,282,235
+lotr,20,_('Enedwaith'),3,352,251
+lotr,21,_('West Rohan'),3,413,266
+lotr,22,_('Fangorn'),3,356,186
+lotr,23,_('Gap of Rohan'),3,416,190
+lotr,24,_('Rhun Hills'),4,334,15
+lotr,25,_('Brown Lands'),4,354,59
+lotr,26,_('Emyn Muil'),4,330,102
+lotr,27,_('The Wold'),4,347,141
+lotr,28,_('Lorien'),4,287,164
+lotr,29,_('Gladden Fields'),4,220,147
+lotr,30,_('Moria'),4,232,178
+lotr,31,_('Dead Marshes'),4,422,111
+lotr,32,_('Druwaith Iaur'),1,478,307
+lotr,33,_('Andras'),1,530,322
+lotr,34,_('Anfalas'),1,521,284
+lotr,35,_('Vale of Erech'),1,488,252
+lotr,36,_('Lamedon'),1,497,218
+lotr,37,_('Belfalas'),1,548,213
+lotr,38,_('Lebennin'),1,521,177
+lotr,39,_('Minis Tirith'),1,485,167
+lotr,40,_('Ithilien'),1,496,133
+lotr,41,_('South Ithilien'),1,557,134
+lotr,42,_('Forlindon'),6,120,392
+lotr,43,_('Lune Valley'),6,84,316
+lotr,44,_('Mithlond'),6,148,359
+lotr,45,_('Harlindon'),6,236,368
+lotr,46,_('Tower Hills'),6,162,318
+lotr,47,_('The Shire'),6,202,302
+lotr,48,_('Evendim Hills'),6,100,291
+lotr,49,_('North Rhun'),7,22,16
+lotr,50,_('Withered Heath'),7,54,57
+lotr,51,_('Esgaroth'),7,130,63
+lotr,52,_('South Rhun'),7,173,15
+lotr,53,_('Harandor'),8,589,146
+lotr,54,_('Umbar'),8,627,182
+lotr,55,_('Deep Harad'),8,663,173
+lotr,56,_('Harad'),8,646,114
+lotr,57,_('Near Harad'),8,644,63
+lotr,58,_('Khand'),8,614,17
+lotr,59,_('Udun Value'),9,467,88
+lotr,60,_('Mount Doom'),9,493,68
+lotr,61,_('Barad Dur'),9,478,32
+lotr,62,_('Minas Morgul'),9,522,95
+lotr,63,_('Gorgoroth'),9,521,19
+lotr,64,_('Nurn'),9,564,73
+risk,1,_('Alaska'),1,43,67
+risk,2,_('North West Territory'),1,106,69
+risk,3,_('Alberta'),1,106,105
+risk,4,_('Western United States'),1,109,149
+risk,5,_('Central America'),1,118,205
+risk,6,_('Greenland'),1,258,35
+risk,7,_('Ontario'),1,152,107
+risk,8,_('Quebec'),1,206,110
+risk,9,_('Eastern United States'),1,160,159
+risk,10,_('Venezuela'),2,164,237
+risk,11,_('Peru'),2,177,301
+risk,12,_('Brazil'),2,216,284
+risk,13,_('Argentina'),2,186,347
+risk,14,_('Iceland'),3,286,89
+risk,15,_('Scandinavia'),3,346,72
+risk,16,_('Ukraine'),3,400,105
+risk,17,_('Great Britain'),3,289,118
+risk,18,_('Northern Europe'),3,336,129
+risk,19,_('Western Europe'),3,300,163
+risk,20,_('Southern Europe'),3,348,165
+risk,21,_('North Africa'),4,313,246
+risk,22,_('Egypt'),4,361,216
+risk,23,_('Congo'),4,363,304
+risk,24,_('East Africa'),4,395,274
+risk,25,_('South Africa'),4,369,369
+risk,26,_('Madagascar'),4,427,366
+risk,27,_('Siberia'),5,500,58
+risk,28,_('Ural'),5,470,97
+risk,29,_('China'),5,550,182
+risk,30,_('Afghanistan'),5,457,150
+risk,31,_('Middle East'),5,410,194
+risk,32,_('India'),5,496,222
+risk,33,_('Siam'),5,556,242
+risk,34,_('Yakutsk'),5,565,62
+risk,35,_('Irkutsk'),5,554,107
+risk,36,_('Mongolia'),5,563,143
+risk,37,_('Japan'),5,632,139
+risk,38,_('Kamchatka'),5,629,62
+risk,39,_('Indonesia'),6,585,297
+risk,40,_('New Guinea'),6,651,294
+risk,41,_('Western Australia'),6,595,375
+risk,42,_('Eastern Australia'),6,637,353
+risk2210,1,_('Northwestern Oil Emirate'),1,47,19
+risk2210,2,_('Nunavut'),1,105,23
+risk2210,3,_('Exiled States of America'),1,222,23
+risk2210,4,_('Alberta'),1,85,57
+risk2210,5,_('Canada'),1,125,67
+risk2210,6,_('Republique du Quebec'),1,175,75
+risk2210,7,_('Continental Biospheres'),1,80,100
+risk2210,8,_('American Republic'),1,117,121
+risk2210,9,_('Mexico'),1,81,161
+risk2210,10,_('Nuevo Timoto'),2,115,216
+risk2210,11,_('Andean Nations'),2,94,257
+risk2210,12,_('Amazon Desert'),2,145,265
+risk2210,13,_('Argentina'),2,90,325
+risk2210,14,_('Iceland GRC'),3,268,47
+risk2210,15,_('Jotenheim'),3,328,28
+risk2210,16,_('Ukrayina'),3,412,70
+risk2210,17,_('New Avalon'),3,272,84
+risk2210,18,_('Warsaw Republic'),3,333,89
+risk2210,19,_('Andorra'),3,270,132
+risk2210,20,_('Imperial Balkania'),3,340,116
+risk2210,21,_('Saharan Empire'),4,280,211
+risk2210,22,_('Egypt'),4,350,180
+risk2210,23,_('Zaire Military Zone'),4,349,274
+risk2210,24,_('Ministry of Djibouti'),4,395,245
+risk2210,25,_('Lesotho'),4,357,347
+risk2210,26,_('Madagascar'),4,417,332
+risk2210,27,_('Siberia'),5,520,32
+risk2210,28,_('Enclave of the Bear'),5,475,65
+risk2210,29,_('Hong Kong'),5,555,145
+risk2210,30,_('Afghanistan'),5,466,117
+risk2210,31,_('Middle East'),5,427,179
+risk2210,32,_('United Indiastan'),5,511,189
+risk2210,33,_('Angkhor Wat'),5,577,207
+risk2210,34,_('Sakha'),5,580,23
+risk2210,35,_('Alden'),5,570,70
+risk2210,36,_('Khan Industrial State'),5,577,107
+risk2210,37,_('Japan'),5,650,114
+risk2210,38,_('Pevek'),5,630,26
+risk2210,39,_('Java Cartel'),6,605,270
+risk2210,40,_('New Guinea'),6,660,284
+risk2210,41,_('Aboriginal League'),6,595,365
+risk2210,42,_('Australian Testing Ground'),6,650,352
+risk2210,43,_('Sung Tzu'),7,652,228
+risk2210,44,_('Neo Tokyo'),7,648,172
+risk2210,45,_('Poseidon'),8,31,88
+risk2210,46,_('Hawaiian Preserve'),8,33,145
+risk2210,47,_('New Atlantis'),8,49,198
+risk2210,48,_('Western Ireland'),9,217,133
+risk2210,49,_('New York'),9,163,159
+risk2210,50,_('Nova Brasilia'),9,187,212
+risk2210,51,_('Neo Paulo'),10,206,307
+risk2210,52,_('The Ivory Reef'),10,269,293
+risk2210,53,_('South Ceylon'),11,483,268
+risk2210,54,_('Microcorp'),11,473,327
+risk2210,55,_('Akara'),11,527,359
+roman_empire,1,_('Aegyptus'),1,466,403
+roman_empire,2,_('Africa proconsularis'),1,239,303
+roman_empire,3,_('Cyrenaica'),1,368,366
+roman_empire,4,_('Numidia inf.'),1,217,297
+roman_empire,5,_('Numidia sup.'),1,203,323
+roman_empire,6,_('Arabia'),2,526,386
+roman_empire,7,_('Bithynia'),2,490,239
+roman_empire,8,_('Cappadocia'),2,538,263
+roman_empire,9,_('Cilicia'),2,520,304
+roman_empire,10,_('Galatia'),2,508,271
+roman_empire,11,_('Lycia'),2,490,287
+roman_empire,12,_('Palestina'),2,537,354
+roman_empire,13,_('Phrygia'),2,463,275
+roman_empire,14,_('Pontus'),2,548,234
+roman_empire,15,_('Syria'),2,594,297
+roman_empire,16,_('Aquitania'),3,122,182
+roman_empire,17,_('Belgica'),3,171,115
+roman_empire,18,_('Britannia'),3,101,37
+roman_empire,19,_('Germania inf.'),3,182,86
+roman_empire,20,_('Germania sup.'),3,205,141
+roman_empire,21,_('Lugdunensis'),3,133,112
+roman_empire,22,_('Narbonensis'),3,183,180
+roman_empire,23,_('Baetica'),4,55,274
+roman_empire,24,_('Baleares'),4,161,240
+roman_empire,25,_('Gallaecia et Asturia'),4,30,219
+roman_empire,26,_('Lusitania'),4,23,267
+roman_empire,27,_('Mauretania'),4,134,305
+roman_empire,28,_('Terraconensis'),4,99,253
+roman_empire,29,_('Achaia'),5,389,280
+roman_empire,30,_('Dacia'),5,403,173
+roman_empire,31,_('Dalmatia'),5,349,206
+roman_empire,32,_('Epirus'),5,368,251
+roman_empire,33,_('Macedonia'),5,392,249
+roman_empire,34,_('Moesia inf.'),5,445,201
+roman_empire,35,_('Moesia sup.'),5,392,210
+roman_empire,36,_('Pannonia'),5,334,144
+roman_empire,37,_('Thracia'),5,436,228
+roman_empire,38,_('Corsica'),6,234,205
+roman_empire,39,_('Gallia Cisalpinia'),6,256,162
+roman_empire,40,_('Noricum'),6,287,129
+roman_empire,41,_('Raetia'),6,241,139
+roman_empire,42,_('Roma'),6,307,236
+roman_empire,43,_('Sardinia'),6,235,256
+roman_empire,44,_('Sicilia'),6,286,274
