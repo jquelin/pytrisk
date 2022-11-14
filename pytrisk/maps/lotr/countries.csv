@@ -1,0 +1,65 @@
+#greyscale,name,continent id,x,y
+1,_('Forodwaith'),5,13,150
+2,_('Eastern Angmar'),5,56,154
+3,_('Borderlands'),5,78,251
+4,_('Angmar'),5,79,210
+5,_('North Downs'),5,117,251
+6,_('Fornost'),5,150,258
+7,_('Buckland'),5,188,275
+8,_('Old Forest'),5,187,249
+9,_('South Downs'),5,222,249
+10,_('Weather Hills'),5,161,225
+11,_('Rhudaur'),5,148,180
+12,_('Carrock'),2,115,140
+13,_('North Mirkwood'),2,112,105
+14,_('Eastern Mirkwood'),2,194,90
+15,_('Anduin Valley'),2,227,116
+16,_('South Mirkwood'),2,260,90
+17,_('Eregion'),3,220,204
+18,_('Minhiriath'),3,276,295
+19,_('Dunland'),3,282,235
+20,_('Enedwaith'),3,352,251
+21,_('West Rohan'),3,413,266
+22,_('Fangorn'),3,356,186
+23,_('Gap of Rohan'),3,416,190
+24,_('Rhun Hills'),4,334,15
+25,_('Brown Lands'),4,354,59
+26,_('Emyn Muil'),4,330,102
+27,_('The Wold'),4,347,141
+28,_('Lorien'),4,287,164
+29,_('Gladden Fields'),4,220,147
+30,_('Moria'),4,232,178
+31,_('Dead Marshes'),4,422,111
+32,_('Druwaith Iaur'),1,478,307
+33,_('Andras'),1,530,322
+34,_('Anfalas'),1,521,284
+35,_('Vale of Erech'),1,488,252
+36,_('Lamedon'),1,497,218
+37,_('Belfalas'),1,548,213
+38,_('Lebennin'),1,521,177
+39,_('Minis Tirith'),1,485,167
+40,_('Ithilien'),1,496,133
+41,_('South Ithilien'),1,557,134
+42,_('Forlindon'),6,120,392
+43,_('Lune Valley'),6,84,316
+44,_('Mithlond'),6,148,359
+45,_('Harlindon'),6,236,368
+46,_('Tower Hills'),6,162,318
+47,_('The Shire'),6,202,302
+48,_('Evendim Hills'),6,100,291
+49,_('North Rhun'),7,22,16
+50,_('Withered Heath'),7,54,57
+51,_('Esgaroth'),7,130,63
+52,_('South Rhun'),7,173,15
+53,_('Harandor'),8,589,146
+54,_('Umbar'),8,627,182
+55,_('Deep Harad'),8,663,173
+56,_('Harad'),8,646,114
+57,_('Near Harad'),8,644,63
+58,_('Khand'),8,614,17
+59,_('Udun Value'),9,467,88
+60,_('Mount Doom'),9,493,68
+61,_('Barad Dur'),9,478,32
+62,_('Minas Morgul'),9,522,95
+63,_('Gorgoroth'),9,521,19
+64,_('Nurn'),9,564,73

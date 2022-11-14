@@ -1,0 +1,12 @@
+#id,name,bonus,color
+1,_('North America'),5,yellow
+2,_('South America'),2,red
+3,_('Europe'),5,blue
+4,_('Africa'),3,orange
+5,_('Asia'),7,green
+6,_('Australia'),2,magenta
+7,_('Asia Pacific'),1,yellow
+8,_('US Pacific'),2,blue
+9,_('North Atlantic'),2,red
+10,_('South Atlantic'),1,green
+11,_('Indian'),2,orange

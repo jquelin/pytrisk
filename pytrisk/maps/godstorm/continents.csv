@@ -1,0 +1,7 @@
+#id,name,bonus,color
+1,_('Germania'),5,green
+2,_('Atlantis'),3,magenta
+3,_('Asia Minor'),3,cyan
+4,_('Africa'),5,yellow
+5,_('Europa'),7,red
+6,_('Hyrkania'),2,orange

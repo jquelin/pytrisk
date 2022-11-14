@@ -1,0 +1,23 @@
+#id,name,bonus,color
+1,_('Bretagne'),3,col1
+2,_('Basse Normandie'),2,col2
+3,_('Haute Normandie'),2,col3
+4,_('Picardie'),2,col4
+5,_('Nord-Pas de Calais'),5,col5
+6,_('Champagne-Ardenne'),2,col6
+7,_('Lorraine'),3,col7
+8,_('Alsace'),2,col8
+9,_('Franche-Comté'),2,col9
+10,_('Rhône-Alpes'),6,col10
+11,_("Provence-Alpes-Côte d'Azur"),5,col11
+12,_('Corse'),1,col12
+13,_('Languedoc-Roussillon'),3,col13
+14,_('Midi-Pyrénées'),3,col14
+15,_('Aquitaine'),3,col15
+16,_('Poitou-Charente'),2,col16
+17,_('Pays de la Loire'),4,col17
+18,_('Centre'),3,col18
+19,_('Ile de France'),11,col19
+20,_('Bourgogne'),2,col20
+21,_('Auvergne'),2,col21
+22,_('Limousin'),1,col22

@@ -1,0 +1,7 @@
+#id,name,bonus,color
+1,_('Africa'),3,blue
+2,_('Asia'),5,magenta
+3,_('Gallia'),4,yellow
+4,_('Hispania'),2,green
+5,_('Illyrium'),7,red
+6,_('Italia'),6,cyan

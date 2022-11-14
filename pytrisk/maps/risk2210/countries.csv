@@ -1,0 +1,56 @@
+#greyscale,name,continent id,x,y
+1,_('Northwestern Oil Emirate'),1,47,19
+2,_('Nunavut'),1,105,23
+3,_('Exiled States of America'),1,222,23
+4,_('Alberta'),1,85,57
+5,_('Canada'),1,125,67
+6,_('Republique du Quebec'),1,175,75
+7,_('Continental Biospheres'),1,80,100
+8,_('American Republic'),1,117,121
+9,_('Mexico'),1,81,161
+10,_('Nuevo Timoto'),2,115,216
+11,_('Andean Nations'),2,94,257
+12,_('Amazon Desert'),2,145,265
+13,_('Argentina'),2,90,325
+14,_('Iceland GRC'),3,268,47
+15,_('Jotenheim'),3,328,28
+16,_('Ukrayina'),3,412,70
+17,_('New Avalon'),3,272,84
+18,_('Warsaw Republic'),3,333,89
+19,_('Andorra'),3,270,132
+20,_('Imperial Balkania'),3,340,116
+21,_('Saharan Empire'),4,280,211
+22,_('Egypt'),4,350,180
+23,_('Zaire Military Zone'),4,349,274
+24,_('Ministry of Djibouti'),4,395,245
+25,_('Lesotho'),4,357,347
+26,_('Madagascar'),4,417,332
+27,_('Siberia'),5,520,32
+28,_('Enclave of the Bear'),5,475,65
+29,_('Hong Kong'),5,555,145
+30,_('Afghanistan'),5,466,117
+31,_('Middle East'),5,427,179
+32,_('United Indiastan'),5,511,189
+33,_('Angkhor Wat'),5,577,207
+34,_('Sakha'),5,580,23
+35,_('Alden'),5,570,70
+36,_('Khan Industrial State'),5,577,107
+37,_('Japan'),5,650,114
+38,_('Pevek'),5,630,26
+39,_('Java Cartel'),6,605,270
+40,_('New Guinea'),6,660,284
+41,_('Aboriginal League'),6,595,365
+42,_('Australian Testing Ground'),6,650,352
+43,_('Sung Tzu'),7,652,228
+44,_('Neo Tokyo'),7,648,172
+45,_('Poseidon'),8,31,88
+46,_('Hawaiian Preserve'),8,33,145
+47,_('New Atlantis'),8,49,198
+48,_('Western Ireland'),9,217,133
+49,_('New York'),9,163,159
+50,_('Nova Brasilia'),9,187,212
+51,_('Neo Paulo'),10,206,307
+52,_('The Ivory Reef'),10,269,293
+53,_('South Ceylon'),11,483,268
+54,_('Microcorp'),11,473,327
+55,_('Akara'),11,527,359

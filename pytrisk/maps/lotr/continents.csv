@@ -1,0 +1,10 @@
+#id,name,bonus,color
+1,_('Gondor'),7,#663300
+2,_('Mirkwood'),4,#009900
+3,_('Rohan'),4,#009999
+4,_('Rhovanion'),5,#ff9900
+5,_('Arnor'),7,#ff3333
+6,_('Eriador'),3,#cccc00
+7,_('Rhun'),2,#330033
+8,_('Haradwaith'),2,#ffff33
+9,_('Mordor'),2,#333300

@@ -1,0 +1,43 @@
+#greyscale,name,continent id,x,y
+1,_('Siberia'),1,329,152
+2,_('Worrick'),1,308,199
+3,_('Yazteck'),1,284,260
+4,_('Kongrolo'),1,278,295
+5,_('China'),1,311,350
+6,_('Middle East'),1,339,299
+7,_('Sluci'),1,358,376
+8,_('Afganistan'),1,400,350
+9,_('Kancheria'),1,388,313
+10,_('India'),1,405,229
+11,_('Japan'),1,462,236
+12,_('New Guinia'),6,513,314
+13,_('Western Ulstrailia'),6,525,340
+14,_('Eastern Ulstarilia'),6,567,355
+15,_('Jacuncail'),6,561,300
+16,_('Tungu'),5,537,178
+17,_('South Afrori'),5,538,210
+18,_('North Afrori'),5,486,131
+19,_('East afrori'),5,540,144
+20,_('Egypt'),5,443,100
+21,_('Maganar'),5,578,110
+22,_('Pero'),4,374,25
+23,_('Heaurt'),4,428,32
+24,_('Vagnagale'),4,327,40
+25,_('Argentina'),4,277,36
+26,_('Ireland'),3,128,127
+27,_('Ihesia'),3,130,96
+28,_('Western Utropa'),3,181,112
+29,_('Souther Utropa'),3,235,133
+30,_('Northern Utropa'),3,253,82
+31,_('Senadlavin'),3,177,155
+32,_('Great Britain'),3,244,168
+33,_('Teramar'),2,103,249
+34,_('Western United States'),2,164,235
+35,_('Czeck'),2,222,257
+36,_('Alberta'),2,122,295
+37,_('Central Ameroki'),2,182,329
+38,_('Albania'),2,205,305
+39,_('Duiestie'),2,164,355
+40,_('Quebeck'),2,203,366
+41,_('Vinenlant'),2,128,373
+42,_('Heal'),1,271,397

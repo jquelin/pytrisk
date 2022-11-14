@@ -98,7 +98,7 @@ case $1 in
 
         # finally, upload on pypi
         log "** $1"
-        twine upload
+        twine upload dist/*
 
         exit
         ;;
@@ -106,7 +106,7 @@ case $1 in
     # l10n
     pot)
         log "** $1"
-        find pytrisk -name '*.csv' -o -name '*.py' | \
+        find pytrisk -name '*.csv' -o -name '*.py' -o -name '*.yaml'| \
             xargs pygettext.py -p $localedir
         exit
         ;;

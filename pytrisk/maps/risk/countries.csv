@@ -1,0 +1,43 @@
+#greyscale,name,continent id,x,y
+1,_('Alaska'),1,43,67
+2,_('North West Territory'),1,106,69
+3,_('Alberta'),1,106,105
+4,_('Western United States'),1,109,149
+5,_('Central America'),1,118,205
+6,_('Greenland'),1,258,35
+7,_('Ontario'),1,152,107
+8,_('Quebec'),1,206,110
+9,_('Eastern United States'),1,160,159
+10,_('Venezuela'),2,164,237
+11,_('Peru'),2,177,301
+12,_('Brazil'),2,216,284
+13,_('Argentina'),2,186,347
+14,_('Iceland'),3,286,89
+15,_('Scandinavia'),3,346,72
+16,_('Ukraine'),3,400,105
+17,_('Great Britain'),3,289,118
+18,_('Northern Europe'),3,336,129
+19,_('Western Europe'),3,300,163
+20,_('Southern Europe'),3,348,165
+21,_('North Africa'),4,313,246
+22,_('Egypt'),4,361,216
+23,_('Congo'),4,363,304
+24,_('East Africa'),4,395,274
+25,_('South Africa'),4,369,369
+26,_('Madagascar'),4,427,366
+27,_('Siberia'),5,500,58
+28,_('Ural'),5,470,97
+29,_('China'),5,550,182
+30,_('Afghanistan'),5,457,150
+31,_('Middle East'),5,410,194
+32,_('India'),5,496,222
+33,_('Siam'),5,556,242
+34,_('Yakutsk'),5,565,62
+35,_('Irkutsk'),5,554,107
+36,_('Mongolia'),5,563,143
+37,_('Japan'),5,632,139
+38,_('Kamchatka'),5,629,62
+39,_('Indonesia'),6,585,297
+40,_('New Guinea'),6,651,294
+41,_('Western Australia'),6,595,375
+42,_('Eastern Australia'),6,637,353

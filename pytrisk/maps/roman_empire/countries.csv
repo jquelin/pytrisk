@@ -1,0 +1,45 @@
+#greyscale,name,continent id,x,y
+1,_('Aegyptus'),1,466,403
+2,_('Africa proconsularis'),1,239,303
+3,_('Cyrenaica'),1,368,366
+4,_('Numidia inf.'),1,217,297
+5,_('Numidia sup.'),1,203,323
+6,_('Arabia'),2,526,386
+7,_('Bithynia'),2,490,239
+8,_('Cappadocia'),2,538,263
+9,_('Cilicia'),2,520,304
+10,_('Galatia'),2,508,271
+11,_('Lycia'),2,490,287
+12,_('Palestina'),2,537,354
+13,_('Phrygia'),2,463,275
+14,_('Pontus'),2,548,234
+15,_('Syria'),2,594,297
+16,_('Aquitania'),3,122,182
+17,_('Belgica'),3,171,115
+18,_('Britannia'),3,101,37
+19,_('Germania inf.'),3,182,86
+20,_('Germania sup.'),3,205,141
+21,_('Lugdunensis'),3,133,112
+22,_('Narbonensis'),3,183,180
+23,_('Baetica'),4,55,274
+24,_('Baleares'),4,161,240
+25,_('Gallaecia et Asturia'),4,30,219
+26,_('Lusitania'),4,23,267
+27,_('Mauretania'),4,134,305
+28,_('Terraconensis'),4,99,253
+29,_('Achaia'),5,389,280
+30,_('Dacia'),5,403,173
+31,_('Dalmatia'),5,349,206
+32,_('Epirus'),5,368,251
+33,_('Macedonia'),5,392,249
+34,_('Moesia inf.'),5,445,201
+35,_('Moesia sup.'),5,392,210
+36,_('Pannonia'),5,334,144
+37,_('Thracia'),5,436,228
+38,_('Corsica'),6,234,205
+39,_('Gallia Cisalpinia'),6,256,162
+40,_('Noricum'),6,287,129
+41,_('Raetia'),6,241,139
+42,_('Roma'),6,307,236
+43,_('Sardinia'),6,235,256
+44,_('Sicilia'),6,286,274
