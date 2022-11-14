@@ -20,25 +20,37 @@ from pytrisk.logging import log
 
 import csv
 from pathlib import Path
+import yaml
 
 maps_dir = Path(Path(__file__).parent, 'maps')
 
 class Map():
-    def __init__(self, name, title, author):
+    def __init__(self, name):
         self.name   = name
-        self.title  = title
-        self.author = author
+        self.path   = Path(maps_dir, name)
+        self._load()
 
-def load_maps():
+    def _load(self):
+        self._load_infos()
+
+    def _load_infos(self):
+        # first, open yaml information file
+        yfile = Path(self.path, 'info.yaml')
+        with yfile.open() as ystream:
+            try:
+                info = yaml.safe_load(ystream)
+            except yaml.YAMLError as e:
+                log.error('error loading {yfile.as_posix()}: {e}')
+        self.title = info['title']
+        self.author = info['author']
+
+
+
+def all_maps():
+    subdirs = [d for d in maps_dir.glob('*')]
+    log.debug(f'found {len(subdirs)} map subdirs in {maps_dir.as_posix()}')
     maps = {}
-    # first, open
-    with open(Path(maps_dir, 'list.csv'), newline='') as csvfile:
-        csvreader = csv.reader(csvfile)
-        next(csvreader, None)  # skip the headers
-        for row in csvreader:
-            name, title, author = row
-            if title[0:2] == '_(':
-                title = eval(title)
-            maps[name] = Map(name, title, author)
-        return maps
-
+    for subdir in subdirs:
+        mapname      = subdir.name
+        maps[mapname] = Map(mapname)
+    return maps

@@ -22,8 +22,9 @@ from pytrisk import gui
 from pytrisk import maps
 
 print( _('this is a test'))
-m = maps.load_maps()
-print(m)
+m = maps.all_maps()
+print(m['risk'])
+
 
 def run():
     # make sure we can run the gui from dev
