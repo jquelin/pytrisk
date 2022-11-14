@@ -32,24 +32,33 @@ class Continent():
         self.color  = color
         log.debug(f'new continent: {number} - "{name}" bonus={bonus} color={color}')
 
+class Country():
+    def __init__(self, idgrey, name, continent, coordx, coordy):
+        self.idgrey    = idgrey
+        self.name      = name
+        self.continent = continent
+        self.coordx    = coordx
+        self.coordy    = coordy
+        log.debug(f'new country: {idgrey} - {continent.name} - {name} @{coordx},{coordy}')
+
 class Map():
     def __init__(self, name):
         self.name   = name
         self.path   = Path(maps_dir, name)
         self._continents = {}
+        self._countries  = {}
         log.info(f'loading map {name}')
         self._load()
 
     # -- map loading
 
-    def _add_continent(self, newcont):
-        self._continents[newcont.number] = newcont
-
     def _load(self):
         self._load_infos()
         self._load_continents()
+        self._load_countries()
 
     def _load_continents(self):
+        log.info('- loading continents')
         with open(Path(self.path, 'continents.csv'), newline='') as csvstream:
             csvreader = csv.reader(csvstream)
             next(csvreader, None)  # skip the headers
@@ -57,8 +66,21 @@ class Map():
                 cnumber, cname, cbonus, ccolor = row
                 cname = eval(cname)     # eval to localize
                 newcont = Continent(cnumber, cname, cbonus, ccolor)
-                self._add_continent(newcont)
-        log.info(f'- loaded {len(self._continents)} continents')
+                self._continents[cnumber] = newcont
+
+    def _load_countries(self):
+        log.info('- loading countries')
+        with open(Path(self.path, 'countries.csv'), newline='') as csvstream:
+            csvreader = csv.reader(csvstream)
+            next(csvreader, None)  # skip the headers
+            for row in csvreader:
+                cnumber, cname, ccontinentnum, coordx, coordy = row
+                cname = eval(cname)     # eval to localize
+                ccontinent = self._continents[ccontinentnum]
+                newcountry = Country(int(cnumber), cname, ccontinent,
+                        int(coordx), int(coordy))
+                self._countries[cnumber] = newcountry
+        log.info(f'- loaded {len(self._countries)} continents')
 
     def _load_infos(self):
         # first, open yaml information file
