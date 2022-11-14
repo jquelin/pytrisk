@@ -24,14 +24,41 @@ import yaml
 
 maps_dir = Path(Path(__file__).parent, 'maps')
 
+class Continent():
+    def __init__(self, number, name, bonus, color):
+        self.number = number
+        self.name   = name
+        self.bonus  = bonus
+        self.color  = color
+        log.debug(f'new continent: {number} - "{name}" bonus={bonus} color={color}')
+
 class Map():
     def __init__(self, name):
         self.name   = name
         self.path   = Path(maps_dir, name)
+        self._continents = {}
+        log.info(f'loading map {name}')
         self._load()
+
+    # -- map loading
+
+    def _add_continent(self, newcont):
+        self._continents[newcont.number] = newcont
 
     def _load(self):
         self._load_infos()
+        self._load_continents()
+
+    def _load_continents(self):
+        with open(Path(self.path, 'continents.csv'), newline='') as csvstream:
+            csvreader = csv.reader(csvstream)
+            next(csvreader, None)  # skip the headers
+            for row in csvreader:
+                cnumber, cname, cbonus, ccolor = row
+                cname = eval(cname)     # eval to localize
+                newcont = Continent(cnumber, cname, cbonus, ccolor)
+                self._add_continent(newcont)
+        log.info(f'- loaded {len(self._continents)} continents')
 
     def _load_infos(self):
         # first, open yaml information file
@@ -41,14 +68,14 @@ class Map():
                 info = yaml.safe_load(ystream)
             except yaml.YAMLError as e:
                 log.error('error loading {yfile.as_posix()}: {e}')
-        self.title = info['title']
+        self.title = eval(info['title'])    # eval to localize
         self.author = info['author']
-
+        log.info(f'- infos loaded: "{self.title}" by {self.author}')
 
 
 def all_maps():
     subdirs = [d for d in maps_dir.glob('*')]
-    log.debug(f'found {len(subdirs)} map subdirs in {maps_dir.as_posix()}')
+    log.info(f'found {len(subdirs)} map subdirs in {maps_dir.as_posix()}')
     maps = {}
     for subdir in subdirs:
         mapname      = subdir.name
