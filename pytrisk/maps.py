@@ -40,20 +40,23 @@ class Continent():
         log.debug(f'~{self.longid}')
 
 class Country():
-    def __init__(self, mapref:weakref, idgrey:int, name:str,
+    def __init__(self, mapref:weakref, numid:int, name:str,
             continentref:weakref, coordx:int, coordy:int):
         self.mapref       = mapref
-        self.idgrey       = idgrey
+        self.numid        = numid
         self.name         = name
         self.continentref = continentref
         self.coordx       = coordx
         self.coordy       = coordy
         self.longname     = f'{self.mapref().name}-{self.continentref().name}-{self.name}'
-        log.debug(f'new country: {idgrey} - {continentref().name} - {name} @{coordx},{coordy}')
+        self.connections  = set()
+        log.debug(f'new country: {numid} - {continentref().name} - {name} @{coordx},{coordy}')
 
     def __del__(self):
         log.debug(f'~{self.longname}')
 
+    def add_connection(self, countryref:weakref):
+        self.connections.add(countryref)
 
 class Map():
     def __init__(self, name):
@@ -74,6 +77,10 @@ class Map():
         return next(filter(lambda continent: continent.numid==numid,
             self._continents), None)
 
+    def get_country_by_numid(self, numid):
+        return next(filter(lambda country: country.numid==numid,
+            self._countries), None)
+
     # -- map loading
 
     def _load(self):
@@ -84,6 +91,16 @@ class Map():
 
     def _load_connections(self):
         log.info('- loading country connections')
+        with open(Path(self.path, 'connections.csv'), newline='') as csvstream:
+            csvreader = csv.reader(csvstream)
+            next(csvreader, None)  # skip the headers
+            for row in csvreader:
+                cnumid1, cnumid2 = row
+                country1 = self.get_country_by_numid(int(cnumid1))
+                country2 = self.get_country_by_numid(int(cnumid2))
+                country1.add_connection(weakref.ref(country2))
+                country2.add_connection(weakref.ref(country1))
+                log.debug(f'new connection: {country1.name} - {country2.name}')
         log.info('- loaded country connections')
 
     def _load_continents(self):
@@ -105,10 +122,10 @@ class Map():
             csvreader = csv.reader(csvstream)
             next(csvreader, None)  # skip the headers
             for row in csvreader:
-                cidgrey, cname, ccontinentnum, coordx, coordy = row
+                cnumid, cname, ccontinentnum, coordx, coordy = row
                 cname = eval(cname)     # eval to localize
                 ccontinent = self.get_continent_by_numid(int(ccontinentnum))
-                newcountry = Country(weakref.ref(self), int(cidgrey),
+                newcountry = Country(weakref.ref(self), int(cnumid),
                         cname, weakref.ref(ccontinent), int(coordx),
                         int(coordy))
                 self._countries.add(newcountry)
