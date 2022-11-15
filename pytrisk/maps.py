@@ -36,8 +36,8 @@ class Continent():
         self.longid = f'{self.mapref().name}-{self.name}'
         log.debug(f'new continent: {numid} - "{name}" bonus={bonus} color={color}')
 
-    def __del__(self):
-        log.debug(f'~{self.longid}')
+#    def __del__(self):
+#        log.debug(f'~{self.longid}')
 
 class Country():
     def __init__(self, mapref:weakref, numid:int, name:str,
@@ -52,8 +52,8 @@ class Country():
         self.connections  = set()
         log.debug(f'new country: {numid} - {continentref().name} - {name} @{coordx},{coordy}')
 
-    def __del__(self):
-        log.debug(f'~{self.longname}')
+#    def __del__(self):
+#        log.debug(f'~{self.longname}')
 
     def add_connection(self, countryref:weakref):
         self.connections.add(countryref)
