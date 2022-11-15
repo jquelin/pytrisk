@@ -18,21 +18,23 @@
 from pathlib import Path
 import appdirs
 import contextlib
+import yaml
 
 # create config directory if needed
 _config_dir = Path(appdirs.user_config_dir('pytrisk'))
 _config_dir.mkdir(parents=True, exist_ok=True)
 
 # read & parse config file
-_config_file = Path(_config_dir, 'pytrisk.cfg')
-_config = {}
+_config_file = Path(_config_dir, 'pytrisk.yaml')
+try:
+    with _config_file.open() as ystream:
+        try:
+            _config = yaml.safe_load(ystream)
+        except yaml.YAMLError as e:
+            print('error loading {yfile.as_posix()}: {e}')
+except FileNotFoundError:
+    _config = {}
 
-with contextlib.suppress(FileNotFoundError):
-    with _config_file.open() as file:
-        for line in file.readlines():
-            line = line.rstrip()
-            (key, value) = line.split('=', 1)
-            _config[key] = value
 
 def get(key, default=None):
     if key in _config:
@@ -42,9 +44,6 @@ def get(key, default=None):
 def set(key, value):
     # store new value
     _config[key] = value
-    # then write file for persistence
-    with _config_file.open('w') as file:
-        for key, value in _config.items():
-            line = f'{key}={value}\n'
-            print(line)
-            file.write(line)
+    # overwrite config file
+    with open(_config_file, 'w') as outfile:
+        yaml.dump(_config, outfile)
