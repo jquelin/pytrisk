@@ -20,26 +20,40 @@ from pytrisk.logging import log
 
 import csv
 from pathlib import Path
+import weakref
 import yaml
 
 maps_dir = Path(Path(__file__).parent, 'maps')
 
 class Continent():
-    def __init__(self, number, name, bonus, color):
-        self.number = number
+    def __init__(self, mapref:weakref, numid:int, name:str, bonus:int,
+            color:str):
+        self.mapref = mapref
+        self.numid  = numid
         self.name   = name
         self.bonus  = bonus
         self.color  = color
-        log.debug(f'new continent: {number} - "{name}" bonus={bonus} color={color}')
+        self.longid = f'{self.mapref().name}-{self.name}'
+        log.debug(f'new continent: {numid} - "{name}" bonus={bonus} color={color}')
+
+    def __del__(self):
+        log.debug(f'~{self.longid}')
 
 class Country():
-    def __init__(self, idgrey, name, continent, coordx, coordy):
-        self.idgrey    = idgrey
-        self.name      = name
-        self.continent = continent
-        self.coordx    = coordx
-        self.coordy    = coordy
-        log.debug(f'new country: {idgrey} - {continent.name} - {name} @{coordx},{coordy}')
+    def __init__(self, mapref:weakref, idgrey:int, name:str,
+            continentref:weakref, coordx:int, coordy:int):
+        self.mapref       = mapref
+        self.idgrey       = idgrey
+        self.name         = name
+        self.continentref = continentref
+        self.coordx       = coordx
+        self.coordy       = coordy
+        self.longname     = f'{self.mapref().name}-{self.continentref().name}-{self.name}'
+        log.debug(f'new country: {idgrey} - {continentref().name} - {name} @{coordx},{coordy}')
+
+    def __del__(self):
+        log.debug(f'~{self.longname}')
+
 
 class Map():
     def __init__(self, name):
@@ -50,10 +64,14 @@ class Map():
         log.info(f'loading map {name}')
         self._load()
 
+    def __del__(self):
+        log.debug(f'~{self.name}')
+
+
     # -- finders
 
     def get_continent_by_numid(self, numid):
-        return next(filter(lambda continent: continent.number==numid,
+        return next(filter(lambda continent: continent.numid==numid,
             self._continents), None)
 
     # -- map loading
@@ -74,9 +92,10 @@ class Map():
             csvreader = csv.reader(csvstream)
             next(csvreader, None)  # skip the headers
             for row in csvreader:
-                cnumber, cname, cbonus, ccolor = row
+                cnumid, cname, cbonus, ccolor = row
                 cname = eval(cname)     # eval to localize
-                newcont = Continent(cnumber, cname, cbonus, ccolor)
+                newcont = Continent(weakref.ref(self), int(cnumid),
+                        cname, int(cbonus), ccolor)
                 self._continents.add(newcont)
         log.info(f'- loaded {len(self._continents)} continents')
 
@@ -86,11 +105,12 @@ class Map():
             csvreader = csv.reader(csvstream)
             next(csvreader, None)  # skip the headers
             for row in csvreader:
-                cnumber, cname, ccontinentnum, coordx, coordy = row
+                cidgrey, cname, ccontinentnum, coordx, coordy = row
                 cname = eval(cname)     # eval to localize
-                ccontinent = self.get_continent_by_numid(ccontinentnum)
-                newcountry = Country(int(cnumber), cname, ccontinent,
-                        int(coordx), int(coordy))
+                ccontinent = self.get_continent_by_numid(int(ccontinentnum))
+                newcountry = Country(weakref.ref(self), int(cidgrey),
+                        cname, weakref.ref(ccontinent), int(coordx),
+                        int(coordy))
                 self._countries.add(newcountry)
         log.info(f'- loaded {len(self._countries)} countries')
 
