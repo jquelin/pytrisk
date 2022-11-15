@@ -16,11 +16,10 @@
 #
 
 from pytrisk import config
-from pytrisk import controller
-from pytrisk import gui
+from pytrisk import maps
+from pytrisk.logging import log
 
-if __name__ == '__main__':
-    controller  = controller.Controller()
-    main_window = gui.MainWindow(controller)
-    controller.main_window = main_window
-    main_window.run()
+
+class Controller():
+    def __init__(self):
+        pass
