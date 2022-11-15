@@ -45,10 +45,16 @@ class Map():
     def __init__(self, name):
         self.name   = name
         self.path   = Path(maps_dir, name)
-        self._continents = {}
-        self._countries  = {}
+        self._continents = set()
+        self._countries  = set()
         log.info(f'loading map {name}')
         self._load()
+
+    # -- finders
+
+    def get_continent_by_numid(self, numid):
+        return next(filter(lambda continent: continent.number==numid,
+            self._continents), None)
 
     # -- map loading
 
@@ -56,6 +62,11 @@ class Map():
         self._load_infos()
         self._load_continents()
         self._load_countries()
+        self._load_connections()
+
+    def _load_connections(self):
+        log.info('- loading country connections')
+        log.info('- loaded country connections')
 
     def _load_continents(self):
         log.info('- loading continents')
@@ -66,7 +77,8 @@ class Map():
                 cnumber, cname, cbonus, ccolor = row
                 cname = eval(cname)     # eval to localize
                 newcont = Continent(cnumber, cname, cbonus, ccolor)
-                self._continents[cnumber] = newcont
+                self._continents.add(newcont)
+        log.info(f'- loaded {len(self._continents)} continents')
 
     def _load_countries(self):
         log.info('- loading countries')
@@ -76,14 +88,14 @@ class Map():
             for row in csvreader:
                 cnumber, cname, ccontinentnum, coordx, coordy = row
                 cname = eval(cname)     # eval to localize
-                ccontinent = self._continents[ccontinentnum]
+                ccontinent = self.get_continent_by_numid(ccontinentnum)
                 newcountry = Country(int(cnumber), cname, ccontinent,
                         int(coordx), int(coordy))
-                self._countries[cnumber] = newcountry
-        log.info(f'- loaded {len(self._countries)} continents')
+                self._countries.add(newcountry)
+        log.info(f'- loaded {len(self._countries)} countries')
 
     def _load_infos(self):
-        # first, open yaml information file
+        log.info('- loading general information')
         yfile = Path(self.path, 'info.yaml')
         with yfile.open() as ystream:
             try:
