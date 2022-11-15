@@ -18,6 +18,7 @@
 import logging
 import colorlog
 
+from pytrisk import config
 
 colors = colorlog.default_log_colors
 colors['DEBUG'] = 'blue'
@@ -31,5 +32,6 @@ handler = colorlog.StreamHandler()
 handler.setFormatter(formatter)
 log = colorlog.getLogger('pytrisk')
 log.addHandler(handler)
-log.setLevel(logging.DEBUG)
+_log_level = config.get('logging.level', logging.DEBUG)
+log.setLevel(_log_level)
 
