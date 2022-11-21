@@ -46,14 +46,17 @@ class Canvas(Gtk.ScrolledWindow):
 
         self.origw  = self.original.get_width()
         self.origh = self.original.get_height()
-        self.origdims = float(self.origw) / self.origh
 
         self.curw = 1
         self.curh = 1
 
         self.connect('size-allocate', self.on_resize)
+        self.connect('button-press-event', self._on_click)
 
 
+
+    def _on_click(self, event):
+        print(f'{event.x}x{event.y}')
 
     def on_resize(self, widget, rect):
         neww = rect.width
@@ -62,19 +65,10 @@ class Canvas(Gtk.ScrolledWindow):
             log.info(f'newsize {neww}x{newh}')
             self.curw = neww
             self.curh = newh
-            newdims = float(neww)/newh
-            if newdims > self.origdims:
-                self.pixbuf = self.original.scale_simple(
-                    self.origdims * newh,
-                    newh,
-                    GdkPixbuf.InterpType.BILINEAR
-                )
-            else:
-                self.pixbuf = self.original.scale_simple(
-                    neww,
-                    neww / self.origdims,
-                    GdkPixbuf.InterpType.BILINEAR
-                )
+            self.pixbuf = self.original.scale_simple(
+                neww, newh,
+                GdkPixbuf.InterpType.BILINEAR
+            )
             self.image.set_from_pixbuf(self.pixbuf)
 
 
@@ -149,6 +143,7 @@ class MainWindow(Gtk.Window):
 #        self.widgets.image = wimg
         self.canvas = Canvas(self.controller.map.background)
         self.widgets.vbox.pack_start(self.canvas, expand=True, fill=True, padding=0)
+        self.canvas.connect('button-press-event', self._on_canvas_clicked)
 
 
         self.add(self.widgets.vbox)
@@ -157,29 +152,6 @@ class MainWindow(Gtk.Window):
 #        self.maximize()
         self.show_all()
 
-    def on_resize(self, widget, rect):
-        allocation = widget.get_allocation()
-        log.info(f'new size       {rect.height}x{rect.width}')
-        log.info(f'new allocation {allocation.height}x{allocation.width}')
-
-        if self.temp_height != rect.height or self.temp_width != rect.width:
-            log.warning(f'new size {rect.height}x{rect.width}')
-            self.temp_height = rect.height
-            self.temp_width = rect.width
-            a = self.image.resize((rect.width, rect.height), Image.Resampling.BILINEAR)
-            data = a.tobytes()
-            w, h = a.size
-            data = GLib.Bytes.new(data)
-            self.pixbuf = GdkPixbuf.Pixbuf.new_from_bytes(data, GdkPixbuf.Colorspace.RGB,
-                False, 8, w, h, w * 3)
-#            pixbuf = self.pixbuf.scale_simple(allocation.width, allocation.height, Gdk.INTERP_BILINEAR)
-            widget.set_from_pixbuf(self.pixbuf)
-#            widget.show()
-#        cr = widget.window.cairo_create()
-#        cr.set_line_width(2)
-#        cr.set_source_rgb(0,0,1)
-#        cr.rectangle(10,10,100,100)
-#        cr.stroke()
 
     #
     def run(self):
@@ -254,6 +226,9 @@ class MainWindow(Gtk.Window):
 
     def _on_button_clicked(self, widget):
         print(config.get('foo.bar', 123))
+
+    def _on_canvas_clicked(self, widget):
+        print('canvas clicked')
 
 #        ib = Gtk.InfoBar()
 #        l = Gtk.Label(label='ready?')
