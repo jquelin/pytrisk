@@ -32,8 +32,10 @@ class Canvas(Gtk.ScrolledWindow):
     def __init__(self, path):
         super().__init__()
 
+        evbox = Gtk.EventBox()
         self.image = Gtk.Image()
-        self.add(self.image)
+        evbox.add(self.image)
+        self.add(evbox)
 
         self.loader = GdkPixbuf.PixbufLoader()
         with  open(path, 'rb') as f:
@@ -51,12 +53,8 @@ class Canvas(Gtk.ScrolledWindow):
         self.curh = 1
 
         self.connect('size-allocate', self.on_resize)
-        self.connect('button-press-event', self._on_click)
 
 
-
-    def _on_click(self, event):
-        print(f'{event.x}x{event.y}')
 
     def on_resize(self, widget, rect):
         neww = rect.width
@@ -227,8 +225,8 @@ class MainWindow(Gtk.Window):
     def _on_button_clicked(self, widget):
         print(config.get('foo.bar', 123))
 
-    def _on_canvas_clicked(self, widget):
-        print('canvas clicked')
+    def _on_canvas_clicked(self, widget, ev):
+        print(f'canvas clicked {ev.x}x{ev.y}')
 
 #        ib = Gtk.InfoBar()
 #        l = Gtk.Label(label='ready?')
