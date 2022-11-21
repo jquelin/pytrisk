@@ -28,6 +28,57 @@ from gi.repository import Gtk
 import types
 from PIL import Image
 
+class Canvas(Gtk.ScrolledWindow):
+    def __init__(self, path):
+        super().__init__()
+
+        self.image = Gtk.Image()
+        self.add(self.image)
+
+        self.loader = GdkPixbuf.PixbufLoader()
+        with  open(path, 'rb') as f:
+            imgdata = f.read()
+        self.loader.write(imgdata)
+        self.loader.close()
+
+        self.original = self.loader.get_pixbuf()
+        self.image.set_from_pixbuf(self.original)
+
+        self.origw  = self.original.get_width()
+        self.origh = self.original.get_height()
+        self.origdims = float(self.origw) / self.origh
+
+        self.curw = 1
+        self.curh = 1
+
+        self.connect('size-allocate', self.on_resize)
+
+
+
+    def on_resize(self, widget, rect):
+        neww = rect.width
+        newh = rect.height
+        if self.curw != neww or self.curh != newh:
+            log.info(f'newsize {neww}x{newh}')
+            self.curw = neww
+            self.curh = newh
+            newdims = float(neww)/newh
+            if newdims > self.origdims:
+                self.pixbuf = self.original.scale_simple(
+                    self.origdims * newh,
+                    newh,
+                    GdkPixbuf.InterpType.BILINEAR
+                )
+            else:
+                self.pixbuf = self.original.scale_simple(
+                    neww,
+                    neww / self.origdims,
+                    GdkPixbuf.InterpType.BILINEAR
+                )
+            self.image.set_from_pixbuf(self.pixbuf)
+
+
+
 class MainWindow(Gtk.Window):
     def __init__(self, controller):
         super().__init__(title="pytrisk")
@@ -51,7 +102,7 @@ class MainWindow(Gtk.Window):
                             Gdk.keyval_from_name("o"),
                             Gdk.ModifierType.CONTROL_MASK,
                             Gtk.AccelFlags.VISIBLE)
-        self.widgets.vbox.add(button)
+        self.widgets.vbox.pack_start(button, expand=False, fill=True, padding=5)
 #        grid.attach(button, 0, 1, 1, 1)
 #        label = Gtk.Label(label="Hello World", angle=25,
 #                halign=Gtk.Align.END)
@@ -80,24 +131,24 @@ class MainWindow(Gtk.Window):
 #                            Gtk.AccelFlags.VISIBLE)
 
 
-        im = Image.open(self.controller.map.background)
-#        import numpy
-#        arr = numpy.array(im)
-#        pixbuf = Gdk.pixbuf_new_from_array(arr, gtk.gdk.COLORSPACE_RGB, 8)
-        data = im.tobytes()
-        w, h = im.size
-        data = GLib.Bytes.new(data)
-#        self.pixbuf = im.get_pixbuf()
-        self.pixbuf = GdkPixbuf.Pixbuf.new_from_bytes(data, GdkPixbuf.Colorspace.RGB,
-            False, 8, w, h, w * 3)
-        self.image = im
+#        im = Image.open(self.controller.map.background)
+#        data = im.tobytes()
+#        w, h = im.size
+#        data = GLib.Bytes.new(data)
+#        self.pixbuf = GdkPixbuf.Pixbuf.new_from_bytes(data, GdkPixbuf.Colorspace.RGB,
+#            False, 8, w, h, w * 3)
+#        self.image = im
+#
+#        wimg = Gtk.Image().new_from_pixbuf(self.pixbuf)
+#        self.widgets.vbox.pack_start(wimg, expand=True, fill=True, padding=0)
+#        self.temp_height = 0
+#        self.temp_width = 0
+#        wimg.connect('size-allocate', self.on_resize)
+#        wimg.connect('configure-event', self.on_resize)
 
-        wimg = Gtk.Image().new_from_pixbuf(self.pixbuf)
-        self.widgets.vbox.pack_start(wimg, expand=True, fill=True, padding=0)
-        self.temp_height = 0
-        self.temp_width = 0
-        wimg.connect('draw', self._redraw_image)
-        self.widgets.image = wimg
+#        self.widgets.image = wimg
+        self.canvas = Canvas(self.controller.map.background)
+        self.widgets.vbox.pack_start(self.canvas, expand=True, fill=True, padding=0)
 
 
         self.add(self.widgets.vbox)
@@ -106,13 +157,16 @@ class MainWindow(Gtk.Window):
 #        self.maximize()
         self.show_all()
 
-    def _redraw_image(self, widget, event):
+    def on_resize(self, widget, rect):
         allocation = widget.get_allocation()
-        if self.temp_height != allocation.height or self.temp_width != allocation.width:
-            log.warning(f'{allocation.height}x{allocation.width}')
-            self.temp_height = allocation.height
-            self.temp_width = allocation.width
-            a = self.image.resize((allocation.width, allocation.height), Image.Resampling.BILINEAR)
+        log.info(f'new size       {rect.height}x{rect.width}')
+        log.info(f'new allocation {allocation.height}x{allocation.width}')
+
+        if self.temp_height != rect.height or self.temp_width != rect.width:
+            log.warning(f'new size {rect.height}x{rect.width}')
+            self.temp_height = rect.height
+            self.temp_width = rect.width
+            a = self.image.resize((rect.width, rect.height), Image.Resampling.BILINEAR)
             data = a.tobytes()
             w, h = a.size
             data = GLib.Bytes.new(data)
