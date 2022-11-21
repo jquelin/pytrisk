@@ -22,4 +22,6 @@ from pytrisk.logging import log
 
 class Controller():
     def __init__(self):
-        pass
+        self.maps = maps.all_maps()
+        log.info(self.maps)
+        self.map = self.maps["risk"]

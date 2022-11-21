@@ -17,12 +17,16 @@
 
 from pytrisk.locale import _
 from pytrisk.logging import log
+from pytrisk import config
 
 import gi
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk
 from gi.repository import Gdk
+from gi.repository import GdkPixbuf
+from gi.repository import GLib
+from gi.repository import Gtk
 import types
+from PIL import Image
 
 class MainWindow(Gtk.Window):
     def __init__(self, controller):
@@ -52,9 +56,12 @@ class MainWindow(Gtk.Window):
 #        label = Gtk.Label(label="Hello World", angle=25,
 #                halign=Gtk.Align.END)
 #        vbox.add(label)
-        self.add(self.widgets.vbox)
 #        self.vbox = vbox
 
+#        area = Gtk.DrawingArea()
+#        area.connect("draw", self.expose)
+#        area.show()
+#        self.widgets.vbox.add(area)
 
 #        submenu_file = Gtk.MenuButton(label='File')
 #        menuitem_open = Gtk.MenuItem(label="Open")
@@ -72,8 +79,53 @@ class MainWindow(Gtk.Window):
 #                            Gdk.ModifierType.CONTROL_MASK,
 #                            Gtk.AccelFlags.VISIBLE)
 
+
+        im = Image.open(self.controller.map.background)
+#        import numpy
+#        arr = numpy.array(im)
+#        pixbuf = Gdk.pixbuf_new_from_array(arr, gtk.gdk.COLORSPACE_RGB, 8)
+        data = im.tobytes()
+        w, h = im.size
+        data = GLib.Bytes.new(data)
+#        self.pixbuf = im.get_pixbuf()
+        self.pixbuf = GdkPixbuf.Pixbuf.new_from_bytes(data, GdkPixbuf.Colorspace.RGB,
+            False, 8, w, h, w * 3)
+        self.image = im
+
+        wimg = Gtk.Image().new_from_pixbuf(self.pixbuf)
+        self.widgets.vbox.pack_start(wimg, expand=True, fill=True, padding=0)
+        self.temp_height = 0
+        self.temp_width = 0
+        wimg.connect('draw', self._redraw_image)
+        self.widgets.image = wimg
+
+
+        self.add(self.widgets.vbox)
         self.connect("destroy", Gtk.main_quit)
+        self.set_size_request(400, 250)
+#        self.maximize()
         self.show_all()
+
+    def _redraw_image(self, widget, event):
+        allocation = widget.get_allocation()
+        if self.temp_height != allocation.height or self.temp_width != allocation.width:
+            log.warning(f'{allocation.height}x{allocation.width}')
+            self.temp_height = allocation.height
+            self.temp_width = allocation.width
+            a = self.image.resize((allocation.width, allocation.height), Image.Resampling.BILINEAR)
+            data = a.tobytes()
+            w, h = a.size
+            data = GLib.Bytes.new(data)
+            self.pixbuf = GdkPixbuf.Pixbuf.new_from_bytes(data, GdkPixbuf.Colorspace.RGB,
+                False, 8, w, h, w * 3)
+#            pixbuf = self.pixbuf.scale_simple(allocation.width, allocation.height, Gdk.INTERP_BILINEAR)
+            widget.set_from_pixbuf(self.pixbuf)
+#            widget.show()
+#        cr = widget.window.cairo_create()
+#        cr.set_line_width(2)
+#        cr.set_source_rgb(0,0,1)
+#        cr.rectangle(10,10,100,100)
+#        cr.stroke()
 
     #
     def run(self):
@@ -103,8 +155,8 @@ class MainWindow(Gtk.Window):
 
     def _build_menubar(self):
         menubar = Gtk.MenuBar()
-        menubar.set_hexpand(True)
-        self.widgets.vbox.add(menubar)
+#        menubar.set_hexpand(True)
+        self.widgets.vbox.pack_start(menubar, expand=False, fill=True, padding=0)
         self.widgets.menubar = menubar
         self.widgets.menu = {}
 
@@ -140,13 +192,14 @@ class MainWindow(Gtk.Window):
         print('close')
 
     def _on_new_game(self, widget):
-        print("add file open dialog")
+#        config.set('foo.bar', 234)
+        print(config.get('foo.bar', 123))
 
     def _on_quit(self, widget):
         Gtk.main_quit()
 
     def _on_button_clicked(self, widget):
-        print('click')
+        print(config.get('foo.bar', 123))
 
 #        ib = Gtk.InfoBar()
 #        l = Gtk.Label(label='ready?')

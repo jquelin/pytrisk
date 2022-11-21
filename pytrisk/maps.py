@@ -66,6 +66,7 @@ class Map():
         self._countries  = set()
         log.info(f'loading map {name}')
         self._load()
+        self.background = next(self.path.glob('background.*'), None)
 
     def __del__(self):
         log.debug(f'~{self.name}')
