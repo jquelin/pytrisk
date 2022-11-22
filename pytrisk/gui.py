@@ -27,6 +27,7 @@ from gi.repository import GLib
 from gi.repository import Gtk
 import types
 from PIL import Image
+from pathlib import Path
 
 
 class MainWindow(Gtk.Window):
@@ -41,17 +42,14 @@ class MainWindow(Gtk.Window):
         self.add_accel_group(self.widgets.accelgroup)
 
         self._build_menubar()
+        self._build_toolbar()
 
+        self._build_stack()
 
 
 
         button = Gtk.Button(label="Click Here")
         button.connect("clicked", self._on_button_clicked)
-        button.add_accelerator("activate", 
-                            self.widgets.accelgroup,
-                            Gdk.keyval_from_name("o"),
-                            Gdk.ModifierType.CONTROL_MASK,
-                            Gtk.AccelFlags.VISIBLE)
         self.widgets.vbox.pack_start(button, expand=False, fill=True, padding=5)
 #        grid.attach(button, 0, 1, 1, 1)
 #        label = Gtk.Label(label="Hello World", angle=25,
@@ -151,23 +149,12 @@ class MainWindow(Gtk.Window):
         self.widgets.menubar = menubar
         self.widgets.menu = {}
 
-        menus = [
-            [_('Game'), [
-                [_('New game')],
-                [_('Close')],
-                ['--'],
-                [_('Quit')],
-            ]],
-            [_('View'), [
-            ]]
-        ]
 
         menu_game = self._add_submenu(menubar, _('Game'))
         menuitems = (
-            ('new',   _('New game'), self._on_new_game, 'n'),
-            ('close', _('Close'),    self._on_close,    'w'),
-            (None,    '--',          None,              None),
-            ('quit',  _('Quit'),     self._on_quit,     'q'),
+            ('close', _('Close'),    self._on_menu_close,    'w'),
+            (None,    '--',          None,                   None),
+            ('quit',  _('Quit'),     self._on_menu_quit,     'q'),
         )
         for name, label, callback, hotkey in menuitems:
             menuitem = self._add_menuitem(menu_game, label, callback, hotkey)
@@ -176,18 +163,45 @@ class MainWindow(Gtk.Window):
 
         self.widgets.menu['game_close'].set_sensitive(False)
 
+    def _build_stack(self):
+        pass
+
+    def _build_toolbar(self):
+        toolbar = Gtk.Toolbar()
+
+        icon_quit = Gtk.Image.new_from_file(self._get_icon_by_name('exit'))
+        btn_quit  = Gtk.ToolButton.new(icon_quit, _('Quit'))
+        btn_quit.connect('clicked', self._on_menu_quit)
+        toolbar.insert(btn_quit, -1)
+        btn_quit.add_accelerator('activate', self.widgets.accelgroup,
+                    Gdk.keyval_from_name('q'),
+                    Gdk.ModifierType.CONTROL_MASK,
+                    Gtk.AccelFlags.VISIBLE)
+
+        icon_close = Gtk.Image.new_from_file(self._get_icon_by_name('close'))
+        btn_close  = Gtk.ToolButton.new(icon_close, _('Close'))
+        toolbar.insert(btn_close, -1)
+        btn_close.add_accelerator('activate', self.widgets.accelgroup,
+                    Gdk.keyval_from_name('q'),
+                    Gdk.ModifierType.CONTROL_MASK,
+                    Gtk.AccelFlags.VISIBLE)
+
+        toolbar.insert(Gtk.SeparatorToolItem(), -1)
+        self.widgets.vbox.pack_start(toolbar, fill=True, expand=False, padding=0)
+
+        self._toolbar = toolbar
+
+
+    # --
+
+    def _get_icon_by_name(self, name):
+        return Path(Path(__file__).parent, 'gui', 'icons', f'{name}.png').as_posix()
 
     # -- handlers
-
-    def _on_close(self, widget):
-        print('close')
 
     def _on_new_game(self, widget):
 #        config.set('foo.bar', 234)
         print(config.get('foo.bar', 123))
-
-    def _on_quit(self, widget):
-        Gtk.main_quit()
 
     def _on_button_clicked(self, widget):
         print(config.get('foo.bar', 123))
@@ -217,6 +231,14 @@ class MainWindow(Gtk.Window):
                 neww, newh,
                 GdkPixbuf.InterpType.BILINEAR
             )
+
+    def _on_menu_close(self, widget):
+        log.info('close')
+
+    def _on_menu_quit(self, widget):
+        log.info('quit')
+        self.destroy()
+
 
 #        ib = Gtk.InfoBar()
 #        l = Gtk.Label(label='ready?')
