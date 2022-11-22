@@ -28,48 +28,6 @@ from gi.repository import Gtk
 import types
 from PIL import Image
 
-class Canvas(Gtk.ScrolledWindow):
-    def __init__(self, path):
-        super().__init__()
-
-        evbox = Gtk.EventBox()
-        self.image = Gtk.Image()
-        evbox.add(self.image)
-        self.add(evbox)
-
-        self.loader = GdkPixbuf.PixbufLoader()
-        with  open(path, 'rb') as f:
-            imgdata = f.read()
-        self.loader.write(imgdata)
-        self.loader.close()
-
-        self.original = self.loader.get_pixbuf()
-        self.image.set_from_pixbuf(self.original)
-
-        self.origw  = self.original.get_width()
-        self.origh = self.original.get_height()
-
-        self.curw = 1
-        self.curh = 1
-
-        self.connect('size-allocate', self.on_resize)
-
-
-
-    def on_resize(self, widget, rect):
-        neww = rect.width
-        newh = rect.height
-        if self.curw != neww or self.curh != newh:
-            log.info(f'newsize {neww}x{newh}')
-            self.curw = neww
-            self.curh = newh
-            self.pixbuf = self.original.scale_simple(
-                neww, newh,
-                GdkPixbuf.InterpType.BILINEAR
-            )
-            self.image.set_from_pixbuf(self.pixbuf)
-
-
 
 class MainWindow(Gtk.Window):
     def __init__(self, controller):
@@ -139,9 +97,18 @@ class MainWindow(Gtk.Window):
 #        wimg.connect('configure-event', self.on_resize)
 
 #        self.widgets.image = wimg
-        self.canvas = Canvas(self.controller.map.background)
+        self.canvas = Gtk.DrawingArea()
+        self.canvas.set_events(Gdk.EventMask.ALL_EVENTS_MASK)
+        self.canvas.connect('draw', self._on_canvas_draw)
+        self.canvas.connect('size-allocate', self._on_canvas_resize)
+        self.canvas.connect('motion-notify-event', self._on_canvas_mouse_motion)
         self.widgets.vbox.pack_start(self.canvas, expand=True, fill=True, padding=0)
         self.canvas.connect('button-press-event', self._on_canvas_clicked)
+
+        self.orig_background = GdkPixbuf.Pixbuf.new_from_file(
+            self.controller.map.background.as_posix())
+        self.cur_width  = 1
+        self.cur_height = 1
 
 
         self.add(self.widgets.vbox)
@@ -227,6 +194,29 @@ class MainWindow(Gtk.Window):
 
     def _on_canvas_clicked(self, widget, ev):
         print(f'canvas clicked {ev.x}x{ev.y}')
+
+    def _on_canvas_draw(self, widget, context):
+        print(f'canvas redraw')
+        Gdk.cairo_set_source_pixbuf(context, self.background, 0, 0)
+        context.paint()
+
+    def _on_canvas_mouse_motion(self, widget, ev):
+        x, y = int(ev.x), int(ev.y)
+#        pixel = self.greyscale.getpixel((x,y))
+#        print(f'{x}.{y} {pixel}')
+        print(f'canvas motion {x}.{y}')
+
+    def _on_canvas_resize(self, widget, rect):
+        neww = rect.width
+        newh = rect.height
+        if self.cur_width != neww or self.cur_height != newh:
+            log.debug(f'canvas resize: from {self.cur_width}x{self.cur_height} to {neww}x{newh}')
+            self.cur_width  = neww
+            self.cur_height = newh
+            self.background = self.orig_background.scale_simple(
+                neww, newh,
+                GdkPixbuf.InterpType.BILINEAR
+            )
 
 #        ib = Gtk.InfoBar()
 #        l = Gtk.Label(label='ready?')
