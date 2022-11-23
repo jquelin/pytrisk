@@ -36,6 +36,7 @@ class MainWindow(Gtk.Window):
 
         self.controller = controller
         self.widgets = types.SimpleNamespace()
+        self._btns   = types.SimpleNamespace()
         self.widgets.vbox = Gtk.VBox()
 
         self.widgets.accelgroup = Gtk.AccelGroup()
@@ -185,9 +186,61 @@ class MainWindow(Gtk.Window):
                     Gdk.keyval_from_name('q'),
                     Gdk.ModifierType.CONTROL_MASK,
                     Gtk.AccelFlags.VISIBLE)
+        btn_close.set_sensitive(False)
+        self._btns.tb_close = btn_close
 
         toolbar.insert(Gtk.SeparatorToolItem(), -1)
         self.widgets.vbox.pack_start(toolbar, fill=True, expand=False, padding=0)
+
+        lab = Gtk.Label(label=_('Game state:'))
+        item = Gtk.ToolItem()
+        item.add(lab)
+        toolbar.insert(item, -1)
+        item.set_sensitive(False)
+
+        lab = Gtk.Label(label=_('place armies'))
+        item = Gtk.ToolItem()
+        item.add(lab)
+        toolbar.insert(item, -1)
+        item.set_sensitive(False)
+
+        icon_redo = Gtk.Image.new_from_file(self._get_icon_by_name('redo'))
+        btn_redo  = Gtk.ToolButton.new(icon_redo, _('undo'))
+        toolbar.insert(btn_redo, -1)
+        btn_redo.set_sensitive(False)
+#        self._btns.tb_close = btn_close
+
+        icon_next = Gtk.Image.new_from_file(self._get_icon_by_name('next'))
+        btn_attack  = Gtk.ToolButton.new(icon_next, _('attack'))
+        toolbar.insert(btn_attack, -1)
+        btn_attack.set_sensitive(False)
+#        self._btns.tb_close = btn_close
+
+        lab = Gtk.Label(label=_('attack'))
+        item = Gtk.ToolItem()
+        item.add(lab)
+        toolbar.insert(item, -1)
+        item.set_sensitive(False)
+
+        icon_next = Gtk.Image.new_from_file(self._get_icon_by_name('next'))
+        btn_move  = Gtk.ToolButton.new(icon_next, _('consolidate'))
+        toolbar.insert(btn_move, -1)
+        btn_move.set_sensitive(False)
+#        self._btns.tb_close = btn_close
+
+        lab = Gtk.Label(label=_('move armies'))
+        item = Gtk.ToolItem()
+        item.add(lab)
+        toolbar.insert(item, -1)
+        item.set_sensitive(False)
+
+        icon_stop = Gtk.Image.new_from_file(self._get_icon_by_name('stop'))
+        btn_stop  = Gtk.ToolButton.new(icon_stop, _('end turn'))
+        toolbar.insert(btn_stop, -1)
+        btn_stop.set_sensitive(False)
+
+
+
 
         self._toolbar = toolbar
 
