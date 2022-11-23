@@ -37,7 +37,7 @@ class MainWindow(Gtk.Window):
         self.controller = controller
         self.widgets = types.SimpleNamespace()
         self._btns   = types.SimpleNamespace()
-        self.widgets.vbox = Gtk.VBox()
+        self._vbox = Gtk.VBox()
 
         self.widgets.accelgroup = Gtk.AccelGroup()
         self.add_accel_group(self.widgets.accelgroup)
@@ -46,54 +46,13 @@ class MainWindow(Gtk.Window):
         self._build_toolbar()
 
         self._build_stack()
+        self._build_statusbar()
 
 
 
         button = Gtk.Button(label="Click Here")
         button.connect("clicked", self._on_button_clicked)
-        self.widgets.vbox.pack_start(button, expand=False, fill=True, padding=5)
-#        grid.attach(button, 0, 1, 1, 1)
-#        label = Gtk.Label(label="Hello World", angle=25,
-#                halign=Gtk.Align.END)
-#        vbox.add(label)
-#        self.vbox = vbox
-
-#        area = Gtk.DrawingArea()
-#        area.connect("draw", self.expose)
-#        area.show()
-#        self.widgets.vbox.add(area)
-
-#        submenu_file = Gtk.MenuButton(label='File')
-#        menuitem_open = Gtk.MenuItem(label="Open")
-#        submenu_file.append(menuitem_open)
-#        menuitem_open.connect('activate', self.on_menu_open)
-#
-#        menu_open.add_accelerator("activate", 
-#                            accelgroup,
-#                            Gdk.keyval_from_name("o"),
-#                            Gdk.ModifierType.CONTROL_MASK,
-#                            Gtk.AccelFlags.VISIBLE)
-#        menu_quit.add_accelerator("activate", 
-#                            accelgroup,
-#                            Gdk.keyval_from_name("q"),
-#                            Gdk.ModifierType.CONTROL_MASK,
-#                            Gtk.AccelFlags.VISIBLE)
-
-
-#        im = Image.open(self.controller.map.background)
-#        data = im.tobytes()
-#        w, h = im.size
-#        data = GLib.Bytes.new(data)
-#        self.pixbuf = GdkPixbuf.Pixbuf.new_from_bytes(data, GdkPixbuf.Colorspace.RGB,
-#            False, 8, w, h, w * 3)
-#        self.image = im
-#
-#        wimg = Gtk.Image().new_from_pixbuf(self.pixbuf)
-#        self.widgets.vbox.pack_start(wimg, expand=True, fill=True, padding=0)
-#        self.temp_height = 0
-#        self.temp_width = 0
-#        wimg.connect('size-allocate', self.on_resize)
-#        wimg.connect('configure-event', self.on_resize)
+        self._vbox.pack_start(button, expand=False, fill=True, padding=5)
 
 #        self.widgets.image = wimg
         self.canvas = Gtk.DrawingArea()
@@ -101,7 +60,7 @@ class MainWindow(Gtk.Window):
         self.canvas.connect('draw', self._on_canvas_draw)
         self.canvas.connect('size-allocate', self._on_canvas_resize)
         self.canvas.connect('motion-notify-event', self._on_canvas_mouse_motion)
-        self.widgets.vbox.pack_start(self.canvas, expand=True, fill=True, padding=0)
+        self._vbox.pack_start(self.canvas, expand=True, fill=True, padding=0)
         self.canvas.connect('button-press-event', self._on_canvas_clicked)
 
         self.orig_background = GdkPixbuf.Pixbuf.new_from_file(
@@ -110,7 +69,7 @@ class MainWindow(Gtk.Window):
         self.cur_height = 1
 
 
-        self.add(self.widgets.vbox)
+        self.add(self._vbox)
         self.connect("destroy", Gtk.main_quit)
         self.set_size_request(400, 250)
 #        self.maximize()
@@ -146,7 +105,7 @@ class MainWindow(Gtk.Window):
     def _build_menubar(self):
         menubar = Gtk.MenuBar()
 #        menubar.set_hexpand(True)
-        self.widgets.vbox.pack_start(menubar, expand=False, fill=True, padding=0)
+        self._vbox.pack_start(menubar, expand=False, fill=True, padding=0)
         self.widgets.menubar = menubar
         self.widgets.menu = {}
 
@@ -166,6 +125,11 @@ class MainWindow(Gtk.Window):
 
     def _build_stack(self):
         pass
+
+    def _build_statusbar(self):
+        statusbar = Gtk.Statusbar()
+        self._vbox.pack_start(statusbar, expand=False, fill=True, padding=0)
+        self._statusbar = statusbar
 
     def _build_toolbar(self):
         toolbar = Gtk.Toolbar()
@@ -190,7 +154,7 @@ class MainWindow(Gtk.Window):
         self._btns.tb_close = btn_close
 
         toolbar.insert(Gtk.SeparatorToolItem(), -1)
-        self.widgets.vbox.pack_start(toolbar, fill=True, expand=False, padding=0)
+        self._vbox.pack_start(toolbar, fill=True, expand=False, padding=0)
 
         lab = Gtk.Label(label=_('Game state:'))
         item = Gtk.ToolItem()
@@ -262,6 +226,12 @@ class MainWindow(Gtk.Window):
 
     def _on_button_clicked(self, widget):
         print(config.get('foo.bar', 123))
+        self._statusbar.push(0, 'clicked')
+        ib = Gtk.InfoBar()
+        ib.add(Gtk.Label(label='foo'))
+#        ib.set_show_close_button(True)
+        ib.show()
+        self._vbox.add(ib)
 
     def _on_canvas_clicked(self, widget, ev):
         print(f'canvas clicked {ev.x}x{ev.y}')
