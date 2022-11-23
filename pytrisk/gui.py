@@ -206,12 +206,14 @@ class MainWindow(Gtk.Window):
 
         icon_redo = Gtk.Image.new_from_file(self._get_icon_by_name('redo'))
         btn_redo  = Gtk.ToolButton.new(icon_redo, _('undo'))
+        btn_redo.set_tooltip_text(_('undo all'))
         toolbar.insert(btn_redo, -1)
         btn_redo.set_sensitive(False)
 #        self._btns.tb_close = btn_close
 
         icon_next = Gtk.Image.new_from_file(self._get_icon_by_name('next'))
         btn_attack  = Gtk.ToolButton.new(icon_next, _('attack'))
+        btn_attack.set_tooltip_text(_('ready for attack'))
         toolbar.insert(btn_attack, -1)
         btn_attack.set_sensitive(False)
 #        self._btns.tb_close = btn_close
@@ -224,6 +226,7 @@ class MainWindow(Gtk.Window):
 
         icon_next = Gtk.Image.new_from_file(self._get_icon_by_name('next'))
         btn_move  = Gtk.ToolButton.new(icon_next, _('consolidate'))
+        btn_move.set_tooltip_text(_('attack done'))
         toolbar.insert(btn_move, -1)
         btn_move.set_sensitive(False)
 #        self._btns.tb_close = btn_close
@@ -236,6 +239,7 @@ class MainWindow(Gtk.Window):
 
         icon_stop = Gtk.Image.new_from_file(self._get_icon_by_name('stop'))
         btn_stop  = Gtk.ToolButton.new(icon_stop, _('end turn'))
+        btn_stop.set_tooltip_text(_('end turn'))
         toolbar.insert(btn_stop, -1)
         btn_stop.set_sensitive(False)
 
