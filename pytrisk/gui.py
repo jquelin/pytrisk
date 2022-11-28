@@ -46,27 +46,14 @@ class MainWindow(Gtk.Window):
         self._build_toolbar()
 
         self._build_stack()
-        self._build_statusbar()
+#        self._build_statusbar()
 
 
 
-        button = Gtk.Button(label="Click Here")
-        button.connect("clicked", self._on_button_clicked)
-        self._vbox.pack_start(button, expand=False, fill=True, padding=5)
+#        button = Gtk.Button(label="Click Here")
+#        button.connect("clicked", self._on_button_clicked)
+#        self._vbox.pack_start(button, expand=False, fill=True, padding=5)
 
-#        self.widgets.image = wimg
-        self.canvas = Gtk.DrawingArea()
-        self.canvas.set_events(Gdk.EventMask.ALL_EVENTS_MASK)
-        self.canvas.connect('draw', self._on_canvas_draw)
-        self.canvas.connect('size-allocate', self._on_canvas_resize)
-        self.canvas.connect('motion-notify-event', self._on_canvas_mouse_motion)
-        self._vbox.pack_start(self.canvas, expand=True, fill=True, padding=0)
-        self.canvas.connect('button-press-event', self._on_canvas_clicked)
-
-        self.orig_background = GdkPixbuf.Pixbuf.new_from_file(
-            self.controller.map.background.as_posix())
-        self.cur_width  = 1
-        self.cur_height = 1
 
 
         self.add(self._vbox)
@@ -102,9 +89,22 @@ class MainWindow(Gtk.Window):
         menuitem.set_submenu(submenu)
         return submenu
 
+    def _build_canvas(self):
+        self.canvas = Gtk.DrawingArea()
+        self.canvas.set_events(Gdk.EventMask.ALL_EVENTS_MASK)
+        self.canvas.connect('draw', self._on_canvas_draw)
+        self.canvas.connect('size-allocate', self._on_canvas_resize)
+        self.canvas.connect('motion-notify-event', self._on_canvas_mouse_motion)
+        self._vbox.pack_start(self.canvas, expand=True, fill=True, padding=0)
+        self.canvas.connect('button-press-event', self._on_canvas_clicked)
+
+        self.orig_background = GdkPixbuf.Pixbuf.new_from_file(
+            self.controller.map.background.as_posix())
+        self.cur_width  = 1
+        self.cur_height = 1
+
     def _build_menubar(self):
         menubar = Gtk.MenuBar()
-#        menubar.set_hexpand(True)
         self._vbox.pack_start(menubar, expand=False, fill=True, padding=0)
         self.widgets.menubar = menubar
         self.widgets.menu = {}
@@ -124,7 +124,19 @@ class MainWindow(Gtk.Window):
         self.widgets.menu['game_close'].set_sensitive(False)
 
     def _build_stack(self):
-        pass
+        stack = Gtk.Stack()
+        vbox = Gtk.VBox()
+
+        label = Gtk.Label()
+        label.set_markup("<big>A fancy label</big>")
+        vbox.pack_start(label, expand=False, fill=True, padding=5)
+
+        button = Gtk.Button(label=_("Start game"))
+        button.connect('clicked', self._on_btn_new_game_clicked)
+        vbox.pack_start(button, expand=False, fill=True, padding=0)
+
+        stack.add_titled(vbox, 'start_screen', _("New game"))
+        self._vbox.pack_start(stack, expand=True, fill=True, padding=0)
 
     def _build_statusbar(self):
         statusbar = Gtk.Statusbar()
@@ -207,9 +219,6 @@ class MainWindow(Gtk.Window):
         toolbar.insert(btn_stop, -1)
         btn_stop.set_sensitive(False)
 
-
-
-
         self._toolbar = toolbar
 
 
@@ -224,7 +233,7 @@ class MainWindow(Gtk.Window):
 #        config.set('foo.bar', 234)
         print(config.get('foo.bar', 123))
 
-    def _on_button_clicked(self, widget):
+    def _on_btn_new_game_clicked(self, widget):
         print(config.get('foo.bar', 123))
         self._statusbar.push(0, 'clicked')
         ib = Gtk.InfoBar()
