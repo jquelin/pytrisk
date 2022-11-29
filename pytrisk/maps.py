@@ -67,6 +67,7 @@ class Map():
         log.info(f'loading map {name}')
         self._load()
         self.background = next(self.path.glob('background.*'), None)
+        self.background = self.background.as_posix()
 
     def __del__(self):
         log.debug(f'~{self.name}')
@@ -148,8 +149,9 @@ class Map():
 def all_maps():
     subdirs = [d for d in maps_dir.glob('*')]
     log.info(f'found {len(subdirs)} map subdirs in {maps_dir.as_posix()}')
-    maps = {}
+    maps = []
     for subdir in subdirs:
-        mapname      = subdir.name
-        maps[mapname] = Map(mapname)
+        mapname = subdir.name
+        newmap  = Map(mapname)
+        maps.append(newmap)
     return maps

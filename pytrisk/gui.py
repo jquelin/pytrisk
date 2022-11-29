@@ -36,7 +36,7 @@ class MainWindow(Gtk.Window):
     def __init__(self):
         super().__init__(title="pytrisk")
 
-        self.maps = maps.all_maps()
+        self.maps = sorted(maps.all_maps(), key=lambda x: x.title)
 
         self.widgets = types.SimpleNamespace()
         self._btns   = types.SimpleNamespace()
@@ -130,7 +130,7 @@ class MainWindow(Gtk.Window):
         self.canvas.connect('button-press-event', self._on_canvas_clicked)
 
         self.orig_background = GdkPixbuf.Pixbuf.new_from_file(
-            self.maps['risk'].background.as_posix())
+            self.maps[0].background)
         self.cur_width  = 1
         self.cur_height = 1
         self._stack.add_titled(self.canvas, 'current_game', _("Current game"))
@@ -141,6 +141,31 @@ class MainWindow(Gtk.Window):
         label = Gtk.Label()
         label.set_markup("<big>A fancy label</big>")
         vbox.pack_start(label, expand=False, fill=True, padding=5)
+
+        flowbox = Gtk.FlowBox(homogeneous=True)
+        vbox.pack_start(flowbox, expand=True, fill=True, padding=5)
+        for m in self.maps:
+            f = Gtk.Frame()
+            evb = Gtk.EventBox()
+            f.add(evb)
+            evb.connect('button-press-event', self._on_new_game_map_selected, m)
+            vb = Gtk.VBox()
+            evb.add(vb)
+
+            pixbuf = GdkPixbuf.Pixbuf.new_from_file(m.background)
+            neww = pixbuf.get_width() / 8
+            newh = pixbuf.get_height() / 8
+            log.debug(f'resizing to {neww}x{newh}')
+            pixbuf = pixbuf.scale_simple(neww, newh, GdkPixbuf.InterpType.BILINEAR)
+
+            img = Gtk.Image.new_from_pixbuf(pixbuf)
+            vb.pack_start(img, expand=False, fill=False, padding=5)
+
+            l = Gtk.Label(label=m.title)
+            vb.pack_start(l, expand=False, fill=False, padding=5)
+
+            flowbox.insert(f, -1)
+
 
         button = Gtk.Button(label=_("Start game"))
         button.connect('clicked', self._on_btn_new_game_clicked)
@@ -286,6 +311,12 @@ class MainWindow(Gtk.Window):
         log.info('quit')
         self.destroy()
 
+    def _on_new_game_map_selected(self, widget, ev, curmap):
+        self.selected_map = curmap
+        self.orig_background = GdkPixbuf.Pixbuf.new_from_file(
+            curmap.background)
+        self.cur_width  = 1
+        self.cur_height = 1
 
 #        ib = Gtk.InfoBar()
 #        l = Gtk.Label(label='ready?')
