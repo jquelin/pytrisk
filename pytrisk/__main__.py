@@ -17,6 +17,9 @@
 
 from pytrisk import gui
 
-if __name__ == '__main__':
+def run():
     main_window = gui.MainWindow()
     main_window.run()
+
+if __name__ == '__main__':
+    run()
