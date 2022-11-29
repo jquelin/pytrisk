@@ -15,12 +15,8 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-from pytrisk import config
-from pytrisk import controller
 from pytrisk import gui
 
 if __name__ == '__main__':
-    controller  = controller.Controller()
-    main_window = gui.MainWindow(controller)
-    controller.main_window = main_window
+    main_window = gui.MainWindow()
     main_window.run()

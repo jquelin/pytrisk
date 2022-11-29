@@ -15,9 +15,11 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
+from pytrisk import config  # should go first
+
 from pytrisk.locale import _
 from pytrisk.logging import log
-from pytrisk import config
+from pytrisk import maps
 
 import gi
 gi.require_version("Gtk", "3.0")
@@ -31,10 +33,11 @@ from pathlib import Path
 
 
 class MainWindow(Gtk.Window):
-    def __init__(self, controller):
+    def __init__(self):
         super().__init__(title="pytrisk")
 
-        self.controller = controller
+        self.maps = maps.all_maps()
+
         self.widgets = types.SimpleNamespace()
         self._btns   = types.SimpleNamespace()
         self._vbox = Gtk.VBox()
@@ -127,7 +130,7 @@ class MainWindow(Gtk.Window):
         self.canvas.connect('button-press-event', self._on_canvas_clicked)
 
         self.orig_background = GdkPixbuf.Pixbuf.new_from_file(
-            self.controller.map.background.as_posix())
+            self.maps['risk'].background.as_posix())
         self.cur_width  = 1
         self.cur_height = 1
         self._stack.add_titled(self.canvas, 'current_game', _("Current game"))
