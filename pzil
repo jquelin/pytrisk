@@ -108,6 +108,7 @@ case $1 in
         log "** $1"
         find pytrisk -name '*.csv' -o -name '*.py' -o -name '*.yaml'| \
             xargs pygettext.py -p $localedir
+        echo "you can run poedit now"
         exit
         ;;
 
