@@ -1,3 +1,8 @@
+0.1.0 2022-11-29
+
+
+- initial gui
+
 0.0.7 2022-11-09
 
 - logging framework
