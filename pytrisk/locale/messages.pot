@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-15 19:36+0100\n"
+"POT-Creation-Date: 2022-11-29 14:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,31 +15,75 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: pytrisk/gui.py:112 pytrisk/gui.py:122
+#: pytrisk/gui.py:102
 msgid "Game"
 msgstr ""
 
-#: pytrisk/gui.py:113 pytrisk/gui.py:124
-msgid "New game"
-msgstr ""
-
-#: pytrisk/gui.py:114 pytrisk/gui.py:125
+#: pytrisk/gui.py:104 pytrisk/gui.py:194
 msgid "Close"
 msgstr ""
 
-#: pytrisk/gui.py:116 pytrisk/gui.py:127
+#: pytrisk/gui.py:106 pytrisk/gui.py:185
 msgid "Quit"
 msgstr ""
 
-#: pytrisk/gui.py:118
-msgid "View"
+#: pytrisk/gui.py:136
+msgid "Current game"
+msgstr ""
+
+#: pytrisk/gui.py:170
+msgid "Start game"
+msgstr ""
+
+#: pytrisk/gui.py:174
+msgid "New game"
+msgstr ""
+
+#: pytrisk/gui.py:206
+msgid "Game state:"
+msgstr ""
+
+#: pytrisk/gui.py:212
+msgid "place armies"
+msgstr ""
+
+#: pytrisk/gui.py:219
+msgid "undo"
+msgstr ""
+
+#: pytrisk/gui.py:220
+msgid "undo all"
+msgstr ""
+
+#: pytrisk/gui.py:226 pytrisk/gui.py:232
+msgid "attack"
+msgstr ""
+
+#: pytrisk/gui.py:227
+msgid "ready for attack"
+msgstr ""
+
+#: pytrisk/gui.py:239
+msgid "consolidate"
+msgstr ""
+
+#: pytrisk/gui.py:240
+msgid "attack done"
+msgstr ""
+
+#: pytrisk/gui.py:245
+msgid "move armies"
+msgstr ""
+
+#: pytrisk/gui.py:252 pytrisk/gui.py:253
+msgid "end turn"
 msgstr ""
 
 #: pytrisk/maps/ameroki/continents.csv:2
 msgid "Azio"
 msgstr ""
 
-#: pytrisk/maps/ameroki/continents.csv:3
+#: pytrisk/maps/ameroki/continents.csv:3 pytrisk/maps/ameroki/info.yaml:1
 msgid "Ameroki"
 msgstr ""
 
@@ -232,10 +276,6 @@ msgstr ""
 
 #: pytrisk/maps/ameroki/countries.csv:43
 msgid "Heal"
-msgstr ""
-
-#: pytrisk/maps/ameroki/info.yaml:1
-msgid "Ameroki Map"
 msgstr ""
 
 #: pytrisk/maps/france/continents.csv:2
@@ -1569,7 +1609,7 @@ msgid "Akara"
 msgstr ""
 
 #: pytrisk/maps/risk2210/info.yaml:1
-msgid "Risk 2210 Map"
+msgid "Risk 2210"
 msgstr ""
 
 #: pytrisk/maps/roman_empire/continents.csv:4
@@ -1737,6 +1777,6 @@ msgid "Sardinia"
 msgstr ""
 
 #: pytrisk/maps/roman_empire/info.yaml:1
-msgid "Roman Empire Map"
+msgid "Roman Empire"
 msgstr ""
 
