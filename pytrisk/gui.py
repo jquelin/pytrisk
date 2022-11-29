@@ -111,6 +111,8 @@ class MainWindow(Gtk.Window):
 
     def _build_stack(self):
         stack = Gtk.Stack()
+        stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
+        stack.set_transition_duration(1000)
         self._vbox.pack_start(stack, expand=True, fill=True, padding=0)
         self._stack = stack
         self._build_stack_pane_new_game()
