@@ -15,11 +15,11 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-from pytrisk import gui
+import pytrisk.gui.base
 
 def run():
-    main_window = gui.MainWindow()
-    main_window.run()
+    main_window = pytrisk.gui.base.MainWindow()
+    main_window.mainloop()
 
 if __name__ == '__main__':
     run()
