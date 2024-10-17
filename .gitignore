@@ -1,5 +1,5 @@
-# avoid version control files
-.git
+# avoid virtual env
+.venv-pytrisk
 
 # avoid temp and backup files
 *~
