@@ -78,8 +78,15 @@ class MainWindow(Tk):
 
     def _build_actions(self):
         self.actions = types.SimpleNamespace()
-        self.actions.quit = Action(self, lambda ev: self.do_quit())
-        self.actions.quit.binding_add('<Control-q>')
+
+        action = Action(self, lambda ev: self.do_quit())
+        action.binding_add('<Control-q>')
+        self.actions.quit = action
+
+        action = Action(self, lambda ev: self.do_close())
+        action.binding_add('<Control-w>')
+        action.disable()
+        self.actions.close = action
 
 
     def _build_toolbar(self):
@@ -92,11 +99,19 @@ class MainWindow(Tk):
         but_quit.pack(side=LEFT)
         self.actions.quit.widget_add(but_quit)
 
+        icon = self._get_icon_by_name('close')
+        but_close = Button(toolbar, image=icon, command=self.do_close)
+        but_close.pack(side=LEFT)
+        self.actions.close.widget_add(but_close)
+
         sep = ttk.Separator(toolbar, orient=VERTICAL)
         sep.pack(side=LEFT, fill='y', padx=4, pady=4)
 
 
     # -- gui callbacks
+
+    def do_close(self):
+        pass
 
     def do_quit(self):
         self.destroy()
