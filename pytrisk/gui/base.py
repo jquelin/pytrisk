@@ -39,6 +39,7 @@ class MainWindow(Tk):
         self.icons = {}
 
         self.title('pytrisk')
+        self._build_actions()
         self._build_toolbar()
 
 
@@ -75,25 +76,30 @@ class MainWindow(Tk):
 
     # -- gui construction
 
+    def _build_actions(self):
+        self.actions = types.SimpleNamespace()
+        self.actions.quit = Action(self, lambda ev: self.do_quit())
+        self.actions.quit.binding_add('<Control-q>')
+
+
     def _build_toolbar(self):
         toolbar = Frame(self)
         self.toolbar = toolbar
         toolbar.pack(side=TOP)
 
-        b1 = Button(toolbar, text='Quit')
-        b1.pack(side=LEFT)
-        sep = ttk.Separator(toolbar, orient=VERTICAL)
-        sep.pack(side=LEFT, fill='y', padx=4, pady=4)
-        b2 = Button(toolbar, text='Test')
-        b2.pack(side=LEFT)
-
         icon = self._get_icon_by_name('exit')
-        but_quit = Button(toolbar, image=icon)
+        but_quit = Button(toolbar, image=icon, command=self.do_quit)
         but_quit.pack(side=LEFT)
+        self.actions.quit.widget_add(but_quit)
 
         sep = ttk.Separator(toolbar, orient=VERTICAL)
         sep.pack(side=LEFT, fill='y', padx=4, pady=4)
 
+
+    # -- gui callbacks
+
+    def do_quit(self):
+        self.destroy()
 
     # -- old gtk
 
