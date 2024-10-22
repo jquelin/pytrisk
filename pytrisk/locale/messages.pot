@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-11-29 14:46+0100\n"
+"POT-Creation-Date: 2022-12-10 13:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,1768 +15,1782 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: pytrisk/gui.py:102
+#: ./pytrisk/gui.py:102
 msgid "Game"
 msgstr ""
 
-#: pytrisk/gui.py:104 pytrisk/gui.py:194
+#: ./pytrisk/gui.py:104 ./pytrisk/gui.py:194
 msgid "Close"
 msgstr ""
 
-#: pytrisk/gui.py:106 pytrisk/gui.py:185
+#: ./pytrisk/gui.py:106 ./pytrisk/gui.py:185
 msgid "Quit"
 msgstr ""
 
-#: pytrisk/gui.py:136
+#: ./pytrisk/gui.py:136
 msgid "Current game"
 msgstr ""
 
-#: pytrisk/gui.py:170
+#: ./pytrisk/gui.py:170
 msgid "Start game"
 msgstr ""
 
-#: pytrisk/gui.py:174
+#: ./pytrisk/gui.py:174
 msgid "New game"
 msgstr ""
 
-#: pytrisk/gui.py:206
+#: ./pytrisk/gui.py:206
 msgid "Game state:"
 msgstr ""
 
-#: pytrisk/gui.py:212
+#: ./pytrisk/gui.py:212
 msgid "place armies"
 msgstr ""
 
-#: pytrisk/gui.py:219
+#: ./pytrisk/gui.py:219
 msgid "undo"
 msgstr ""
 
-#: pytrisk/gui.py:220
+#: ./pytrisk/gui.py:220
 msgid "undo all"
 msgstr ""
 
-#: pytrisk/gui.py:226 pytrisk/gui.py:232
+#: ./pytrisk/gui.py:226 ./pytrisk/gui.py:232
 msgid "attack"
 msgstr ""
 
-#: pytrisk/gui.py:227
+#: ./pytrisk/gui.py:227
 msgid "ready for attack"
 msgstr ""
 
-#: pytrisk/gui.py:239
+#: ./pytrisk/gui.py:239
 msgid "consolidate"
 msgstr ""
 
-#: pytrisk/gui.py:240
+#: ./pytrisk/gui.py:240
 msgid "attack done"
 msgstr ""
 
-#: pytrisk/gui.py:245
+#: ./pytrisk/gui.py:245
 msgid "move armies"
 msgstr ""
 
-#: pytrisk/gui.py:252 pytrisk/gui.py:253
+#: ./pytrisk/gui.py:252 ./pytrisk/gui.py:253
 msgid "end turn"
 msgstr ""
 
-#: pytrisk/maps/ameroki/continents.csv:2
+#: ./pytrisk/maps/ameroki/continents.csv:2
 msgid "Azio"
 msgstr ""
 
-#: pytrisk/maps/ameroki/continents.csv:3 pytrisk/maps/ameroki/info.yaml:1
+#: ./pytrisk/maps/ameroki/continents.csv:3 ./pytrisk/maps/ameroki/info.yaml:1
 msgid "Ameroki"
 msgstr ""
 
-#: pytrisk/maps/ameroki/continents.csv:4
+#: ./pytrisk/maps/ameroki/continents.csv:4
 msgid "Utropa"
 msgstr ""
 
-#: pytrisk/maps/ameroki/continents.csv:5
+#: ./pytrisk/maps/ameroki/continents.csv:5
 msgid "Amerpoll"
 msgstr ""
 
-#: pytrisk/maps/ameroki/continents.csv:6
+#: ./pytrisk/maps/ameroki/continents.csv:6
 msgid "Afrori"
 msgstr ""
 
-#: pytrisk/maps/ameroki/continents.csv:7
+#: ./pytrisk/maps/ameroki/continents.csv:7
 msgid "Ulstrailia"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:2 pytrisk/maps/risk/countries.csv:28
-#: pytrisk/maps/risk2210/countries.csv:28
+#: ./pytrisk/maps/ameroki/countries.csv:2 ./pytrisk/maps/risk/countries.csv:28
+#: ./pytrisk/maps/risk2210/countries.csv:28
 msgid "Siberia"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:3
+#: ./pytrisk/maps/ameroki/countries.csv:3
 msgid "Worrick"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:4
+#: ./pytrisk/maps/ameroki/countries.csv:4
 msgid "Yazteck"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:5
+#: ./pytrisk/maps/ameroki/countries.csv:5
 msgid "Kongrolo"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:6 pytrisk/maps/risk/countries.csv:30
+#: ./pytrisk/maps/ameroki/countries.csv:6 ./pytrisk/maps/risk/countries.csv:30
 msgid "China"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:7 pytrisk/maps/risk/countries.csv:32
-#: pytrisk/maps/risk2210/countries.csv:32
+#: ./pytrisk/maps/ameroki/countries.csv:7 ./pytrisk/maps/risk/countries.csv:32
+#: ./pytrisk/maps/risk2210/countries.csv:32
 msgid "Middle East"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:8
+#: ./pytrisk/maps/ameroki/countries.csv:8
 msgid "Sluci"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:9
+#: ./pytrisk/maps/ameroki/countries.csv:9
 msgid "Afganistan"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:10
+#: ./pytrisk/maps/ameroki/countries.csv:10
 msgid "Kancheria"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:11 pytrisk/maps/risk/countries.csv:33
+#: ./pytrisk/maps/ameroki/countries.csv:11
+#: ./pytrisk/maps/risk/countries.csv:33
 msgid "India"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:12 pytrisk/maps/risk/countries.csv:38
-#: pytrisk/maps/risk2210/countries.csv:38
+#: ./pytrisk/maps/ameroki/countries.csv:12
+#: ./pytrisk/maps/risk/countries.csv:38
+#: ./pytrisk/maps/risk2210/countries.csv:38
 msgid "Japan"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:13
+#: ./pytrisk/maps/ameroki/countries.csv:13
 msgid "New Guinia"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:14
+#: ./pytrisk/maps/ameroki/countries.csv:14
 msgid "Western Ulstrailia"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:15
+#: ./pytrisk/maps/ameroki/countries.csv:15
 msgid "Eastern Ulstarilia"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:16
+#: ./pytrisk/maps/ameroki/countries.csv:16
 msgid "Jacuncail"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:17
+#: ./pytrisk/maps/ameroki/countries.csv:17
 msgid "Tungu"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:18
+#: ./pytrisk/maps/ameroki/countries.csv:18
 msgid "South Afrori"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:19
+#: ./pytrisk/maps/ameroki/countries.csv:19
 msgid "North Afrori"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:20
+#: ./pytrisk/maps/ameroki/countries.csv:20
 msgid "East afrori"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:21
-#: pytrisk/maps/godstorm/countries.csv:28 pytrisk/maps/risk/countries.csv:23
-#: pytrisk/maps/risk2210/countries.csv:23
+#: ./pytrisk/maps/ameroki/countries.csv:21
+#: ./pytrisk/maps/godstorm/countries.csv:28
+#: ./pytrisk/maps/risk/countries.csv:23
+#: ./pytrisk/maps/risk2210/countries.csv:23
 msgid "Egypt"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:22
+#: ./pytrisk/maps/ameroki/countries.csv:22
 msgid "Maganar"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:23
+#: ./pytrisk/maps/ameroki/countries.csv:23
 msgid "Pero"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:24
+#: ./pytrisk/maps/ameroki/countries.csv:24
 msgid "Heaurt"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:25
+#: ./pytrisk/maps/ameroki/countries.csv:25
 msgid "Vagnagale"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:26 pytrisk/maps/risk/countries.csv:14
-#: pytrisk/maps/risk2210/countries.csv:14
+#: ./pytrisk/maps/ameroki/countries.csv:26
+#: ./pytrisk/maps/risk/countries.csv:14
+#: ./pytrisk/maps/risk2210/countries.csv:14
 msgid "Argentina"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:27
+#: ./pytrisk/maps/ameroki/countries.csv:27
 msgid "Ireland"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:28
+#: ./pytrisk/maps/ameroki/countries.csv:28
 msgid "Ihesia"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:29
+#: ./pytrisk/maps/ameroki/countries.csv:29
 msgid "Western Utropa"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:30
+#: ./pytrisk/maps/ameroki/countries.csv:30
 msgid "Souther Utropa"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:31
+#: ./pytrisk/maps/ameroki/countries.csv:31
 msgid "Northern Utropa"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:32
+#: ./pytrisk/maps/ameroki/countries.csv:32
 msgid "Senadlavin"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:33 pytrisk/maps/risk/countries.csv:18
+#: ./pytrisk/maps/ameroki/countries.csv:33
+#: ./pytrisk/maps/risk/countries.csv:18
 msgid "Great Britain"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:34
+#: ./pytrisk/maps/ameroki/countries.csv:34
 msgid "Teramar"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:35 pytrisk/maps/risk/countries.csv:5
+#: ./pytrisk/maps/ameroki/countries.csv:35 ./pytrisk/maps/risk/countries.csv:5
 msgid "Western United States"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:36
+#: ./pytrisk/maps/ameroki/countries.csv:36
 msgid "Czeck"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:37 pytrisk/maps/risk/countries.csv:4
-#: pytrisk/maps/risk2210/countries.csv:5
+#: ./pytrisk/maps/ameroki/countries.csv:37 ./pytrisk/maps/risk/countries.csv:4
+#: ./pytrisk/maps/risk2210/countries.csv:5
 msgid "Alberta"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:38
+#: ./pytrisk/maps/ameroki/countries.csv:38
 msgid "Central Ameroki"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:39
+#: ./pytrisk/maps/ameroki/countries.csv:39
 msgid "Albania"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:40
+#: ./pytrisk/maps/ameroki/countries.csv:40
 msgid "Duiestie"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:41
+#: ./pytrisk/maps/ameroki/countries.csv:41
 msgid "Quebeck"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:42
+#: ./pytrisk/maps/ameroki/countries.csv:42
 msgid "Vinenlant"
 msgstr ""
 
-#: pytrisk/maps/ameroki/countries.csv:43
+#: ./pytrisk/maps/ameroki/countries.csv:43
 msgid "Heal"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:2
+#: ./pytrisk/maps/france/continents.csv:2
 msgid "Bretagne"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:3
+#: ./pytrisk/maps/france/continents.csv:3
 msgid "Basse Normandie"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:4
+#: ./pytrisk/maps/france/continents.csv:4
 msgid "Haute Normandie"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:5
+#: ./pytrisk/maps/france/continents.csv:5
 msgid "Picardie"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:6
+#: ./pytrisk/maps/france/continents.csv:6
 msgid "Nord-Pas de Calais"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:7
+#: ./pytrisk/maps/france/continents.csv:7
 msgid "Champagne-Ardenne"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:8
+#: ./pytrisk/maps/france/continents.csv:8
 msgid "Lorraine"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:9
+#: ./pytrisk/maps/france/continents.csv:9
 msgid "Alsace"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:10
+#: ./pytrisk/maps/france/continents.csv:10
 msgid "Franche-Comté"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:11
+#: ./pytrisk/maps/france/continents.csv:11
 msgid "Rhône-Alpes"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:12
+#: ./pytrisk/maps/france/continents.csv:12
 msgid "Provence-Alpes-Côte d'Azur"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:13
+#: ./pytrisk/maps/france/continents.csv:13
 msgid "Corse"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:14
+#: ./pytrisk/maps/france/continents.csv:14
 msgid "Languedoc-Roussillon"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:15
+#: ./pytrisk/maps/france/continents.csv:15
 msgid "Midi-Pyrénées"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:16
+#: ./pytrisk/maps/france/continents.csv:16
 msgid "Aquitaine"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:17
+#: ./pytrisk/maps/france/continents.csv:17
 msgid "Poitou-Charente"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:18
+#: ./pytrisk/maps/france/continents.csv:18
 msgid "Pays de la Loire"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:19
+#: ./pytrisk/maps/france/continents.csv:19
 msgid "Centre"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:20
+#: ./pytrisk/maps/france/continents.csv:20
 msgid "Ile de France"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:21
+#: ./pytrisk/maps/france/continents.csv:21
 msgid "Bourgogne"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:22
+#: ./pytrisk/maps/france/continents.csv:22
 msgid "Auvergne"
 msgstr ""
 
-#: pytrisk/maps/france/continents.csv:23
+#: ./pytrisk/maps/france/continents.csv:23
 msgid "Limousin"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:2
+#: ./pytrisk/maps/france/countries.csv:2
 msgid "Ain"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:3
+#: ./pytrisk/maps/france/countries.csv:3
 msgid "Aisne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:4
+#: ./pytrisk/maps/france/countries.csv:4
 msgid "Allier"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:5
+#: ./pytrisk/maps/france/countries.csv:5
 msgid "Alpes de Haute Provence"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:6
+#: ./pytrisk/maps/france/countries.csv:6
 msgid "Hautes Alpes"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:7
+#: ./pytrisk/maps/france/countries.csv:7
 msgid "Alpes Maritimes"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:8
+#: ./pytrisk/maps/france/countries.csv:8
 msgid "Ardèche"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:9
+#: ./pytrisk/maps/france/countries.csv:9
 msgid "Ardennes"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:10
+#: ./pytrisk/maps/france/countries.csv:10
 msgid "Ariège"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:11
+#: ./pytrisk/maps/france/countries.csv:11
 msgid "Aube"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:12
+#: ./pytrisk/maps/france/countries.csv:12
 msgid "Aude"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:13
+#: ./pytrisk/maps/france/countries.csv:13
 msgid "Aveyron"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:14
+#: ./pytrisk/maps/france/countries.csv:14
 msgid "Bouches du Rhone"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:15
+#: ./pytrisk/maps/france/countries.csv:15
 msgid "Calvados"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:16
+#: ./pytrisk/maps/france/countries.csv:16
 msgid "Cantal"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:17
+#: ./pytrisk/maps/france/countries.csv:17
 msgid "Charente"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:18
+#: ./pytrisk/maps/france/countries.csv:18
 msgid "Charente Maritime"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:19
+#: ./pytrisk/maps/france/countries.csv:19
 msgid "Cher"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:20
+#: ./pytrisk/maps/france/countries.csv:20
 msgid "Corrèze"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:21
+#: ./pytrisk/maps/france/countries.csv:21
 msgid "Corse du Sud"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:22
+#: ./pytrisk/maps/france/countries.csv:22
 msgid "Côte d'Or"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:23
+#: ./pytrisk/maps/france/countries.csv:23
 msgid "Côtes d'Armor"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:24
+#: ./pytrisk/maps/france/countries.csv:24
 msgid "Creuse"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:25
+#: ./pytrisk/maps/france/countries.csv:25
 msgid "Dordogne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:26
+#: ./pytrisk/maps/france/countries.csv:26
 msgid "Doubs"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:27
+#: ./pytrisk/maps/france/countries.csv:27
 msgid "Drôme"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:28
+#: ./pytrisk/maps/france/countries.csv:28
 msgid "Eure"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:29
+#: ./pytrisk/maps/france/countries.csv:29
 msgid "Eure et Loire"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:30
+#: ./pytrisk/maps/france/countries.csv:30
 msgid "Finistère"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:31
+#: ./pytrisk/maps/france/countries.csv:31
 msgid "Gard"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:32
+#: ./pytrisk/maps/france/countries.csv:32
 msgid "Haute Garonne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:33
+#: ./pytrisk/maps/france/countries.csv:33
 msgid "Gers"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:34
+#: ./pytrisk/maps/france/countries.csv:34
 msgid "Gironde"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:35
+#: ./pytrisk/maps/france/countries.csv:35
 msgid "Hérault"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:36
+#: ./pytrisk/maps/france/countries.csv:36
 msgid "Ille et Vilaine"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:37
+#: ./pytrisk/maps/france/countries.csv:37
 msgid "Indre"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:38
+#: ./pytrisk/maps/france/countries.csv:38
 msgid "Indre et Loire"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:39
+#: ./pytrisk/maps/france/countries.csv:39
 msgid "Isère"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:40
+#: ./pytrisk/maps/france/countries.csv:40
 msgid "Jura"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:41
+#: ./pytrisk/maps/france/countries.csv:41
 msgid "Landes"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:42
+#: ./pytrisk/maps/france/countries.csv:42
 msgid "Loire et Cher"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:43
+#: ./pytrisk/maps/france/countries.csv:43
 msgid "Loire"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:44
+#: ./pytrisk/maps/france/countries.csv:44
 msgid "Haute Loire"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:45
+#: ./pytrisk/maps/france/countries.csv:45
 msgid "Loire Atlantique"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:46
+#: ./pytrisk/maps/france/countries.csv:46
 msgid "Loiret"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:47
+#: ./pytrisk/maps/france/countries.csv:47
 msgid "Lot"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:48
+#: ./pytrisk/maps/france/countries.csv:48
 msgid "Lot et Garonne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:49
+#: ./pytrisk/maps/france/countries.csv:49
 msgid "Lozère"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:50
+#: ./pytrisk/maps/france/countries.csv:50
 msgid "Maine et Loire"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:51
+#: ./pytrisk/maps/france/countries.csv:51
 msgid "Manche"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:52
+#: ./pytrisk/maps/france/countries.csv:52
 msgid "Marne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:53
+#: ./pytrisk/maps/france/countries.csv:53
 msgid "Haute Marne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:54
+#: ./pytrisk/maps/france/countries.csv:54
 msgid "Mayenne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:55
+#: ./pytrisk/maps/france/countries.csv:55
 msgid "Meurthe et Moselle"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:56
+#: ./pytrisk/maps/france/countries.csv:56
 msgid "Meuse"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:57
+#: ./pytrisk/maps/france/countries.csv:57
 msgid "Morbihan"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:58
+#: ./pytrisk/maps/france/countries.csv:58
 msgid "Moselle"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:59
+#: ./pytrisk/maps/france/countries.csv:59
 msgid "Nièvre"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:60
+#: ./pytrisk/maps/france/countries.csv:60
 msgid "Nord"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:61
+#: ./pytrisk/maps/france/countries.csv:61
 msgid "Oise"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:62
+#: ./pytrisk/maps/france/countries.csv:62
 msgid "Orne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:63
+#: ./pytrisk/maps/france/countries.csv:63
 msgid "Pas de Calais"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:64
+#: ./pytrisk/maps/france/countries.csv:64
 msgid "Puy de Dome"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:65
+#: ./pytrisk/maps/france/countries.csv:65
 msgid "Pyrénées Atlantiques"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:66
+#: ./pytrisk/maps/france/countries.csv:66
 msgid "Hautes Pyrénées"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:67
+#: ./pytrisk/maps/france/countries.csv:67
 msgid "Pyrénées Orientales"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:68
+#: ./pytrisk/maps/france/countries.csv:68
 msgid "Bas Rhin"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:69
+#: ./pytrisk/maps/france/countries.csv:69
 msgid "Haut Rhin"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:70
+#: ./pytrisk/maps/france/countries.csv:70
 msgid "Rhône"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:71
+#: ./pytrisk/maps/france/countries.csv:71
 msgid "Haute Saône"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:72
+#: ./pytrisk/maps/france/countries.csv:72
 msgid "Saône et Loire"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:73
+#: ./pytrisk/maps/france/countries.csv:73
 msgid "Sarthe"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:74
+#: ./pytrisk/maps/france/countries.csv:74
 msgid "Savoie"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:75
+#: ./pytrisk/maps/france/countries.csv:75
 msgid "Haute Savoie"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:76
+#: ./pytrisk/maps/france/countries.csv:76
 msgid "Paris"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:77
+#: ./pytrisk/maps/france/countries.csv:77
 msgid "Seine Maritime"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:78
+#: ./pytrisk/maps/france/countries.csv:78
 msgid "Seine et Marne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:79
+#: ./pytrisk/maps/france/countries.csv:79
 msgid "Yvelines"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:80
+#: ./pytrisk/maps/france/countries.csv:80
 msgid "Deux Sèvres"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:81
+#: ./pytrisk/maps/france/countries.csv:81
 msgid "Somme"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:82
+#: ./pytrisk/maps/france/countries.csv:82
 msgid "Tarn"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:83
+#: ./pytrisk/maps/france/countries.csv:83
 msgid "Tarn et Garonne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:84
+#: ./pytrisk/maps/france/countries.csv:84
 msgid "Var"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:85
+#: ./pytrisk/maps/france/countries.csv:85
 msgid "Vaucluse"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:86
+#: ./pytrisk/maps/france/countries.csv:86
 msgid "Vendée"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:87
+#: ./pytrisk/maps/france/countries.csv:87
 msgid "Vienne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:88
+#: ./pytrisk/maps/france/countries.csv:88
 msgid "Haute Vienne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:89
+#: ./pytrisk/maps/france/countries.csv:89
 msgid "Vosges"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:90
+#: ./pytrisk/maps/france/countries.csv:90
 msgid "Yonne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:91
+#: ./pytrisk/maps/france/countries.csv:91
 msgid "Territoire de Belfort"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:92
+#: ./pytrisk/maps/france/countries.csv:92
 msgid "Essonne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:93
+#: ./pytrisk/maps/france/countries.csv:93
 msgid "Hauts de Seine"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:94
+#: ./pytrisk/maps/france/countries.csv:94
 msgid "Seine Saint Denis"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:95
+#: ./pytrisk/maps/france/countries.csv:95
 msgid "Val de Marne"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:96
+#: ./pytrisk/maps/france/countries.csv:96
 msgid "Val d'Oise"
 msgstr ""
 
-#: pytrisk/maps/france/countries.csv:97
+#: ./pytrisk/maps/france/countries.csv:97
 msgid "Haute Corse"
 msgstr ""
 
-#: pytrisk/maps/france/info.yaml:1
+#: ./pytrisk/maps/france/info.yaml:1
 msgid "France"
 msgstr ""
 
-#: pytrisk/maps/godstorm/continents.csv:2
+#: ./pytrisk/maps/godstorm/continents.csv:2
 msgid "Germania"
 msgstr ""
 
-#: pytrisk/maps/godstorm/continents.csv:3
+#: ./pytrisk/maps/godstorm/continents.csv:3
 msgid "Atlantis"
 msgstr ""
 
-#: pytrisk/maps/godstorm/continents.csv:4
+#: ./pytrisk/maps/godstorm/continents.csv:4
 msgid "Asia Minor"
 msgstr ""
 
-#: pytrisk/maps/godstorm/continents.csv:5 pytrisk/maps/risk/continents.csv:5
-#: pytrisk/maps/risk2210/continents.csv:5
-#: pytrisk/maps/roman_empire/continents.csv:2
+#: ./pytrisk/maps/godstorm/continents.csv:5
+#: ./pytrisk/maps/risk/continents.csv:5
+#: ./pytrisk/maps/risk2210/continents.csv:5
+#: ./pytrisk/maps/roman_empire/continents.csv:2
 msgid "Africa"
 msgstr ""
 
-#: pytrisk/maps/godstorm/continents.csv:6
+#: ./pytrisk/maps/godstorm/continents.csv:6
 msgid "Europa"
 msgstr ""
 
-#: pytrisk/maps/godstorm/continents.csv:7
+#: ./pytrisk/maps/godstorm/continents.csv:7
 msgid "Hyrkania"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:2
-#: pytrisk/maps/roman_empire/countries.csv:31
+#: ./pytrisk/maps/godstorm/countries.csv:2
+#: ./pytrisk/maps/roman_empire/countries.csv:31
 msgid "Dacia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:3
-#: pytrisk/maps/roman_empire/countries.csv:38
+#: ./pytrisk/maps/godstorm/countries.csv:3
+#: ./pytrisk/maps/roman_empire/countries.csv:38
 msgid "Thracia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:4
-#: pytrisk/maps/roman_empire/countries.csv:32
+#: ./pytrisk/maps/godstorm/countries.csv:4
+#: ./pytrisk/maps/roman_empire/countries.csv:32
 msgid "Dalmatia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:5
+#: ./pytrisk/maps/godstorm/countries.csv:5
 msgid "Liguria"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:6
-#: pytrisk/maps/roman_empire/countries.csv:43
+#: ./pytrisk/maps/godstorm/countries.csv:6
+#: ./pytrisk/maps/roman_empire/countries.csv:43
 msgid "Roma"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:7
+#: ./pytrisk/maps/godstorm/countries.csv:7
 msgid "Apulia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:8
-#: pytrisk/maps/roman_empire/countries.csv:39
+#: ./pytrisk/maps/godstorm/countries.csv:8
+#: ./pytrisk/maps/roman_empire/countries.csv:39
 msgid "Corsica"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:9
-#: pytrisk/maps/roman_empire/countries.csv:45
+#: ./pytrisk/maps/godstorm/countries.csv:9
+#: ./pytrisk/maps/roman_empire/countries.csv:45
 msgid "Sicilia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:10
+#: ./pytrisk/maps/godstorm/countries.csv:10
 msgid "Graecia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:11
+#: ./pytrisk/maps/godstorm/countries.csv:11
 msgid "Minoa"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:12
+#: ./pytrisk/maps/godstorm/countries.csv:12
 msgid "Ionia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:13
+#: ./pytrisk/maps/godstorm/countries.csv:13
 msgid "Anatolia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:14
+#: ./pytrisk/maps/godstorm/countries.csv:14
 msgid "Hibernia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:15
+#: ./pytrisk/maps/godstorm/countries.csv:15
 msgid "Caledonia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:16
+#: ./pytrisk/maps/godstorm/countries.csv:16
 msgid "Anglia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:17
+#: ./pytrisk/maps/godstorm/countries.csv:17
 msgid "Thule"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:18
+#: ./pytrisk/maps/godstorm/countries.csv:18
 msgid "Varangia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:19
+#: ./pytrisk/maps/godstorm/countries.csv:19
 msgid "Galicia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:20
+#: ./pytrisk/maps/godstorm/countries.csv:20
 msgid "Alemannia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:21
+#: ./pytrisk/maps/godstorm/countries.csv:21
 msgid "Gaul"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:22
+#: ./pytrisk/maps/godstorm/countries.csv:22
 msgid "Iberia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:23
+#: ./pytrisk/maps/godstorm/countries.csv:23
 msgid "Atlas"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:24
+#: ./pytrisk/maps/godstorm/countries.csv:24
 msgid "Carthage"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:25
+#: ./pytrisk/maps/godstorm/countries.csv:25
 msgid "Gaitulia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:26
-#: pytrisk/maps/roman_empire/countries.csv:4
+#: ./pytrisk/maps/godstorm/countries.csv:26
+#: ./pytrisk/maps/roman_empire/countries.csv:4
 msgid "Cyrenaica"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:27
+#: ./pytrisk/maps/godstorm/countries.csv:27
 msgid "Nubia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:29
+#: ./pytrisk/maps/godstorm/countries.csv:29
 msgid "Kush"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:30
+#: ./pytrisk/maps/godstorm/countries.csv:30
 msgid "Parthia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:31
+#: ./pytrisk/maps/godstorm/countries.csv:31
 msgid "Sumer"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:32
+#: ./pytrisk/maps/godstorm/countries.csv:32
 msgid "Assyria"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:33
+#: ./pytrisk/maps/godstorm/countries.csv:33
 msgid "Phoenicia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:34
+#: ./pytrisk/maps/godstorm/countries.csv:34
 msgid "Babylon"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:35
+#: ./pytrisk/maps/godstorm/countries.csv:35
 msgid "Sheba"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:36
+#: ./pytrisk/maps/godstorm/countries.csv:36
 msgid "Hesperide"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:37
+#: ./pytrisk/maps/godstorm/countries.csv:37
 msgid "Tritonis"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:38
+#: ./pytrisk/maps/godstorm/countries.csv:38
 msgid "Poseidonis"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:39
+#: ./pytrisk/maps/godstorm/countries.csv:39
 msgid "Oricalcos"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:40
+#: ./pytrisk/maps/godstorm/countries.csv:40
 msgid "Rus"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:41
+#: ./pytrisk/maps/godstorm/countries.csv:41
 msgid "Scythia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:42
+#: ./pytrisk/maps/godstorm/countries.csv:42
 msgid "Cimmeria"
 msgstr ""
 
-#: pytrisk/maps/godstorm/countries.csv:43
+#: ./pytrisk/maps/godstorm/countries.csv:43
 msgid "Sarmathia"
 msgstr ""
 
-#: pytrisk/maps/godstorm/info.yaml:1
+#: ./pytrisk/maps/godstorm/info.yaml:1
 msgid "Risk GodStorm"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:2
+#: ./pytrisk/maps/lotr/continents.csv:2
 msgid "Gondor"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:3
+#: ./pytrisk/maps/lotr/continents.csv:3
 msgid "Mirkwood"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:4
+#: ./pytrisk/maps/lotr/continents.csv:4
 msgid "Rohan"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:5
+#: ./pytrisk/maps/lotr/continents.csv:5
 msgid "Rhovanion"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:6
+#: ./pytrisk/maps/lotr/continents.csv:6
 msgid "Arnor"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:7
+#: ./pytrisk/maps/lotr/continents.csv:7
 msgid "Eriador"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:8
+#: ./pytrisk/maps/lotr/continents.csv:8
 msgid "Rhun"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:9
+#: ./pytrisk/maps/lotr/continents.csv:9
 msgid "Haradwaith"
 msgstr ""
 
-#: pytrisk/maps/lotr/continents.csv:10
+#: ./pytrisk/maps/lotr/continents.csv:10
 msgid "Mordor"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:2
+#: ./pytrisk/maps/lotr/countries.csv:2
 msgid "Forodwaith"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:3
+#: ./pytrisk/maps/lotr/countries.csv:3
 msgid "Eastern Angmar"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:4
+#: ./pytrisk/maps/lotr/countries.csv:4
 msgid "Borderlands"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:5
+#: ./pytrisk/maps/lotr/countries.csv:5
 msgid "Angmar"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:6
+#: ./pytrisk/maps/lotr/countries.csv:6
 msgid "North Downs"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:7
+#: ./pytrisk/maps/lotr/countries.csv:7
 msgid "Fornost"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:8
+#: ./pytrisk/maps/lotr/countries.csv:8
 msgid "Buckland"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:9
+#: ./pytrisk/maps/lotr/countries.csv:9
 msgid "Old Forest"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:10
+#: ./pytrisk/maps/lotr/countries.csv:10
 msgid "South Downs"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:11
+#: ./pytrisk/maps/lotr/countries.csv:11
 msgid "Weather Hills"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:12
+#: ./pytrisk/maps/lotr/countries.csv:12
 msgid "Rhudaur"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:13
+#: ./pytrisk/maps/lotr/countries.csv:13
 msgid "Carrock"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:14
+#: ./pytrisk/maps/lotr/countries.csv:14
 msgid "North Mirkwood"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:15
+#: ./pytrisk/maps/lotr/countries.csv:15
 msgid "Eastern Mirkwood"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:16
+#: ./pytrisk/maps/lotr/countries.csv:16
 msgid "Anduin Valley"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:17
+#: ./pytrisk/maps/lotr/countries.csv:17
 msgid "South Mirkwood"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:18
+#: ./pytrisk/maps/lotr/countries.csv:18
 msgid "Eregion"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:19
+#: ./pytrisk/maps/lotr/countries.csv:19
 msgid "Minhiriath"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:20
+#: ./pytrisk/maps/lotr/countries.csv:20
 msgid "Dunland"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:21
+#: ./pytrisk/maps/lotr/countries.csv:21
 msgid "Enedwaith"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:22
+#: ./pytrisk/maps/lotr/countries.csv:22
 msgid "West Rohan"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:23
+#: ./pytrisk/maps/lotr/countries.csv:23
 msgid "Fangorn"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:24
+#: ./pytrisk/maps/lotr/countries.csv:24
 msgid "Gap of Rohan"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:25
+#: ./pytrisk/maps/lotr/countries.csv:25
 msgid "Rhun Hills"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:26
+#: ./pytrisk/maps/lotr/countries.csv:26
 msgid "Brown Lands"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:27
+#: ./pytrisk/maps/lotr/countries.csv:27
 msgid "Emyn Muil"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:28
+#: ./pytrisk/maps/lotr/countries.csv:28
 msgid "The Wold"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:29
+#: ./pytrisk/maps/lotr/countries.csv:29
 msgid "Lorien"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:30
+#: ./pytrisk/maps/lotr/countries.csv:30
 msgid "Gladden Fields"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:31
+#: ./pytrisk/maps/lotr/countries.csv:31
 msgid "Moria"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:32
+#: ./pytrisk/maps/lotr/countries.csv:32
 msgid "Dead Marshes"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:33
+#: ./pytrisk/maps/lotr/countries.csv:33
 msgid "Druwaith Iaur"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:34
+#: ./pytrisk/maps/lotr/countries.csv:34
 msgid "Andras"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:35
+#: ./pytrisk/maps/lotr/countries.csv:35
 msgid "Anfalas"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:36
+#: ./pytrisk/maps/lotr/countries.csv:36
 msgid "Vale of Erech"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:37
+#: ./pytrisk/maps/lotr/countries.csv:37
 msgid "Lamedon"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:38
+#: ./pytrisk/maps/lotr/countries.csv:38
 msgid "Belfalas"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:39
+#: ./pytrisk/maps/lotr/countries.csv:39
 msgid "Lebennin"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:40
+#: ./pytrisk/maps/lotr/countries.csv:40
 msgid "Minis Tirith"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:41
+#: ./pytrisk/maps/lotr/countries.csv:41
 msgid "Ithilien"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:42
+#: ./pytrisk/maps/lotr/countries.csv:42
 msgid "South Ithilien"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:43
+#: ./pytrisk/maps/lotr/countries.csv:43
 msgid "Forlindon"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:44
+#: ./pytrisk/maps/lotr/countries.csv:44
 msgid "Lune Valley"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:45
+#: ./pytrisk/maps/lotr/countries.csv:45
 msgid "Mithlond"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:46
+#: ./pytrisk/maps/lotr/countries.csv:46
 msgid "Harlindon"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:47
+#: ./pytrisk/maps/lotr/countries.csv:47
 msgid "Tower Hills"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:48
+#: ./pytrisk/maps/lotr/countries.csv:48
 msgid "The Shire"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:49
+#: ./pytrisk/maps/lotr/countries.csv:49
 msgid "Evendim Hills"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:50
+#: ./pytrisk/maps/lotr/countries.csv:50
 msgid "North Rhun"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:51
+#: ./pytrisk/maps/lotr/countries.csv:51
 msgid "Withered Heath"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:52
+#: ./pytrisk/maps/lotr/countries.csv:52
 msgid "Esgaroth"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:53
+#: ./pytrisk/maps/lotr/countries.csv:53
 msgid "South Rhun"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:54
+#: ./pytrisk/maps/lotr/countries.csv:54
 msgid "Harandor"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:55
+#: ./pytrisk/maps/lotr/countries.csv:55
 msgid "Umbar"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:56
+#: ./pytrisk/maps/lotr/countries.csv:56
 msgid "Deep Harad"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:57
+#: ./pytrisk/maps/lotr/countries.csv:57
 msgid "Harad"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:58
+#: ./pytrisk/maps/lotr/countries.csv:58
 msgid "Near Harad"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:59
+#: ./pytrisk/maps/lotr/countries.csv:59
 msgid "Khand"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:60
+#: ./pytrisk/maps/lotr/countries.csv:60
 msgid "Udun Value"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:61
+#: ./pytrisk/maps/lotr/countries.csv:61
 msgid "Mount Doom"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:62
+#: ./pytrisk/maps/lotr/countries.csv:62
 msgid "Barad Dur"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:63
+#: ./pytrisk/maps/lotr/countries.csv:63
 msgid "Minas Morgul"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:64
+#: ./pytrisk/maps/lotr/countries.csv:64
 msgid "Gorgoroth"
 msgstr ""
 
-#: pytrisk/maps/lotr/countries.csv:65
+#: ./pytrisk/maps/lotr/countries.csv:65
 msgid "Nurn"
 msgstr ""
 
-#: pytrisk/maps/lotr/info.yaml:1
+#: ./pytrisk/maps/lotr/info.yaml:1
 msgid "Lord of the Rings"
 msgstr ""
 
-#: pytrisk/maps/risk/continents.csv:2 pytrisk/maps/risk2210/continents.csv:2
+#: ./pytrisk/maps/risk/continents.csv:2
+#: ./pytrisk/maps/risk2210/continents.csv:2
 msgid "North America"
 msgstr ""
 
-#: pytrisk/maps/risk/continents.csv:3 pytrisk/maps/risk2210/continents.csv:3
+#: ./pytrisk/maps/risk/continents.csv:3
+#: ./pytrisk/maps/risk2210/continents.csv:3
 msgid "South America"
 msgstr ""
 
-#: pytrisk/maps/risk/continents.csv:4 pytrisk/maps/risk2210/continents.csv:4
+#: ./pytrisk/maps/risk/continents.csv:4
+#: ./pytrisk/maps/risk2210/continents.csv:4
 msgid "Europe"
 msgstr ""
 
-#: pytrisk/maps/risk/continents.csv:6 pytrisk/maps/risk2210/continents.csv:6
-#: pytrisk/maps/roman_empire/continents.csv:3
+#: ./pytrisk/maps/risk/continents.csv:6
+#: ./pytrisk/maps/risk2210/continents.csv:6
+#: ./pytrisk/maps/roman_empire/continents.csv:3
 msgid "Asia"
 msgstr ""
 
-#: pytrisk/maps/risk/continents.csv:7 pytrisk/maps/risk2210/continents.csv:7
+#: ./pytrisk/maps/risk/continents.csv:7
+#: ./pytrisk/maps/risk2210/continents.csv:7
 msgid "Australia"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:2
+#: ./pytrisk/maps/risk/countries.csv:2
 msgid "Alaska"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:3
+#: ./pytrisk/maps/risk/countries.csv:3
 msgid "North West Territory"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:6
+#: ./pytrisk/maps/risk/countries.csv:6
 msgid "Central America"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:7
+#: ./pytrisk/maps/risk/countries.csv:7
 msgid "Greenland"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:8
+#: ./pytrisk/maps/risk/countries.csv:8
 msgid "Ontario"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:9
+#: ./pytrisk/maps/risk/countries.csv:9
 msgid "Quebec"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:10
+#: ./pytrisk/maps/risk/countries.csv:10
 msgid "Eastern United States"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:11
+#: ./pytrisk/maps/risk/countries.csv:11
 msgid "Venezuela"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:12
+#: ./pytrisk/maps/risk/countries.csv:12
 msgid "Peru"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:13
+#: ./pytrisk/maps/risk/countries.csv:13
 msgid "Brazil"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:15
+#: ./pytrisk/maps/risk/countries.csv:15
 msgid "Iceland"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:16
+#: ./pytrisk/maps/risk/countries.csv:16
 msgid "Scandinavia"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:17
+#: ./pytrisk/maps/risk/countries.csv:17
 msgid "Ukraine"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:19
+#: ./pytrisk/maps/risk/countries.csv:19
 msgid "Northern Europe"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:20
+#: ./pytrisk/maps/risk/countries.csv:20
 msgid "Western Europe"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:21
+#: ./pytrisk/maps/risk/countries.csv:21
 msgid "Southern Europe"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:22
+#: ./pytrisk/maps/risk/countries.csv:22
 msgid "North Africa"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:24
+#: ./pytrisk/maps/risk/countries.csv:24
 msgid "Congo"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:25
+#: ./pytrisk/maps/risk/countries.csv:25
 msgid "East Africa"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:26
+#: ./pytrisk/maps/risk/countries.csv:26
 msgid "South Africa"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:27 pytrisk/maps/risk2210/countries.csv:27
+#: ./pytrisk/maps/risk/countries.csv:27
+#: ./pytrisk/maps/risk2210/countries.csv:27
 msgid "Madagascar"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:29
+#: ./pytrisk/maps/risk/countries.csv:29
 msgid "Ural"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:31 pytrisk/maps/risk2210/countries.csv:31
+#: ./pytrisk/maps/risk/countries.csv:31
+#: ./pytrisk/maps/risk2210/countries.csv:31
 msgid "Afghanistan"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:34
+#: ./pytrisk/maps/risk/countries.csv:34
 msgid "Siam"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:35
+#: ./pytrisk/maps/risk/countries.csv:35
 msgid "Yakutsk"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:36
+#: ./pytrisk/maps/risk/countries.csv:36
 msgid "Irkutsk"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:37
+#: ./pytrisk/maps/risk/countries.csv:37
 msgid "Mongolia"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:39
+#: ./pytrisk/maps/risk/countries.csv:39
 msgid "Kamchatka"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:40
+#: ./pytrisk/maps/risk/countries.csv:40
 msgid "Indonesia"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:41 pytrisk/maps/risk2210/countries.csv:41
+#: ./pytrisk/maps/risk/countries.csv:41
+#: ./pytrisk/maps/risk2210/countries.csv:41
 msgid "New Guinea"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:42
+#: ./pytrisk/maps/risk/countries.csv:42
 msgid "Western Australia"
 msgstr ""
 
-#: pytrisk/maps/risk/countries.csv:43
+#: ./pytrisk/maps/risk/countries.csv:43
 msgid "Eastern Australia"
 msgstr ""
 
-#: pytrisk/maps/risk/info.yaml:1
+#: ./pytrisk/maps/risk/info.yaml:1
 msgid "Risk"
 msgstr ""
 
-#: pytrisk/maps/risk2210/continents.csv:8
+#: ./pytrisk/maps/risk2210/continents.csv:8
 msgid "Asia Pacific"
 msgstr ""
 
-#: pytrisk/maps/risk2210/continents.csv:9
+#: ./pytrisk/maps/risk2210/continents.csv:9
 msgid "US Pacific"
 msgstr ""
 
-#: pytrisk/maps/risk2210/continents.csv:10
+#: ./pytrisk/maps/risk2210/continents.csv:10
 msgid "North Atlantic"
 msgstr ""
 
-#: pytrisk/maps/risk2210/continents.csv:11
+#: ./pytrisk/maps/risk2210/continents.csv:11
 msgid "South Atlantic"
 msgstr ""
 
-#: pytrisk/maps/risk2210/continents.csv:12
+#: ./pytrisk/maps/risk2210/continents.csv:12
 msgid "Indian"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:2
+#: ./pytrisk/maps/risk2210/countries.csv:2
 msgid "Northwestern Oil Emirate"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:3
+#: ./pytrisk/maps/risk2210/countries.csv:3
 msgid "Nunavut"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:4
+#: ./pytrisk/maps/risk2210/countries.csv:4
 msgid "Exiled States of America"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:6
+#: ./pytrisk/maps/risk2210/countries.csv:6
 msgid "Canada"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:7
+#: ./pytrisk/maps/risk2210/countries.csv:7
 msgid "Republique du Quebec"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:8
+#: ./pytrisk/maps/risk2210/countries.csv:8
 msgid "Continental Biospheres"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:9
+#: ./pytrisk/maps/risk2210/countries.csv:9
 msgid "American Republic"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:10
+#: ./pytrisk/maps/risk2210/countries.csv:10
 msgid "Mexico"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:11
+#: ./pytrisk/maps/risk2210/countries.csv:11
 msgid "Nuevo Timoto"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:12
+#: ./pytrisk/maps/risk2210/countries.csv:12
 msgid "Andean Nations"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:13
+#: ./pytrisk/maps/risk2210/countries.csv:13
 msgid "Amazon Desert"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:15
+#: ./pytrisk/maps/risk2210/countries.csv:15
 msgid "Iceland GRC"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:16
+#: ./pytrisk/maps/risk2210/countries.csv:16
 msgid "Jotenheim"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:17
+#: ./pytrisk/maps/risk2210/countries.csv:17
 msgid "Ukrayina"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:18
+#: ./pytrisk/maps/risk2210/countries.csv:18
 msgid "New Avalon"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:19
+#: ./pytrisk/maps/risk2210/countries.csv:19
 msgid "Warsaw Republic"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:20
+#: ./pytrisk/maps/risk2210/countries.csv:20
 msgid "Andorra"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:21
+#: ./pytrisk/maps/risk2210/countries.csv:21
 msgid "Imperial Balkania"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:22
+#: ./pytrisk/maps/risk2210/countries.csv:22
 msgid "Saharan Empire"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:24
+#: ./pytrisk/maps/risk2210/countries.csv:24
 msgid "Zaire Military Zone"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:25
+#: ./pytrisk/maps/risk2210/countries.csv:25
 msgid "Ministry of Djibouti"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:26
+#: ./pytrisk/maps/risk2210/countries.csv:26
 msgid "Lesotho"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:29
+#: ./pytrisk/maps/risk2210/countries.csv:29
 msgid "Enclave of the Bear"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:30
+#: ./pytrisk/maps/risk2210/countries.csv:30
 msgid "Hong Kong"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:33
+#: ./pytrisk/maps/risk2210/countries.csv:33
 msgid "United Indiastan"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:34
+#: ./pytrisk/maps/risk2210/countries.csv:34
 msgid "Angkhor Wat"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:35
+#: ./pytrisk/maps/risk2210/countries.csv:35
 msgid "Sakha"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:36
+#: ./pytrisk/maps/risk2210/countries.csv:36
 msgid "Alden"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:37
+#: ./pytrisk/maps/risk2210/countries.csv:37
 msgid "Khan Industrial State"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:39
+#: ./pytrisk/maps/risk2210/countries.csv:39
 msgid "Pevek"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:40
+#: ./pytrisk/maps/risk2210/countries.csv:40
 msgid "Java Cartel"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:42
+#: ./pytrisk/maps/risk2210/countries.csv:42
 msgid "Aboriginal League"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:43
+#: ./pytrisk/maps/risk2210/countries.csv:43
 msgid "Australian Testing Ground"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:44
+#: ./pytrisk/maps/risk2210/countries.csv:44
 msgid "Sung Tzu"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:45
+#: ./pytrisk/maps/risk2210/countries.csv:45
 msgid "Neo Tokyo"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:46
+#: ./pytrisk/maps/risk2210/countries.csv:46
 msgid "Poseidon"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:47
+#: ./pytrisk/maps/risk2210/countries.csv:47
 msgid "Hawaiian Preserve"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:48
+#: ./pytrisk/maps/risk2210/countries.csv:48
 msgid "New Atlantis"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:49
+#: ./pytrisk/maps/risk2210/countries.csv:49
 msgid "Western Ireland"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:50
+#: ./pytrisk/maps/risk2210/countries.csv:50
 msgid "New York"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:51
+#: ./pytrisk/maps/risk2210/countries.csv:51
 msgid "Nova Brasilia"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:52
+#: ./pytrisk/maps/risk2210/countries.csv:52
 msgid "Neo Paulo"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:53
+#: ./pytrisk/maps/risk2210/countries.csv:53
 msgid "The Ivory Reef"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:54
+#: ./pytrisk/maps/risk2210/countries.csv:54
 msgid "South Ceylon"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:55
+#: ./pytrisk/maps/risk2210/countries.csv:55
 msgid "Microcorp"
 msgstr ""
 
-#: pytrisk/maps/risk2210/countries.csv:56
+#: ./pytrisk/maps/risk2210/countries.csv:56
 msgid "Akara"
 msgstr ""
 
-#: pytrisk/maps/risk2210/info.yaml:1
+#: ./pytrisk/maps/risk2210/info.yaml:1
 msgid "Risk 2210"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/continents.csv:4
+#: ./pytrisk/maps/roman_empire/continents.csv:4
 msgid "Gallia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/continents.csv:5
+#: ./pytrisk/maps/roman_empire/continents.csv:5
 msgid "Hispania"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/continents.csv:6
+#: ./pytrisk/maps/roman_empire/continents.csv:6
 msgid "Illyrium"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/continents.csv:7
+#: ./pytrisk/maps/roman_empire/continents.csv:7
 msgid "Italia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:2
+#: ./pytrisk/maps/roman_empire/countries.csv:2
 msgid "Aegyptus"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:3
+#: ./pytrisk/maps/roman_empire/countries.csv:3
 msgid "Africa proconsularis"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:5
+#: ./pytrisk/maps/roman_empire/countries.csv:5
 msgid "Numidia inf."
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:6
+#: ./pytrisk/maps/roman_empire/countries.csv:6
 msgid "Numidia sup."
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:7
+#: ./pytrisk/maps/roman_empire/countries.csv:7
 msgid "Arabia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:8
+#: ./pytrisk/maps/roman_empire/countries.csv:8
 msgid "Bithynia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:9
+#: ./pytrisk/maps/roman_empire/countries.csv:9
 msgid "Cappadocia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:10
+#: ./pytrisk/maps/roman_empire/countries.csv:10
 msgid "Cilicia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:11
+#: ./pytrisk/maps/roman_empire/countries.csv:11
 msgid "Galatia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:12
+#: ./pytrisk/maps/roman_empire/countries.csv:12
 msgid "Lycia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:13
+#: ./pytrisk/maps/roman_empire/countries.csv:13
 msgid "Palestina"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:14
+#: ./pytrisk/maps/roman_empire/countries.csv:14
 msgid "Phrygia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:15
+#: ./pytrisk/maps/roman_empire/countries.csv:15
 msgid "Pontus"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:16
+#: ./pytrisk/maps/roman_empire/countries.csv:16
 msgid "Syria"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:17
+#: ./pytrisk/maps/roman_empire/countries.csv:17
 msgid "Aquitania"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:18
+#: ./pytrisk/maps/roman_empire/countries.csv:18
 msgid "Belgica"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:19
+#: ./pytrisk/maps/roman_empire/countries.csv:19
 msgid "Britannia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:20
+#: ./pytrisk/maps/roman_empire/countries.csv:20
 msgid "Germania inf."
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:21
+#: ./pytrisk/maps/roman_empire/countries.csv:21
 msgid "Germania sup."
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:22
+#: ./pytrisk/maps/roman_empire/countries.csv:22
 msgid "Lugdunensis"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:23
+#: ./pytrisk/maps/roman_empire/countries.csv:23
 msgid "Narbonensis"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:24
+#: ./pytrisk/maps/roman_empire/countries.csv:24
 msgid "Baetica"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:25
+#: ./pytrisk/maps/roman_empire/countries.csv:25
 msgid "Baleares"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:26
+#: ./pytrisk/maps/roman_empire/countries.csv:26
 msgid "Gallaecia et Asturia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:27
+#: ./pytrisk/maps/roman_empire/countries.csv:27
 msgid "Lusitania"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:28
+#: ./pytrisk/maps/roman_empire/countries.csv:28
 msgid "Mauretania"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:29
+#: ./pytrisk/maps/roman_empire/countries.csv:29
 msgid "Terraconensis"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:30
+#: ./pytrisk/maps/roman_empire/countries.csv:30
 msgid "Achaia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:33
+#: ./pytrisk/maps/roman_empire/countries.csv:33
 msgid "Epirus"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:34
+#: ./pytrisk/maps/roman_empire/countries.csv:34
 msgid "Macedonia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:35
+#: ./pytrisk/maps/roman_empire/countries.csv:35
 msgid "Moesia inf."
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:36
+#: ./pytrisk/maps/roman_empire/countries.csv:36
 msgid "Moesia sup."
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:37
+#: ./pytrisk/maps/roman_empire/countries.csv:37
 msgid "Pannonia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:40
+#: ./pytrisk/maps/roman_empire/countries.csv:40
 msgid "Gallia Cisalpinia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:41
+#: ./pytrisk/maps/roman_empire/countries.csv:41
 msgid "Noricum"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:42
+#: ./pytrisk/maps/roman_empire/countries.csv:42
 msgid "Raetia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/countries.csv:44
+#: ./pytrisk/maps/roman_empire/countries.csv:44
 msgid "Sardinia"
 msgstr ""
 
-#: pytrisk/maps/roman_empire/info.yaml:1
+#: ./pytrisk/maps/roman_empire/info.yaml:1
 msgid "Roman Empire"
 msgstr ""
 
