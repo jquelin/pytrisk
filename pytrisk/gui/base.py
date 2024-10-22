@@ -27,7 +27,7 @@ import PIL.Image
 import PIL.ImageTk
 from tkinter import *
 from tkinter import ttk
-from tkinter import font
+import tkinter.font as tkfont
 from tktooltip import ToolTip
 import types
 
@@ -131,7 +131,7 @@ class MainWindow(Tk):
                 command=self.do_close)
         self.actions.close.add_menu(menu, label)
         menu.add_separator()
-        icon  = self._get_icon_by_name('exit')
+        icon  = self._get_icon_by_name('quit')
         menu.add_command(
                 label=_('Quit'), underline=0, accelerator='Ctrl+Q',
                 image=icon, compound=LEFT,
@@ -140,44 +140,39 @@ class MainWindow(Tk):
         # Menu: actions
         menu = Menu(menubar, tearoff=False)
         menubar.add_cascade(label=_('Actions'), underline=0, menu=menu)
-#        Undo all
-#        Attack
-#        Re-attack
-#        Consolidate
-#        Finish turn
         label = _('Undo all')
-#        icon  = self._get_icon_by_name('close')
+        icon  = self._get_icon_by_name('undo')
         menu.add_command(
                 label=label, underline=0, accelerator='u',
-#                image='actreload16', compound=LEFT,
+                image=icon, compound=LEFT,
                 command=self.do_close)
         self.actions.undo_all.add_menu(menu, label)
         label = _('Attack')
-#        icon  = self._get_icon_by_name('close')
+        icon  = self._get_icon_by_name('next')
         menu.add_command(
                 label=label, underline=0, accelerator='a',
-#                image='actreload16', compound=LEFT,
+                image=icon, compound=LEFT,
                 command=self.do_close)
         self.actions.attack.add_menu(menu, label)
         label = _('Re-attack')
-#        icon  = self._get_icon_by_name('close')
+        icon  = self._get_icon_by_name('redo')
         menu.add_command(
                 label=label, underline=0, accelerator='r',
-#                image='actreload16', compound=LEFT,
+                image=icon, compound=LEFT,
                 command=self.do_close)
         self.actions.re_attack.add_menu(menu, label)
         label = _('Consolidate')
-#        icon  = self._get_icon_by_name('close')
+        icon  = self._get_icon_by_name('next')
         menu.add_command(
                 label=label, underline=0, accelerator='c',
-#                image='actreload16', compound=LEFT,
+                image=icon, compound=LEFT,
                 command=self.do_close)
         self.actions.consolidate.add_menu(menu, label)
         label = _('Finish turn')
-#        icon  = self._get_icon_by_name('close')
+        icon  = self._get_icon_by_name('stop')
         menu.add_command(
                 label=label, underline=0, accelerator='f',
-#                image='actreload16', compound=LEFT,
+                image=icon, compound=LEFT,
                 command=self.do_close)
         self.actions.finish_turn.add_menu(menu, label)
 
@@ -185,9 +180,9 @@ class MainWindow(Tk):
     def _build_toolbar(self):
         toolbar = Frame(self)
         self.toolbar = toolbar
-        toolbar.pack(side=TOP)
+        toolbar.pack(side=TOP, anchor=W, padx=5, pady=5)
 
-        icon = self._get_icon_by_name('exit')
+        icon = self._get_icon_by_name('quit')
         but = Button(toolbar, image=icon, command=self.do_quit)
         but.pack(side=LEFT)
         tooltip = ToolTip(but, msg=_('Quit'))
@@ -201,6 +196,51 @@ class MainWindow(Tk):
 
         sep = ttk.Separator(toolbar, orient=VERTICAL)
         sep.pack(side=LEFT, fill='y', padx=4, pady=4)
+
+        font_bold = tkfont.Font(font='TkDefaultFont')
+        font_bold.config(weight='bold')
+        lab = Label(toolbar, text=_('Game state:'), font=font_bold)
+        lab.pack(side=LEFT)
+
+        lab = Label(toolbar, text=_('place armies'), state=DISABLED)
+        lab.pack(side=LEFT)
+
+        icon = self._get_icon_by_name('undo')
+        but = Button(toolbar, image=icon, command=self.do_action_undo_all)
+        but.pack(side=LEFT)
+        tooltip = ToolTip(but, msg=_('undo all'))
+        self.actions.undo_all.add_widget(but)
+
+        icon = self._get_icon_by_name('next')
+        but = Button(toolbar, image=icon, command=self.do_action_attack)
+        but.pack(side=LEFT)
+        tooltip = ToolTip(but, msg=_('ready for attack'))
+        self.actions.undo_all.add_widget(but)
+
+        lab = Label(toolbar, text=_('attack'), state=DISABLED)
+        lab.pack(side=LEFT)
+
+        icon = self._get_icon_by_name('redo')
+        but = Button(toolbar, image=icon, command=self.do_action_re_attack)
+        but.pack(side=LEFT)
+        tooltip = ToolTip(but, msg=_('attack again'))
+        self.actions.undo_all.add_widget(but)
+
+        icon = self._get_icon_by_name('next')
+        but = Button(toolbar, image=icon, command=self.do_action_consolidate)
+        but.pack(side=LEFT)
+        tooltip = ToolTip(but, msg=_('consolidate'))
+        self.actions.undo_all.add_widget(but)
+
+        lab = Label(toolbar, text=_('move armies'), state=DISABLED)
+        lab.pack(side=LEFT)
+
+        icon = self._get_icon_by_name('stop')
+        but = Button(toolbar, image=icon, command=self.do_action_finish_turn)
+        but.pack(side=LEFT)
+        tooltip = ToolTip(but, msg=_('turn finished'))
+        self.actions.undo_all.add_widget(but)
+
 
 
     # -- gui callbacks
@@ -416,13 +456,16 @@ class MainWindow(Tk):
 
     # --
 
-    def _get_icon_by_name(self, name):
+    def _get_icon_by_name(self, name, size=24):
+        size = str(size)
+
         # check if icon is already loaded
-        if name in self.icons:
-            return self.icons[name]
+        cached = name + '_' + size
+        if cached in self.icons:
+            return self.icons[cached]
 
         # icon not loaded, first compute path
-        path = Path(Path(__file__).parent, 'icons', f'{name}.png').as_posix()
+        path = Path(Path(__file__).parent, 'icons', size, f'{name}.png').as_posix()
         log.debug(f'loading icon {path}')
 
         # load image and convert to RGBA if needed
@@ -432,7 +475,7 @@ class MainWindow(Tk):
 
         # create the icon ready to be used by tk, store it and return it
         icon = PIL.ImageTk.PhotoImage(img)
-        self.icons[name] = icon
+        self.icons[cached] = icon
         return icon
 
 
