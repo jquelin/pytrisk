@@ -98,14 +98,18 @@ class MainWindow(Tk):
         # Menu: game
         mnu_game = Menu(menubar, tearoff=False)
         label = _('Close')
+        icon  = self._get_icon_by_name('close')
         mnu_game.add_command(
                 label=label, accelerator='Ctrl+W',
+                image=icon, compound=LEFT,
                 underline=0,
                 command=self.do_close)
         self.actions.close.add_menu(mnu_game, label)
         mnu_game.add_separator()
+        icon  = self._get_icon_by_name('exit')
         mnu_game.add_command(
                 label=_('Quit'), accelerator='Ctrl+Q',
+                image=icon, compound=LEFT,
                 underline=0,
                 command=self.do_quit)
         menubar.add_cascade(label=_('Game'), underline=0, menu=mnu_game)
