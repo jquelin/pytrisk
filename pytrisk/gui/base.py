@@ -90,29 +90,96 @@ class MainWindow(Tk):
         action.disable()
         self.actions.close = action
 
+        action = Action(self, lambda ev: self.do_undo_all())
+        action.add_binding('u')
+        action.disable()
+        self.actions.undo_all = action
+
+        action = Action(self, lambda ev: self.do_attack())
+        action.add_binding('a')
+        action.disable()
+        self.actions.attack = action
+
+        action = Action(self, lambda ev: self.do_re_attack())
+        action.add_binding('r')
+        action.disable()
+        self.actions.re_attack = action
+
+        action = Action(self, lambda ev: self.do_consolidate())
+        action.add_binding('c')
+        action.disable()
+        self.actions.consolidate = action
+
+        action = Action(self, lambda ev: self.do_finish_turn())
+        action.add_binding('f')
+        action.disable()
+        self.actions.finish_turn = action
+
 
     def _build_menubar(self):
         menubar = Menu(self)
         self.config(menu=menubar)
 
         # Menu: game
-        mnu_game = Menu(menubar, tearoff=False)
+        menu = Menu(menubar, tearoff=False)
+        menubar.add_cascade(label=_('Game'), underline=0, menu=menu)
         label = _('Close')
         icon  = self._get_icon_by_name('close')
-        mnu_game.add_command(
-                label=label, accelerator='Ctrl+W',
+        menu.add_command(
+                label=label, underline=0, accelerator='Ctrl+W',
                 image=icon, compound=LEFT,
-                underline=0,
                 command=self.do_close)
-        self.actions.close.add_menu(mnu_game, label)
-        mnu_game.add_separator()
+        self.actions.close.add_menu(menu, label)
+        menu.add_separator()
         icon  = self._get_icon_by_name('exit')
-        mnu_game.add_command(
-                label=_('Quit'), accelerator='Ctrl+Q',
+        menu.add_command(
+                label=_('Quit'), underline=0, accelerator='Ctrl+Q',
                 image=icon, compound=LEFT,
-                underline=0,
                 command=self.do_quit)
-        menubar.add_cascade(label=_('Game'), underline=0, menu=mnu_game)
+
+        # Menu: actions
+        menu = Menu(menubar, tearoff=False)
+        menubar.add_cascade(label=_('Actions'), underline=0, menu=menu)
+#        Undo all
+#        Attack
+#        Re-attack
+#        Consolidate
+#        Finish turn
+        label = _('Undo all')
+#        icon  = self._get_icon_by_name('close')
+        menu.add_command(
+                label=label, underline=0, accelerator='u',
+#                image='actreload16', compound=LEFT,
+                command=self.do_close)
+        self.actions.undo_all.add_menu(menu, label)
+        label = _('Attack')
+#        icon  = self._get_icon_by_name('close')
+        menu.add_command(
+                label=label, underline=0, accelerator='a',
+#                image='actreload16', compound=LEFT,
+                command=self.do_close)
+        self.actions.attack.add_menu(menu, label)
+        label = _('Re-attack')
+#        icon  = self._get_icon_by_name('close')
+        menu.add_command(
+                label=label, underline=0, accelerator='r',
+#                image='actreload16', compound=LEFT,
+                command=self.do_close)
+        self.actions.re_attack.add_menu(menu, label)
+        label = _('Consolidate')
+#        icon  = self._get_icon_by_name('close')
+        menu.add_command(
+                label=label, underline=0, accelerator='c',
+#                image='actreload16', compound=LEFT,
+                command=self.do_close)
+        self.actions.consolidate.add_menu(menu, label)
+        label = _('Finish turn')
+#        icon  = self._get_icon_by_name('close')
+        menu.add_command(
+                label=label, underline=0, accelerator='f',
+#                image='actreload16', compound=LEFT,
+                command=self.do_close)
+        self.actions.finish_turn.add_menu(menu, label)
 
 
     def _build_toolbar(self):
@@ -137,6 +204,21 @@ class MainWindow(Tk):
 
 
     # -- gui callbacks
+
+    def do_action_undo_all(self):
+        pass
+
+    def do_action_attack(self):
+        pass
+
+    def do_action_re_attack(self):
+        pass
+
+    def do_action_consolidate(self):
+        pass
+
+    def do_action_finish_turn(self):
+        pass
 
     def do_close(self):
         pass
