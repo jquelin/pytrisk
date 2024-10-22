@@ -40,6 +40,8 @@ class MainWindow(Tk):
         self.icons = {}
 
         self.title('pytrisk')
+        self.wm_iconphoto(True, self._get_icon_by_name('prisk', 32))
+
         self._build_actions()
         self._build_menubar()
         self._build_toolbar()
