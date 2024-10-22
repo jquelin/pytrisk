@@ -41,6 +41,7 @@ class MainWindow(Tk):
 
         self.title('pytrisk')
         self._build_actions()
+        self._build_menubar()
         self._build_toolbar()
 
 
@@ -81,13 +82,33 @@ class MainWindow(Tk):
         self.actions = types.SimpleNamespace()
 
         action = Action(self, lambda ev: self.do_quit())
-        action.binding_add('<Control-q>')
+        action.add_binding('<Control-q>')
         self.actions.quit = action
 
         action = Action(self, lambda ev: self.do_close())
-        action.binding_add('<Control-w>')
+        action.add_binding('<Control-w>')
         action.disable()
         self.actions.close = action
+
+
+    def _build_menubar(self):
+        menubar = Menu(self)
+        self.config(menu=menubar)
+
+        # Menu: game
+        mnu_game = Menu(menubar, tearoff=False)
+        label = _('Close')
+        mnu_game.add_command(
+                label=label, accelerator='Ctrl+W',
+                underline=0,
+                command=self.do_close)
+        self.actions.close.add_menu(mnu_game, label)
+        mnu_game.add_separator()
+        mnu_game.add_command(
+                label=_('Quit'), accelerator='Ctrl+Q',
+                underline=0,
+                command=self.do_quit)
+        menubar.add_cascade(label=_('Game'), underline=0, menu=mnu_game)
 
 
     def _build_toolbar(self):
@@ -99,13 +120,13 @@ class MainWindow(Tk):
         but = Button(toolbar, image=icon, command=self.do_quit)
         but.pack(side=LEFT)
         tooltip = ToolTip(but, msg=_('Quit'))
-        self.actions.quit.widget_add(but)
+        self.actions.quit.add_widget(but)
 
         icon = self._get_icon_by_name('close')
         but = Button(toolbar, image=icon, command=self.do_close)
         but.pack(side=LEFT)
         tooltip = ToolTip(but, msg=_('Close'))
-        self.actions.close.widget_add(but)
+        self.actions.close.add_widget(but)
 
         sep = ttk.Separator(toolbar, orient=VERTICAL)
         sep.pack(side=LEFT, fill='y', padx=4, pady=4)
@@ -142,7 +163,7 @@ class MainWindow(Tk):
         menuitem.set_submenu(submenu)
         return submenu
 
-    def _build_menubar(self):
+    def _xxxbuild_menubar(self):
         menubar = Gtk.MenuBar()
         self._vbox.pack_start(menubar, expand=False, fill=True, padding=0)
         self.widgets.menubar = menubar

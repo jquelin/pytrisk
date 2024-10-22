@@ -28,11 +28,6 @@ class Action:
     object, associate some widgets and bindings with widget_add() and
     then de/activate the whole action at once with enable() or
     disable().
-
-    Attributes:
-    window:   the window to apply the bindings to.
-    callback: the callback associated to the action.
-
     """
 
     # -- constructor
@@ -50,15 +45,33 @@ class Action:
         """
 
 
-        self.widgets  = set()
-        self.bindings = set()
+        self.widgets    = set()
+        self.bindings   = set()
         self.is_enabled = True
-        self.window   = window
-        self.callback = callback
+        self.window     = window
+        self.callback   = callback
+        self.menu       = None
+        self.menu_item  = None
 
-    # -- adding / removing widget
 
-    def widget_add(self, widget):
+    # -- adding dependent items
+
+    def add_menu(self, menu, menu_item):
+        """Add a menu item to the object.
+
+        Parameters
+
+        menu:
+            The menu containing the menu item.
+        menu_item:
+            The label of the menu item.
+        """
+        self.menu = menu
+        self.menu_item = menu_item
+        state = tkinter.NORMAL if self.is_enabled else tkinter.DISABLED
+        self.menu.entryconfig(self.menu_item, state=state)
+
+    def add_widget(self, widget):
         """Add a widget to the object.
 
         Parameters
@@ -70,19 +83,7 @@ class Action:
         state = tkinter.NORMAL if self.is_enabled else tkinter.DISABLED
         widget.configure(state=state)
 
-    def widget_remove(self, widget):
-        """Remove a widget to the object.
-
-        Parameters
-
-        widget:
-            The new widget to remove from the object.
-        """
-        self.widgets.remove(widget)
-
-    # -- adding / removing binding
-
-    def binding_add(self, binding):
+    def add_binding(self, binding):
         """Add a binding to the object.
 
         Parameters
@@ -93,6 +94,7 @@ class Action:
         self.bindings.add(binding)
         callback = self.callback if self.is_enabled else None
         self.window.bind(binding, callback)
+
 
     # -- enabling / disabling
 
@@ -106,6 +108,8 @@ class Action:
             widget.configure(state=tkinter.NORMAL)
         for binding in self.bindings:
             self.window.bind(binding, self.callback)
+        if self.menu is not None:
+            self.menu.entryconfig(self.menu_item, state=tkinter.NORMAL)
 
     def disable(self):
         """Disable the action object
@@ -117,5 +121,7 @@ class Action:
             widget.configure(state=tkinter.DISABLED)
         for binding in self.bindings:
             self.window.bind(binding, None)
+        if self.menu is not None:
+            self.menu.entryconfig(self.menu_item, state=tkinter.DISABLED)
 
 
