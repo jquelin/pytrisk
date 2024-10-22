@@ -20,20 +20,29 @@ from pytrisk import config  # should go first
 from pytrisk.locale import _
 from pytrisk.logging import log
 from pytrisk import maps
+from pytrisk.gui.tkhelper import Action
 
-from tkinter.ttk import*
+from pathlib import Path
+import PIL.Image
+import PIL.ImageTk
 from tkinter import *
 from tkinter import ttk
 from tkinter import font
+import types
+
 
 
 
 class MainWindow(Tk):
     def __init__(self):
-#        super().__init__(title="pytrisk")
         super().__init__()
+        self.icons = {}
 
-        self.maps = sorted(maps.all_maps(), key=lambda x: x.title)
+        self.title('pytrisk')
+        self._build_toolbar()
+
+
+#        self.maps = sorted(maps.all_maps(), key=lambda x: x.title)
         return
 
         self.widgets = types.SimpleNamespace()
@@ -44,7 +53,6 @@ class MainWindow(Tk):
         self.add_accel_group(self.widgets.accelgroup)
 
         self._build_menubar()
-        self._build_toolbar()
 
         self._build_stack()
 #        self._build_statusbar()
@@ -64,11 +72,31 @@ class MainWindow(Tk):
         self.show_all()
 
 
-    #
-    def run(self):
-        Gtk.main()
 
     # -- gui construction
+
+    def _build_toolbar(self):
+        toolbar = Frame(self)
+        self.toolbar = toolbar
+        toolbar.pack(side=TOP)
+
+        b1 = Button(toolbar, text='Quit')
+        b1.pack(side=LEFT)
+        sep = ttk.Separator(toolbar, orient=VERTICAL)
+        sep.pack(side=LEFT, fill='y', padx=4, pady=4)
+        b2 = Button(toolbar, text='Test')
+        b2.pack(side=LEFT)
+
+        icon = self._get_icon_by_name('exit')
+        but_quit = Button(toolbar, image=icon)
+        but_quit.pack(side=LEFT)
+
+        sep = ttk.Separator(toolbar, orient=VERTICAL)
+        sep.pack(side=LEFT, fill='y', padx=4, pady=4)
+
+
+    # -- old gtk
+
 
     def _add_menuitem(self, submenu, label, callback, hotkey):
         if label == '--':
@@ -176,7 +204,7 @@ class MainWindow(Tk):
         self._vbox.pack_start(statusbar, expand=False, fill=True, padding=0)
         self._statusbar = statusbar
 
-    def _build_toolbar(self):
+    def _xxxbuild_toolbar(self):
         toolbar = Gtk.Toolbar()
 
         icon_quit = Gtk.Image.new_from_file(self._get_icon_by_name('exit'))
@@ -258,7 +286,24 @@ class MainWindow(Tk):
     # --
 
     def _get_icon_by_name(self, name):
-        return Path(Path(__file__).parent, 'gui', 'icons', f'{name}.png').as_posix()
+        # check if icon is already loaded
+        if name in self.icons:
+            return self.icons[name]
+
+        # icon not loaded, first compute path
+        path = Path(Path(__file__).parent, 'icons', f'{name}.png').as_posix()
+        log.debug(f'loading icon {path}')
+
+        # load image and convert to RGBA if needed
+        img = PIL.Image.open(path)
+        if img.mode != 'RGBA':
+            img = img.convert(mode="RGBA")
+
+        # create the icon ready to be used by tk, store it and return it
+        icon = PIL.ImageTk.PhotoImage(img)
+        self.icons[name] = icon
+        return icon
+
 
     # -- handlers
 
