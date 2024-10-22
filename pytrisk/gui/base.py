@@ -28,6 +28,7 @@ import PIL.ImageTk
 from tkinter import *
 from tkinter import ttk
 from tkinter import font
+from tktooltip import ToolTip
 import types
 
 
@@ -95,14 +96,16 @@ class MainWindow(Tk):
         toolbar.pack(side=TOP)
 
         icon = self._get_icon_by_name('exit')
-        but_quit = Button(toolbar, image=icon, command=self.do_quit)
-        but_quit.pack(side=LEFT)
-        self.actions.quit.widget_add(but_quit)
+        but = Button(toolbar, image=icon, command=self.do_quit)
+        but.pack(side=LEFT)
+        tooltip = ToolTip(but, msg=_('Quit'))
+        self.actions.quit.widget_add(but)
 
         icon = self._get_icon_by_name('close')
-        but_close = Button(toolbar, image=icon, command=self.do_close)
-        but_close.pack(side=LEFT)
-        self.actions.close.widget_add(but_close)
+        but = Button(toolbar, image=icon, command=self.do_close)
+        but.pack(side=LEFT)
+        tooltip = ToolTip(but, msg=_('Close'))
+        self.actions.close.widget_add(but)
 
         sep = ttk.Separator(toolbar, orient=VERTICAL)
         sep.pack(side=LEFT, fill='y', padx=4, pady=4)
