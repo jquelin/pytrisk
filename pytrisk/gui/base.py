@@ -28,7 +28,7 @@ import PIL.ImageTk
 from tkinter import *
 from tkinter import ttk
 import tkinter.font as tkfont
-from tktooltip import ToolTip
+from TkToolTip import ToolTip
 import types
 
 

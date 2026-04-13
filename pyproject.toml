@@ -18,7 +18,11 @@ classifiers = [
 ]
 dependencies = [
     "appdirs",
-    "pathlib"
+    "colorlog>=6.10.1",
+    "pathlib",
+    "pillow>=9.5.0",
+    "pyyaml>=6.0.1",
+    "tktooltip>=1.2.0",
 ]
 
 [project.scripts]
