@@ -8,7 +8,7 @@ from pytrisk.logger import log
 #from .controller.controller import Controller
 #from .ui.events import EventBus
 #from pytrisk.gui.main import GraphicalUI
-import pytrisk.gui.base
+import pytrisk.gui.main
 
 def run():
     parser = argparse.ArgumentParser(
@@ -32,7 +32,7 @@ def run():
 #    event_bus  = EventBus()
 #    controller = Controller(app, event_bus)
 
-    ui = pytrisk.gui.base.MainWindow()
+    ui = pytrisk.gui.main.MainWindow()
     ui.mainloop()
 
 
