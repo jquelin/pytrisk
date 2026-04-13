@@ -34,7 +34,6 @@ import types
 from pytrisk.constants import appinfo
 
 
-
 class MainWindow(Tk):
     def __init__(self):
         super().__init__()
@@ -501,7 +500,8 @@ class MainWindow(Tk):
             return self.icons[cached]
 
         # icon not loaded, first compute path
-        path = Path(Path(__file__).parent, 'icons', size, f'{name}.png').as_posix()
+        path = appinfo.dirs.share / 'icons' / size / f'{name}.png'
+        path = path.absolute().as_posix()
         log.debug(f'loading icon {path}')
 
         # load image and convert to RGBA if needed
