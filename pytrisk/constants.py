@@ -15,23 +15,15 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-import logging
-import colorlog
+import appdirs
+from pathlib import Path
 
-from pytrisk import config
 
-colors = colorlog.default_log_colors
-colors['DEBUG'] = 'blue'
-colors['INFO']  = 'white'
-formatter = colorlog.ColoredFormatter(
-    '%(log_color)s%(asctime)s %(levelname)s %(message)s',
-    datefmt='%H:%M:%S',
-    log_colors=colors
-)
-handler = colorlog.StreamHandler()
-handler.setFormatter(formatter)
-log = colorlog.getLogger('pytrisk')
-log.addHandler(handler)
-_log_level = config.get('logging.level', logging.DEBUG)
-log.setLevel(_log_level)
+class appinfo:
+    name  = "pytrisk"
+    title = 'pytrisk'
 
+class dirs:
+    config = Path(appdirs.user_config_dir(appinfo.name)).absolute()
+    share  = Path(__file__).parent / "share"
+appinfo.dirs = dirs

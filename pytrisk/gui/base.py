@@ -18,8 +18,8 @@
 from pytrisk import config  # should go first
 
 from pytrisk.locale import _
-from pytrisk.logging import log
-from pytrisk import maps
+from ..logger import log
+import pytrisk.data
 from pytrisk.gui.tkhelper import Action
 
 from pathlib import Path
@@ -31,6 +31,7 @@ import tkinter.font as tkfont
 from TkToolTip import ToolTip
 import types
 
+from pytrisk.constants import appinfo
 
 
 
@@ -45,9 +46,9 @@ class MainWindow(Tk):
         self._build_actions()
         self._build_menubar()
         self._build_toolbar()
+        self._build_startup_frame()
 
 
-#        self.maps = sorted(maps.all_maps(), key=lambda x: x.title)
         return
 
         self.widgets = types.SimpleNamespace()
@@ -179,6 +180,39 @@ class MainWindow(Tk):
         self.actions.finish_turn.add_menu(menu, label)
 
 
+    def _build_startup_frame(self):
+        frame = Frame(self)
+        frame.pack(side=TOP, expand=True, fill=BOTH)
+
+        f = Frame(frame)
+        f.pack(side=LEFT, expand=True, fill=Y)
+
+        lab = Label(f, text=_('Map'))
+        lab.pack(side=TOP)
+        lb_maps = Listbox(f)
+        lb_maps.pack(side=TOP, expand=True, fill=Y)
+
+        maps = sorted(pytrisk.data.all_maps(), key=lambda x: x.title)
+        for m in maps:
+            lb_maps.insert(END, m.title)
+
+        f_players = Frame(frame)
+        f_players.pack(side=LEFT, expand=True, fill=BOTH)
+        lab = Label(f_players, text=_('Players'))
+        lab.pack(side=TOP)
+        f = Frame(f_players)
+        f.pack(side=TOP, fill=X)
+        lab = Label(f, text=_('Number of players'))
+        lab.pack(side=LEFT)
+        scale = Scale(f, orient=HORIZONTAL, from_=2, to=10)
+        scale.set(3)
+        scale.pack(side=LEFT, fill=X)
+
+        for i in range(0, 10):
+            print(i)
+
+
+
     def _build_toolbar(self):
         toolbar = Frame(self)
         self.toolbar = toolbar
@@ -197,7 +231,7 @@ class MainWindow(Tk):
         self.actions.close.add_widget(but)
 
         sep = ttk.Separator(toolbar, orient=VERTICAL)
-        sep.pack(side=LEFT, fill='y', padx=4, pady=4)
+        sep.pack(side=LEFT, fill=Y, padx=4, pady=4)
 
         font_bold = tkfont.Font(font='TkDefaultFont')
         font_bold.config(weight='bold')

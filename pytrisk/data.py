@@ -16,7 +16,7 @@
 #
 
 from pytrisk.locale  import _
-from pytrisk.logging import log
+from .logger import log
 
 import csv
 from pathlib import Path
@@ -34,10 +34,6 @@ class Continent():
         self.bonus  = bonus
         self.color  = color
         self.longid = f'{self.mapref().name}-{self.name}'
-        log.debug(f'new continent: {numid} - "{name}" bonus={bonus} color={color}')
-
-#    def __del__(self):
-#        log.debug(f'~{self.longid}')
 
 class Country():
     def __init__(self, mapref:weakref, numid:int, name:str,
@@ -50,10 +46,6 @@ class Country():
         self.coordy       = coordy
         self.longname     = f'{self.mapref().name}-{self.continentref().name}-{self.name}'
         self.connections  = set()
-        log.debug(f'new country: {numid} - {continentref().name} - {name} @{coordx},{coordy}')
-
-#    def __del__(self):
-#        log.debug(f'~{self.longname}')
 
     def add_connection(self, countryref:weakref):
         self.connections.add(countryref)
@@ -64,13 +56,10 @@ class Map():
         self.path   = Path(maps_dir, name)
         self._continents = set()
         self._countries  = set()
-        log.info(f'loading map {name}')
+        #log.info(f'loading map {name}')
         self._load()
         self.background = next(self.path.glob('background.*'), None)
         self.background = self.background.as_posix()
-
-    def __del__(self):
-        log.debug(f'~{self.name}')
 
 
     # -- finders
