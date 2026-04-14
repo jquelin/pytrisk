@@ -25,14 +25,15 @@ from pytrisk.ui.tkhelper import Action
 from pathlib import Path
 import PIL.Image
 import PIL.ImageTk
+import tkinter as tk
 from tkinter import *
 from tkinter import ttk
 import tkinter.font as tkfont
-from TkToolTip import ToolTip
 import types
 
 from pytrisk.constants import appinfo
-from pytrisk.ui.views.menu import MenuView
+from pytrisk.ui.views.menu    import MenuView
+from pytrisk.ui.views.toolbar import ToolbarView
 
 
 class MainWindow(Tk):
@@ -48,7 +49,9 @@ class MainWindow(Tk):
         menu = MenuView(self, None, None)
         self.config(menu=menu)
 
-        self._build_toolbar()
+        toolbar = ToolbarView(self, None, None)
+        toolbar.pack(side=tk.TOP, anchor=tk.W, padx=5, pady=5)
+
         self._build_startup_frame()
 
 
@@ -147,75 +150,6 @@ class MainWindow(Tk):
         scale = Scale(f, orient=HORIZONTAL, from_=2, to=10)
         scale.set(3)
         scale.pack(side=LEFT, fill=X)
-
-        for i in range(0, 10):
-            print(i)
-
-
-
-    def _build_toolbar(self):
-        toolbar = Frame(self)
-        self.toolbar = toolbar
-        toolbar.pack(side=TOP, anchor=W, padx=5, pady=5)
-
-        icon = self._get_icon_by_name('quit')
-        but = Button(toolbar, image=icon, command=self.do_quit)
-        but.pack(side=LEFT)
-        tooltip = ToolTip(but, msg=_('Quit'))
-        self.actions.quit.add_widget(but)
-
-        icon = self._get_icon_by_name('close')
-        but = Button(toolbar, image=icon, command=self.do_close)
-        but.pack(side=LEFT)
-        tooltip = ToolTip(but, msg=_('Close'))
-        self.actions.close.add_widget(but)
-
-        sep = ttk.Separator(toolbar, orient=VERTICAL)
-        sep.pack(side=LEFT, fill=Y, padx=4, pady=4)
-
-        font_bold = tkfont.Font(font='TkDefaultFont')
-        font_bold.config(weight='bold')
-        lab = Label(toolbar, text=_('Game state:'), font=font_bold)
-        lab.pack(side=LEFT)
-
-        lab = Label(toolbar, text=_('place armies'), state=DISABLED)
-        lab.pack(side=LEFT)
-
-        icon = self._get_icon_by_name('undo')
-        but = Button(toolbar, image=icon, command=self.do_action_undo_all)
-        but.pack(side=LEFT)
-        tooltip = ToolTip(but, msg=_('undo all'))
-        self.actions.undo_all.add_widget(but)
-
-        icon = self._get_icon_by_name('next')
-        but = Button(toolbar, image=icon, command=self.do_action_attack)
-        but.pack(side=LEFT)
-        tooltip = ToolTip(but, msg=_('ready for attack'))
-        self.actions.undo_all.add_widget(but)
-
-        lab = Label(toolbar, text=_('attack'), state=DISABLED)
-        lab.pack(side=LEFT)
-
-        icon = self._get_icon_by_name('redo')
-        but = Button(toolbar, image=icon, command=self.do_action_re_attack)
-        but.pack(side=LEFT)
-        tooltip = ToolTip(but, msg=_('attack again'))
-        self.actions.undo_all.add_widget(but)
-
-        icon = self._get_icon_by_name('next')
-        but = Button(toolbar, image=icon, command=self.do_action_consolidate)
-        but.pack(side=LEFT)
-        tooltip = ToolTip(but, msg=_('consolidate'))
-        self.actions.undo_all.add_widget(but)
-
-        lab = Label(toolbar, text=_('move armies'), state=DISABLED)
-        lab.pack(side=LEFT)
-
-        icon = self._get_icon_by_name('stop')
-        but = Button(toolbar, image=icon, command=self.do_action_finish_turn)
-        but.pack(side=LEFT)
-        tooltip = ToolTip(but, msg=_('turn finished'))
-        self.actions.undo_all.add_widget(but)
 
 
 
