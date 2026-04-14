@@ -32,6 +32,7 @@ from TkToolTip import ToolTip
 import types
 
 from pytrisk.constants import appinfo
+from pytrisk.gui.views.menu import MenuView
 
 
 class MainWindow(Tk):
@@ -43,7 +44,10 @@ class MainWindow(Tk):
         self.wm_iconphoto(True, self._get_icon_by_name('prisk', 32))
 
         self._build_actions()
-        self._build_menubar()
+
+        menu = MenuView(self, None, None)
+        self.config(menu=menu)
+
         self._build_toolbar()
         self._build_startup_frame()
 
@@ -56,8 +60,6 @@ class MainWindow(Tk):
 
         self.widgets.accelgroup = Gtk.AccelGroup()
         self.add_accel_group(self.widgets.accelgroup)
-
-        self._build_menubar()
 
         self._build_stack()
 #        self._build_statusbar()
@@ -116,67 +118,6 @@ class MainWindow(Tk):
         action.add_binding('f')
         action.disable()
         self.actions.finish_turn = action
-
-
-    def _build_menubar(self):
-        menubar = Menu(self)
-        self.config(menu=menubar)
-
-        # Menu: game
-        menu = Menu(menubar, tearoff=False)
-        menubar.add_cascade(label=_('Game'), underline=0, menu=menu)
-        label = _('Close')
-        icon  = self._get_icon_by_name('close')
-        menu.add_command(
-                label=label, underline=0, accelerator='Ctrl+W',
-                image=icon, compound=LEFT,
-                command=self.do_close)
-        self.actions.close.add_menu(menu, label)
-        menu.add_separator()
-        icon  = self._get_icon_by_name('quit')
-        menu.add_command(
-                label=_('Quit'), underline=0, accelerator='Ctrl+Q',
-                image=icon, compound=LEFT,
-                command=self.do_quit)
-
-        # Menu: actions
-        menu = Menu(menubar, tearoff=False)
-        menubar.add_cascade(label=_('Actions'), underline=0, menu=menu)
-        label = _('Undo all')
-        icon  = self._get_icon_by_name('undo')
-        menu.add_command(
-                label=label, underline=0, accelerator='u',
-                image=icon, compound=LEFT,
-                command=self.do_close)
-        self.actions.undo_all.add_menu(menu, label)
-        label = _('Attack')
-        icon  = self._get_icon_by_name('next')
-        menu.add_command(
-                label=label, underline=0, accelerator='a',
-                image=icon, compound=LEFT,
-                command=self.do_close)
-        self.actions.attack.add_menu(menu, label)
-        label = _('Re-attack')
-        icon  = self._get_icon_by_name('redo')
-        menu.add_command(
-                label=label, underline=0, accelerator='r',
-                image=icon, compound=LEFT,
-                command=self.do_close)
-        self.actions.re_attack.add_menu(menu, label)
-        label = _('Consolidate')
-        icon  = self._get_icon_by_name('next')
-        menu.add_command(
-                label=label, underline=0, accelerator='c',
-                image=icon, compound=LEFT,
-                command=self.do_close)
-        self.actions.consolidate.add_menu(menu, label)
-        label = _('Finish turn')
-        icon  = self._get_icon_by_name('stop')
-        menu.add_command(
-                label=label, underline=0, accelerator='f',
-                image=icon, compound=LEFT,
-                command=self.do_close)
-        self.actions.finish_turn.add_menu(menu, label)
 
 
     def _build_startup_frame(self):
