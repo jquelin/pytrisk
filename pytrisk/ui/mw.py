@@ -20,7 +20,7 @@ from pytrisk import config  # should go first
 from pytrisk.locale import _
 from ..logger import log
 import pytrisk.data
-from pytrisk.gui.tkhelper import Action
+from pytrisk.ui.tkhelper import Action
 
 from pathlib import Path
 import PIL.Image
@@ -32,7 +32,7 @@ from TkToolTip import ToolTip
 import types
 
 from pytrisk.constants import appinfo
-from pytrisk.gui.views.menu import MenuView
+from pytrisk.ui.views.menu import MenuView
 
 
 class MainWindow(Tk):

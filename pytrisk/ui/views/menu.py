@@ -17,8 +17,8 @@
 
 import tkinter as tk
 
-from pytrisk.locale    import _
-from pytrisk.gui.utils import Icons
+from pytrisk.locale   import _
+from pytrisk.ui.utils import Icons
 
 class MenuView(tk.Menu):
     def __init__(self, parent, controller, event_bus):
