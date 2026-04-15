@@ -26,14 +26,18 @@ import pytrisk.data
 from pytrisk.locale import _
 from pytrisk.logger import log
 from pytrisk.constants import appinfo
-from pytrisk.ui.utils         import Icons
-from pytrisk.ui.views.menu    import MenuView
-from pytrisk.ui.views.toolbar import ToolbarView
+from pytrisk.ui.utils           import Icons
+from pytrisk.ui.views.menu      import MenuView
+from pytrisk.ui.views.statusbar import StatusbarView
+from pytrisk.ui.views.toolbar   import ToolbarView
 
 
 class MainWindow(tk.Tk):
-    def __init__(self):
+    def __init__(self, event_bus):
         super().__init__()
+
+        # Store event bus & controller
+        self.event_bus = event_bus
 
         # GUI creation
         log.info('creating main window')
@@ -50,13 +54,19 @@ class MainWindow(tk.Tk):
     # -- gui construction
 
     def _create_views(self):
-        """Create all views"""
+        """Create the various views and assemble them."""
+        controller = None
+        event_bus  = self.event_bus
 
-        menu = MenuView(self, None, None)
+        # GUI elements always present
+        menu = MenuView(self, controller, event_bus)
         self.config(menu=menu)
 
-        toolbar = ToolbarView(self, None, None)
+        toolbar = ToolbarView(self, controller, event_bus)
         toolbar.pack(side=tk.TOP, anchor=tk.W, padx=5, pady=5)
+
+        statusbar = StatusbarView(self, controller, event_bus)
+        statusbar.pack(side=tk.BOTTOM, fill=tk.X)
 
 
     def _build_startup_frame(self):

@@ -6,7 +6,7 @@ from pytrisk.logger import log
 
 #from .core.app import Application
 #from .controller.controller import Controller
-#from .ui.events import EventBus
+from pytrisk.events import EventBus
 import pytrisk.ui.mw
 
 def run():
@@ -28,10 +28,10 @@ def run():
 
     # create the application, event bus and controller
 #    app        = Application()
-#    event_bus  = EventBus()
+    event_bus  = EventBus()
 #    controller = Controller(app, event_bus)
 
-    ui = pytrisk.ui.mw.MainWindow()
+    ui = pytrisk.ui.mw.MainWindow(event_bus)
     ui.mainloop()
 
 
