@@ -18,9 +18,13 @@
 import gettext
 from pathlib import Path
 
-locale_dir = Path(Path(__file__).parent, 'locale')
+from pytrisk.constants import appinfo
 
-gettext.bindtextdomain('pytrisk', locale_dir)
-gettext.textdomain('pytrisk')
+# prepare l10n support
+locale_dir = appinfo.dirs.share / 'locale'
 
+gettext.bindtextdomain(appinfo.name, locale_dir)
+gettext.textdomain(appinfo.name)
+
+# exported function
 _ = gettext.gettext
