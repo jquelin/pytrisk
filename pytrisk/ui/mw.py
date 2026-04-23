@@ -15,17 +15,16 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-
-
 from pathlib import Path
 import tkinter as tk
 from tkinter import ttk
 
-#from pytrisk import config
+from pytrisk.config import config
 import pytrisk.data
-from pytrisk.locale import _
-from pytrisk.logger import log
+from pytrisk.locale    import _
+from pytrisk.logger    import log
 from pytrisk.constants import appinfo
+from pytrisk.events    import Events
 from pytrisk.ui.utils           import Icons
 from pytrisk.ui.views.menu      import MenuView
 from pytrisk.ui.views.statusbar import StatusbarView
@@ -33,11 +32,12 @@ from pytrisk.ui.views.toolbar   import ToolbarView
 
 
 class MainWindow(tk.Tk):
-    def __init__(self, event_bus):
+    def __init__(self, controller, event_bus):
         super().__init__()
 
-        # Store event bus & controller
-        self.event_bus = event_bus
+        # Store controller & event bus
+        self.controller = controller
+        self.event_bus  = event_bus
 
         # GUI creation
         log.info('creating main window')
@@ -46,16 +46,21 @@ class MainWindow(tk.Tk):
         self._create_views()
 
         self._build_startup_frame()
+
         # Add some bindings
         self.protocol('WM_DELETE_WINDOW', self._on_quit)
         self.bind('<Control-q>', self._on_quit)
+
+        # Subscribe to controller events
+        event_bus.subscribe(Events.action_quit, self.quit)
+
 
 
     # -- gui construction
 
     def _create_views(self):
         """Create the various views and assemble them."""
-        controller = None
+        controller = self.controller
         event_bus  = self.event_bus
 
         # GUI elements always present
@@ -99,10 +104,16 @@ class MainWindow(tk.Tk):
 
 
 
+    # -- Controller events
+
+    def quit(self):
+        """Actually quit the application."""
+        self.destroy()
+
+
     # -- gui callbacks
 
     def _on_quit(self, event=None):
         """Signal the controller we want to quit the application."""
-        log.info('quitting')
-        self.destroy()
+        self.controller.do_quit()
 

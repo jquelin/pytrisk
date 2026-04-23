@@ -35,6 +35,12 @@ class Controller:
 
     # -- Event handlers
 
+    def do_quit(self):
+        """Quit the application."""
+        log.info('Request to quit')
+        self.event_bus.emit(Events.action_quit)
+
+
     # -- Preferences retrieval / setting
 
     # -- Private methods

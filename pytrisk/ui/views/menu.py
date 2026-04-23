@@ -81,5 +81,6 @@ class MenuView(tk.Menu):
         pass
 
     def do_quit(self):
-        pass
+        """Request the controller to quit the application."""
+        self.controller.do_quit()
 

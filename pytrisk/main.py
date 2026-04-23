@@ -47,7 +47,7 @@ def run():
     event_bus  = EventBus()
     controller = Controller(app, event_bus)
 
-    ui = pytrisk.ui.mw.MainWindow(event_bus)
+    ui = pytrisk.ui.mw.MainWindow(controller, event_bus)
     ui.mainloop()
 
 

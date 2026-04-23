@@ -21,7 +21,7 @@ from enum import Enum
 from pytrisk.logger import log
 
 class Events(Enum):
-    pass
+    action_quit = "action.quit"
 
 
 class EventBus:

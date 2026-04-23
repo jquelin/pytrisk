@@ -31,7 +31,7 @@ class ToolbarView(tk.Frame):
         iconsize = 16
 
         icon = Icons.load('quit', iconsize)
-        but = tk.Button(self, image=icon, command=self.do_nothing)
+        but = tk.Button(self, image=icon, command=self._on_quit)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('Quit'))
 
@@ -93,3 +93,7 @@ class ToolbarView(tk.Frame):
 
     def do_nothing(self):
         pass
+
+    def _on_quit(self):
+        """Request the controller to quit the application."""
+        self.controller.do_quit()
