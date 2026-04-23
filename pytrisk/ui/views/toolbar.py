@@ -37,7 +37,7 @@ class ToolbarView(tk.Frame):
 
         icon = Icons.load('close', iconsize)
         but = tk.Button(self, image=icon, state=tk.DISABLED,
-                        command=self.do_nothing)
+                        command=self._on_nothing)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('Close'))
 
@@ -54,13 +54,13 @@ class ToolbarView(tk.Frame):
 
         icon = Icons.load('undo', iconsize)
         but = tk.Button(self, image=icon, state=tk.DISABLED,
-                        command=self.do_nothing)
+                        command=self._on_nothing)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('undo all'))
 
         icon = Icons.load('next', iconsize)
         but = tk.Button(self, image=icon, state=tk.DISABLED,
-                        command=self.do_nothing)
+                        command=self._on_nothing)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('ready for attack'))
 
@@ -69,13 +69,13 @@ class ToolbarView(tk.Frame):
 
         icon = Icons.load('redo', iconsize)
         but = tk.Button(self, image=icon, state=tk.DISABLED,
-                        command=self.do_nothing)
+                        command=self._on_nothing)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('attack again'))
 
         icon = Icons.load('next', iconsize)
         but = tk.Button(self, image=icon, state=tk.DISABLED,
-                        command=self.do_nothing)
+                        command=self._on_nothing)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('consolidate'))
 
@@ -84,14 +84,16 @@ class ToolbarView(tk.Frame):
 
         icon = Icons.load('stop', iconsize)
         but = tk.Button(self, image=icon, state=tk.DISABLED,
-                        command=self.do_nothing)
+                        command=self._on_nothing)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('turn finished'))
 
 
 
 
-    def do_nothing(self):
+    # Private methods: tk callbacks
+
+    def _on_nothing(self):
         pass
 
     def _on_quit(self):

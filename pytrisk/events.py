@@ -35,17 +35,20 @@ class EventBus:
     def __init__(self):
         self.listeners = {}
 
-    def subscribe(self, event, callback):
-        """Subscribe a callback function to a specific event. The callback will
-        be called with the arguments passed to the emit method when the event
-        is emitted."""
-        log.debug(f'Event subscribed: {event}')
-        self.listeners.setdefault(event, []).append(callback)
+    def subscribe(self, listener):
+        """Subscribe an object. Its methods named on_<event> will be registered."""
+        for event in Events:
+            method_name = f'on_{event.name}'
+            if hasattr(listener, method_name):
+                cb = getattr(listener, method_name)
+                log.debug(f'Auto-subscribed: {event} -> {listener.__class__.__name__}.{method_name}')
+                self.listeners.setdefault(event, []).append(cb)
+
 
     def emit(self, event, *args, **kwargs):
         """Emit an event with the given arguments. All callbacks subscribed to
         this event will be called with the provided arguments."""
         log.info(f'Event emitted: {event}')
         for cb in self.listeners.get(event, []):
-            log.debug(f'calling callback: {cb}')
+            log.debug(f'calling callback: {cb.__qualname__}')
             cb(*args, **kwargs)

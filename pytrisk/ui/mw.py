@@ -24,7 +24,6 @@ import pytrisk.data
 from pytrisk.locale    import _
 from pytrisk.logger    import log
 from pytrisk.constants import appinfo
-from pytrisk.events    import Events
 from pytrisk.ui.utils           import Icons
 from pytrisk.ui.views.menu      import MenuView
 from pytrisk.ui.views.statusbar import StatusbarView
@@ -52,7 +51,7 @@ class MainWindow(tk.Tk):
         self.bind('<Control-q>', self._on_quit)
 
         # Subscribe to controller events
-        event_bus.subscribe(Events.action_quit, self.quit)
+        event_bus.subscribe(self)
 
 
 
@@ -106,7 +105,7 @@ class MainWindow(tk.Tk):
 
     # -- Controller events
 
-    def quit(self):
+    def on_action_quit(self):
         """Actually quit the application."""
         self.destroy()
 

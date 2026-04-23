@@ -35,13 +35,13 @@ class MenuView(tk.Menu):
         menu.add_command(
                 label=label, underline=0, accelerator='Ctrl+W',
                 image=icon, compound=tk.LEFT,
-                state=tk.DISABLED, command=self.do_close)
+                state=tk.DISABLED, command=self._on_close)
         menu.add_separator()
         icon  = Icons.load('quit', iconsize)
         menu.add_command(
                 label=_('Quit'), underline=0, accelerator='Ctrl+Q',
                 image=icon, compound=tk.LEFT,
-                command=self.do_quit)
+                command=self._on_quit)
 
         # Menu: actions
         menu = tk.Menu(self, tearoff=False)
@@ -51,36 +51,39 @@ class MenuView(tk.Menu):
         menu.add_command(
                 label=label, underline=0, accelerator='u',
                 image=icon, compound=tk.LEFT,
-                state=tk.DISABLED, command=self.do_close)
+                state=tk.DISABLED, command=self._on_close)
         label = _('Attack')
         icon  = Icons.load('next', iconsize)
         menu.add_command(
                 label=label, underline=0, accelerator='a',
                 image=icon, compound=tk.LEFT,
-                state=tk.DISABLED, command=self.do_close)
+                state=tk.DISABLED, command=self._on_close)
         label = _('Re-attack')
         icon  = Icons.load('redo', iconsize)
         menu.add_command(
                 label=label, underline=0, accelerator='r',
                 image=icon, compound=tk.LEFT,
-                state=tk.DISABLED, command=self.do_close)
+                state=tk.DISABLED, command=self._on_close)
         label = _('Consolidate')
         icon  = Icons.load('next', iconsize)
         menu.add_command(
                 label=label, underline=0, accelerator='c',
                 image=icon, compound=tk.LEFT,
-                state=tk.DISABLED, command=self.do_close)
+                state=tk.DISABLED, command=self._on_close)
         label = _('Finish turn')
         icon  = Icons.load('stop', iconsize)
         menu.add_command(
                 label=label, underline=0, accelerator='f',
                 image=icon, compound=tk.LEFT,
-                state=tk.DISABLED, command=self.do_close)
+                state=tk.DISABLED, command=self._on_close)
 
-    def do_close(self):
+
+    # Private methods: tk callbacks
+
+    def _on_close(self):
         pass
 
-    def do_quit(self):
+    def _on_quit(self):
         """Request the controller to quit the application."""
         self.controller.do_quit()
 
