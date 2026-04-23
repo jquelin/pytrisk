@@ -23,7 +23,15 @@ class appinfo:
     name  = "pytrisk"
     title = 'pytrisk'
 
+# -- Application directories
+
 class dirs:
     local = Path(appdirs.user_config_dir(appinfo.name)).absolute()
+    cache = Path(appdirs.user_cache_dir(appinfo.name)).absolute()
+    logs  = Path(appdirs.user_log_dir(appinfo.name)).absolute()
     share = Path(__file__).parent / "share"
 appinfo.dirs = dirs
+
+appinfo.dirs.local.mkdir(parents=True, exist_ok=True)
+appinfo.dirs.cache.mkdir(parents=True, exist_ok=True)
+appinfo.dirs.logs.mkdir(parents=True, exist_ok=True)
