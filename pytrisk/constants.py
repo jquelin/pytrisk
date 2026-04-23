@@ -24,6 +24,6 @@ class appinfo:
     title = 'pytrisk'
 
 class dirs:
-    config = Path(appdirs.user_config_dir(appinfo.name)).absolute()
-    share  = Path(__file__).parent / "share"
+    local = Path(appdirs.user_config_dir(appinfo.name)).absolute()
+    share = Path(__file__).parent / "share"
 appinfo.dirs = dirs

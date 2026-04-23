@@ -66,7 +66,7 @@ class Logger:
             datefmt='%Y-%m-%d %H:%M:%S',
         )
 
-        logfile = appinfo.dirs.config / 'debug.log'
+        logfile = appinfo.dirs.local / 'debug.log'
         self.log.info(f'Logging to file {logfile}')
         self.file_handler = logging.FileHandler(logfile, mode='w')
         self.file_handler.setFormatter(formatter)
