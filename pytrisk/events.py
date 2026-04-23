@@ -16,12 +16,12 @@
 #
 
 
-from enum import Enum
+from enum import StrEnum, auto
 
 from pytrisk.logger import log
 
-class Events(Enum):
-    action_quit = "action.quit"
+class Events(StrEnum):
+    action_quit = auto()
 
 
 class EventBus:
