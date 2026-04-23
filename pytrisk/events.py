@@ -22,6 +22,8 @@ from pytrisk.logger import log
 
 class Events(StrEnum):
     action_quit = auto()
+    status_clear = auto()
+    status_message = auto()
 
 
 class EventBus:
@@ -37,6 +39,7 @@ class EventBus:
 
     def subscribe(self, listener):
         """Subscribe an object. Its methods named on_<event> will be registered."""
+        log.info(f'Subscribing {listener.__class__.__name__}')
         for event in Events:
             method_name = f'on_{event.name}'
             if hasattr(listener, method_name):
