@@ -1,0 +1,323 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "caribbean_pic.jpg"
+map = "caribbean_map.gif"
+crd = "caribbean.cards"
+
+[[continents]]
+id = 1
+name = "Southern_Spain"
+bonus = 5
+color = "#33ff33"
+
+[[continents]]
+id = 2
+name = "Holland"
+bonus = 5
+color = "#ff9900"
+
+[[continents]]
+id = 3
+name = "France"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 4
+name = "England"
+bonus = 5
+color = "#0000cc"
+
+[[continents]]
+id = 5
+name = "Pirats"
+bonus = 5
+color = "black"
+
+[[continents]]
+id = 6
+name = "Northen_Spain"
+bonus = 5
+color = "#d9ff80"
+
+[[countries]]
+id = 1
+name = "Venezuela"
+continent = 1
+x = 511
+y = 401
+connections = [2, 21, 15, 16, 22, 30, 35]
+
+[[countries]]
+id = 2
+name = "Columbia"
+continent = 1
+x = 334
+y = 410
+connections = [3, 1, 25, 23]
+
+[[countries]]
+id = 3
+name = "Panama"
+continent = 1
+x = 179
+y = 399
+connections = [5, 2, 25]
+
+[[countries]]
+id = 4
+name = "Mexico"
+continent = 6
+x = 38
+y = 110
+connections = [26, 5, 29]
+
+[[countries]]
+id = 5
+name = "Nicaragua"
+continent = 1
+x = 78
+y = 269
+connections = [4, 25, 3, 29]
+
+[[countries]]
+id = 6
+name = "Bahamas"
+continent = 4
+x = 337
+y = 79
+connections = [27, 32, 34]
+
+[[countries]]
+id = 7
+name = "Tortuga"
+continent = 5
+x = 353
+y = 146
+connections = [32, 9, 27, 6, 8, 34]
+
+[[countries]]
+id = 8
+name = "Jamaica"
+continent = 5
+x = 275
+y = 182
+connections = [23, 18, 28, 25, 29, 9, 7]
+
+[[countries]]
+id = 9
+name = "Haiti"
+continent = 3
+x = 396
+y = 173
+connections = [23, 22, 11, 8, 34]
+
+[[countries]]
+id = 10
+name = "Puerto_Rico"
+continent = 4
+x = 508
+y = 187
+connections = [27, 22, 20, 11, 33]
+
+[[countries]]
+id = 11
+name = "San_Dominguo"
+continent = 4
+x = 441
+y = 173
+connections = [27, 22, 10, 9, 33, 32, 34]
+
+[[countries]]
+id = 12
+name = "Guadaloupe"
+continent = 3
+x = 601
+y = 226
+connections = [22, 13, 20, 31, 33, 30]
+
+[[countries]]
+id = 13
+name = "Martinica"
+continent = 3
+x = 610
+y = 261
+connections = [22, 14, 12, 31, 30, 33]
+
+[[countries]]
+id = 14
+name = "Barbados"
+continent = 2
+x = 640
+y = 276
+connections = [15, 13, 16, 31, 30, 35]
+
+[[countries]]
+id = 15
+name = "Trinidad"
+continent = 2
+x = 605
+y = 346
+connections = [1, 16, 14, 30, 35]
+
+[[countries]]
+id = 16
+name = "Granada"
+continent = 2
+x = 607
+y = 313
+connections = [1, 15, 14, 30, 35]
+
+[[countries]]
+id = 17
+name = "Maracaïbo"
+continent = 5
+x = 383
+y = 346
+connections = [23, 21, 1, 2, 25]
+
+[[countries]]
+id = 18
+name = "Treasure_Island"
+continent = 5
+x = 165
+y = 98
+connections = [8, 29, 28, 4]
+
+[[countries]]
+id = 19
+name = "Providence"
+continent = 5
+x = 270
+y = 57
+connections = [32, 24, 28, 6, 26, 34]
+
+[[countries]]
+id = 20
+name = "Antigua"
+continent = 4
+x = 572
+y = 185
+connections = [22, 12, 10, 31, 33, 27]
+
+[[countries]]
+id = 21
+name = "Paraguana"
+continent = 3
+x = 431
+y = 327
+connections = [1, 23, 22, 30]
+
+[[countries]]
+id = 22
+name = "French_Waters"
+continent = 3
+x = 475
+y = 237
+connections = [23, 9, 11, 10, 20, 12, 13, 21, 30, 1, 33]
+
+[[countries]]
+id = 23
+name = "Pirats_Waters"
+continent = 5
+x = 345
+y = 243
+connections = [25, 22, 21, 8, 9, 17, 2]
+
+[[countries]]
+id = 24
+name = "Florida"
+continent = 6
+x = 196
+y = 12
+connections = [26, 34, 28]
+
+[[countries]]
+id = 25
+name = "Southern_Spanish_Armada_East"
+continent = 1
+x = 204
+y = 297
+connections = [5, 23, 3, 8, 2, 29]
+
+[[countries]]
+id = 26
+name = "Northen_Spanish_Armada_West"
+continent = 6
+x = 82
+y = 45
+connections = [24, 4, 28, 29]
+
+[[countries]]
+id = 27
+name = "English_Waters"
+continent = 4
+x = 478
+y = 116
+connections = [6, 11, 10, 32, 33, 34, 20]
+
+[[countries]]
+id = 28
+name = "Cuba"
+continent = 6
+x = 207
+y = 86
+connections = [26, 8, 29, 32, 24]
+
+[[countries]]
+id = 29
+name = "Northen_Spanish_Armada_West"
+continent = 6
+x = 122
+y = 142
+connections = [5, 4, 28, 8, 26, 25]
+
+[[countries]]
+id = 30
+name = "Holland's_Water_South"
+continent = 2
+x = 535
+y = 291
+connections = [22, 21, 15, 16, 14, 1, 13, 33, 12]
+
+[[countries]]
+id = 31
+name = "Holland's_Waters_North"
+continent = 2
+x = 626
+y = 159
+connections = [20, 12, 13, 14, 33, 35]
+
+[[countries]]
+id = 32
+name = "Pirat's_Water's_North"
+continent = 5
+x = 306
+y = 98
+connections = [28, 7, 6, 19, 27, 34, 11]
+
+[[countries]]
+id = 33
+name = "French_Waters_North"
+continent = 3
+x = 589
+y = 100
+connections = [31, 20, 27, 10, 22, 11, 12, 13, 30, 34]
+
+[[countries]]
+id = 34
+name = "Northen_Spanish_Armada_West"
+continent = 6
+x = 385
+y = 37
+connections = [24, 27, 6, 32, 11, 9, 33]
+
+[[countries]]
+id = 35
+name = "Holland's_Waters_SW"
+continent = 2
+x = 663
+y = 350
+connections = [1, 31, 15, 16, 14]

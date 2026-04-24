@@ -1,0 +1,293 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "mexico_pic.png"
+map = "mexico_map.gif"
+crd = "mexico.cards"
+
+[[continents]]
+id = 1
+name = "Northern_States"
+bonus = 5
+color = "blue"
+
+[[continents]]
+id = 2
+name = "North_Central_States"
+bonus = 2
+color = "red"
+
+[[continents]]
+id = 3
+name = "Western_States"
+bonus = 2
+color = "yellow"
+
+[[continents]]
+id = 4
+name = "South_Central_States"
+bonus = 4
+color = "magenta"
+
+[[continents]]
+id = 5
+name = "Southern_States"
+bonus = 4
+color = "green"
+
+[[countries]]
+id = 1
+name = "Baja_California_Sur"
+continent = 1
+x = 134
+y = 181
+connections = [2]
+
+[[countries]]
+id = 2
+name = "Baja_California"
+continent = 1
+x = 68
+y = 30
+connections = [1, 3]
+
+[[countries]]
+id = 3
+name = "Sonora"
+continent = 1
+x = 162
+y = 79
+connections = [2, 4, 6]
+
+[[countries]]
+id = 4
+name = "Sinaloa"
+continent = 1
+x = 203
+y = 173
+connections = [3, 5, 6, 14]
+
+[[countries]]
+id = 5
+name = "Durango"
+continent = 1
+x = 265
+y = 192
+connections = [4, 14, 13, 7, 6]
+
+[[countries]]
+id = 6
+name = "Chihuahua"
+continent = 1
+x = 242
+y = 110
+connections = [3, 4, 5, 7]
+
+[[countries]]
+id = 7
+name = "Coahuila"
+continent = 1
+x = 322
+y = 145
+connections = [5, 6, 13, 8]
+
+[[countries]]
+id = 8
+name = "Nuevo_Leon"
+continent = 1
+x = 369
+y = 180
+connections = [7, 9, 10]
+
+[[countries]]
+id = 9
+name = "Tamaulipas"
+continent = 1
+x = 391
+y = 220
+connections = [8, 27, 10]
+
+[[countries]]
+id = 10
+name = "San_Luis_Potosi"
+continent = 2
+x = 352
+y = 250
+connections = [8, 9, 13, 11, 27, 19, 20]
+
+[[countries]]
+id = 11
+name = "Guanajuato"
+continent = 2
+x = 339
+y = 284
+connections = [10, 17, 15, 13, 19]
+
+[[countries]]
+id = 12
+name = "Aguascalientes"
+continent = 2
+x = 315
+y = 267
+connections = [13, 15]
+
+[[countries]]
+id = 13
+name = "Zacatecas"
+continent = 2
+x = 301
+y = 229
+connections = [5, 7, 10, 11, 12, 15, 14]
+
+[[countries]]
+id = 14
+name = "Nayarit"
+continent = 3
+x = 263
+y = 262
+connections = [4, 5, 13, 15]
+
+[[countries]]
+id = 15
+name = "Jalisco"
+continent = 3
+x = 276
+y = 299
+connections = [11, 12, 13, 14, 16, 17]
+
+[[countries]]
+id = 16
+name = "Colima"
+continent = 3
+x = 273
+y = 333
+connections = [15, 17]
+
+[[countries]]
+id = 17
+name = "Michoacan"
+continent = 3
+x = 322
+y = 325
+connections = [11, 15, 16, 25, 18, 19]
+
+[[countries]]
+id = 18
+name = "Mexico"
+continent = 4
+x = 369
+y = 314
+connections = [17, 25, 19, 20, 24, 21, 23, 22]
+
+[[countries]]
+id = 19
+name = "Queretaro"
+continent = 4
+x = 361
+y = 285
+connections = [18, 11, 17, 20, 10]
+
+[[countries]]
+id = 20
+name = "Hidalgo"
+continent = 4
+x = 383
+y = 294
+connections = [18, 19, 27, 21, 10, 22]
+
+[[countries]]
+id = 21
+name = "Tlaxcala"
+continent = 4
+x = 485
+y = 287
+connections = [18, 20, 22]
+
+[[countries]]
+id = 22
+name = "Puebla"
+continent = 4
+x = 408
+y = 334
+connections = [18, 20, 21, 23, 25, 27, 26]
+
+[[countries]]
+id = 23
+name = "Morelos"
+continent = 4
+x = 485
+y = 308
+connections = [18, 22, 25, 24]
+
+[[countries]]
+id = 24
+name = "Distrito_Federal"
+continent = 4
+x = 485
+y = 266
+connections = [18, 23]
+
+[[countries]]
+id = 25
+name = "Guerrero"
+continent = 5
+x = 367
+y = 362
+connections = [17, 26, 18, 22, 23]
+
+[[countries]]
+id = 26
+name = "Oaxaca"
+continent = 5
+x = 440
+y = 375
+connections = [25, 27, 28, 22]
+
+[[countries]]
+id = 27
+name = "Veracruz"
+continent = 5
+x = 463
+y = 342
+connections = [9, 10, 26, 28, 29, 20, 22]
+
+[[countries]]
+id = 28
+name = "Chiapas"
+continent = 5
+x = 526
+y = 379
+connections = [26, 27, 29]
+
+[[countries]]
+id = 29
+name = "Tabasco"
+continent = 5
+x = 519
+y = 344
+connections = [27, 28, 30]
+
+[[countries]]
+id = 30
+name = "Campeche"
+continent = 5
+x = 566
+y = 326
+connections = [29, 31, 32]
+
+[[countries]]
+id = 31
+name = "Quintana_Roo"
+continent = 5
+x = 605
+y = 308
+connections = [30, 32]
+
+[[countries]]
+id = 32
+name = "Yucatan"
+continent = 5
+x = 589
+y = 279
+connections = [30, 31]

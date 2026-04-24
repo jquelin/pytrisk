@@ -1,0 +1,663 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "fletzmap_pic.png"
+map = "fletzmap_map.gif"
+crd = "fletzmap.cards"
+
+[[continents]]
+id = 1
+name = "Österreich"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 2
+name = "Slowakei"
+bonus = 2
+color = "white"
+
+[[continents]]
+id = 3
+name = "Ungarn"
+bonus = 4
+color = "white"
+
+[[continents]]
+id = 4
+name = "Kroatien_und_Slowenien"
+bonus = 4
+color = "white"
+
+[[continents]]
+id = 5
+name = "Italien"
+bonus = 4
+color = "white"
+
+[[continents]]
+id = 6
+name = "Schweiz"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 7
+name = "Tschechien"
+bonus = 3
+color = "white"
+
+[[continents]]
+id = 8
+name = "Deutschland"
+bonus = 10
+color = "white"
+
+[[countries]]
+id = 1
+name = "Niederösterreich"
+continent = 1
+x = 499
+y = 144
+connections = [52, 48, 4, 2, 5, 3, 12, 11]
+
+[[countries]]
+id = 2
+name = "Wien"
+continent = 1
+x = 553
+y = 159
+connections = [1]
+
+[[countries]]
+id = 3
+name = "Burgenland"
+continent = 1
+x = 560
+y = 224
+connections = [1, 15, 16, 5, 22, 11]
+
+[[countries]]
+id = 4
+name = "Oberösterreich"
+continent = 1
+x = 396
+y = 164
+connections = [48, 59, 58, 57, 6, 5, 1]
+
+[[countries]]
+id = 5
+name = "Steiermark"
+continent = 1
+x = 472
+y = 250
+connections = [4, 1, 3, 7, 25, 23, 22, 6]
+
+[[countries]]
+id = 6
+name = "Salzburg"
+continent = 1
+x = 347
+y = 249
+connections = [4, 5, 7, 8, 9, 57]
+
+[[countries]]
+id = 7
+name = "Kärnten"
+continent = 1
+x = 368
+y = 298
+connections = [5, 6, 8, 32, 31, 28, 25]
+
+[[countries]]
+id = 8
+name = "Osttirol"
+continent = 1
+x = 309
+y = 287
+connections = [6, 37, 32, 7]
+
+[[countries]]
+id = 9
+name = "Tirol"
+continent = 1
+x = 222
+y = 254
+connections = [6, 57, 56, 63, 40, 10, 37]
+
+[[countries]]
+id = 10
+name = "Vorarlberg"
+continent = 1
+x = 143
+y = 253
+connections = [63, 68, 69, 40, 9]
+
+[[countries]]
+id = 11
+name = "Bratislava"
+continent = 2
+x = 604
+y = 165
+connections = [1, 12, 3, 15]
+
+[[countries]]
+id = 12
+name = "Slowakei2"
+continent = 1
+x = 607
+y = 129
+connections = [52, 1, 11, 13, 14, 15]
+
+[[countries]]
+id = 13
+name = "Slowakei3"
+continent = 1
+x = 648
+y = 104
+connections = [53, 12, 14]
+
+[[countries]]
+id = 14
+name = "Slowakei4"
+continent = 1
+x = 653
+y = 179
+connections = [12, 13, 19, 15]
+
+[[countries]]
+id = 15
+name = "Ungarn1"
+continent = 3
+x = 612
+y = 211
+connections = [14, 12, 3, 16, 18, 11, 19]
+
+[[countries]]
+id = 16
+name = "Ungarn2"
+continent = 3
+x = 583
+y = 258
+connections = [15, 3, 18, 17, 22]
+
+[[countries]]
+id = 17
+name = "Ungarn3"
+continent = 3
+x = 586
+y = 305
+connections = [18, 20, 16, 22]
+
+[[countries]]
+id = 18
+name = "Ungarn5"
+continent = 1
+x = 638
+y = 264
+connections = [15, 19, 20, 17, 16]
+
+[[countries]]
+id = 19
+name = "Ungarn4"
+continent = 3
+x = 664
+y = 219
+connections = [14, 18, 15]
+
+[[countries]]
+id = 20
+name = "Ungarn6"
+continent = 3
+x = 626
+y = 331
+connections = [18, 21, 17]
+
+[[countries]]
+id = 21
+name = "Ungarn7"
+continent = 1
+x = 660
+y = 363
+connections = [20]
+
+[[countries]]
+id = 22
+name = "KuS1"
+continent = 4
+x = 547
+y = 306
+connections = [3, 17, 16, 5, 23]
+
+[[countries]]
+id = 23
+name = "Kus2"
+continent = 4
+x = 519
+y = 329
+connections = [5, 25, 22, 24]
+
+[[countries]]
+id = 24
+name = "KuS3"
+continent = 4
+x = 486
+y = 354
+connections = [25, 23, 27, 26, 28]
+
+[[countries]]
+id = 25
+name = "KuS5"
+continent = 3
+x = 478
+y = 326
+connections = [5, 7, 28, 24, 23]
+
+[[countries]]
+id = 26
+name = "KuS4"
+continent = 1
+x = 445
+y = 376
+connections = [24, 28, 29, 30, 27]
+
+[[countries]]
+id = 27
+name = "KuS6"
+continent = 1
+x = 479
+y = 389
+connections = [24, 26]
+
+[[countries]]
+id = 28
+name = "KuS7"
+continent = 4
+x = 419
+y = 346
+connections = [7, 25, 24, 31, 29, 26]
+
+[[countries]]
+id = 29
+name = "KuS8"
+continent = 1
+x = 397
+y = 380
+connections = [28, 31, 30, 26]
+
+[[countries]]
+id = 30
+name = "KuS9"
+continent = 4
+x = 429
+y = 406
+connections = [29, 26]
+
+[[countries]]
+id = 31
+name = "Italien1"
+continent = 5
+x = 352
+y = 368
+connections = [7, 28, 29, 33, 34, 32]
+
+[[countries]]
+id = 32
+name = "Italien2"
+continent = 5
+x = 282
+y = 340
+connections = [8, 7, 31, 33, 34, 35, 36, 37]
+
+[[countries]]
+id = 33
+name = "Italien3"
+continent = 1
+x = 322
+y = 361
+connections = [31, 34, 32]
+
+[[countries]]
+id = 34
+name = "Italien4"
+continent = 5
+x = 287
+y = 401
+connections = [31, 33, 35, 32]
+
+[[countries]]
+id = 35
+name = "Italien5"
+continent = 5
+x = 241
+y = 402
+connections = [34, 32, 36, 38]
+
+[[countries]]
+id = 36
+name = "Italien6"
+continent = 5
+x = 202
+y = 359
+connections = [32, 37, 35, 38]
+
+[[countries]]
+id = 37
+name = "Italien7"
+continent = 5
+x = 240
+y = 305
+connections = [40, 9, 8, 32, 36, 38]
+
+[[countries]]
+id = 38
+name = "Italien8"
+continent = 5
+x = 124
+y = 382
+connections = [40, 37, 35, 36, 39, 41]
+
+[[countries]]
+id = 39
+name = "Italien9"
+continent = 5
+x = 30
+y = 390
+connections = [38, 42, 41]
+
+[[countries]]
+id = 40
+name = "Schweiz1"
+continent = 6
+x = 130
+y = 304
+connections = [44, 45, 10, 9, 37, 38, 41]
+
+[[countries]]
+id = 41
+name = "Schweiz2"
+continent = 6
+x = 68
+y = 340
+connections = [44, 40, 38, 39]
+
+[[countries]]
+id = 42
+name = "Schweiz3"
+continent = 6
+x = 10
+y = 339
+connections = [43, 44, 39]
+
+[[countries]]
+id = 43
+name = "Schweiz4"
+continent = 6
+x = 5
+y = 266
+connections = [71, 47, 42, 44]
+
+[[countries]]
+id = 44
+name = "Schweiz5"
+continent = 6
+x = 55
+y = 273
+connections = [46, 47, 43, 42, 41, 40, 45]
+
+[[countries]]
+id = 45
+name = "Schweiz6"
+continent = 6
+x = 106
+y = 250
+connections = [69, 46, 44, 40]
+
+[[countries]]
+id = 46
+name = "Schweiz7"
+continent = 6
+x = 67
+y = 231
+connections = [70, 69, 45, 44, 47]
+
+[[countries]]
+id = 47
+name = "Schweiz8"
+continent = 6
+x = 37
+y = 230
+connections = [70, 46, 44, 43]
+
+[[countries]]
+id = 48
+name = "Tschechien1"
+continent = 7
+x = 428
+y = 79
+connections = [49, 50, 51, 52, 1, 4, 59]
+
+[[countries]]
+id = 49
+name = "Tschechien2"
+continent = 7
+x = 352
+y = 22
+connections = [61, 60, 59, 48, 50]
+
+[[countries]]
+id = 50
+name = "Tschechien3"
+continent = 7
+x = 426
+y = 11
+connections = [49, 48, 51, 55]
+
+[[countries]]
+id = 51
+name = "Tschechien4"
+continent = 7
+x = 502
+y = 44
+connections = [50, 48, 52, 55]
+
+[[countries]]
+id = 52
+name = "Tschechien5"
+continent = 7
+x = 562
+y = 78
+connections = [51, 54, 53, 12, 1, 48]
+
+[[countries]]
+id = 53
+name = "Tschechien6"
+continent = 7
+x = 630
+y = 57
+connections = [54, 13, 52]
+
+[[countries]]
+id = 54
+name = "Tschechien7"
+continent = 7
+x = 600
+y = 19
+connections = [55, 52, 53]
+
+[[countries]]
+id = 55
+name = "Tschechien8"
+continent = 7
+x = 547
+y = 8
+connections = [50, 51, 54]
+
+[[countries]]
+id = 56
+name = "D1"
+continent = 8
+x = 267
+y = 201
+connections = [62, 58, 57, 9, 63]
+
+[[countries]]
+id = 57
+name = "D2"
+continent = 8
+x = 323
+y = 197
+connections = [58, 4, 6, 9, 56]
+
+[[countries]]
+id = 58
+name = "D3"
+continent = 8
+x = 327
+y = 145
+connections = [59, 60, 62, 56, 57, 4]
+
+[[countries]]
+id = 59
+name = "D4"
+continent = 8
+x = 363
+y = 115
+connections = [49, 48, 4, 58, 60]
+
+[[countries]]
+id = 60
+name = "D5"
+continent = 8
+x = 292
+y = 123
+connections = [49, 59, 61, 58, 62]
+
+[[countries]]
+id = 61
+name = "D6"
+continent = 7
+x = 281
+y = 59
+connections = [73, 49, 60, 62, 65]
+
+[[countries]]
+id = 62
+name = "D8"
+continent = 8
+x = 259
+y = 152
+connections = [60, 61, 65, 64, 63, 56, 58]
+
+[[countries]]
+id = 63
+name = "D7"
+continent = 8
+x = 190
+y = 205
+connections = [62, 56, 64, 68, 10, 9]
+
+[[countries]]
+id = 64
+name = "D9"
+continent = 8
+x = 201
+y = 136
+connections = [65, 66, 67, 68, 62, 63]
+
+[[countries]]
+id = 65
+name = "D10"
+continent = 8
+x = 205
+y = 45
+connections = [74, 73, 61, 62, 64, 66]
+
+[[countries]]
+id = 66
+name = "D11"
+continent = 8
+x = 142
+y = 83
+connections = [74, 65, 64, 67, 72]
+
+[[countries]]
+id = 67
+name = "D12"
+continent = 8
+x = 136
+y = 149
+connections = [66, 72, 71, 70, 68, 64]
+
+[[countries]]
+id = 68
+name = "D13"
+continent = 8
+x = 141
+y = 198
+connections = [70, 67, 64, 63, 10, 69]
+
+[[countries]]
+id = 69
+name = "D14"
+continent = 8
+x = 98
+y = 205
+connections = [70, 68, 10, 45, 46]
+
+[[countries]]
+id = 70
+name = "D15"
+continent = 8
+x = 65
+y = 177
+connections = [71, 69, 46, 47, 68, 67]
+
+[[countries]]
+id = 71
+name = "D16"
+continent = 8
+x = 21
+y = 167
+connections = [72, 70, 67, 43]
+
+[[countries]]
+id = 72
+name = "D17"
+continent = 8
+x = 69
+y = 89
+connections = [76, 75, 74, 66, 67, 71]
+
+[[countries]]
+id = 73
+name = "D18"
+continent = 8
+x = 239
+y = 11
+connections = [74, 65, 61]
+
+[[countries]]
+id = 74
+name = "D19"
+continent = 8
+x = 163
+y = 10
+connections = [75, 72, 66, 65, 73]
+
+[[countries]]
+id = 75
+name = "D20"
+continent = 8
+x = 88
+y = 9
+connections = [76, 74, 72]
+
+[[countries]]
+id = 76
+name = "D21"
+continent = 8
+x = 32
+y = 30
+connections = [75, 72]

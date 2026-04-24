@@ -1,0 +1,475 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "artic_pic.png"
+map = "artic_map.gif"
+crd = "artic.cards"
+
+[[continents]]
+id = 1
+name = "Artic"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 2
+name = "Canada"
+bonus = 5
+color = "green"
+
+[[continents]]
+id = 3
+name = "Russia"
+bonus = 8
+color = "yellow"
+
+[[continents]]
+id = 4
+name = "Norway"
+bonus = 2
+color = "blue"
+
+[[continents]]
+id = 5
+name = "United_States"
+bonus = 4
+color = "orange"
+
+[[continents]]
+id = 6
+name = "Denmark"
+bonus = 5
+color = "cyan"
+
+[[countries]]
+id = 1
+name = "Whitehorse"
+continent = 2
+x = 108
+y = 66
+connections = [2, 3, 6, 22]
+
+[[countries]]
+id = 2
+name = "Dawson"
+continent = 2
+x = 148
+y = 77
+connections = [4, 1, 6]
+
+[[countries]]
+id = 3
+name = "Watson_Lake"
+continent = 2
+x = 74
+y = 83
+connections = [1, 5, 6]
+
+[[countries]]
+id = 4
+name = "Inuvik"
+continent = 2
+x = 161
+y = 109
+connections = [8, 2, 6, 9, 54]
+
+[[countries]]
+id = 5
+name = "Hay_River"
+continent = 2
+x = 43
+y = 115
+connections = [3, 6, 12, 7]
+
+[[countries]]
+id = 6
+name = "Echo_Bay"
+continent = 2
+x = 97
+y = 129
+connections = [4, 2, 7, 3, 5, 1, 8, 11]
+
+[[countries]]
+id = 7
+name = "Yellowknife"
+continent = 2
+x = 58
+y = 136
+connections = [6, 5, 12, 11]
+
+[[countries]]
+id = 8
+name = "Cambridge_Bay"
+continent = 2
+x = 110
+y = 176
+connections = [9, 11, 4, 6]
+
+[[countries]]
+id = 9
+name = "Resolute"
+continent = 2
+x = 162
+y = 206
+connections = [10, 8, 11, 13, 4]
+
+[[countries]]
+id = 10
+name = "Alert"
+continent = 2
+x = 263
+y = 234
+connections = [9, 54]
+
+[[countries]]
+id = 11
+name = "Repulse_Bay"
+continent = 2
+x = 75
+y = 226
+connections = [9, 13, 12, 8, 6, 7]
+
+[[countries]]
+id = 12
+name = "Rankin_Inlet"
+continent = 2
+x = 39
+y = 209
+connections = [11, 13, 5, 7]
+
+[[countries]]
+id = 13
+name = "Iqaluit"
+continent = 2
+x = 67
+y = 279
+connections = [11, 12, 9, 28]
+
+[[countries]]
+id = 14
+name = "Prudhoe_Bay"
+continent = 5
+x = 223
+y = 94
+connections = [15, 17, 54]
+
+[[countries]]
+id = 15
+name = "Barrow"
+continent = 5
+x = 258
+y = 89
+connections = [14, 16, 17, 54]
+
+[[countries]]
+id = 16
+name = "Nome"
+continent = 5
+x = 269
+y = 41
+connections = [15, 20, 17, 47]
+
+[[countries]]
+id = 17
+name = "Fairbanks"
+continent = 5
+x = 187
+y = 63
+connections = [14, 16, 20, 19, 18, 15]
+
+[[countries]]
+id = 18
+name = "Valdez"
+continent = 5
+x = 157
+y = 44
+connections = [19, 17, 22, 21]
+
+[[countries]]
+id = 19
+name = "Anchorage"
+continent = 5
+x = 179
+y = 37
+connections = [20, 17, 18, 21]
+
+[[countries]]
+id = 20
+name = "Bethel"
+continent = 5
+x = 207
+y = 14
+connections = [16, 21, 19, 17]
+
+[[countries]]
+id = 21
+name = "Kodiak"
+continent = 5
+x = 165
+y = 9
+connections = [20, 19, 22, 18]
+
+[[countries]]
+id = 22
+name = "Juneau"
+continent = 5
+x = 84
+y = 52
+connections = [18, 21, 1]
+
+[[countries]]
+id = 23
+name = "Longyearbyen"
+continent = 4
+x = 366
+y = 292
+connections = [24, 25, 54]
+
+[[countries]]
+id = 24
+name = "Tromso"
+continent = 4
+x = 411
+y = 346
+connections = [23, 25]
+
+[[countries]]
+id = 25
+name = "Oslo"
+continent = 4
+x = 396
+y = 414
+connections = [23, 24, 34, 37]
+
+[[countries]]
+id = 26
+name = "Narsarsuaq"
+continent = 6
+x = 110
+y = 360
+connections = [27, 28, 34, 29]
+
+[[countries]]
+id = 27
+name = "Tasiilaq"
+continent = 6
+x = 175
+y = 345
+connections = [26, 29, 31, 32, 30, 33]
+
+[[countries]]
+id = 28
+name = "Paamiut"
+continent = 6
+x = 101
+y = 340
+connections = [26, 29, 13]
+
+[[countries]]
+id = 29
+name = "Nuuk"
+continent = 6
+x = 119
+y = 329
+connections = [28, 30, 27, 26]
+
+[[countries]]
+id = 30
+name = "Kangerlussuaq"
+continent = 6
+x = 141
+y = 316
+connections = [29, 32, 27]
+
+[[countries]]
+id = 31
+name = "Ittoqqortoormiit"
+continent = 6
+x = 252
+y = 338
+connections = [27, 34, 33]
+
+[[countries]]
+id = 32
+name = "Qaanaaq"
+continent = 6
+x = 208
+y = 248
+connections = [30, 27, 33]
+
+[[countries]]
+id = 33
+name = "Nord"
+continent = 6
+x = 309
+y = 269
+connections = [27, 31, 32, 54]
+
+[[countries]]
+id = 34
+name = "Torshavn"
+continent = 6
+x = 301
+y = 410
+connections = [26, 31, 25]
+
+[[countries]]
+id = 35
+name = "Murmansk"
+continent = 3
+x = 466
+y = 334
+connections = [37, 36, 42, 54]
+
+[[countries]]
+id = 36
+name = "Arkangelsk"
+continent = 3
+x = 517
+y = 349
+connections = [35, 42, 37, 38, 39, 40, 41, 43]
+
+[[countries]]
+id = 37
+name = "Saint_Petersburg"
+continent = 3
+x = 506
+y = 397
+connections = [35, 36, 38, 25]
+
+[[countries]]
+id = 38
+name = "Moscow"
+continent = 3
+x = 563
+y = 401
+connections = [36, 37, 39]
+
+[[countries]]
+id = 39
+name = "NizHiniy_Novogorod"
+continent = 3
+x = 595
+y = 383
+connections = [36, 38, 40]
+
+[[countries]]
+id = 40
+name = "Kazan"
+continent = 3
+x = 623
+y = 369
+connections = [36, 39, 41]
+
+[[countries]]
+id = 41
+name = "Perm"
+continent = 3
+x = 629
+y = 338
+connections = [36, 40, 43]
+
+[[countries]]
+id = 42
+name = "Dikson"
+continent = 3
+x = 521
+y = 230
+connections = [36, 43, 44, 35, 54]
+
+[[countries]]
+id = 43
+name = "Norilsk"
+continent = 3
+x = 570
+y = 218
+connections = [42, 36, 41, 51, 45, 44]
+
+[[countries]]
+id = 44
+name = "Tiksi"
+continent = 3
+x = 495
+y = 132
+connections = [45, 43, 42, 46, 54]
+
+[[countries]]
+id = 45
+name = "Verkhoyansk"
+continent = 3
+x = 518
+y = 101
+connections = [51, 50, 44, 43]
+
+[[countries]]
+id = 46
+name = "Cherskiy"
+continent = 3
+x = 412
+y = 68
+connections = [49, 50, 48, 44, 53]
+
+[[countries]]
+id = 47
+name = "Provideniya"
+continent = 3
+x = 304
+y = 34
+connections = [48, 53, 16]
+
+[[countries]]
+id = 48
+name = "Anadyr"
+continent = 3
+x = 355
+y = 35
+connections = [49, 46, 47, 53]
+
+[[countries]]
+id = 49
+name = "Magadan"
+continent = 3
+x = 497
+y = 22
+connections = [52, 48, 46, 50]
+
+[[countries]]
+id = 50
+name = "Oymyakon"
+continent = 3
+x = 514
+y = 63
+connections = [49, 51, 52, 46, 45]
+
+[[countries]]
+id = 51
+name = "Yakustsk"
+continent = 3
+x = 581
+y = 87
+connections = [43, 52, 50, 45]
+
+[[countries]]
+id = 52
+name = "Okhotsk"
+continent = 3
+x = 540
+y = 41
+connections = [51, 49, 50]
+
+[[countries]]
+id = 53
+name = "Pevek"
+continent = 3
+x = 370
+y = 69
+connections = [46, 47, 48, 54]
+
+[[countries]]
+id = 54
+name = "North_Pole"
+continent = 1
+x = 336
+y = 212
+connections = []

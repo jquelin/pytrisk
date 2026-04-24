@@ -1,0 +1,947 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "periodictable.png"
+map = "periodictable.gif"
+crd = "periodict.cards"
+
+[[continents]]
+id = 1
+name = "AlkaliEarth"
+bonus = 6
+color = "yellow"
+
+[[continents]]
+id = 2
+name = "TheSeries"
+bonus = 8
+color = "blue"
+
+[[continents]]
+id = 3
+name = "Transitions"
+bonus = 10
+color = "green"
+
+[[continents]]
+id = 4
+name = "PoorMetals"
+bonus = 10
+color = "orange"
+
+[[continents]]
+id = 5
+name = "NobleGases"
+bonus = 4
+color = "mengenta"
+
+[[continents]]
+id = 6
+name = "NonMetals"
+bonus = 6
+color = "red"
+
+[[countries]]
+id = 1
+name = "Hydrogen"
+continent = 1
+x = 34
+y = 43
+connections = [3]
+
+[[countries]]
+id = 2
+name = "Helium"
+continent = 5
+x = 594
+y = 43
+connections = [10]
+
+[[countries]]
+id = 3
+name = "Lithium"
+continent = 1
+x = 34
+y = 81
+connections = [1, 4, 11]
+
+[[countries]]
+id = 4
+name = "Beryllium"
+continent = 1
+x = 68
+y = 81
+connections = [3, 12]
+
+[[countries]]
+id = 5
+name = "Boron"
+continent = 6
+x = 429
+y = 81
+connections = [13, 6]
+
+[[countries]]
+id = 6
+name = "Carbon"
+continent = 6
+x = 463
+y = 81
+connections = [5, 7, 14]
+
+[[countries]]
+id = 7
+name = "Nitrogen"
+continent = 6
+x = 495
+y = 81
+connections = [6, 8, 15]
+
+[[countries]]
+id = 8
+name = "Oxygen"
+continent = 6
+x = 529
+y = 81
+connections = [7, 9, 16]
+
+[[countries]]
+id = 9
+name = "Fluorine"
+continent = 6
+x = 563
+y = 81
+connections = [8, 10, 17]
+
+[[countries]]
+id = 10
+name = "Neon"
+continent = 5
+x = 594
+y = 81
+connections = [2, 9, 18]
+
+[[countries]]
+id = 11
+name = "Sodium"
+continent = 1
+x = 34
+y = 116
+connections = [3, 12, 19]
+
+[[countries]]
+id = 12
+name = "Magnesium"
+continent = 1
+x = 69
+y = 116
+connections = [4, 11, 20]
+
+[[countries]]
+id = 13
+name = "Aluminum"
+continent = 4
+x = 429
+y = 116
+connections = [5, 14, 31]
+
+[[countries]]
+id = 14
+name = "Silicon"
+continent = 6
+x = 463
+y = 116
+connections = [6, 13, 15, 32]
+
+[[countries]]
+id = 15
+name = "Phosphorus"
+continent = 6
+x = 495
+y = 116
+connections = [7, 14, 16, 33]
+
+[[countries]]
+id = 16
+name = "Sulfur"
+continent = 6
+x = 529
+y = 116
+connections = [8, 15, 17, 34]
+
+[[countries]]
+id = 17
+name = "Chlorine"
+continent = 6
+x = 563
+y = 116
+connections = [9, 16, 18, 35]
+
+[[countries]]
+id = 18
+name = "Argon"
+continent = 5
+x = 594
+y = 116
+connections = [10, 17, 36]
+
+[[countries]]
+id = 19
+name = "Potassium"
+continent = 1
+x = 34
+y = 158
+connections = [11, 20, 37]
+
+[[countries]]
+id = 20
+name = "Calcium"
+continent = 1
+x = 69
+y = 158
+connections = [12, 19, 21, 38]
+
+[[countries]]
+id = 21
+name = "Scandium"
+continent = 3
+x = 100
+y = 158
+connections = [20, 22, 39]
+
+[[countries]]
+id = 22
+name = "Titanium"
+continent = 3
+x = 133
+y = 158
+connections = [21, 23, 40]
+
+[[countries]]
+id = 23
+name = "Vanadium"
+continent = 3
+x = 166
+y = 158
+connections = [22, 24, 41]
+
+[[countries]]
+id = 24
+name = "Chromium"
+continent = 3
+x = 199
+y = 158
+connections = [23, 25, 42]
+
+[[countries]]
+id = 25
+name = "Manganese"
+continent = 3
+x = 232
+y = 158
+connections = [24, 26, 43]
+
+[[countries]]
+id = 26
+name = "Iron"
+continent = 3
+x = 265
+y = 158
+connections = [25, 27, 44]
+
+[[countries]]
+id = 27
+name = "Cobalt"
+continent = 3
+x = 298
+y = 158
+connections = [26, 28, 45]
+
+[[countries]]
+id = 28
+name = "Nickel"
+continent = 3
+x = 331
+y = 158
+connections = [27, 29, 46]
+
+[[countries]]
+id = 29
+name = "Copper"
+continent = 3
+x = 364
+y = 158
+connections = [28, 30, 47]
+
+[[countries]]
+id = 30
+name = "Zinc"
+continent = 3
+x = 397
+y = 158
+connections = [29, 31, 48]
+
+[[countries]]
+id = 31
+name = "Gallium"
+continent = 4
+x = 429
+y = 158
+connections = [13, 30, 32, 49]
+
+[[countries]]
+id = 32
+name = "Germanium"
+continent = 4
+x = 463
+y = 158
+connections = [14, 31, 33, 50]
+
+[[countries]]
+id = 33
+name = "Arsenic"
+continent = 6
+x = 495
+y = 158
+connections = [15, 32, 34, 51]
+
+[[countries]]
+id = 34
+name = "Selenium"
+continent = 6
+x = 529
+y = 158
+connections = [16, 33, 35, 52]
+
+[[countries]]
+id = 35
+name = "Bromine"
+continent = 6
+x = 563
+y = 158
+connections = [17, 34, 36, 53]
+
+[[countries]]
+id = 36
+name = "Krypton"
+continent = 5
+x = 594
+y = 158
+connections = [18, 35, 54]
+
+[[countries]]
+id = 37
+name = "Rubidium"
+continent = 1
+x = 34
+y = 194
+connections = [19, 38, 55]
+
+[[countries]]
+id = 38
+name = "Strontium"
+continent = 1
+x = 69
+y = 194
+connections = [20, 37, 39, 56]
+
+[[countries]]
+id = 39
+name = "Yttrium"
+continent = 3
+x = 100
+y = 194
+connections = [21, 38, 40, 57]
+
+[[countries]]
+id = 40
+name = "Zirconium"
+continent = 3
+x = 133
+y = 194
+connections = [22, 39, 41, 72]
+
+[[countries]]
+id = 41
+name = "Niobium"
+continent = 3
+x = 166
+y = 194
+connections = [23, 40, 42, 73]
+
+[[countries]]
+id = 42
+name = "Molybdenum"
+continent = 3
+x = 199
+y = 194
+connections = [24, 41, 43, 74]
+
+[[countries]]
+id = 43
+name = "Technetium"
+continent = 3
+x = 232
+y = 194
+connections = [25, 42, 44, 75]
+
+[[countries]]
+id = 44
+name = "Ruthernium"
+continent = 3
+x = 265
+y = 194
+connections = [26, 43, 45, 76]
+
+[[countries]]
+id = 45
+name = "Rhodium"
+continent = 3
+x = 298
+y = 194
+connections = [27, 44, 46, 77]
+
+[[countries]]
+id = 46
+name = "Palladium"
+continent = 3
+x = 331
+y = 194
+connections = [28, 45, 47, 78]
+
+[[countries]]
+id = 47
+name = "Silver"
+continent = 3
+x = 364
+y = 194
+connections = [29, 46, 48, 79]
+
+[[countries]]
+id = 48
+name = "Cadmium"
+continent = 3
+x = 397
+y = 194
+connections = [30, 47, 49, 80]
+
+[[countries]]
+id = 49
+name = "Indium"
+continent = 4
+x = 429
+y = 194
+connections = [31, 48, 50, 81]
+
+[[countries]]
+id = 50
+name = "Tin"
+continent = 4
+x = 463
+y = 194
+connections = [32, 49, 51, 82]
+
+[[countries]]
+id = 51
+name = "Antimony"
+continent = 4
+x = 495
+y = 194
+connections = [33, 50, 52, 83]
+
+[[countries]]
+id = 52
+name = "Tellurium"
+continent = 6
+x = 529
+y = 194
+connections = [34, 51, 53, 84]
+
+[[countries]]
+id = 53
+name = "Iodine"
+continent = 6
+x = 563
+y = 194
+connections = [35, 52, 54, 85]
+
+[[countries]]
+id = 54
+name = "Xenon"
+continent = 6
+x = 594
+y = 194
+connections = [36, 53, 86]
+
+[[countries]]
+id = 55
+name = "Cesium"
+continent = 1
+x = 34
+y = 231
+connections = [37, 56, 87]
+
+[[countries]]
+id = 56
+name = "Barium"
+continent = 1
+x = 69
+y = 231
+connections = [38, 55, 57, 88]
+
+[[countries]]
+id = 57
+name = "Lanthanum"
+continent = 2
+x = 100
+y = 231
+connections = [39, 56, 58, 72]
+
+[[countries]]
+id = 58
+name = "Cerium"
+continent = 2
+x = 34
+y = 328
+connections = [57, 59, 90]
+
+[[countries]]
+id = 59
+name = "Praseodymium"
+continent = 2
+x = 69
+y = 328
+connections = [58, 60, 91]
+
+[[countries]]
+id = 60
+name = "Neodymium"
+continent = 2
+x = 100
+y = 328
+connections = [59, 61, 92]
+
+[[countries]]
+id = 61
+name = "Promethium"
+continent = 2
+x = 133
+y = 328
+connections = [60, 62, 93]
+
+[[countries]]
+id = 62
+name = "Samarium"
+continent = 2
+x = 166
+y = 328
+connections = [61, 63, 94]
+
+[[countries]]
+id = 63
+name = "Europium"
+continent = 2
+x = 199
+y = 328
+connections = [62, 64, 95]
+
+[[countries]]
+id = 64
+name = "Gadolinium"
+continent = 2
+x = 232
+y = 328
+connections = [63, 65, 96]
+
+[[countries]]
+id = 65
+name = "Terbium"
+continent = 2
+x = 265
+y = 328
+connections = [64, 66, 97]
+
+[[countries]]
+id = 66
+name = "Dysprosium"
+continent = 2
+x = 298
+y = 328
+connections = [65, 67, 98]
+
+[[countries]]
+id = 67
+name = "Holmium"
+continent = 2
+x = 331
+y = 328
+connections = [66, 68, 99]
+
+[[countries]]
+id = 68
+name = "Erbium"
+continent = 2
+x = 364
+y = 328
+connections = [67, 69, 100]
+
+[[countries]]
+id = 69
+name = "Thulium"
+continent = 2
+x = 397
+y = 328
+connections = [68, 70, 101]
+
+[[countries]]
+id = 70
+name = "Ytterbium"
+continent = 2
+x = 429
+y = 328
+connections = [69, 71, 102]
+
+[[countries]]
+id = 71
+name = "Lutetium"
+continent = 2
+x = 463
+y = 328
+connections = [70, 103]
+
+[[countries]]
+id = 72
+name = "Hafnium"
+continent = 3
+x = 133
+y = 231
+connections = [40, 57, 73, 104]
+
+[[countries]]
+id = 73
+name = "Tantalum"
+continent = 3
+x = 166
+y = 231
+connections = [41, 72, 74, 105]
+
+[[countries]]
+id = 74
+name = "Tungsten"
+continent = 3
+x = 199
+y = 231
+connections = [42, 73, 75, 106]
+
+[[countries]]
+id = 75
+name = "Rhenium"
+continent = 3
+x = 232
+y = 231
+connections = [43, 74, 76, 107]
+
+[[countries]]
+id = 76
+name = "Osmium"
+continent = 3
+x = 265
+y = 231
+connections = [44, 75, 77, 108]
+
+[[countries]]
+id = 77
+name = "Iridium"
+continent = 3
+x = 298
+y = 231
+connections = [45, 76, 78, 109]
+
+[[countries]]
+id = 78
+name = "Platinum"
+continent = 3
+x = 331
+y = 231
+connections = [46, 77, 79, 110]
+
+[[countries]]
+id = 79
+name = "Gold"
+continent = 3
+x = 364
+y = 231
+connections = [47, 78, 80, 111]
+
+[[countries]]
+id = 80
+name = "Mercury"
+continent = 3
+x = 397
+y = 231
+connections = [48, 79, 81, 112]
+
+[[countries]]
+id = 81
+name = "Thallium"
+continent = 4
+x = 429
+y = 231
+connections = [49, 80, 82, 113]
+
+[[countries]]
+id = 82
+name = "Lead"
+continent = 4
+x = 463
+y = 231
+connections = [50, 81, 83]
+
+[[countries]]
+id = 83
+name = "Bismuth"
+continent = 4
+x = 495
+y = 231
+connections = [51, 82, 84]
+
+[[countries]]
+id = 84
+name = "Polonium"
+continent = 4
+x = 529
+y = 231
+connections = [52, 83, 85]
+
+[[countries]]
+id = 85
+name = "Astatine"
+continent = 6
+x = 563
+y = 231
+connections = [53, 84, 86]
+
+[[countries]]
+id = 86
+name = "Radon"
+continent = 5
+x = 594
+y = 231
+connections = [54, 85]
+
+[[countries]]
+id = 87
+name = "Francium"
+continent = 1
+x = 34
+y = 269
+connections = [55, 88]
+
+[[countries]]
+id = 88
+name = "Radium"
+continent = 1
+x = 69
+y = 269
+connections = [56, 87, 89]
+
+[[countries]]
+id = 89
+name = "Actinium"
+continent = 2
+x = 100
+y = 269
+connections = [57, 88, 90, 104]
+
+[[countries]]
+id = 90
+name = "Thorium"
+continent = 2
+x = 34
+y = 364
+connections = [58, 89, 91]
+
+[[countries]]
+id = 91
+name = "Protactinium"
+continent = 2
+x = 69
+y = 364
+connections = [59, 90, 92]
+
+[[countries]]
+id = 92
+name = "Uranium"
+continent = 2
+x = 100
+y = 364
+connections = [60, 91, 93]
+
+[[countries]]
+id = 93
+name = "Neptunium"
+continent = 2
+x = 133
+y = 364
+connections = [61, 92, 94]
+
+[[countries]]
+id = 94
+name = "Plutonium"
+continent = 2
+x = 166
+y = 364
+connections = [62, 93, 95]
+
+[[countries]]
+id = 95
+name = "Americium"
+continent = 2
+x = 199
+y = 364
+connections = [63, 94, 96]
+
+[[countries]]
+id = 96
+name = "Curium"
+continent = 2
+x = 232
+y = 364
+connections = [64, 95, 97]
+
+[[countries]]
+id = 97
+name = "Berkelium"
+continent = 2
+x = 265
+y = 364
+connections = [65, 96, 98]
+
+[[countries]]
+id = 98
+name = "Californium"
+continent = 2
+x = 298
+y = 364
+connections = [66, 97, 99]
+
+[[countries]]
+id = 99
+name = "Einsteinium"
+continent = 2
+x = 331
+y = 364
+connections = [67, 98, 100]
+
+[[countries]]
+id = 100
+name = "Fermium"
+continent = 2
+x = 364
+y = 364
+connections = [68, 99, 101]
+
+[[countries]]
+id = 101
+name = "Mendelevium"
+continent = 2
+x = 397
+y = 364
+connections = [69, 100, 102]
+
+[[countries]]
+id = 102
+name = "Nobelium"
+continent = 2
+x = 429
+y = 364
+connections = [70, 101, 103]
+
+[[countries]]
+id = 103
+name = "Lawrencium"
+continent = 2
+x = 463
+y = 364
+connections = [71, 102]
+
+[[countries]]
+id = 104
+name = "Rutherfordium"
+continent = 3
+x = 133
+y = 269
+connections = [72, 89, 105]
+
+[[countries]]
+id = 105
+name = "Dubnium"
+continent = 3
+x = 166
+y = 269
+connections = [73, 104, 106]
+
+[[countries]]
+id = 106
+name = "Seaborgium"
+continent = 3
+x = 199
+y = 269
+connections = [74, 105, 107]
+
+[[countries]]
+id = 107
+name = "Bohrium"
+continent = 3
+x = 232
+y = 269
+connections = [75, 106, 108]
+
+[[countries]]
+id = 108
+name = "Hassium"
+continent = 3
+x = 265
+y = 269
+connections = [76, 107, 109]
+
+[[countries]]
+id = 109
+name = "Meitnerium"
+continent = 3
+x = 298
+y = 269
+connections = [77, 108, 110]
+
+[[countries]]
+id = 110
+name = "Darmstadtium"
+continent = 3
+x = 331
+y = 269
+connections = [78, 109, 111]
+
+[[countries]]
+id = 111
+name = "Roentgenium"
+continent = 3
+x = 364
+y = 269
+connections = [79, 110, 112]
+
+[[countries]]
+id = 112
+name = "Ununbiurn"
+continent = 3
+x = 397
+y = 269
+connections = [80, 111, 113]
+
+[[countries]]
+id = 113
+name = "Ununtrium"
+continent = 4
+x = 429
+y = 269
+connections = [81, 112]

@@ -1,0 +1,503 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "middleearth_pic.jpg"
+map = "middleearth_map.gif"
+crd = "middleearth.cards"
+
+[[continents]]
+id = 1
+name = "Northern_Eriador"
+bonus = 2
+color = "Light"
+
+[[continents]]
+id = 2
+name = "Middle_Eriador"
+bonus = 5
+color = "Orange"
+
+[[continents]]
+id = 3
+name = "Southern_Eriador"
+bonus = 3
+color = "Yellow"
+
+[[continents]]
+id = 4
+name = "Gondor"
+bonus = 3
+color = "Greenish"
+
+[[continents]]
+id = 5
+name = "Mirkwood"
+bonus = 5
+color = "Violet"
+
+[[continents]]
+id = 6
+name = "Rhovanion"
+bonus = 5
+color = "Gray"
+
+[[continents]]
+id = 7
+name = "Lands_of_the_Free_Men"
+bonus = 3
+color = "Red"
+
+[[continents]]
+id = 8
+name = "Mordor_League"
+bonus = 4
+color = "Green"
+
+[[countries]]
+id = 1
+name = "North_Lindon"
+continent = 1
+x = 115
+y = 40
+connections = [2]
+
+[[countries]]
+id = 2
+name = "South_Lindon"
+continent = 1
+x = 111
+y = 110
+connections = [1, 3, 12]
+
+[[countries]]
+id = 3
+name = "Numeriador"
+continent = 1
+x = 156
+y = 67
+connections = [2, 4, 5]
+
+[[countries]]
+id = 4
+name = "Forochiel"
+continent = 1
+x = 230
+y = 31
+connections = [3, 5, 6, 7]
+
+[[countries]]
+id = 5
+name = "Northwest_Arthedain"
+continent = 1
+x = 185
+y = 97
+connections = [3, 4, 7, 9, 11]
+
+[[countries]]
+id = 6
+name = "Angmar"
+continent = 2
+x = 294
+y = 49
+connections = [4, 8, 27]
+
+[[countries]]
+id = 7
+name = "Northeast_Arthedain"
+continent = 2
+x = 249
+y = 72
+connections = [4, 5, 8, 9, 10]
+
+[[countries]]
+id = 8
+name = "Rhudaur"
+continent = 2
+x = 319
+y = 96
+connections = [6, 7, 10, 14]
+
+[[countries]]
+id = 9
+name = "The_Shire"
+continent = 2
+x = 222
+y = 120
+connections = [5, 7, 10, 11, 13]
+
+[[countries]]
+id = 10
+name = "North_Cardolan"
+continent = 2
+x = 269
+y = 137
+connections = [7, 8, 9, 13, 14, 16]
+
+[[countries]]
+id = 11
+name = "South_Arthedain"
+continent = 2
+x = 194
+y = 154
+connections = [5, 9, 12, 13]
+
+[[countries]]
+id = 12
+name = "Harlindon"
+continent = 2
+x = 147
+y = 163
+connections = [2, 11, 13]
+
+[[countries]]
+id = 13
+name = "South_Cardolan"
+continent = 2
+x = 226
+y = 185
+connections = [9, 10, 11, 12, 16, 17]
+
+[[countries]]
+id = 14
+name = "Hulsten"
+continent = 3
+x = 312
+y = 157
+connections = [8, 10, 15, 16]
+
+[[countries]]
+id = 15
+name = "Redhorn_Pass"
+continent = 3
+x = 342
+y = 170
+connections = [14, 35]
+
+[[countries]]
+id = 16
+name = "Dunland"
+continent = 3
+x = 292
+y = 196
+connections = [10, 13, 14, 17]
+
+[[countries]]
+id = 17
+name = "Enedwaith"
+continent = 3
+x = 265
+y = 238
+connections = [13, 16, 18, 19]
+
+[[countries]]
+id = 18
+name = "Isengart"
+continent = 3
+x = 314
+y = 252
+connections = [17, 19, 45, 46]
+
+[[countries]]
+id = 19
+name = "North_Pukel-lands"
+continent = 3
+x = 253
+y = 277
+connections = [17, 18, 20, 21]
+
+[[countries]]
+id = 20
+name = "Andrast"
+continent = 4
+x = 237
+y = 327
+connections = [19, 21, 22]
+
+[[countries]]
+id = 21
+name = "South_Pukel-lands"
+continent = 4
+x = 267
+y = 297
+connections = [19, 20, 22]
+
+[[countries]]
+id = 22
+name = "Anfalas"
+continent = 4
+x = 299
+y = 316
+connections = [20, 21, 23, 24]
+
+[[countries]]
+id = 23
+name = "Lamedon"
+continent = 4
+x = 377
+y = 315
+connections = [22, 24, 26]
+
+[[countries]]
+id = 24
+name = "Belfalas"
+continent = 4
+x = 360
+y = 341
+connections = [22, 23, 26, 25]
+
+[[countries]]
+id = 25
+name = "Tolfalas"
+continent = 4
+x = 363
+y = 377
+connections = [24, 55]
+
+[[countries]]
+id = 26
+name = "Lebennin"
+continent = 4
+x = 411
+y = 334
+connections = [23, 24, 48]
+
+[[countries]]
+id = 27
+name = "Gundabad"
+continent = 5
+x = 356
+y = 53
+connections = [6, 28, 29, 31]
+
+[[countries]]
+id = 28
+name = "Grey_Mountains"
+continent = 5
+x = 407
+y = 46
+connections = [27, 29, 31, 37, 38]
+
+[[countries]]
+id = 29
+name = "Northern_Anduin"
+continent = 5
+x = 379
+y = 94
+connections = [27, 28, 30, 31, 32]
+
+[[countries]]
+id = 30
+name = "Southern_Anduin"
+continent = 5
+x = 384
+y = 143
+connections = [29, 32, 33, 34, 35]
+
+[[countries]]
+id = 31
+name = "Forest_Kingdom"
+continent = 5
+x = 417
+y = 74
+connections = [27, 28, 29, 32, 33, 38]
+
+[[countries]]
+id = 32
+name = "West_Mirkwood"
+continent = 5
+x = 414
+y = 125
+connections = [29, 30, 31, 33, 34]
+
+[[countries]]
+id = 33
+name = "East_Mirkwood"
+continent = 5
+x = 443
+y = 131
+connections = [30, 31, 32, 34, 40]
+
+[[countries]]
+id = 34
+name = "South_Mirkwood"
+continent = 5
+x = 424
+y = 177
+connections = [30, 32, 33, 36, 40, 42]
+
+[[countries]]
+id = 35
+name = "Lorien"
+continent = 5
+x = 360
+y = 191
+connections = [15, 30, 36, 43, 45, 46]
+
+[[countries]]
+id = 36
+name = "Brown_Lands"
+continent = 5
+x = 402
+y = 204
+connections = [34, 35, 42, 43]
+
+[[countries]]
+id = 37
+name = "Ulund"
+continent = 6
+x = 484
+y = 40
+connections = [28, 38, 39]
+
+[[countries]]
+id = 38
+name = "North_Rhovanion"
+continent = 6
+x = 488
+y = 100
+connections = [28, 31, 37, 39, 40, 41]
+
+[[countries]]
+id = 39
+name = "Iron_Mountains"
+continent = 6
+x = 521
+y = 74
+connections = [37, 38]
+
+[[countries]]
+id = 40
+name = "Middle_Rhovanion"
+continent = 6
+x = 495
+y = 163
+connections = [33, 34, 38, 41, 42]
+
+[[countries]]
+id = 41
+name = "Dorwinion"
+continent = 6
+x = 565
+y = 143
+connections = [38, 40]
+
+[[countries]]
+id = 42
+name = "South_Rhovanion"
+continent = 6
+x = 500
+y = 228
+connections = [34, 36, 40, 43, 44]
+
+[[countries]]
+id = 43
+name = "Dagorlands"
+continent = 6
+x = 433
+y = 253
+connections = [35, 36, 42, 44, 46, 48, 49]
+
+[[countries]]
+id = 44
+name = "Horseplains"
+continent = 6
+x = 578
+y = 243
+connections = [42, 43]
+
+[[countries]]
+id = 45
+name = "Fangorn"
+continent = 7
+x = 343
+y = 223
+connections = [18, 35, 46]
+
+[[countries]]
+id = 46
+name = "Rohan"
+continent = 7
+x = 376
+y = 254
+connections = [18, 35, 43, 45, 47]
+
+[[countries]]
+id = 47
+name = "Anorien"
+continent = 7
+x = 403
+y = 292
+connections = [46, 48]
+
+[[countries]]
+id = 48
+name = "North_Ithilien"
+continent = 7
+x = 446
+y = 324
+connections = [26, 43, 47, 50, 54]
+
+[[countries]]
+id = 49
+name = "Udun"
+continent = 8
+x = 464
+y = 275
+connections = [43, 51]
+
+[[countries]]
+id = 50
+name = "Minas_Morgul"
+continent = 8
+x = 459
+y = 307
+connections = [48, 51]
+
+[[countries]]
+id = 51
+name = "Gorgoroth"
+continent = 8
+x = 491
+y = 308
+connections = [49, 50, 52]
+
+[[countries]]
+id = 52
+name = "West_Nurn"
+continent = 8
+x = 519
+y = 346
+connections = [51, 53]
+
+[[countries]]
+id = 53
+name = "East_Nurn"
+continent = 8
+x = 581
+y = 310
+connections = [52]
+
+[[countries]]
+id = 54
+name = "South_Ithilien"
+continent = 8
+x = 435
+y = 354
+connections = [48, 55]
+
+[[countries]]
+id = 55
+name = "Harondor"
+continent = 8
+x = 425
+y = 394
+connections = [25, 54, 56]
+
+[[countries]]
+id = 56
+name = "Khand"
+continent = 8
+x = 555
+y = 404
+connections = [55]

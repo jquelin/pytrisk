@@ -1,0 +1,369 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "Falkland-Islands_pic.png"
+map = "Falkland-Islands_map.gif"
+crd = "Falkland-Islands.cards"
+
+[[continents]]
+id = 1
+name = "Carcass_Island(s)"
+bonus = 3
+color = "red"
+
+[[continents]]
+id = 2
+name = "NW_Falkland"
+bonus = 4
+color = "#fffe80"
+
+[[continents]]
+id = 3
+name = "Central_West"
+bonus = 3
+color = "#80ffea"
+
+[[continents]]
+id = 4
+name = "SW_Falkland"
+bonus = 3
+color = "#c6ff80"
+
+[[continents]]
+id = 5
+name = "NE_Falkland"
+bonus = 2
+color = "#80f1ff"
+
+[[continents]]
+id = 6
+name = "SE_Falkland"
+bonus = 3
+color = "#80f3ff"
+
+[[continents]]
+id = 7
+name = "Sea_Lion_Island"
+bonus = 1
+color = "#b0ff80"
+
+[[countries]]
+id = 1
+name = "Carcass_1"
+continent = 1
+x = 41
+y = 27
+connections = [2]
+
+[[countries]]
+id = 2
+name = "Carcass_2"
+continent = 1
+x = 63
+y = 32
+connections = [1, 3]
+
+[[countries]]
+id = 3
+name = "Carcass_3"
+continent = 1
+x = 99
+y = 42
+connections = [2, 4, 5]
+
+[[countries]]
+id = 4
+name = "Carcass_4"
+continent = 1
+x = 104
+y = 67
+connections = [3, 5, 7]
+
+[[countries]]
+id = 5
+name = "Carcass_5"
+continent = 1
+x = 127
+y = 47
+connections = [3, 6, 4]
+
+[[countries]]
+id = 6
+name = "Carcass_6"
+continent = 1
+x = 182
+y = 58
+connections = [5, 7]
+
+[[countries]]
+id = 7
+name = "Carcass_7"
+continent = 1
+x = 161
+y = 89
+connections = [4, 6, 8]
+
+[[countries]]
+id = 8
+name = "Carcass_8"
+continent = 1
+x = 186
+y = 108
+connections = [13, 7, 9]
+
+[[countries]]
+id = 9
+name = "Saunders_Island"
+continent = 2
+x = 240
+y = 101
+connections = [15, 8, 14]
+
+[[countries]]
+id = 10
+name = "Pebble_Island"
+continent = 2
+x = 344
+y = 85
+connections = [16, 11]
+
+[[countries]]
+id = 11
+name = "Port_Howard"
+continent = 2
+x = 349
+y = 173
+connections = [16, 15, 10]
+
+[[countries]]
+id = 12
+name = "West_Point_Island"
+continent = 2
+x = 135
+y = 112
+connections = [13]
+
+[[countries]]
+id = 13
+name = "West_Point_Penensula_Tip"
+continent = 2
+x = 199
+y = 148
+connections = [14, 8, 12]
+
+[[countries]]
+id = 14
+name = "West_Point_Penensula_Base"
+continent = 2
+x = 245
+y = 170
+connections = [15, 13, 9]
+
+[[countries]]
+id = 15
+name = "Central_NW"
+continent = 2
+x = 290
+y = 174
+connections = [11, 14, 9, 18]
+
+[[countries]]
+id = 16
+name = "NW_Falkland_1"
+continent = 2
+x = 378
+y = 123
+connections = [10, 11, 31, 30]
+
+[[countries]]
+id = 17
+name = "Central_West_1"
+continent = 3
+x = 196
+y = 211
+connections = [18, 20]
+
+[[countries]]
+id = 18
+name = "Central_West"
+continent = 3
+x = 282
+y = 243
+connections = [15, 19, 17, 34]
+
+[[countries]]
+id = 19
+name = "Central_West_2"
+continent = 3
+x = 228
+y = 264
+connections = [18, 20, 25]
+
+[[countries]]
+id = 20
+name = "Central_West_3"
+continent = 3
+x = 194
+y = 254
+connections = [19, 17, 25]
+
+[[countries]]
+id = 21
+name = "New_Island"
+continent = 4
+x = 40
+y = 223
+connections = [22]
+
+[[countries]]
+id = 22
+name = "S_New_Island_1"
+continent = 4
+x = 44
+y = 262
+connections = [23, 21]
+
+[[countries]]
+id = 23
+name = "S_New_Island_2"
+continent = 4
+x = 99
+y = 275
+connections = [24, 22]
+
+[[countries]]
+id = 24
+name = "SW_Penensula"
+continent = 4
+x = 144
+y = 323
+connections = [25, 23]
+
+[[countries]]
+id = 25
+name = "SW_Penensula_Base"
+continent = 4
+x = 200
+y = 314
+connections = [19, 24, 39, 20]
+
+[[countries]]
+id = 26
+name = "Mt_Pleasant"
+continent = 5
+x = 534
+y = 235
+connections = [31, 27, 32, 37]
+
+[[countries]]
+id = 27
+name = "Stanley"
+continent = 5
+x = 623
+y = 184
+connections = [31, 28, 26]
+
+[[countries]]
+id = 28
+name = "NE_1"
+continent = 5
+x = 584
+y = 119
+connections = [29, 27]
+
+[[countries]]
+id = 29
+name = "NE_2"
+continent = 5
+x = 529
+y = 90
+connections = [30, 28]
+
+[[countries]]
+id = 30
+name = "NE_3"
+continent = 5
+x = 479
+y = 114
+connections = [31, 29, 16]
+
+[[countries]]
+id = 31
+name = "NE_Central"
+continent = 5
+x = 487
+y = 160
+connections = [26, 27, 30, 16]
+
+[[countries]]
+id = 32
+name = "Goose_Green"
+continent = 6
+x = 422
+y = 240
+connections = [34, 33, 26]
+
+[[countries]]
+id = 33
+name = "SE_1"
+continent = 6
+x = 462
+y = 279
+connections = [32, 37, 38]
+
+[[countries]]
+id = 34
+name = "SE_2"
+continent = 6
+x = 366
+y = 304
+connections = [32, 35, 18, 36]
+
+[[countries]]
+id = 35
+name = "SE_3"
+continent = 6
+x = 409
+y = 326
+connections = [34, 38]
+
+[[countries]]
+id = 36
+name = "SE_4"
+continent = 6
+x = 367
+y = 352
+connections = [34, 40, 39]
+
+[[countries]]
+id = 37
+name = "SE_Island_1"
+continent = 6
+x = 532
+y = 291
+connections = [33, 26]
+
+[[countries]]
+id = 38
+name = "SE_Island_2"
+continent = 6
+x = 468
+y = 344
+connections = [35, 33, 40]
+
+[[countries]]
+id = 39
+name = "SE_Island_3"
+continent = 6
+x = 322
+y = 362
+connections = [36, 25]
+
+[[countries]]
+id = 40
+name = "Sea_Lion_Island"
+continent = 7
+x = 441
+y = 407
+connections = [36, 38]

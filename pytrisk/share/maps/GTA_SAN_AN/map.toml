@@ -1,0 +1,485 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "GTA_SAN_AN_pic.jpg"
+map = "GTA_SAN_AN_map.gif"
+crd = "GTA_SAN_AN.cards"
+
+[[continents]]
+id = 1
+name = "Tierra_Robada"
+bonus = 4
+color = "#7e9567"
+
+[[continents]]
+id = 2
+name = "Bone_County"
+bonus = 7
+color = "#fff492"
+
+[[continents]]
+id = 3
+name = "Red_County"
+bonus = 5
+color = "#009966"
+
+[[continents]]
+id = 4
+name = "Eastern_Los_Santos"
+bonus = 10
+color = "#7f00ff"
+
+[[continents]]
+id = 5
+name = "Las_Venturas"
+bonus = 10
+color = "red"
+
+[[continents]]
+id = 6
+name = "San_Fierro"
+bonus = 10
+color = "blue"
+
+[[continents]]
+id = 7
+name = "Whetstone"
+bonus = 4
+color = "#660000"
+
+[[continents]]
+id = 8
+name = "Flint_County"
+bonus = 5
+color = "#33ff33"
+
+[[continents]]
+id = 9
+name = "Western_Los_Santos"
+bonus = 7
+color = "#baba21"
+
+[[countries]]
+id = 1
+name = "Blueberry"
+continent = 3
+x = 417
+y = 362
+connections = [2, 4, 21, 17, 14, 12]
+
+[[countries]]
+id = 2
+name = "Montgomery"
+continent = 3
+x = 551
+y = 321
+connections = [27, 30, 1, 4, 3]
+
+[[countries]]
+id = 3
+name = "Palomino_Creek"
+continent = 3
+x = 685
+y = 340
+connections = [30, 31, 2, 4, 5]
+
+[[countries]]
+id = 4
+name = "Dillimore"
+continent = 3
+x = 475
+y = 413
+connections = [2, 1, 14, 48, 49, 3]
+
+[[countries]]
+id = 5
+name = "Northstar_Rock"
+continent = 3
+x = 714
+y = 420
+connections = [3, 43, 44]
+
+[[countries]]
+id = 6
+name = "Mount_Chiliad"
+continent = 7
+x = 85
+y = 535
+connections = [8, 7, 39, 13, 11]
+
+[[countries]]
+id = 7
+name = "Angel_Pine"
+continent = 7
+x = 108
+y = 630
+connections = [8, 6, 9, 39]
+
+[[countries]]
+id = 8
+name = "Shady_Creeks"
+continent = 7
+x = 151
+y = 585
+connections = [11, 9, 6, 7, 13]
+
+[[countries]]
+id = 9
+name = "Shady_Basin"
+continent = 7
+x = 199
+y = 623
+connections = [10, 11, 8, 7]
+
+[[countries]]
+id = 10
+name = "Back_O'Beyond"
+continent = 8
+x = 298
+y = 603
+connections = [11, 9, 14, 53]
+
+[[countries]]
+id = 11
+name = "Leafy_Hollow"
+continent = 8
+x = 258
+y = 540
+connections = [10, 14, 12, 13, 8, 9]
+
+[[countries]]
+id = 12
+name = "\"The_Farm\""
+continent = 8
+x = 244
+y = 462
+connections = [11, 1, 14, 13, 38]
+
+[[countries]]
+id = 13
+name = "Foster_Valley"
+continent = 8
+x = 124
+y = 452
+connections = [11, 8, 39, 12, 38]
+
+[[countries]]
+id = 14
+name = "Beacon_Hill"
+continent = 8
+x = 339
+y = 497
+connections = [10, 11, 1, 12, 49, 53, 4]
+
+[[countries]]
+id = 15
+name = "Bayside"
+continent = 1
+x = 62
+y = 70
+connections = [32, 33, 16, 18, 17]
+
+[[countries]]
+id = 16
+name = "El_Quebrados"
+continent = 1
+x = 190
+y = 44
+connections = [15, 17, 18, 19]
+
+[[countries]]
+id = 17
+name = "Las_Barrancas"
+continent = 1
+x = 274
+y = 179
+connections = [34, 33, 18, 16, 15, 21, 1]
+
+[[countries]]
+id = 18
+name = "Sherman_Dam"
+continent = 1
+x = 282
+y = 113
+connections = [17, 16, 15, 21]
+
+[[countries]]
+id = 19
+name = "Las_Payasdas"
+continent = 2
+x = 344
+y = 35
+connections = [16, 23, 24, 28]
+
+[[countries]]
+id = 20
+name = "Octane_Springs"
+continent = 2
+x = 470
+y = 169
+connections = [22, 21, 27, 28]
+
+[[countries]]
+id = 21
+name = "Fort_Carson"
+continent = 2
+x = 365
+y = 229
+connections = [17, 18, 22, 20, 27, 1]
+
+[[countries]]
+id = 22
+name = "Area_51"
+continent = 2
+x = 406
+y = 126
+connections = [23, 20, 21]
+
+[[countries]]
+id = 23
+name = "Verdant_Meadow_Airport"
+continent = 2
+x = 414
+y = 59
+connections = [38, 47, 29, 19, 24, 28, 22]
+
+[[countries]]
+id = 24
+name = "Prickly_Pine"
+continent = 5
+x = 571
+y = 35
+connections = [19, 23, 28, 25, 29, 26]
+
+[[countries]]
+id = 25
+name = "Roca_Escalante"
+continent = 5
+x = 704
+y = 72
+connections = [24, 31, 26]
+
+[[countries]]
+id = 26
+name = "The_Strip"
+continent = 5
+x = 647
+y = 191
+connections = [25, 31, 29, 30, 24, 27, 28]
+
+[[countries]]
+id = 27
+name = "Blackfield"
+continent = 5
+x = 539
+y = 243
+connections = [21, 20, 28, 29, 30, 26, 2]
+
+[[countries]]
+id = 28
+name = "White_Wood_Esates"
+continent = 5
+x = 514
+y = 97
+connections = [19, 23, 20, 27, 24, 29, 26]
+
+[[countries]]
+id = 29
+name = "Las_Venturas_Airport"
+continent = 5
+x = 579
+y = 180
+connections = [38, 47, 23, 28, 27, 24, 26]
+
+[[countries]]
+id = 30
+name = "Rockshore_West"
+continent = 5
+x = 674
+y = 270
+connections = [27, 31, 26, 2, 3]
+
+[[countries]]
+id = 31
+name = "Linden_Station"
+continent = 5
+x = 734
+y = 198
+connections = [25, 30, 26, 3]
+
+[[countries]]
+id = 32
+name = "Battery_Point"
+continent = 6
+x = 43
+y = 215
+connections = [35, 37, 33, 15]
+
+[[countries]]
+id = 33
+name = "Esplanade"
+continent = 6
+x = 165
+y = 205
+connections = [37, 32, 34, 15, 17]
+
+[[countries]]
+id = 34
+name = "Easter_Basin"
+continent = 6
+x = 172
+y = 283
+connections = [39, 36, 37, 33, 17, 38]
+
+[[countries]]
+id = 35
+name = "City_Hall"
+continent = 6
+x = 18
+y = 295
+connections = [39, 36, 37, 32]
+
+[[countries]]
+id = 36
+name = "Garcia"
+continent = 6
+x = 108
+y = 326
+connections = [39, 35, 34, 37, 38]
+
+[[countries]]
+id = 37
+name = "Chinatown"
+continent = 6
+x = 106
+y = 256
+connections = [36, 35, 32, 33, 34]
+
+[[countries]]
+id = 38
+name = "Easter_Bay_Airport"
+continent = 6
+x = 222
+y = 374
+connections = [39, 36, 34, 47, 29, 23, 12, 13]
+
+[[countries]]
+id = 39
+name = "Missionary_Hill"
+continent = 6
+x = 60
+y = 403
+connections = [7, 13, 38, 36, 35, 34]
+
+[[countries]]
+id = 40
+name = "East_Los_Santos"
+continent = 4
+x = 693
+y = 521
+connections = [46, 41, 45, 43, 44]
+
+[[countries]]
+id = 41
+name = "Playa_Del_Seville"
+continent = 4
+x = 716
+y = 591
+connections = [42, 45, 40, 43]
+
+[[countries]]
+id = 42
+name = "Ocean_Docks"
+continent = 4
+x = 709
+y = 637
+connections = [47, 45, 41]
+
+[[countries]]
+id = 43
+name = "Los_Flores"
+continent = 4
+x = 722
+y = 490
+connections = [5, 41, 40]
+
+[[countries]]
+id = 44
+name = "Glen_Park"
+continent = 4
+x = 633
+y = 491
+connections = [5, 52, 46, 40]
+
+[[countries]]
+id = 45
+name = "Ganton"
+continent = 4
+x = 690
+y = 552
+connections = [46, 47, 42, 41, 40]
+
+[[countries]]
+id = 46
+name = "Little_Mexico"
+continent = 4
+x = 609
+y = 552
+connections = [52, 51, 47, 44, 45, 40]
+
+[[countries]]
+id = 47
+name = "Los_Santos_Airport"
+continent = 4
+x = 600
+y = 645
+connections = [38, 29, 23, 51, 46, 42, 45]
+
+[[countries]]
+id = 48
+name = "Mulholland"
+continent = 9
+x = 536
+y = 436
+connections = [4, 49, 52]
+
+[[countries]]
+id = 49
+name = "Richman"
+continent = 9
+x = 432
+y = 480
+connections = [14, 4, 53, 48, 52]
+
+[[countries]]
+id = 50
+name = "Verona_Beach"
+continent = 9
+x = 496
+y = 571
+connections = [53, 51, 52]
+
+[[countries]]
+id = 51
+name = "Bluffs"
+continent = 9
+x = 537
+y = 588
+connections = [50, 52, 46, 47]
+
+[[countries]]
+id = 52
+name = "Market"
+continent = 9
+x = 536
+y = 497
+connections = [49, 53, 50, 48, 51, 46, 44]
+
+[[countries]]
+id = 53
+name = "Rodeo"
+continent = 9
+x = 442
+y = 530
+connections = [10, 14, 49, 50, 52]

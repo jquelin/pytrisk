@@ -1,0 +1,1209 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "Nuremberg_Public_Transit_pic.png"
+map = "Nuremberg_Public_Transit_map.gif"
+crd = "Nuremberg_Public_Transit.cards"
+
+[[continents]]
+id = 1
+name = "Fürth"
+bonus = 2
+color = "#00cc00"
+
+[[continents]]
+id = 2
+name = "Altstadt"
+bonus = 4
+color = "#ff0033"
+
+[[continents]]
+id = 3
+name = "Nürnberg_Hauptbahnhof"
+bonus = 2
+color = "#660000"
+
+[[continents]]
+id = 4
+name = "Plärrer"
+bonus = 1
+color = "#ff3300"
+
+[[continents]]
+id = 5
+name = "Nordstadt"
+bonus = 2
+color = "#ffcc00"
+
+[[continents]]
+id = 6
+name = "Knoblauchsland"
+bonus = 1
+color = "#ffff99"
+
+[[continents]]
+id = 7
+name = "Thon"
+bonus = 1
+color = "#ccff66"
+
+[[continents]]
+id = 8
+name = "Weststadt"
+bonus = 2
+color = "#99ff33"
+
+[[continents]]
+id = 9
+name = "Schweinau"
+bonus = 1
+color = "#999900"
+
+[[continents]]
+id = 10
+name = "Gibitzenhof"
+bonus = 4
+color = "#cc0033"
+
+[[continents]]
+id = 11
+name = "Reichelsdorf"
+bonus = 1
+color = "#663300"
+
+[[continents]]
+id = 12
+name = "Gartenstadt"
+bonus = 1
+color = "magenta"
+
+[[continents]]
+id = 13
+name = "Südstadt"
+bonus = 4
+color = "#990099"
+
+[[continents]]
+id = 14
+name = "Langwasser"
+bonus = 1
+color = "#cc66ff"
+
+[[continents]]
+id = 15
+name = "Dutzendteich"
+bonus = 2
+color = "#9966ff"
+
+[[continents]]
+id = 16
+name = "Dürrenhof"
+bonus = 2
+color = "#990033"
+
+[[continents]]
+id = 17
+name = "Mögeldorf"
+bonus = 1
+color = "#9999ff"
+
+[[continents]]
+id = 18
+name = "Weigelshof"
+bonus = 1
+color = "#ffcc99"
+
+[[continents]]
+id = 19
+name = "Erlenstegen"
+bonus = 1
+color = "#ccff99"
+
+[[countries]]
+id = 1
+name = "Fürth_Hauptbahnhof"
+continent = 1
+x = 130
+y = 162
+connections = [8, 10, 6, 2, 13, 49]
+
+[[countries]]
+id = 2
+name = "Rathaus"
+continent = 1
+x = 114
+y = 130
+connections = [1, 3]
+
+[[countries]]
+id = 3
+name = "Stadthalle"
+continent = 1
+x = 93
+y = 116
+connections = [2, 4]
+
+[[countries]]
+id = 4
+name = "Klinikum"
+continent = 1
+x = 74
+y = 107
+connections = [3, 5]
+
+[[countries]]
+id = 5
+name = "Hardhöhe"
+continent = 1
+x = 49
+y = 106
+connections = [4]
+
+[[countries]]
+id = 6
+name = "Unterfarrnbach"
+continent = 1
+x = 67
+y = 100
+connections = [1, 7]
+
+[[countries]]
+id = 7
+name = "Vach"
+continent = 1
+x = 67
+y = 78
+connections = [6]
+
+[[countries]]
+id = 8
+name = "Unterfürberg"
+continent = 1
+x = 57
+y = 168
+connections = [1, 9]
+
+[[countries]]
+id = 9
+name = "Burgfarrnbach"
+continent = 1
+x = 34
+y = 168
+connections = [8]
+
+[[countries]]
+id = 10
+name = "Westvorstadt"
+continent = 1
+x = 68
+y = 183
+connections = [1, 11]
+
+[[countries]]
+id = 11
+name = "Dambach"
+continent = 1
+x = 68
+y = 196
+connections = [10, 12]
+
+[[countries]]
+id = 12
+name = "Alte_Veste"
+continent = 1
+x = 68
+y = 209
+connections = [11]
+
+[[countries]]
+id = 13
+name = "Jakobinenstraße"
+continent = 1
+x = 152
+y = 156
+connections = [1, 43]
+
+[[countries]]
+id = 14
+name = "Lorenzkirche"
+continent = 2
+x = 348
+y = 198
+connections = [21, 15]
+
+[[countries]]
+id = 15
+name = "Weißer_Turm"
+continent = 2
+x = 326
+y = 198
+connections = [14, 22]
+
+[[countries]]
+id = 16
+name = "Opernhaus"
+continent = 2
+x = 337
+y = 222
+connections = [21, 22]
+
+[[countries]]
+id = 17
+name = "Marientor"
+continent = 2
+x = 397
+y = 195
+connections = [136, 21]
+
+[[countries]]
+id = 18
+name = "Obere_Turnstraße"
+continent = 2
+x = 286
+y = 191
+connections = [19, 22]
+
+[[countries]]
+id = 19
+name = "Hallertor"
+continent = 2
+x = 286
+y = 175
+connections = [20, 42, 18]
+
+[[countries]]
+id = 20
+name = "Tiergärtnertor"
+continent = 2
+x = 284
+y = 160
+connections = [23, 19]
+
+[[countries]]
+id = 21
+name = "Nürnberg_Hauptbahnhof"
+continent = 3
+x = 379
+y = 238
+connections = [49, 53, 59, 82, 113, 115, 116, 103, 122, 132, 17, 16, 14]
+
+[[countries]]
+id = 22
+name = "Plärrer"
+continent = 4
+x = 285
+y = 217
+connections = [48, 49, 58, 16, 15, 18]
+
+[[countries]]
+id = 23
+name = "Friedrich-Ebert-Platz"
+continent = 5
+x = 285
+y = 142
+connections = [24, 38, 20]
+
+[[countries]]
+id = 24
+name = "Krelingstraße"
+continent = 5
+x = 310
+y = 142
+connections = [25, 23]
+
+[[countries]]
+id = 25
+name = "Maxfeldstraße"
+continent = 5
+x = 333
+y = 142
+connections = [26, 24]
+
+[[countries]]
+id = 26
+name = "Wurzelbauerstraße"
+continent = 5
+x = 356
+y = 142
+connections = [30, 25]
+
+[[countries]]
+id = 27
+name = "Maxfeld"
+continent = 5
+x = 362
+y = 124
+connections = [31]
+
+[[countries]]
+id = 28
+name = "Schoppershof"
+continent = 5
+x = 383
+y = 113
+connections = [30, 29]
+
+[[countries]]
+id = 29
+name = "Nordostbahnhof"
+continent = 5
+x = 385
+y = 95
+connections = [28, 35]
+
+[[countries]]
+id = 30
+name = "Rennweg"
+continent = 5
+x = 382
+y = 142
+connections = [31, 28, 26]
+
+[[countries]]
+id = 31
+name = "Rathenauplatz"
+continent = 5
+x = 384
+y = 160
+connections = [32, 136, 30, 27]
+
+[[countries]]
+id = 32
+name = "Stresemannplatz"
+continent = 5
+x = 428
+y = 160
+connections = [129, 31]
+
+[[countries]]
+id = 33
+name = "Flughafen"
+continent = 6
+x = 350
+y = 50
+connections = [34]
+
+[[countries]]
+id = 34
+name = "Ziegelstein"
+continent = 6
+x = 372
+y = 60
+connections = [35, 33]
+
+[[countries]]
+id = 35
+name = "Herrnhütte"
+continent = 6
+x = 384
+y = 77
+connections = [29, 34]
+
+[[countries]]
+id = 36
+name = "Thon"
+continent = 7
+x = 285
+y = 89
+connections = [37]
+
+[[countries]]
+id = 37
+name = "Bucher_Straße/Nordring"
+continent = 7
+x = 286
+y = 107
+connections = [38, 36]
+
+[[countries]]
+id = 38
+name = "Juvenellstraße"
+continent = 7
+x = 286
+y = 124
+connections = [23, 37]
+
+[[countries]]
+id = 39
+name = "Westfriedhof"
+continent = 8
+x = 228
+y = 137
+connections = [40]
+
+[[countries]]
+id = 40
+name = "Julienstraße"
+continent = 8
+x = 243
+y = 144
+connections = [41, 39]
+
+[[countries]]
+id = 41
+name = "Brückenstraße"
+continent = 8
+x = 260
+y = 154
+connections = [42, 40]
+
+[[countries]]
+id = 42
+name = "Hallerstraße"
+continent = 8
+x = 274
+y = 164
+connections = [19, 41]
+
+[[countries]]
+id = 43
+name = "Stadtgrenze"
+continent = 8
+x = 172
+y = 157
+connections = [13, 44]
+
+[[countries]]
+id = 44
+name = "Muggenhof"
+continent = 8
+x = 190
+y = 164
+connections = [43, 45]
+
+[[countries]]
+id = 45
+name = "Eberhardshof"
+continent = 8
+x = 208
+y = 172
+connections = [44, 46]
+
+[[countries]]
+id = 46
+name = "Maximilianstraße"
+continent = 8
+x = 223
+y = 181
+connections = [45, 47]
+
+[[countries]]
+id = 47
+name = "Bärenschanze"
+continent = 8
+x = 238
+y = 191
+connections = [46, 48]
+
+[[countries]]
+id = 48
+name = "Gostenhof"
+continent = 8
+x = 255
+y = 200
+connections = [47, 22]
+
+[[countries]]
+id = 49
+name = "Rothenburger_Straße"
+continent = 9
+x = 253
+y = 235
+connections = [1, 21, 22, 50, 52]
+
+[[countries]]
+id = 50
+name = "Sündersbühl"
+continent = 9
+x = 216
+y = 240
+connections = [51, 49]
+
+[[countries]]
+id = 51
+name = "Gustav-Adolf-Straße"
+continent = 9
+x = 198
+y = 240
+connections = [50]
+
+[[countries]]
+id = 52
+name = "Sankt_Leonhard"
+continent = 9
+x = 246
+y = 247
+connections = [49, 53]
+
+[[countries]]
+id = 53
+name = "Schweinau"
+continent = 9
+x = 245
+y = 261
+connections = [52, 56, 54, 21]
+
+[[countries]]
+id = 54
+name = "Stein"
+continent = 9
+x = 218
+y = 276
+connections = [53, 55]
+
+[[countries]]
+id = 55
+name = "Unterasbach"
+continent = 9
+x = 196
+y = 289
+connections = [54]
+
+[[countries]]
+id = 56
+name = "Hohe_Marter"
+continent = 9
+x = 245
+y = 279
+connections = [53, 57]
+
+[[countries]]
+id = 57
+name = "Röthenbach"
+continent = 9
+x = 229
+y = 306
+connections = [56]
+
+[[countries]]
+id = 58
+name = "Kohlenhof"
+continent = 10
+x = 286
+y = 236
+connections = [22, 59]
+
+[[countries]]
+id = 59
+name = "Steinbühl"
+continent = 10
+x = 286
+y = 248
+connections = [58, 60, 71, 21]
+
+[[countries]]
+id = 60
+name = "Landgrabenstraße"
+continent = 10
+x = 286
+y = 281
+connections = [59, 61, 65]
+
+[[countries]]
+id = 61
+name = "Brehmstraße"
+continent = 10
+x = 283
+y = 295
+connections = [60, 62]
+
+[[countries]]
+id = 62
+name = "Alemannenstraße"
+continent = 10
+x = 283
+y = 307
+connections = [61, 63]
+
+[[countries]]
+id = 63
+name = "Dianaplatz"
+continent = 10
+x = 283
+y = 318
+connections = [62, 64]
+
+[[countries]]
+id = 64
+name = "Gibitzenhof"
+continent = 10
+x = 283
+y = 330
+connections = [63]
+
+[[countries]]
+id = 65
+name = "Heinestraße"
+continent = 10
+x = 309
+y = 281
+connections = [60, 66]
+
+[[countries]]
+id = 66
+name = "Christuskirche"
+continent = 10
+x = 327
+y = 283
+connections = [65, 82, 67]
+
+[[countries]]
+id = 67
+name = "Humboldtstraße"
+continent = 10
+x = 327
+y = 296
+connections = [66, 68]
+
+[[countries]]
+id = 68
+name = "Schuckertstraße"
+continent = 10
+x = 327
+y = 306
+connections = [67, 69]
+
+[[countries]]
+id = 69
+name = "Siemensstraße"
+continent = 10
+x = 327
+y = 315
+connections = [68, 70]
+
+[[countries]]
+id = 70
+name = "Lothringer_Straße"
+continent = 10
+x = 327
+y = 325
+connections = [69, 84]
+
+[[countries]]
+id = 71
+name = "Sandreuth"
+continent = 11
+x = 262
+y = 322
+connections = [59, 72]
+
+[[countries]]
+id = 72
+name = "Eibach"
+continent = 11
+x = 262
+y = 337
+connections = [71, 73]
+
+[[countries]]
+id = 73
+name = "Reichelsdorf"
+continent = 11
+x = 262
+y = 353
+connections = [72, 74]
+
+[[countries]]
+id = 74
+name = "Reichelsorfer_Keller"
+continent = 11
+x = 262
+y = 369
+connections = [73, 75]
+
+[[countries]]
+id = 75
+name = "Katzwang"
+continent = 11
+x = 262
+y = 384
+connections = [74]
+
+[[countries]]
+id = 76
+name = "Trafowerk"
+continent = 12
+x = 356
+y = 338
+connections = [84, 77]
+
+[[countries]]
+id = 77
+name = "Am_Rangierbahnhof"
+continent = 12
+x = 356
+y = 350
+connections = [76, 78]
+
+[[countries]]
+id = 78
+name = "Finkenbrunn"
+continent = 12
+x = 357
+y = 362
+connections = [77, 79]
+
+[[countries]]
+id = 79
+name = "Südfriedhof"
+continent = 12
+x = 357
+y = 373
+connections = [78, 80]
+
+[[countries]]
+id = 80
+name = "Saarbrückener_Straße"
+continent = 12
+x = 357
+y = 385
+connections = [79, 81]
+
+[[countries]]
+id = 81
+name = "Worzeldorfer_Straße"
+continent = 12
+x = 371
+y = 385
+connections = [80]
+
+[[countries]]
+id = 82
+name = "Aufsessplatz"
+continent = 13
+x = 366
+y = 283
+connections = [66, 21, 83, 88]
+
+[[countries]]
+id = 83
+name = "Maffeiplatz"
+continent = 13
+x = 366
+y = 306
+connections = [82, 84]
+
+[[countries]]
+id = 84
+name = "Frankenstraße"
+continent = 13
+x = 366
+y = 324
+connections = [70, 83, 76, 85]
+
+[[countries]]
+id = 85
+name = "Hasenbuck"
+continent = 13
+x = 383
+y = 339
+connections = [84, 86]
+
+[[countries]]
+id = 86
+name = "Bauernfeindtraße"
+continent = 13
+x = 398
+y = 348
+connections = [85, 87]
+
+[[countries]]
+id = 87
+name = "Messe"
+continent = 13
+x = 415
+y = 357
+connections = [86, 96]
+
+[[countries]]
+id = 88
+name = "Hummelsteiner_Weg"
+continent = 13
+x = 393
+y = 284
+connections = [82, 89]
+
+[[countries]]
+id = 89
+name = "Schweiggerstraße"
+continent = 13
+x = 431
+y = 285
+connections = [88, 113, 114, 90, 92]
+
+[[countries]]
+id = 90
+name = "Harsdörfferplatz"
+continent = 13
+x = 453
+y = 282
+connections = [89, 91]
+
+[[countries]]
+id = 91
+name = "Peterskirche"
+continent = 13
+x = 470
+y = 282
+connections = [90, 105]
+
+[[countries]]
+id = 92
+name = "Wodanstraße"
+continent = 13
+x = 432
+y = 312
+connections = [89, 93, 94]
+
+[[countries]]
+id = 93
+name = "Holzgartenstraße"
+continent = 13
+x = 461
+y = 312
+connections = [112, 92]
+
+[[countries]]
+id = 94
+name = "Tristanstraße"
+continent = 13
+x = 443
+y = 323
+connections = [92, 95]
+
+[[countries]]
+id = 95
+name = "Bayernstraße"
+continent = 13
+x = 458
+y = 334
+connections = [94]
+
+[[countries]]
+id = 96
+name = "Langwasser_Nord"
+continent = 14
+x = 429
+y = 367
+connections = [87, 97]
+
+[[countries]]
+id = 97
+name = "Scharfreiterring"
+continent = 14
+x = 446
+y = 377
+connections = [96, 98]
+
+[[countries]]
+id = 98
+name = "Langwasser_Mitte"
+continent = 14
+x = 463
+y = 387
+connections = [97, 99]
+
+[[countries]]
+id = 99
+name = "Gemeinschaftshaus"
+continent = 14
+x = 478
+y = 396
+connections = [98, 100]
+
+[[countries]]
+id = 100
+name = "Langwasser_Süd"
+continent = 14
+x = 494
+y = 406
+connections = [99]
+
+[[countries]]
+id = 101
+name = "Gleißhammer"
+continent = 15
+x = 530
+y = 258
+connections = [116, 102]
+
+[[countries]]
+id = 102
+name = "Am_Dutzendteich"
+continent = 15
+x = 550
+y = 270
+connections = [101, 103]
+
+[[countries]]
+id = 103
+name = "Frankenstadion"
+continent = 15
+x = 568
+y = 285
+connections = [21, 102, 104]
+
+[[countries]]
+id = 104
+name = "Fischbach"
+continent = 15
+x = 591
+y = 293
+connections = [103]
+
+[[countries]]
+id = 105
+name = "Scharrerstraße"
+continent = 15
+x = 485
+y = 282
+connections = [91, 106]
+
+[[countries]]
+id = 106
+name = "Immelmannstraße"
+continent = 15
+x = 505
+y = 282
+connections = [105, 107]
+
+[[countries]]
+id = 107
+name = "Fliegerstraße/EWF"
+continent = 15
+x = 521
+y = 282
+connections = [106, 108]
+
+[[countries]]
+id = 108
+name = "Dutzendteich"
+continent = 15
+x = 537
+y = 282
+connections = [107, 109]
+
+[[countries]]
+id = 109
+name = "Dokumentationszentrum"
+continent = 15
+x = 539
+y = 298
+connections = [108, 110]
+
+[[countries]]
+id = 110
+name = "Luitpoldhain"
+continent = 15
+x = 537
+y = 312
+connections = [109, 111]
+
+[[countries]]
+id = 111
+name = "Meistersingerhalle"
+continent = 15
+x = 512
+y = 312
+connections = [110, 112]
+
+[[countries]]
+id = 112
+name = "Platz_der_Opfer_des_Faschismus"
+continent = 15
+x = 487
+y = 312
+connections = [111, 93]
+
+[[countries]]
+id = 113
+name = "Widhalmstraße"
+continent = 16
+x = 429
+y = 263
+connections = [89, 21]
+
+[[countries]]
+id = 114
+name = "Scheurlstraße"
+continent = 16
+x = 437
+y = 254
+connections = [89, 115]
+
+[[countries]]
+id = 115
+name = "Marientunnel"
+continent = 16
+x = 428
+y = 231
+connections = [114, 21, 116]
+
+[[countries]]
+id = 116
+name = "Dürrenhof"
+continent = 16
+x = 448
+y = 234
+connections = [115, 21, 117, 126, 101]
+
+[[countries]]
+id = 117
+name = "Norikerstraße"
+continent = 16
+x = 461
+y = 234
+connections = [116, 118]
+
+[[countries]]
+id = 118
+name = "Arminiusstraße"
+continent = 16
+x = 483
+y = 231
+connections = [117, 119]
+
+[[countries]]
+id = 119
+name = "Marthastraße"
+continent = 17
+x = 513
+y = 215
+connections = [118, 120]
+
+[[countries]]
+id = 120
+name = "Erhardstraße"
+continent = 17
+x = 534
+y = 205
+connections = [119, 121]
+
+[[countries]]
+id = 121
+name = "Lechnerstraße"
+continent = 17
+x = 555
+y = 195
+connections = [120, 122]
+
+[[countries]]
+id = 122
+name = "Mögeldorf"
+continent = 17
+x = 570
+y = 198
+connections = [121, 126, 127, 128, 123, 21]
+
+[[countries]]
+id = 123
+name = "Balthasar-Neumann-Straße"
+continent = 17
+x = 570
+y = 216
+connections = [122, 124]
+
+[[countries]]
+id = 124
+name = "Siedlerstraße"
+continent = 17
+x = 570
+y = 229
+connections = [123, 125]
+
+[[countries]]
+id = 125
+name = "Tiergarten"
+continent = 17
+x = 571
+y = 243
+connections = [124]
+
+[[countries]]
+id = 126
+name = "Ostring"
+continent = 17
+x = 538
+y = 217
+connections = [116, 122]
+
+[[countries]]
+id = 127
+name = "Rehhof"
+continent = 17
+x = 587
+y = 196
+connections = [122, 128]
+
+[[countries]]
+id = 128
+name = "Laufamholz"
+continent = 17
+x = 605
+y = 198
+connections = [122, 127]
+
+[[countries]]
+id = 129
+name = "Deichslerstraße"
+continent = 18
+x = 456
+y = 159
+connections = [130, 32]
+
+[[countries]]
+id = 130
+name = "Tauroggenstraße"
+continent = 18
+x = 487
+y = 159
+connections = [131, 129]
+
+[[countries]]
+id = 131
+name = "Tafelwerk"
+continent = 18
+x = 517
+y = 159
+connections = [132, 130]
+
+[[countries]]
+id = 132
+name = "Ostbahnhof"
+continent = 19
+x = 540
+y = 161
+connections = [21, 135, 133, 131]
+
+[[countries]]
+id = 133
+name = "Thumenberger_Weg"
+continent = 19
+x = 556
+y = 146
+connections = [132, 134]
+
+[[countries]]
+id = 134
+name = "Platnersberg"
+continent = 19
+x = 576
+y = 136
+connections = [133, 135]
+
+[[countries]]
+id = 135
+name = "Erlenstegen"
+continent = 19
+x = 597
+y = 136
+connections = [132, 134]
+
+[[countries]]
+id = 136
+name = "Wörder_Wiese"
+continent = 2
+x = 384
+y = 177
+connections = [31, 17]

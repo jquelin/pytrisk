@@ -1,0 +1,513 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "rio_de_janeiro_pic.jpg"
+map = "rio_de_janeiro_map.gif"
+crd = "rio_de_janeiro.cards"
+
+[[continents]]
+id = 1
+name = "Botafogo"
+bonus = 5
+color = "yellow"
+
+[[continents]]
+id = 2
+name = "Zona_Norte"
+bonus = 2
+color = "red"
+
+[[continents]]
+id = 3
+name = "Zona_Sul"
+bonus = 5
+color = "blue"
+
+[[continents]]
+id = 4
+name = "Tijuca"
+bonus = 3
+color = "orange"
+
+[[continents]]
+id = 5
+name = "Jacarepagua"
+bonus = 7
+color = "green"
+
+[[continents]]
+id = 6
+name = "Bangu"
+bonus = 2
+color = "magenta"
+
+[[continents]]
+id = 7
+name = "Ilha_do_Governador"
+bonus = 2
+color = "blue"
+
+[[continents]]
+id = 8
+name = "Guaratiba"
+bonus = 1
+color = "yellow"
+
+[[continents]]
+id = 9
+name = "Centro"
+bonus = 2
+color = "red"
+
+[[continents]]
+id = 10
+name = "Méier"
+bonus = 1
+color = "green"
+
+[[continents]]
+id = 11
+name = "Pavuna"
+bonus = 1
+color = "orange"
+
+[[countries]]
+id = 1
+name = "Tavares_Bastos"
+continent = 1
+x = 46
+y = 25
+connections = [2, 4, 38]
+
+[[countries]]
+id = 2
+name = "Caju"
+continent = 1
+x = 110
+y = 25
+connections = [1, 4, 5, 3]
+
+[[countries]]
+id = 3
+name = "Santa_Marta"
+continent = 1
+x = 220
+y = 26
+connections = [2, 6, 14]
+
+[[countries]]
+id = 4
+name = "Prazeres"
+continent = 1
+x = 83
+y = 61
+connections = [1, 2, 5, 7]
+
+[[countries]]
+id = 5
+name = "Humaitá"
+continent = 1
+x = 131
+y = 69
+connections = [2, 4, 6, 7, 8]
+
+[[countries]]
+id = 6
+name = "São_Carlos"
+continent = 1
+x = 185
+y = 76
+connections = [3, 5, 8]
+
+[[countries]]
+id = 7
+name = "Providência"
+continent = 1
+x = 81
+y = 110
+connections = [4, 5, 8, 9, 45]
+
+[[countries]]
+id = 8
+name = "Catumbi"
+continent = 1
+x = 127
+y = 121
+connections = [5, 6, 7, 9, 49]
+
+[[countries]]
+id = 9
+name = "Alegria"
+continent = 1
+x = 88
+y = 166
+connections = [7, 8, 10]
+
+[[countries]]
+id = 10
+name = "Jacarezinho"
+continent = 2
+x = 119
+y = 214
+connections = [9, 11, 12, 47]
+
+[[countries]]
+id = 11
+name = "Maré"
+continent = 2
+x = 95
+y = 260
+connections = [10, 12, 13]
+
+[[countries]]
+id = 12
+name = "Nova_Brasília"
+continent = 2
+x = 145
+y = 265
+connections = [10, 11, 13, 21, 50, 51]
+
+[[countries]]
+id = 13
+name = "Vila_Cruzeiro"
+continent = 2
+x = 90
+y = 324
+connections = [11, 12]
+
+[[countries]]
+id = 14
+name = "Babilônia"
+continent = 3
+x = 269
+y = 45
+connections = [3, 17, 15]
+
+[[countries]]
+id = 15
+name = "Pavão-Pavãozinho"
+continent = 3
+x = 328
+y = 33
+connections = [16, 18, 14, 17]
+
+[[countries]]
+id = 16
+name = "Vidigal"
+continent = 3
+x = 411
+y = 71
+connections = [15, 28, 30, 31, 18, 20]
+
+[[countries]]
+id = 17
+name = "Ladeira_dos_Tabajaras"
+continent = 3
+x = 272
+y = 88
+connections = [14, 18, 19, 15, 48]
+
+[[countries]]
+id = 18
+name = "Cantagalo"
+continent = 3
+x = 333
+y = 87
+connections = [15, 16, 17, 19, 20]
+
+[[countries]]
+id = 19
+name = "Parque_da_Cidade"
+continent = 3
+x = 271
+y = 133
+connections = [17, 18, 20, 21]
+
+[[countries]]
+id = 20
+name = "Cabritos"
+continent = 3
+x = 345
+y = 122
+connections = [16, 18, 19, 21, 22, 31]
+
+[[countries]]
+id = 21
+name = "Borel"
+continent = 4
+x = 283
+y = 211
+connections = [12, 19, 20, 22, 23, 24, 52]
+
+[[countries]]
+id = 22
+name = "Formiga"
+continent = 4
+x = 350
+y = 185
+connections = [20, 21, 24, 31]
+
+[[countries]]
+id = 23
+name = "Salgueiro"
+continent = 4
+x = 350
+y = 274
+connections = [21, 24, 25]
+
+[[countries]]
+id = 24
+name = "Liberdade"
+continent = 4
+x = 396
+y = 245
+connections = [21, 22, 23, 25, 26]
+
+[[countries]]
+id = 25
+name = "Macacos"
+continent = 4
+x = 358
+y = 346
+connections = [23, 24, 26]
+
+[[countries]]
+id = 26
+name = "Andaraí"
+continent = 4
+x = 419
+y = 335
+connections = [24, 25, 54]
+
+[[countries]]
+id = 27
+name = "Floresta_da_Barra"
+continent = 5
+x = 522
+y = 30
+connections = [28, 29, 34, 35]
+
+[[countries]]
+id = 28
+name = "Rocinha"
+continent = 5
+x = 478
+y = 67
+connections = [16, 27, 29, 30]
+
+[[countries]]
+id = 29
+name = "Rio_das_Pedras"
+continent = 5
+x = 554
+y = 147
+connections = [27, 28, 30, 32, 33, 36, 44]
+
+[[countries]]
+id = 30
+name = "Asa_Branca"
+continent = 5
+x = 466
+y = 118
+connections = [16, 28, 29, 31, 32]
+
+[[countries]]
+id = 31
+name = "Cidade_de_Deus"
+continent = 5
+x = 427
+y = 179
+connections = [16, 22, 30, 32, 20]
+
+[[countries]]
+id = 32
+name = "Dois_Irmãos"
+continent = 5
+x = 511
+y = 190
+connections = [29, 30, 31, 33, 53]
+
+[[countries]]
+id = 33
+name = "Barão"
+continent = 5
+x = 578
+y = 207
+connections = [29, 32, 39]
+
+[[countries]]
+id = 34
+name = "Beira_do_Canal"
+continent = 5
+x = 580
+y = 25
+connections = [27, 35, 38]
+
+[[countries]]
+id = 35
+name = "Tirol"
+continent = 5
+x = 570
+y = 74
+connections = [27, 34, 36, 38]
+
+[[countries]]
+id = 36
+name = "Vila_Sapé"
+continent = 5
+x = 580
+y = 108
+connections = [29, 35, 37, 38]
+
+[[countries]]
+id = 37
+name = "Areal"
+continent = 5
+x = 650
+y = 116
+connections = [36, 38, 44]
+
+[[countries]]
+id = 38
+name = "Canal_das_Tachas"
+continent = 5
+x = 631
+y = 27
+connections = [1, 34, 35, 36, 37]
+
+[[countries]]
+id = 39
+name = "Vila_Vintém"
+continent = 6
+x = 605
+y = 270
+connections = [33, 41, 40, 43]
+
+[[countries]]
+id = 40
+name = "Coréia"
+continent = 6
+x = 658
+y = 286
+connections = [39, 41, 42]
+
+[[countries]]
+id = 41
+name = "Fazenda_Coqueiro"
+continent = 6
+x = 595
+y = 366
+connections = [39, 40, 42, 55]
+
+[[countries]]
+id = 42
+name = "Divinéia"
+continent = 6
+x = 650
+y = 353
+connections = [40, 41]
+
+[[countries]]
+id = 43
+name = "Rio_Piraqué"
+continent = 7
+x = 652
+y = 228
+connections = [39, 44]
+
+[[countries]]
+id = 44
+name = "Nova_Esperança"
+continent = 7
+x = 649
+y = 172
+connections = [29, 37, 43, 47]
+
+[[countries]]
+id = 45
+name = "Dendé"
+continent = 8
+x = 33
+y = 87
+connections = [7, 46]
+
+[[countries]]
+id = 46
+name = "Vila_Joaniza"
+continent = 8
+x = 34
+y = 144
+connections = [45, 47]
+
+[[countries]]
+id = 47
+name = "Guarabu"
+continent = 8
+x = 50
+y = 198
+connections = [10, 44, 46]
+
+[[countries]]
+id = 48
+name = "Telégrafos"
+continent = 9
+x = 217
+y = 133
+connections = [17, 49]
+
+[[countries]]
+id = 49
+name = "Mangueira"
+continent = 9
+x = 163
+y = 159
+connections = [8, 48, 50]
+
+[[countries]]
+id = 50
+name = "Barreira_do_Vasco"
+continent = 9
+x = 187
+y = 212
+connections = [12, 49]
+
+[[countries]]
+id = 51
+name = "Alemão"
+continent = 10
+x = 206
+y = 307
+connections = [12, 52]
+
+[[countries]]
+id = 52
+name = "Juramento"
+continent = 10
+x = 269
+y = 293
+connections = [21, 51]
+
+[[countries]]
+id = 53
+name = "Pedreiras"
+continent = 11
+x = 483
+y = 268
+connections = [32, 54]
+
+[[countries]]
+id = 54
+name = "Vigário_Geral"
+continent = 11
+x = 474
+y = 327
+connections = [26, 53, 55]
+
+[[countries]]
+id = 55
+name = "Tiradentes"
+continent = 11
+x = 527
+y = 359
+connections = [41, 54]

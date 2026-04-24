@@ -1,0 +1,335 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "wuppertal_pic.png"
+map = "wuppertal_map.png"
+crd = "wuppertal.cards"
+
+[[continents]]
+id = 1
+name = "Vohwinkel"
+bonus = 3
+color = "orange"
+
+[[continents]]
+id = 2
+name = "Uellendahl-Katernberg"
+bonus = 4
+color = "blue"
+
+[[continents]]
+id = 3
+name = "Elberfeld"
+bonus = 7
+color = "cyan"
+
+[[continents]]
+id = 4
+name = "Cronenberg"
+bonus = 2
+color = "red"
+
+[[continents]]
+id = 5
+name = "Barmen"
+bonus = 5
+color = "puple"
+
+[[continents]]
+id = 6
+name = "Oberbarmen-Heckinghausen"
+bonus = 4
+color = "lightblue"
+
+[[continents]]
+id = 7
+name = "Ronsdorf"
+bonus = 3
+color = "green"
+
+[[continents]]
+id = 8
+name = "Langerfeld-Beyenburg"
+bonus = 4
+color = "yellow"
+
+[[countries]]
+id = 1
+name = "Schöller-Dornap"
+continent = 1
+x = 46
+y = 169
+connections = [2, 4, 9]
+
+[[countries]]
+id = 2
+name = "Vohwinkel-City"
+continent = 1
+x = 83
+y = 188
+connections = [1, 3, 9, 12]
+
+[[countries]]
+id = 3
+name = "Vohwinkel-Süd"
+continent = 1
+x = 78
+y = 225
+connections = [2, 9, 12, 15]
+
+[[countries]]
+id = 4
+name = "Eckbusch"
+continent = 2
+x = 113
+y = 103
+connections = [1, 5, 7, 9]
+
+[[countries]]
+id = 5
+name = "Siebeneick"
+continent = 2
+x = 140
+y = 53
+connections = [4, 6, 7, 8]
+
+[[countries]]
+id = 6
+name = "Dönberg"
+continent = 2
+x = 193
+y = 43
+connections = [5, 8, 20]
+
+[[countries]]
+id = 7
+name = "Katernberg-Süd"
+continent = 2
+x = 154
+y = 110
+connections = [4, 5, 8, 9, 10, 11]
+
+[[countries]]
+id = 8
+name = "Uellendahl"
+continent = 2
+x = 198
+y = 86
+connections = [5, 6, 7, 11, 20, 21]
+
+[[countries]]
+id = 9
+name = "Sonnborn-Varresbeck"
+continent = 3
+x = 114
+y = 141
+connections = [1, 2, 3, 4, 7, 10, 12]
+
+[[countries]]
+id = 10
+name = "Elberfeld-Ghetto"
+continent = 3
+x = 151
+y = 149
+connections = [7, 9, 11, 12, 13]
+
+[[countries]]
+id = 11
+name = "Elberfeld-City"
+continent = 3
+x = 189
+y = 134
+connections = [7, 8, 10, 13, 14, 21, 22, 23]
+
+[[countries]]
+id = 12
+name = "Zoo"
+continent = 3
+x = 140
+y = 181
+connections = [2, 3, 9, 10, 13, 15]
+
+[[countries]]
+id = 13
+name = "Friedrichsberg"
+continent = 3
+x = 170
+y = 180
+connections = [10, 11, 12, 14, 15]
+
+[[countries]]
+id = 14
+name = "Grifflenberg"
+continent = 3
+x = 204
+y = 183
+connections = [11, 13, 15, 16, 23, 24, 29]
+
+[[countries]]
+id = 15
+name = "Küllenhahn"
+continent = 4
+x = 154
+y = 216
+connections = [3, 12, 13, 14, 16, 17, 18]
+
+[[countries]]
+id = 16
+name = "Hahnerberg"
+continent = 4
+x = 203
+y = 220
+connections = [14, 15, 17, 29]
+
+[[countries]]
+id = 17
+name = "Cronenfeld"
+continent = 4
+x = 200
+y = 249
+connections = [15, 16, 18, 29]
+
+[[countries]]
+id = 18
+name = "Cronenberg-Mitte"
+continent = 4
+x = 166
+y = 259
+connections = [15, 17, 19]
+
+[[countries]]
+id = 19
+name = "Sudberg"
+continent = 4
+x = 175
+y = 316
+connections = [18]
+
+[[countries]]
+id = 20
+name = "Barmen-Nord"
+continent = 5
+x = 249
+y = 74
+connections = [6, 8, 21, 22, 25, 27]
+
+[[countries]]
+id = 21
+name = "Barmen-Ghetto"
+continent = 5
+x = 228
+y = 108
+connections = [8, 11, 20, 22]
+
+[[countries]]
+id = 22
+name = "Friedrich-Engels-Allee"
+continent = 5
+x = 261
+y = 106
+connections = [11, 20, 21, 23, 27, 28]
+
+[[countries]]
+id = 23
+name = "Kothen"
+continent = 5
+x = 238
+y = 140
+connections = [11, 14, 22, 24, 28]
+
+[[countries]]
+id = 24
+name = "Lichtenplatz"
+continent = 5
+x = 253
+y = 164
+connections = [14, 23, 28, 29, 30]
+
+[[countries]]
+id = 25
+name = "Nächstebreck-West"
+continent = 6
+x = 289
+y = 48
+connections = [20, 26, 27]
+
+[[countries]]
+id = 26
+name = "Nächstebreck-Ost"
+continent = 6
+x = 330
+y = 30
+connections = [25, 27, 32]
+
+[[countries]]
+id = 27
+name = "Wichlinghausen-Schwarzbach"
+continent = 6
+x = 290
+y = 85
+connections = [20, 22, 25, 26, 28, 32]
+
+[[countries]]
+id = 28
+name = "Heckinghausen"
+continent = 6
+x = 285
+y = 128
+connections = [22, 23, 24, 27, 30, 32, 33, 34]
+
+[[countries]]
+id = 29
+name = "Ronsdorf-City-/-Blutfinke"
+continent = 7
+x = 241
+y = 209
+connections = [14, 16, 17, 24, 30, 31]
+
+[[countries]]
+id = 30
+name = "Erbschlö"
+continent = 7
+x = 289
+y = 173
+connections = [24, 28, 29, 31, 34]
+
+[[countries]]
+id = 31
+name = "Ronsdorf-Ghetto"
+continent = 7
+x = 288
+y = 204
+connections = [29, 30]
+
+[[countries]]
+id = 32
+name = "Langerfeld"
+continent = 8
+x = 329
+y = 85
+connections = [26, 27, 28, 33, 34]
+
+[[countries]]
+id = 33
+name = "Ehrenberg"
+continent = 8
+x = 343
+y = 123
+connections = [28, 32, 34, 35]
+
+[[countries]]
+id = 34
+name = "Herbringhausen"
+continent = 8
+x = 369
+y = 201
+connections = [28, 30, 32, 33, 35]
+
+[[countries]]
+id = 35
+name = "Beyenburg-Mitte"
+continent = 8
+x = 378
+y = 154
+connections = [33, 34]

@@ -1,0 +1,633 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "trivia.jpg"
+map = "trivia.gif"
+crd = "trivia.cards"
+
+[[continents]]
+id = 1
+name = "Yellow-Pie"
+bonus = 5
+color = "yellow"
+
+[[continents]]
+id = 2
+name = "Purple-Pie"
+bonus = 5
+color = "purple"
+
+[[continents]]
+id = 3
+name = "Green-Pie"
+bonus = 5
+color = "green"
+
+[[continents]]
+id = 4
+name = "Brown-Pie"
+bonus = 5
+color = "brown"
+
+[[continents]]
+id = 5
+name = "Blue-Pie"
+bonus = 5
+color = "blue"
+
+[[continents]]
+id = 6
+name = "Orange-Pie"
+bonus = 5
+color = "orange"
+
+[[continents]]
+id = 7
+name = "Center"
+bonus = 8
+color = "gray"
+
+[[countries]]
+id = 1
+name = "One"
+continent = 1
+x = 240
+y = 215
+connections = [2, 42, 43]
+
+[[countries]]
+id = 2
+name = "Two"
+continent = 1
+x = 243
+y = 180
+connections = [1, 3]
+
+[[countries]]
+id = 3
+name = "Three"
+continent = 1
+x = 248
+y = 158
+connections = [2, 4]
+
+[[countries]]
+id = 4
+name = "Four"
+continent = 1
+x = 256
+y = 138
+connections = [3, 5]
+
+[[countries]]
+id = 5
+name = "Five"
+continent = 2
+x = 267
+y = 120
+connections = [4, 6]
+
+[[countries]]
+id = 6
+name = "Six"
+continent = 2
+x = 280
+y = 102
+connections = [5, 7]
+
+[[countries]]
+id = 7
+name = "Seven"
+continent = 2
+x = 298
+y = 85
+connections = [6, 8]
+
+[[countries]]
+id = 8
+name = "Eight"
+continent = 2
+x = 324
+y = 65
+connections = [7, 9, 48]
+
+[[countries]]
+id = 9
+name = "Nine"
+continent = 2
+x = 354
+y = 50
+connections = [8, 10]
+
+[[countries]]
+id = 10
+name = "Ten"
+continent = 2
+x = 377
+y = 45
+connections = [9, 11]
+
+[[countries]]
+id = 11
+name = "Eleven"
+continent = 2
+x = 400
+y = 43
+connections = [10, 12]
+
+[[countries]]
+id = 12
+name = "Twleve"
+continent = 3
+x = 424
+y = 41
+connections = [11, 13]
+
+[[countries]]
+id = 13
+name = "Thirteen"
+continent = 3
+x = 450
+y = 45
+connections = [12, 14]
+
+[[countries]]
+id = 14
+name = "Fourteen"
+continent = 3
+x = 470
+y = 52
+connections = [13, 15]
+
+[[countries]]
+id = 15
+name = "Fifteen"
+continent = 3
+x = 502
+y = 66
+connections = [14, 16, 53]
+
+[[countries]]
+id = 16
+name = "Sixteen"
+continent = 3
+x = 527
+y = 86
+connections = [15, 17]
+
+[[countries]]
+id = 17
+name = "Seventeen"
+continent = 3
+x = 544
+y = 101
+connections = [16, 18]
+
+[[countries]]
+id = 18
+name = "Eighteen"
+continent = 3
+x = 556
+y = 120
+connections = [17, 19]
+
+[[countries]]
+id = 19
+name = "Nineteen"
+continent = 4
+x = 569
+y = 138
+connections = [18, 20]
+
+[[countries]]
+id = 20
+name = "Twenty"
+continent = 4
+x = 577
+y = 159
+connections = [19, 21]
+
+[[countries]]
+id = 21
+name = "Twenty-one"
+continent = 4
+x = 583
+y = 178
+connections = [20, 22]
+
+[[countries]]
+id = 22
+name = "Twenty-two"
+continent = 4
+x = 586
+y = 216
+connections = [21, 23, 58]
+
+[[countries]]
+id = 23
+name = "Twenty-three"
+continent = 4
+x = 584
+y = 248
+connections = [22, 24]
+
+[[countries]]
+id = 24
+name = "Twenty-four"
+continent = 4
+x = 575
+y = 269
+connections = [23, 25]
+
+[[countries]]
+id = 25
+name = "Twenty-five"
+continent = 4
+x = 568
+y = 290
+connections = [24, 26]
+
+[[countries]]
+id = 26
+name = "Twenty-six"
+continent = 5
+x = 556
+y = 309
+connections = [25, 27]
+
+[[countries]]
+id = 27
+name = "Twenty-seven"
+continent = 5
+x = 543
+y = 326
+connections = [26, 28]
+
+[[countries]]
+id = 28
+name = "Twenty-eight"
+continent = 5
+x = 526
+y = 343
+connections = [27, 29]
+
+[[countries]]
+id = 29
+name = "Twenty-nine"
+continent = 5
+x = 500
+y = 360
+connections = [28, 30, 63]
+
+[[countries]]
+id = 30
+name = "Thirty"
+continent = 5
+x = 469
+y = 375
+connections = [29, 31]
+
+[[countries]]
+id = 31
+name = "Thirty-one"
+continent = 5
+x = 445
+y = 383
+connections = [30, 32]
+
+[[countries]]
+id = 32
+name = "Thirty-two"
+continent = 5
+x = 420
+y = 384
+connections = [31, 33]
+
+[[countries]]
+id = 33
+name = "Thirty-three"
+continent = 6
+x = 399
+y = 385
+connections = [32, 34]
+
+[[countries]]
+id = 34
+name = "Thirty-four"
+continent = 6
+x = 375
+y = 386
+connections = [33, 35]
+
+[[countries]]
+id = 35
+name = "Thirty-five"
+continent = 6
+x = 350
+y = 375
+connections = [34, 36]
+
+[[countries]]
+id = 36
+name = "Thirty-six"
+continent = 6
+x = 322
+y = 362
+connections = [35, 37, 68]
+
+[[countries]]
+id = 37
+name = "Thirty-seven"
+continent = 6
+x = 294
+y = 341
+connections = [36, 38]
+
+[[countries]]
+id = 38
+name = "Thirty-eight"
+continent = 6
+x = 280
+y = 325
+connections = [37, 39]
+
+[[countries]]
+id = 39
+name = "Thirty-nine"
+continent = 6
+x = 267
+y = 308
+connections = [38, 40]
+
+[[countries]]
+id = 40
+name = "Forty"
+continent = 1
+x = 258
+y = 289
+connections = [39, 41]
+
+[[countries]]
+id = 41
+name = "Forty-one"
+continent = 1
+x = 247
+y = 269
+connections = [40, 42]
+
+[[countries]]
+id = 42
+name = "Forty-two"
+continent = 1
+x = 243
+y = 249
+connections = [1, 41]
+
+[[countries]]
+id = 43
+name = "Forty-three"
+continent = 1
+x = 274
+y = 215
+connections = [1, 44]
+
+[[countries]]
+id = 44
+name = "Forty-four"
+continent = 1
+x = 295
+y = 215
+connections = [43, 45]
+
+[[countries]]
+id = 45
+name = "Forty-five"
+continent = 1
+x = 320
+y = 215
+connections = [44, 46]
+
+[[countries]]
+id = 46
+name = "Forty-six"
+continent = 7
+x = 342
+y = 215
+connections = [45, 47]
+
+[[countries]]
+id = 47
+name = "Forty-seven"
+continent = 7
+x = 364
+y = 215
+connections = [46, 73]
+
+[[countries]]
+id = 48
+name = "Forty-eight"
+continent = 2
+x = 341
+y = 95
+connections = [8, 49]
+
+[[countries]]
+id = 49
+name = "Forty-nine"
+continent = 2
+x = 353
+y = 114
+connections = [48, 50]
+
+[[countries]]
+id = 50
+name = "Fifty"
+continent = 2
+x = 365
+y = 135
+connections = [49, 51]
+
+[[countries]]
+id = 51
+name = "Fifty-one"
+continent = 7
+x = 377
+y = 152
+connections = [50, 52]
+
+[[countries]]
+id = 52
+name = "Fifty-two"
+continent = 7
+x = 388
+y = 171
+connections = [51, 73]
+
+[[countries]]
+id = 53
+name = "Fifty-three"
+continent = 3
+x = 483
+y = 94
+connections = [15, 54]
+
+[[countries]]
+id = 54
+name = "Fifty-four"
+continent = 3
+x = 471
+y = 112
+connections = [53, 55]
+
+[[countries]]
+id = 55
+name = "Fifty-five"
+continent = 3
+x = 459
+y = 132
+connections = [54, 56]
+
+[[countries]]
+id = 56
+name = "Fifty-six"
+continent = 7
+x = 447
+y = 151
+connections = [55, 57]
+
+[[countries]]
+id = 57
+name = "Fifty-seven"
+continent = 7
+x = 437
+y = 171
+connections = [56, 73]
+
+[[countries]]
+id = 58
+name = "Fifty-eight"
+continent = 4
+x = 550
+y = 215
+connections = [22, 59]
+
+[[countries]]
+id = 59
+name = "Fifty-nine"
+continent = 4
+x = 526
+y = 215
+connections = [58, 60]
+
+[[countries]]
+id = 60
+name = "Sixty"
+continent = 4
+x = 504
+y = 215
+connections = [59, 61]
+
+[[countries]]
+id = 61
+name = "Sixty-one"
+continent = 7
+x = 479
+y = 215
+connections = [60, 62]
+
+[[countries]]
+id = 62
+name = "Sixty-two"
+continent = 7
+x = 455
+y = 215
+connections = [61, 73]
+
+[[countries]]
+id = 63
+name = "Sixty-three"
+continent = 5
+x = 484
+y = 333
+connections = [29, 64]
+
+[[countries]]
+id = 64
+name = "Sixty-four"
+continent = 5
+x = 470
+y = 314
+connections = [63, 65]
+
+[[countries]]
+id = 65
+name = "Sixty-five"
+continent = 5
+x = 459
+y = 293
+connections = [64, 66]
+
+[[countries]]
+id = 66
+name = "Sixty-six"
+continent = 7
+x = 449
+y = 275
+connections = [65, 67]
+
+[[countries]]
+id = 67
+name = "Sixty-seven"
+continent = 7
+x = 437
+y = 256
+connections = [66, 73]
+
+[[countries]]
+id = 68
+name = "Sixty-eight"
+continent = 6
+x = 339
+y = 331
+connections = [36, 69]
+
+[[countries]]
+id = 69
+name = "Sixty-nine"
+continent = 6
+x = 352
+y = 312
+connections = [68, 70]
+
+[[countries]]
+id = 70
+name = "Seventy"
+continent = 6
+x = 364
+y = 293
+connections = [69, 71]
+
+[[countries]]
+id = 71
+name = "Seventy-one"
+continent = 7
+x = 376
+y = 273
+connections = [70, 72]
+
+[[countries]]
+id = 72
+name = "Seventy-two"
+continent = 7
+x = 387
+y = 255
+connections = [71, 73]
+
+[[countries]]
+id = 73
+name = "Seventy-three"
+continent = 7
+x = 412
+y = 215
+connections = [47, 52, 57, 62, 67, 72]

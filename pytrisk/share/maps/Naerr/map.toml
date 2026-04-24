@@ -1,0 +1,495 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "Naerr_pic.png"
+map = "Naerr_map.gif"
+crd = "Naerr.cards"
+
+[[continents]]
+id = 1
+name = "Narodhe"
+bonus = 5
+color = "#66ffff"
+
+[[continents]]
+id = 2
+name = "Serana"
+bonus = 7
+color = "#ff33cc"
+
+[[continents]]
+id = 3
+name = "Kresh"
+bonus = 6
+color = "#33cc00"
+
+[[continents]]
+id = 4
+name = "East_Moress"
+bonus = 5
+color = "#cccc00"
+
+[[continents]]
+id = 5
+name = "West_Moress"
+bonus = 6
+color = "#66ff66"
+
+[[continents]]
+id = 6
+name = "Somrei"
+bonus = 6
+color = "#ff80f4"
+
+[[continents]]
+id = 7
+name = "Ocean"
+bonus = 1
+color = "#8090ff"
+
+[[continents]]
+id = 8
+name = "Kammara"
+bonus = 0
+color = "#8091ff"
+
+[[countries]]
+id = 1
+name = "Northern_Narodhe"
+continent = 1
+x = 178
+y = 86
+connections = [3, 2, 44, 42]
+
+[[countries]]
+id = 2
+name = "Southern_Narodhe"
+continent = 1
+x = 174
+y = 144
+connections = [1]
+
+[[countries]]
+id = 3
+name = "Western_Narodhe"
+continent = 1
+x = 104
+y = 112
+connections = [1, 31]
+
+[[countries]]
+id = 4
+name = "Kreshdi"
+continent = 3
+x = 320
+y = 134
+connections = [6, 45]
+
+[[countries]]
+id = 5
+name = "Korelli"
+continent = 3
+x = 391
+y = 154
+connections = [6, 9, 10, 24, 45]
+
+[[countries]]
+id = 6
+name = "Daren"
+continent = 3
+x = 367
+y = 127
+connections = [4, 5, 9, 7]
+
+[[countries]]
+id = 7
+name = "Arctic_Peninsula"
+continent = 3
+x = 441
+y = 57
+connections = [6, 14]
+
+[[countries]]
+id = 8
+name = "Effari"
+continent = 3
+x = 470
+y = 198
+connections = [10, 11, 16]
+
+[[countries]]
+id = 9
+name = "Krall"
+continent = 3
+x = 443
+y = 131
+connections = [6, 5, 10, 11]
+
+[[countries]]
+id = 10
+name = "Crelitia"
+continent = 3
+x = 434
+y = 177
+connections = [5, 8, 11, 9]
+
+[[countries]]
+id = 11
+name = "Nambari"
+continent = 3
+x = 498
+y = 161
+connections = [10, 9, 8, 16]
+
+[[countries]]
+id = 12
+name = "Sepiin"
+continent = 2
+x = 559
+y = 105
+connections = [15, 14]
+
+[[countries]]
+id = 13
+name = "The_Hinge"
+continent = 7
+x = 491
+y = 254
+connections = [16, 23, 43]
+
+[[countries]]
+id = 14
+name = "Sortellon"
+continent = 2
+x = 616
+y = 68
+connections = [12, 7]
+
+[[countries]]
+id = 15
+name = "Semarri"
+continent = 2
+x = 560
+y = 149
+connections = [16, 12]
+
+[[countries]]
+id = 16
+name = "Faden"
+continent = 2
+x = 535
+y = 186
+connections = [13, 11, 8, 15]
+
+[[countries]]
+id = 17
+name = "West_Somrei"
+continent = 6
+x = 489
+y = 337
+connections = [18, 20, 19, 23, 54]
+
+[[countries]]
+id = 18
+name = "North_Somrei"
+continent = 6
+x = 559
+y = 307
+connections = [17, 19, 20, 22]
+
+[[countries]]
+id = 19
+name = "East_Somrei"
+continent = 6
+x = 598
+y = 363
+connections = [17, 18, 20, 55]
+
+[[countries]]
+id = 20
+name = "Central_Somrei"
+continent = 6
+x = 551
+y = 345
+connections = [17, 18, 19]
+
+[[countries]]
+id = 21
+name = "Hebus"
+continent = 2
+x = 634
+y = 212
+connections = [31, 43]
+
+[[countries]]
+id = 22
+name = "Barluk"
+continent = 6
+x = 601
+y = 316
+connections = [18, 43]
+
+[[countries]]
+id = 23
+name = "Baracus"
+continent = 7
+x = 434
+y = 296
+connections = [13, 24, 17]
+
+[[countries]]
+id = 24
+name = "Kediel"
+continent = 7
+x = 367
+y = 269
+connections = [23, 5, 29]
+
+[[countries]]
+id = 25
+name = "Harrion"
+continent = 4
+x = 262
+y = 306
+connections = [26, 28, 30, 35]
+
+[[countries]]
+id = 26
+name = "Kellst"
+continent = 4
+x = 281
+y = 236
+connections = [25, 28, 29]
+
+[[countries]]
+id = 27
+name = "Sadha"
+continent = 4
+x = 280
+y = 354
+connections = [30, 46]
+
+[[countries]]
+id = 28
+name = "Moresia"
+continent = 4
+x = 282
+y = 274
+connections = [30, 25, 26, 29]
+
+[[countries]]
+id = 29
+name = "Ketal"
+continent = 4
+x = 337
+y = 251
+connections = [28, 26, 24]
+
+[[countries]]
+id = 30
+name = "Furm"
+continent = 4
+x = 299
+y = 316
+connections = [28, 27, 25]
+
+[[countries]]
+id = 31
+name = "Semai_Archipelago"
+continent = 7
+x = 63
+y = 171
+connections = [21, 3, 32]
+
+[[countries]]
+id = 32
+name = "Habei"
+continent = 5
+x = 111
+y = 196
+connections = [36, 38, 31]
+
+[[countries]]
+id = 33
+name = "Sher"
+continent = 5
+x = 84
+y = 329
+connections = [34, 36, 40, 41]
+
+[[countries]]
+id = 34
+name = "Karei"
+continent = 5
+x = 175
+y = 317
+connections = [37, 35, 39, 33, 40]
+
+[[countries]]
+id = 35
+name = "Dantz"
+continent = 5
+x = 217
+y = 335
+connections = [25, 34]
+
+[[countries]]
+id = 36
+name = "Khaist"
+continent = 5
+x = 106
+y = 263
+connections = [33, 32, 39]
+
+[[countries]]
+id = 37
+name = "Delan"
+continent = 5
+x = 210
+y = 268
+connections = [39, 38, 34]
+
+[[countries]]
+id = 38
+name = "Pahr"
+continent = 5
+x = 186
+y = 214
+connections = [37, 39, 32]
+
+[[countries]]
+id = 39
+name = "Kham"
+continent = 5
+x = 162
+y = 263
+connections = [37, 34, 36, 38]
+
+[[countries]]
+id = 40
+name = "Barei"
+continent = 5
+x = 144
+y = 340
+connections = [41, 34, 33]
+
+[[countries]]
+id = 41
+name = "Semul"
+continent = 7
+x = 100
+y = 368
+connections = [40, 33]
+
+[[countries]]
+id = 42
+name = "Kethil"
+continent = 7
+x = 148
+y = 36
+connections = [1]
+
+[[countries]]
+id = 43
+name = "Seramul"
+continent = 7
+x = 614
+y = 257
+connections = [21, 22, 13]
+
+[[countries]]
+id = 44
+name = "Kairn"
+continent = 7
+x = 245
+y = 156
+connections = [1]
+
+[[countries]]
+id = 45
+name = "Mo-Kreshdi"
+continent = 7
+x = 316
+y = 160
+connections = [4, 5]
+
+[[countries]]
+id = 46
+name = "Mo-Sadha"
+continent = 8
+x = 332
+y = 411
+connections = [53, 52, 27, 48]
+
+[[countries]]
+id = 47
+name = "West_Desert"
+continent = 8
+x = 124
+y = 415
+connections = [48, 50]
+
+[[countries]]
+id = 48
+name = "East_Desert"
+continent = 8
+x = 228
+y = 423
+connections = [46, 47]
+
+[[countries]]
+id = 49
+name = "Duut"
+continent = 8
+x = 510
+y = 423
+connections = [53, 52, 51, 54]
+
+[[countries]]
+id = 50
+name = "Meratuk"
+continent = 8
+x = 19
+y = 411
+connections = [47, 51]
+
+[[countries]]
+id = 51
+name = "Mo-Somrei"
+continent = 8
+x = 605
+y = 420
+connections = [50, 49, 55]
+
+[[countries]]
+id = 52
+name = "Das"
+continent = 8
+x = 427
+y = 401
+connections = [53, 49, 46, 54]
+
+[[countries]]
+id = 53
+name = "Kar"
+continent = 8
+x = 434
+y = 421
+connections = [52, 46, 49]
+
+[[countries]]
+id = 54
+name = "Sharic"
+continent = 6
+x = 485
+y = 383
+connections = [17, 52, 49]
+
+[[countries]]
+id = 55
+name = "Homeri"
+continent = 6
+x = 602
+y = 398
+connections = [51, 19]

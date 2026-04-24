@@ -1,0 +1,607 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "SuperRiskopoly_pic.png"
+map = "SuperRiskopoly_map.gif"
+crd = "SuperRiskopoly.cards"
+
+[[continents]]
+id = 1
+name = "South_East"
+bonus = 1
+color = "#003366"
+
+[[continents]]
+id = 2
+name = "South_West"
+bonus = 2
+color = "#00cccc"
+
+[[continents]]
+id = 3
+name = "West_South"
+bonus = 2
+color = "#990033"
+
+[[continents]]
+id = 4
+name = "West_North"
+bonus = 3
+color = "#ff6600"
+
+[[continents]]
+id = 5
+name = "North_West"
+bonus = 3
+color = "#cc0033"
+
+[[continents]]
+id = 6
+name = "North_East"
+bonus = 4
+color = "yellow"
+
+[[continents]]
+id = 7
+name = "East_North"
+bonus = 4
+color = "#339900"
+
+[[continents]]
+id = 8
+name = "East_South"
+bonus = 5
+color = "#000066"
+
+[[continents]]
+id = 9
+name = "Community_Chest"
+bonus = 0
+color = "#6666ff"
+
+[[continents]]
+id = 10
+name = "Chance"
+bonus = 0
+color = "#ff9999"
+
+[[continents]]
+id = 11
+name = "Railroad"
+bonus = 5
+color = "#330033"
+
+[[continents]]
+id = 12
+name = "Water_and_Power"
+bonus = 3
+color = "#ff66ff"
+
+[[continents]]
+id = 13
+name = "Jail_and_Police"
+bonus = 0
+color = "#3399ff"
+
+[[continents]]
+id = 14
+name = "Go"
+bonus = 1
+color = "white"
+
+[[continents]]
+id = 15
+name = "Free_Parking"
+bonus = 1
+color = "#006666"
+
+[[continents]]
+id = 16
+name = "Tax"
+bonus = 0
+color = "#ccffcc"
+
+[[continents]]
+id = 17
+name = "Chance_stack"
+bonus = 0
+color = "#ff3366"
+
+[[continents]]
+id = 18
+name = "Community_chest_stack"
+bonus = 0
+color = "#66ccff"
+
+[[continents]]
+id = 19
+name = "Left_Money_Pot_of_50.000_Bugs"
+bonus = 5
+color = "#99cc00"
+
+[[continents]]
+id = 20
+name = "Right_Money_Pot_of_50.000_Bugs"
+bonus = 5
+color = "#99cc00"
+
+[[countries]]
+id = 1
+name = "Mediterranean_Avenue"
+continent = 1
+x = 458
+y = 371
+connections = [23, 2, 50]
+
+[[countries]]
+id = 2
+name = "Baltic_Avenue"
+continent = 1
+x = 389
+y = 372
+connections = [39, 1, 50]
+
+[[countries]]
+id = 3
+name = "Oriental_Avenue"
+continent = 2
+x = 288
+y = 371
+connections = [26, 4, 5, 44]
+
+[[countries]]
+id = 4
+name = "Vermont_Avenue"
+continent = 2
+x = 217
+y = 371
+connections = [5, 3, 44]
+
+[[countries]]
+id = 5
+name = "Connecticut_Avenue"
+continent = 2
+x = 180
+y = 372
+connections = [35, 4, 3, 44]
+
+[[countries]]
+id = 6
+name = "St._Charles_Place"
+continent = 3
+x = 158
+y = 349
+connections = [33, 7, 8, 46]
+
+[[countries]]
+id = 7
+name = "States_Avenue"
+continent = 3
+x = 158
+y = 280
+connections = [8, 6, 46]
+
+[[countries]]
+id = 8
+name = "Virginia_Avenue"
+continent = 3
+x = 159
+y = 243
+connections = [30, 7, 6, 46]
+
+[[countries]]
+id = 9
+name = "St._James_Place"
+continent = 4
+x = 160
+y = 178
+connections = [24, 10, 11, 48]
+
+[[countries]]
+id = 10
+name = "Tennessee_Avenue"
+continent = 4
+x = 159
+y = 110
+connections = [11, 9, 48]
+
+[[countries]]
+id = 11
+name = "New_York_Avenue"
+continent = 4
+x = 159
+y = 75
+connections = [38, 10, 9, 48]
+
+[[countries]]
+id = 12
+name = "Kentucky_Avenue"
+continent = 5
+x = 181
+y = 52
+connections = [27, 13, 14, 53]
+
+[[countries]]
+id = 13
+name = "Indiana_Avenue"
+continent = 5
+x = 251
+y = 52
+connections = [14, 12, 53]
+
+[[countries]]
+id = 14
+name = "Illinois_Avenue"
+continent = 5
+x = 288
+y = 52
+connections = [31, 13, 12, 53]
+
+[[countries]]
+id = 15
+name = "Atlantic_Avenue"
+continent = 6
+x = 353
+y = 51
+connections = [16, 17, 54]
+
+[[countries]]
+id = 16
+name = "Ventnor_Avenue"
+continent = 6
+x = 391
+y = 53
+connections = [34, 15, 17, 54]
+
+[[countries]]
+id = 17
+name = "Marvin_Gardens"
+continent = 6
+x = 460
+y = 49
+connections = [36, 16, 15, 54]
+
+[[countries]]
+id = 18
+name = "Pacific_Avenue"
+continent = 7
+x = 483
+y = 74
+connections = [19, 20, 56]
+
+[[countries]]
+id = 19
+name = "North_Carolina_Avenue"
+continent = 7
+x = 483
+y = 107
+connections = [25, 20, 18, 56]
+
+[[countries]]
+id = 20
+name = "Pennsylvania_Avenue"
+continent = 7
+x = 482
+y = 177
+connections = [32, 19, 18, 56]
+
+[[countries]]
+id = 21
+name = "Park_Place"
+continent = 8
+x = 480
+y = 280
+connections = [40, 22, 58]
+
+[[countries]]
+id = 22
+name = "Boardwalk"
+continent = 8
+x = 482
+y = 348
+connections = [37, 21, 58]
+
+[[countries]]
+id = 23
+name = "Community_Chest_South"
+continent = 9
+x = 421
+y = 397
+connections = [2, 42]
+
+[[countries]]
+id = 24
+name = "Community_Chest_West"
+continent = 9
+x = 137
+y = 143
+connections = [10, 42]
+
+[[countries]]
+id = 25
+name = "Community_Chest_East"
+continent = 9
+x = 505
+y = 144
+connections = [20, 42]
+
+[[countries]]
+id = 26
+name = "Chance_South"
+continent = 10
+x = 252
+y = 385
+connections = [4, 41]
+
+[[countries]]
+id = 27
+name = "Chance_North"
+continent = 10
+x = 218
+y = 38
+connections = [13, 41]
+
+[[countries]]
+id = 28
+name = "Chance_East"
+continent = 10
+x = 496
+y = 243
+connections = [21, 41]
+
+[[countries]]
+id = 29
+name = "Reading_Railroad_South"
+continent = 11
+x = 318
+y = 408
+connections = [3, 32]
+
+[[countries]]
+id = 30
+name = "Pennsylvania_Railroad_West"
+continent = 11
+x = 127
+y = 210
+connections = [9, 29]
+
+[[countries]]
+id = 31
+name = "B&O_Railroad_North"
+continent = 11
+x = 320
+y = 20
+connections = [15, 30]
+
+[[countries]]
+id = 32
+name = "Short_Line_East"
+continent = 11
+x = 511
+y = 210
+connections = [28, 31]
+
+[[countries]]
+id = 33
+name = "Electric_Company"
+continent = 12
+x = 136
+y = 313
+connections = [7]
+
+[[countries]]
+id = 34
+name = "Water_Works"
+continent = 12
+x = 423
+y = 23
+connections = [17]
+
+[[countries]]
+id = 35
+name = "Jail"
+continent = 13
+x = 146
+y = 384
+connections = [6]
+
+[[countries]]
+id = 36
+name = "Police"
+continent = 13
+x = 507
+y = 33
+connections = [18, 35]
+
+[[countries]]
+id = 37
+name = "Go"
+continent = 14
+x = 507
+y = 395
+connections = [1]
+
+[[countries]]
+id = 38
+name = "Free_Parking"
+continent = 15
+x = 141
+y = 33
+connections = [12]
+
+[[countries]]
+id = 39
+name = "Income_Tax"
+continent = 16
+x = 351
+y = 399
+connections = [29]
+
+[[countries]]
+id = 40
+name = "Luxury_Tax"
+continent = 16
+x = 509
+y = 313
+connections = [22]
+
+[[countries]]
+id = 41
+name = "Chance_stack"
+continent = 17
+x = 244
+y = 145
+connections = [27, 26, 28]
+
+[[countries]]
+id = 42
+name = "Community_chest_stack"
+continent = 18
+x = 419
+y = 327
+connections = [23, 25, 24]
+
+[[countries]]
+id = 43
+name = "2000_Bugs"
+continent = 19
+x = 291
+y = 318
+connections = [50, 45, 44]
+
+[[countries]]
+id = 44
+name = "400_Bugs"
+continent = 19
+x = 255
+y = 352
+connections = [43, 45, 3, 4, 5]
+
+[[countries]]
+id = 45
+name = "1000_Bugs"
+continent = 19
+x = 219
+y = 338
+connections = [51, 43, 44, 46]
+
+[[countries]]
+id = 46
+name = "10_Bugs_are_10_Bugs."
+continent = 19
+x = 189
+y = 302
+connections = [51, 45, 47, 49, 6, 7, 8]
+
+[[countries]]
+id = 47
+name = "100_Bugs"
+continent = 19
+x = 186
+y = 252
+connections = [46, 48, 49]
+
+[[countries]]
+id = 48
+name = "I_want_these_10.000_Bugs!"
+continent = 19
+x = 217
+y = 229
+connections = [47, 49, 9, 10, 11]
+
+[[countries]]
+id = 49
+name = "20_Bugs"
+continent = 19
+x = 252
+y = 244
+connections = [51, 46, 48, 47, 50]
+
+[[countries]]
+id = 50
+name = "200_Bugs"
+continent = 19
+x = 277
+y = 257
+connections = [51, 43, 49, 2, 1]
+
+[[countries]]
+id = 51
+name = "100_Bugs"
+continent = 19
+x = 238
+y = 296
+connections = [49, 50, 46, 45]
+
+[[countries]]
+id = 52
+name = "2000_Bugs"
+continent = 20
+x = 370
+y = 160
+connections = [60, 59, 54, 53]
+
+[[countries]]
+id = 53
+name = "100_Bugs"
+continent = 20
+x = 341
+y = 129
+connections = [14, 13, 12, 52]
+
+[[countries]]
+id = 54
+name = "200_Bugs"
+continent = 20
+x = 384
+y = 82
+connections = [52, 59, 55, 15, 16, 17]
+
+[[countries]]
+id = 55
+name = "20_Bugs"
+continent = 20
+x = 425
+y = 72
+connections = [60, 54, 56, 59]
+
+[[countries]]
+id = 56
+name = "I_want_these_10.000_Bugs!"
+continent = 20
+x = 459
+y = 93
+connections = [60, 55, 57, 18, 19, 20]
+
+[[countries]]
+id = 57
+name = "20_Bugs"
+continent = 20
+x = 462
+y = 140
+connections = [60, 56]
+
+[[countries]]
+id = 58
+name = "400_Bugs"
+continent = 20
+x = 429
+y = 171
+connections = [60, 21, 22]
+
+[[countries]]
+id = 59
+name = "400_Bugs"
+continent = 20
+x = 380
+y = 112
+connections = [60, 52, 54, 55]
+
+[[countries]]
+id = 60
+name = "10_Bugs_are_10_Bugs."
+continent = 20
+x = 416
+y = 135
+connections = [58, 57, 56, 59, 55, 52]

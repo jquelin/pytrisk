@@ -1,0 +1,171 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "Gymnasium-Nottuln_pic.jpg"
+map = "Gymnasium-Nottuln_map.gif"
+crd = "Gymnasium-Nottuln.cards"
+
+[[continents]]
+id = 1
+name = "Oberstufenpavillon"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 2
+name = "Sporthalle/Mensa/Froum"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 3
+name = "Erdkunde/Musik/Kunst/Technik/5erund6er_-_Pavillon"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 4
+name = "Miteelstufenpavillon"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 5
+name = "Naturwisschaftspavillon"
+bonus = 5
+color = "white"
+
+[[continents]]
+id = 6
+name = "Lehrerpavillon"
+bonus = 5
+color = "white"
+
+[[countries]]
+id = 1
+name = "Oberstufenraum"
+continent = 1
+x = 209
+y = 144
+connections = [2, 16]
+
+[[countries]]
+id = 2
+name = "Toilette"
+continent = 1
+x = 237
+y = 142
+connections = [3, 1, 16, 14, 12, 9]
+
+[[countries]]
+id = 3
+name = "Computerraum"
+continent = 1
+x = 290
+y = 134
+connections = [2]
+
+[[countries]]
+id = 4
+name = "Sporthalle"
+continent = 2
+x = 429
+y = 151
+connections = [5]
+
+[[countries]]
+id = 5
+name = "Mensa"
+continent = 2
+x = 410
+y = 206
+connections = [16, 14, 12, 9, 6, 4]
+
+[[countries]]
+id = 6
+name = "Forum"
+continent = 2
+x = 317
+y = 205
+connections = [5]
+
+[[countries]]
+id = 7
+name = "Erdkunde/Kunst"
+continent = 3
+x = 458
+y = 260
+connections = [9]
+
+[[countries]]
+id = 8
+name = "Musik"
+continent = 3
+x = 545
+y = 225
+connections = [9]
+
+[[countries]]
+id = 9
+name = "Toilette"
+continent = 3
+x = 521
+y = 248
+connections = [16, 14, 12, 5, 2, 8, 7]
+
+[[countries]]
+id = 10
+name = "6"
+continent = 4
+x = 288
+y = 308
+connections = [12]
+
+[[countries]]
+id = 11
+name = "7"
+continent = 4
+x = 388
+y = 278
+connections = [12]
+
+[[countries]]
+id = 12
+name = "Toillette_"
+continent = 4
+x = 334
+y = 291
+connections = [16, 14, 5, 2, 9, 11, 10]
+
+[[countries]]
+id = 13
+name = "Chemie/Bio"
+continent = 5
+x = 173
+y = 336
+connections = [14]
+
+[[countries]]
+id = 14
+name = "Physik/Computerraum(Neu)"
+continent = 5
+x = 131
+y = 275
+connections = [16, 12, 13, 5, 2, 9]
+
+[[countries]]
+id = 15
+name = "Bibliothek"
+continent = 6
+x = 104
+y = 223
+connections = [16]
+
+[[countries]]
+id = 16
+name = "Lehrerzimmer/Sekreteriat"
+continent = 6
+x = 174
+y = 195
+connections = [2, 15, 14, 12, 5, 9, 1]

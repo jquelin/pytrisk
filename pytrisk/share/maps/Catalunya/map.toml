@@ -1,0 +1,377 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "Catalunya_pic.png"
+map = "Catalunya_map.gif"
+crd = "Catalunya.cards"
+
+[[continents]]
+id = 1
+name = "Comarques_Gironines"
+bonus = 5
+color = "#ff80c8"
+
+[[continents]]
+id = 2
+name = "Àmbit_de_Ponent"
+bonus = 5
+color = "#de80ff"
+
+[[continents]]
+id = 3
+name = "Comarques_Centrals"
+bonus = 4
+color = "#ffc980"
+
+[[continents]]
+id = 4
+name = "Alt_Pirineu_i_Aran"
+bonus = 4
+color = "#bcff80"
+
+[[continents]]
+id = 5
+name = "Camp_de_Tarragona"
+bonus = 6
+color = "#ffe480"
+
+[[continents]]
+id = 6
+name = "Àmbit_Metropolità"
+bonus = 7
+color = "#80fffb"
+
+[[continents]]
+id = 7
+name = "Terres_de_l'Ebre"
+bonus = 2
+color = "#87ff80"
+
+[[countries]]
+id = 1
+name = "Ripollès"
+continent = 1
+x = 442
+y = 107
+connections = [2, 17, 15, 24]
+
+[[countries]]
+id = 2
+name = "Garrotxa"
+continent = 1
+x = 502
+y = 126
+connections = [7, 5, 6, 3, 17, 1]
+
+[[countries]]
+id = 3
+name = "Alt_Empordà"
+continent = 1
+x = 583
+y = 108
+connections = [4, 5, 6, 2]
+
+[[countries]]
+id = 4
+name = "Baix_Empordà"
+continent = 1
+x = 619
+y = 174
+connections = [7, 5, 3]
+
+[[countries]]
+id = 5
+name = "gironès"
+continent = 1
+x = 569
+y = 165
+connections = [7, 4, 2, 6, 3]
+
+[[countries]]
+id = 6
+name = "Pla_de_l'Estany"
+continent = 1
+x = 560
+y = 139
+connections = [5, 3, 2]
+
+[[countries]]
+id = 7
+name = "Selva"
+continent = 1
+x = 529
+y = 191
+connections = [36, 37, 17, 5, 2, 4]
+
+[[countries]]
+id = 8
+name = "Noguera"
+continent = 2
+x = 167
+y = 178
+connections = [14, 23, 21, 9, 10, 12, 13]
+
+[[countries]]
+id = 9
+name = "Segrià"
+continent = 2
+x = 91
+y = 238
+connections = [8, 10, 39, 11]
+
+[[countries]]
+id = 10
+name = "Pla_d'Urgell"
+continent = 2
+x = 157
+y = 222
+connections = [8, 12, 9, 11]
+
+[[countries]]
+id = 11
+name = "Garrigues"
+continent = 2
+x = 135
+y = 260
+connections = [12, 10, 9, 25, 39, 27]
+
+[[countries]]
+id = 12
+name = "Urgell"
+continent = 2
+x = 207
+y = 228
+connections = [8, 13, 10, 11, 27]
+
+[[countries]]
+id = 13
+name = "Segarra"
+continent = 2
+x = 255
+y = 206
+connections = [18, 14, 8, 12, 27]
+
+[[countries]]
+id = 14
+name = "Solsonès"
+continent = 3
+x = 284
+y = 160
+connections = [15, 16, 18, 13, 8, 23]
+
+[[countries]]
+id = 15
+name = "Berguedà"
+continent = 3
+x = 369
+y = 138
+connections = [1, 17, 24, 23, 14, 16]
+
+[[countries]]
+id = 16
+name = "Bages"
+continent = 3
+x = 348
+y = 197
+connections = [35, 36, 17, 15, 18, 14, 33]
+
+[[countries]]
+id = 17
+name = "Osona"
+continent = 3
+x = 440
+y = 166
+connections = [36, 7, 2, 1, 16, 15]
+
+[[countries]]
+id = 18
+name = "Anoia"
+continent = 3
+x = 306
+y = 230
+connections = [31, 16, 33, 28, 27, 13, 14]
+
+[[countries]]
+id = 19
+name = "Val_d'Aran"
+continent = 4
+x = 156
+y = 27
+connections = [22, 20]
+
+[[countries]]
+id = 20
+name = "Alta_Ribagorça"
+continent = 4
+x = 148
+y = 69
+connections = [22, 19, 21]
+
+[[countries]]
+id = 21
+name = "Pallars_Jussà"
+continent = 4
+x = 147
+y = 130
+connections = [23, 22, 20, 8]
+
+[[countries]]
+id = 22
+name = "Pallars_Sobirà"
+continent = 4
+x = 225
+y = 57
+connections = [23, 19, 20, 21]
+
+[[countries]]
+id = 23
+name = "Alt_Urgell"
+continent = 4
+x = 264
+y = 110
+connections = [15, 14, 24, 22, 21, 8]
+
+[[countries]]
+id = 24
+name = "Cerdanya"
+continent = 4
+x = 353
+y = 91
+connections = [1, 15, 23]
+
+[[countries]]
+id = 25
+name = "Priorat"
+continent = 5
+x = 141
+y = 294
+connections = [11, 27, 26, 39]
+
+[[countries]]
+id = 26
+name = "Baix_Camp"
+continent = 5
+x = 178
+y = 317
+connections = [27, 28, 29, 25, 39, 40]
+
+[[countries]]
+id = 27
+name = "Conca_de_Barberà"
+continent = 5
+x = 230
+y = 256
+connections = [18, 13, 12, 11, 28, 25, 26]
+
+[[countries]]
+id = 28
+name = "Alt_Camp"
+continent = 5
+x = 245
+y = 281
+connections = [31, 18, 27, 29, 30, 26]
+
+[[countries]]
+id = 29
+name = "Tarragonès"
+continent = 5
+x = 240
+y = 313
+connections = [28, 30, 26]
+
+[[countries]]
+id = 30
+name = "Baix_Penedès"
+continent = 5
+x = 298
+y = 298
+connections = [32, 31, 28, 29]
+
+[[countries]]
+id = 31
+name = "Alt_Penedès"
+continent = 6
+x = 322
+y = 269
+connections = [32, 30, 28, 18, 33]
+
+[[countries]]
+id = 32
+name = "Garraf"
+continent = 6
+x = 350
+y = 296
+connections = [30, 31, 33]
+
+[[countries]]
+id = 33
+name = "Baix_Llobregat"
+continent = 6
+x = 396
+y = 280
+connections = [35, 34, 32, 31, 18, 16]
+
+[[countries]]
+id = 34
+name = "Barcelonès"
+continent = 6
+x = 437
+y = 269
+connections = [35, 33, 36, 37]
+
+[[countries]]
+id = 35
+name = "V.Occidental"
+continent = 6
+x = 408
+y = 240
+connections = [16, 33, 34, 36]
+
+[[countries]]
+id = 36
+name = "V.Oreintal"
+continent = 6
+x = 454
+y = 222
+connections = [35, 34, 37, 16, 17, 7]
+
+[[countries]]
+id = 37
+name = "Maresme"
+continent = 6
+x = 495
+y = 241
+connections = [34, 36, 7]
+
+[[countries]]
+id = 38
+name = "Terra_Alta"
+continent = 7
+x = 53
+y = 319
+connections = [39, 40]
+
+[[countries]]
+id = 39
+name = "Ribera_d'Ebre"
+continent = 7
+x = 106
+y = 325
+connections = [9, 11, 26, 25, 38, 40]
+
+[[countries]]
+id = 40
+name = "Baix_Ebre"
+continent = 7
+x = 73
+y = 363
+connections = [26, 39, 38, 41]
+
+[[countries]]
+id = 41
+name = "Montsià"
+continent = 7
+x = 69
+y = 396
+connections = [40]

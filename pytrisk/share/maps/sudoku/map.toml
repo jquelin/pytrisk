@@ -1,0 +1,709 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "sudoku_pic.jpg"
+map = "sudoku_map.gif"
+crd = "sudoku.cards"
+
+[[continents]]
+id = 1
+name = "A"
+bonus = 5
+color = "yellow"
+
+[[continents]]
+id = 2
+name = "B"
+bonus = 5
+color = "red"
+
+[[continents]]
+id = 3
+name = "C"
+bonus = 5
+color = "blue"
+
+[[continents]]
+id = 4
+name = "D"
+bonus = 5
+color = "orange"
+
+[[continents]]
+id = 5
+name = "E"
+bonus = 5
+color = "green"
+
+[[continents]]
+id = 6
+name = "F"
+bonus = 5
+color = "magenta"
+
+[[continents]]
+id = 7
+name = "G"
+bonus = 5
+color = "blue"
+
+[[continents]]
+id = 8
+name = "H"
+bonus = 5
+color = "yellow"
+
+[[continents]]
+id = 9
+name = "I"
+bonus = 5
+color = "red"
+
+[[countries]]
+id = 1
+name = "A1"
+continent = 1
+x = 280
+y = 26
+connections = [2, 4]
+
+[[countries]]
+id = 2
+name = "A2"
+continent = 1
+x = 324
+y = 26
+connections = [1, 5, 3]
+
+[[countries]]
+id = 3
+name = "A3"
+continent = 1
+x = 367
+y = 26
+connections = [2, 6, 10]
+
+[[countries]]
+id = 4
+name = "A4"
+continent = 1
+x = 280
+y = 69
+connections = [1, 5, 7]
+
+[[countries]]
+id = 5
+name = "A5"
+continent = 1
+x = 324
+y = 70
+connections = [2, 4, 6, 8]
+
+[[countries]]
+id = 6
+name = "A6"
+continent = 1
+x = 369
+y = 69
+connections = [3, 5, 9, 13]
+
+[[countries]]
+id = 7
+name = "A7"
+continent = 1
+x = 281
+y = 114
+connections = [4, 8, 28]
+
+[[countries]]
+id = 8
+name = "A8"
+continent = 1
+x = 324
+y = 115
+connections = [5, 7, 9, 29]
+
+[[countries]]
+id = 9
+name = "A9"
+continent = 1
+x = 369
+y = 114
+connections = [6, 8, 16, 30]
+
+[[countries]]
+id = 10
+name = "B1"
+continent = 2
+x = 413
+y = 26
+connections = [3, 13, 11]
+
+[[countries]]
+id = 11
+name = "B2"
+continent = 2
+x = 458
+y = 27
+connections = [10, 14, 12]
+
+[[countries]]
+id = 12
+name = "B3"
+continent = 2
+x = 502
+y = 27
+connections = [11, 15, 19]
+
+[[countries]]
+id = 13
+name = "B4"
+continent = 2
+x = 414
+y = 70
+connections = [10, 6, 14, 16]
+
+[[countries]]
+id = 14
+name = "B5"
+continent = 2
+x = 458
+y = 69
+connections = [11, 13, 15, 17]
+
+[[countries]]
+id = 15
+name = "B6"
+continent = 2
+x = 502
+y = 69
+connections = [12, 14, 22, 18]
+
+[[countries]]
+id = 16
+name = "B7"
+continent = 2
+x = 413
+y = 114
+connections = [13, 9, 37, 17]
+
+[[countries]]
+id = 17
+name = "B8"
+continent = 2
+x = 457
+y = 113
+connections = [14, 16, 38, 18]
+
+[[countries]]
+id = 18
+name = "B9"
+continent = 2
+x = 502
+y = 114
+connections = [15, 17, 39, 25]
+
+[[countries]]
+id = 19
+name = "C1"
+continent = 3
+x = 546
+y = 26
+connections = [12, 22, 20]
+
+[[countries]]
+id = 20
+name = "C2"
+continent = 3
+x = 590
+y = 26
+connections = [19, 23, 21]
+
+[[countries]]
+id = 21
+name = "C3"
+continent = 3
+x = 636
+y = 26
+connections = [20, 24]
+
+[[countries]]
+id = 22
+name = "C4"
+continent = 3
+x = 547
+y = 69
+connections = [19, 15, 23, 25]
+
+[[countries]]
+id = 23
+name = "C5"
+continent = 3
+x = 589
+y = 69
+connections = [20, 22, 24, 26]
+
+[[countries]]
+id = 24
+name = "C6"
+continent = 3
+x = 633
+y = 69
+connections = [21, 23, 27]
+
+[[countries]]
+id = 25
+name = "C7"
+continent = 3
+x = 545
+y = 114
+connections = [22, 18, 26, 46]
+
+[[countries]]
+id = 26
+name = "C8"
+continent = 3
+x = 589
+y = 113
+connections = [23, 25, 27, 47]
+
+[[countries]]
+id = 27
+name = "C9"
+continent = 3
+x = 634
+y = 114
+connections = [24, 26, 48]
+
+[[countries]]
+id = 28
+name = "D1"
+continent = 4
+x = 280
+y = 158
+connections = [7, 29, 31]
+
+[[countries]]
+id = 29
+name = "D2"
+continent = 4
+x = 324
+y = 158
+connections = [8, 28, 30, 32]
+
+[[countries]]
+id = 30
+name = "D3"
+continent = 4
+x = 368
+y = 158
+connections = [9, 29, 33, 37]
+
+[[countries]]
+id = 31
+name = "D4"
+continent = 4
+x = 280
+y = 202
+connections = [28, 32, 34]
+
+[[countries]]
+id = 32
+name = "D5"
+continent = 4
+x = 323
+y = 200
+connections = [29, 31, 33, 35]
+
+[[countries]]
+id = 33
+name = "D6"
+continent = 4
+x = 368
+y = 201
+connections = [30, 32, 40, 36]
+
+[[countries]]
+id = 34
+name = "D7"
+continent = 4
+x = 281
+y = 246
+connections = [31, 35, 55]
+
+[[countries]]
+id = 35
+name = "D8"
+continent = 4
+x = 324
+y = 246
+connections = [32, 34, 36, 56]
+
+[[countries]]
+id = 36
+name = "D9"
+continent = 4
+x = 369
+y = 247
+connections = [33, 35, 57, 43]
+
+[[countries]]
+id = 37
+name = "E1"
+continent = 5
+x = 412
+y = 158
+connections = [16, 30, 38, 40]
+
+[[countries]]
+id = 38
+name = "E2"
+continent = 5
+x = 457
+y = 158
+connections = [17, 37, 39, 41]
+
+[[countries]]
+id = 39
+name = "E3"
+continent = 5
+x = 501
+y = 158
+connections = [18, 38, 46, 42]
+
+[[countries]]
+id = 40
+name = "E4"
+continent = 5
+x = 413
+y = 202
+connections = [37, 33, 41, 43]
+
+[[countries]]
+id = 41
+name = "E5"
+continent = 5
+x = 458
+y = 202
+connections = [38, 40, 42, 44]
+
+[[countries]]
+id = 42
+name = "E6"
+continent = 5
+x = 500
+y = 202
+connections = [39, 41, 49, 45]
+
+[[countries]]
+id = 43
+name = "E7"
+continent = 5
+x = 413
+y = 247
+connections = [40, 36, 44, 64]
+
+[[countries]]
+id = 44
+name = "E8"
+continent = 5
+x = 457
+y = 246
+connections = [41, 43, 45, 65]
+
+[[countries]]
+id = 45
+name = "E9"
+continent = 5
+x = 501
+y = 245
+connections = [42, 44, 52, 66]
+
+[[countries]]
+id = 46
+name = "F1"
+continent = 6
+x = 548
+y = 158
+connections = [25, 39, 47, 49]
+
+[[countries]]
+id = 47
+name = "F2"
+continent = 6
+x = 589
+y = 159
+connections = [26, 46, 48, 50]
+
+[[countries]]
+id = 48
+name = "F3"
+continent = 6
+x = 633
+y = 157
+connections = [47, 51, 27]
+
+[[countries]]
+id = 49
+name = "F4"
+continent = 6
+x = 550
+y = 202
+connections = [46, 42, 50, 52]
+
+[[countries]]
+id = 50
+name = "F5"
+continent = 6
+x = 589
+y = 202
+connections = [47, 49, 51, 53]
+
+[[countries]]
+id = 51
+name = "F6"
+continent = 6
+x = 633
+y = 202
+connections = [48, 50, 54]
+
+[[countries]]
+id = 52
+name = "F7"
+continent = 6
+x = 546
+y = 246
+connections = [49, 45, 53, 73]
+
+[[countries]]
+id = 53
+name = "F8"
+continent = 6
+x = 590
+y = 246
+connections = [50, 52, 54, 74]
+
+[[countries]]
+id = 54
+name = "F9"
+continent = 6
+x = 635
+y = 246
+connections = [51, 53, 75]
+
+[[countries]]
+id = 55
+name = "G1"
+continent = 7
+x = 281
+y = 290
+connections = [34, 56, 58]
+
+[[countries]]
+id = 56
+name = "G2"
+continent = 7
+x = 324
+y = 290
+connections = [35, 55, 57, 59]
+
+[[countries]]
+id = 57
+name = "G3"
+continent = 7
+x = 369
+y = 291
+connections = [36, 56, 64, 60]
+
+[[countries]]
+id = 58
+name = "G4"
+continent = 7
+x = 281
+y = 334
+connections = [55, 59, 61]
+
+[[countries]]
+id = 59
+name = "G5"
+continent = 7
+x = 324
+y = 334
+connections = [56, 58, 60, 62]
+
+[[countries]]
+id = 60
+name = "G6"
+continent = 7
+x = 368
+y = 334
+connections = [57, 59, 67, 63]
+
+[[countries]]
+id = 61
+name = "G7"
+continent = 7
+x = 282
+y = 379
+connections = [58, 62]
+
+[[countries]]
+id = 62
+name = "G8"
+continent = 7
+x = 325
+y = 379
+connections = [61, 59, 63]
+
+[[countries]]
+id = 63
+name = "G9"
+continent = 7
+x = 370
+y = 379
+connections = [60, 62, 70]
+
+[[countries]]
+id = 64
+name = "H1"
+continent = 8
+x = 411
+y = 290
+connections = [43, 57, 65, 67]
+
+[[countries]]
+id = 65
+name = "H2"
+continent = 8
+x = 456
+y = 290
+connections = [44, 64, 66, 68]
+
+[[countries]]
+id = 66
+name = "H3"
+continent = 8
+x = 500
+y = 290
+connections = [45, 65, 73, 69]
+
+[[countries]]
+id = 67
+name = "H4"
+continent = 8
+x = 412
+y = 334
+connections = [64, 60, 68, 70]
+
+[[countries]]
+id = 68
+name = "H5"
+continent = 8
+x = 456
+y = 333
+connections = [65, 67, 69, 71]
+
+[[countries]]
+id = 69
+name = "H6"
+continent = 8
+x = 501
+y = 333
+connections = [66, 68, 76, 72]
+
+[[countries]]
+id = 70
+name = "H7"
+continent = 8
+x = 413
+y = 379
+connections = [63, 67, 71]
+
+[[countries]]
+id = 71
+name = "H8"
+continent = 8
+x = 456
+y = 378
+connections = [68, 70, 72]
+
+[[countries]]
+id = 72
+name = "H9"
+continent = 8
+x = 501
+y = 378
+connections = [69, 71, 79]
+
+[[countries]]
+id = 73
+name = "I1"
+continent = 9
+x = 546
+y = 290
+connections = [52, 66, 74, 76]
+
+[[countries]]
+id = 74
+name = "I2"
+continent = 9
+x = 590
+y = 291
+connections = [53, 73, 75, 77]
+
+[[countries]]
+id = 75
+name = "I3"
+continent = 9
+x = 634
+y = 292
+connections = [54, 74, 78]
+
+[[countries]]
+id = 76
+name = "I4"
+continent = 9
+x = 547
+y = 334
+connections = [73, 69, 77, 79]
+
+[[countries]]
+id = 77
+name = "I5"
+continent = 9
+x = 590
+y = 334
+connections = [74, 76, 78, 80]
+
+[[countries]]
+id = 78
+name = "I6"
+continent = 9
+x = 635
+y = 334
+connections = [75, 77, 81]
+
+[[countries]]
+id = 79
+name = "I7"
+continent = 9
+x = 545
+y = 378
+connections = [72, 76, 80]
+
+[[countries]]
+id = 80
+name = "I8"
+continent = 9
+x = 589
+y = 380
+connections = [79, 77, 81]
+
+[[countries]]
+id = 81
+name = "I9"
+continent = 9
+x = 634
+y = 380
+connections = [80, 78]

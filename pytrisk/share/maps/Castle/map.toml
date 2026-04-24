@@ -1,0 +1,379 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "Castle_pic.jpg"
+map = "Castle_map.gif"
+crd = "Castle.cards"
+
+[[continents]]
+id = 1
+name = "Yellow"
+bonus = 5
+color = "yellow"
+
+[[continents]]
+id = 2
+name = "Blue"
+bonus = 5
+color = "blue"
+
+[[continents]]
+id = 3
+name = "Purple"
+bonus = 3
+color = "magenta"
+
+[[continents]]
+id = 4
+name = "Brown"
+bonus = 3
+color = "gray"
+
+[[continents]]
+id = 5
+name = "Red"
+bonus = 2
+color = "red"
+
+[[continents]]
+id = 6
+name = "Green"
+bonus = 6
+color = "green"
+
+[[countries]]
+id = 1
+name = "Alberton"
+continent = 1
+x = 70
+y = 265
+connections = [2, 6, 3]
+
+[[countries]]
+id = 2
+name = "West_Bacon_Bridge"
+continent = 1
+x = 101
+y = 215
+connections = [1, 19, 20, 6]
+
+[[countries]]
+id = 3
+name = "Queen's_Town"
+continent = 1
+x = 87
+y = 342
+connections = [1, 6, 4, 5, 7]
+
+[[countries]]
+id = 4
+name = "Endon"
+continent = 1
+x = 151
+y = 397
+connections = [3, 7, 5]
+
+[[countries]]
+id = 5
+name = "Oakhill"
+continent = 1
+x = 20
+y = 393
+connections = [3, 4]
+
+[[countries]]
+id = 6
+name = "Nottingham"
+continent = 1
+x = 148
+y = 294
+connections = [1, 2, 3, 7]
+
+[[countries]]
+id = 7
+name = "Adler_Marsh"
+continent = 1
+x = 221
+y = 351
+connections = [3, 4, 6, 8, 9]
+
+[[countries]]
+id = 8
+name = "Connover"
+continent = 1
+x = 315
+y = 327
+connections = [7, 15, 9]
+
+[[countries]]
+id = 9
+name = "Great_Rowley"
+continent = 1
+x = 299
+y = 401
+connections = [7, 8, 15]
+
+[[countries]]
+id = 10
+name = "North_Castle"
+continent = 2
+x = 305
+y = 175
+connections = [11, 12, 13, 35, 36]
+
+[[countries]]
+id = 11
+name = "Upper_Castle"
+continent = 2
+x = 348
+y = 156
+connections = [10, 12]
+
+[[countries]]
+id = 12
+name = "South_Castle"
+continent = 2
+x = 339
+y = 218
+connections = [10, 11, 14, 13]
+
+[[countries]]
+id = 13
+name = "West_Garden"
+continent = 2
+x = 255
+y = 226
+connections = [10, 12]
+
+[[countries]]
+id = 14
+name = "Grand_Bridge"
+continent = 2
+x = 357
+y = 257
+connections = [12, 15, 16]
+
+[[countries]]
+id = 15
+name = "Ingleshire"
+continent = 2
+x = 384
+y = 302
+connections = [8, 14, 16, 9]
+
+[[countries]]
+id = 16
+name = "Shortbend"
+continent = 2
+x = 489
+y = 251
+connections = [14, 15, 21]
+
+[[countries]]
+id = 17
+name = "Easthope"
+continent = 3
+x = 25
+y = 134
+connections = [19]
+
+[[countries]]
+id = 18
+name = "Nickleridge"
+continent = 3
+x = 195
+y = 176
+connections = [20, 31, 35]
+
+[[countries]]
+id = 19
+name = "Westminister"
+continent = 3
+x = 74
+y = 167
+connections = [17, 2, 20]
+
+[[countries]]
+id = 20
+name = "Ipshire"
+continent = 3
+x = 138
+y = 189
+connections = [2, 18, 19, 31]
+
+[[countries]]
+id = 21
+name = "Middle_Bank"
+continent = 4
+x = 553
+y = 208
+connections = [16, 23, 22]
+
+[[countries]]
+id = 22
+name = "Crow_Hill"
+continent = 4
+x = 644
+y = 201
+connections = [21, 23, 28]
+
+[[countries]]
+id = 23
+name = "Earls_Acre"
+continent = 4
+x = 593
+y = 142
+connections = [21, 22, 24, 25, 26]
+
+[[countries]]
+id = 24
+name = "East_Bacon_Bridge"
+continent = 4
+x = 513
+y = 103
+connections = [23, 42, 41]
+
+[[countries]]
+id = 25
+name = "Sheep_Meadow"
+continent = 4
+x = 572
+y = 61
+connections = [23, 26]
+
+[[countries]]
+id = 26
+name = "North_Pasture"
+continent = 4
+x = 632
+y = 78
+connections = [23, 25]
+
+[[countries]]
+id = 27
+name = "Bob_Haven"
+continent = 5
+x = 658
+y = 383
+connections = [28, 30, 29]
+
+[[countries]]
+id = 28
+name = "Valleys_End"
+continent = 5
+x = 646
+y = 298
+connections = [22, 27, 30, 29]
+
+[[countries]]
+id = 29
+name = "Pattington_Field"
+continent = 5
+x = 579
+y = 398
+connections = [27, 30, 28]
+
+[[countries]]
+id = 30
+name = "Anderton"
+continent = 5
+x = 566
+y = 345
+connections = [27, 28, 29]
+
+[[countries]]
+id = 31
+name = "Monte"
+continent = 6
+x = 188
+y = 127
+connections = [18, 20, 33, 35]
+
+[[countries]]
+id = 32
+name = "Santiago"
+continent = 6
+x = 169
+y = 29
+connections = [33, 34]
+
+[[countries]]
+id = 33
+name = "Innerwood"
+continent = 6
+x = 175
+y = 72
+connections = [31, 32, 34, 35]
+
+[[countries]]
+id = 34
+name = "Chorley"
+continent = 6
+x = 256
+y = 38
+connections = [32, 33, 36, 35, 38, 37]
+
+[[countries]]
+id = 35
+name = "Aston"
+continent = 6
+x = 240
+y = 92
+connections = [10, 18, 31, 33, 34, 36]
+
+[[countries]]
+id = 36
+name = "Kings_Cross"
+continent = 6
+x = 307
+y = 98
+connections = [10, 34, 35, 37]
+
+[[countries]]
+id = 37
+name = "Sibberhold"
+continent = 6
+x = 370
+y = 72
+connections = [34, 36, 39, 38, 40]
+
+[[countries]]
+id = 38
+name = "Yellowmoor"
+continent = 6
+x = 361
+y = 21
+connections = [34, 37, 39]
+
+[[countries]]
+id = 39
+name = "Upton"
+continent = 6
+x = 425
+y = 21
+connections = [37, 38, 40, 42]
+
+[[countries]]
+id = 40
+name = "Middleton"
+continent = 6
+x = 424
+y = 98
+connections = [37, 39, 42, 41]
+
+[[countries]]
+id = 41
+name = "Junction_Pass"
+continent = 6
+x = 473
+y = 165
+connections = [24, 40, 42]
+
+[[countries]]
+id = 42
+name = "Ironflatts"
+continent = 6
+x = 489
+y = 66
+connections = [24, 39, 40, 41]

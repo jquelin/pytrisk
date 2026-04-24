@@ -1,0 +1,439 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "troisdorf_pic.png"
+map = "troisdorf_map.gif"
+crd = "troisdorf.cards"
+
+[[continents]]
+id = 1
+name = "Müllekoven"
+bonus = 2
+color = "#80ff81"
+
+[[continents]]
+id = 2
+name = "Altenrath"
+bonus = 2
+color = "#ff8082"
+
+[[continents]]
+id = 3
+name = "Kriegsdorf"
+bonus = 2
+color = "#ff8093"
+
+[[continents]]
+id = 4
+name = "West"
+bonus = 3
+color = "#98ff80"
+
+[[continents]]
+id = 5
+name = "Rotter_See"
+bonus = 4
+color = "#80edff"
+
+[[continents]]
+id = 6
+name = "Eschmar"
+bonus = 3
+color = "#ff80ca"
+
+[[continents]]
+id = 7
+name = "Bergheim"
+bonus = 3
+color = "#b9ff80"
+
+[[continents]]
+id = 8
+name = "F-W-H"
+bonus = 4
+color = "#ffe080"
+
+[[continents]]
+id = 9
+name = "Oberlar"
+bonus = 5
+color = "#ff80e5"
+
+[[continents]]
+id = 10
+name = "Spich"
+bonus = 6
+color = "#f980ff"
+
+[[continents]]
+id = 11
+name = "Sieglar"
+bonus = 6
+color = "#a6ff80"
+
+[[continents]]
+id = 12
+name = "Mitte"
+bonus = 8
+color = "#80ffe4"
+
+[[countries]]
+id = 1
+name = "Müllekoven-Nord"
+continent = 1
+x = 216
+y = 374
+connections = [2, 18, 15]
+
+[[countries]]
+id = 2
+name = "Müllekoven_Süd"
+continent = 1
+x = 225
+y = 397
+connections = [1]
+
+[[countries]]
+id = 3
+name = "Altenrath-Nordost"
+continent = 2
+x = 496
+y = 129
+connections = [4]
+
+[[countries]]
+id = 4
+name = "Altenrath-Südwest"
+continent = 2
+x = 478
+y = 146
+connections = [3, 40, 39]
+
+[[countries]]
+id = 5
+name = "Kriegsdorf-Nordost"
+continent = 3
+x = 198
+y = 218
+connections = [11, 6]
+
+[[countries]]
+id = 6
+name = "Kriegsdorf-Südwest"
+continent = 3
+x = 179
+y = 237
+connections = [5]
+
+[[countries]]
+id = 7
+name = "West-Nord"
+continent = 4
+x = 456
+y = 272
+connections = [41, 8, 9]
+
+[[countries]]
+id = 8
+name = "West-Südwest"
+continent = 4
+x = 443
+y = 295
+connections = [7, 9, 20]
+
+[[countries]]
+id = 9
+name = "West-Südost"
+continent = 4
+x = 473
+y = 296
+connections = [8, 7]
+
+[[countries]]
+id = 10
+name = "Rotter_See-Nordost"
+continent = 5
+x = 255
+y = 214
+connections = [12, 11, 25]
+
+[[countries]]
+id = 11
+name = "Rotter_See-Nordwest"
+continent = 5
+x = 230
+y = 226
+connections = [12, 13, 10, 5]
+
+[[countries]]
+id = 12
+name = "Rotter_See-Südost"
+continent = 5
+x = 252
+y = 244
+connections = [34, 13, 10, 11]
+
+[[countries]]
+id = 13
+name = "Rotter_See-Südwest"
+continent = 5
+x = 231
+y = 252
+connections = [12, 11]
+
+[[countries]]
+id = 14
+name = "Eschmar-Ost"
+continent = 6
+x = 245
+y = 320
+connections = [15, 35, 34]
+
+[[countries]]
+id = 15
+name = "Eschmar-West"
+continent = 6
+x = 220
+y = 333
+connections = [1, 17, 14]
+
+[[countries]]
+id = 16
+name = "Bergheim-West"
+continent = 7
+x = 167
+y = 351
+connections = [18, 17]
+
+[[countries]]
+id = 17
+name = "Bergheim-Nordost"
+continent = 7
+x = 191
+y = 338
+connections = [16, 18, 15]
+
+[[countries]]
+id = 18
+name = "Bergheim-Südost"
+continent = 7
+x = 190
+y = 363
+connections = [1, 16, 17]
+
+[[countries]]
+id = 19
+name = "F-W-H-Nord"
+continent = 8
+x = 395
+y = 291
+connections = [20, 42, 21, 22]
+
+[[countries]]
+id = 20
+name = "F-W-H-Ost"
+continent = 8
+x = 412
+y = 310
+connections = [8, 21, 19]
+
+[[countries]]
+id = 21
+name = "F-W-H-Süd"
+continent = 8
+x = 387
+y = 326
+connections = [20, 19, 22]
+
+[[countries]]
+id = 22
+name = "F-W-H-West"
+continent = 8
+x = 368
+y = 291
+connections = [33, 19, 21]
+
+[[countries]]
+id = 23
+name = "Oberlar-Nord"
+continent = 9
+x = 301
+y = 186
+connections = [25, 27, 24, 30]
+
+[[countries]]
+id = 24
+name = "Oberlar-Ost"
+continent = 9
+x = 324
+y = 205
+connections = [23, 26]
+
+[[countries]]
+id = 25
+name = "Oberlar-West"
+continent = 9
+x = 273
+y = 204
+connections = [10, 27, 23, 26]
+
+[[countries]]
+id = 26
+name = "Oberlar-Süd"
+continent = 9
+x = 306
+y = 228
+connections = [34, 25, 27, 24]
+
+[[countries]]
+id = 27
+name = "Oberlar-Mitte"
+continent = 9
+x = 293
+y = 208
+connections = [25, 23, 26]
+
+[[countries]]
+id = 28
+name = "Spich-Nord"
+continent = 10
+x = 329
+y = 77
+connections = [32, 31]
+
+[[countries]]
+id = 29
+name = "Spich-Ost"
+continent = 10
+x = 356
+y = 118
+connections = [30, 32, 37]
+
+[[countries]]
+id = 30
+name = "Spich-Süd"
+continent = 10
+x = 320
+y = 143
+connections = [23, 43, 31, 32, 29]
+
+[[countries]]
+id = 31
+name = "Spich-West"
+continent = 10
+x = 295
+y = 103
+connections = [30, 32, 28]
+
+[[countries]]
+id = 32
+name = "Spich-Mitte"
+continent = 10
+x = 326
+y = 111
+connections = [30, 31, 28, 29]
+
+[[countries]]
+id = 33
+name = "Sieglar-Nordost"
+continent = 11
+x = 325
+y = 295
+connections = [36, 34, 22, 43]
+
+[[countries]]
+id = 34
+name = "Sieglar-Nordwest"
+continent = 11
+x = 290
+y = 286
+connections = [14, 12, 26, 35, 33]
+
+[[countries]]
+id = 35
+name = "Sieglar-Südwest"
+continent = 11
+x = 289
+y = 318
+connections = [14, 36, 34]
+
+[[countries]]
+id = 36
+name = "Sieglar-Süd"
+continent = 11
+x = 319
+y = 331
+connections = [35, 33]
+
+[[countries]]
+id = 37
+name = "Mitte-Nordwest"
+continent = 12
+x = 379
+y = 142
+connections = [29, 43, 44, 38]
+
+[[countries]]
+id = 38
+name = "Mitte-Nord"
+continent = 12
+x = 425
+y = 152
+connections = [39, 44, 37, 45, 40]
+
+[[countries]]
+id = 39
+name = "Mitte-Nordost"
+continent = 12
+x = 458
+y = 144
+connections = [4, 40, 38]
+
+[[countries]]
+id = 40
+name = "Mitte-Ost"
+continent = 12
+x = 471
+y = 188
+connections = [4, 39, 41, 38, 45]
+
+[[countries]]
+id = 41
+name = "Mitte-Südost"
+continent = 12
+x = 442
+y = 243
+connections = [42, 45, 40, 7]
+
+[[countries]]
+id = 42
+name = "Mitte-Südwest"
+continent = 12
+x = 394
+y = 238
+connections = [41, 19, 43, 44, 45]
+
+[[countries]]
+id = 43
+name = "Mitte-West"
+continent = 12
+x = 351
+y = 197
+connections = [33, 30, 42, 44, 37]
+
+[[countries]]
+id = 44
+name = "Mitte-Zentrum_West"
+continent = 12
+x = 394
+y = 191
+connections = [43, 42, 45, 38, 37]
+
+[[countries]]
+id = 45
+name = "Mitte-Zentrum_Ost"
+continent = 12
+x = 439
+y = 211
+connections = [41, 44, 38, 40, 42]

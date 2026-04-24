@@ -1,0 +1,155 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "Simpsons_pic.png"
+map = "Simpsons_map.gif"
+crd = "Simpsons.cards"
+
+[[continents]]
+id = 1
+name = "Rez_de_Chaussée"
+bonus = 5
+color = "#cc0000"
+
+[[continents]]
+id = 2
+name = "1er_étage"
+bonus = 5
+color = "white"
+
+[[countries]]
+id = 1
+name = "Entry"
+continent = 1
+x = 105
+y = 237
+connections = [7, 6, 17]
+
+[[countries]]
+id = 2
+name = "Garage"
+continent = 1
+x = 206
+y = 312
+connections = [3]
+
+[[countries]]
+id = 3
+name = "Laundry"
+continent = 1
+x = 230
+y = 219
+connections = [2, 4]
+
+[[countries]]
+id = 4
+name = "Rumpus_room"
+continent = 1
+x = 233
+y = 144
+connections = [3, 5]
+
+[[countries]]
+id = 5
+name = "Kitchen"
+continent = 1
+x = 149
+y = 109
+connections = [4, 6, 8]
+
+[[countries]]
+id = 6
+name = "Dining_room"
+continent = 1
+x = 159
+y = 200
+connections = [1, 5]
+
+[[countries]]
+id = 7
+name = "Living_room"
+continent = 1
+x = 51
+y = 217
+connections = [1, 8]
+
+[[countries]]
+id = 8
+name = "TV_room"
+continent = 1
+x = 56
+y = 131
+connections = [5, 7]
+
+[[countries]]
+id = 9
+name = "Bart's_room"
+continent = 2
+x = 354
+y = 226
+connections = [17]
+
+[[countries]]
+id = 10
+name = "Lisa's_room"
+continent = 2
+x = 505
+y = 233
+connections = [17]
+
+[[countries]]
+id = 11
+name = "Homer_&_Marge's_room"
+continent = 2
+x = 610
+y = 221
+connections = [17, 12, 13]
+
+[[countries]]
+id = 12
+name = "Homer_&_Marge's_closet"
+continent = 2
+x = 628
+y = 95
+connections = [11]
+
+[[countries]]
+id = 13
+name = "Homer_et_Marge's_bathroom"
+continent = 2
+x = 543
+y = 76
+connections = [11]
+
+[[countries]]
+id = 14
+name = "Maggie's_room"
+continent = 2
+x = 473
+y = 79
+connections = [17, 15]
+
+[[countries]]
+id = 15
+name = "Maggie's_closet"
+continent = 2
+x = 407
+y = 96
+connections = [14]
+
+[[countries]]
+id = 16
+name = "Bathroom"
+continent = 2
+x = 347
+y = 104
+connections = [17]
+
+[[countries]]
+id = 17
+name = "Hall"
+continent = 2
+x = 448
+y = 138
+connections = [1, 9, 10, 11, 14, 16]

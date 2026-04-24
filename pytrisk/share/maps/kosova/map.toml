@@ -1,0 +1,289 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "kosova_pic.png"
+map = "kosova_map.gif"
+crd = "kosova.cards"
+
+[[continents]]
+id = 1
+name = "Mitrovicë"
+bonus = 5
+color = "#666666"
+
+[[continents]]
+id = 2
+name = "Prishtinë"
+bonus = 7
+color = "#000066"
+
+[[continents]]
+id = 3
+name = "Gjilan"
+bonus = 2
+color = "#660066"
+
+[[continents]]
+id = 4
+name = "Ferizaj"
+bonus = 2
+color = "#663300"
+
+[[continents]]
+id = 5
+name = "Prizren"
+bonus = 4
+color = "#006600"
+
+[[continents]]
+id = 6
+name = "Drenicë"
+bonus = 5
+color = "#660000"
+
+[[continents]]
+id = 7
+name = "Dukagjin"
+bonus = 3
+color = "#cccc33"
+
+[[countries]]
+id = 1
+name = "Albanik"
+continent = 1
+x = 309
+y = 33
+connections = [2, 4, 6]
+
+[[countries]]
+id = 2
+name = "Zveçan"
+continent = 1
+x = 316
+y = 93
+connections = [1, 4, 3]
+
+[[countries]]
+id = 3
+name = "Zubin_Potok"
+continent = 1
+x = 276
+y = 104
+connections = [2, 4, 26, 24]
+
+[[countries]]
+id = 4
+name = "Mitrovica"
+continent = 1
+x = 350
+y = 96
+connections = [1, 5, 2, 6, 3, 24]
+
+[[countries]]
+id = 5
+name = "Vushtrri"
+continent = 1
+x = 354
+y = 140
+connections = [4, 6, 7, 24, 23]
+
+[[countries]]
+id = 6
+name = "Besianë"
+continent = 2
+x = 408
+y = 129
+connections = [4, 1, 5, 7, 10]
+
+[[countries]]
+id = 7
+name = "Kastriot"
+continent = 2
+x = 378
+y = 163
+connections = [6, 8, 10, 5, 23]
+
+[[countries]]
+id = 8
+name = "Fushë_Kosovë"
+continent = 2
+x = 366
+y = 194
+connections = [9, 7, 23, 10]
+
+[[countries]]
+id = 9
+name = "Graçanicë"
+continent = 2
+x = 383
+y = 220
+connections = [12, 13, 16, 10, 8, 23, 22, 18, 17]
+
+[[countries]]
+id = 10
+name = "Prishtina"
+continent = 2
+x = 420
+y = 174
+connections = [6, 11, 12, 9, 8, 7]
+
+[[countries]]
+id = 11
+name = "Dardanë"
+continent = 3
+x = 488
+y = 195
+connections = [10, 13]
+
+[[countries]]
+id = 12
+name = "Artanë"
+continent = 3
+x = 435
+y = 204
+connections = [13, 10, 9]
+
+[[countries]]
+id = 13
+name = "Gjilani"
+continent = 3
+x = 452
+y = 243
+connections = [11, 12, 14, 16, 9]
+
+[[countries]]
+id = 14
+name = "Viti"
+continent = 4
+x = 434
+y = 280
+connections = [13, 15, 16]
+
+[[countries]]
+id = 15
+name = "Kaçanik"
+continent = 4
+x = 404
+y = 308
+connections = [14, 16, 19]
+
+[[countries]]
+id = 16
+name = "Ferizaji"
+continent = 4
+x = 391
+y = 263
+connections = [13, 14, 15, 19, 18, 17, 9]
+
+[[countries]]
+id = 17
+name = "Shtimje"
+continent = 4
+x = 358
+y = 248
+connections = [16, 18, 9]
+
+[[countries]]
+id = 18
+name = "Therandë"
+continent = 5
+x = 326
+y = 267
+connections = [16, 9, 30, 20, 19, 22, 17]
+
+[[countries]]
+id = 19
+name = "Shtërpcë"
+continent = 5
+x = 360
+y = 308
+connections = [16, 20, 18, 15]
+
+[[countries]]
+id = 20
+name = "Prizreni"
+continent = 5
+x = 296
+y = 304
+connections = [29, 30, 21, 19, 18]
+
+[[countries]]
+id = 21
+name = "Dragash"
+continent = 5
+x = 291
+y = 357
+connections = [20]
+
+[[countries]]
+id = 22
+name = "Malishevë"
+continent = 6
+x = 299
+y = 223
+connections = [9, 24, 25, 30, 18, 23]
+
+[[countries]]
+id = 23
+name = "Drenas"
+continent = 6
+x = 330
+y = 194
+connections = [9, 8, 5, 24, 22, 7]
+
+[[countries]]
+id = 24
+name = "Skënderaj"
+continent = 6
+x = 301
+y = 158
+connections = [3, 5, 26, 25, 23, 22, 4]
+
+[[countries]]
+id = 25
+name = "Klinë"
+continent = 6
+x = 272
+y = 193
+connections = [24, 26, 27, 22, 30, 29]
+
+[[countries]]
+id = 26
+name = "Burim"
+continent = 7
+x = 251
+y = 147
+connections = [3, 24, 25, 27]
+
+[[countries]]
+id = 27
+name = "Peja"
+continent = 7
+x = 208
+y = 175
+connections = [26, 28, 25]
+
+[[countries]]
+id = 28
+name = "Deçan"
+continent = 7
+x = 202
+y = 217
+connections = [27, 29]
+
+[[countries]]
+id = 29
+name = "Gjakova"
+continent = 7
+x = 233
+y = 259
+connections = [25, 28, 30, 20]
+
+[[countries]]
+id = 30
+name = "Rahovec"
+continent = 7
+x = 281
+y = 253
+connections = [25, 29, 22, 18, 20]

@@ -1,0 +1,391 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "Deutsches_Reich_1871_pic.png"
+map = "Deutsches_Reich_1871_map.gif"
+crd = "Deutsches_Reich_1871.cards"
+
+[[continents]]
+id = 1
+name = "Königreich_Bayern"
+bonus = 3
+color = "#ff8090"
+
+[[continents]]
+id = 2
+name = "Baden-Württemberg"
+bonus = 3
+color = "#ff8c80"
+
+[[continents]]
+id = 3
+name = "Schleswig-Holstein&Mecklenburg-Schwerin"
+bonus = 2
+color = "#80ff9c"
+
+[[continents]]
+id = 4
+name = "Mitteldeutschland"
+bonus = 4
+color = "#80ff90"
+
+[[continents]]
+id = 5
+name = "Rheinland"
+bonus = 4
+color = "#80b0ff"
+
+[[continents]]
+id = 6
+name = "Elsaß-Lothringen"
+bonus = 1
+color = "#80fff7"
+
+[[continents]]
+id = 7
+name = "Königreich_Sachsen"
+bonus = 2
+color = "#80c0ff"
+
+[[continents]]
+id = 8
+name = "Preußen"
+bonus = 6
+color = "#80c8ff"
+
+[[countries]]
+id = 1
+name = "Schwaben"
+continent = 1
+x = 197
+y = 374
+connections = [6, 2, 4]
+
+[[countries]]
+id = 2
+name = "Ober_Bayern"
+continent = 1
+x = 236
+y = 389
+connections = [1, 4, 3]
+
+[[countries]]
+id = 3
+name = "Nieder_Bayern_&_Oberpfalz"
+continent = 1
+x = 265
+y = 344
+connections = [2, 4, 5]
+
+[[countries]]
+id = 4
+name = "Franken"
+continent = 1
+x = 195
+y = 311
+connections = [6, 8, 2, 1, 3, 5, 13, 35, 7]
+
+[[countries]]
+id = 5
+name = "Oberfranken"
+continent = 1
+x = 233
+y = 293
+connections = [3, 4, 35, 34]
+
+[[countries]]
+id = 6
+name = "Württemberg"
+continent = 2
+x = 160
+y = 360
+connections = [7, 1, 4]
+
+[[countries]]
+id = 7
+name = "Großherzogtum_Baden"
+continent = 2
+x = 133
+y = 335
+connections = [11, 6, 8, 9, 4]
+
+[[countries]]
+id = 8
+name = "Grhzm._Darmstadt"
+continent = 2
+x = 140
+y = 295
+connections = [7, 12, 13, 4, 9]
+
+[[countries]]
+id = 9
+name = "Karlsruhe"
+continent = 2
+x = 114
+y = 314
+connections = [11, 10, 12, 8, 7]
+
+[[countries]]
+id = 10
+name = "Lothringen"
+continent = 6
+x = 67
+y = 324
+connections = [11, 12, 9]
+
+[[countries]]
+id = 11
+name = "Elsaß"
+continent = 6
+x = 101
+y = 343
+connections = [7, 9, 10]
+
+[[countries]]
+id = 12
+name = "Trier"
+continent = 5
+x = 93
+y = 288
+connections = [10, 8, 9, 13, 15]
+
+[[countries]]
+id = 13
+name = "Hessen-Nassau"
+continent = 5
+x = 140
+y = 264
+connections = [8, 4, 12, 18, 14, 35, 15]
+
+[[countries]]
+id = 14
+name = "Kassel"
+continent = 4
+x = 169
+y = 236
+connections = [18, 13, 35, 24]
+
+[[countries]]
+id = 15
+name = "Rheinprovinz"
+continent = 5
+x = 88
+y = 250
+connections = [12, 18, 13, 16]
+
+[[countries]]
+id = 16
+name = "Essen"
+continent = 5
+x = 83
+y = 215
+connections = [18, 15, 17]
+
+[[countries]]
+id = 17
+name = "Dortmund"
+continent = 5
+x = 106
+y = 189
+connections = [18, 16, 19, 23]
+
+[[countries]]
+id = 18
+name = "Westfalen"
+continent = 5
+x = 128
+y = 218
+connections = [15, 13, 14, 24, 23, 17, 16]
+
+[[countries]]
+id = 19
+name = "Oldenburg"
+continent = 4
+x = 131
+y = 138
+connections = [17, 23, 21, 22, 25]
+
+[[countries]]
+id = 20
+name = "Flensburg"
+continent = 3
+x = 180
+y = 68
+connections = [21]
+
+[[countries]]
+id = 21
+name = "Hamburg"
+continent = 3
+x = 198
+y = 100
+connections = [19, 20, 22]
+
+[[countries]]
+id = 22
+name = "Grhm._Mecklenburg-Schwerin"
+continent = 3
+x = 257
+y = 115
+connections = [19, 25, 21, 28, 27, 26]
+
+[[countries]]
+id = 23
+name = "Hannover"
+continent = 4
+x = 176
+y = 166
+connections = [18, 17, 19, 24, 25]
+
+[[countries]]
+id = 24
+name = "Braunschweig"
+continent = 4
+x = 206
+y = 205
+connections = [18, 25, 35, 14, 23]
+
+[[countries]]
+id = 25
+name = "Dessau"
+continent = 4
+x = 249
+y = 181
+connections = [19, 24, 26, 22, 27, 33, 34, 35, 23]
+
+[[countries]]
+id = 26
+name = "West-Brandenburg"
+continent = 8
+x = 263
+y = 151
+connections = [25, 22, 27]
+
+[[countries]]
+id = 27
+name = "Berlin"
+continent = 8
+x = 300
+y = 170
+connections = [25, 22, 26, 28, 29, 30, 32]
+
+[[countries]]
+id = 28
+name = "Stralsund"
+continent = 8
+x = 298
+y = 108
+connections = [22, 27, 29]
+
+[[countries]]
+id = 29
+name = "Pommern"
+continent = 8
+x = 361
+y = 115
+connections = [27, 28, 30, 42, 39]
+
+[[countries]]
+id = 30
+name = "Küstrin"
+continent = 8
+x = 341
+y = 179
+connections = [27, 29, 32, 38, 42]
+
+[[countries]]
+id = 31
+name = "Breslau"
+continent = 8
+x = 405
+y = 243
+connections = [32, 36, 37, 38]
+
+[[countries]]
+id = 32
+name = "Liegnitz"
+continent = 8
+x = 363
+y = 229
+connections = [27, 33, 30, 31, 38]
+
+[[countries]]
+id = 33
+name = "Dresden"
+continent = 7
+x = 326
+y = 243
+connections = [25, 34, 32]
+
+[[countries]]
+id = 34
+name = "Chemnitz"
+continent = 7
+x = 287
+y = 251
+connections = [5, 25, 35, 33]
+
+[[countries]]
+id = 35
+name = "Thüringen"
+continent = 7
+x = 221
+y = 258
+connections = [5, 13, 25, 24, 14, 4, 34]
+
+[[countries]]
+id = 36
+name = "Gleiwitz"
+continent = 8
+x = 446
+y = 262
+connections = [31, 37]
+
+[[countries]]
+id = 37
+name = "Posen"
+continent = 8
+x = 416
+y = 199
+connections = [31, 38, 36]
+
+[[countries]]
+id = 38
+name = "Nord-Posen"
+continent = 8
+x = 396
+y = 167
+connections = [32, 31, 30, 42, 37]
+
+[[countries]]
+id = 39
+name = "Danzig"
+continent = 8
+x = 442
+y = 92
+connections = [29, 42, 40, 41]
+
+[[countries]]
+id = 40
+name = "Königsberg"
+continent = 8
+x = 513
+y = 63
+connections = [39, 41]
+
+[[countries]]
+id = 41
+name = "Ostpreußen"
+continent = 8
+x = 531
+y = 100
+connections = [39, 42, 40]
+
+[[countries]]
+id = 42
+name = "Westpreußen"
+continent = 8
+x = 442
+y = 128
+connections = [29, 38, 39, 41, 30]

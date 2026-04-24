@@ -1,0 +1,159 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "germany2_pic.png"
+map = "germany2_map.gif"
+crd = "germany2.cards"
+
+[[continents]]
+id = 1
+name = "Nord-Deutschland"
+bonus = 4
+color = "yellow"
+
+[[continents]]
+id = 2
+name = "West-Deutschland"
+bonus = 5
+color = "purple"
+
+[[continents]]
+id = 3
+name = "Ost-Deutschland"
+bonus = 3
+color = "orange"
+
+[[continents]]
+id = 4
+name = "Süd-Deutschland"
+bonus = 4
+color = "green"
+
+[[countries]]
+id = 1
+name = "Schleswig-Holstein"
+continent = 1
+x = 322
+y = 54
+connections = [2, 3, 16]
+
+[[countries]]
+id = 2
+name = "Hamburg"
+continent = 1
+x = 326
+y = 84
+connections = [1, 3]
+
+[[countries]]
+id = 3
+name = "Niedersachsen"
+continent = 1
+x = 317
+y = 123
+connections = [11, 4, 2, 1, 16, 6, 5, 9, 10]
+
+[[countries]]
+id = 4
+name = "Bremen"
+continent = 1
+x = 286
+y = 109
+connections = [3]
+
+[[countries]]
+id = 5
+name = "Sachsen-Anhalt"
+continent = 3
+x = 376
+y = 161
+connections = [3, 6, 8, 9]
+
+[[countries]]
+id = 6
+name = "Brandenburg"
+continent = 3
+x = 445
+y = 167
+connections = [7, 16, 8, 5, 3]
+
+[[countries]]
+id = 7
+name = "Berlin"
+continent = 3
+x = 436
+y = 140
+connections = [6]
+
+[[countries]]
+id = 8
+name = "Sachsen"
+continent = 3
+x = 434
+y = 220
+connections = [6, 5, 9, 15]
+
+[[countries]]
+id = 9
+name = "Thüringen"
+continent = 3
+x = 335
+y = 229
+connections = [8, 5, 3, 10, 15]
+
+[[countries]]
+id = 10
+name = "Hessen"
+continent = 2
+x = 286
+y = 246
+connections = [3, 9, 15, 14, 12, 11]
+
+[[countries]]
+id = 11
+name = "Nordrhein-Westfalen"
+continent = 2
+x = 234
+y = 200
+connections = [3, 10, 12]
+
+[[countries]]
+id = 12
+name = "Rheinland-Pfalz"
+continent = 2
+x = 231
+y = 282
+connections = [11, 10, 14, 13]
+
+[[countries]]
+id = 13
+name = "Saarland"
+continent = 2
+x = 214
+y = 310
+connections = [12]
+
+[[countries]]
+id = 14
+name = "Baden-Württemberg"
+continent = 4
+x = 287
+y = 360
+connections = [12, 10, 15]
+
+[[countries]]
+id = 15
+name = "Bayern"
+continent = 4
+x = 378
+y = 336
+connections = [8, 9, 10, 14]
+
+[[countries]]
+id = 16
+name = "Mecklenburg-Vorpommern"
+continent = 3
+x = 397
+y = 72
+connections = [1, 3, 6]

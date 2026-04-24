@@ -1,0 +1,369 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "sw_baltic.jpg"
+map = "sw_baltic.gif"
+crd = "sw_baltic.cards"
+
+[[continents]]
+id = 1
+name = "Sued-Daenemark"
+bonus = 3
+color = "red"
+
+[[continents]]
+id = 2
+name = "Schleswig-Holstein"
+bonus = 6
+color = "yellow"
+
+[[continents]]
+id = 3
+name = "Hamburg"
+bonus = 1
+color = "purple"
+
+[[continents]]
+id = 4
+name = "Mecklenburg-Vorpommern"
+bonus = 7
+color = "brown"
+
+[[continents]]
+id = 5
+name = "Sued-Schweden"
+bonus = 3
+color = "green"
+
+[[continents]]
+id = 6
+name = "Sjaelland"
+bonus = 4
+color = "orange"
+
+[[continents]]
+id = 7
+name = "Fyn"
+bonus = 2
+color = "blue"
+
+[[countries]]
+id = 1
+name = "Ringkoebing"
+continent = 1
+x = 130
+y = 40
+connections = [2, 3, 4]
+
+[[countries]]
+id = 2
+name = "Aerhus"
+continent = 1
+x = 230
+y = 30
+connections = [1, 4]
+
+[[countries]]
+id = 3
+name = "Ribe"
+continent = 1
+x = 130
+y = 120
+connections = [1, 4, 5]
+
+[[countries]]
+id = 4
+name = "Vejle"
+continent = 1
+x = 190
+y = 90
+connections = [1, 2, 3, 5, 39]
+
+[[countries]]
+id = 5
+name = "Sonder-Jylland"
+continent = 1
+x = 160
+y = 180
+connections = [3, 4, 6, 7, 39]
+
+[[countries]]
+id = 6
+name = "Nordfriesland"
+continent = 2
+x = 160
+y = 255
+connections = [5, 7, 8]
+
+[[countries]]
+id = 7
+name = "Schleswig-Flensburg"
+continent = 2
+x = 200
+y = 250
+connections = [5, 6, 8, 9]
+
+[[countries]]
+id = 8
+name = "Dittmarschen"
+continent = 2
+x = 160
+y = 315
+connections = [6, 7, 9, 10]
+
+[[countries]]
+id = 9
+name = "Rendsburg-Eckernfoerde"
+continent = 2
+x = 220
+y = 300
+connections = [7, 8, 10, 11, 12]
+
+[[countries]]
+id = 10
+name = "Steinburg"
+continent = 2
+x = 185
+y = 350
+connections = [8, 9, 12, 13]
+
+[[countries]]
+id = 11
+name = "Ploen/Kiel"
+continent = 2
+x = 260
+y = 305
+connections = [9, 12, 15]
+
+[[countries]]
+id = 12
+name = "Segeberg/Neumuenster"
+continent = 2
+x = 240
+y = 360
+connections = [9, 10, 11, 13, 15, 16, 17]
+
+[[countries]]
+id = 13
+name = "Pinneberg"
+continent = 2
+x = 210
+y = 380
+connections = [10, 12, 17]
+
+[[countries]]
+id = 14
+name = "Fehmarn"
+continent = 2
+x = 315
+y = 275
+connections = [15]
+
+[[countries]]
+id = 15
+name = "Ostholstein/Luebeck"
+continent = 2
+x = 285
+y = 325
+connections = [11, 12, 14, 16, 18]
+
+[[countries]]
+id = 16
+name = "Herzogtum-Lauenburg"
+continent = 2
+x = 275
+y = 395
+connections = [12, 15, 17, 18]
+
+[[countries]]
+id = 17
+name = "Hansestadt-Hamburg"
+continent = 3
+x = 225
+y = 400
+connections = [12, 13, 16]
+
+[[countries]]
+id = 18
+name = "Nordwest-Mecklenburg"
+continent = 4
+x = 320
+y = 360
+connections = [15, 16, 19, 20, 21]
+
+[[countries]]
+id = 19
+name = "Bad-Doberan"
+continent = 4
+x = 390
+y = 325
+connections = [18, 20, 22]
+
+[[countries]]
+id = 20
+name = "Guestrow"
+continent = 4
+x = 415
+y = 360
+connections = [18, 19, 21, 22, 24, 25]
+
+[[countries]]
+id = 21
+name = "Parching/Schwerin"
+continent = 4
+x = 375
+y = 405
+connections = [18, 20, 25]
+
+[[countries]]
+id = 22
+name = "Nordvorpommern/Rostock"
+continent = 4
+x = 450
+y = 315
+connections = [19, 20, 23, 24, 26]
+
+[[countries]]
+id = 23
+name = "Ruegen"
+continent = 4
+x = 500
+y = 270
+connections = [22, 31]
+
+[[countries]]
+id = 24
+name = "Demmin"
+continent = 4
+x = 460
+y = 360
+connections = [20, 22, 25, 26]
+
+[[countries]]
+id = 25
+name = "Muerlitz"
+continent = 4
+x = 440
+y = 410
+connections = [20, 21, 24]
+
+[[countries]]
+id = 26
+name = "Ostpommern"
+continent = 4
+x = 520
+y = 350
+connections = [22, 24, 27]
+
+[[countries]]
+id = 27
+name = "Uecker-Randow"
+continent = 4
+x = 550
+y = 390
+connections = [26]
+
+[[countries]]
+id = 28
+name = "Blekinge"
+continent = 5
+x = 625
+y = 25
+connections = [29]
+
+[[countries]]
+id = 29
+name = "Kristianstad"
+continent = 5
+x = 525
+y = 50
+connections = [28, 30, 31]
+
+[[countries]]
+id = 30
+name = "Malmoe-Hus"
+continent = 5
+x = 480
+y = 115
+connections = [29, 32, 33]
+
+[[countries]]
+id = 31
+name = "Bornholm"
+continent = 5
+x = 610
+y = 170
+connections = [23, 29]
+
+[[countries]]
+id = 32
+name = "Frederiks-Borg"
+continent = 6
+x = 410
+y = 70
+connections = [30, 33, 34, 35]
+
+[[countries]]
+id = 33
+name = "Kopenhagen"
+continent = 6
+x = 415
+y = 105
+connections = [30, 32, 34]
+
+[[countries]]
+id = 34
+name = "Roskilde"
+continent = 6
+x = 390
+y = 140
+connections = [32, 33, 35, 36]
+
+[[countries]]
+id = 35
+name = "Soro"
+continent = 6
+x = 345
+y = 115
+connections = [32, 34, 36, 38, 40]
+
+[[countries]]
+id = 36
+name = "Falster"
+continent = 6
+x = 385
+y = 190
+connections = [34, 35, 37]
+
+[[countries]]
+id = 37
+name = "Lolland"
+continent = 6
+x = 350
+y = 235
+connections = [36, 40]
+
+[[countries]]
+id = 38
+name = "Samsoe"
+continent = 7
+x = 275
+y = 85
+connections = [35, 39]
+
+[[countries]]
+id = 39
+name = "Odense"
+continent = 7
+x = 255
+y = 160
+connections = [4, 5, 38, 40]
+
+[[countries]]
+id = 40
+name = "Langeland"
+continent = 7
+x = 285
+y = 220
+connections = [35, 37, 39]
