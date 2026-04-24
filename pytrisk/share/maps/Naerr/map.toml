@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "Naerr_pic.png"
-map = "Naerr_map.gif"
-crd = "Naerr.cards"
+nb_wildcards = 0
 
 [[continents]]
 id = 1
@@ -60,6 +56,7 @@ name = "Northern_Narodhe"
 continent = 1
 x = 178
 y = 86
+cardtype = "Cavalry"
 connections = [3, 2, 44, 42]
 
 [[countries]]
@@ -68,6 +65,7 @@ name = "Southern_Narodhe"
 continent = 1
 x = 174
 y = 144
+cardtype = "Infantry"
 connections = [1]
 
 [[countries]]
@@ -76,6 +74,7 @@ name = "Western_Narodhe"
 continent = 1
 x = 104
 y = 112
+cardtype = "Cannon"
 connections = [1, 31]
 
 [[countries]]
@@ -84,6 +83,7 @@ name = "Kreshdi"
 continent = 3
 x = 320
 y = 134
+cardtype = "Cavalry"
 connections = [6, 45]
 
 [[countries]]
@@ -92,6 +92,7 @@ name = "Korelli"
 continent = 3
 x = 391
 y = 154
+cardtype = "Infantry"
 connections = [6, 9, 10, 24, 45]
 
 [[countries]]
@@ -100,6 +101,7 @@ name = "Daren"
 continent = 3
 x = 367
 y = 127
+cardtype = "Cannon"
 connections = [4, 5, 9, 7]
 
 [[countries]]
@@ -108,6 +110,7 @@ name = "Arctic_Peninsula"
 continent = 3
 x = 441
 y = 57
+cardtype = "Cavalry"
 connections = [6, 14]
 
 [[countries]]
@@ -116,6 +119,7 @@ name = "Effari"
 continent = 3
 x = 470
 y = 198
+cardtype = "Infantry"
 connections = [10, 11, 16]
 
 [[countries]]
@@ -124,6 +128,7 @@ name = "Krall"
 continent = 3
 x = 443
 y = 131
+cardtype = "Cannon"
 connections = [6, 5, 10, 11]
 
 [[countries]]
@@ -132,6 +137,7 @@ name = "Crelitia"
 continent = 3
 x = 434
 y = 177
+cardtype = "Cavalry"
 connections = [5, 8, 11, 9]
 
 [[countries]]
@@ -140,6 +146,7 @@ name = "Nambari"
 continent = 3
 x = 498
 y = 161
+cardtype = "Infantry"
 connections = [10, 9, 8, 16]
 
 [[countries]]
@@ -148,6 +155,7 @@ name = "Sepiin"
 continent = 2
 x = 559
 y = 105
+cardtype = "Cannon"
 connections = [15, 14]
 
 [[countries]]
@@ -156,6 +164,7 @@ name = "The_Hinge"
 continent = 7
 x = 491
 y = 254
+cardtype = "Cavalry"
 connections = [16, 23, 43]
 
 [[countries]]
@@ -164,6 +173,7 @@ name = "Sortellon"
 continent = 2
 x = 616
 y = 68
+cardtype = "Infantry"
 connections = [12, 7]
 
 [[countries]]
@@ -172,6 +182,7 @@ name = "Semarri"
 continent = 2
 x = 560
 y = 149
+cardtype = "Cannon"
 connections = [16, 12]
 
 [[countries]]
@@ -180,6 +191,7 @@ name = "Faden"
 continent = 2
 x = 535
 y = 186
+cardtype = "Cavalry"
 connections = [13, 11, 8, 15]
 
 [[countries]]
@@ -188,6 +200,7 @@ name = "West_Somrei"
 continent = 6
 x = 489
 y = 337
+cardtype = "Infantry"
 connections = [18, 20, 19, 23, 54]
 
 [[countries]]
@@ -196,6 +209,7 @@ name = "North_Somrei"
 continent = 6
 x = 559
 y = 307
+cardtype = "Cannon"
 connections = [17, 19, 20, 22]
 
 [[countries]]
@@ -204,6 +218,7 @@ name = "East_Somrei"
 continent = 6
 x = 598
 y = 363
+cardtype = "Cavalry"
 connections = [17, 18, 20, 55]
 
 [[countries]]
@@ -212,6 +227,7 @@ name = "Central_Somrei"
 continent = 6
 x = 551
 y = 345
+cardtype = "Infantry"
 connections = [17, 18, 19]
 
 [[countries]]
@@ -220,6 +236,7 @@ name = "Hebus"
 continent = 2
 x = 634
 y = 212
+cardtype = "Cannon"
 connections = [31, 43]
 
 [[countries]]
@@ -228,6 +245,7 @@ name = "Barluk"
 continent = 6
 x = 601
 y = 316
+cardtype = "Cavalry"
 connections = [18, 43]
 
 [[countries]]
@@ -236,6 +254,7 @@ name = "Baracus"
 continent = 7
 x = 434
 y = 296
+cardtype = "Infantry"
 connections = [13, 24, 17]
 
 [[countries]]
@@ -244,6 +263,7 @@ name = "Kediel"
 continent = 7
 x = 367
 y = 269
+cardtype = "Cannon"
 connections = [23, 5, 29]
 
 [[countries]]
@@ -252,6 +272,7 @@ name = "Harrion"
 continent = 4
 x = 262
 y = 306
+cardtype = "Cavalry"
 connections = [26, 28, 30, 35]
 
 [[countries]]
@@ -260,6 +281,7 @@ name = "Kellst"
 continent = 4
 x = 281
 y = 236
+cardtype = "Infantry"
 connections = [25, 28, 29]
 
 [[countries]]
@@ -268,6 +290,7 @@ name = "Sadha"
 continent = 4
 x = 280
 y = 354
+cardtype = "Cannon"
 connections = [30, 46]
 
 [[countries]]
@@ -276,6 +299,7 @@ name = "Moresia"
 continent = 4
 x = 282
 y = 274
+cardtype = "Cavalry"
 connections = [30, 25, 26, 29]
 
 [[countries]]
@@ -284,6 +308,7 @@ name = "Ketal"
 continent = 4
 x = 337
 y = 251
+cardtype = "Infantry"
 connections = [28, 26, 24]
 
 [[countries]]
@@ -292,6 +317,7 @@ name = "Furm"
 continent = 4
 x = 299
 y = 316
+cardtype = "Cannon"
 connections = [28, 27, 25]
 
 [[countries]]
@@ -300,6 +326,7 @@ name = "Semai_Archipelago"
 continent = 7
 x = 63
 y = 171
+cardtype = "Cavalry"
 connections = [21, 3, 32]
 
 [[countries]]
@@ -308,6 +335,7 @@ name = "Habei"
 continent = 5
 x = 111
 y = 196
+cardtype = "Infantry"
 connections = [36, 38, 31]
 
 [[countries]]
@@ -316,6 +344,7 @@ name = "Sher"
 continent = 5
 x = 84
 y = 329
+cardtype = "Cannon"
 connections = [34, 36, 40, 41]
 
 [[countries]]
@@ -324,6 +353,7 @@ name = "Karei"
 continent = 5
 x = 175
 y = 317
+cardtype = "Cavalry"
 connections = [37, 35, 39, 33, 40]
 
 [[countries]]
@@ -332,6 +362,7 @@ name = "Dantz"
 continent = 5
 x = 217
 y = 335
+cardtype = "Infantry"
 connections = [25, 34]
 
 [[countries]]
@@ -340,6 +371,7 @@ name = "Khaist"
 continent = 5
 x = 106
 y = 263
+cardtype = "Cannon"
 connections = [33, 32, 39]
 
 [[countries]]
@@ -348,6 +380,7 @@ name = "Delan"
 continent = 5
 x = 210
 y = 268
+cardtype = "Cavalry"
 connections = [39, 38, 34]
 
 [[countries]]
@@ -356,6 +389,7 @@ name = "Pahr"
 continent = 5
 x = 186
 y = 214
+cardtype = "Infantry"
 connections = [37, 39, 32]
 
 [[countries]]
@@ -364,6 +398,7 @@ name = "Kham"
 continent = 5
 x = 162
 y = 263
+cardtype = "Cannon"
 connections = [37, 34, 36, 38]
 
 [[countries]]
@@ -372,6 +407,7 @@ name = "Barei"
 continent = 5
 x = 144
 y = 340
+cardtype = "Cavalry"
 connections = [41, 34, 33]
 
 [[countries]]
@@ -380,6 +416,7 @@ name = "Semul"
 continent = 7
 x = 100
 y = 368
+cardtype = "Infantry"
 connections = [40, 33]
 
 [[countries]]
@@ -388,6 +425,7 @@ name = "Kethil"
 continent = 7
 x = 148
 y = 36
+cardtype = "Cannon"
 connections = [1]
 
 [[countries]]
@@ -396,6 +434,7 @@ name = "Seramul"
 continent = 7
 x = 614
 y = 257
+cardtype = "Cavalry"
 connections = [21, 22, 13]
 
 [[countries]]
@@ -404,6 +443,7 @@ name = "Kairn"
 continent = 7
 x = 245
 y = 156
+cardtype = "Infantry"
 connections = [1]
 
 [[countries]]
@@ -412,6 +452,7 @@ name = "Mo-Kreshdi"
 continent = 7
 x = 316
 y = 160
+cardtype = "Cannon"
 connections = [4, 5]
 
 [[countries]]
@@ -420,6 +461,7 @@ name = "Mo-Sadha"
 continent = 8
 x = 332
 y = 411
+cardtype = ""
 connections = [53, 52, 27, 48]
 
 [[countries]]
@@ -428,6 +470,7 @@ name = "West_Desert"
 continent = 8
 x = 124
 y = 415
+cardtype = ""
 connections = [48, 50]
 
 [[countries]]
@@ -436,6 +479,7 @@ name = "East_Desert"
 continent = 8
 x = 228
 y = 423
+cardtype = ""
 connections = [46, 47]
 
 [[countries]]
@@ -444,6 +488,7 @@ name = "Duut"
 continent = 8
 x = 510
 y = 423
+cardtype = ""
 connections = [53, 52, 51, 54]
 
 [[countries]]
@@ -452,6 +497,7 @@ name = "Meratuk"
 continent = 8
 x = 19
 y = 411
+cardtype = ""
 connections = [47, 51]
 
 [[countries]]
@@ -460,6 +506,7 @@ name = "Mo-Somrei"
 continent = 8
 x = 605
 y = 420
+cardtype = ""
 connections = [50, 49, 55]
 
 [[countries]]
@@ -468,6 +515,7 @@ name = "Das"
 continent = 8
 x = 427
 y = 401
+cardtype = ""
 connections = [53, 49, 46, 54]
 
 [[countries]]
@@ -476,6 +524,7 @@ name = "Kar"
 continent = 8
 x = 434
 y = 421
+cardtype = ""
 connections = [52, 46, 49]
 
 [[countries]]
@@ -484,6 +533,7 @@ name = "Sharic"
 continent = 6
 x = 485
 y = 383
+cardtype = ""
 connections = [17, 52, 49]
 
 [[countries]]
@@ -492,4 +542,5 @@ name = "Homeri"
 continent = 6
 x = 602
 y = 398
+cardtype = ""
 connections = [51, 19]

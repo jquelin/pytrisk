@@ -1,11 +1,6 @@
 [info]
 name = "Roman Empire Map"
-
-[files]
-pic = "roman_empire_pic.png"
-map = "roman_empire_map.gif"
-crd = "roman_empire.cards"
-prv = "roman_empire.jpg"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -49,6 +44,7 @@ name = "Aegyptus"
 continent = 1
 x = 466
 y = 403
+cardtype = "Infantry"
 connections = [3, 6, 12]
 
 [[countries]]
@@ -57,6 +53,7 @@ name = "Africa_proconsularis"
 continent = 1
 x = 239
 y = 303
+cardtype = "Cannon"
 connections = [3, 4, 5, 44]
 
 [[countries]]
@@ -65,6 +62,7 @@ name = "Cyrenaica"
 continent = 1
 x = 368
 y = 366
+cardtype = "Infantry"
 connections = [1, 2]
 
 [[countries]]
@@ -73,6 +71,7 @@ name = "Numidia_inf."
 continent = 1
 x = 217
 y = 297
+cardtype = "Infantry"
 connections = [2, 5]
 
 [[countries]]
@@ -81,6 +80,7 @@ name = "Numidia_sup."
 continent = 1
 x = 203
 y = 323
+cardtype = "Cavalry"
 connections = [2, 4, 27]
 
 [[countries]]
@@ -89,6 +89,7 @@ name = "Arabia"
 continent = 2
 x = 526
 y = 386
+cardtype = "Cavalry"
 connections = [1, 12, 15]
 
 [[countries]]
@@ -97,6 +98,7 @@ name = "Bithynia"
 continent = 2
 x = 490
 y = 239
+cardtype = "Cavalry"
 connections = [10, 13, 14, 37]
 
 [[countries]]
@@ -105,6 +107,7 @@ name = "Cappadocia"
 continent = 2
 x = 538
 y = 263
+cardtype = "Cannon"
 connections = [9, 10, 14, 15]
 
 [[countries]]
@@ -113,6 +116,7 @@ name = "Cilicia"
 continent = 2
 x = 520
 y = 304
+cardtype = "Cannon"
 connections = [8, 10, 11, 12, 15]
 
 [[countries]]
@@ -121,6 +125,7 @@ name = "Galatia"
 continent = 2
 x = 508
 y = 271
+cardtype = "Cannon"
 connections = [7, 8, 9, 11, 13, 14]
 
 [[countries]]
@@ -129,6 +134,7 @@ name = "Lycia"
 continent = 2
 x = 490
 y = 287
+cardtype = "Cavalry"
 connections = [9, 10, 13]
 
 [[countries]]
@@ -137,6 +143,7 @@ name = "Palestina"
 continent = 2
 x = 537
 y = 354
+cardtype = "Cannon"
 connections = [1, 6, 9, 15]
 
 [[countries]]
@@ -145,6 +152,7 @@ name = "Phrygia"
 continent = 2
 x = 463
 y = 275
+cardtype = "Infantry"
 connections = [7, 10, 11, 29, 33, 37]
 
 [[countries]]
@@ -153,6 +161,7 @@ name = "Pontus"
 continent = 2
 x = 548
 y = 234
+cardtype = "Infantry"
 connections = [7, 8, 10]
 
 [[countries]]
@@ -161,6 +170,7 @@ name = "Syria"
 continent = 2
 x = 594
 y = 297
+cardtype = "Cannon"
 connections = [6, 8, 9, 12]
 
 [[countries]]
@@ -169,6 +179,7 @@ name = "Aquitania"
 continent = 3
 x = 122
 y = 182
+cardtype = "Cannon"
 connections = [21, 22, 28]
 
 [[countries]]
@@ -177,6 +188,7 @@ name = "Belgica"
 continent = 3
 x = 171
 y = 115
+cardtype = "Cavalry"
 connections = [18, 19, 20, 21]
 
 [[countries]]
@@ -185,6 +197,7 @@ name = "Britannia"
 continent = 3
 x = 101
 y = 37
+cardtype = "Cavalry"
 connections = [17, 21]
 
 [[countries]]
@@ -193,6 +206,7 @@ name = "Germania_inf."
 continent = 3
 x = 182
 y = 86
+cardtype = "Infantry"
 connections = [17, 20]
 
 [[countries]]
@@ -201,6 +215,7 @@ name = "Germania_sup."
 continent = 3
 x = 205
 y = 141
+cardtype = "Cavalry"
 connections = [17, 19, 21, 22, 39, 41]
 
 [[countries]]
@@ -209,6 +224,7 @@ name = "Lugdunensis"
 continent = 3
 x = 133
 y = 112
+cardtype = "Infantry"
 connections = [16, 17, 18, 20, 22]
 
 [[countries]]
@@ -217,6 +233,7 @@ name = "Narbonensis"
 continent = 3
 x = 183
 y = 180
+cardtype = "Infantry"
 connections = [16, 20, 21, 28, 38, 39]
 
 [[countries]]
@@ -225,6 +242,7 @@ name = "Baetica"
 continent = 4
 x = 55
 y = 274
+cardtype = "Cavalry"
 connections = [26, 27, 28]
 
 [[countries]]
@@ -233,6 +251,7 @@ name = "Baleares"
 continent = 4
 x = 161
 y = 240
+cardtype = "Cannon"
 connections = [28]
 
 [[countries]]
@@ -241,6 +260,7 @@ name = "Gallaecia_et_Asturia"
 continent = 4
 x = 30
 y = 219
+cardtype = "Cannon"
 connections = [26, 28]
 
 [[countries]]
@@ -249,6 +269,7 @@ name = "Lusitania"
 continent = 4
 x = 23
 y = 267
+cardtype = "Infantry"
 connections = [23, 25, 28]
 
 [[countries]]
@@ -257,6 +278,7 @@ name = "Mauretania"
 continent = 4
 x = 134
 y = 305
+cardtype = "Cannon"
 connections = [5, 23]
 
 [[countries]]
@@ -265,6 +287,7 @@ name = "Terraconensis"
 continent = 4
 x = 99
 y = 253
+cardtype = "Cavalry"
 connections = [16, 22, 23, 24, 25, 26]
 
 [[countries]]
@@ -273,6 +296,7 @@ name = "Achaia"
 continent = 5
 x = 389
 y = 280
+cardtype = "Cavalry"
 connections = [13, 32, 33]
 
 [[countries]]
@@ -281,6 +305,7 @@ name = "Dacia"
 continent = 5
 x = 403
 y = 173
+cardtype = "Infantry"
 connections = [34, 35, 36]
 
 [[countries]]
@@ -289,6 +314,7 @@ name = "Dalmatia"
 continent = 5
 x = 349
 y = 206
+cardtype = "Cannon"
 connections = [32, 33, 35, 36, 39, 42]
 
 [[countries]]
@@ -297,6 +323,7 @@ name = "Epirus"
 continent = 5
 x = 368
 y = 251
+cardtype = "Infantry"
 connections = [29, 31, 33, 42]
 
 [[countries]]
@@ -305,6 +332,7 @@ name = "Macedonia"
 continent = 5
 x = 392
 y = 249
+cardtype = "Cannon"
 connections = [13, 29, 31, 32, 35, 37]
 
 [[countries]]
@@ -313,6 +341,7 @@ name = "Moesia_inf."
 continent = 5
 x = 445
 y = 201
+cardtype = "Cavalry"
 connections = [30, 35, 37]
 
 [[countries]]
@@ -321,6 +350,7 @@ name = "Moesia_sup."
 continent = 5
 x = 392
 y = 210
+cardtype = "Infantry"
 connections = [30, 31, 33, 34, 36, 37]
 
 [[countries]]
@@ -329,6 +359,7 @@ name = "Pannonia"
 continent = 5
 x = 334
 y = 144
+cardtype = "Cannon"
 connections = [30, 31, 35, 39, 40]
 
 [[countries]]
@@ -337,6 +368,7 @@ name = "Thracia"
 continent = 5
 x = 436
 y = 228
+cardtype = "Infantry"
 connections = [7, 13, 33, 34, 35]
 
 [[countries]]
@@ -345,6 +377,7 @@ name = "Corsica"
 continent = 6
 x = 234
 y = 205
+cardtype = "Cavalry"
 connections = [22, 39, 42, 43]
 
 [[countries]]
@@ -353,6 +386,7 @@ name = "Gallia_Cisalpinia"
 continent = 6
 x = 256
 y = 162
+cardtype = "Cavalry"
 connections = [20, 22, 31, 36, 38, 40, 41, 42]
 
 [[countries]]
@@ -361,6 +395,7 @@ name = "Noricum"
 continent = 6
 x = 287
 y = 129
+cardtype = "Cavalry"
 connections = [36, 39, 41]
 
 [[countries]]
@@ -369,6 +404,7 @@ name = "Raetia"
 continent = 6
 x = 241
 y = 139
+cardtype = "Cannon"
 connections = [20, 39, 40]
 
 [[countries]]
@@ -377,6 +413,7 @@ name = "Roma"
 continent = 6
 x = 307
 y = 236
+cardtype = "Infantry"
 connections = [31, 32, 38, 39, 44]
 
 [[countries]]
@@ -385,6 +422,7 @@ name = "Sardinia"
 continent = 6
 x = 235
 y = 256
+cardtype = "Cavalry"
 connections = [38]
 
 [[countries]]
@@ -393,4 +431,5 @@ name = "Sicilia"
 continent = 6
 x = 286
 y = 274
+cardtype = "Cannon"
 connections = [2, 42]

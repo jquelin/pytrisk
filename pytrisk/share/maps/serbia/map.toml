@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "serbia_pic.png"
-map = "serbia_map.gif"
-crd = "serbia.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -48,6 +44,7 @@ name = "Subotica"
 continent = 1
 x = 380
 y = 110
+cardtype = "Infantry"
 connections = [2, 3, 4]
 
 [[countries]]
@@ -56,6 +53,7 @@ name = "Zrenjanin"
 continent = 1
 x = 425
 y = 128
+cardtype = "Cannon"
 connections = [1, 3, 20]
 
 [[countries]]
@@ -64,6 +62,7 @@ name = "Sremska_Mitrovica"
 continent = 1
 x = 397
 y = 146
+cardtype = "Infantry"
 connections = [1, 2, 4, 20, 26]
 
 [[countries]]
@@ -72,6 +71,7 @@ name = "Osijek"
 continent = 1
 x = 346
 y = 124
+cardtype = "Infantry"
 connections = [1, 3, 5, 6, 26]
 
 [[countries]]
@@ -80,6 +80,7 @@ name = "Bijelovar"
 continent = 1
 x = 308
 y = 124
+cardtype = "Cavalry"
 connections = [4, 6, 7, 26, 27]
 
 [[countries]]
@@ -88,6 +89,7 @@ name = "Posavina"
 continent = 2
 x = 320
 y = 154
+cardtype = "Cavalry"
 connections = [5, 7, 8, 26]
 
 [[countries]]
@@ -96,6 +98,7 @@ name = "Banja_Luka"
 continent = 2
 x = 274
 y = 170
+cardtype = "Cavalry"
 connections = [5, 6, 8, 9, 27, 28]
 
 [[countries]]
@@ -104,6 +107,7 @@ name = "Sarajevo"
 continent = 2
 x = 325
 y = 196
+cardtype = "Cannon"
 connections = [6, 7, 9, 25, 26]
 
 [[countries]]
@@ -112,6 +116,7 @@ name = "Mostar"
 continent = 2
 x = 320
 y = 254
+cardtype = "Cannon"
 connections = [7, 8, 16, 18, 25, 28, 29]
 
 [[countries]]
@@ -120,6 +125,7 @@ name = "Nis"
 continent = 3
 x = 484
 y = 263
+cardtype = "Cannon"
 connections = [11, 13, 15, 22, 23, 24]
 
 [[countries]]
@@ -128,6 +134,7 @@ name = "Kosovska_Mitrovica"
 continent = 3
 x = 440
 y = 269
+cardtype = "Cavalry"
 connections = [10, 12, 13, 24]
 
 [[countries]]
@@ -136,6 +143,7 @@ name = "Pec"
 continent = 3
 x = 425
 y = 291
+cardtype = "Cannon"
 connections = [11, 13, 17, 19, 24]
 
 [[countries]]
@@ -144,6 +152,7 @@ name = "Pristina"
 continent = 3
 x = 455
 y = 299
+cardtype = "Infantry"
 connections = [10, 11, 12, 14, 15]
 
 [[countries]]
@@ -152,6 +161,7 @@ name = "Bitolj"
 continent = 3
 x = 463
 y = 356
+cardtype = "Infantry"
 connections = [13, 15]
 
 [[countries]]
@@ -160,6 +170,7 @@ name = "Skoplje"
 continent = 3
 x = 500
 y = 333
+cardtype = "Cannon"
 connections = [10, 13, 14]
 
 [[countries]]
@@ -168,6 +179,7 @@ name = "Niksic"
 continent = 4
 x = 359
 y = 263
+cardtype = "Cannon"
 connections = [9, 17, 18, 24, 25]
 
 [[countries]]
@@ -176,6 +188,7 @@ name = "Podgorica"
 continent = 4
 x = 382
 y = 279
+cardtype = "Cavalry"
 connections = [12, 16, 18, 19, 24]
 
 [[countries]]
@@ -184,6 +197,7 @@ name = "Budva"
 continent = 4
 x = 353
 y = 303
+cardtype = "Cavalry"
 connections = [16, 17, 19, 29]
 
 [[countries]]
@@ -192,6 +206,7 @@ name = "Skadar"
 continent = 4
 x = 404
 y = 308
+cardtype = "Infantry"
 connections = [12, 13, 17, 18]
 
 [[countries]]
@@ -200,6 +215,7 @@ name = "Beograd"
 continent = 5
 x = 421
 y = 167
+cardtype = "Cavalry"
 connections = [2, 3, 21, 22]
 
 [[countries]]
@@ -208,6 +224,7 @@ name = "Uzice"
 continent = 5
 x = 395
 y = 201
+cardtype = "Infantry"
 connections = [3, 4, 20, 22, 24, 25, 26]
 
 [[countries]]
@@ -216,6 +233,7 @@ name = "Kragujevac"
 continent = 5
 x = 437
 y = 200
+cardtype = "Infantry"
 connections = [2, 10, 20, 21, 23, 24]
 
 [[countries]]
@@ -224,6 +242,7 @@ name = "Negotin"
 continent = 5
 x = 488
 y = 197
+cardtype = "Cavalry"
 connections = [2, 10, 22]
 
 [[countries]]
@@ -232,6 +251,7 @@ name = "Raska"
 continent = 5
 x = 410
 y = 243
+cardtype = "Cannon"
 connections = [10, 11, 12, 16, 17, 21, 22, 25]
 
 [[countries]]
@@ -240,6 +260,7 @@ name = "Visegrad"
 continent = 5
 x = 362
 y = 212
+cardtype = "Cannon"
 connections = [8, 9, 16, 21, 24, 26]
 
 [[countries]]
@@ -248,6 +269,7 @@ name = "Bijeljina"
 continent = 5
 x = 352
 y = 164
+cardtype = "Infantry"
 connections = [4, 5, 6, 8, 25, 27]
 
 [[countries]]
@@ -256,6 +278,7 @@ name = "Knin"
 continent = 6
 x = 216
 y = 151
+cardtype = "Cannon"
 connections = [5, 7, 28]
 
 [[countries]]
@@ -264,6 +287,7 @@ name = "Split"
 continent = 6
 x = 277
 y = 240
+cardtype = "Cavalry"
 connections = [7, 9, 27]
 
 [[countries]]
@@ -272,4 +296,5 @@ name = "Dubrovnik"
 continent = 6
 x = 315
 y = 278
+cardtype = "Cavalry"
 connections = [9, 18]

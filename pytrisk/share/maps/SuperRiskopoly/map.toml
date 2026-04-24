@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "SuperRiskopoly_pic.png"
-map = "SuperRiskopoly_map.gif"
-crd = "SuperRiskopoly.cards"
+nb_wildcards = 20
 
 [[continents]]
 id = 1
@@ -132,6 +128,7 @@ name = "Mediterranean_Avenue"
 continent = 1
 x = 458
 y = 371
+cardtype = "Cavalry"
 connections = [23, 2, 50]
 
 [[countries]]
@@ -140,6 +137,7 @@ name = "Baltic_Avenue"
 continent = 1
 x = 389
 y = 372
+cardtype = "Infantry"
 connections = [39, 1, 50]
 
 [[countries]]
@@ -148,6 +146,7 @@ name = "Oriental_Avenue"
 continent = 2
 x = 288
 y = 371
+cardtype = "Cannon"
 connections = [26, 4, 5, 44]
 
 [[countries]]
@@ -156,6 +155,7 @@ name = "Vermont_Avenue"
 continent = 2
 x = 217
 y = 371
+cardtype = "Cavalry"
 connections = [5, 3, 44]
 
 [[countries]]
@@ -164,6 +164,7 @@ name = "Connecticut_Avenue"
 continent = 2
 x = 180
 y = 372
+cardtype = "Infantry"
 connections = [35, 4, 3, 44]
 
 [[countries]]
@@ -172,6 +173,7 @@ name = "St._Charles_Place"
 continent = 3
 x = 158
 y = 349
+cardtype = "Cannon"
 connections = [33, 7, 8, 46]
 
 [[countries]]
@@ -180,6 +182,7 @@ name = "States_Avenue"
 continent = 3
 x = 158
 y = 280
+cardtype = "Cavalry"
 connections = [8, 6, 46]
 
 [[countries]]
@@ -188,6 +191,7 @@ name = "Virginia_Avenue"
 continent = 3
 x = 159
 y = 243
+cardtype = "Infantry"
 connections = [30, 7, 6, 46]
 
 [[countries]]
@@ -196,6 +200,7 @@ name = "St._James_Place"
 continent = 4
 x = 160
 y = 178
+cardtype = "Cannon"
 connections = [24, 10, 11, 48]
 
 [[countries]]
@@ -204,6 +209,7 @@ name = "Tennessee_Avenue"
 continent = 4
 x = 159
 y = 110
+cardtype = "Cavalry"
 connections = [11, 9, 48]
 
 [[countries]]
@@ -212,6 +218,7 @@ name = "New_York_Avenue"
 continent = 4
 x = 159
 y = 75
+cardtype = "Infantry"
 connections = [38, 10, 9, 48]
 
 [[countries]]
@@ -220,6 +227,7 @@ name = "Kentucky_Avenue"
 continent = 5
 x = 181
 y = 52
+cardtype = "Cannon"
 connections = [27, 13, 14, 53]
 
 [[countries]]
@@ -228,6 +236,7 @@ name = "Indiana_Avenue"
 continent = 5
 x = 251
 y = 52
+cardtype = "Cavalry"
 connections = [14, 12, 53]
 
 [[countries]]
@@ -236,6 +245,7 @@ name = "Illinois_Avenue"
 continent = 5
 x = 288
 y = 52
+cardtype = "Infantry"
 connections = [31, 13, 12, 53]
 
 [[countries]]
@@ -244,6 +254,7 @@ name = "Atlantic_Avenue"
 continent = 6
 x = 353
 y = 51
+cardtype = "Cannon"
 connections = [16, 17, 54]
 
 [[countries]]
@@ -252,6 +263,7 @@ name = "Ventnor_Avenue"
 continent = 6
 x = 391
 y = 53
+cardtype = "Cavalry"
 connections = [34, 15, 17, 54]
 
 [[countries]]
@@ -260,6 +272,7 @@ name = "Marvin_Gardens"
 continent = 6
 x = 460
 y = 49
+cardtype = "Infantry"
 connections = [36, 16, 15, 54]
 
 [[countries]]
@@ -268,6 +281,7 @@ name = "Pacific_Avenue"
 continent = 7
 x = 483
 y = 74
+cardtype = "Cannon"
 connections = [19, 20, 56]
 
 [[countries]]
@@ -276,6 +290,7 @@ name = "North_Carolina_Avenue"
 continent = 7
 x = 483
 y = 107
+cardtype = "Cavalry"
 connections = [25, 20, 18, 56]
 
 [[countries]]
@@ -284,6 +299,7 @@ name = "Pennsylvania_Avenue"
 continent = 7
 x = 482
 y = 177
+cardtype = "Infantry"
 connections = [32, 19, 18, 56]
 
 [[countries]]
@@ -292,6 +308,7 @@ name = "Park_Place"
 continent = 8
 x = 480
 y = 280
+cardtype = "Cannon"
 connections = [40, 22, 58]
 
 [[countries]]
@@ -300,6 +317,7 @@ name = "Boardwalk"
 continent = 8
 x = 482
 y = 348
+cardtype = "Cavalry"
 connections = [37, 21, 58]
 
 [[countries]]
@@ -308,6 +326,7 @@ name = "Community_Chest_South"
 continent = 9
 x = 421
 y = 397
+cardtype = "Infantry"
 connections = [2, 42]
 
 [[countries]]
@@ -316,6 +335,7 @@ name = "Community_Chest_West"
 continent = 9
 x = 137
 y = 143
+cardtype = "Cannon"
 connections = [10, 42]
 
 [[countries]]
@@ -324,6 +344,7 @@ name = "Community_Chest_East"
 continent = 9
 x = 505
 y = 144
+cardtype = "Cavalry"
 connections = [20, 42]
 
 [[countries]]
@@ -332,6 +353,7 @@ name = "Chance_South"
 continent = 10
 x = 252
 y = 385
+cardtype = "Infantry"
 connections = [4, 41]
 
 [[countries]]
@@ -340,6 +362,7 @@ name = "Chance_North"
 continent = 10
 x = 218
 y = 38
+cardtype = "Cannon"
 connections = [13, 41]
 
 [[countries]]
@@ -348,6 +371,7 @@ name = "Chance_East"
 continent = 10
 x = 496
 y = 243
+cardtype = "Cavalry"
 connections = [21, 41]
 
 [[countries]]
@@ -356,6 +380,7 @@ name = "Reading_Railroad_South"
 continent = 11
 x = 318
 y = 408
+cardtype = "Infantry"
 connections = [3, 32]
 
 [[countries]]
@@ -364,6 +389,7 @@ name = "Pennsylvania_Railroad_West"
 continent = 11
 x = 127
 y = 210
+cardtype = "Cannon"
 connections = [9, 29]
 
 [[countries]]
@@ -372,6 +398,7 @@ name = "B&O_Railroad_North"
 continent = 11
 x = 320
 y = 20
+cardtype = "Cavalry"
 connections = [15, 30]
 
 [[countries]]
@@ -380,6 +407,7 @@ name = "Short_Line_East"
 continent = 11
 x = 511
 y = 210
+cardtype = "Infantry"
 connections = [28, 31]
 
 [[countries]]
@@ -388,6 +416,7 @@ name = "Electric_Company"
 continent = 12
 x = 136
 y = 313
+cardtype = "Cannon"
 connections = [7]
 
 [[countries]]
@@ -396,6 +425,7 @@ name = "Water_Works"
 continent = 12
 x = 423
 y = 23
+cardtype = "Cavalry"
 connections = [17]
 
 [[countries]]
@@ -404,6 +434,7 @@ name = "Jail"
 continent = 13
 x = 146
 y = 384
+cardtype = "Infantry"
 connections = [6]
 
 [[countries]]
@@ -412,6 +443,7 @@ name = "Police"
 continent = 13
 x = 507
 y = 33
+cardtype = "Cannon"
 connections = [18, 35]
 
 [[countries]]
@@ -420,6 +452,7 @@ name = "Go"
 continent = 14
 x = 507
 y = 395
+cardtype = "Cavalry"
 connections = [1]
 
 [[countries]]
@@ -428,6 +461,7 @@ name = "Free_Parking"
 continent = 15
 x = 141
 y = 33
+cardtype = "Infantry"
 connections = [12]
 
 [[countries]]
@@ -436,6 +470,7 @@ name = "Income_Tax"
 continent = 16
 x = 351
 y = 399
+cardtype = "Cannon"
 connections = [29]
 
 [[countries]]
@@ -444,6 +479,7 @@ name = "Luxury_Tax"
 continent = 16
 x = 509
 y = 313
+cardtype = "Cavalry"
 connections = [22]
 
 [[countries]]
@@ -452,6 +488,7 @@ name = "Chance_stack"
 continent = 17
 x = 244
 y = 145
+cardtype = "Infantry"
 connections = [27, 26, 28]
 
 [[countries]]
@@ -460,6 +497,7 @@ name = "Community_chest_stack"
 continent = 18
 x = 419
 y = 327
+cardtype = "Cannon"
 connections = [23, 25, 24]
 
 [[countries]]
@@ -468,6 +506,7 @@ name = "2000_Bugs"
 continent = 19
 x = 291
 y = 318
+cardtype = "Cavalry"
 connections = [50, 45, 44]
 
 [[countries]]
@@ -476,6 +515,7 @@ name = "400_Bugs"
 continent = 19
 x = 255
 y = 352
+cardtype = "Infantry"
 connections = [43, 45, 3, 4, 5]
 
 [[countries]]
@@ -484,6 +524,7 @@ name = "1000_Bugs"
 continent = 19
 x = 219
 y = 338
+cardtype = "Cannon"
 connections = [51, 43, 44, 46]
 
 [[countries]]
@@ -492,6 +533,7 @@ name = "10_Bugs_are_10_Bugs."
 continent = 19
 x = 189
 y = 302
+cardtype = "Cavalry"
 connections = [51, 45, 47, 49, 6, 7, 8]
 
 [[countries]]
@@ -500,6 +542,7 @@ name = "100_Bugs"
 continent = 19
 x = 186
 y = 252
+cardtype = "Infantry"
 connections = [46, 48, 49]
 
 [[countries]]
@@ -508,6 +551,7 @@ name = "I_want_these_10.000_Bugs!"
 continent = 19
 x = 217
 y = 229
+cardtype = "Cannon"
 connections = [47, 49, 9, 10, 11]
 
 [[countries]]
@@ -516,6 +560,7 @@ name = "20_Bugs"
 continent = 19
 x = 252
 y = 244
+cardtype = "Cavalry"
 connections = [51, 46, 48, 47, 50]
 
 [[countries]]
@@ -524,6 +569,7 @@ name = "200_Bugs"
 continent = 19
 x = 277
 y = 257
+cardtype = "Infantry"
 connections = [51, 43, 49, 2, 1]
 
 [[countries]]
@@ -532,6 +578,7 @@ name = "100_Bugs"
 continent = 19
 x = 238
 y = 296
+cardtype = "Cannon"
 connections = [49, 50, 46, 45]
 
 [[countries]]
@@ -540,6 +587,7 @@ name = "2000_Bugs"
 continent = 20
 x = 370
 y = 160
+cardtype = "Cavalry"
 connections = [60, 59, 54, 53]
 
 [[countries]]
@@ -548,6 +596,7 @@ name = "100_Bugs"
 continent = 20
 x = 341
 y = 129
+cardtype = "Infantry"
 connections = [14, 13, 12, 52]
 
 [[countries]]
@@ -556,6 +605,7 @@ name = "200_Bugs"
 continent = 20
 x = 384
 y = 82
+cardtype = "Cannon"
 connections = [52, 59, 55, 15, 16, 17]
 
 [[countries]]
@@ -564,6 +614,7 @@ name = "20_Bugs"
 continent = 20
 x = 425
 y = 72
+cardtype = "Cavalry"
 connections = [60, 54, 56, 59]
 
 [[countries]]
@@ -572,6 +623,7 @@ name = "I_want_these_10.000_Bugs!"
 continent = 20
 x = 459
 y = 93
+cardtype = "Infantry"
 connections = [60, 55, 57, 18, 19, 20]
 
 [[countries]]
@@ -580,6 +632,7 @@ name = "20_Bugs"
 continent = 20
 x = 462
 y = 140
+cardtype = "Cannon"
 connections = [60, 56]
 
 [[countries]]
@@ -588,6 +641,7 @@ name = "400_Bugs"
 continent = 20
 x = 429
 y = 171
+cardtype = "Cavalry"
 connections = [60, 21, 22]
 
 [[countries]]
@@ -596,6 +650,7 @@ name = "400_Bugs"
 continent = 20
 x = 380
 y = 112
+cardtype = "Infantry"
 connections = [60, 52, 54, 55]
 
 [[countries]]
@@ -604,4 +659,5 @@ name = "10_Bugs_are_10_Bugs."
 continent = 20
 x = 416
 y = 135
+cardtype = "Cannon"
 connections = [58, 57, 56, 59, 55, 52]

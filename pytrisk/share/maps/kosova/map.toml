@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "kosova_pic.png"
-map = "kosova_map.gif"
-crd = "kosova.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -54,6 +50,7 @@ name = "Albanik"
 continent = 1
 x = 309
 y = 33
+cardtype = "Infantry"
 connections = [2, 4, 6]
 
 [[countries]]
@@ -62,6 +59,7 @@ name = "Zveçan"
 continent = 1
 x = 316
 y = 93
+cardtype = "Cannon"
 connections = [1, 4, 3]
 
 [[countries]]
@@ -70,6 +68,7 @@ name = "Zubin_Potok"
 continent = 1
 x = 276
 y = 104
+cardtype = "Infantry"
 connections = [2, 4, 26, 24]
 
 [[countries]]
@@ -78,6 +77,7 @@ name = "Mitrovica"
 continent = 1
 x = 350
 y = 96
+cardtype = "Infantry"
 connections = [1, 5, 2, 6, 3, 24]
 
 [[countries]]
@@ -86,6 +86,7 @@ name = "Vushtrri"
 continent = 1
 x = 354
 y = 140
+cardtype = "Cavalry"
 connections = [4, 6, 7, 24, 23]
 
 [[countries]]
@@ -94,6 +95,7 @@ name = "Besianë"
 continent = 2
 x = 408
 y = 129
+cardtype = "Cavalry"
 connections = [4, 1, 5, 7, 10]
 
 [[countries]]
@@ -102,6 +104,7 @@ name = "Kastriot"
 continent = 2
 x = 378
 y = 163
+cardtype = "Cavalry"
 connections = [6, 8, 10, 5, 23]
 
 [[countries]]
@@ -110,6 +113,7 @@ name = "Fushë_Kosovë"
 continent = 2
 x = 366
 y = 194
+cardtype = "Cannon"
 connections = [9, 7, 23, 10]
 
 [[countries]]
@@ -118,6 +122,7 @@ name = "Graçanicë"
 continent = 2
 x = 383
 y = 220
+cardtype = "Cannon"
 connections = [12, 13, 16, 10, 8, 23, 22, 18, 17]
 
 [[countries]]
@@ -126,6 +131,7 @@ name = "Prishtina"
 continent = 2
 x = 420
 y = 174
+cardtype = "Cannon"
 connections = [6, 11, 12, 9, 8, 7]
 
 [[countries]]
@@ -134,6 +140,7 @@ name = "Dardanë"
 continent = 3
 x = 488
 y = 195
+cardtype = "Cavalry"
 connections = [10, 13]
 
 [[countries]]
@@ -142,6 +149,7 @@ name = "Artanë"
 continent = 3
 x = 435
 y = 204
+cardtype = "Cannon"
 connections = [13, 10, 9]
 
 [[countries]]
@@ -150,6 +158,7 @@ name = "Gjilani"
 continent = 3
 x = 452
 y = 243
+cardtype = "Infantry"
 connections = [11, 12, 14, 16, 9]
 
 [[countries]]
@@ -158,6 +167,7 @@ name = "Viti"
 continent = 4
 x = 434
 y = 280
+cardtype = "Infantry"
 connections = [13, 15, 16]
 
 [[countries]]
@@ -166,6 +176,7 @@ name = "Kaçanik"
 continent = 4
 x = 404
 y = 308
+cardtype = "Cannon"
 connections = [14, 16, 19]
 
 [[countries]]
@@ -174,6 +185,7 @@ name = "Ferizaji"
 continent = 4
 x = 391
 y = 263
+cardtype = "Cannon"
 connections = [13, 14, 15, 19, 18, 17, 9]
 
 [[countries]]
@@ -182,6 +194,7 @@ name = "Shtimje"
 continent = 4
 x = 358
 y = 248
+cardtype = "Cavalry"
 connections = [16, 18, 9]
 
 [[countries]]
@@ -190,6 +203,7 @@ name = "Therandë"
 continent = 5
 x = 326
 y = 267
+cardtype = "Cavalry"
 connections = [16, 9, 30, 20, 19, 22, 17]
 
 [[countries]]
@@ -198,6 +212,7 @@ name = "Shtërpcë"
 continent = 5
 x = 360
 y = 308
+cardtype = "Infantry"
 connections = [16, 20, 18, 15]
 
 [[countries]]
@@ -206,6 +221,7 @@ name = "Prizreni"
 continent = 5
 x = 296
 y = 304
+cardtype = "Cavalry"
 connections = [29, 30, 21, 19, 18]
 
 [[countries]]
@@ -214,6 +230,7 @@ name = "Dragash"
 continent = 5
 x = 291
 y = 357
+cardtype = "Infantry"
 connections = [20]
 
 [[countries]]
@@ -222,6 +239,7 @@ name = "Malishevë"
 continent = 6
 x = 299
 y = 223
+cardtype = "Infantry"
 connections = [9, 24, 25, 30, 18, 23]
 
 [[countries]]
@@ -230,6 +248,7 @@ name = "Drenas"
 continent = 6
 x = 330
 y = 194
+cardtype = "Cavalry"
 connections = [9, 8, 5, 24, 22, 7]
 
 [[countries]]
@@ -238,6 +257,7 @@ name = "Skënderaj"
 continent = 6
 x = 301
 y = 158
+cardtype = "Cannon"
 connections = [3, 5, 26, 25, 23, 22, 4]
 
 [[countries]]
@@ -246,6 +266,7 @@ name = "Klinë"
 continent = 6
 x = 272
 y = 193
+cardtype = "Cannon"
 connections = [24, 26, 27, 22, 30, 29]
 
 [[countries]]
@@ -254,6 +275,7 @@ name = "Burim"
 continent = 7
 x = 251
 y = 147
+cardtype = "Infantry"
 connections = [3, 24, 25, 27]
 
 [[countries]]
@@ -262,6 +284,7 @@ name = "Peja"
 continent = 7
 x = 208
 y = 175
+cardtype = "Cannon"
 connections = [26, 28, 25]
 
 [[countries]]
@@ -270,6 +293,7 @@ name = "Deçan"
 continent = 7
 x = 202
 y = 217
+cardtype = "Cavalry"
 connections = [27, 29]
 
 [[countries]]
@@ -278,6 +302,7 @@ name = "Gjakova"
 continent = 7
 x = 233
 y = 259
+cardtype = "Cavalry"
 connections = [25, 28, 30, 20]
 
 [[countries]]
@@ -286,4 +311,5 @@ name = "Rahovec"
 continent = 7
 x = 281
 y = 253
+cardtype = "Infantry"
 connections = [25, 29, 22, 18, 20]

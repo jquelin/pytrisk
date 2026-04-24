@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "austria_map.png"
-map = "austria_map.gif"
-crd = "austria_map.cards"
+nb_wildcards = 3
 
 [[continents]]
 id = 1
@@ -66,6 +62,7 @@ name = "Bregenz"
 continent = 1
 x = 38
 y = 284
+cardtype = "Infantry"
 connections = [2, 3]
 
 [[countries]]
@@ -74,6 +71,7 @@ name = "Feldkirch"
 continent = 1
 x = 14
 y = 295
+cardtype = "Cavalry"
 connections = [1, 3]
 
 [[countries]]
@@ -82,6 +80,7 @@ name = "Bludenz"
 continent = 1
 x = 33
 y = 318
+cardtype = "Cannon"
 connections = [1, 2, 4, 5]
 
 [[countries]]
@@ -90,6 +89,7 @@ name = "Reutte"
 continent = 2
 x = 99
 y = 279
+cardtype = "Infantry"
 connections = [3, 5, 6, 7]
 
 [[countries]]
@@ -98,6 +98,7 @@ name = "Landeck"
 continent = 2
 x = 89
 y = 334
+cardtype = "Cavalry"
 connections = [3, 4, 6]
 
 [[countries]]
@@ -106,6 +107,7 @@ name = "Imst"
 continent = 2
 x = 115
 y = 312
+cardtype = "Cannon"
 connections = [4, 5, 7]
 
 [[countries]]
@@ -114,6 +116,7 @@ name = "Innsbruck"
 continent = 2
 x = 161
 y = 318
+cardtype = "Infantry"
 connections = [4, 6, 8]
 
 [[countries]]
@@ -122,6 +125,7 @@ name = "Schwaz"
 continent = 2
 x = 206
 y = 324
+cardtype = "Cavalry"
 connections = [7, 9, 11]
 
 [[countries]]
@@ -130,6 +134,7 @@ name = "Kitzbühel"
 continent = 2
 x = 234
 y = 277
+cardtype = "Cannon"
 connections = [8, 11]
 
 [[countries]]
@@ -138,6 +143,7 @@ name = "Osttirol"
 continent = 2
 x = 260
 y = 351
+cardtype = "Infantry"
 connections = [11, 51]
 
 [[countries]]
@@ -146,6 +152,7 @@ name = "Pinzgau"
 continent = 3
 x = 284
 y = 302
+cardtype = "Cavalry"
 connections = [8, 9, 10, 12, 51]
 
 [[countries]]
@@ -154,6 +161,7 @@ name = "Pongau"
 continent = 3
 x = 332
 y = 295
+cardtype = "Cannon"
 connections = [11, 13, 14, 18, 42, 51]
 
 [[countries]]
@@ -162,6 +170,7 @@ name = "Lungau"
 continent = 3
 x = 367
 y = 323
+cardtype = "Infantry"
 connections = [12, 42, 43, 51]
 
 [[countries]]
@@ -170,6 +179,7 @@ name = "Tennengau"
 continent = 3
 x = 326
 y = 259
+cardtype = "Cavalry"
 connections = [12, 15, 18]
 
 [[countries]]
@@ -178,6 +188,7 @@ name = "Salzburg"
 continent = 3
 x = 318
 y = 225
+cardtype = "Cannon"
 connections = [14, 16, 17, 18]
 
 [[countries]]
@@ -186,6 +197,7 @@ name = "Braunau"
 continent = 4
 x = 320
 y = 192
+cardtype = "Infantry"
 connections = [15, 17, 19]
 
 [[countries]]
@@ -194,6 +206,7 @@ name = "Vöcklabruck"
 continent = 4
 x = 354
 y = 214
+cardtype = "Cavalry"
 connections = [15, 16, 18, 19, 52]
 
 [[countries]]
@@ -202,6 +215,7 @@ name = "Gmunden"
 continent = 4
 x = 382
 y = 232
+cardtype = "Cannon"
 connections = [12, 14, 15, 17, 22, 42, 52]
 
 [[countries]]
@@ -210,6 +224,7 @@ name = "Innviertel"
 continent = 4
 x = 352
 y = 162
+cardtype = "Infantry"
 connections = [16, 17, 21, 52]
 
 [[countries]]
@@ -218,6 +233,7 @@ name = "Linz"
 continent = 4
 x = 421
 y = 183
+cardtype = "Cavalry"
 connections = [21, 22, 25, 52]
 
 [[countries]]
@@ -226,6 +242,7 @@ name = "Mühlviertel"
 continent = 4
 x = 451
 y = 161
+cardtype = "Cannon"
 connections = [19, 20, 23, 24, 25, 52]
 
 [[countries]]
@@ -234,6 +251,7 @@ name = "Traunviertel"
 continent = 4
 x = 424
 y = 226
+cardtype = "Infantry"
 connections = [18, 20, 25, 42, 52]
 
 [[countries]]
@@ -242,6 +260,7 @@ name = "Waldviertel"
 continent = 5
 x = 500
 y = 100
+cardtype = "Cavalry"
 connections = [21, 24, 26, 27]
 
 [[countries]]
@@ -250,6 +269,7 @@ name = "Zwettl"
 continent = 5
 x = 492
 y = 137
+cardtype = "Cannon"
 connections = [21, 23, 25, 26]
 
 [[countries]]
@@ -258,6 +278,7 @@ name = "Mostviertel"
 continent = 5
 x = 479
 y = 206
+cardtype = "Infantry"
 connections = [20, 21, 22, 24, 26, 28, 41, 42]
 
 [[countries]]
@@ -266,6 +287,7 @@ name = "St._Pölten"
 continent = 5
 x = 549
 y = 175
+cardtype = "Cavalry"
 connections = [23, 24, 25, 27, 28, 32]
 
 [[countries]]
@@ -274,6 +296,7 @@ name = "Weinviertel"
 continent = 5
 x = 610
 y = 136
+cardtype = "Cannon"
 connections = [23, 26, 28, 30, 32, 33]
 
 [[countries]]
@@ -282,6 +305,7 @@ name = "Industrieviertel"
 continent = 5
 x = 573
 y = 233
+cardtype = "Infantry"
 connections = [25, 26, 27, 30, 31, 32, 34, 35, 37, 40, 41]
 
 [[countries]]
@@ -290,6 +314,7 @@ name = "Innere_Stadt"
 continent = 6
 x = 134
 y = 168
+cardtype = "Cavalry"
 connections = [30, 31, 32, 33]
 
 [[countries]]
@@ -298,6 +323,7 @@ name = "Donaustadt"
 continent = 6
 x = 182
 y = 146
+cardtype = "Cannon"
 connections = [27, 28, 29, 31, 33]
 
 [[countries]]
@@ -306,6 +332,7 @@ name = "Favoriten"
 continent = 6
 x = 137
 y = 215
+cardtype = "Infantry"
 connections = [28, 29, 30, 32]
 
 [[countries]]
@@ -314,6 +341,7 @@ name = "Hietzing"
 continent = 6
 x = 68
 y = 190
+cardtype = "Cavalry"
 connections = [26, 27, 28, 29, 31, 33]
 
 [[countries]]
@@ -322,6 +350,7 @@ name = "Döbling"
 continent = 6
 x = 104
 y = 141
+cardtype = "Cannon"
 connections = [27, 29, 30, 32]
 
 [[countries]]
@@ -330,6 +359,7 @@ name = "Eisenstadt"
 continent = 7
 x = 645
 y = 222
+cardtype = "Infantry"
 connections = [28, 35]
 
 [[countries]]
@@ -338,6 +368,7 @@ name = "Südburgenland"
 continent = 7
 x = 598
 y = 304
+cardtype = "Cavalry"
 connections = [28, 34, 36, 37]
 
 [[countries]]
@@ -346,6 +377,7 @@ name = "Radkersburg"
 continent = 8
 x = 563
 y = 361
+cardtype = "Cannon"
 connections = [35, 37, 38, 40]
 
 [[countries]]
@@ -354,6 +386,7 @@ name = "Fürstenfeld"
 continent = 8
 x = 568
 y = 304
+cardtype = "Infantry"
 connections = [28, 35, 36, 40]
 
 [[countries]]
@@ -362,6 +395,7 @@ name = "Leibnitz"
 continent = 8
 x = 533
 y = 372
+cardtype = "Cavalry"
 connections = [36, 39, 40]
 
 [[countries]]
@@ -370,6 +404,7 @@ name = "Deutschlandsberg"
 continent = 8
 x = 504
 y = 369
+cardtype = "Cannon"
 connections = [38, 40, 44, 46]
 
 [[countries]]
@@ -378,6 +413,7 @@ name = "Graz"
 continent = 8
 x = 530
 y = 320
+cardtype = "Infantry"
 connections = [28, 36, 37, 38, 39, 41, 44, 45]
 
 [[countries]]
@@ -386,6 +422,7 @@ name = "Bruck_an_der_Mur"
 continent = 8
 x = 518
 y = 268
+cardtype = "Cavalry"
 connections = [25, 28, 40, 42, 45]
 
 [[countries]]
@@ -394,6 +431,7 @@ name = "Liezen"
 continent = 8
 x = 397
 y = 283
+cardtype = "Cannon"
 connections = [12, 13, 18, 22, 25, 41, 43, 44, 45]
 
 [[countries]]
@@ -402,6 +440,7 @@ name = "Murau"
 continent = 8
 x = 412
 y = 321
+cardtype = "Infantry"
 connections = [13, 42, 44, 47, 50, 51]
 
 [[countries]]
@@ -410,6 +449,7 @@ name = "Judenburg"
 continent = 8
 x = 458
 y = 327
+cardtype = "Cavalry"
 connections = [39, 40, 42, 43, 45, 46, 47]
 
 [[countries]]
@@ -418,6 +458,7 @@ name = "Leoben"
 continent = 8
 x = 474
 y = 296
+cardtype = "Cannon"
 connections = [40, 41, 42, 44]
 
 [[countries]]
@@ -426,6 +467,7 @@ name = "Wolfsberg"
 continent = 9
 x = 473
 y = 360
+cardtype = "Infantry"
 connections = [39, 44, 47, 48]
 
 [[countries]]
@@ -434,6 +476,7 @@ name = "St._Veit"
 continent = 9
 x = 428
 y = 360
+cardtype = "Cavalry"
 connections = [43, 44, 46, 48, 49, 50]
 
 [[countries]]
@@ -442,6 +485,7 @@ name = "Völkermarkt"
 continent = 9
 x = 457
 y = 397
+cardtype = "Infantry"
 connections = [46, 47, 49]
 
 [[countries]]
@@ -450,6 +494,7 @@ name = "Klagenfurt"
 continent = 9
 x = 423
 y = 400
+cardtype = "Cavalry"
 connections = [47, 48, 50]
 
 [[countries]]
@@ -458,6 +503,7 @@ name = "Villach"
 continent = 9
 x = 380
 y = 390
+cardtype = "Infantry"
 connections = [43, 47, 49, 51]
 
 [[countries]]
@@ -466,6 +512,7 @@ name = "Spittal"
 continent = 9
 x = 323
 y = 368
+cardtype = "Infantry"
 connections = [10, 11, 12, 13, 43, 50]
 
 [[countries]]
@@ -474,4 +521,5 @@ name = "Hausruckviertel"
 continent = 4
 x = 382
 y = 181
+cardtype = "Infantry"
 connections = [17, 18, 19, 20, 21, 22]

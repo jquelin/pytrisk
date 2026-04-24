@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "france.jpg"
-map = "france.gif"
-crd = "france.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -144,6 +140,7 @@ name = "Ain"
 continent = 10
 x = 343
 y = 230
+cardtype = "Infantry"
 connections = [39, 74, 73, 38, 69, 71]
 
 [[countries]]
@@ -152,6 +149,7 @@ name = "Aisne"
 continent = 4
 x = 290
 y = 77
+cardtype = "Cannon"
 connections = [59, 8, 51, 77, 60, 80]
 
 [[countries]]
@@ -160,6 +158,7 @@ name = "Allier"
 continent = 21
 x = 284
 y = 216
+cardtype = "Infantry"
 connections = [18, 58, 71, 63, 23, 42]
 
 [[countries]]
@@ -168,6 +167,7 @@ name = "Alpes-de-Haute-Provence"
 continent = 11
 x = 381
 y = 323
+cardtype = "Infantry"
 connections = [5, 6, 83, 13, 84, 26]
 
 [[countries]]
@@ -176,6 +176,7 @@ name = "Hautes-Alpes"
 continent = 11
 x = 380
 y = 301
+cardtype = "Cavalry"
 connections = [38, 73, 4, 26]
 
 [[countries]]
@@ -184,6 +185,7 @@ name = "Alpes-Maritimes"
 continent = 11
 x = 414
 y = 333
+cardtype = "Cavalry"
 connections = [4, 83, 96]
 
 [[countries]]
@@ -192,6 +194,7 @@ name = "Ardeche"
 continent = 10
 x = 324
 y = 298
+cardtype = "Cavalry"
 connections = [43, 42, 26, 84, 30, 48]
 
 [[countries]]
@@ -200,6 +203,7 @@ name = "Ardennes"
 continent = 6
 x = 321
 y = 71
+cardtype = "Cannon"
 connections = [2, 55, 51]
 
 [[countries]]
@@ -208,6 +212,7 @@ name = "Ariege"
 continent = 14
 x = 226
 y = 378
+cardtype = "Cannon"
 connections = [31, 11, 66]
 
 [[countries]]
@@ -216,6 +221,7 @@ name = "Aube"
 continent = 6
 x = 305
 y = 136
+cardtype = "Cannon"
 connections = [51, 52, 21, 89, 77]
 
 [[countries]]
@@ -224,6 +230,7 @@ name = "Aude"
 continent = 13
 x = 254
 y = 369
+cardtype = "Cavalry"
 connections = [81, 34, 66, 9, 31]
 
 [[countries]]
@@ -232,6 +239,7 @@ name = "Aveyron"
 continent = 14
 x = 261
 y = 317
+cardtype = "Cannon"
 connections = [15, 48, 30, 34, 81, 82, 46]
 
 [[countries]]
@@ -240,6 +248,7 @@ name = "Bouches-du-Rhone"
 continent = 11
 x = 354
 y = 354
+cardtype = "Infantry"
 connections = [20, 30, 84, 4, 83]
 
 [[countries]]
@@ -248,6 +257,7 @@ name = "Calvados"
 continent = 2
 x = 172
 y = 97
+cardtype = "Infantry"
 connections = [50, 27, 61]
 
 [[countries]]
@@ -256,6 +266,7 @@ name = "Cantal"
 continent = 21
 x = 256
 y = 288
+cardtype = "Cannon"
 connections = [63, 43, 48, 12, 46, 19]
 
 [[countries]]
@@ -264,6 +275,7 @@ name = "Charente"
 continent = 16
 x = 182
 y = 254
+cardtype = "Cannon"
 connections = [17, 79, 86, 87, 24]
 
 [[countries]]
@@ -272,6 +284,7 @@ name = "Charente-Maritime"
 continent = 16
 x = 151
 y = 246
+cardtype = "Cavalry"
 connections = [85, 79, 16, 33]
 
 [[countries]]
@@ -280,6 +293,7 @@ name = "Cher"
 continent = 18
 x = 258
 y = 191
+cardtype = "Cavalry"
 connections = [45, 58, 3, 23, 36, 41]
 
 [[countries]]
@@ -288,6 +302,7 @@ name = "Correze"
 continent = 22
 x = 235
 y = 271
+cardtype = "Infantry"
 connections = [87, 23, 63, 15, 46, 24]
 
 [[countries]]
@@ -296,6 +311,7 @@ name = "Corse-du-Sud"
 continent = 12
 x = 443
 y = 398
+cardtype = "Cavalry"
 connections = [96, 13, 83]
 
 [[countries]]
@@ -304,6 +320,7 @@ name = "Cote-d-Or"
 continent = 20
 x = 335
 y = 178
+cardtype = "Infantry"
 connections = [10, 52, 70, 39, 71, 58, 89]
 
 [[countries]]
@@ -312,6 +329,7 @@ name = "Cotes-d-Armor"
 continent = 1
 x = 100
 y = 128
+cardtype = "Infantry"
 connections = [29, 56, 35]
 
 [[countries]]
@@ -320,6 +338,7 @@ name = "Creuse"
 continent = 22
 x = 247
 y = 237
+cardtype = "Cavalry"
 connections = [19, 87, 36, 18, 3, 63]
 
 [[countries]]
@@ -328,6 +347,7 @@ name = "Dordogne"
 continent = 15
 x = 202
 y = 281
+cardtype = "Cannon"
 connections = [87, 19, 46, 47, 33, 16]
 
 [[countries]]
@@ -336,6 +356,7 @@ name = "Doubs"
 continent = 9
 x = 376
 y = 182
+cardtype = "Cannon"
 connections = [70, 90, 39]
 
 [[countries]]
@@ -344,6 +365,7 @@ name = "Drome"
 continent = 10
 x = 342
 y = 301
+cardtype = "Infantry"
 connections = [4, 7, 42, 38, 5, 84]
 
 [[countries]]
@@ -352,6 +374,7 @@ name = "Eure"
 continent = 3
 x = 212
 y = 103
+cardtype = "Cannon"
 connections = [76, 95, 78, 28, 61, 14, 60]
 
 [[countries]]
@@ -360,6 +383,7 @@ name = "Eure-et-Loire"
 continent = 18
 x = 224
 y = 131
+cardtype = "Cavalry"
 connections = [27, 78, 91, 45, 41, 72, 61]
 
 [[countries]]
@@ -368,6 +392,7 @@ name = "Finistere"
 continent = 1
 x = 63
 y = 126
+cardtype = "Cavalry"
 connections = [22, 56]
 
 [[countries]]
@@ -376,6 +401,7 @@ name = "Gard"
 continent = 13
 x = 320
 y = 336
+cardtype = "Infantry"
 connections = [48, 7, 84, 13, 34, 12]
 
 [[countries]]
@@ -384,6 +410,7 @@ name = "Haute-Garonne"
 continent = 14
 x = 223
 y = 351
+cardtype = "Cannon"
 connections = [65, 32, 82, 81, 11, 9]
 
 [[countries]]
@@ -392,6 +419,7 @@ name = "Gers"
 continent = 14
 x = 195
 y = 344
+cardtype = "Infantry"
 connections = [40, 47, 82, 31, 65, 64]
 
 [[countries]]
@@ -400,6 +428,7 @@ name = "Gironde"
 continent = 15
 x = 155
 y = 299
+cardtype = "Cannon"
 connections = [17, 24, 47, 40]
 
 [[countries]]
@@ -408,6 +437,7 @@ name = "Herault"
 continent = 13
 x = 296
 y = 346
+cardtype = "Cavalry"
 connections = [81, 12, 30, 11]
 
 [[countries]]
@@ -416,6 +446,7 @@ name = "Ille-et-Vilaine"
 continent = 1
 x = 131
 y = 141
+cardtype = "Infantry"
 connections = [22, 50, 53, 44, 56]
 
 [[countries]]
@@ -424,6 +455,7 @@ name = "Indre"
 continent = 18
 x = 233
 y = 203
+cardtype = "Cannon"
 connections = [37, 41, 18, 23, 87, 86]
 
 [[countries]]
@@ -432,6 +464,7 @@ name = "Indre-et-Loire"
 continent = 18
 x = 201
 y = 181
+cardtype = "Infantry"
 connections = [72, 41, 36, 86, 49]
 
 [[countries]]
@@ -440,6 +473,7 @@ name = "Isere"
 continent = 10
 x = 363
 y = 276
+cardtype = "Cavalry"
 connections = [1, 73, 5, 26, 42, 69]
 
 [[countries]]
@@ -448,6 +482,7 @@ name = "Jura"
 continent = 9
 x = 360
 y = 208
+cardtype = "Cavalry"
 connections = [1, 71, 21, 70, 25]
 
 [[countries]]
@@ -456,6 +491,7 @@ name = "Landes"
 continent = 15
 x = 150
 y = 335
+cardtype = "Cavalry"
 connections = [33, 47, 32, 64]
 
 [[countries]]
@@ -464,6 +500,7 @@ name = "Loire-et-Cher"
 continent = 18
 x = 221
 y = 165
+cardtype = "Cannon"
 connections = [28, 45, 18, 36, 37, 72]
 
 [[countries]]
@@ -472,6 +509,7 @@ name = "Loire"
 continent = 10
 x = 315
 y = 261
+cardtype = "Infantry"
 connections = [69, 38, 26, 7, 43, 63, 3, 71]
 
 [[countries]]
@@ -480,6 +518,7 @@ name = "Haute-Loire"
 continent = 21
 x = 304
 y = 281
+cardtype = "Infantry"
 connections = [42, 7, 48, 15, 63]
 
 [[countries]]
@@ -488,6 +527,7 @@ name = "Loire-Atlantique"
 continent = 17
 x = 132
 y = 176
+cardtype = "Infantry"
 connections = [56, 35, 49, 85]
 
 [[countries]]
@@ -496,6 +536,7 @@ name = "Loiret"
 continent = 18
 x = 248
 y = 155
+cardtype = "Infantry"
 connections = [28, 91, 77, 89, 18, 41, 58]
 
 [[countries]]
@@ -504,6 +545,7 @@ name = "Lot"
 continent = 14
 x = 226
 y = 309
+cardtype = "Infantry"
 connections = [24, 19, 15, 12, 82, 47]
 
 [[countries]]
@@ -512,6 +554,7 @@ name = "Lot-et-Garonne"
 continent = 15
 x = 190
 y = 317
+cardtype = "Infantry"
 connections = [24, 46, 82, 32, 40, 33]
 
 [[countries]]
@@ -520,6 +563,7 @@ name = "Lozere"
 continent = 13
 x = 292
 y = 308
+cardtype = "Infantry"
 connections = [15, 43, 7, 30, 12]
 
 [[countries]]
@@ -528,6 +572,7 @@ name = "Maine-et-Loire"
 continent = 17
 x = 168
 y = 175
+cardtype = "Cavalry"
 connections = [44, 53, 72, 37, 86, 79, 85]
 
 [[countries]]
@@ -536,6 +581,7 @@ name = "Manche"
 continent = 2
 x = 143
 y = 94
+cardtype = "Cavalry"
 connections = [14, 61, 53, 35]
 
 [[countries]]
@@ -544,6 +590,7 @@ name = "Marne"
 continent = 6
 x = 314
 y = 106
+cardtype = "Cavalry"
 connections = [2, 8, 55, 52, 10, 77]
 
 [[countries]]
@@ -552,6 +599,7 @@ name = "Haute-Marne"
 continent = 6
 x = 342
 y = 145
+cardtype = "Cavalry"
 connections = [51, 55, 88, 70, 21, 10]
 
 [[countries]]
@@ -560,6 +608,7 @@ name = "Mayenne"
 continent = 17
 x = 161
 y = 144
+cardtype = "Cavalry"
 connections = [35, 50, 61, 72, 49]
 
 [[countries]]
@@ -568,6 +617,7 @@ name = "Meurthe-et-Moselle"
 continent = 7
 x = 370
 y = 115
+cardtype = "Cavalry"
 connections = [55, 57, 67, 88]
 
 [[countries]]
@@ -576,6 +626,7 @@ name = "Meuse"
 continent = 7
 x = 344
 y = 99
+cardtype = "Cannon"
 connections = [8, 54, 88, 52, 51]
 
 [[countries]]
@@ -584,6 +635,7 @@ name = "Morbihan"
 continent = 1
 x = 102
 y = 153
+cardtype = "Cannon"
 connections = [29, 22, 35, 44]
 
 [[countries]]
@@ -592,6 +644,7 @@ name = "Moselle"
 continent = 7
 x = 379
 y = 94
+cardtype = "Cannon"
 connections = [54, 67]
 
 [[countries]]
@@ -600,6 +653,7 @@ name = "Nievre"
 continent = 20
 x = 292
 y = 191
+cardtype = "Cannon"
 connections = [89, 21, 71, 3, 18, 45]
 
 [[countries]]
@@ -608,6 +662,7 @@ name = "Nord"
 continent = 5
 x = 274
 y = 29
+cardtype = "Cannon"
 connections = [2, 80, 62]
 
 [[countries]]
@@ -616,6 +671,7 @@ name = "Oise"
 continent = 4
 x = 251
 y = 85
+cardtype = "Cannon"
 connections = [2, 77, 95, 27, 76, 80]
 
 [[countries]]
@@ -624,6 +680,7 @@ name = "Orne"
 continent = 2
 x = 191
 y = 117
+cardtype = ""
 connections = [14, 27, 28, 72, 53, 50]
 
 [[countries]]
@@ -632,6 +689,7 @@ name = "Pas-de-Calais"
 continent = 5
 x = 262
 y = 45
+cardtype = ""
 connections = [59, 80]
 
 [[countries]]
@@ -640,6 +698,7 @@ name = "Puy-de-Dome"
 continent = 21
 x = 278
 y = 249
+cardtype = ""
 connections = [3, 42, 43, 15, 19, 23]
 
 [[countries]]
@@ -648,6 +707,7 @@ name = "Pyrenees-Atlantiques"
 continent = 15
 x = 159
 y = 360
+cardtype = ""
 connections = [40, 32, 65]
 
 [[countries]]
@@ -656,6 +716,7 @@ name = "Hautes-Pyrenees"
 continent = 14
 x = 187
 y = 378
+cardtype = ""
 connections = [64, 32, 31]
 
 [[countries]]
@@ -664,6 +725,7 @@ name = "Pyrenees-Orientales"
 continent = 13
 x = 261
 y = 395
+cardtype = ""
 connections = [9, 11]
 
 [[countries]]
@@ -672,6 +734,7 @@ name = "Bas-Rhin"
 continent = 8
 x = 410
 y = 112
+cardtype = ""
 connections = [57, 54, 68]
 
 [[countries]]
@@ -680,6 +743,7 @@ name = "Haut-Rhin"
 continent = 8
 x = 404
 y = 146
+cardtype = ""
 connections = [67, 88, 90]
 
 [[countries]]
@@ -688,6 +752,7 @@ name = "Rhone"
 continent = 10
 x = 329
 y = 250
+cardtype = ""
 connections = [1, 38, 42, 71]
 
 [[countries]]
@@ -696,6 +761,7 @@ name = "Haute-Saone"
 continent = 9
 x = 368
 y = 160
+cardtype = ""
 connections = [88, 90, 25, 21, 52, 39]
 
 [[countries]]
@@ -704,6 +770,7 @@ name = "Saone-et-Loire"
 continent = 20
 x = 323
 y = 208
+cardtype = ""
 connections = [1, 69, 42, 3, 58, 21, 39]
 
 [[countries]]
@@ -712,6 +779,7 @@ name = "Sarthe"
 continent = 17
 x = 190
 y = 147
+cardtype = ""
 connections = [53, 61, 28, 41, 37, 49]
 
 [[countries]]
@@ -720,6 +788,7 @@ name = "Savoie"
 continent = 10
 x = 388
 y = 264
+cardtype = ""
 connections = [1, 74, 38, 5]
 
 [[countries]]
@@ -728,6 +797,7 @@ name = "Haute-Savoie"
 continent = 10
 x = 382
 y = 236
+cardtype = ""
 connections = [1, 73]
 
 [[countries]]
@@ -736,6 +806,7 @@ name = "Paris"
 continent = 19
 x = 49
 y = 208
+cardtype = ""
 connections = [92, 93, 94]
 
 [[countries]]
@@ -744,6 +815,7 @@ name = "Seine-Maritime"
 continent = 3
 x = 216
 y = 74
+cardtype = ""
 connections = [80, 60, 27]
 
 [[countries]]
@@ -752,6 +824,7 @@ name = "Seine-et-Marne"
 continent = 19
 x = 271
 y = 118
+cardtype = ""
 connections = [2, 60, 51, 10, 89, 45, 91, 94, 93, 95]
 
 [[countries]]
@@ -760,6 +833,7 @@ name = "Yvelines"
 continent = 19
 x = 239
 y = 116
+cardtype = ""
 connections = [27, 95, 92, 91, 28]
 
 [[countries]]
@@ -768,6 +842,7 @@ name = "Deux-Sevres"
 continent = 16
 x = 170
 y = 224
+cardtype = ""
 connections = [86, 16, 17, 85, 49]
 
 [[countries]]
@@ -776,6 +851,7 @@ name = "Somme"
 continent = 4
 x = 252
 y = 63
+cardtype = ""
 connections = [2, 62, 60, 76, 59]
 
 [[countries]]
@@ -784,6 +860,7 @@ name = "Tarn"
 continent = 14
 x = 249
 y = 341
+cardtype = ""
 connections = [82, 12, 34, 11, 31]
 
 [[countries]]
@@ -792,6 +869,7 @@ name = "Tarn-et-Garonne"
 continent = 14
 x = 216
 y = 330
+cardtype = ""
 connections = [46, 12, 81, 31, 32, 47]
 
 [[countries]]
@@ -800,6 +878,7 @@ name = "Var"
 continent = 11
 x = 381
 y = 361
+cardtype = ""
 connections = [13, 84, 4, 6, 20, 96]
 
 [[countries]]
@@ -808,6 +887,7 @@ name = "Vaucluse"
 continent = 11
 x = 346
 y = 333
+cardtype = ""
 connections = [30, 7, 26, 4, 83, 13]
 
 [[countries]]
@@ -816,6 +896,7 @@ name = "Vendee"
 continent = 17
 x = 142
 y = 211
+cardtype = ""
 connections = [44, 49, 79, 17]
 
 [[countries]]
@@ -824,6 +905,7 @@ name = "Vienne"
 continent = 16
 x = 193
 y = 215
+cardtype = ""
 connections = [37, 36, 87, 16, 79, 49]
 
 [[countries]]
@@ -832,6 +914,7 @@ name = "Haute-Vienne"
 continent = 22
 x = 218
 y = 249
+cardtype = ""
 connections = [23, 19, 24, 16, 86, 36]
 
 [[countries]]
@@ -840,6 +923,7 @@ name = "Vosges"
 continent = 7
 x = 378
 y = 139
+cardtype = ""
 connections = [54, 55, 90, 52, 68, 70]
 
 [[countries]]
@@ -848,6 +932,7 @@ name = "Yonne"
 continent = 20
 x = 291
 y = 157
+cardtype = ""
 connections = [10, 21, 58, 45, 77]
 
 [[countries]]
@@ -856,6 +941,7 @@ name = "Territoire-de-Belfort"
 continent = 9
 x = 395
 y = 163
+cardtype = ""
 connections = [88, 68, 25, 70]
 
 [[countries]]
@@ -864,6 +950,7 @@ name = "Essonne"
 continent = 19
 x = 252
 y = 124
+cardtype = ""
 connections = [78, 92, 94, 77, 45, 28]
 
 [[countries]]
@@ -872,6 +959,7 @@ name = "Hauts-de-Seine"
 continent = 19
 x = 15
 y = 204
+cardtype = ""
 connections = [75, 94, 93, 91, 78, 95]
 
 [[countries]]
@@ -880,6 +968,7 @@ name = "Seine-Saint-Denis"
 continent = 19
 x = 71
 y = 189
+cardtype = ""
 connections = [95, 77, 75, 92, 94]
 
 [[countries]]
@@ -888,6 +977,7 @@ name = "Val-de-Marne"
 continent = 19
 x = 64
 y = 233
+cardtype = ""
 connections = [75, 93, 77, 91, 92]
 
 [[countries]]
@@ -896,6 +986,7 @@ name = "Val-d-Oise"
 continent = 19
 x = 252
 y = 101
+cardtype = ""
 connections = [60, 77, 93, 92, 78, 27]
 
 [[countries]]
@@ -904,4 +995,5 @@ name = "Haute-Corse"
 continent = 12
 x = 447
 y = 366
+cardtype = ""
 connections = [20, 83, 6]

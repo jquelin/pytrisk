@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "troisdorf_pic.png"
-map = "troisdorf_map.gif"
-crd = "troisdorf.cards"
+nb_wildcards = 0
 
 [[continents]]
 id = 1
@@ -84,6 +80,7 @@ name = "Müllekoven-Nord"
 continent = 1
 x = 216
 y = 374
+cardtype = "Cavalry"
 connections = [2, 18, 15]
 
 [[countries]]
@@ -92,6 +89,7 @@ name = "Müllekoven_Süd"
 continent = 1
 x = 225
 y = 397
+cardtype = "Infantry"
 connections = [1]
 
 [[countries]]
@@ -100,6 +98,7 @@ name = "Altenrath-Nordost"
 continent = 2
 x = 496
 y = 129
+cardtype = "Cannon"
 connections = [4]
 
 [[countries]]
@@ -108,6 +107,7 @@ name = "Altenrath-Südwest"
 continent = 2
 x = 478
 y = 146
+cardtype = "Cavalry"
 connections = [3, 40, 39]
 
 [[countries]]
@@ -116,6 +116,7 @@ name = "Kriegsdorf-Nordost"
 continent = 3
 x = 198
 y = 218
+cardtype = "Infantry"
 connections = [11, 6]
 
 [[countries]]
@@ -124,6 +125,7 @@ name = "Kriegsdorf-Südwest"
 continent = 3
 x = 179
 y = 237
+cardtype = "Cannon"
 connections = [5]
 
 [[countries]]
@@ -132,6 +134,7 @@ name = "West-Nord"
 continent = 4
 x = 456
 y = 272
+cardtype = "Cavalry"
 connections = [41, 8, 9]
 
 [[countries]]
@@ -140,6 +143,7 @@ name = "West-Südwest"
 continent = 4
 x = 443
 y = 295
+cardtype = "Infantry"
 connections = [7, 9, 20]
 
 [[countries]]
@@ -148,6 +152,7 @@ name = "West-Südost"
 continent = 4
 x = 473
 y = 296
+cardtype = "Cannon"
 connections = [8, 7]
 
 [[countries]]
@@ -156,6 +161,7 @@ name = "Rotter_See-Nordost"
 continent = 5
 x = 255
 y = 214
+cardtype = "Cavalry"
 connections = [12, 11, 25]
 
 [[countries]]
@@ -164,6 +170,7 @@ name = "Rotter_See-Nordwest"
 continent = 5
 x = 230
 y = 226
+cardtype = "Infantry"
 connections = [12, 13, 10, 5]
 
 [[countries]]
@@ -172,6 +179,7 @@ name = "Rotter_See-Südost"
 continent = 5
 x = 252
 y = 244
+cardtype = "Cannon"
 connections = [34, 13, 10, 11]
 
 [[countries]]
@@ -180,6 +188,7 @@ name = "Rotter_See-Südwest"
 continent = 5
 x = 231
 y = 252
+cardtype = "Cavalry"
 connections = [12, 11]
 
 [[countries]]
@@ -188,6 +197,7 @@ name = "Eschmar-Ost"
 continent = 6
 x = 245
 y = 320
+cardtype = "Infantry"
 connections = [15, 35, 34]
 
 [[countries]]
@@ -196,6 +206,7 @@ name = "Eschmar-West"
 continent = 6
 x = 220
 y = 333
+cardtype = "Cannon"
 connections = [1, 17, 14]
 
 [[countries]]
@@ -204,6 +215,7 @@ name = "Bergheim-West"
 continent = 7
 x = 167
 y = 351
+cardtype = "Cavalry"
 connections = [18, 17]
 
 [[countries]]
@@ -212,6 +224,7 @@ name = "Bergheim-Nordost"
 continent = 7
 x = 191
 y = 338
+cardtype = "Infantry"
 connections = [16, 18, 15]
 
 [[countries]]
@@ -220,6 +233,7 @@ name = "Bergheim-Südost"
 continent = 7
 x = 190
 y = 363
+cardtype = "Cannon"
 connections = [1, 16, 17]
 
 [[countries]]
@@ -228,6 +242,7 @@ name = "F-W-H-Nord"
 continent = 8
 x = 395
 y = 291
+cardtype = "Cavalry"
 connections = [20, 42, 21, 22]
 
 [[countries]]
@@ -236,6 +251,7 @@ name = "F-W-H-Ost"
 continent = 8
 x = 412
 y = 310
+cardtype = "Infantry"
 connections = [8, 21, 19]
 
 [[countries]]
@@ -244,6 +260,7 @@ name = "F-W-H-Süd"
 continent = 8
 x = 387
 y = 326
+cardtype = "Cannon"
 connections = [20, 19, 22]
 
 [[countries]]
@@ -252,6 +269,7 @@ name = "F-W-H-West"
 continent = 8
 x = 368
 y = 291
+cardtype = "Cavalry"
 connections = [33, 19, 21]
 
 [[countries]]
@@ -260,6 +278,7 @@ name = "Oberlar-Nord"
 continent = 9
 x = 301
 y = 186
+cardtype = "Infantry"
 connections = [25, 27, 24, 30]
 
 [[countries]]
@@ -268,6 +287,7 @@ name = "Oberlar-Ost"
 continent = 9
 x = 324
 y = 205
+cardtype = "Cannon"
 connections = [23, 26]
 
 [[countries]]
@@ -276,6 +296,7 @@ name = "Oberlar-West"
 continent = 9
 x = 273
 y = 204
+cardtype = "Cavalry"
 connections = [10, 27, 23, 26]
 
 [[countries]]
@@ -284,6 +305,7 @@ name = "Oberlar-Süd"
 continent = 9
 x = 306
 y = 228
+cardtype = "Infantry"
 connections = [34, 25, 27, 24]
 
 [[countries]]
@@ -292,6 +314,7 @@ name = "Oberlar-Mitte"
 continent = 9
 x = 293
 y = 208
+cardtype = "Cannon"
 connections = [25, 23, 26]
 
 [[countries]]
@@ -300,6 +323,7 @@ name = "Spich-Nord"
 continent = 10
 x = 329
 y = 77
+cardtype = "Cavalry"
 connections = [32, 31]
 
 [[countries]]
@@ -308,6 +332,7 @@ name = "Spich-Ost"
 continent = 10
 x = 356
 y = 118
+cardtype = "Infantry"
 connections = [30, 32, 37]
 
 [[countries]]
@@ -316,6 +341,7 @@ name = "Spich-Süd"
 continent = 10
 x = 320
 y = 143
+cardtype = "Cannon"
 connections = [23, 43, 31, 32, 29]
 
 [[countries]]
@@ -324,6 +350,7 @@ name = "Spich-West"
 continent = 10
 x = 295
 y = 103
+cardtype = "Cavalry"
 connections = [30, 32, 28]
 
 [[countries]]
@@ -332,6 +359,7 @@ name = "Spich-Mitte"
 continent = 10
 x = 326
 y = 111
+cardtype = "Infantry"
 connections = [30, 31, 28, 29]
 
 [[countries]]
@@ -340,6 +368,7 @@ name = "Sieglar-Nordost"
 continent = 11
 x = 325
 y = 295
+cardtype = "Cannon"
 connections = [36, 34, 22, 43]
 
 [[countries]]
@@ -348,6 +377,7 @@ name = "Sieglar-Nordwest"
 continent = 11
 x = 290
 y = 286
+cardtype = "Cavalry"
 connections = [14, 12, 26, 35, 33]
 
 [[countries]]
@@ -356,6 +386,7 @@ name = "Sieglar-Südwest"
 continent = 11
 x = 289
 y = 318
+cardtype = "Infantry"
 connections = [14, 36, 34]
 
 [[countries]]
@@ -364,6 +395,7 @@ name = "Sieglar-Süd"
 continent = 11
 x = 319
 y = 331
+cardtype = "Cannon"
 connections = [35, 33]
 
 [[countries]]
@@ -372,6 +404,7 @@ name = "Mitte-Nordwest"
 continent = 12
 x = 379
 y = 142
+cardtype = "Cavalry"
 connections = [29, 43, 44, 38]
 
 [[countries]]
@@ -380,6 +413,7 @@ name = "Mitte-Nord"
 continent = 12
 x = 425
 y = 152
+cardtype = "Infantry"
 connections = [39, 44, 37, 45, 40]
 
 [[countries]]
@@ -388,6 +422,7 @@ name = "Mitte-Nordost"
 continent = 12
 x = 458
 y = 144
+cardtype = "Cannon"
 connections = [4, 40, 38]
 
 [[countries]]
@@ -396,6 +431,7 @@ name = "Mitte-Ost"
 continent = 12
 x = 471
 y = 188
+cardtype = "Cavalry"
 connections = [4, 39, 41, 38, 45]
 
 [[countries]]
@@ -404,6 +440,7 @@ name = "Mitte-Südost"
 continent = 12
 x = 442
 y = 243
+cardtype = "Infantry"
 connections = [42, 45, 40, 7]
 
 [[countries]]
@@ -412,6 +449,7 @@ name = "Mitte-Südwest"
 continent = 12
 x = 394
 y = 238
+cardtype = "Cannon"
 connections = [41, 19, 43, 44, 45]
 
 [[countries]]
@@ -420,6 +458,7 @@ name = "Mitte-West"
 continent = 12
 x = 351
 y = 197
+cardtype = "Cavalry"
 connections = [33, 30, 42, 44, 37]
 
 [[countries]]
@@ -428,6 +467,7 @@ name = "Mitte-Zentrum_West"
 continent = 12
 x = 394
 y = 191
+cardtype = "Infantry"
 connections = [43, 42, 45, 38, 37]
 
 [[countries]]
@@ -436,4 +476,5 @@ name = "Mitte-Zentrum_Ost"
 continent = 12
 x = 439
 y = 211
+cardtype = "Cannon"
 connections = [41, 44, 38, 40, 42]

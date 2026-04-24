@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "Simpsons_pic.png"
-map = "Simpsons_map.gif"
-crd = "Simpsons.cards"
+nb_wildcards = 6
 
 [[continents]]
 id = 1
@@ -24,6 +20,7 @@ name = "Entry"
 continent = 1
 x = 105
 y = 237
+cardtype = "Infantry"
 connections = [7, 6, 17]
 
 [[countries]]
@@ -32,6 +29,7 @@ name = "Garage"
 continent = 1
 x = 206
 y = 312
+cardtype = "Cannon"
 connections = [3]
 
 [[countries]]
@@ -40,6 +38,7 @@ name = "Laundry"
 continent = 1
 x = 230
 y = 219
+cardtype = "Cavalry"
 connections = [2, 4]
 
 [[countries]]
@@ -48,6 +47,7 @@ name = "Rumpus_room"
 continent = 1
 x = 233
 y = 144
+cardtype = "Infantry"
 connections = [3, 5]
 
 [[countries]]
@@ -56,6 +56,7 @@ name = "Kitchen"
 continent = 1
 x = 149
 y = 109
+cardtype = "Cannon"
 connections = [4, 6, 8]
 
 [[countries]]
@@ -64,6 +65,7 @@ name = "Dining_room"
 continent = 1
 x = 159
 y = 200
+cardtype = "Cavalry"
 connections = [1, 5]
 
 [[countries]]
@@ -72,6 +74,7 @@ name = "Living_room"
 continent = 1
 x = 51
 y = 217
+cardtype = "Infantry"
 connections = [1, 8]
 
 [[countries]]
@@ -80,6 +83,7 @@ name = "TV_room"
 continent = 1
 x = 56
 y = 131
+cardtype = "Cannon"
 connections = [5, 7]
 
 [[countries]]
@@ -88,6 +92,7 @@ name = "Bart's_room"
 continent = 2
 x = 354
 y = 226
+cardtype = "Cavalry"
 connections = [17]
 
 [[countries]]
@@ -96,6 +101,7 @@ name = "Lisa's_room"
 continent = 2
 x = 505
 y = 233
+cardtype = "Infantry"
 connections = [17]
 
 [[countries]]
@@ -104,6 +110,7 @@ name = "Homer_&_Marge's_room"
 continent = 2
 x = 610
 y = 221
+cardtype = "Cannon"
 connections = [17, 12, 13]
 
 [[countries]]
@@ -112,6 +119,7 @@ name = "Homer_&_Marge's_closet"
 continent = 2
 x = 628
 y = 95
+cardtype = "Cavalry"
 connections = [11]
 
 [[countries]]
@@ -120,6 +128,7 @@ name = "Homer_et_Marge's_bathroom"
 continent = 2
 x = 543
 y = 76
+cardtype = "Infantry"
 connections = [11]
 
 [[countries]]
@@ -128,6 +137,7 @@ name = "Maggie's_room"
 continent = 2
 x = 473
 y = 79
+cardtype = "Cannon"
 connections = [17, 15]
 
 [[countries]]
@@ -136,6 +146,7 @@ name = "Maggie's_closet"
 continent = 2
 x = 407
 y = 96
+cardtype = "Cavalry"
 connections = [14]
 
 [[countries]]
@@ -144,6 +155,7 @@ name = "Bathroom"
 continent = 2
 x = 347
 y = 104
+cardtype = "Infantry"
 connections = [17]
 
 [[countries]]
@@ -152,4 +164,5 @@ name = "Hall"
 continent = 2
 x = 448
 y = 138
+cardtype = "Cannon"
 connections = [1, 9, 10, 11, 14, 16]

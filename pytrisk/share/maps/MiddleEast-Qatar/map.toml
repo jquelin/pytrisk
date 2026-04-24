@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "MiddleEast-Qatar_pic.png"
-map = "MiddleEast-Qatar_map.gif"
-crd = "MiddleEast-Qatar.cards"
+nb_wildcards = 0
 
 [[continents]]
 id = 1
@@ -36,6 +32,7 @@ name = "1"
 continent = 1
 x = 547
 y = 213
+cardtype = ""
 connections = [24, 3, 2]
 
 [[countries]]
@@ -44,6 +41,7 @@ name = "2"
 continent = 1
 x = 495
 y = 266
+cardtype = ""
 connections = [1, 4]
 
 [[countries]]
@@ -52,6 +50,7 @@ name = "3"
 continent = 1
 x = 473
 y = 184
+cardtype = ""
 connections = [1, 4, 21, 5]
 
 [[countries]]
@@ -60,6 +59,7 @@ name = "4"
 continent = 1
 x = 417
 y = 237
+cardtype = ""
 connections = [3, 2, 5, 7, 15]
 
 [[countries]]
@@ -68,6 +68,7 @@ name = "5"
 continent = 1
 x = 396
 y = 187
+cardtype = ""
 connections = [4, 21, 6, 3]
 
 [[countries]]
@@ -76,6 +77,7 @@ name = "6"
 continent = 1
 x = 339
 y = 162
+cardtype = ""
 connections = [5, 14, 7, 11, 21]
 
 [[countries]]
@@ -84,6 +86,7 @@ name = "7"
 continent = 1
 x = 322
 y = 231
+cardtype = ""
 connections = [4, 13, 15, 14, 6]
 
 [[countries]]
@@ -92,6 +95,7 @@ name = "1"
 continent = 2
 x = 160
 y = 152
+cardtype = ""
 connections = [10, 9, 20, 19, 16, 11]
 
 [[countries]]
@@ -100,6 +104,7 @@ name = "2"
 continent = 2
 x = 189
 y = 237
+cardtype = ""
 connections = [10, 12, 8, 20]
 
 [[countries]]
@@ -108,6 +113,7 @@ name = "3"
 continent = 2
 x = 238
 y = 198
+cardtype = ""
 connections = [14, 11, 9, 13, 8]
 
 [[countries]]
@@ -116,6 +122,7 @@ name = "4"
 continent = 2
 x = 267
 y = 157
+cardtype = ""
 connections = [14, 10, 18, 6, 8]
 
 [[countries]]
@@ -124,6 +131,7 @@ name = "5"
 continent = 2
 x = 264
 y = 275
+cardtype = ""
 connections = [9, 13]
 
 [[countries]]
@@ -132,6 +140,7 @@ name = "6"
 continent = 2
 x = 295
 y = 267
+cardtype = ""
 connections = [15, 7, 10, 12]
 
 [[countries]]
@@ -140,6 +149,7 @@ name = "7"
 continent = 2
 x = 287
 y = 210
+cardtype = ""
 connections = [7, 11, 6, 10]
 
 [[countries]]
@@ -148,6 +158,7 @@ name = "8"
 continent = 2
 x = 325
 y = 268
+cardtype = ""
 connections = [4, 13, 7]
 
 [[countries]]
@@ -156,6 +167,7 @@ name = "1"
 continent = 4
 x = 67
 y = 39
+cardtype = ""
 connections = [17, 18, 8, 19]
 
 [[countries]]
@@ -164,6 +176,7 @@ name = "2"
 continent = 4
 x = 272
 y = 25
+cardtype = ""
 connections = [22, 18, 16]
 
 [[countries]]
@@ -172,6 +185,7 @@ name = "3"
 continent = 4
 x = 233
 y = 69
+cardtype = ""
 connections = [17, 16, 11]
 
 [[countries]]
@@ -180,6 +194,7 @@ name = "4"
 continent = 4
 x = 60
 y = 182
+cardtype = ""
 connections = [8, 20, 16]
 
 [[countries]]
@@ -188,6 +203,7 @@ name = "5"
 continent = 4
 x = 88
 y = 220
+cardtype = ""
 connections = [8, 19, 9]
 
 [[countries]]
@@ -196,6 +212,7 @@ name = "1"
 continent = 3
 x = 450
 y = 131
+cardtype = ""
 connections = [22, 5, 3, 6]
 
 [[countries]]
@@ -204,6 +221,7 @@ name = "2"
 continent = 3
 x = 537
 y = 67
+cardtype = ""
 connections = [23, 21, 17]
 
 [[countries]]
@@ -212,6 +230,7 @@ name = "3"
 continent = 3
 x = 574
 y = 68
+cardtype = ""
 connections = [24, 22]
 
 [[countries]]
@@ -220,4 +239,5 @@ name = "4"
 continent = 3
 x = 601
 y = 61
+cardtype = ""
 connections = [23, 1]

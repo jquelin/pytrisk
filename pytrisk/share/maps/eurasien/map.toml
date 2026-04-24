@@ -1,11 +1,6 @@
 [info]
 name = "Eurasien Map"
-
-[files]
-pic = "eurasien.png"
-map = "eurasien.gif"
-crd = "eurasien.cards"
-prv = "eurasien.jpg"
+nb_wildcards = 28
 
 [[continents]]
 id = 1
@@ -43,6 +38,7 @@ name = "Portugal"
 continent = 1
 x = 8
 y = 190
+cardtype = "Infantry"
 connections = [2, 12]
 
 [[countries]]
@@ -51,6 +47,7 @@ name = "Spanien"
 continent = 1
 x = 59
 y = 162
+cardtype = "Cavalry"
 connections = [1, 3, 12]
 
 [[countries]]
@@ -59,6 +56,7 @@ name = "Frankreich"
 continent = 1
 x = 106
 y = 52
+cardtype = "Cannon"
 connections = [2, 4, 5, 7]
 
 [[countries]]
@@ -67,6 +65,7 @@ name = "Deutschland"
 continent = 1
 x = 164
 y = 4
+cardtype = "Infantry"
 connections = [3, 5, 6, 11]
 
 [[countries]]
@@ -75,6 +74,7 @@ name = "Schweiz"
 continent = 1
 x = 142
 y = 52
+cardtype = "Cavalry"
 connections = [3, 4, 6, 7]
 
 [[countries]]
@@ -83,6 +83,7 @@ name = "Oesterreich"
 continent = 1
 x = 216
 y = 20
+cardtype = "Cannon"
 connections = [4, 5, 7, 8, 9, 10, 11]
 
 [[countries]]
@@ -91,6 +92,7 @@ name = "Italien"
 continent = 1
 x = 177
 y = 86
+cardtype = "Infantry"
 connections = [3, 5, 6, 8, 16]
 
 [[countries]]
@@ -99,6 +101,7 @@ name = "Slowenien"
 continent = 1
 x = 212
 y = 40
+cardtype = "Cavalry"
 connections = [6, 7, 9, 42]
 
 [[countries]]
@@ -107,6 +110,7 @@ name = "Ungarn"
 continent = 1
 x = 246
 y = 45
+cardtype = "Cannon"
 connections = [6, 8, 10, 42, 44, 49, 51]
 
 [[countries]]
@@ -115,6 +119,7 @@ name = "Slowakei"
 continent = 1
 x = 252
 y = 4
+cardtype = "Infantry"
 connections = [6, 9, 11, 51]
 
 [[countries]]
@@ -123,6 +128,7 @@ name = "Tschechien"
 continent = 1
 x = 201
 y = 5
+cardtype = "Cavalry"
 connections = [4, 6, 10]
 
 [[countries]]
@@ -131,6 +137,7 @@ name = "Marokko"
 continent = 2
 x = 56
 y = 232
+cardtype = "Cannon"
 connections = [1, 2, 13, 14]
 
 [[countries]]
@@ -139,6 +146,7 @@ name = "Mauretanien"
 continent = 2
 x = 11
 y = 327
+cardtype = "Infantry"
 connections = [12, 14, 15]
 
 [[countries]]
@@ -147,6 +155,7 @@ name = "Algerien"
 continent = 2
 x = 110
 y = 299
+cardtype = "Cavalry"
 connections = [12, 13, 15, 16, 17, 18]
 
 [[countries]]
@@ -155,6 +164,7 @@ name = "Mali"
 continent = 2
 x = 58
 y = 377
+cardtype = "Cannon"
 connections = [13, 14, 18]
 
 [[countries]]
@@ -163,6 +173,7 @@ name = "Tunesien"
 continent = 2
 x = 163
 y = 237
+cardtype = "Infantry"
 connections = [7, 14, 17]
 
 [[countries]]
@@ -171,6 +182,7 @@ name = "Libyen"
 continent = 2
 x = 233
 y = 298
+cardtype = "Cavalry"
 connections = [14, 16, 18, 19, 20, 21, 22]
 
 [[countries]]
@@ -179,6 +191,7 @@ name = "Niger"
 continent = 2
 x = 170
 y = 400
+cardtype = "Cannon"
 connections = [15, 14, 17, 19]
 
 [[countries]]
@@ -187,6 +200,7 @@ name = "Tschad"
 continent = 2
 x = 235
 y = 375
+cardtype = "Infantry"
 connections = [18, 17, 21]
 
 [[countries]]
@@ -195,6 +209,7 @@ name = "Aegypten"
 continent = 2
 x = 328
 y = 293
+cardtype = "Cavalry"
 connections = [17, 21, 26]
 
 [[countries]]
@@ -203,6 +218,7 @@ name = "Sudan"
 continent = 2
 x = 351
 y = 394
+cardtype = "Cannon"
 connections = [17, 19, 20]
 
 [[countries]]
@@ -211,6 +227,7 @@ name = "Griechenland"
 continent = 3
 x = 267
 y = 152
+cardtype = "Infantry"
 connections = [17, 23, 46, 47, 48, 52]
 
 [[countries]]
@@ -219,6 +236,7 @@ name = "Tuerkei"
 continent = 3
 x = 354
 y = 139
+cardtype = "Cavalry"
 connections = [22, 24, 25, 33, 40, 41, 48, 51]
 
 [[countries]]
@@ -227,6 +245,7 @@ name = "Syrien"
 continent = 3
 x = 397
 y = 217
+cardtype = "Cannon"
 connections = [23, 25, 26, 27, 52]
 
 [[countries]]
@@ -235,6 +254,7 @@ name = "Irak"
 continent = 3
 x = 454
 y = 252
+cardtype = "Infantry"
 connections = [23, 24, 27, 29, 28, 33]
 
 [[countries]]
@@ -243,6 +263,7 @@ name = "Israel"
 continent = 3
 x = 369
 y = 244
+cardtype = "Cavalry"
 connections = [20, 24, 27, 52]
 
 [[countries]]
@@ -251,6 +272,7 @@ name = "Jordanien"
 continent = 3
 x = 385
 y = 254
+cardtype = "Cannon"
 connections = [24, 25, 26, 29]
 
 [[countries]]
@@ -259,6 +281,7 @@ name = "Kuwait"
 continent = 3
 x = 478
 y = 272
+cardtype = "Infantry"
 connections = [25, 29, 33]
 
 [[countries]]
@@ -267,6 +290,7 @@ name = "Saudi_Arabien"
 continent = 3
 x = 454
 y = 362
+cardtype = "Cavalry"
 connections = [25, 27, 28, 30, 31, 32]
 
 [[countries]]
@@ -275,6 +299,7 @@ name = "Jemen"
 continent = 3
 x = 449
 y = 420
+cardtype = "Cannon"
 connections = [29, 31]
 
 [[countries]]
@@ -283,6 +308,7 @@ name = "Oman"
 continent = 3
 x = 536
 y = 395
+cardtype = "Infantry"
 connections = [29, 30, 32, 33]
 
 [[countries]]
@@ -291,6 +317,7 @@ name = "Arabische_Emirate"
 continent = 3
 x = 528
 y = 337
+cardtype = "Cavalry"
 connections = [29, 31]
 
 [[countries]]
@@ -299,6 +326,7 @@ name = "Iran"
 continent = 4
 x = 544
 y = 255
+cardtype = "Cannon"
 connections = [23, 25, 28, 31, 34, 35, 36, 39, 40]
 
 [[countries]]
@@ -307,6 +335,7 @@ name = "Pakistan"
 continent = 4
 x = 661
 y = 268
+cardtype = "Infantry"
 connections = [33, 35]
 
 [[countries]]
@@ -315,6 +344,7 @@ name = "Afghanistan"
 continent = 4
 x = 617
 y = 234
+cardtype = "Cavalry"
 connections = [33, 34, 36, 37]
 
 [[countries]]
@@ -323,6 +353,7 @@ name = "Turkmenistan"
 continent = 4
 x = 575
 y = 139
+cardtype = "Cannon"
 connections = [33, 35, 37, 38, 39]
 
 [[countries]]
@@ -331,6 +362,7 @@ name = "Usbekistzan"
 continent = 4
 x = 558
 y = 91
+cardtype = "Infantry"
 connections = [35, 36, 38]
 
 [[countries]]
@@ -339,6 +371,7 @@ name = "Kasachstan"
 continent = 4
 x = 537
 y = 18
+cardtype = "Cavalry"
 connections = [36, 37]
 
 [[countries]]
@@ -347,6 +380,7 @@ name = "Aserbaidschan"
 continent = 4
 x = 479
 y = 134
+cardtype = ""
 connections = [33, 36, 40, 41]
 
 [[countries]]
@@ -355,6 +389,7 @@ name = "Armenien"
 continent = 4
 x = 450
 y = 132
+cardtype = ""
 connections = [23, 33, 39, 41]
 
 [[countries]]
@@ -363,6 +398,7 @@ name = "Georgien"
 continent = 4
 x = 444
 y = 113
+cardtype = ""
 connections = [23, 39, 40]
 
 [[countries]]
@@ -371,6 +407,7 @@ name = "Kroatien"
 continent = 5
 x = 212
 y = 79
+cardtype = ""
 connections = [8, 9, 43, 44]
 
 [[countries]]
@@ -379,6 +416,7 @@ name = "Bosnien"
 continent = 5
 x = 230
 y = 79
+cardtype = ""
 connections = [42, 44, 45]
 
 [[countries]]
@@ -387,6 +425,7 @@ name = "Serbien"
 continent = 5
 x = 257
 y = 86
+cardtype = ""
 connections = [9, 42, 43, 45, 46, 47, 48, 49]
 
 [[countries]]
@@ -395,6 +434,7 @@ name = "Montenegro"
 continent = 5
 x = 242
 y = 101
+cardtype = ""
 connections = [43, 44, 46]
 
 [[countries]]
@@ -403,6 +443,7 @@ name = "Albanien"
 continent = 5
 x = 248
 y = 128
+cardtype = ""
 connections = [22, 44, 45, 47]
 
 [[countries]]
@@ -411,6 +452,7 @@ name = "Mazedonien"
 continent = 5
 x = 263
 y = 115
+cardtype = ""
 connections = [22, 44, 46, 48]
 
 [[countries]]
@@ -419,6 +461,7 @@ name = "Bulgarien"
 continent = 5
 x = 290
 y = 98
+cardtype = ""
 connections = [22, 23, 44, 47, 49]
 
 [[countries]]
@@ -427,6 +470,7 @@ name = "Rumaenien"
 continent = 5
 x = 288
 y = 41
+cardtype = ""
 connections = [9, 44, 48, 50, 51]
 
 [[countries]]
@@ -435,6 +479,7 @@ name = "Moldawien"
 continent = 5
 x = 320
 y = 37
+cardtype = ""
 connections = [49, 51]
 
 [[countries]]
@@ -443,6 +488,7 @@ name = "Ukraine"
 continent = 5
 x = 348
 y = 8
+cardtype = ""
 connections = [9, 10, 23, 49, 50]
 
 [[countries]]
@@ -451,4 +497,5 @@ name = "Libanon"
 continent = 3
 x = 381
 y = 218
+cardtype = ""
 connections = [22, 24, 26]

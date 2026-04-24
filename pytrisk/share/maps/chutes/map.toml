@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "chutes.jpg"
-map = "chutes.gif"
-crd = "chutes.cards"
+nb_wildcards = 0
 
 [[continents]]
 id = 1
@@ -36,6 +32,7 @@ name = "One"
 continent = 1
 x = 160
 y = 400
+cardtype = "Infantry"
 connections = [2, 38]
 
 [[countries]]
@@ -44,6 +41,7 @@ name = "Two"
 continent = 1
 x = 200
 y = 400
+cardtype = "Cannon"
 connections = [3]
 
 [[countries]]
@@ -52,6 +50,7 @@ name = "Three"
 continent = 1
 x = 240
 y = 400
+cardtype = "Infantry"
 connections = [4]
 
 [[countries]]
@@ -60,6 +59,7 @@ name = "Four"
 continent = 1
 x = 280
 y = 400
+cardtype = "Infantry"
 connections = [5, 14]
 
 [[countries]]
@@ -68,6 +68,7 @@ name = "Five"
 continent = 1
 x = 320
 y = 400
+cardtype = "Cavalry"
 connections = [6]
 
 [[countries]]
@@ -76,6 +77,7 @@ name = "Six"
 continent = 1
 x = 360
 y = 400
+cardtype = "Cavalry"
 connections = [7]
 
 [[countries]]
@@ -84,6 +86,7 @@ name = "Seven"
 continent = 1
 x = 400
 y = 400
+cardtype = "Cavalry"
 connections = [8]
 
 [[countries]]
@@ -92,6 +95,7 @@ name = "Eight"
 continent = 1
 x = 440
 y = 400
+cardtype = "Cannon"
 connections = [9]
 
 [[countries]]
@@ -100,6 +104,7 @@ name = "Nine"
 continent = 1
 x = 480
 y = 400
+cardtype = "Cannon"
 connections = [10, 31]
 
 [[countries]]
@@ -108,6 +113,7 @@ name = "Ten"
 continent = 1
 x = 520
 y = 400
+cardtype = "Cannon"
 connections = [11]
 
 [[countries]]
@@ -116,6 +122,7 @@ name = "Eleven"
 continent = 1
 x = 520
 y = 357
+cardtype = "Cavalry"
 connections = [12]
 
 [[countries]]
@@ -124,6 +131,7 @@ name = "Twelve"
 continent = 1
 x = 480
 y = 357
+cardtype = "Cannon"
 connections = [13]
 
 [[countries]]
@@ -132,6 +140,7 @@ name = "Thirteen"
 continent = 1
 x = 440
 y = 357
+cardtype = "Infantry"
 connections = [14]
 
 [[countries]]
@@ -140,6 +149,7 @@ name = "Fourteen"
 continent = 1
 x = 400
 y = 357
+cardtype = "Infantry"
 connections = [15]
 
 [[countries]]
@@ -148,6 +158,7 @@ name = "Fifteen"
 continent = 1
 x = 360
 y = 357
+cardtype = "Cannon"
 connections = [16]
 
 [[countries]]
@@ -156,6 +167,7 @@ name = "Sixteen"
 continent = 1
 x = 320
 y = 357
+cardtype = "Cannon"
 connections = [6, 17]
 
 [[countries]]
@@ -164,6 +176,7 @@ name = "Seventeen"
 continent = 1
 x = 280
 y = 357
+cardtype = "Cavalry"
 connections = [18]
 
 [[countries]]
@@ -172,6 +185,7 @@ name = "Eighteen"
 continent = 1
 x = 240
 y = 357
+cardtype = "Cavalry"
 connections = [19]
 
 [[countries]]
@@ -180,6 +194,7 @@ name = "Nineteen"
 continent = 1
 x = 200
 y = 357
+cardtype = "Infantry"
 connections = [20]
 
 [[countries]]
@@ -188,6 +203,7 @@ name = "Twenty"
 continent = 1
 x = 160
 y = 357
+cardtype = "Cavalry"
 connections = [21]
 
 [[countries]]
@@ -196,6 +212,7 @@ name = "Twenty-one"
 continent = 2
 x = 160
 y = 316
+cardtype = "Infantry"
 connections = [22, 42]
 
 [[countries]]
@@ -204,6 +221,7 @@ name = "Twenty-two"
 continent = 2
 x = 200
 y = 316
+cardtype = "Infantry"
 connections = [23]
 
 [[countries]]
@@ -212,6 +230,7 @@ name = "Twenty-three"
 continent = 2
 x = 240
 y = 316
+cardtype = "Cavalry"
 connections = [24]
 
 [[countries]]
@@ -220,6 +239,7 @@ name = "Twenty-four"
 continent = 2
 x = 280
 y = 316
+cardtype = "Cannon"
 connections = [25]
 
 [[countries]]
@@ -228,6 +248,7 @@ name = "Twenty-five"
 continent = 2
 x = 320
 y = 316
+cardtype = "Cannon"
 connections = [26]
 
 [[countries]]
@@ -236,6 +257,7 @@ name = "Twenty-six"
 continent = 2
 x = 360
 y = 316
+cardtype = "Infantry"
 connections = [27]
 
 [[countries]]
@@ -244,6 +266,7 @@ name = "Twenty-seven"
 continent = 2
 x = 400
 y = 316
+cardtype = "Cannon"
 connections = [28]
 
 [[countries]]
@@ -252,6 +275,7 @@ name = "Twenty-eight"
 continent = 2
 x = 440
 y = 316
+cardtype = "Cavalry"
 connections = [29, 84]
 
 [[countries]]
@@ -260,6 +284,7 @@ name = "Twenty-nine"
 continent = 2
 x = 480
 y = 316
+cardtype = "Cavalry"
 connections = [30]
 
 [[countries]]
@@ -268,6 +293,7 @@ name = "Thirty"
 continent = 2
 x = 520
 y = 316
+cardtype = "Infantry"
 connections = [31]
 
 [[countries]]
@@ -276,6 +302,7 @@ name = "Thirty-one"
 continent = 2
 x = 520
 y = 274
+cardtype = "Cannon"
 connections = [32]
 
 [[countries]]
@@ -284,6 +311,7 @@ name = "Thirty-two"
 continent = 2
 x = 480
 y = 274
+cardtype = "Infantry"
 connections = [33]
 
 [[countries]]
@@ -292,6 +320,7 @@ name = "Thirty-three"
 continent = 2
 x = 440
 y = 274
+cardtype = "Cannon"
 connections = [34]
 
 [[countries]]
@@ -300,6 +329,7 @@ name = "Thirty-four"
 continent = 2
 x = 400
 y = 274
+cardtype = "Cavalry"
 connections = [35]
 
 [[countries]]
@@ -308,6 +338,7 @@ name = "Thirty-five"
 continent = 2
 x = 360
 y = 274
+cardtype = "Infantry"
 connections = [36]
 
 [[countries]]
@@ -316,6 +347,7 @@ name = "Thirty-six"
 continent = 2
 x = 320
 y = 274
+cardtype = "Cannon"
 connections = [37, 44]
 
 [[countries]]
@@ -324,6 +356,7 @@ name = "Thirty-seven"
 continent = 2
 x = 280
 y = 274
+cardtype = "Infantry"
 connections = [38]
 
 [[countries]]
@@ -332,6 +365,7 @@ name = "Thirty-eight"
 continent = 2
 x = 240
 y = 274
+cardtype = "Cavalry"
 connections = [39]
 
 [[countries]]
@@ -340,6 +374,7 @@ name = "Thirty-nine"
 continent = 2
 x = 200
 y = 274
+cardtype = "Cavalry"
 connections = [40]
 
 [[countries]]
@@ -348,6 +383,7 @@ name = "Fourty"
 continent = 2
 x = 160
 y = 274
+cardtype = "Cavalry"
 connections = [41]
 
 [[countries]]
@@ -356,6 +392,7 @@ name = "Fourty-one"
 continent = 2
 x = 160
 y = 234
+cardtype = "Cannon"
 connections = [42]
 
 [[countries]]
@@ -364,6 +401,7 @@ name = "Fourty-two"
 continent = 2
 x = 200
 y = 234
+cardtype = "Infantry"
 connections = [43]
 
 [[countries]]
@@ -372,6 +410,7 @@ name = "Fourty-three"
 continent = 2
 x = 240
 y = 234
+cardtype = "Infantry"
 connections = [44]
 
 [[countries]]
@@ -380,6 +419,7 @@ name = "Fourty-four"
 continent = 2
 x = 280
 y = 234
+cardtype = "Infantry"
 connections = [45]
 
 [[countries]]
@@ -388,6 +428,7 @@ name = "Fourty-five"
 continent = 2
 x = 320
 y = 234
+cardtype = "Cavalry"
 connections = [46]
 
 [[countries]]
@@ -396,6 +437,7 @@ name = "Fourty-six"
 continent = 2
 x = 360
 y = 234
+cardtype = "Cavalry"
 connections = [47]
 
 [[countries]]
@@ -404,6 +446,7 @@ name = "Fourty-seven"
 continent = 2
 x = 400
 y = 234
+cardtype = "Cavalry"
 connections = [26, 48]
 
 [[countries]]
@@ -412,6 +455,7 @@ name = "Fourty-eight"
 continent = 2
 x = 440
 y = 234
+cardtype = "Cannon"
 connections = [49]
 
 [[countries]]
@@ -420,6 +464,7 @@ name = "Fourty-nine"
 continent = 2
 x = 480
 y = 234
+cardtype = "Cannon"
 connections = [11, 50]
 
 [[countries]]
@@ -428,6 +473,7 @@ name = "Fifty"
 continent = 2
 x = 520
 y = 234
+cardtype = "Cannon"
 connections = [51]
 
 [[countries]]
@@ -436,6 +482,7 @@ name = "Fifty-one"
 continent = 3
 x = 520
 y = 190
+cardtype = "Infantry"
 connections = [52, 67]
 
 [[countries]]
@@ -444,6 +491,7 @@ name = "Fifty-two"
 continent = 3
 x = 480
 y = 190
+cardtype = "Cannon"
 connections = [53]
 
 [[countries]]
@@ -452,6 +500,7 @@ name = "Fifty-three"
 continent = 3
 x = 440
 y = 190
+cardtype = "Infantry"
 connections = [54]
 
 [[countries]]
@@ -460,6 +509,7 @@ name = "Fifty-four"
 continent = 3
 x = 400
 y = 190
+cardtype = "Infantry"
 connections = [55]
 
 [[countries]]
@@ -468,6 +518,7 @@ name = "Fifty-five"
 continent = 3
 x = 360
 y = 190
+cardtype = "Cavalry"
 connections = [56]
 
 [[countries]]
@@ -476,6 +527,7 @@ name = "Fifty-six"
 continent = 3
 x = 320
 y = 190
+cardtype = "Cavalry"
 connections = [53, 57]
 
 [[countries]]
@@ -484,6 +536,7 @@ name = "Fifty-seven"
 continent = 3
 x = 280
 y = 190
+cardtype = "Cavalry"
 connections = [58]
 
 [[countries]]
@@ -492,6 +545,7 @@ name = "Fifty-eight"
 continent = 3
 x = 240
 y = 190
+cardtype = "Cannon"
 connections = [59]
 
 [[countries]]
@@ -500,6 +554,7 @@ name = "Fifty-nine"
 continent = 3
 x = 200
 y = 190
+cardtype = "Cannon"
 connections = [60]
 
 [[countries]]
@@ -508,6 +563,7 @@ name = "Sixty"
 continent = 3
 x = 160
 y = 190
+cardtype = "Cannon"
 connections = [61]
 
 [[countries]]
@@ -516,6 +572,7 @@ name = "Sixty-one"
 continent = 3
 x = 160
 y = 150
+cardtype = "Cavalry"
 connections = [62]
 
 [[countries]]
@@ -524,6 +581,7 @@ name = "Sixty-two"
 continent = 3
 x = 200
 y = 150
+cardtype = "Cannon"
 connections = [19, 63]
 
 [[countries]]
@@ -532,6 +590,7 @@ name = "Sixty-three"
 continent = 3
 x = 240
 y = 150
+cardtype = "Infantry"
 connections = [64]
 
 [[countries]]
@@ -540,6 +599,7 @@ name = "Sixty-four"
 continent = 3
 x = 280
 y = 150
+cardtype = "Infantry"
 connections = [60, 65]
 
 [[countries]]
@@ -548,6 +608,7 @@ name = "Sixty-five"
 continent = 3
 x = 320
 y = 150
+cardtype = "Cannon"
 connections = [66]
 
 [[countries]]
@@ -556,6 +617,7 @@ name = "Sixty-six"
 continent = 3
 x = 360
 y = 150
+cardtype = "Cannon"
 connections = [67]
 
 [[countries]]
@@ -564,6 +626,7 @@ name = "Sixty-seven"
 continent = 3
 x = 400
 y = 150
+cardtype = "Cavalry"
 connections = [68]
 
 [[countries]]
@@ -572,6 +635,7 @@ name = "Sixty-eight"
 continent = 3
 x = 440
 y = 150
+cardtype = "Cavalry"
 connections = [69]
 
 [[countries]]
@@ -580,6 +644,7 @@ name = "Sixty-nine"
 continent = 3
 x = 480
 y = 150
+cardtype = "Infantry"
 connections = [70]
 
 [[countries]]
@@ -588,6 +653,7 @@ name = "Seventy"
 continent = 3
 x = 520
 y = 150
+cardtype = "Cavalry"
 connections = [71]
 
 [[countries]]
@@ -596,6 +662,7 @@ name = "Seventy-one"
 continent = 3
 x = 520
 y = 108
+cardtype = "Infantry"
 connections = [72, 91]
 
 [[countries]]
@@ -604,6 +671,7 @@ name = "Seventy-two"
 continent = 3
 x = 480
 y = 108
+cardtype = "Infantry"
 connections = [73]
 
 [[countries]]
@@ -612,6 +680,7 @@ name = "Seventy-three"
 continent = 3
 x = 440
 y = 108
+cardtype = "Cavalry"
 connections = [74]
 
 [[countries]]
@@ -620,6 +689,7 @@ name = "Seventy-four"
 continent = 3
 x = 400
 y = 108
+cardtype = "Cannon"
 connections = [75]
 
 [[countries]]
@@ -628,6 +698,7 @@ name = "Seventy-five"
 continent = 3
 x = 360
 y = 108
+cardtype = "Cannon"
 connections = [76]
 
 [[countries]]
@@ -636,6 +707,7 @@ name = "Seventy-six"
 continent = 3
 x = 320
 y = 108
+cardtype = "Infantry"
 connections = [77]
 
 [[countries]]
@@ -644,6 +716,7 @@ name = "Seventy-seven"
 continent = 3
 x = 280
 y = 108
+cardtype = "Cannon"
 connections = [78]
 
 [[countries]]
@@ -652,6 +725,7 @@ name = "Seventy-eight"
 continent = 3
 x = 240
 y = 108
+cardtype = "Cavalry"
 connections = [79]
 
 [[countries]]
@@ -660,6 +734,7 @@ name = "Seventy-nine"
 continent = 3
 x = 200
 y = 108
+cardtype = "Cavalry"
 connections = [80]
 
 [[countries]]
@@ -668,6 +743,7 @@ name = "Eighty"
 continent = 3
 x = 160
 y = 108
+cardtype = "Infantry"
 connections = [100, 81]
 
 [[countries]]
@@ -676,6 +752,7 @@ name = "Eighty-one"
 continent = 4
 x = 160
 y = 65
+cardtype = "Cannon"
 connections = [82]
 
 [[countries]]
@@ -684,6 +761,7 @@ name = "Eighty-two"
 continent = 4
 x = 200
 y = 65
+cardtype = "Infantry"
 connections = [83]
 
 [[countries]]
@@ -692,6 +770,7 @@ name = "Eighty-three"
 continent = 4
 x = 240
 y = 65
+cardtype = "Cannon"
 connections = [84]
 
 [[countries]]
@@ -700,6 +779,7 @@ name = "Eighty-four"
 continent = 4
 x = 280
 y = 65
+cardtype = "Cavalry"
 connections = [85]
 
 [[countries]]
@@ -708,6 +788,7 @@ name = "Eighty-five"
 continent = 4
 x = 320
 y = 65
+cardtype = "Infantry"
 connections = [86]
 
 [[countries]]
@@ -716,6 +797,7 @@ name = "Eighty-six"
 continent = 4
 x = 360
 y = 65
+cardtype = "Cannon"
 connections = [87]
 
 [[countries]]
@@ -724,6 +806,7 @@ name = "Eighty-seven"
 continent = 4
 x = 400
 y = 65
+cardtype = "Infantry"
 connections = [24, 88]
 
 [[countries]]
@@ -732,6 +815,7 @@ name = "Eighty-eigth"
 continent = 4
 x = 440
 y = 65
+cardtype = "Cavalry"
 connections = [89]
 
 [[countries]]
@@ -740,6 +824,7 @@ name = "Eighty-nine"
 continent = 4
 x = 480
 y = 65
+cardtype = "Cavalry"
 connections = [90]
 
 [[countries]]
@@ -748,6 +833,7 @@ name = "Ninety"
 continent = 4
 x = 520
 y = 65
+cardtype = "Cavalry"
 connections = [91]
 
 [[countries]]
@@ -756,6 +842,7 @@ name = "Ninety-one"
 continent = 4
 x = 520
 y = 20
+cardtype = "Cannon"
 connections = [92]
 
 [[countries]]
@@ -764,6 +851,7 @@ name = "Ninety-two"
 continent = 4
 x = 480
 y = 20
+cardtype = "Infantry"
 connections = [93]
 
 [[countries]]
@@ -772,6 +860,7 @@ name = "Ninety-three"
 continent = 4
 x = 440
 y = 20
+cardtype = "Infantry"
 connections = [73, 94]
 
 [[countries]]
@@ -780,6 +869,7 @@ name = "Ninety-four"
 continent = 4
 x = 400
 y = 20
+cardtype = "Infantry"
 connections = [95]
 
 [[countries]]
@@ -788,6 +878,7 @@ name = "Ninety-five"
 continent = 4
 x = 360
 y = 20
+cardtype = "Cavalry"
 connections = [75, 96]
 
 [[countries]]
@@ -796,6 +887,7 @@ name = "Ninety-six"
 continent = 4
 x = 320
 y = 20
+cardtype = "Cavalry"
 connections = [97]
 
 [[countries]]
@@ -804,6 +896,7 @@ name = "Ninety-seven"
 continent = 4
 x = 280
 y = 20
+cardtype = "Cavalry"
 connections = [98]
 
 [[countries]]
@@ -812,6 +905,7 @@ name = "Ninety-eight"
 continent = 4
 x = 240
 y = 20
+cardtype = "Cannon"
 connections = [78, 99]
 
 [[countries]]
@@ -820,6 +914,7 @@ name = "Ninety-nine"
 continent = 4
 x = 200
 y = 20
+cardtype = "Cannon"
 connections = [100]
 
 [[countries]]
@@ -828,4 +923,5 @@ name = "One-hundred"
 continent = 4
 x = 160
 y = 20
+cardtype = "Cannon"
 connections = [1]

@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "Falkland-Islands_pic.png"
-map = "Falkland-Islands_map.gif"
-crd = "Falkland-Islands.cards"
+nb_wildcards = 10
 
 [[continents]]
 id = 1
@@ -54,6 +50,7 @@ name = "Carcass_1"
 continent = 1
 x = 41
 y = 27
+cardtype = "Cavalry"
 connections = [2]
 
 [[countries]]
@@ -62,6 +59,7 @@ name = "Carcass_2"
 continent = 1
 x = 63
 y = 32
+cardtype = "Infantry"
 connections = [1, 3]
 
 [[countries]]
@@ -70,6 +68,7 @@ name = "Carcass_3"
 continent = 1
 x = 99
 y = 42
+cardtype = "Cannon"
 connections = [2, 4, 5]
 
 [[countries]]
@@ -78,6 +77,7 @@ name = "Carcass_4"
 continent = 1
 x = 104
 y = 67
+cardtype = "Cavalry"
 connections = [3, 5, 7]
 
 [[countries]]
@@ -86,6 +86,7 @@ name = "Carcass_5"
 continent = 1
 x = 127
 y = 47
+cardtype = "Infantry"
 connections = [3, 6, 4]
 
 [[countries]]
@@ -94,6 +95,7 @@ name = "Carcass_6"
 continent = 1
 x = 182
 y = 58
+cardtype = "Cannon"
 connections = [5, 7]
 
 [[countries]]
@@ -102,6 +104,7 @@ name = "Carcass_7"
 continent = 1
 x = 161
 y = 89
+cardtype = "Cavalry"
 connections = [4, 6, 8]
 
 [[countries]]
@@ -110,6 +113,7 @@ name = "Carcass_8"
 continent = 1
 x = 186
 y = 108
+cardtype = "Infantry"
 connections = [13, 7, 9]
 
 [[countries]]
@@ -118,6 +122,7 @@ name = "Saunders_Island"
 continent = 2
 x = 240
 y = 101
+cardtype = "Cannon"
 connections = [15, 8, 14]
 
 [[countries]]
@@ -126,6 +131,7 @@ name = "Pebble_Island"
 continent = 2
 x = 344
 y = 85
+cardtype = "Cavalry"
 connections = [16, 11]
 
 [[countries]]
@@ -134,6 +140,7 @@ name = "Port_Howard"
 continent = 2
 x = 349
 y = 173
+cardtype = "Infantry"
 connections = [16, 15, 10]
 
 [[countries]]
@@ -142,6 +149,7 @@ name = "West_Point_Island"
 continent = 2
 x = 135
 y = 112
+cardtype = "Cannon"
 connections = [13]
 
 [[countries]]
@@ -150,6 +158,7 @@ name = "West_Point_Penensula_Tip"
 continent = 2
 x = 199
 y = 148
+cardtype = "Cavalry"
 connections = [14, 8, 12]
 
 [[countries]]
@@ -158,6 +167,7 @@ name = "West_Point_Penensula_Base"
 continent = 2
 x = 245
 y = 170
+cardtype = "Infantry"
 connections = [15, 13, 9]
 
 [[countries]]
@@ -166,6 +176,7 @@ name = "Central_NW"
 continent = 2
 x = 290
 y = 174
+cardtype = "Cannon"
 connections = [11, 14, 9, 18]
 
 [[countries]]
@@ -174,6 +185,7 @@ name = "NW_Falkland_1"
 continent = 2
 x = 378
 y = 123
+cardtype = "Cavalry"
 connections = [10, 11, 31, 30]
 
 [[countries]]
@@ -182,6 +194,7 @@ name = "Central_West_1"
 continent = 3
 x = 196
 y = 211
+cardtype = "Infantry"
 connections = [18, 20]
 
 [[countries]]
@@ -190,6 +203,7 @@ name = "Central_West"
 continent = 3
 x = 282
 y = 243
+cardtype = "Cannon"
 connections = [15, 19, 17, 34]
 
 [[countries]]
@@ -198,6 +212,7 @@ name = "Central_West_2"
 continent = 3
 x = 228
 y = 264
+cardtype = "Cavalry"
 connections = [18, 20, 25]
 
 [[countries]]
@@ -206,6 +221,7 @@ name = "Central_West_3"
 continent = 3
 x = 194
 y = 254
+cardtype = "Infantry"
 connections = [19, 17, 25]
 
 [[countries]]
@@ -214,6 +230,7 @@ name = "New_Island"
 continent = 4
 x = 40
 y = 223
+cardtype = "Cannon"
 connections = [22]
 
 [[countries]]
@@ -222,6 +239,7 @@ name = "S_New_Island_1"
 continent = 4
 x = 44
 y = 262
+cardtype = "Cavalry"
 connections = [23, 21]
 
 [[countries]]
@@ -230,6 +248,7 @@ name = "S_New_Island_2"
 continent = 4
 x = 99
 y = 275
+cardtype = "Infantry"
 connections = [24, 22]
 
 [[countries]]
@@ -238,6 +257,7 @@ name = "SW_Penensula"
 continent = 4
 x = 144
 y = 323
+cardtype = "Cannon"
 connections = [25, 23]
 
 [[countries]]
@@ -246,6 +266,7 @@ name = "SW_Penensula_Base"
 continent = 4
 x = 200
 y = 314
+cardtype = "Cavalry"
 connections = [19, 24, 39, 20]
 
 [[countries]]
@@ -254,6 +275,7 @@ name = "Mt_Pleasant"
 continent = 5
 x = 534
 y = 235
+cardtype = "Infantry"
 connections = [31, 27, 32, 37]
 
 [[countries]]
@@ -262,6 +284,7 @@ name = "Stanley"
 continent = 5
 x = 623
 y = 184
+cardtype = "Cannon"
 connections = [31, 28, 26]
 
 [[countries]]
@@ -270,6 +293,7 @@ name = "NE_1"
 continent = 5
 x = 584
 y = 119
+cardtype = "Cavalry"
 connections = [29, 27]
 
 [[countries]]
@@ -278,6 +302,7 @@ name = "NE_2"
 continent = 5
 x = 529
 y = 90
+cardtype = "Infantry"
 connections = [30, 28]
 
 [[countries]]
@@ -286,6 +311,7 @@ name = "NE_3"
 continent = 5
 x = 479
 y = 114
+cardtype = "Cannon"
 connections = [31, 29, 16]
 
 [[countries]]
@@ -294,6 +320,7 @@ name = "NE_Central"
 continent = 5
 x = 487
 y = 160
+cardtype = "Cavalry"
 connections = [26, 27, 30, 16]
 
 [[countries]]
@@ -302,6 +329,7 @@ name = "Goose_Green"
 continent = 6
 x = 422
 y = 240
+cardtype = "Infantry"
 connections = [34, 33, 26]
 
 [[countries]]
@@ -310,6 +338,7 @@ name = "SE_1"
 continent = 6
 x = 462
 y = 279
+cardtype = "Cannon"
 connections = [32, 37, 38]
 
 [[countries]]
@@ -318,6 +347,7 @@ name = "SE_2"
 continent = 6
 x = 366
 y = 304
+cardtype = "Cavalry"
 connections = [32, 35, 18, 36]
 
 [[countries]]
@@ -326,6 +356,7 @@ name = "SE_3"
 continent = 6
 x = 409
 y = 326
+cardtype = "Infantry"
 connections = [34, 38]
 
 [[countries]]
@@ -334,6 +365,7 @@ name = "SE_4"
 continent = 6
 x = 367
 y = 352
+cardtype = "Cannon"
 connections = [34, 40, 39]
 
 [[countries]]
@@ -342,6 +374,7 @@ name = "SE_Island_1"
 continent = 6
 x = 532
 y = 291
+cardtype = "Cavalry"
 connections = [33, 26]
 
 [[countries]]
@@ -350,6 +383,7 @@ name = "SE_Island_2"
 continent = 6
 x = 468
 y = 344
+cardtype = "Infantry"
 connections = [35, 33, 40]
 
 [[countries]]
@@ -358,6 +392,7 @@ name = "SE_Island_3"
 continent = 6
 x = 322
 y = 362
+cardtype = "Cannon"
 connections = [36, 25]
 
 [[countries]]
@@ -366,4 +401,5 @@ name = "Sea_Lion_Island"
 continent = 7
 x = 441
 y = 407
+cardtype = "Cavalry"
 connections = [36, 38]

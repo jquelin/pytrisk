@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "Hawaii_pic.png"
-map = "Hawaii_map.gif"
-crd = "Hawaii.cards"
+nb_wildcards = 4
 
 [[continents]]
 id = 1
@@ -42,6 +38,7 @@ name = "Süd_Mauna_Loa"
 continent = 1
 x = 498
 y = 341
+cardtype = "Infantry"
 connections = [70, 12, 11, 13, 3, 2]
 
 [[countries]]
@@ -50,6 +47,7 @@ name = "West_Mauna_Loa"
 continent = 1
 x = 494
 y = 242
+cardtype = "Cavalry"
 connections = [70, 18, 17, 4, 1, 3, 14, 15, 13, 5]
 
 [[countries]]
@@ -58,6 +56,7 @@ name = "Ost_Mauna_Loa"
 continent = 1
 x = 561
 y = 262
+cardtype = "Cannon"
 connections = [70, 1, 2, 4, 8, 23, 9, 11]
 
 [[countries]]
@@ -66,6 +65,7 @@ name = "Mauna_Kea"
 continent = 1
 x = 530
 y = 204
+cardtype = "Infantry"
 connections = [2, 3, 5, 6, 7, 8]
 
 [[countries]]
@@ -74,6 +74,7 @@ name = "Mauna_Kea_West_Fuß"
 continent = 1
 x = 508
 y = 170
+cardtype = "Cavalry"
 connections = [2, 4, 20, 17, 6]
 
 [[countries]]
@@ -82,6 +83,7 @@ name = "Mauna_Kea_Nord_Fuß"
 continent = 1
 x = 549
 y = 164
+cardtype = "Cannon"
 connections = [4, 5, 20, 7]
 
 [[countries]]
@@ -90,6 +92,7 @@ name = "Mauna_Kea_Ost_Fuß"
 continent = 1
 x = 582
 y = 195
+cardtype = "Infantry"
 connections = [4, 6, 8]
 
 [[countries]]
@@ -98,6 +101,7 @@ name = "Mauna_Kea_Süd_Fuß"
 continent = 1
 x = 582
 y = 226
+cardtype = "Cavalry"
 connections = [3, 4, 7]
 
 [[countries]]
@@ -106,6 +110,7 @@ name = "Opihikao"
 continent = 1
 x = 649
 y = 274
+cardtype = "Cannon"
 connections = [3, 10, 23]
 
 [[countries]]
@@ -114,6 +119,7 @@ name = "Kalapana"
 continent = 1
 x = 643
 y = 302
+cardtype = "Infantry"
 connections = [9, 23]
 
 [[countries]]
@@ -122,6 +128,7 @@ name = "Punaluu"
 continent = 1
 x = 554
 y = 336
+cardtype = "Cavalry"
 connections = [1, 3, 23, 12]
 
 [[countries]]
@@ -130,6 +137,7 @@ name = "Naalehu"
 continent = 1
 x = 482
 y = 394
+cardtype = "Cannon"
 connections = [1, 11, 13]
 
 [[countries]]
@@ -138,6 +146,7 @@ name = "Kealia"
 continent = 1
 x = 451
 y = 324
+cardtype = "Infantry"
 connections = [1, 2, 12, 14]
 
 [[countries]]
@@ -146,6 +155,7 @@ name = "Captain_Cook"
 continent = 1
 x = 445
 y = 293
+cardtype = "Cavalry"
 connections = [2, 13, 15]
 
 [[countries]]
@@ -154,6 +164,7 @@ name = "Kahaluu"
 continent = 1
 x = 435
 y = 267
+cardtype = "Cannon"
 connections = [2, 14, 18, 16]
 
 [[countries]]
@@ -162,6 +173,7 @@ name = "Kailau"
 continent = 1
 x = 427
 y = 209
+cardtype = "Infantry"
 connections = [15, 17, 19, 27]
 
 [[countries]]
@@ -170,6 +182,7 @@ name = "Puuanahulu"
 continent = 1
 x = 470
 y = 192
+cardtype = "Cavalry"
 connections = [2, 5, 16, 18, 20]
 
 [[countries]]
@@ -178,6 +191,7 @@ name = "Kalaoa"
 continent = 1
 x = 454
 y = 240
+cardtype = "Cannon"
 connections = [2, 15, 17]
 
 [[countries]]
@@ -186,6 +200,7 @@ name = "Puako"
 continent = 1
 x = 464
 y = 171
+cardtype = "Infantry"
 connections = [16, 21]
 
 [[countries]]
@@ -194,6 +209,7 @@ name = "Honokaa"
 continent = 1
 x = 504
 y = 138
+cardtype = "Cavalry"
 connections = [5, 6, 17, 21, 22]
 
 [[countries]]
@@ -202,6 +218,7 @@ name = "Kahua"
 continent = 1
 x = 459
 y = 136
+cardtype = "Cannon"
 connections = [19, 20, 22, 26]
 
 [[countries]]
@@ -210,6 +227,7 @@ name = "Hawi"
 continent = 1
 x = 459
 y = 98
+cardtype = "Infantry"
 connections = [21, 20, 25]
 
 [[countries]]
@@ -218,6 +236,7 @@ name = "Volcano"
 continent = 1
 x = 611
 y = 291
+cardtype = "Cavalry"
 connections = [3, 9, 10, 11]
 
 [[countries]]
@@ -226,6 +245,7 @@ name = "Haleakala_Crater"
 continent = 2
 x = 368
 y = 128
+cardtype = "Cannon"
 connections = [32, 31, 30, 34, 25, 26, 27]
 
 [[countries]]
@@ -234,6 +254,7 @@ name = "Kaeleku"
 continent = 2
 x = 397
 y = 104
+cardtype = "Infantry"
 connections = [24, 26, 34, 22]
 
 [[countries]]
@@ -242,6 +263,7 @@ name = "Haou"
 continent = 2
 x = 415
 y = 126
+cardtype = "Cavalry"
 connections = [24, 25, 27, 21]
 
 [[countries]]
@@ -250,6 +272,7 @@ name = "Kaupo"
 continent = 2
 x = 395
 y = 151
+cardtype = "Cannon"
 connections = [24, 26, 32, 16]
 
 [[countries]]
@@ -258,6 +281,7 @@ name = "Nord_Haiku"
 continent = 2
 x = 348
 y = 83
+cardtype = "Infantry"
 connections = [29, 34]
 
 [[countries]]
@@ -266,6 +290,7 @@ name = "West_Haiku"
 continent = 2
 x = 337
 y = 87
+cardtype = "Cavalry"
 connections = [28, 34, 30]
 
 [[countries]]
@@ -274,6 +299,7 @@ name = "Kihei"
 continent = 2
 x = 333
 y = 107
+cardtype = "Cannon"
 connections = [24, 29, 31, 33, 34]
 
 [[countries]]
@@ -282,6 +308,7 @@ name = "Makena"
 continent = 2
 x = 331
 y = 131
+cardtype = "Infantry"
 connections = [24, 30, 32]
 
 [[countries]]
@@ -290,6 +317,7 @@ name = "Ulupalakua"
 continent = 2
 x = 336
 y = 160
+cardtype = "Cavalry"
 connections = [24, 27, 31, 46]
 
 [[countries]]
@@ -298,6 +326,7 @@ name = "Kahului"
 continent = 2
 x = 318
 y = 96
+cardtype = "Cannon"
 connections = [30, 36, 37]
 
 [[countries]]
@@ -306,6 +335,7 @@ name = "Wailau"
 continent = 2
 x = 364
 y = 89
+cardtype = "Infantry"
 connections = [24, 25, 28, 29, 30]
 
 [[countries]]
@@ -314,6 +344,7 @@ name = "Kapalua"
 continent = 2
 x = 284
 y = 67
+cardtype = "Cavalry"
 connections = [36, 37, 41]
 
 [[countries]]
@@ -322,6 +353,7 @@ name = "Walhee"
 continent = 2
 x = 309
 y = 65
+cardtype = "Cannon"
 connections = [33, 35, 37]
 
 [[countries]]
@@ -330,6 +362,7 @@ name = "Wailuku"
 continent = 2
 x = 297
 y = 90
+cardtype = "Infantry"
 connections = [33, 35, 36, 43]
 
 [[countries]]
@@ -338,6 +371,7 @@ name = "Mauna_Loa(Stadt)"
 continent = 2
 x = 186
 y = 43
+cardtype = "Cavalry"
 connections = [39, 52, 40]
 
 [[countries]]
@@ -346,6 +380,7 @@ name = "Kalaupapa"
 continent = 2
 x = 191
 y = 24
+cardtype = "Cannon"
 connections = [38, 40]
 
 [[countries]]
@@ -354,6 +389,7 @@ name = "Kamalo"
 continent = 2
 x = 223
 y = 45
+cardtype = "Infantry"
 connections = [38, 39, 41, 42, 51]
 
 [[countries]]
@@ -362,6 +398,7 @@ name = "Halawa"
 continent = 2
 x = 262
 y = 33
+cardtype = "Cavalry"
 connections = [35, 40]
 
 [[countries]]
@@ -370,6 +407,7 @@ name = "Nord_Lanai"
 continent = 2
 x = 243
 y = 109
+cardtype = "Cannon"
 connections = [40, 43, 44, 49]
 
 [[countries]]
@@ -378,6 +416,7 @@ name = "Ost_Lanai"
 continent = 2
 x = 269
 y = 125
+cardtype = "Infantry"
 connections = [37, 42, 44, 45]
 
 [[countries]]
@@ -386,6 +425,7 @@ name = "Süd_Lanai"
 continent = 2
 x = 249
 y = 141
+cardtype = "Cavalry"
 connections = [42, 43]
 
 [[countries]]
@@ -394,6 +434,7 @@ name = "West_Kahoolawe"
 continent = 2
 x = 296
 y = 169
+cardtype = "Cannon"
 connections = [43, 46]
 
 [[countries]]
@@ -402,6 +443,7 @@ name = "Ost_Kahoolawe"
 continent = 2
 x = 314
 y = 162
+cardtype = "Infantry"
 connections = [32, 45]
 
 [[countries]]
@@ -410,6 +452,7 @@ name = "Honolulu"
 continent = 3
 x = 75
 y = 180
+cardtype = "Cavalry"
 connections = [48, 56, 50, 55, 54, 59]
 
 [[countries]]
@@ -418,6 +461,7 @@ name = "Waimanalo"
 continent = 3
 x = 130
 y = 185
+cardtype = "Cannon"
 connections = [47, 49, 56, 58]
 
 [[countries]]
@@ -426,6 +470,7 @@ name = "Nord_Waimanalo"
 continent = 3
 x = 128
 y = 162
+cardtype = "Infantry"
 connections = [48, 56, 50, 42]
 
 [[countries]]
@@ -434,6 +479,7 @@ name = "Ahuimanu"
 continent = 3
 x = 102
 y = 136
+cardtype = "Cavalry"
 connections = [47, 49, 51, 55, 56]
 
 [[countries]]
@@ -442,6 +488,7 @@ name = "Laie"
 continent = 3
 x = 80
 y = 114
+cardtype = "Cannon"
 connections = [40, 50, 52, 53]
 
 [[countries]]
@@ -450,6 +497,7 @@ name = "Kawela_Bay"
 continent = 3
 x = 79
 y = 93
+cardtype = "Infantry"
 connections = [38, 51]
 
 [[countries]]
@@ -458,6 +506,7 @@ name = "Makaha"
 continent = 3
 x = 33
 y = 128
+cardtype = "Cavalry"
 connections = [51, 54]
 
 [[countries]]
@@ -466,6 +515,7 @@ name = "Maili"
 continent = 3
 x = 47
 y = 159
+cardtype = "Cannon"
 connections = [47, 53, 55]
 
 [[countries]]
@@ -474,6 +524,7 @@ name = "Waipio_Acres"
 continent = 3
 x = 69
 y = 152
+cardtype = "Infantry"
 connections = [47, 50, 54]
 
 [[countries]]
@@ -482,6 +533,7 @@ name = "Waimalu"
 continent = 3
 x = 102
 y = 170
+cardtype = "Cavalry"
 connections = [47, 48, 49, 50]
 
 [[countries]]
@@ -490,6 +542,7 @@ name = "Kapaa"
 continent = 4
 x = 148
 y = 299
+cardtype = "Cannon"
 connections = [60, 62, 61]
 
 [[countries]]
@@ -498,6 +551,7 @@ name = "Kilauea"
 continent = 4
 x = 133
 y = 269
+cardtype = "Infantry"
 connections = [48, 60, 59]
 
 [[countries]]
@@ -506,6 +560,7 @@ name = "Hanalei"
 continent = 4
 x = 99
 y = 281
+cardtype = "Cavalry"
 connections = [58, 65, 60, 47, 64]
 
 [[countries]]
@@ -514,6 +569,7 @@ name = "MittelKauai"
 continent = 4
 x = 124
 y = 292
+cardtype = "Cannon"
 connections = [57, 58, 59, 61]
 
 [[countries]]
@@ -522,6 +578,7 @@ name = "Omao"
 continent = 4
 x = 115
 y = 320
+cardtype = "Infantry"
 connections = [57, 60, 64, 62, 63]
 
 [[countries]]
@@ -530,6 +587,7 @@ name = "Lihue"
 continent = 4
 x = 131
 y = 340
+cardtype = "Cavalry"
 connections = [57, 61, 63]
 
 [[countries]]
@@ -538,6 +596,7 @@ name = "Eleele"
 continent = 4
 x = 104
 y = 345
+cardtype = "Cannon"
 connections = [61, 62, 64]
 
 [[countries]]
@@ -546,6 +605,7 @@ name = "Kaumakani"
 continent = 4
 x = 91
 y = 324
+cardtype = "Infantry"
 connections = [59, 61, 63, 65]
 
 [[countries]]
@@ -554,6 +614,7 @@ name = "Kekaha"
 continent = 4
 x = 73
 y = 299
+cardtype = "Cavalry"
 connections = [59, 64, 67, 66]
 
 [[countries]]
@@ -562,6 +623,7 @@ name = "Mana"
 continent = 4
 x = 59
 y = 316
+cardtype = "Cannon"
 connections = [65, 68]
 
 [[countries]]
@@ -570,6 +632,7 @@ name = "Nord_Niihau"
 continent = 5
 x = 50
 y = 279
+cardtype = "Infantry"
 connections = [65, 68]
 
 [[countries]]
@@ -578,6 +641,7 @@ name = "Puuwai"
 continent = 5
 x = 35
 y = 296
+cardtype = "Cavalry"
 connections = [66, 67, 69]
 
 [[countries]]
@@ -586,6 +650,7 @@ name = "Süd_Niihau"
 continent = 5
 x = 24
 y = 316
+cardtype = "Cannon"
 connections = [68]
 
 [[countries]]
@@ -594,4 +659,5 @@ name = "Maona_Loa"
 continent = 1
 x = 505
 y = 288
+cardtype = "Infantry"
 connections = [2, 3, 1]

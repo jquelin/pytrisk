@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "swiss_pic.jpg"
-map = "swiss_map.gif"
-crd = "swiss.cards"
+nb_wildcards = 0
 
 [[continents]]
 id = 1
@@ -48,6 +44,7 @@ name = "Waadt"
 continent = 1
 x = 115
 y = 224
+cardtype = "Infantry"
 connections = [2, 3, 4, 9, 10]
 
 [[countries]]
@@ -56,6 +53,7 @@ name = "Neuenburg"
 continent = 1
 x = 149
 y = 185
+cardtype = "Cannon"
 connections = [1, 3, 5, 9]
 
 [[countries]]
@@ -64,6 +62,7 @@ name = "Fribourg"
 continent = 1
 x = 175
 y = 245
+cardtype = "Infantry"
 connections = [1, 2, 9]
 
 [[countries]]
@@ -72,6 +71,7 @@ name = "Geneve"
 continent = 1
 x = 64
 y = 324
+cardtype = "Infantry"
 connections = [1]
 
 [[countries]]
@@ -80,6 +80,7 @@ name = "Jura"
 continent = 2
 x = 187
 y = 85
+cardtype = "Cavalry"
 connections = [2, 7, 8, 9]
 
 [[countries]]
@@ -88,6 +89,7 @@ name = "Baselstadt"
 continent = 2
 x = 256
 y = 41
+cardtype = "Cavalry"
 connections = [7]
 
 [[countries]]
@@ -96,6 +98,7 @@ name = "Baselland"
 continent = 2
 x = 278
 y = 81
+cardtype = "Cavalry"
 connections = [5, 6, 8, 15]
 
 [[countries]]
@@ -104,6 +107,7 @@ name = "Solothurn"
 continent = 2
 x = 242
 y = 125
+cardtype = "Cannon"
 connections = [5, 7, 9, 15]
 
 [[countries]]
@@ -112,6 +116,7 @@ name = "Bern"
 continent = 3
 x = 250
 y = 210
+cardtype = "Cannon"
 connections = [1, 2, 3, 5, 8, 10, 11, 12, 14, 15]
 
 [[countries]]
@@ -120,6 +125,7 @@ name = "Wallis"
 continent = 3
 x = 285
 y = 310
+cardtype = "Cannon"
 connections = [1, 9, 11, 27]
 
 [[countries]]
@@ -128,6 +134,7 @@ name = "Uri"
 continent = 3
 x = 391
 y = 198
+cardtype = "Cavalry"
 connections = [9, 10, 12, 13, 24, 25, 26, 27]
 
 [[countries]]
@@ -136,6 +143,7 @@ name = "Obwalden"
 continent = 3
 x = 336
 y = 185
+cardtype = "Cannon"
 connections = [9, 11, 13, 14]
 
 [[countries]]
@@ -144,6 +152,7 @@ name = "Nidwalden"
 continent = 3
 x = 365
 y = 184
+cardtype = "Infantry"
 connections = [11, 12, 14, 24]
 
 [[countries]]
@@ -152,6 +161,7 @@ name = "Luzern"
 continent = 4
 x = 315
 y = 165
+cardtype = "Infantry"
 connections = [9, 12, 13, 15, 16, 24]
 
 [[countries]]
@@ -160,6 +170,7 @@ name = "Aargau"
 continent = 4
 x = 326
 y = 67
+cardtype = "Cannon"
 connections = [7, 8, 9, 14, 16, 17]
 
 [[countries]]
@@ -168,6 +179,7 @@ name = "Zug"
 continent = 4
 x = 377
 y = 136
+cardtype = "Cannon"
 connections = [14, 15, 17, 24]
 
 [[countries]]
@@ -176,6 +188,7 @@ name = "Zuerich"
 continent = 4
 x = 405
 y = 95
+cardtype = "Cavalry"
 connections = [15, 16, 19, 20, 24]
 
 [[countries]]
@@ -184,6 +197,7 @@ name = "Schaffhausen"
 continent = 4
 x = 405
 y = 18
+cardtype = "Cavalry"
 connections = [19]
 
 [[countries]]
@@ -192,6 +206,7 @@ name = "Thurgau"
 continent = 5
 x = 467
 y = 50
+cardtype = "Infantry"
 connections = [17, 18, 20]
 
 [[countries]]
@@ -200,6 +215,7 @@ name = "St-Gallen"
 continent = 5
 x = 487
 y = 133
+cardtype = "Cavalry"
 connections = [17, 19, 21, 22, 23, 24, 25, 26]
 
 [[countries]]
@@ -208,6 +224,7 @@ name = "Appenzell-Ausserrhoden"
 continent = 5
 x = 500
 y = 81
+cardtype = "Infantry"
 connections = [20, 22]
 
 [[countries]]
@@ -216,6 +233,7 @@ name = "Appenzell-Innerrhoden"
 continent = 5
 x = 498
 y = 106
+cardtype = "Infantry"
 connections = [20, 21]
 
 [[countries]]
@@ -224,6 +242,7 @@ name = "Liechtenstein"
 continent = 5
 x = 532
 y = 126
+cardtype = "Cavalry"
 connections = [20, 26]
 
 [[countries]]
@@ -232,6 +251,7 @@ name = "Schwyz"
 continent = 6
 x = 415
 y = 140
+cardtype = "Cannon"
 connections = [11, 13, 14, 16, 17, 20, 25]
 
 [[countries]]
@@ -240,6 +260,7 @@ name = "Glarus"
 continent = 6
 x = 449
 y = 153
+cardtype = "Cannon"
 connections = [11, 20, 24, 26]
 
 [[countries]]
@@ -248,6 +269,7 @@ name = "Graubuenden"
 continent = 6
 x = 498
 y = 225
+cardtype = "Infantry"
 connections = [11, 20, 23, 25, 27]
 
 [[countries]]
@@ -256,4 +278,5 @@ name = "Tessin"
 continent = 6
 x = 415
 y = 280
+cardtype = "Cannon"
 connections = [10, 11, 26]

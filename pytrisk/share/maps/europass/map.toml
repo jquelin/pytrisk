@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "europass_pic.png"
-map = "europass_map.gif"
-crd = "europass.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -54,6 +50,7 @@ name = "Reykjavik"
 continent = 1
 x = 27
 y = 30
+cardtype = "Infantry"
 connections = [2]
 
 [[countries]]
@@ -62,6 +59,7 @@ name = "Ostisland"
 continent = 1
 x = 76
 y = 41
+cardtype = "Cannon"
 connections = [1, 51, 3]
 
 [[countries]]
@@ -70,6 +68,7 @@ name = "Aberdeen"
 continent = 2
 x = 121
 y = 143
+cardtype = "Infantry"
 connections = [2, 4, 49]
 
 [[countries]]
@@ -78,6 +77,7 @@ name = "Glasgow"
 continent = 2
 x = 121
 y = 172
+cardtype = "Infantry"
 connections = [3, 8, 5]
 
 [[countries]]
@@ -86,6 +86,7 @@ name = "Nordirland"
 continent = 2
 x = 98
 y = 179
+cardtype = "Cavalry"
 connections = [4, 6]
 
 [[countries]]
@@ -94,6 +95,7 @@ name = "Dublin"
 continent = 2
 x = 72
 y = 184
+cardtype = "Cavalry"
 connections = [5, 7]
 
 [[countries]]
@@ -102,6 +104,7 @@ name = "Suedirland"
 continent = 2
 x = 69
 y = 206
+cardtype = "Cavalry"
 connections = [6, 14]
 
 [[countries]]
@@ -110,6 +113,7 @@ name = "Leeds"
 continent = 2
 x = 136
 y = 190
+cardtype = "Cannon"
 connections = [4, 9, 10]
 
 [[countries]]
@@ -118,6 +122,7 @@ name = "Wales"
 continent = 2
 x = 115
 y = 209
+cardtype = "Cannon"
 connections = [8, 10, 11]
 
 [[countries]]
@@ -126,6 +131,7 @@ name = "England"
 continent = 2
 x = 154
 y = 213
+cardtype = "Cannon"
 connections = [8, 9, 11]
 
 [[countries]]
@@ -134,6 +140,7 @@ name = "London"
 continent = 2
 x = 126
 y = 230
+cardtype = "Cavalry"
 connections = [9, 10, 27, 25]
 
 [[countries]]
@@ -142,6 +149,7 @@ name = "Lisabon"
 continent = 3
 x = 14
 y = 360
+cardtype = "Cannon"
 connections = [13, 16, 18]
 
 [[countries]]
@@ -150,6 +158,7 @@ name = "Porto"
 continent = 3
 x = 41
 y = 338
+cardtype = "Infantry"
 connections = [12, 14, 16]
 
 [[countries]]
@@ -158,6 +167,7 @@ name = "Baskenland"
 continent = 3
 x = 67
 y = 313
+cardtype = "Infantry"
 connections = [7, 25, 21, 15, 16, 13]
 
 [[countries]]
@@ -166,6 +176,7 @@ name = "Barcelona"
 continent = 3
 x = 142
 y = 342
+cardtype = "Cannon"
 connections = [14, 21, 17, 16]
 
 [[countries]]
@@ -174,6 +185,7 @@ name = "Madrid"
 continent = 3
 x = 81
 y = 352
+cardtype = "Cannon"
 connections = [12, 13, 14, 15, 18]
 
 [[countries]]
@@ -182,6 +194,7 @@ name = "Ballearen"
 continent = 3
 x = 154
 y = 380
+cardtype = "Cavalry"
 connections = [18, 15, 19]
 
 [[countries]]
@@ -190,6 +203,7 @@ name = "Suedspanien"
 continent = 3
 x = 56
 y = 391
+cardtype = "Cavalry"
 connections = [12, 16, 17]
 
 [[countries]]
@@ -198,6 +212,7 @@ name = "Sardinien"
 continent = 3
 x = 216
 y = 382
+cardtype = "Infantry"
 connections = [17, 20, 31]
 
 [[countries]]
@@ -206,6 +221,7 @@ name = "Korsika"
 continent = 2
 x = 212
 y = 346
+cardtype = "Cavalry"
 connections = [22, 34, 19]
 
 [[countries]]
@@ -214,6 +230,7 @@ name = "Suedfrankreich"
 continent = 2
 x = 147
 y = 320
+cardtype = "Infantry"
 connections = [14, 15, 22, 23]
 
 [[countries]]
@@ -222,6 +239,7 @@ name = "Marseille"
 continent = 2
 x = 188
 y = 325
+cardtype = "Infantry"
 connections = [20, 21, 23, 24, 26, 36]
 
 [[countries]]
@@ -230,6 +248,7 @@ name = "Zentral-Frankreich"
 continent = 2
 x = 146
 y = 294
+cardtype = "Cavalry"
 connections = [21, 22, 26, 25]
 
 [[countries]]
@@ -238,6 +257,7 @@ name = "Turin"
 continent = 3
 x = 219
 y = 311
+cardtype = "Cannon"
 connections = [22, 36, 35, 34]
 
 [[countries]]
@@ -246,6 +266,7 @@ name = "Normandie"
 continent = 2
 x = 103
 y = 258
+cardtype = "Cannon"
 connections = [11, 14, 23, 26, 27]
 
 [[countries]]
@@ -254,6 +275,7 @@ name = "Paris"
 continent = 2
 x = 168
 y = 269
+cardtype = "Infantry"
 connections = [25, 27, 28, 36, 22, 23]
 
 [[countries]]
@@ -262,6 +284,7 @@ name = "Nordfrankreich"
 continent = 2
 x = 156
 y = 242
+cardtype = "Cannon"
 connections = [25, 26, 28, 29, 11]
 
 [[countries]]
@@ -270,6 +293,7 @@ name = "Elsaß-Lothringen"
 continent = 2
 x = 199
 y = 268
+cardtype = "Cavalry"
 connections = [26, 27, 29, 39, 38, 36]
 
 [[countries]]
@@ -278,6 +302,7 @@ name = "Belgien"
 continent = 2
 x = 183
 y = 238
+cardtype = "Cavalry"
 connections = [27, 28, 30, 39]
 
 [[countries]]
@@ -286,6 +311,7 @@ name = "Niederlande"
 continent = 2
 x = 189
 y = 213
+cardtype = "Infantry"
 connections = [29, 39, 41]
 
 [[countries]]
@@ -294,6 +320,7 @@ name = "Sizilien"
 continent = 3
 x = 266
 y = 397
+cardtype = "Cannon"
 connections = [19, 32, 77]
 
 [[countries]]
@@ -302,6 +329,7 @@ name = "Sueditalien"
 continent = 3
 x = 306
 y = 370
+cardtype = "Infantry"
 connections = [31, 33, 74]
 
 [[countries]]
@@ -310,6 +338,7 @@ name = "Rom"
 continent = 3
 x = 272
 y = 345
+cardtype = "Cannon"
 connections = [32, 34]
 
 [[countries]]
@@ -318,6 +347,7 @@ name = "Vatikan"
 continent = 3
 x = 248
 y = 328
+cardtype = "Cavalry"
 connections = [33, 20, 24, 35]
 
 [[countries]]
@@ -326,6 +356,7 @@ name = "Venedig"
 continent = 3
 x = 251
 y = 301
+cardtype = "Infantry"
 connections = [24, 36, 37, 68, 34]
 
 [[countries]]
@@ -334,6 +365,7 @@ name = "Schweiz"
 continent = 4
 x = 214
 y = 287
+cardtype = "Cannon"
 connections = [22, 24, 26, 28, 37, 38, 35]
 
 [[countries]]
@@ -342,6 +374,7 @@ name = "Oesterreich"
 continent = 4
 x = 277
 y = 279
+cardtype = "Infantry"
 connections = [35, 36, 38, 65, 66, 67, 68]
 
 [[countries]]
@@ -350,6 +383,7 @@ name = "Bayern"
 continent = 4
 x = 247
 y = 264
+cardtype = "Cavalry"
 connections = [28, 39, 40, 65, 37, 36]
 
 [[countries]]
@@ -358,6 +392,7 @@ name = "Nordrhein-Westfalen"
 continent = 4
 x = 215
 y = 243
+cardtype = "Cavalry"
 connections = [28, 29, 30, 41, 40, 38]
 
 [[countries]]
@@ -366,6 +401,7 @@ name = "Sachsen"
 continent = 4
 x = 253
 y = 235
+cardtype = "Cavalry"
 connections = [38, 39, 41, 42, 62, 63, 65]
 
 [[countries]]
@@ -374,6 +410,7 @@ name = "Niedersachsen"
 continent = 4
 x = 226
 y = 215
+cardtype = "Cannon"
 connections = [30, 39, 40, 42]
 
 [[countries]]
@@ -382,6 +419,7 @@ name = "Berlin"
 continent = 4
 x = 260
 y = 209
+cardtype = "Infantry"
 connections = [40, 41, 43, 44, 61, 62]
 
 [[countries]]
@@ -390,6 +428,7 @@ name = "Dänemark"
 continent = 1
 x = 225
 y = 172
+cardtype = ""
 connections = [49, 44, 42]
 
 [[countries]]
@@ -398,6 +437,7 @@ name = "Kopenhagen"
 continent = 1
 x = 251
 y = 176
+cardtype = ""
 connections = [42, 43, 45]
 
 [[countries]]
@@ -406,6 +446,7 @@ name = "Malmoe"
 continent = 1
 x = 277
 y = 167
+cardtype = ""
 connections = [44, 46, 57]
 
 [[countries]]
@@ -414,6 +455,7 @@ name = "Stockholm"
 continent = 1
 x = 288
 y = 125
+cardtype = ""
 connections = [45, 49, 50, 47, 55]
 
 [[countries]]
@@ -422,6 +464,7 @@ name = "Zentralschweden"
 continent = 1
 x = 277
 y = 91
+cardtype = ""
 connections = [46, 50, 48]
 
 [[countries]]
@@ -430,6 +473,7 @@ name = "Nordschweden"
 continent = 1
 x = 305
 y = 54
+cardtype = ""
 connections = [47, 50, 51, 53]
 
 [[countries]]
@@ -438,6 +482,7 @@ name = "Oslo"
 continent = 1
 x = 207
 y = 131
+cardtype = ""
 connections = [3, 50, 46, 43]
 
 [[countries]]
@@ -446,6 +491,7 @@ name = "Trondheim"
 continent = 1
 x = 242
 y = 78
+cardtype = ""
 connections = [49, 46, 47, 48, 51]
 
 [[countries]]
@@ -454,6 +500,7 @@ name = "Tromsoe"
 continent = 1
 x = 265
 y = 32
+cardtype = ""
 connections = [50, 48, 52, 53, 2]
 
 [[countries]]
@@ -462,6 +509,7 @@ name = "Hammerfest"
 continent = 1
 x = 311
 y = 11
+cardtype = ""
 connections = [51, 53, 91]
 
 [[countries]]
@@ -470,6 +518,7 @@ name = "Nordfinnland"
 continent = 1
 x = 341
 y = 37
+cardtype = ""
 connections = [48, 51, 52, 91, 90, 54]
 
 [[countries]]
@@ -478,6 +527,7 @@ name = "Zentralfinnland"
 continent = 1
 x = 356
 y = 77
+cardtype = ""
 connections = [53, 90, 89, 55]
 
 [[countries]]
@@ -486,6 +536,7 @@ name = "Helsinki"
 continent = 1
 x = 331
 y = 109
+cardtype = ""
 connections = [54, 89, 56, 46]
 
 [[countries]]
@@ -494,6 +545,7 @@ name = "Estland"
 continent = 7
 x = 351
 y = 132
+cardtype = ""
 connections = [55, 89, 88, 57]
 
 [[countries]]
@@ -502,6 +554,7 @@ name = "Lettland"
 continent = 7
 x = 338
 y = 155
+cardtype = ""
 connections = [56, 88, 87, 58, 45]
 
 [[countries]]
@@ -510,6 +563,7 @@ name = "Littauen"
 continent = 7
 x = 353
 y = 177
+cardtype = ""
 connections = [57, 87, 86, 60, 59]
 
 [[countries]]
@@ -518,6 +572,7 @@ name = "Ostpreussen"
 continent = 4
 x = 324
 y = 186
+cardtype = ""
 connections = [58, 60, 61]
 
 [[countries]]
@@ -526,6 +581,7 @@ name = "Warschau"
 continent = 4
 x = 336
 y = 213
+cardtype = ""
 connections = [59, 58, 86, 64, 63, 62, 61]
 
 [[countries]]
@@ -534,6 +590,7 @@ name = "Pommern"
 continent = 4
 x = 298
 y = 192
+cardtype = ""
 connections = [59, 60, 62, 42]
 
 [[countries]]
@@ -542,6 +599,7 @@ name = "Posen"
 continent = 4
 x = 298
 y = 215
+cardtype = ""
 connections = [61, 60, 63, 40, 42]
 
 [[countries]]
@@ -550,6 +608,7 @@ name = "Schlesien"
 continent = 4
 x = 307
 y = 235
+cardtype = ""
 connections = [62, 60, 64, 66, 65, 40]
 
 [[countries]]
@@ -558,6 +617,7 @@ name = "Krakau"
 continent = 4
 x = 345
 y = 238
+cardtype = ""
 connections = [60, 85, 66, 63]
 
 [[countries]]
@@ -566,6 +626,7 @@ name = "Tschechien"
 continent = 4
 x = 280
 y = 250
+cardtype = ""
 connections = [63, 66, 37, 38, 40]
 
 [[countries]]
@@ -574,6 +635,7 @@ name = "Slowakei"
 continent = 4
 x = 325
 y = 261
+cardtype = ""
 connections = [63, 64, 85, 67, 37, 65]
 
 [[countries]]
@@ -582,6 +644,7 @@ name = "Ungarn"
 continent = 4
 x = 327
 y = 280
+cardtype = ""
 connections = [66, 85, 84, 71, 69, 68, 37]
 
 [[countries]]
@@ -590,6 +653,7 @@ name = "Slowenien"
 continent = 5
 x = 284
 y = 289
+cardtype = ""
 connections = [35, 37, 67, 69]
 
 [[countries]]
@@ -598,6 +662,7 @@ name = "Kroatien"
 continent = 5
 x = 287
 y = 319
+cardtype = ""
 connections = [68, 67, 71, 70, 72]
 
 [[countries]]
@@ -606,6 +671,7 @@ name = "Bosnien"
 continent = 5
 x = 316
 y = 315
+cardtype = ""
 connections = [69, 71, 72]
 
 [[countries]]
@@ -614,6 +680,7 @@ name = "Belgrad"
 continent = 5
 x = 341
 y = 304
+cardtype = ""
 connections = [67, 84, 82, 81, 72, 70, 69]
 
 [[countries]]
@@ -622,6 +689,7 @@ name = "Serbien"
 continent = 5
 x = 342
 y = 327
+cardtype = ""
 connections = [69, 70, 71, 81, 73, 74]
 
 [[countries]]
@@ -630,6 +698,7 @@ name = "Montenegro"
 continent = 5
 x = 365
 y = 339
+cardtype = ""
 connections = [72, 81, 75, 74]
 
 [[countries]]
@@ -638,6 +707,7 @@ name = "Albanien"
 continent = 6
 x = 333
 y = 358
+cardtype = ""
 connections = [72, 73, 75, 76, 32]
 
 [[countries]]
@@ -646,6 +716,7 @@ name = "Thesaloniki"
 continent = 6
 x = 387
 y = 353
+cardtype = ""
 connections = [74, 73, 81, 80, 76]
 
 [[countries]]
@@ -654,6 +725,7 @@ name = "Athen"
 continent = 6
 x = 363
 y = 396
+cardtype = ""
 connections = [74, 75, 77]
 
 [[countries]]
@@ -662,6 +734,7 @@ name = "Kreta"
 continent = 6
 x = 427
 y = 415
+cardtype = ""
 connections = [31, 76, 78]
 
 [[countries]]
@@ -670,6 +743,7 @@ name = "Izmir"
 continent = 6
 x = 467
 y = 385
+cardtype = ""
 connections = [77, 79, 110, 109]
 
 [[countries]]
@@ -678,6 +752,7 @@ name = "Bosporus"
 continent = 6
 x = 440
 y = 355
+cardtype = ""
 connections = [80, 110, 78]
 
 [[countries]]
@@ -686,6 +761,7 @@ name = "Istanbul"
 continent = 6
 x = 433
 y = 339
+cardtype = ""
 connections = [75, 81, 79]
 
 [[countries]]
@@ -694,6 +770,7 @@ name = "Bulgarien"
 continent = 5
 x = 398
 y = 326
+cardtype = ""
 connections = [82, 80, 75, 73, 72, 71]
 
 [[countries]]
@@ -702,6 +779,7 @@ name = "Bukarest"
 continent = 5
 x = 385
 y = 307
+cardtype = ""
 connections = [81, 71, 84, 83]
 
 [[countries]]
@@ -710,6 +788,7 @@ name = "Bessarabien"
 continent = 5
 x = 400
 y = 287
+cardtype = ""
 connections = [82, 84, 85, 102, 103]
 
 [[countries]]
@@ -718,6 +797,7 @@ name = "Siebenbuergen"
 continent = 5
 x = 363
 y = 284
+cardtype = ""
 connections = [67, 85, 83, 82, 71]
 
 [[countries]]
@@ -726,6 +806,7 @@ name = "West-Ukraine"
 continent = 7
 x = 381
 y = 240
+cardtype = ""
 connections = [86, 97, 102, 103, 83, 84, 67, 66, 64]
 
 [[countries]]
@@ -734,6 +815,7 @@ name = "Brest"
 continent = 7
 x = 377
 y = 205
+cardtype = ""
 connections = [58, 60, 85, 97, 87]
 
 [[countries]]
@@ -742,6 +824,7 @@ name = "Minsk"
 continent = 7
 x = 399
 y = 181
+cardtype = ""
 connections = [57, 58, 86, 97, 96, 88]
 
 [[countries]]
@@ -750,6 +833,7 @@ name = "Moskau"
 continent = 7
 x = 440
 y = 146
+cardtype = ""
 connections = [56, 57, 87, 89, 90, 93, 94, 95, 96]
 
 [[countries]]
@@ -758,6 +842,7 @@ name = "Petersburg"
 continent = 7
 x = 394
 y = 114
+cardtype = ""
 connections = [54, 55, 56, 88, 90]
 
 [[countries]]
@@ -766,6 +851,7 @@ name = "Onega"
 continent = 7
 x = 414
 y = 72
+cardtype = ""
 connections = [53, 54, 88, 89, 91, 93]
 
 [[countries]]
@@ -774,6 +860,7 @@ name = "Murmansk"
 continent = 7
 x = 406
 y = 19
+cardtype = ""
 connections = [52, 53, 90]
 
 [[countries]]
@@ -782,6 +869,7 @@ name = "Nordrussland"
 continent = 7
 x = 534
 y = 15
+cardtype = ""
 connections = [93]
 
 [[countries]]
@@ -790,6 +878,7 @@ name = "Archangelsk"
 continent = 7
 x = 506
 y = 66
+cardtype = ""
 connections = [88, 90, 92, 94]
 
 [[countries]]
@@ -798,6 +887,7 @@ name = "Saratov"
 continent = 7
 x = 561
 y = 96
+cardtype = ""
 connections = [88, 93, 95]
 
 [[countries]]
@@ -806,6 +896,7 @@ name = "Kasachstan"
 continent = 7
 x = 606
 y = 137
+cardtype = ""
 connections = [88, 94, 96]
 
 [[countries]]
@@ -814,6 +905,7 @@ name = "Voronez"
 continent = 7
 x = 521
 y = 174
+cardtype = ""
 connections = [87, 88, 95, 97, 98]
 
 [[countries]]
@@ -822,6 +914,7 @@ name = "Kiew"
 continent = 7
 x = 430
 y = 229
+cardtype = ""
 connections = [85, 86, 87, 96, 98, 99, 100, 102]
 
 [[countries]]
@@ -830,6 +923,7 @@ name = "Wolgograd"
 continent = 7
 x = 569
 y = 224
+cardtype = ""
 connections = [96, 97, 99, 100, 104]
 
 [[countries]]
@@ -838,6 +932,7 @@ name = "Ostukraine"
 continent = 7
 x = 496
 y = 226
+cardtype = ""
 connections = [97, 98, 100]
 
 [[countries]]
@@ -846,6 +941,7 @@ name = "Sewastopol"
 continent = 7
 x = 483
 y = 251
+cardtype = ""
 connections = [97, 98, 99, 101, 102]
 
 [[countries]]
@@ -854,6 +950,7 @@ name = "Krim"
 continent = 7
 x = 476
 y = 295
+cardtype = ""
 connections = [100, 102, 104, 110]
 
 [[countries]]
@@ -862,6 +959,7 @@ name = "Odessa"
 continent = 7
 x = 441
 y = 279
+cardtype = ""
 connections = [85, 97, 100, 101, 83, 103]
 
 [[countries]]
@@ -870,6 +968,7 @@ name = "Moldawien"
 continent = 7
 x = 415
 y = 264
+cardtype = ""
 connections = [83, 85, 102]
 
 [[countries]]
@@ -878,6 +977,7 @@ name = "Kaukasus"
 continent = 7
 x = 576
 y = 262
+cardtype = ""
 connections = [98, 101, 105, 106]
 
 [[countries]]
@@ -886,6 +986,7 @@ name = "Georgien"
 continent = 7
 x = 571
 y = 288
+cardtype = ""
 connections = [104, 106, 107, 108]
 
 [[countries]]
@@ -894,6 +995,7 @@ name = "Aserbeischan"
 continent = 7
 x = 648
 y = 291
+cardtype = ""
 connections = [104, 105, 107, 108]
 
 [[countries]]
@@ -902,6 +1004,7 @@ name = "Armenien"
 continent = 7
 x = 614
 y = 315
+cardtype = ""
 connections = [105, 106, 108]
 
 [[countries]]
@@ -910,6 +1013,7 @@ name = "Kurdistan"
 continent = 6
 x = 573
 y = 332
+cardtype = ""
 connections = [105, 106, 107, 109, 110]
 
 [[countries]]
@@ -918,6 +1022,7 @@ name = "Konya"
 continent = 6
 x = 535
 y = 364
+cardtype = ""
 connections = [78, 108, 110]
 
 [[countries]]
@@ -926,4 +1031,5 @@ name = "Ankara"
 continent = 6
 x = 491
 y = 329
+cardtype = ""
 connections = [78, 79, 101, 108, 109]

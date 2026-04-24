@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "North_of_Italy_pic.png"
-map = "North_of_Italy_map.png"
-crd = "North_of_Italy.cards"
+nb_wildcards = 6
 
 [[continents]]
 id = 1
@@ -60,6 +56,7 @@ name = "Aosta"
 continent = 1
 x = 70
 y = 198
+cardtype = "Cavalry"
 connections = [2, 3, 5, 6]
 
 [[countries]]
@@ -68,6 +65,7 @@ name = "Verbano_Cusio_Ossola"
 continent = 2
 x = 151
 y = 160
+cardtype = ""
 connections = [1, 5, 4, 11]
 
 [[countries]]
@@ -76,6 +74,7 @@ name = "Biella"
 continent = 2
 x = 127
 y = 215
+cardtype = ""
 connections = [1, 6, 5]
 
 [[countries]]
@@ -84,6 +83,7 @@ name = "Novara"
 continent = 2
 x = 167
 y = 221
+cardtype = "Infantry"
 connections = [5, 18, 17, 11, 2]
 
 [[countries]]
@@ -92,6 +92,7 @@ name = "Vercelli"
 continent = 2
 x = 144
 y = 244
+cardtype = "Cannon"
 connections = [1, 6, 8, 18, 4, 2, 3]
 
 [[countries]]
@@ -100,6 +101,7 @@ name = "Torino"
 continent = 2
 x = 73
 y = 264
+cardtype = "Cavalry"
 connections = [1, 3, 5, 8, 7, 9]
 
 [[countries]]
@@ -108,6 +110,7 @@ name = "Asti"
 continent = 2
 x = 134
 y = 292
+cardtype = "Infantry"
 connections = [6, 9, 8]
 
 [[countries]]
@@ -116,6 +119,7 @@ name = "Alessandria"
 continent = 2
 x = 182
 y = 303
+cardtype = ""
 connections = [6, 9, 7, 5, 36, 37, 39, 18]
 
 [[countries]]
@@ -124,6 +128,7 @@ name = "Cuneo"
 continent = 2
 x = 84
 y = 340
+cardtype = "Cannon"
 connections = [6, 35, 36, 7, 8]
 
 [[countries]]
@@ -132,6 +137,7 @@ name = "Sondrio"
 continent = 3
 x = 274
 y = 146
+cardtype = "Cavalry"
 connections = [12, 13, 14, 15, 23, 22]
 
 [[countries]]
@@ -140,6 +146,7 @@ name = "Varese"
 continent = 3
 x = 183
 y = 188
+cardtype = ""
 connections = [4, 2, 17, 16, 12]
 
 [[countries]]
@@ -148,6 +155,7 @@ name = "Como"
 continent = 3
 x = 214
 y = 173
+cardtype = "Infantry"
 connections = [11, 16, 13, 10]
 
 [[countries]]
@@ -156,6 +164,7 @@ name = "Lecco"
 continent = 3
 x = 237
 y = 177
+cardtype = ""
 connections = [16, 12, 10, 14]
 
 [[countries]]
@@ -164,6 +173,7 @@ name = "Bergamo"
 continent = 3
 x = 268
 y = 191
+cardtype = "Cannon"
 connections = [17, 13, 20, 15, 10]
 
 [[countries]]
@@ -172,6 +182,7 @@ name = "Brescia"
 continent = 3
 x = 311
 y = 213
+cardtype = "Cavalry"
 connections = [14, 10, 23, 27, 21, 20]
 
 [[countries]]
@@ -180,6 +191,7 @@ name = "Monza"
 continent = 3
 x = 220
 y = 210
+cardtype = ""
 connections = [17, 11, 12, 13]
 
 [[countries]]
@@ -188,6 +200,7 @@ name = "Milano"
 continent = 3
 x = 210
 y = 233
+cardtype = "Infantry"
 connections = [4, 18, 19, 14, 16, 11, 20]
 
 [[countries]]
@@ -196,6 +209,7 @@ name = "Pavia"
 continent = 3
 x = 212
 y = 268
+cardtype = "Cannon"
 connections = [5, 8, 4, 39, 19, 17]
 
 [[countries]]
@@ -204,6 +218,7 @@ name = "Lodi"
 continent = 3
 x = 251
 y = 255
+cardtype = ""
 connections = [18, 17, 39, 20]
 
 [[countries]]
@@ -212,6 +227,7 @@ name = "Cremona"
 continent = 3
 x = 302
 y = 267
+cardtype = ""
 connections = [19, 17, 14, 15, 21, 39, 40]
 
 [[countries]]
@@ -220,6 +236,7 @@ name = "Mantova"
 continent = 3
 x = 349
 y = 266
+cardtype = "Cavalry"
 connections = [15, 27, 20, 40, 41, 42, 44, 30]
 
 [[countries]]
@@ -228,6 +245,7 @@ name = "Bolzano"
 continent = 4
 x = 405
 y = 92
+cardtype = ""
 connections = [10, 24, 23]
 
 [[countries]]
@@ -236,6 +254,7 @@ name = "Trento"
 continent = 4
 x = 367
 y = 159
+cardtype = "Infantry"
 connections = [10, 15, 25, 27, 24, 22]
 
 [[countries]]
@@ -244,6 +263,7 @@ name = "Belluno"
 continent = 5
 x = 465
 y = 132
+cardtype = "Cannon"
 connections = [26, 25, 23, 22, 31, 32]
 
 [[countries]]
@@ -252,6 +272,7 @@ name = "Vicenza"
 continent = 5
 x = 410
 y = 203
+cardtype = ""
 connections = [28, 26, 23, 27, 24]
 
 [[countries]]
@@ -260,6 +281,7 @@ name = "Treviso"
 continent = 5
 x = 471
 y = 191
+cardtype = ""
 connections = [28, 29, 31, 24, 25]
 
 [[countries]]
@@ -268,6 +290,7 @@ name = "Verona"
 continent = 5
 x = 373
 y = 233
+cardtype = "Cavalry"
 connections = [15, 21, 30, 28, 25, 23]
 
 [[countries]]
@@ -276,6 +299,7 @@ name = "Padova"
 continent = 5
 x = 439
 y = 245
+cardtype = "Infantry"
 connections = [30, 27, 25, 26, 29]
 
 [[countries]]
@@ -284,6 +308,7 @@ name = "Venezia"
 continent = 5
 x = 466
 y = 230
+cardtype = "Cannon"
 connections = [30, 28, 26, 31, 32]
 
 [[countries]]
@@ -292,6 +317,7 @@ name = "Rovigo"
 continent = 5
 x = 476
 y = 279
+cardtype = "Cavalry"
 connections = [21, 44, 27, 28, 29]
 
 [[countries]]
@@ -300,6 +326,7 @@ name = "Pordenone"
 continent = 6
 x = 510
 y = 159
+cardtype = "Infantry"
 connections = [29, 26, 24, 32]
 
 [[countries]]
@@ -308,6 +335,7 @@ name = "Udine"
 continent = 6
 x = 553
 y = 152
+cardtype = "Cannon"
 connections = [29, 24, 31, 33]
 
 [[countries]]
@@ -316,6 +344,7 @@ name = "Gorizia"
 continent = 6
 x = 582
 y = 182
+cardtype = ""
 connections = [32, 34]
 
 [[countries]]
@@ -324,6 +353,7 @@ name = "Trieste"
 continent = 6
 x = 601
 y = 206
+cardtype = ""
 connections = [33]
 
 [[countries]]
@@ -332,6 +362,7 @@ name = "Imperia"
 continent = 7
 x = 106
 y = 396
+cardtype = ""
 connections = [9, 36]
 
 [[countries]]
@@ -340,6 +371,7 @@ name = "Savona"
 continent = 7
 x = 143
 y = 362
+cardtype = "Cavalry"
 connections = [9, 8, 35, 37]
 
 [[countries]]
@@ -348,6 +380,7 @@ name = "Genova"
 continent = 7
 x = 217
 y = 340
+cardtype = "Infantry"
 connections = [8, 36, 38, 39, 40]
 
 [[countries]]
@@ -356,6 +389,7 @@ name = "La_Spezia"
 continent = 7
 x = 264
 y = 368
+cardtype = "Cannon"
 connections = [37, 40]
 
 [[countries]]
@@ -364,6 +398,7 @@ name = "Piacenza"
 continent = 8
 x = 255
 y = 295
+cardtype = "Cavalry"
 connections = [8, 37, 18, 19, 20, 40]
 
 [[countries]]
@@ -372,6 +407,7 @@ name = "Parma"
 continent = 8
 x = 296
 y = 316
+cardtype = "Infantry"
 connections = [38, 37, 21, 20, 39, 41]
 
 [[countries]]
@@ -380,6 +416,7 @@ name = "Reggio_Emilia"
 continent = 8
 x = 337
 y = 324
+cardtype = "Cannon"
 connections = [21, 40, 42]
 
 [[countries]]
@@ -388,6 +425,7 @@ name = "Modena"
 continent = 8
 x = 362
 y = 335
+cardtype = ""
 connections = [21, 41, 44, 43]
 
 [[countries]]
@@ -396,6 +434,7 @@ name = "Bologna"
 continent = 8
 x = 402
 y = 341
+cardtype = "Cavalry"
 connections = [42, 44, 45]
 
 [[countries]]
@@ -404,6 +443,7 @@ name = "Ferrara"
 continent = 8
 x = 447
 y = 303
+cardtype = "Infantry"
 connections = [21, 42, 30, 43, 45]
 
 [[countries]]
@@ -412,6 +452,7 @@ name = "Ravenna"
 continent = 8
 x = 461
 y = 345
+cardtype = "Cannon"
 connections = [44, 46, 43]
 
 [[countries]]
@@ -420,6 +461,7 @@ name = "Forli-Cesena"
 continent = 8
 x = 458
 y = 387
+cardtype = ""
 connections = [45, 47]
 
 [[countries]]
@@ -428,4 +470,5 @@ name = "Rimini"
 continent = 8
 x = 502
 y = 395
+cardtype = ""
 connections = [46]

@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "ohio_pic.png"
-map = "ohio_map.gif"
-crd = "ohio.cards"
+nb_wildcards = 3
 
 [[continents]]
 id = 1
@@ -42,6 +38,7 @@ name = "Williams"
 continent = 1
 x = 166
 y = 54
+cardtype = "Infantry"
 connections = [2, 8, 7]
 
 [[countries]]
@@ -50,6 +47,7 @@ name = "Fulton"
 continent = 1
 x = 207
 y = 49
+cardtype = "Cannon"
 connections = [1, 3, 7]
 
 [[countries]]
@@ -58,6 +56,7 @@ name = "Lucas"
 continent = 1
 x = 276
 y = 35
+cardtype = "Infantry"
 connections = [2, 4, 6, 7]
 
 [[countries]]
@@ -66,6 +65,7 @@ name = "Ottawa"
 continent = 1
 x = 295
 y = 57
+cardtype = "Infantry"
 connections = [3, 5, 6, 52]
 
 [[countries]]
@@ -74,6 +74,7 @@ name = "Sandusky"
 continent = 1
 x = 296
 y = 78
+cardtype = "Cavalry"
 connections = [4, 52, 6, 12, 51]
 
 [[countries]]
@@ -82,6 +83,7 @@ name = "Wood"
 continent = 1
 x = 252
 y = 81
+cardtype = "Cavalry"
 connections = [3, 4, 5, 7, 11, 12]
 
 [[countries]]
@@ -90,6 +92,7 @@ name = "Henry"
 continent = 1
 x = 216
 y = 81
+cardtype = "Cavalry"
 connections = [1, 2, 3, 6, 10, 8]
 
 [[countries]]
@@ -98,6 +101,7 @@ name = "Defiance"
 continent = 1
 x = 177
 y = 80
+cardtype = "Cannon"
 connections = [1, 10, 7, 9]
 
 [[countries]]
@@ -106,6 +110,7 @@ name = "Paulding"
 continent = 1
 x = 169
 y = 105
+cardtype = "Cannon"
 connections = [10, 8, 18]
 
 [[countries]]
@@ -114,6 +119,7 @@ name = "Putnam"
 continent = 1
 x = 210
 y = 116
+cardtype = "Cannon"
 connections = [11, 7, 8, 9, 18, 16]
 
 [[countries]]
@@ -122,6 +128,7 @@ name = "Hancock"
 continent = 1
 x = 251
 y = 120
+cardtype = "Cavalry"
 connections = [6, 10, 12, 14, 15, 16]
 
 [[countries]]
@@ -130,6 +137,7 @@ name = "Seneca"
 continent = 1
 x = 298
 y = 105
+cardtype = "Cannon"
 connections = [5, 6, 11, 51, 13, 14]
 
 [[countries]]
@@ -138,6 +146,7 @@ name = "Crawford"
 continent = 1
 x = 316
 y = 137
+cardtype = "Infantry"
 connections = [12, 14, 47, 48, 50, 51]
 
 [[countries]]
@@ -146,6 +155,7 @@ name = "Wyandot"
 continent = 1
 x = 281
 y = 138
+cardtype = "Infantry"
 connections = [11, 12, 13, 47, 15]
 
 [[countries]]
@@ -154,6 +164,7 @@ name = "Hardin"
 continent = 1
 x = 250
 y = 158
+cardtype = "Cannon"
 connections = [11, 14, 47, 45, 44, 17, 16]
 
 [[countries]]
@@ -162,6 +173,7 @@ name = "Allen"
 continent = 1
 x = 213
 y = 147
+cardtype = "Cannon"
 connections = [10, 11, 15, 17, 18]
 
 [[countries]]
@@ -170,6 +182,7 @@ name = "Auglaize"
 continent = 1
 x = 197
 y = 169
+cardtype = "Cavalry"
 connections = [15, 16, 18, 21, 44, 19, 20]
 
 [[countries]]
@@ -178,6 +191,7 @@ name = "Van_Wert"
 continent = 1
 x = 167
 y = 137
+cardtype = "Cavalry"
 connections = [10, 9, 16, 19, 17]
 
 [[countries]]
@@ -186,6 +200,7 @@ name = "Mercer"
 continent = 1
 x = 165
 y = 174
+cardtype = "Infantry"
 connections = [18, 17, 20]
 
 [[countries]]
@@ -194,6 +209,7 @@ name = "Darke"
 continent = 2
 x = 164
 y = 220
+cardtype = "Cavalry"
 connections = [17, 19, 21, 22, 23, 24]
 
 [[countries]]
@@ -202,6 +218,7 @@ name = "Shelby"
 continent = 2
 x = 202
 y = 198
+cardtype = "Infantry"
 connections = [17, 20, 22, 43, 44]
 
 [[countries]]
@@ -210,6 +227,7 @@ name = "Miami"
 continent = 2
 x = 200
 y = 230
+cardtype = "Infantry"
 connections = [20, 21, 23, 42, 43]
 
 [[countries]]
@@ -218,6 +236,7 @@ name = "Montgomery"
 continent = 2
 x = 194
 y = 264
+cardtype = "Cavalry"
 connections = [20, 22, 33, 42, 24, 25, 26]
 
 [[countries]]
@@ -226,6 +245,7 @@ name = "Preble"
 continent = 2
 x = 163
 y = 265
+cardtype = "Cannon"
 connections = [20, 23, 25]
 
 [[countries]]
@@ -234,6 +254,7 @@ name = "Butler"
 continent = 2
 x = 168
 y = 300
+cardtype = "Cannon"
 connections = [23, 24, 27, 26]
 
 [[countries]]
@@ -242,6 +263,7 @@ name = "Warren"
 continent = 2
 x = 205
 y = 303
+cardtype = "Infantry"
 connections = [23, 25, 33, 32, 28, 27]
 
 [[countries]]
@@ -250,6 +272,7 @@ name = "Hamilton"
 continent = 2
 x = 159
 y = 342
+cardtype = "Cannon"
 connections = [25, 26, 28]
 
 [[countries]]
@@ -258,6 +281,7 @@ name = "Clermont"
 continent = 2
 x = 205
 y = 343
+cardtype = "Cavalry"
 connections = [26, 27, 29, 32]
 
 [[countries]]
@@ -266,6 +290,7 @@ name = "Brown"
 continent = 2
 x = 232
 y = 363
+cardtype = "Cavalry"
 connections = [28, 30, 31, 32]
 
 [[countries]]
@@ -274,6 +299,7 @@ name = "Adams"
 continent = 2
 x = 267
 y = 369
+cardtype = "Infantry"
 connections = [29, 87, 88, 31]
 
 [[countries]]
@@ -282,6 +308,7 @@ name = "Highland"
 continent = 2
 x = 256
 y = 331
+cardtype = "Cannon"
 connections = [29, 30, 32, 88, 35, 34]
 
 [[countries]]
@@ -290,6 +317,7 @@ name = "Clinton"
 continent = 2
 x = 238
 y = 304
+cardtype = "Infantry"
 connections = [26, 28, 29, 31, 33, 34]
 
 [[countries]]
@@ -298,6 +326,7 @@ name = "Greene"
 continent = 2
 x = 231
 y = 272
+cardtype = "Cannon"
 connections = [23, 26, 32, 34, 41, 42]
 
 [[countries]]
@@ -306,6 +335,7 @@ name = "Fayette"
 continent = 3
 x = 269
 y = 285
+cardtype = "Cavalry"
 connections = [31, 32, 33, 41, 37, 35]
 
 [[countries]]
@@ -314,6 +344,7 @@ name = "Ross"
 continent = 3
 x = 304
 y = 313
+cardtype = "Infantry"
 connections = [31, 34, 88, 36, 83, 85, 37]
 
 [[countries]]
@@ -322,6 +353,7 @@ name = "Hocking"
 continent = 3
 x = 355
 y = 295
+cardtype = "Cannon"
 connections = [35, 83, 81, 80, 38, 37]
 
 [[countries]]
@@ -330,6 +362,7 @@ name = "Pickaway"
 continent = 3
 x = 305
 y = 276
+cardtype = "Infantry"
 connections = [34, 35, 36, 40, 41, 38]
 
 [[countries]]
@@ -338,6 +371,7 @@ name = "Fairfield"
 continent = 3
 x = 344
 y = 265
+cardtype = "Cavalry"
 connections = [36, 37, 80, 40, 39]
 
 [[countries]]
@@ -346,6 +380,7 @@ name = "Licking"
 continent = 3
 x = 356
 y = 226
+cardtype = "Cavalry"
 connections = [38, 49, 72, 73, 80, 40, 46]
 
 [[countries]]
@@ -354,6 +389,7 @@ name = "Franklin"
 continent = 3
 x = 316
 y = 249
+cardtype = "Cavalry"
 connections = [37, 38, 39, 46, 41, 45]
 
 [[countries]]
@@ -362,6 +398,7 @@ name = "Madison"
 continent = 3
 x = 273
 y = 252
+cardtype = "Cannon"
 connections = [33, 34, 37, 40, 42, 43, 45]
 
 [[countries]]
@@ -370,6 +407,7 @@ name = "Clark"
 continent = 3
 x = 238
 y = 245
+cardtype = "Infantry"
 connections = [22, 23, 33, 41, 43]
 
 [[countries]]
@@ -378,6 +416,7 @@ name = "Champaign"
 continent = 3
 x = 241
 y = 221
+cardtype = "Cannon"
 connections = [21, 22, 41, 42, 44, 45]
 
 [[countries]]
@@ -386,6 +425,7 @@ name = "Logan"
 continent = 3
 x = 243
 y = 191
+cardtype = "Cannon"
 connections = [15, 17, 21, 43, 45]
 
 [[countries]]
@@ -394,6 +434,7 @@ name = "Union"
 continent = 3
 x = 274
 y = 200
+cardtype = "Infantry"
 connections = [15, 40, 41, 43, 44, 47, 46]
 
 [[countries]]
@@ -402,6 +443,7 @@ name = "Delaware"
 continent = 3
 x = 308
 y = 206
+cardtype = "Cannon"
 connections = [39, 40, 45, 49, 48, 47]
 
 [[countries]]
@@ -410,6 +452,7 @@ name = "Marion"
 continent = 3
 x = 295
 y = 166
+cardtype = "Cavalry"
 connections = [13, 14, 15, 45, 46, 48]
 
 [[countries]]
@@ -418,6 +461,7 @@ name = "Morrow"
 continent = 3
 x = 329
 y = 179
+cardtype = "Cavalry"
 connections = [13, 46, 47, 49, 50]
 
 [[countries]]
@@ -426,6 +470,7 @@ name = "Knox"
 continent = 3
 x = 362
 y = 188
+cardtype = "Infantry"
 connections = [39, 46, 48, 72, 55, 54, 50]
 
 [[countries]]
@@ -434,6 +479,7 @@ name = "Richland"
 continent = 4
 x = 349
 y = 146
+cardtype = "Cannon"
 connections = [13, 48, 49, 54, 51]
 
 [[countries]]
@@ -442,6 +488,7 @@ name = "Huron"
 continent = 4
 x = 344
 y = 103
+cardtype = "Infantry"
 connections = [12, 5, 13, 50, 54, 53, 52]
 
 [[countries]]
@@ -450,6 +497,7 @@ name = "Erie"
 continent = 4
 x = 335
 y = 76
+cardtype = "Cannon"
 connections = [4, 5, 51, 53]
 
 [[countries]]
@@ -458,6 +506,7 @@ name = "Lorain"
 continent = 4
 x = 383
 y = 85
+cardtype = "Cavalry"
 connections = [51, 52, 54, 57, 58]
 
 [[countries]]
@@ -466,6 +515,7 @@ name = "Ashland"
 continent = 4
 x = 372
 y = 135
+cardtype = "Infantry"
 connections = [49, 50, 51, 53, 55, 56, 57]
 
 [[countries]]
@@ -474,6 +524,7 @@ name = "Holmes"
 continent = 4
 x = 402
 y = 170
+cardtype = "Infantry"
 connections = [49, 54, 72, 71, 65, 56]
 
 [[countries]]
@@ -482,6 +533,7 @@ name = "Wayne"
 continent = 4
 x = 406
 y = 141
+cardtype = "Cavalry"
 connections = [54, 55, 57, 64, 65]
 
 [[countries]]
@@ -490,6 +542,7 @@ name = "Medina"
 continent = 4
 x = 407
 y = 106
+cardtype = "Cavalry"
 connections = [53, 54, 56, 64, 58]
 
 [[countries]]
@@ -498,6 +551,7 @@ name = "Cuyahoga"
 continent = 4
 x = 440
 y = 57
+cardtype = "Infantry"
 connections = [53, 57, 59, 60, 64]
 
 [[countries]]
@@ -506,6 +560,7 @@ name = "Lake"
 continent = 4
 x = 465
 y = 30
+cardtype = "Cannon"
 connections = [58, 60, 61]
 
 [[countries]]
@@ -514,6 +569,7 @@ name = "Geauga"
 continent = 4
 x = 471
 y = 65
+cardtype = "Cavalry"
 connections = [58, 59, 63, 62, 61]
 
 [[countries]]
@@ -522,6 +578,7 @@ name = "Ashtabula"
 continent = 4
 x = 507
 y = 39
+cardtype = "Infantry"
 connections = [59, 60, 62]
 
 [[countries]]
@@ -530,6 +587,7 @@ name = "Trumbull"
 continent = 4
 x = 509
 y = 83
+cardtype = "Cannon"
 connections = [60, 61, 66, 63]
 
 [[countries]]
@@ -538,6 +596,7 @@ name = "Portage"
 continent = 4
 x = 470
 y = 99
+cardtype = "Cavalry"
 connections = [60, 62, 66, 65, 64]
 
 [[countries]]
@@ -546,6 +605,7 @@ name = "Summit"
 continent = 4
 x = 439
 y = 104
+cardtype = "Infantry"
 connections = [56, 57, 58, 63, 65]
 
 [[countries]]
@@ -554,6 +614,7 @@ name = "Stark"
 continent = 4
 x = 452
 y = 143
+cardtype = "Cannon"
 connections = [55, 56, 63, 64, 71, 69, 67, 66]
 
 [[countries]]
@@ -562,6 +623,7 @@ name = "Mahoning"
 continent = 4
 x = 507
 y = 118
+cardtype = "Cavalry"
 connections = [62, 63, 65, 67]
 
 [[countries]]
@@ -570,6 +632,7 @@ name = "Columbiana"
 continent = 4
 x = 509
 y = 149
+cardtype = "Infantry"
 connections = [65, 66, 68, 69]
 
 [[countries]]
@@ -578,6 +641,7 @@ name = "Jefferson"
 continent = 5
 x = 510
 y = 190
+cardtype = "Cannon"
 connections = [67, 70, 69, 75]
 
 [[countries]]
@@ -586,6 +650,7 @@ name = "Carroll"
 continent = 5
 x = 480
 y = 169
+cardtype = "Cavalry"
 connections = [65, 67, 68, 70, 71]
 
 [[countries]]
@@ -594,6 +659,7 @@ name = "Harrison"
 continent = 5
 x = 480
 y = 202
+cardtype = "Infantry"
 connections = [68, 69, 75, 74, 71]
 
 [[countries]]
@@ -602,6 +668,7 @@ name = "Tuscarawas"
 continent = 5
 x = 446
 y = 184
+cardtype = "Cannon"
 connections = [55, 65, 69, 70, 74, 72]
 
 [[countries]]
@@ -610,6 +677,7 @@ name = "Coshocton"
 continent = 5
 x = 404
 y = 200
+cardtype = "Cavalry"
 connections = [39, 49, 55, 71, 73, 74]
 
 [[countries]]
@@ -618,6 +686,7 @@ name = "Muskingum"
 continent = 5
 x = 403
 y = 240
+cardtype = "Infantry"
 connections = [39, 72, 80, 79, 77, 74]
 
 [[countries]]
@@ -626,6 +695,7 @@ name = "Guernsey"
 continent = 5
 x = 444
 y = 229
+cardtype = "Cannon"
 connections = [70, 71, 72, 73, 77, 75]
 
 [[countries]]
@@ -634,6 +704,7 @@ name = "Belmont"
 continent = 5
 x = 488
 y = 235
+cardtype = "Cavalry"
 connections = [68, 70, 74, 76, 77]
 
 [[countries]]
@@ -642,6 +713,7 @@ name = "Monroe"
 continent = 5
 x = 482
 y = 269
+cardtype = "Infantry"
 connections = [75, 78, 77]
 
 [[countries]]
@@ -650,6 +722,7 @@ name = "Noble"
 continent = 5
 x = 444
 y = 264
+cardtype = "Cannon"
 connections = [73, 74, 75, 76, 78, 79]
 
 [[countries]]
@@ -658,6 +731,7 @@ name = "Washington"
 continent = 5
 x = 428
 y = 308
+cardtype = "Cavalry"
 connections = [76, 77, 79, 81]
 
 [[countries]]
@@ -666,6 +740,7 @@ name = "Morgan"
 continent = 5
 x = 412
 y = 280
+cardtype = "Infantry"
 connections = [73, 77, 78, 81, 80]
 
 [[countries]]
@@ -674,6 +749,7 @@ name = "Perry"
 continent = 5
 x = 379
 y = 270
+cardtype = "Cannon"
 connections = [36, 38, 39, 73, 79, 81]
 
 [[countries]]
@@ -682,6 +758,7 @@ name = "Athens"
 continent = 5
 x = 394
 y = 313
+cardtype = "Cavalry"
 connections = [36, 79, 78, 80, 82, 83]
 
 [[countries]]
@@ -690,6 +767,7 @@ name = "Meigs"
 continent = 5
 x = 395
 y = 340
+cardtype = "Infantry"
 connections = [81, 84, 83]
 
 [[countries]]
@@ -698,6 +776,7 @@ name = "Vinton"
 continent = 5
 x = 358
 y = 320
+cardtype = "Cannon"
 connections = [35, 36, 81, 82, 84, 85]
 
 [[countries]]
@@ -706,6 +785,7 @@ name = "Gallia"
 continent = 5
 x = 368
 y = 375
+cardtype = "Cavalry"
 connections = [82, 83, 86, 85]
 
 [[countries]]
@@ -714,6 +794,7 @@ name = "Jackson"
 continent = 5
 x = 344
 y = 349
+cardtype = "Infantry"
 connections = [35, 83, 84, 86, 87, 88]
 
 [[countries]]
@@ -722,6 +803,7 @@ name = "Lawrence"
 continent = 5
 x = 352
 y = 399
+cardtype = "Cannon"
 connections = [84, 87, 85]
 
 [[countries]]
@@ -730,6 +812,7 @@ name = "Scioto"
 continent = 5
 x = 311
 y = 369
+cardtype = "Cavalry"
 connections = [30, 86, 85, 88]
 
 [[countries]]
@@ -738,4 +821,5 @@ name = "Pike"
 continent = 5
 x = 304
 y = 343
+cardtype = "Infantry"
 connections = [30, 31, 35, 85, 87]

@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "us_pic.jpg"
-map = "us_map.gif"
-crd = "us.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -36,6 +32,7 @@ name = "Washington"
 continent = 4
 x = 104
 y = 30
+cardtype = "Infantry"
 connections = [2, 4]
 
 [[countries]]
@@ -44,6 +41,7 @@ name = "Oregon"
 continent = 4
 x = 92
 y = 83
+cardtype = "Cannon"
 connections = [1, 4, 3, 5]
 
 [[countries]]
@@ -52,6 +50,7 @@ name = "California"
 continent = 4
 x = 66
 y = 179
+cardtype = "Infantry"
 connections = [2, 5, 7, 6]
 
 [[countries]]
@@ -60,6 +59,7 @@ name = "Idaho"
 continent = 4
 x = 158
 y = 100
+cardtype = "Infantry"
 connections = [1, 2, 5, 8, 9, 10]
 
 [[countries]]
@@ -68,6 +68,7 @@ name = "Nevada"
 continent = 4
 x = 117
 y = 160
+cardtype = "Cavalry"
 connections = [2, 3, 4, 7, 8]
 
 [[countries]]
@@ -76,6 +77,7 @@ name = "Alaska"
 continent = 4
 x = 91
 y = 322
+cardtype = "Cavalry"
 connections = [3, 13]
 
 [[countries]]
@@ -84,6 +86,7 @@ name = "Arizona"
 continent = 4
 x = 165
 y = 248
+cardtype = "Cavalry"
 connections = [3, 5, 8, 12]
 
 [[countries]]
@@ -92,6 +95,7 @@ name = "Utah"
 continent = 4
 x = 177
 y = 177
+cardtype = "Cannon"
 connections = [4, 5, 7, 10, 11, 12]
 
 [[countries]]
@@ -100,6 +104,7 @@ name = "Montana"
 continent = 4
 x = 217
 y = 58
+cardtype = "Cannon"
 connections = [4, 10, 18, 19]
 
 [[countries]]
@@ -108,6 +113,7 @@ name = "Wyoming"
 continent = 4
 x = 234
 y = 123
+cardtype = "Cannon"
 connections = [4, 8, 9, 11, 17, 18]
 
 [[countries]]
@@ -116,6 +122,7 @@ name = "Colorado"
 continent = 4
 x = 246
 y = 189
+cardtype = "Cavalry"
 connections = [8, 10, 12, 15, 16, 17]
 
 [[countries]]
@@ -124,6 +131,7 @@ name = "New-Mexico"
 continent = 4
 x = 236
 y = 257
+cardtype = "Cannon"
 connections = [7, 8, 11, 14, 15]
 
 [[countries]]
@@ -132,6 +140,7 @@ name = "Hawaii"
 continent = 4
 x = 288
 y = 404
+cardtype = "Infantry"
 connections = [6]
 
 [[countries]]
@@ -140,6 +149,7 @@ name = "Texas"
 continent = 2
 x = 319
 y = 310
+cardtype = "Infantry"
 connections = [12, 15, 23, 24]
 
 [[countries]]
@@ -148,6 +158,7 @@ name = "Oklahoma"
 continent = 2
 x = 350
 y = 250
+cardtype = "Cannon"
 connections = [11, 12, 14, 16, 22, 23]
 
 [[countries]]
@@ -156,6 +167,7 @@ name = "Kansas"
 continent = 3
 x = 333
 y = 202
+cardtype = "Cannon"
 connections = [11, 15, 17, 22]
 
 [[countries]]
@@ -164,6 +176,7 @@ name = "Nebraska"
 continent = 3
 x = 318
 y = 153
+cardtype = "Cavalry"
 connections = [10, 11, 16, 18, 21, 22]
 
 [[countries]]
@@ -172,6 +185,7 @@ name = "South-Dakota"
 continent = 3
 x = 315
 y = 108
+cardtype = "Cavalry"
 connections = [9, 10, 17, 19, 20, 21]
 
 [[countries]]
@@ -180,6 +194,7 @@ name = "North-Dakota"
 continent = 3
 x = 315
 y = 60
+cardtype = "Infantry"
 connections = [9, 18, 20]
 
 [[countries]]
@@ -188,6 +203,7 @@ name = "Minnesota"
 continent = 3
 x = 382
 y = 108
+cardtype = "Cavalry"
 connections = [18, 19, 21, 29]
 
 [[countries]]
@@ -196,6 +212,7 @@ name = "Iowa"
 continent = 3
 x = 387
 y = 144
+cardtype = "Infantry"
 connections = [17, 18, 20, 22, 28, 29]
 
 [[countries]]
@@ -204,6 +221,7 @@ name = "Missouri"
 continent = 3
 x = 405
 y = 202
+cardtype = "Infantry"
 connections = [15, 16, 17, 21, 23, 26, 27, 28]
 
 [[countries]]
@@ -212,6 +230,7 @@ name = "Arkansas"
 continent = 2
 x = 408
 y = 258
+cardtype = "Cavalry"
 connections = [14, 15, 22, 24, 25, 26]
 
 [[countries]]
@@ -220,6 +239,7 @@ name = "Louisiana"
 continent = 2
 x = 410
 y = 318
+cardtype = "Cannon"
 connections = [14, 23, 25]
 
 [[countries]]
@@ -228,6 +248,7 @@ name = "Mississippi"
 continent = 2
 x = 455
 y = 288
+cardtype = "Cannon"
 connections = [23, 24, 26, 32]
 
 [[countries]]
@@ -236,6 +257,7 @@ name = "Tennessee"
 continent = 2
 x = 481
 y = 237
+cardtype = "Infantry"
 connections = [22, 23, 25, 27, 32, 34, 36, 37]
 
 [[countries]]
@@ -244,6 +266,7 @@ name = "Kentucky"
 continent = 2
 x = 501
 y = 205
+cardtype = "Cannon"
 connections = [22, 26, 28, 31, 37, 38, 39]
 
 [[countries]]
@@ -252,6 +275,7 @@ name = "Illinois"
 continent = 3
 x = 442
 y = 172
+cardtype = "Cavalry"
 connections = [21, 22, 27, 29, 31]
 
 [[countries]]
@@ -260,6 +284,7 @@ name = "Wisconsin"
 continent = 3
 x = 431
 y = 104
+cardtype = "Cavalry"
 connections = [20, 21, 28, 30]
 
 [[countries]]
@@ -268,6 +293,7 @@ name = "Michigan"
 continent = 3
 x = 489
 y = 119
+cardtype = "Infantry"
 connections = [29, 31, 39]
 
 [[countries]]
@@ -276,6 +302,7 @@ name = "Indiana"
 continent = 3
 x = 479
 y = 173
+cardtype = "Cannon"
 connections = [27, 28, 30, 39]
 
 [[countries]]
@@ -284,6 +311,7 @@ name = "Alabama"
 continent = 2
 x = 483
 y = 284
+cardtype = "Infantry"
 connections = [25, 26, 33, 34]
 
 [[countries]]
@@ -292,6 +320,7 @@ name = "Florida"
 continent = 2
 x = 561
 y = 350
+cardtype = "Cannon"
 connections = [32, 34]
 
 [[countries]]
@@ -300,6 +329,7 @@ name = "Georgia"
 continent = 2
 x = 526
 y = 281
+cardtype = "Cavalry"
 connections = [26, 32, 33, 35, 36]
 
 [[countries]]
@@ -308,6 +338,7 @@ name = "South-Carolina"
 continent = 2
 x = 557
 y = 258
+cardtype = "Infantry"
 connections = [34, 36]
 
 [[countries]]
@@ -316,6 +347,7 @@ name = "North-Carolina"
 continent = 2
 x = 564
 y = 228
+cardtype = "Cannon"
 connections = [26, 34, 35, 37]
 
 [[countries]]
@@ -324,6 +356,7 @@ name = "Virginia"
 continent = 2
 x = 577
 y = 197
+cardtype = "Infantry"
 connections = [26, 27, 36, 38, 41]
 
 [[countries]]
@@ -332,6 +365,7 @@ name = "West-Virginia"
 continent = 2
 x = 545
 y = 186
+cardtype = "Cavalry"
 connections = [27, 37, 39, 40, 41]
 
 [[countries]]
@@ -340,6 +374,7 @@ name = "Ohio"
 continent = 3
 x = 518
 y = 165
+cardtype = "Cavalry"
 connections = [27, 31, 30, 38, 40]
 
 [[countries]]
@@ -348,6 +383,7 @@ name = "Pennsylvania"
 continent = 1
 x = 573
 y = 145
+cardtype = "Cavalry"
 connections = [38, 39, 41, 42, 43, 44]
 
 [[countries]]
@@ -356,6 +392,7 @@ name = "Maryland"
 continent = 1
 x = 568
 y = 168
+cardtype = "Cannon"
 connections = [37, 38, 40, 42]
 
 [[countries]]
@@ -364,6 +401,7 @@ name = "Delaware"
 continent = 1
 x = 608
 y = 166
+cardtype = "Infantry"
 connections = [40, 41, 43]
 
 [[countries]]
@@ -372,6 +410,7 @@ name = "New-Jersey"
 continent = 1
 x = 613
 y = 149
+cardtype = "Infantry"
 connections = [40, 42, 44]
 
 [[countries]]
@@ -380,6 +419,7 @@ name = "New-York"
 continent = 1
 x = 597
 y = 107
+cardtype = "Infantry"
 connections = [40, 43, 45, 47, 48]
 
 [[countries]]
@@ -388,6 +428,7 @@ name = "Connecticut"
 continent = 1
 x = 632
 y = 122
+cardtype = "Infantry"
 connections = [44, 46, 47]
 
 [[countries]]
@@ -396,6 +437,7 @@ name = "Rhode-Island"
 continent = 1
 x = 646
 y = 116
+cardtype = "Infantry"
 connections = [45, 47]
 
 [[countries]]
@@ -404,6 +446,7 @@ name = "Massachusetts"
 continent = 1
 x = 635
 y = 105
+cardtype = "Infantry"
 connections = [44, 45, 46, 48, 49]
 
 [[countries]]
@@ -412,6 +455,7 @@ name = "Vermont"
 continent = 1
 x = 619
 y = 83
+cardtype = "Infantry"
 connections = [44, 47, 49]
 
 [[countries]]
@@ -420,6 +464,7 @@ name = "New-Hampshire"
 continent = 1
 x = 634
 y = 89
+cardtype = "Cavalry"
 connections = [47, 48, 50]
 
 [[countries]]
@@ -428,4 +473,5 @@ name = "Maine"
 continent = 1
 x = 652
 y = 50
+cardtype = "Cavalry"
 connections = [49]

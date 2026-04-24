@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "greececolour.jpg"
-map = "greeceblack.gif"
-crd = "greece.cards"
+nb_wildcards = 16
 
 [[continents]]
 id = 1
@@ -66,6 +62,7 @@ name = "Ebrou"
 continent = 1
 x = 497
 y = 53
+cardtype = "Infantry"
 connections = [2, 52]
 
 [[countries]]
@@ -74,6 +71,7 @@ name = "Rodopis"
 continent = 1
 x = 451
 y = 55
+cardtype = "Cannon"
 connections = [1, 3]
 
 [[countries]]
@@ -82,6 +80,7 @@ name = "Xanthis"
 continent = 1
 x = 390
 y = 49
+cardtype = "Infantry"
 connections = [2, 4, 53]
 
 [[countries]]
@@ -90,6 +89,7 @@ name = "Dramas"
 continent = 1
 x = 337
 y = 57
+cardtype = "Infantry"
 connections = [3, 5]
 
 [[countries]]
@@ -98,6 +98,7 @@ name = "Serron"
 continent = 1
 x = 291
 y = 53
+cardtype = "Cavalry"
 connections = [4, 6, 7]
 
 [[countries]]
@@ -106,6 +107,7 @@ name = "Kilkis"
 continent = 1
 x = 247
 y = 65
+cardtype = "Cavalry"
 connections = [5, 7, 10]
 
 [[countries]]
@@ -114,6 +116,7 @@ name = "Thessalonikis"
 continent = 1
 x = 285
 y = 78
+cardtype = "Cavalry"
 connections = [5, 6, 8, 10, 11]
 
 [[countries]]
@@ -122,6 +125,7 @@ name = "Chalkidikis"
 continent = 1
 x = 304
 y = 98
+cardtype = "Cannon"
 connections = [7, 9, 50]
 
 [[countries]]
@@ -130,6 +134,7 @@ name = "Agio-Oros"
 continent = 1
 x = 349
 y = 104
+cardtype = "Cannon"
 connections = [8]
 
 [[countries]]
@@ -138,6 +143,7 @@ name = "Pellis"
 continent = 2
 x = 207
 y = 67
+cardtype = "Cannon"
 connections = [6, 7, 11, 12, 13]
 
 [[countries]]
@@ -146,6 +152,7 @@ name = "Pierias"
 continent = 2
 x = 220
 y = 95
+cardtype = "Cavalry"
 connections = [7, 10, 13, 14]
 
 [[countries]]
@@ -154,6 +161,7 @@ name = "Florinas"
 continent = 2
 x = 137
 y = 81
+cardtype = "Cannon"
 connections = [10, 13, 16]
 
 [[countries]]
@@ -162,6 +170,7 @@ name = "Kosanis"
 continent = 2
 x = 169
 y = 104
+cardtype = "Infantry"
 connections = [10, 11, 12, 14, 16, 17]
 
 [[countries]]
@@ -170,6 +179,7 @@ name = "Larisas"
 continent = 2
 x = 210
 y = 129
+cardtype = "Infantry"
 connections = [11, 13, 15, 17, 18]
 
 [[countries]]
@@ -178,6 +188,7 @@ name = "Magnisias"
 continent = 2
 x = 254
 y = 149
+cardtype = "Cannon"
 connections = [14, 24, 28]
 
 [[countries]]
@@ -186,6 +197,7 @@ name = "Kastorias"
 continent = 2
 x = 114
 y = 113
+cardtype = "Cannon"
 connections = [12, 13, 17, 19]
 
 [[countries]]
@@ -194,6 +206,7 @@ name = "Trikalon"
 continent = 2
 x = 160
 y = 145
+cardtype = "Infantry"
 connections = [13, 14, 16, 18, 19, 20, 21]
 
 [[countries]]
@@ -202,6 +215,7 @@ name = "Karditsas"
 continent = 3
 x = 189
 y = 173
+cardtype = "Cannon"
 connections = [14, 17, 21, 24, 25]
 
 [[countries]]
@@ -210,6 +224,7 @@ name = "Ioannion-Thesprotias"
 continent = 3
 x = 77
 y = 141
+cardtype = "Infantry"
 connections = [16, 17, 20, 22, 23]
 
 [[countries]]
@@ -218,6 +233,7 @@ name = "Prebesas"
 continent = 3
 x = 121
 y = 166
+cardtype = "Infantry"
 connections = [17, 18, 19, 21]
 
 [[countries]]
@@ -226,6 +242,7 @@ name = "Aitoloakarnanias"
 continent = 3
 x = 156
 y = 196
+cardtype = "Cavalry"
 connections = [17, 18, 20, 22, 25, 31]
 
 [[countries]]
@@ -234,6 +251,7 @@ name = "Kefalinas"
 continent = 3
 x = 81
 y = 220
+cardtype = "Cavalry"
 connections = [19, 21, 32]
 
 [[countries]]
@@ -242,6 +260,7 @@ name = "Kerkira"
 continent = 3
 x = 18
 y = 138
+cardtype = "Cavalry"
 connections = [19]
 
 [[countries]]
@@ -250,6 +269,7 @@ name = "Fthiotidas"
 continent = 4
 x = 220
 y = 173
+cardtype = "Cannon"
 connections = [14, 15, 18, 25, 26, 28]
 
 [[countries]]
@@ -258,6 +278,7 @@ name = "Fokidas"
 continent = 4
 x = 210
 y = 203
+cardtype = "Cannon"
 connections = [18, 21, 24, 26]
 
 [[countries]]
@@ -266,6 +287,7 @@ name = "Biotias"
 continent = 4
 x = 282
 y = 211
+cardtype = "Cannon"
 connections = [24, 25, 27, 28]
 
 [[countries]]
@@ -274,6 +296,7 @@ name = "Attikis"
 continent = 4
 x = 329
 y = 231
+cardtype = "Cavalry"
 connections = [26, 28, 30, 43]
 
 [[countries]]
@@ -282,6 +305,7 @@ name = "Evia"
 continent = 4
 x = 319
 y = 195
+cardtype = "Cannon"
 connections = [15, 24, 26, 27, 41]
 
 [[countries]]
@@ -290,6 +314,7 @@ name = "Argolidas"
 continent = 5
 x = 264
 y = 254
+cardtype = "Infantry"
 connections = [30, 33]
 
 [[countries]]
@@ -298,6 +323,7 @@ name = "Korinthias"
 continent = 5
 x = 239
 y = 237
+cardtype = "Infantry"
 connections = [27, 29, 31, 33]
 
 [[countries]]
@@ -306,6 +332,7 @@ name = "Achaias"
 continent = 5
 x = 180
 y = 230
+cardtype = "Cannon"
 connections = [21, 30, 32, 33]
 
 [[countries]]
@@ -314,6 +341,7 @@ name = "Ilias"
 continent = 5
 x = 163
 y = 252
+cardtype = "Cannon"
 connections = [22, 31, 33, 34]
 
 [[countries]]
@@ -322,6 +350,7 @@ name = "Arkadias"
 continent = 5
 x = 221
 y = 257
+cardtype = "Infantry"
 connections = [29, 30, 31, 32, 34, 35]
 
 [[countries]]
@@ -330,6 +359,7 @@ name = "Messinias"
 continent = 5
 x = 180
 y = 278
+cardtype = "Infantry"
 connections = [32, 33, 35]
 
 [[countries]]
@@ -338,6 +368,7 @@ name = "Lakonias"
 continent = 5
 x = 232
 y = 288
+cardtype = "Cavalry"
 connections = [33, 34, 36, 37]
 
 [[countries]]
@@ -346,6 +377,7 @@ name = "Kithira"
 continent = 5
 x = 264
 y = 330
+cardtype = ""
 connections = [35]
 
 [[countries]]
@@ -354,6 +386,7 @@ name = "Chanion"
 continent = 6
 x = 340
 y = 378
+cardtype = ""
 connections = [35, 38]
 
 [[countries]]
@@ -362,6 +395,7 @@ name = "Rethimnis"
 continent = 6
 x = 390
 y = 384
+cardtype = ""
 connections = [37, 39]
 
 [[countries]]
@@ -370,6 +404,7 @@ name = "Irakliou"
 continent = 6
 x = 429
 y = 389
+cardtype = "Cannon"
 connections = [38, 40, 48]
 
 [[countries]]
@@ -378,6 +413,7 @@ name = "Lasithiou"
 continent = 6
 x = 469
 y = 390
+cardtype = "Cannon"
 connections = [39, 62]
 
 [[countries]]
@@ -386,6 +422,7 @@ name = "Andros"
 continent = 7
 x = 404
 y = 238
+cardtype = "Cavalry"
 connections = [28, 42]
 
 [[countries]]
@@ -394,6 +431,7 @@ name = "Tinos"
 continent = 7
 x = 429
 y = 251
+cardtype = "Cannon"
 connections = [41, 43, 44]
 
 [[countries]]
@@ -402,6 +440,7 @@ name = "Syros"
 continent = 7
 x = 412
 y = 261
+cardtype = "Infantry"
 connections = [27, 45]
 
 [[countries]]
@@ -410,6 +449,7 @@ name = "Mykonos"
 continent = 7
 x = 446
 y = 259
+cardtype = "Infantry"
 connections = [42, 46, 51, 54]
 
 [[countries]]
@@ -418,6 +458,7 @@ name = "Paros"
 continent = 7
 x = 433
 y = 297
+cardtype = "Cannon"
 connections = [43, 47]
 
 [[countries]]
@@ -426,6 +467,7 @@ name = "Naxos"
 continent = 7
 x = 452
 y = 282
+cardtype = "Cannon"
 connections = [44]
 
 [[countries]]
@@ -434,6 +476,7 @@ name = "Ios"
 continent = 7
 x = 442
 y = 300
+cardtype = "Infantry"
 connections = [45, 48]
 
 [[countries]]
@@ -442,6 +485,7 @@ name = "Santorini"
 continent = 7
 x = 451
 y = 320
+cardtype = "Cannon"
 connections = [39, 47]
 
 [[countries]]
@@ -450,6 +494,7 @@ name = "Lesbos"
 continent = 8
 x = 518
 y = 165
+cardtype = "Infantry"
 connections = [50, 51]
 
 [[countries]]
@@ -458,6 +503,7 @@ name = "Limnos"
 continent = 8
 x = 437
 y = 121
+cardtype = "Infantry"
 connections = [8, 49, 52, 53]
 
 [[countries]]
@@ -466,6 +512,7 @@ name = "Chios"
 continent = 8
 x = 496
 y = 204
+cardtype = "Cavalry"
 connections = [44, 49]
 
 [[countries]]
@@ -474,6 +521,7 @@ name = "Samothraki"
 continent = 8
 x = 457
 y = 91
+cardtype = "Cavalry"
 connections = [1, 50]
 
 [[countries]]
@@ -482,6 +530,7 @@ name = "Thasos"
 continent = 8
 x = 384
 y = 80
+cardtype = "Cavalry"
 connections = [3, 50]
 
 [[countries]]
@@ -490,6 +539,7 @@ name = "Samos"
 continent = 9
 x = 554
 y = 243
+cardtype = "Cannon"
 connections = [44, 55]
 
 [[countries]]
@@ -498,6 +548,7 @@ name = "Kalymnos"
 continent = 9
 x = 566
 y = 284
+cardtype = "Cannon"
 connections = [54, 57]
 
 [[countries]]
@@ -506,6 +557,7 @@ name = "Astipalaia"
 continent = 9
 x = 545
 y = 320
+cardtype = "Cannon"
 connections = [58]
 
 [[countries]]
@@ -514,6 +566,7 @@ name = "Kos"
 continent = 9
 x = 589
 y = 291
+cardtype = "Cavalry"
 connections = [55, 58]
 
 [[countries]]
@@ -522,6 +575,7 @@ name = "Nithiras"
 continent = 9
 x = 580
 y = 308
+cardtype = "Cannon"
 connections = [56, 57, 59]
 
 [[countries]]
@@ -530,6 +584,7 @@ name = "Tilos"
 continent = 9
 x = 598
 y = 317
+cardtype = "Infantry"
 connections = [58, 60]
 
 [[countries]]
@@ -538,6 +593,7 @@ name = "Rhodos"
 continent = 9
 x = 638
 y = 329
+cardtype = "Infantry"
 connections = [58, 59, 63]
 
 [[countries]]
@@ -546,6 +602,7 @@ name = "Karpados"
 continent = 9
 x = 583
 y = 357
+cardtype = "Infantry"
 connections = [56, 60, 62, 63]
 
 [[countries]]
@@ -554,6 +611,7 @@ name = "Kathos"
 continent = 9
 x = 563
 y = 376
+cardtype = "Cavalry"
 connections = [61, 40]
 
 [[countries]]
@@ -562,4 +620,5 @@ name = "Kastelon"
 continent = 9
 x = 650
 y = 406
+cardtype = "Cavalry"
 connections = [60, 61]

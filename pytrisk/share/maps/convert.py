@@ -48,6 +48,7 @@ class Country:
     continent: int
     x: int
     y: int
+    cardtype: str
     connections: List[int] = field(default_factory=list)
 
 
@@ -61,6 +62,49 @@ class ParseResult:
 
 
 # -- Main parser
+
+def parse_cards(parsed: ParseResult, content: str) -> ParseResult:
+    log.info('Parsing card file')
+
+    nb_wildcards = 0
+    lines = content.splitlines()
+    for lineno, raw in enumerate(lines, 1):
+        line = raw.strip()
+
+        if not line or line.startswith(";"):
+            continue
+
+        if line.startswith("[") and line.endswith("]"):
+            section = line[1:-1].strip().lower()
+            continue
+
+        parts = line.split()
+        try:
+            # cards
+            if section == 'cards':
+                if parts[0] not in ['Cannon', 'Infantry', 'Cavalry', 'wildcard']:
+                    raise ValueError(f"info: unknown key {parts[0]}")
+                if parts[0] == 'wildcard':
+                    nb_wildcards += 1
+
+                else:
+                    cid = int(parts[1])
+                    parsed.countries[cid].cardtype = parts[0]
+
+            # missions
+            elif section == "missions":
+                pass
+
+            else:
+                raise ValueError(f"unknown section {section}")
+
+        except Exception as e:
+            errors.append(f"Line {lineno}: {e} -> {raw}")
+
+    parsed.info['nb_wildcards'] = nb_wildcards
+
+    return parsed
+
 
 def parse_map(content: str) -> ParseResult:
     log.info('Parsing map')
@@ -139,6 +183,7 @@ def parse_map(content: str) -> ParseResult:
                     continent=continent,
                     x=x,
                     y=y,
+                    cardtype="",
                     connections=[]
                 )
 
@@ -184,9 +229,15 @@ def validate(result: ParseResult) -> List[str]:
     errors = []
 
     for c in result.countries.values():
+        # check if missing card types
+        if c.cardtype == "":
+            log.warning(f"country {c.id} has no card type")
+
+        # check asymetric connections
         for conn in c.connections:
             if c.id not in result.countries[conn].connections:
                 log.warning(f"Asymetrical connection: country {c.id} -> {conn}")
+
 
     return errors
 
@@ -198,15 +249,15 @@ def to_toml(result: ParseResult) -> dict:
 
     # info
     t_info = table()
-    for k in ["name"]:
+    for k, v in result.info.items():
         t_info[k] = result.info[k]
     doc["info"] = t_info
 
     # files
-    t_files = table()
-    for k, v in result.files.items():
-        t_files[k] = v
-    doc["files"] = t_files
+#    t_files = table()
+#    for k, v in result.files.items():
+#        t_files[k] = v
+#    doc["files"] = t_files
 
     # continents
     continents_aot = aot()
@@ -230,6 +281,7 @@ def to_toml(result: ParseResult) -> dict:
         t["continent"] = c.continent
         t["x"] = c.x
         t["y"] = c.y
+        t["cardtype"] = c.cardtype
         t["connections"] = c.connections
 
         countries_aot.append(t)
@@ -241,21 +293,22 @@ def to_toml(result: ParseResult) -> dict:
 
 def convert(mapfile: Path, force: bool = False):
     mapname = mapfile.stem
-    mapdir = curdir / mapname
+    srcdir = mapfile.parent
+    dstdir = curdir / mapname
     log.info(f"Converting {mapname}")
     log.debug(f"source: {mapfile}")
-    log.debug(f"dst: {mapdir}")
+    log.debug(f"dst: {dstdir}")
 
     # first check if mapdir is a directory
-    if mapdir.is_dir():
+    if dstdir.is_dir():
         if not force:
-            log.error(f"{mapdir} exists and --force is not set")
+            log.error(f"{dstdir} exists and --force is not set")
             return
 
         # force is in effect, delete the directory
-        log.info(f"Deleting {mapdir.as_posix()}")
-        shutil.rmtree(mapdir.as_posix())
-        mapdir.mkdir()
+        log.info(f"Deleting {dstdir.as_posix()}")
+        shutil.rmtree(dstdir.as_posix())
+        dstdir.mkdir()
 
     # check if mapdir contains a file with a .map extension
     if not mapfile.is_file():
@@ -272,6 +325,20 @@ def convert(mapfile: Path, force: bool = False):
             continue
     parsed = parse_map(content)
     parse_errors = parsed.errors
+
+    # Parse cards if needed
+    if "crd" in parsed.files:
+        cardfile = srcdir / parsed.files["crd"]
+        raw = cardfile.read_bytes()
+        for enc in ("utf-8", "cp1252", "latin-1"):
+            try:
+                content = raw.decode(enc)
+                break
+            except UnicodeDecodeError:
+                continue
+        parsed = parse_cards(parsed, content)
+
+    # validate the result
     validation_errors = validate(parsed)
     all_errors = parse_errors + validation_errors
 
@@ -280,10 +347,11 @@ def convert(mapfile: Path, force: bool = False):
         for e in all_errors:
             print(" -", e)
 
-    # write the result
-    mapdir.mkdir(exist_ok=True)
 
-    outfile = mapdir / "map.toml"
+    # write the result
+    dstdir.mkdir(exist_ok=True)
+
+    outfile = dstdir / "map.toml"
     log.info(f"Writing to {outfile.as_posix()}")
     toml_data = to_toml(parsed)
 
@@ -291,17 +359,16 @@ def convert(mapfile: Path, force: bool = False):
         f.write(dumps(toml_data))
 
     # copy files
-    srcdir = mapfile.parent
 
     src = srcdir / parsed.files["pic"]
-    dst = mapdir / "background.png"
+    dst = dstdir / "background.png"
     log.info(f"Copying/converting {src.as_posix()} to {dst.as_posix()}")
     img = Image.open(src.as_posix())
     img.save(dst.as_posix(), "PNG")
 
     shutil.copy(src.as_posix(), dst.as_posix())
     src = srcdir / parsed.files["map"]
-    dst = mapdir / "territories.png"
+    dst = dstdir / "territories.png"
     log.info(f"Copying/converting {src.as_posix()} to {dst.as_posix()}")
     img = Image.open(src.as_posix())
     img.save(dst.as_posix(), "PNG")

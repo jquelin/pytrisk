@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "eesti_pic.png"
-map = "eesti_map.gif"
-crd = "eesti.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -108,6 +104,7 @@ name = "Kõrgesaare"
 continent = 1
 x = 76
 y = 141
+cardtype = "Infantry"
 connections = [2, 3, 4]
 
 [[countries]]
@@ -116,6 +113,7 @@ name = "Emmaste"
 continent = 1
 x = 82
 y = 181
+cardtype = "Cannon"
 connections = [1, 3, 14]
 
 [[countries]]
@@ -124,6 +122,7 @@ name = "Käina"
 continent = 1
 x = 97
 y = 163
+cardtype = "Infantry"
 connections = [2, 4, 1]
 
 [[countries]]
@@ -132,6 +131,7 @@ name = "Pühalepa"
 continent = 1
 x = 115
 y = 150
+cardtype = "Infantry"
 connections = [3, 5, 1, 25]
 
 [[countries]]
@@ -140,6 +140,7 @@ name = "Kärdla_linn"
 continent = 1
 x = 101
 y = 132
+cardtype = "Cavalry"
 connections = [4]
 
 [[countries]]
@@ -148,6 +149,7 @@ name = "Torgu"
 continent = 2
 x = 34
 y = 326
+cardtype = "Cavalry"
 connections = [7]
 
 [[countries]]
@@ -156,6 +158,7 @@ name = "Salme"
 continent = 2
 x = 45
 y = 291
+cardtype = "Cavalry"
 connections = [6, 8, 10, 12]
 
 [[countries]]
@@ -164,6 +167,7 @@ name = "Lümanda"
 continent = 2
 x = 29
 y = 277
+cardtype = "Cannon"
 connections = [7, 9, 10]
 
 [[countries]]
@@ -172,6 +176,7 @@ name = "Kihelkonna"
 continent = 2
 x = 28
 y = 255
+cardtype = "Cannon"
 connections = [8, 10, 11]
 
 [[countries]]
@@ -180,6 +185,7 @@ name = "Kärla"
 continent = 2
 x = 49
 y = 273
+cardtype = "Cannon"
 connections = [9, 8, 7, 11, 12]
 
 [[countries]]
@@ -188,6 +194,7 @@ name = "Mustjala"
 continent = 2
 x = 55
 y = 234
+cardtype = "Cavalry"
 connections = [10, 9, 12, 14]
 
 [[countries]]
@@ -196,6 +203,7 @@ name = "Kaarma"
 continent = 2
 x = 66
 y = 264
+cardtype = "Cannon"
 connections = [10, 7, 11, 13, 14, 15]
 
 [[countries]]
@@ -204,6 +212,7 @@ name = "Kuresaare_linn"
 continent = 2
 x = 73
 y = 280
+cardtype = "Infantry"
 connections = [12, 21]
 
 [[countries]]
@@ -212,6 +221,7 @@ name = "Leisi"
 continent = 2
 x = 93
 y = 219
+cardtype = "Infantry"
 connections = [12, 11, 2, 15, 16, 17]
 
 [[countries]]
@@ -220,6 +230,7 @@ name = "Pihtla"
 continent = 2
 x = 101
 y = 265
+cardtype = "Cannon"
 connections = [12, 14, 16]
 
 [[countries]]
@@ -228,6 +239,7 @@ name = "Valjala"
 continent = 2
 x = 115
 y = 255
+cardtype = "Cannon"
 connections = [15, 14, 17, 18]
 
 [[countries]]
@@ -236,6 +248,7 @@ name = "Orissaare"
 continent = 2
 x = 130
 y = 214
+cardtype = "Cavalry"
 connections = [14, 16, 19, 20]
 
 [[countries]]
@@ -244,6 +257,7 @@ name = "Laimjala"
 continent = 2
 x = 134
 y = 237
+cardtype = "Cannon"
 connections = [16, 19]
 
 [[countries]]
@@ -252,6 +266,7 @@ name = "Pöide"
 continent = 2
 x = 147
 y = 230
+cardtype = "Cavalry"
 connections = [18, 17]
 
 [[countries]]
@@ -260,6 +275,7 @@ name = "Muhu"
 continent = 2
 x = 152
 y = 209
+cardtype = "Infantry"
 connections = [17, 23]
 
 [[countries]]
@@ -268,6 +284,7 @@ name = "Ruhnu"
 continent = 2
 x = 153
 y = 365
+cardtype = "Cannon"
 connections = [13]
 
 [[countries]]
@@ -276,6 +293,7 @@ name = "Vormsi"
 continent = 3
 x = 157
 y = 132
+cardtype = "Cavalry"
 connections = [25]
 
 [[countries]]
@@ -284,6 +302,7 @@ name = "Hanila"
 continent = 3
 x = 189
 y = 207
+cardtype = "Infantry"
 connections = [24, 20, 36, 34]
 
 [[countries]]
@@ -292,6 +311,7 @@ name = "Lihula"
 continent = 3
 x = 216
 y = 191
+cardtype = "Cannon"
 connections = [23, 27, 36, 55]
 
 [[countries]]
@@ -300,6 +320,7 @@ name = "Ridala"
 continent = 3
 x = 192
 y = 160
+cardtype = "Cavalry"
 connections = [22, 4, 26, 29, 27]
 
 [[countries]]
@@ -308,6 +329,7 @@ name = "Haapsalu_linn"
 continent = 3
 x = 186
 y = 145
+cardtype = "Infantry"
 connections = [25]
 
 [[countries]]
@@ -316,6 +338,7 @@ name = "Martna"
 continent = 3
 x = 213
 y = 166
+cardtype = "Cannon"
 connections = [29, 25, 28, 24, 55]
 
 [[countries]]
@@ -324,6 +347,7 @@ name = "Kullama"
 continent = 3
 x = 237
 y = 166
+cardtype = "Cavalry"
 connections = [27, 30, 56]
 
 [[countries]]
@@ -332,6 +356,7 @@ name = "Taebla"
 continent = 3
 x = 217
 y = 137
+cardtype = "Infantry"
 connections = [31, 25, 30, 27]
 
 [[countries]]
@@ -340,6 +365,7 @@ name = "Risti"
 continent = 3
 x = 238
 y = 129
+cardtype = "Cannon"
 connections = [29, 31, 33, 28, 56, 65]
 
 [[countries]]
@@ -348,6 +374,7 @@ name = "Oru"
 continent = 3
 x = 210
 y = 126
+cardtype = "Cavalry"
 connections = [29, 32, 33, 30, 65]
 
 [[countries]]
@@ -356,6 +383,7 @@ name = "Noarootsi"
 continent = 4
 x = 184
 y = 130
+cardtype = "Infantry"
 connections = [31, 33]
 
 [[countries]]
@@ -364,6 +392,7 @@ name = "Nõva"
 continent = 3
 x = 202
 y = 94
+cardtype = "Cannon"
 connections = [31, 32, 30, 65]
 
 [[countries]]
@@ -372,6 +401,7 @@ name = "Varbla"
 continent = 4
 x = 208
 y = 234
+cardtype = "Cavalry"
 connections = [36, 23, 35]
 
 [[countries]]
@@ -380,6 +410,7 @@ name = "Tõstamaa"
 continent = 4
 x = 234
 y = 258
+cardtype = "Infantry"
 connections = [36, 34, 37, 39]
 
 [[countries]]
@@ -388,6 +419,7 @@ name = "Koonga"
 continent = 4
 x = 252
 y = 210
+cardtype = "Cannon"
 connections = [24, 23, 34, 38, 37, 35, 40, 55]
 
 [[countries]]
@@ -396,6 +428,7 @@ name = "Audru"
 continent = 4
 x = 261
 y = 249
+cardtype = "Cavalry"
 connections = [36, 35, 38, 41, 49]
 
 [[countries]]
@@ -404,6 +437,7 @@ name = "Lavassaare"
 continent = 4
 x = 275
 y = 228
+cardtype = "Infantry"
 connections = [36, 37, 40, 41]
 
 [[countries]]
@@ -412,6 +446,7 @@ name = "Kihnu"
 continent = 4
 x = 233
 y = 300
+cardtype = "Cannon"
 connections = [35]
 
 [[countries]]
@@ -420,6 +455,7 @@ name = "Halinga"
 continent = 4
 x = 292
 y = 201
+cardtype = "Cavalry"
 connections = [36, 38, 41, 42, 43, 55, 56]
 
 [[countries]]
@@ -428,6 +464,7 @@ name = "Sauga"
 continent = 4
 x = 291
 y = 238
+cardtype = "Infantry"
 connections = [40, 38, 37, 42, 49, 48, 47]
 
 [[countries]]
@@ -436,6 +473,7 @@ name = "Are"
 continent = 4
 x = 305
 y = 221
+cardtype = "Cannon"
 connections = [40, 43, 41, 47, 44]
 
 [[countries]]
@@ -444,6 +482,7 @@ name = "Kaisma"
 continent = 4
 x = 314
 y = 194
+cardtype = "Cavalry"
 connections = [40, 42, 44, 47, 45, 56, 59]
 
 [[countries]]
@@ -452,6 +491,7 @@ name = "Tootsi"
 continent = 4
 x = 321
 y = 218
+cardtype = "Infantry"
 connections = [43, 45, 47, 42]
 
 [[countries]]
@@ -460,6 +500,7 @@ name = "Vändra"
 continent = 4
 x = 356
 y = 205
+cardtype = "Cannon"
 connections = [43, 46, 44, 47, 61, 107, 59, 111]
 
 [[countries]]
@@ -468,6 +509,7 @@ name = "Vändra_linn"
 continent = 4
 x = 346
 y = 199
+cardtype = "Cavalry"
 connections = [45]
 
 [[countries]]
@@ -476,6 +518,7 @@ name = "Tori"
 continent = 4
 x = 336
 y = 231
+cardtype = "Infantry"
 connections = [43, 45, 41, 44, 42, 48, 50, 111, 112]
 
 [[countries]]
@@ -484,6 +527,7 @@ name = "Sindi"
 continent = 4
 x = 304
 y = 247
+cardtype = "Cannon"
 connections = [41, 50, 47, 49]
 
 [[countries]]
@@ -492,6 +536,7 @@ name = "Pärnu_linn"
 continent = 4
 x = 288
 y = 250
+cardtype = "Cavalry"
 connections = [37, 41, 48, 50]
 
 [[countries]]
@@ -500,6 +545,7 @@ name = "Paikuse"
 continent = 4
 x = 309
 y = 257
+cardtype = "Infantry"
 connections = [48, 49, 47, 51, 52, 112]
 
 [[countries]]
@@ -508,6 +554,7 @@ name = "Tahkuranna"
 continent = 4
 x = 290
 y = 282
+cardtype = "Cannon"
 connections = [50, 52, 53]
 
 [[countries]]
@@ -516,6 +563,7 @@ name = "Surju"
 continent = 4
 x = 316
 y = 286
+cardtype = "Cavalry"
 connections = [50, 51, 54, 112]
 
 [[countries]]
@@ -524,6 +572,7 @@ name = "Häädemeeste"
 continent = 4
 x = 284
 y = 330
+cardtype = "Infantry"
 connections = [51, 54]
 
 [[countries]]
@@ -532,6 +581,7 @@ name = "Saarde"
 continent = 4
 x = 340
 y = 300
+cardtype = "Cannon"
 connections = [52, 53, 112, 118, 119]
 
 [[countries]]
@@ -540,6 +590,7 @@ name = "Vigala"
 continent = 5
 x = 271
 y = 182
+cardtype = "Cavalry"
 connections = [56, 27, 24, 36, 40]
 
 [[countries]]
@@ -548,6 +599,7 @@ name = "Märjamaa"
 continent = 5
 x = 278
 y = 148
+cardtype = "Infantry"
 connections = [57, 58, 55, 30, 28, 40, 43, 66, 59]
 
 [[countries]]
@@ -556,6 +608,7 @@ name = "Raikküla"
 continent = 5
 x = 309
 y = 148
+cardtype = "Cannon"
 connections = [59, 58, 56]
 
 [[countries]]
@@ -564,6 +617,7 @@ name = "Rapla"
 continent = 5
 x = 311
 y = 122
+cardtype = "Cavalry"
 connections = [64, 63, 59, 57, 56, 67]
 
 [[countries]]
@@ -572,6 +626,7 @@ name = "Kehtna"
 continent = 5
 x = 336
 y = 160
+cardtype = "Infantry"
 connections = [63, 62, 61, 60, 57, 58, 45, 43, 56]
 
 [[countries]]
@@ -580,6 +635,7 @@ name = "Järvakandi"
 continent = 5
 x = 321
 y = 173
+cardtype = "Cannon"
 connections = [59]
 
 [[countries]]
@@ -588,6 +644,7 @@ name = "Käru"
 continent = 5
 x = 357
 y = 168
+cardtype = "Cavalry"
 connections = [62, 59, 45, 105, 107]
 
 [[countries]]
@@ -596,6 +653,7 @@ name = "Kaiu"
 continent = 5
 x = 357
 y = 128
+cardtype = "Infantry"
 connections = [63, 59, 61, 84, 105]
 
 [[countries]]
@@ -604,6 +662,7 @@ name = "Juuru"
 continent = 5
 x = 335
 y = 111
+cardtype = "Cannon"
 connections = [64, 58, 59, 62, 83, 84]
 
 [[countries]]
@@ -612,6 +671,7 @@ name = "Kohila"
 continent = 5
 x = 314
 y = 101
+cardtype = "Cavalry"
 connections = [58, 63, 67, 75, 72, 83]
 
 [[countries]]
@@ -620,6 +680,7 @@ name = "Padise"
 continent = 6
 x = 232
 y = 88
+cardtype = "Infantry"
 connections = [33, 31, 30, 66, 68, 69]
 
 [[countries]]
@@ -628,6 +689,7 @@ name = "Nissi"
 continent = 6
 x = 262
 y = 111
+cardtype = "Cannon"
 connections = [65, 56, 67, 68]
 
 [[countries]]
@@ -636,6 +698,7 @@ name = "Kernu"
 continent = 6
 x = 283
 y = 99
+cardtype = "Cavalry"
 connections = [58, 64, 66, 68, 72]
 
 [[countries]]
@@ -644,6 +707,7 @@ name = "Vasalemma"
 continent = 6
 x = 260
 y = 86
+cardtype = "Infantry"
 connections = [65, 66, 69, 67]
 
 [[countries]]
@@ -652,6 +716,7 @@ name = "Keila"
 continent = 6
 x = 264
 y = 72
+cardtype = "Cannon"
 connections = [65, 68, 71, 70, 74]
 
 [[countries]]
@@ -660,6 +725,7 @@ name = "Paldiski"
 continent = 6
 x = 244
 y = 61
+cardtype = "Cavalry"
 connections = [69]
 
 [[countries]]
@@ -668,6 +734,7 @@ name = "Keila_linn"
 continent = 6
 x = 276
 y = 71
+cardtype = "Infantry"
 connections = [72, 69, 74]
 
 [[countries]]
@@ -676,6 +743,7 @@ name = "Saue"
 continent = 6
 x = 288
 y = 74
+cardtype = "Cannon"
 connections = [64, 67, 71, 74, 73, 75, 93]
 
 [[countries]]
@@ -684,6 +752,7 @@ name = "Saue_linn"
 continent = 6
 x = 294
 y = 69
+cardtype = "Cavalry"
 connections = [72, 75]
 
 [[countries]]
@@ -692,6 +761,7 @@ name = "Harku"
 continent = 6
 x = 281
 y = 49
+cardtype = "Infantry"
 connections = [72, 69, 71, 93, 91]
 
 [[countries]]
@@ -700,6 +770,7 @@ name = "Saku"
 continent = 6
 x = 309
 y = 78
+cardtype = "Cannon"
 connections = [64, 83, 72, 77, 73, 93]
 
 [[countries]]
@@ -708,6 +779,7 @@ name = "Kesklinn"
 continent = 7
 x = 100
 y = 52
+cardtype = "Cavalry"
 connections = [79, 78, 89, 90, 93, 94, 95]
 
 [[countries]]
@@ -716,6 +788,7 @@ name = "Kiili"
 continent = 6
 x = 326
 y = 74
+cardtype = "Infantry"
 connections = [83, 75, 78, 93]
 
 [[countries]]
@@ -724,6 +797,7 @@ name = "Rae"
 continent = 6
 x = 331
 y = 60
+cardtype = "Cannon"
 connections = [83, 77, 81, 82, 76, 94, 93]
 
 [[countries]]
@@ -732,6 +806,7 @@ name = "Viimsi"
 continent = 6
 x = 325
 y = 29
+cardtype = "Cavalry"
 connections = [80, 76, 89, 95, 91]
 
 [[countries]]
@@ -740,6 +815,7 @@ name = "Maardu"
 continent = 1
 x = 336
 y = 41
+cardtype = "Infantry"
 connections = [81, 79, 95, 94]
 
 [[countries]]
@@ -748,6 +824,7 @@ name = "Jõelähtme"
 continent = 6
 x = 357
 y = 43
+cardtype = "Cannon"
 connections = [78, 80, 82, 85, 87, 94]
 
 [[countries]]
@@ -756,6 +833,7 @@ name = "Raasiku"
 continent = 6
 x = 357
 y = 71
+cardtype = "Cavalry"
 connections = [83, 78, 81, 85]
 
 [[countries]]
@@ -764,6 +842,7 @@ name = "Kose"
 continent = 6
 x = 355
 y = 93
+cardtype = "Infantry"
 connections = [64, 63, 84, 85, 82, 78, 77, 75]
 
 [[countries]]
@@ -772,6 +851,7 @@ name = "Kõue"
 continent = 6
 x = 374
 y = 113
+cardtype = "Cannon"
 connections = [63, 62, 83, 85, 96, 98, 105]
 
 [[countries]]
@@ -780,6 +860,7 @@ name = "Anija"
 continent = 6
 x = 386
 y = 68
+cardtype = "Cavalry"
 connections = [84, 83, 81, 86, 87, 82, 96]
 
 [[countries]]
@@ -788,6 +869,7 @@ name = "Aegviidu"
 continent = 6
 x = 409
 y = 77
+cardtype = "Infantry"
 connections = [85, 198]
 
 [[countries]]
@@ -796,6 +878,7 @@ name = "Kuusalu"
 continent = 6
 x = 413
 y = 40
+cardtype = "Cannon"
 connections = [81, 85, 88, 203, 202]
 
 [[countries]]
@@ -804,6 +887,7 @@ name = "Loksa"
 continent = 6
 x = 416
 y = 18
+cardtype = "Cavalry"
 connections = [87]
 
 [[countries]]
@@ -812,6 +896,7 @@ name = "Põhja-Tallinn"
 continent = 7
 x = 78
 y = 40
+cardtype = "Infantry"
 connections = [76, 91, 90, 79]
 
 [[countries]]
@@ -820,6 +905,7 @@ name = "Kristiine"
 continent = 7
 x = 82
 y = 64
+cardtype = "Cannon"
 connections = [76, 89, 91, 92, 93]
 
 [[countries]]
@@ -828,6 +914,7 @@ name = "Haabersti"
 continent = 7
 x = 45
 y = 60
+cardtype = "Cavalry"
 connections = [89, 92, 90, 93, 74, 79]
 
 [[countries]]
@@ -836,6 +923,7 @@ name = "Mustamäe"
 continent = 7
 x = 65
 y = 73
+cardtype = "Infantry"
 connections = [91, 90, 93]
 
 [[countries]]
@@ -844,6 +932,7 @@ name = "Nõmme"
 continent = 7
 x = 68
 y = 95
+cardtype = "Cannon"
 connections = [76, 91, 90, 92, 72, 75, 77, 78, 74]
 
 [[countries]]
@@ -852,6 +941,7 @@ name = "Lasnamäe"
 continent = 7
 x = 137
 y = 52
+cardtype = "Cavalry"
 connections = [76, 95, 78, 81, 80]
 
 [[countries]]
@@ -860,6 +950,7 @@ name = "Pirita"
 continent = 7
 x = 141
 y = 22
+cardtype = "Infantry"
 connections = [76, 94, 79, 80]
 
 [[countries]]
@@ -868,6 +959,7 @@ name = "Albu"
 continent = 8
 x = 408
 y = 104
+cardtype = "Cannon"
 connections = [85, 84, 97, 100, 99, 98, 198]
 
 [[countries]]
@@ -876,6 +968,7 @@ name = "Ambla"
 continent = 8
 x = 436
 y = 101
+cardtype = "Cavalry"
 connections = [96, 100, 198, 199]
 
 [[countries]]
@@ -884,6 +977,7 @@ name = "Paide"
 continent = 8
 x = 402
 y = 142
+cardtype = "Infantry"
 connections = [96, 101, 103, 99, 84, 106, 105, 107]
 
 [[countries]]
@@ -892,6 +986,7 @@ name = "Roosna-Alliku"
 continent = 8
 x = 418
 y = 129
+cardtype = "Cannon"
 connections = [96, 100, 101, 103, 98]
 
 [[countries]]
@@ -900,6 +995,7 @@ name = "Järva-Jaani"
 continent = 8
 x = 435
 y = 121
+cardtype = "Cavalry"
 connections = [96, 97, 99, 101, 102, 199, 201]
 
 [[countries]]
@@ -908,6 +1004,7 @@ name = "Kareda"
 continent = 8
 x = 430
 y = 141
+cardtype = "Infantry"
 connections = [100, 102, 99, 98, 103]
 
 [[countries]]
@@ -916,6 +1013,7 @@ name = "Koeru"
 continent = 8
 x = 451
 y = 142
+cardtype = "Cannon"
 connections = [100, 101, 103, 188, 201, 200]
 
 [[countries]]
@@ -924,6 +1022,7 @@ name = "Koigi"
 continent = 8
 x = 432
 y = 162
+cardtype = "Cavalry"
 connections = [102, 101, 104, 98, 99, 107, 185, 188]
 
 [[countries]]
@@ -932,6 +1031,7 @@ name = "Imavere"
 continent = 8
 x = 422
 y = 179
+cardtype = "Infantry"
 connections = [103, 107, 185]
 
 [[countries]]
@@ -940,6 +1040,7 @@ name = "Väätsa"
 continent = 8
 x = 387
 y = 144
+cardtype = "Cannon"
 connections = [98, 84, 62, 61, 106, 107]
 
 [[countries]]
@@ -948,6 +1049,7 @@ name = "Paide_linn"
 continent = 8
 x = 399
 y = 153
+cardtype = "Cavalry"
 connections = [98, 105, 107]
 
 [[countries]]
@@ -956,6 +1058,7 @@ name = "Türi"
 continent = 8
 x = 390
 y = 177
+cardtype = "Infantry"
 connections = [104, 106, 98, 105, 61, 45, 103, 108]
 
 [[countries]]
@@ -964,6 +1067,7 @@ name = "Võhma"
 continent = 9
 x = 400
 y = 203
+cardtype = "Cannon"
 connections = [107, 109, 111]
 
 [[countries]]
@@ -972,6 +1076,7 @@ name = "Kõo"
 continent = 9
 x = 417
 y = 208
+cardtype = "Cavalry"
 connections = [108, 111, 110, 185]
 
 [[countries]]
@@ -980,6 +1085,7 @@ name = "Kolga-Jaani"
 continent = 9
 x = 447
 y = 234
+cardtype = "Infantry"
 connections = [116, 111, 115, 109, 185, 187]
 
 [[countries]]
@@ -988,6 +1094,7 @@ name = "Suure-Jaani"
 continent = 9
 x = 381
 y = 228
+cardtype = "Cannon"
 connections = [108, 45, 47, 113, 112, 109, 110, 115]
 
 [[countries]]
@@ -996,6 +1103,7 @@ name = "Kõpu"
 continent = 9
 x = 355
 y = 256
+cardtype = "Cavalry"
 connections = [47, 50, 52, 54, 118, 113, 111]
 
 [[countries]]
@@ -1004,6 +1112,7 @@ name = "Pärsti"
 continent = 8
 x = 391
 y = 262
+cardtype = "Infantry"
 connections = [118, 116, 114, 112, 111, 115]
 
 [[countries]]
@@ -1012,6 +1121,7 @@ name = "Viljandi"
 continent = 9
 x = 402
 y = 258
+cardtype = "Cannon"
 connections = [116, 113, 115]
 
 [[countries]]
@@ -1020,6 +1130,7 @@ name = "Saarepeedi"
 continent = 9
 x = 412
 y = 240
+cardtype = "Cavalry"
 connections = [116, 113, 114, 111, 110]
 
 [[countries]]
@@ -1028,6 +1139,7 @@ name = "Viiratsi"
 continent = 9
 x = 431
 y = 248
+cardtype = "Infantry"
 connections = [122, 117, 115, 110, 113, 114]
 
 [[countries]]
@@ -1036,6 +1148,7 @@ name = "Paistu"
 continent = 9
 x = 411
 y = 274
+cardtype = "Cannon"
 connections = [121, 118, 122, 116]
 
 [[countries]]
@@ -1044,6 +1157,7 @@ name = "Halliste"
 continent = 9
 x = 382
 y = 284
+cardtype = "Cavalry"
 connections = [119, 54, 121, 112, 113, 117]
 
 [[countries]]
@@ -1052,6 +1166,7 @@ name = "Abja"
 continent = 9
 x = 360
 y = 295
+cardtype = "Infantry"
 connections = [118, 54, 120, 121]
 
 [[countries]]
@@ -1060,6 +1175,7 @@ name = "Mõisaküla"
 continent = 9
 x = 360
 y = 308
+cardtype = "Cannon"
 connections = [119]
 
 [[countries]]
@@ -1068,6 +1184,7 @@ name = "Karksi"
 continent = 9
 x = 404
 y = 310
+cardtype = "Cavalry"
 connections = [119, 118, 117, 122, 124]
 
 [[countries]]
@@ -1076,6 +1193,7 @@ name = "Tarvastu"
 continent = 9
 x = 435
 y = 284
+cardtype = "Infantry"
 connections = [121, 117, 116, 123]
 
 [[countries]]
@@ -1084,6 +1202,7 @@ name = "Põdrala"
 continent = 10
 x = 439
 y = 311
+cardtype = "Cannon"
 connections = [122, 124, 128]
 
 [[countries]]
@@ -1092,6 +1211,7 @@ name = "Helme"
 continent = 10
 x = 423
 y = 329
+cardtype = "Cavalry"
 connections = [121, 123, 125, 126]
 
 [[countries]]
@@ -1100,6 +1220,7 @@ name = "Tõrva"
 continent = 10
 x = 440
 y = 325
+cardtype = "Infantry"
 connections = [124]
 
 [[countries]]
@@ -1108,6 +1229,7 @@ name = "Hummuli"
 continent = 10
 x = 442
 y = 343
+cardtype = "Cannon"
 connections = [124, 127]
 
 [[countries]]
@@ -1116,6 +1238,7 @@ name = "Õru"
 continent = 10
 x = 464
 y = 335
+cardtype = "Cavalry"
 connections = [126, 128, 132, 131]
 
 [[countries]]
@@ -1124,6 +1247,7 @@ name = "Puka"
 continent = 10
 x = 465
 y = 316
+cardtype = "Infantry"
 connections = [123, 127, 129, 130, 131, 163]
 
 [[countries]]
@@ -1132,6 +1256,7 @@ name = "Palupera"
 continent = 1
 x = 488
 y = 302
+cardtype = "Cannon"
 connections = [128, 130, 150, 163, 170]
 
 [[countries]]
@@ -1140,6 +1265,7 @@ name = "Pühajärve"
 continent = 10
 x = 497
 y = 321
+cardtype = "Cavalry"
 connections = [128, 129, 131, 138, 150, 149]
 
 [[countries]]
@@ -1148,6 +1274,7 @@ name = "Sangaste"
 continent = 10
 x = 481
 y = 334
+cardtype = "Infantry"
 connections = [127, 128, 130, 132, 138]
 
 [[countries]]
@@ -1156,6 +1283,7 @@ name = "Tõlliste"
 continent = 10
 x = 474
 y = 355
+cardtype = "Cannon"
 connections = [127, 131, 133, 134, 138, 137]
 
 [[countries]]
@@ -1164,6 +1292,7 @@ name = "Valga"
 continent = 10
 x = 455
 y = 367
+cardtype = "Cavalry"
 connections = [132, 134]
 
 [[countries]]
@@ -1172,6 +1301,7 @@ name = "Karula"
 continent = 10
 x = 482
 y = 369
+cardtype = "Infantry"
 connections = [132, 133, 135, 137]
 
 [[countries]]
@@ -1180,6 +1310,7 @@ name = "Taheva"
 continent = 10
 x = 481
 y = 391
+cardtype = "Cannon"
 connections = [134, 136]
 
 [[countries]]
@@ -1188,6 +1319,7 @@ name = "Mõniste"
 continent = 11
 x = 507
 y = 400
+cardtype = "Cavalry"
 connections = [135, 140, 137]
 
 [[countries]]
@@ -1196,6 +1328,7 @@ name = "Antsla"
 continent = 11
 x = 503
 y = 368
+cardtype = "Infantry"
 connections = [134, 132, 136, 138, 139, 141, 140]
 
 [[countries]]
@@ -1204,6 +1337,7 @@ name = "Urvaste"
 continent = 11
 x = 504
 y = 343
+cardtype = "Cannon"
 connections = [130, 131, 132, 137, 139, 149]
 
 [[countries]]
@@ -1212,6 +1346,7 @@ name = "Sõmerpalu"
 continent = 11
 x = 528
 y = 351
+cardtype = "Cavalry"
 connections = [137, 138, 141, 147, 149, 156]
 
 [[countries]]
@@ -1220,6 +1355,7 @@ name = "Varstu"
 continent = 11
 x = 522
 y = 394
+cardtype = "Infantry"
 connections = [136, 137, 141]
 
 [[countries]]
@@ -1228,6 +1364,7 @@ name = "Rõuge"
 continent = 11
 x = 543
 y = 379
+cardtype = "Cannon"
 connections = [137, 140, 139, 142, 147]
 
 [[countries]]
@@ -1236,6 +1373,7 @@ name = "Haanja"
 continent = 11
 x = 562
 y = 383
+cardtype = "Cavalry"
 connections = [141, 144, 143]
 
 [[countries]]
@@ -1244,6 +1382,7 @@ name = "Misso"
 continent = 11
 x = 584
 y = 406
+cardtype = "Infantry"
 connections = [142, 144]
 
 [[countries]]
@@ -1252,6 +1391,7 @@ name = "Vastseliina"
 continent = 11
 x = 583
 y = 377
+cardtype = "Cannon"
 connections = [142, 143, 145, 146, 147, 158]
 
 [[countries]]
@@ -1260,6 +1400,7 @@ name = "Meremäe"
 continent = 11
 x = 602
 y = 370
+cardtype = "Cavalry"
 connections = [144, 158]
 
 [[countries]]
@@ -1268,6 +1409,7 @@ name = "Lasva"
 continent = 11
 x = 574
 y = 354
+cardtype = "Infantry"
 connections = [144, 147, 156, 158, 157]
 
 [[countries]]
@@ -1276,6 +1418,7 @@ name = "Võru"
 continent = 11
 x = 557
 y = 366
+cardtype = "Cannon"
 connections = [139, 148, 141, 146, 144, 156]
 
 [[countries]]
@@ -1284,6 +1427,7 @@ name = "Võru_linn"
 continent = 11
 x = 554
 y = 358
+cardtype = "Cavalry"
 connections = [147]
 
 [[countries]]
@@ -1292,6 +1436,7 @@ name = "Kanepi"
 continent = 12
 x = 526
 y = 332
+cardtype = "Infantry"
 connections = [130, 138, 139, 156, 150, 151, 154]
 
 [[countries]]
@@ -1300,6 +1445,7 @@ name = "Valgjärve"
 continent = 12
 x = 520
 y = 310
+cardtype = "Cannon"
 connections = [130, 129, 149, 151, 171]
 
 [[countries]]
@@ -1308,6 +1454,7 @@ name = "Kõlleste"
 continent = 12
 x = 538
 y = 306
+cardtype = "Cavalry"
 connections = [149, 150, 152, 154, 171]
 
 [[countries]]
@@ -1316,6 +1463,7 @@ name = "Vastse-Kuuste"
 continent = 12
 x = 547
 y = 293
+cardtype = "Infantry"
 connections = [151, 153, 154, 171, 177, 178]
 
 [[countries]]
@@ -1324,6 +1472,7 @@ name = "Ahja"
 continent = 12
 x = 562
 y = 287
+cardtype = "Cannon"
 connections = [152, 162, 178]
 
 [[countries]]
@@ -1332,6 +1481,7 @@ name = "Põlva"
 continent = 12
 x = 571
 y = 317
+cardtype = "Cavalry"
 connections = [149, 151, 155, 152, 162, 161, 157, 156]
 
 [[countries]]
@@ -1340,6 +1490,7 @@ name = "Põlva_linn"
 continent = 12
 x = 563
 y = 315
+cardtype = "Infantry"
 connections = [154]
 
 [[countries]]
@@ -1348,6 +1499,7 @@ name = "Laheda"
 continent = 12
 x = 556
 y = 335
+cardtype = "Cannon"
 connections = [139, 147, 146, 149, 154]
 
 [[countries]]
@@ -1356,6 +1508,7 @@ name = "Veriora"
 continent = 12
 x = 588
 y = 332
+cardtype = "Cavalry"
 connections = [161, 158, 146, 154]
 
 [[countries]]
@@ -1364,6 +1517,7 @@ name = "Orava"
 continent = 12
 x = 600
 y = 349
+cardtype = "Infantry"
 connections = [160, 159, 145, 157, 146, 144]
 
 [[countries]]
@@ -1372,6 +1526,7 @@ name = "Värska"
 continent = 12
 x = 623
 y = 348
+cardtype = "Cannon"
 connections = [160, 158]
 
 [[countries]]
@@ -1380,6 +1535,7 @@ name = "Mikitamäe"
 continent = 12
 x = 612
 y = 326
+cardtype = "Cavalry"
 connections = [161, 159, 158]
 
 [[countries]]
@@ -1388,6 +1544,7 @@ name = "Räpina"
 continent = 12
 x = 600
 y = 305
+cardtype = "Infantry"
 connections = [162, 160, 157, 154, 179]
 
 [[countries]]
@@ -1396,6 +1553,7 @@ name = "Mooste"
 continent = 12
 x = 579
 y = 290
+cardtype = "Cannon"
 connections = [153, 154, 161, 178, 179]
 
 [[countries]]
@@ -1404,6 +1562,7 @@ name = "Rõngu"
 continent = 13
 x = 471
 y = 296
+cardtype = "Cavalry"
 connections = [128, 129, 165, 166, 164]
 
 [[countries]]
@@ -1412,6 +1571,7 @@ name = "Rannu"
 continent = 13
 x = 470
 y = 268
+cardtype = "Infantry"
 connections = [163, 167]
 
 [[countries]]
@@ -1420,6 +1580,7 @@ name = "Elva_linn"
 continent = 13
 x = 493
 y = 283
+cardtype = "Cannon"
 connections = [163, 166]
 
 [[countries]]
@@ -1428,6 +1589,7 @@ name = "Konguta"
 continent = 13
 x = 485
 y = 275
+cardtype = "Cavalry"
 connections = [163, 167, 165]
 
 [[countries]]
@@ -1436,6 +1598,7 @@ name = "Puhja"
 continent = 13
 x = 485
 y = 254
+cardtype = "Infantry"
 connections = [168, 166, 164, 169]
 
 [[countries]]
@@ -1444,6 +1607,7 @@ name = "Laeva"
 continent = 13
 x = 491
 y = 231
+cardtype = "Cannon"
 connections = [174, 167, 169, 187, 192]
 
 [[countries]]
@@ -1452,6 +1616,7 @@ name = "Tähtvere"
 continent = 13
 x = 513
 y = 252
+cardtype = "Cavalry"
 connections = [173, 168, 174, 167, 170]
 
 [[countries]]
@@ -1460,6 +1625,7 @@ name = "Nõo"
 continent = 13
 x = 503
 y = 274
+cardtype = "Infantry"
 connections = [129, 169, 172, 171]
 
 [[countries]]
@@ -1468,6 +1634,7 @@ name = "Kambja"
 continent = 13
 x = 523
 y = 284
+cardtype = "Cannon"
 connections = [150, 151, 152, 170, 177]
 
 [[countries]]
@@ -1476,6 +1643,7 @@ name = "Ülenurme"
 continent = 13
 x = 521
 y = 266
+cardtype = "Cavalry"
 connections = [173, 170, 177]
 
 [[countries]]
@@ -1484,6 +1652,7 @@ name = "Tartu_linn"
 continent = 1
 x = 525
 y = 254
+cardtype = "Infantry"
 connections = [174, 169, 175, 172]
 
 [[countries]]
@@ -1492,6 +1661,7 @@ name = "Tartu"
 continent = 13
 x = 527
 y = 231
+cardtype = "Cannon"
 connections = [182, 168, 173, 169, 175, 192]
 
 [[countries]]
@@ -1500,6 +1670,7 @@ name = "Luunja"
 continent = 13
 x = 543
 y = 250
+cardtype = "Cavalry"
 connections = [173, 177, 176, 182, 174]
 
 [[countries]]
@@ -1508,6 +1679,7 @@ name = "Mäksa"
 continent = 13
 x = 562
 y = 258
+cardtype = "Infantry"
 connections = [177, 175, 182, 178]
 
 [[countries]]
@@ -1516,6 +1688,7 @@ name = "Haaslava"
 continent = 13
 x = 541
 y = 269
+cardtype = "Cannon"
 connections = [152, 171, 172, 175, 176, 178]
 
 [[countries]]
@@ -1524,6 +1697,7 @@ name = "Võnnu"
 continent = 13
 x = 574
 y = 268
+cardtype = "Cavalry"
 connections = [152, 153, 162, 177, 176, 179]
 
 [[countries]]
@@ -1532,6 +1706,7 @@ name = "Meeksi"
 continent = 13
 x = 596
 y = 276
+cardtype = "Infantry"
 connections = [162, 161, 180, 178]
 
 [[countries]]
@@ -1540,6 +1715,7 @@ name = "Piirissaare"
 continent = 13
 x = 609
 y = 253
+cardtype = "Cannon"
 connections = [179]
 
 [[countries]]
@@ -1548,6 +1724,7 @@ name = "Peipsiääre"
 continent = 13
 x = 576
 y = 224
+cardtype = "Cavalry"
 connections = [182, 183]
 
 [[countries]]
@@ -1556,6 +1733,7 @@ name = "Vara"
 continent = 13
 x = 552
 y = 225
+cardtype = "Infantry"
 connections = [181, 183, 174, 175, 176, 192, 194]
 
 [[countries]]
@@ -1564,6 +1742,7 @@ name = "Alatskivi"
 continent = 13
 x = 571
 y = 212
+cardtype = "Cannon"
 connections = [181, 184, 182, 194]
 
 [[countries]]
@@ -1572,6 +1751,7 @@ name = "Kallaste_linn"
 continent = 13
 x = 571
 y = 197
+cardtype = "Cavalry"
 connections = [183, 194]
 
 [[countries]]
@@ -1580,6 +1760,7 @@ name = "Põltsamaa"
 continent = 14
 x = 434
 y = 191
+cardtype = "Infantry"
 connections = [104, 103, 188, 187, 109, 186, 110]
 
 [[countries]]
@@ -1588,6 +1769,7 @@ name = "Põltsamaa_linn"
 continent = 14
 x = 446
 y = 198
+cardtype = "Cannon"
 connections = [185]
 
 [[countries]]
@@ -1596,6 +1778,7 @@ name = "Puurmani"
 continent = 14
 x = 477
 y = 215
+cardtype = "Cavalry"
 connections = [185, 188, 189, 110, 168, 192, 191]
 
 [[countries]]
@@ -1604,6 +1787,7 @@ name = "Pajusi"
 continent = 14
 x = 459
 y = 175
+cardtype = "Infantry"
 connections = [185, 103, 102, 189, 187]
 
 [[countries]]
@@ -1612,6 +1796,7 @@ name = "Jõgeva"
 continent = 14
 x = 481
 y = 160
+cardtype = "Cannon"
 connections = [188, 187, 190, 197, 191, 200]
 
 [[countries]]
@@ -1620,6 +1805,7 @@ name = "Jõgeva_linn"
 continent = 14
 x = 490
 y = 181
+cardtype = "Cavalry"
 connections = [189]
 
 [[countries]]
@@ -1628,6 +1814,7 @@ name = "Palamuse"
 continent = 14
 x = 512
 y = 199
+cardtype = "Infantry"
 connections = [187, 189, 197, 193, 192]
 
 [[countries]]
@@ -1636,6 +1823,7 @@ name = "Tabivere"
 continent = 14
 x = 514
 y = 217
+cardtype = "Cannon"
 connections = [187, 168, 174, 182, 193, 191, 194]
 
 [[countries]]
@@ -1644,6 +1832,7 @@ name = "Saare"
 continent = 14
 x = 538
 y = 185
+cardtype = "Cavalry"
 connections = [192, 191, 194, 197, 195]
 
 [[countries]]
@@ -1652,6 +1841,7 @@ name = "Pala"
 continent = 14
 x = 556
 y = 195
+cardtype = "Infantry"
 connections = [192, 184, 182, 183, 193, 195]
 
 [[countries]]
@@ -1660,6 +1850,7 @@ name = "Kasepää"
 continent = 14
 x = 547
 y = 171
+cardtype = "Cannon"
 connections = [194, 196, 197, 193]
 
 [[countries]]
@@ -1668,6 +1859,7 @@ name = "Mustvee"
 continent = 14
 x = 548
 y = 162
+cardtype = "Cavalry"
 connections = [195, 197]
 
 [[countries]]
@@ -1676,6 +1868,7 @@ name = "Torma"
 continent = 14
 x = 520
 y = 156
+cardtype = "Infantry"
 connections = [189, 191, 196, 193, 195, 201, 200, 208, 220, 221]
 
 [[countries]]
@@ -1684,6 +1877,7 @@ name = "Tapa"
 continent = 15
 x = 444
 y = 81
+cardtype = "Cannon"
 connections = [202, 86, 96, 97, 199]
 
 [[countries]]
@@ -1692,6 +1886,7 @@ name = "Tamsalu"
 continent = 15
 x = 458
 y = 100
+cardtype = "Cavalry"
 connections = [198, 97, 100, 201, 205, 202, 207]
 
 [[countries]]
@@ -1700,6 +1895,7 @@ name = "Rakke"
 continent = 15
 x = 476
 y = 137
+cardtype = "Infantry"
 connections = [201, 102, 189, 197, 208]
 
 [[countries]]
@@ -1708,6 +1904,7 @@ name = "Väike-Maarja"
 continent = 15
 x = 481
 y = 109
+cardtype = ""
 connections = [199, 100, 102, 200, 197, 208, 207]
 
 [[countries]]
@@ -1716,6 +1913,7 @@ name = "Kadrina"
 continent = 15
 x = 454
 y = 57
+cardtype = ""
 connections = [203, 87, 204, 205, 198, 199]
 
 [[countries]]
@@ -1724,6 +1922,7 @@ name = "Vihula"
 continent = 15
 x = 448
 y = 21
+cardtype = ""
 connections = [204, 87, 202, 211]
 
 [[countries]]
@@ -1732,6 +1931,7 @@ name = "Haljala"
 continent = 15
 x = 468
 y = 44
+cardtype = ""
 connections = [203, 202, 205, 210, 211]
 
 [[countries]]
@@ -1740,6 +1940,7 @@ name = "Rakvere"
 continent = 15
 x = 477
 y = 77
+cardtype = ""
 connections = [202, 199, 207, 206, 204, 210]
 
 [[countries]]
@@ -1748,6 +1949,7 @@ name = "Rakvere_linn"
 continent = 15
 x = 486
 y = 65
+cardtype = ""
 connections = [207, 205, 210]
 
 [[countries]]
@@ -1756,6 +1958,7 @@ name = "Vinni"
 continent = 15
 x = 530
 y = 94
+cardtype = ""
 connections = [201, 208, 206, 205, 209, 210, 199, 219, 218, 214]
 
 [[countries]]
@@ -1764,6 +1967,7 @@ name = "Laekvere"
 continent = 15
 x = 515
 y = 120
+cardtype = ""
 connections = [201, 200, 197, 207, 220, 219]
 
 [[countries]]
@@ -1772,6 +1976,7 @@ name = "Rägavere"
 continent = 15
 x = 518
 y = 72
+cardtype = ""
 connections = [207, 210, 211, 214]
 
 [[countries]]
@@ -1780,6 +1985,7 @@ name = "Sõmeru"
 continent = 15
 x = 501
 y = 55
+cardtype = ""
 connections = [207, 205, 206, 209, 211, 204]
 
 [[countries]]
@@ -1788,6 +1994,7 @@ name = "Viru-Nigula"
 continent = 15
 x = 521
 y = 51
+cardtype = ""
 connections = [203, 210, 212, 209, 204, 214, 213]
 
 [[countries]]
@@ -1796,6 +2003,7 @@ name = "Kunda"
 continent = 15
 x = 505
 y = 34
+cardtype = ""
 connections = [211]
 
 [[countries]]
@@ -1804,6 +2012,7 @@ name = "Aseri"
 continent = 16
 x = 539
 y = 46
+cardtype = ""
 connections = [211, 214, 215]
 
 [[countries]]
@@ -1812,6 +2021,7 @@ name = "Sonda"
 continent = 16
 x = 533
 y = 72
+cardtype = ""
 connections = [207, 209, 211, 213, 215, 218]
 
 [[countries]]
@@ -1820,6 +2030,7 @@ name = "Lüganuse"
 continent = 16
 x = 565
 y = 48
+cardtype = ""
 connections = [213, 214, 216, 217, 227, 226]
 
 [[countries]]
@@ -1828,6 +2039,7 @@ name = "Püssi_linn"
 continent = 16
 x = 560
 y = 59
+cardtype = ""
 connections = [215]
 
 [[countries]]
@@ -1836,6 +2048,7 @@ name = "Kiviõli"
 continent = 16
 x = 551
 y = 60
+cardtype = ""
 connections = [215, 218, 227]
 
 [[countries]]
@@ -1844,6 +2057,7 @@ name = "Maidla"
 continent = 16
 x = 558
 y = 86
+cardtype = ""
 connections = [207, 214, 219, 225, 217, 227]
 
 [[countries]]
@@ -1852,6 +2066,7 @@ name = "Tudulinna"
 continent = 16
 x = 562
 y = 120
+cardtype = ""
 connections = [208, 207, 218, 220, 221, 222, 225]
 
 [[countries]]
@@ -1860,6 +2075,7 @@ name = "Avinurme"
 continent = 16
 x = 540
 y = 135
+cardtype = ""
 connections = [197, 208, 219, 221]
 
 [[countries]]
@@ -1868,6 +2084,7 @@ name = "Lohusuu"
 continent = 16
 x = 556
 y = 141
+cardtype = ""
 connections = [197, 219, 220]
 
 [[countries]]
@@ -1876,6 +2093,7 @@ name = "Iisaku"
 continent = 16
 x = 590
 y = 113
+cardtype = ""
 connections = [219, 223, 225]
 
 [[countries]]
@@ -1884,6 +2102,7 @@ name = "Alajõe"
 continent = 16
 x = 605
 y = 125
+cardtype = ""
 connections = [222, 224]
 
 [[countries]]
@@ -1892,6 +2111,7 @@ name = "Illuka"
 continent = 16
 x = 624
 y = 98
+cardtype = ""
 connections = [228, 223, 232, 230, 225, 229]
 
 [[countries]]
@@ -1900,6 +2120,7 @@ name = "Mäetaguse"
 continent = 16
 x = 587
 y = 93
+cardtype = ""
 connections = [226, 219, 218, 228, 224, 222]
 
 [[countries]]
@@ -1908,6 +2129,7 @@ name = "Kohtla"
 continent = 16
 x = 582
 y = 48
+cardtype = ""
 connections = [229, 228, 227, 215, 225, 230]
 
 [[countries]]
@@ -1916,6 +2138,7 @@ name = "Kohtla-Nõmme_linn"
 continent = 16
 x = 575
 y = 62
+cardtype = ""
 connections = [215, 226, 218, 228, 217]
 
 [[countries]]
@@ -1924,6 +2147,7 @@ name = "Kohtla-Järve_linn"
 continent = 16
 x = 584
 y = 53
+cardtype = ""
 connections = [226, 227, 225, 224, 229, 230, 232]
 
 [[countries]]
@@ -1932,6 +2156,7 @@ name = "Jõhvi"
 continent = 16
 x = 605
 y = 67
+cardtype = ""
 connections = [226, 228, 230, 224]
 
 [[countries]]
@@ -1940,6 +2165,7 @@ name = "Toila"
 continent = 16
 x = 624
 y = 55
+cardtype = ""
 connections = [226, 228, 231, 224, 229]
 
 [[countries]]
@@ -1948,6 +2174,7 @@ name = "Sillamäe_linn"
 continent = 16
 x = 633
 y = 53
+cardtype = ""
 connections = [230, 232]
 
 [[countries]]
@@ -1956,6 +2183,7 @@ name = "Vaivara"
 continent = 16
 x = 651
 y = 75
+cardtype = ""
 connections = [228, 224, 231, 234, 233]
 
 [[countries]]
@@ -1964,6 +2192,7 @@ name = "Narva-Jõesuu"
 continent = 16
 x = 667
 y = 43
+cardtype = ""
 connections = [232, 234]
 
 [[countries]]
@@ -1972,4 +2201,5 @@ name = "Narva"
 continent = 16
 x = 673
 y = 56
+cardtype = ""
 connections = [232, 233]

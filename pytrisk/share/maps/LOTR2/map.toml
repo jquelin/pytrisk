@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "LOTR2_pic.jpg"
-map = "LOTR2_map.gif"
-crd = "LOTR2.cards"
+nb_wildcards = 7
 
 [[continents]]
 id = 1
@@ -54,6 +50,7 @@ name = "NURN"
 continent = 1
 x = 528
 y = 322
+cardtype = "Cavalry"
 connections = [2, 4, 6]
 
 [[countries]]
@@ -62,6 +59,7 @@ name = "Plateau_of_Gorogoth"
 continent = 1
 x = 514
 y = 285
+cardtype = "Infantry"
 connections = [5, 4, 1, 3]
 
 [[countries]]
@@ -70,6 +68,7 @@ name = "Orodruin"
 continent = 1
 x = 501
 y = 267
+cardtype = "Cannon"
 connections = [5, 2]
 
 [[countries]]
@@ -78,6 +77,7 @@ name = "Barad_Dûr"
 continent = 1
 x = 544
 y = 276
+cardtype = "Cavalry"
 connections = [5, 2, 1, 6]
 
 [[countries]]
@@ -86,6 +86,7 @@ name = "Ered_Lithui"
 continent = 1
 x = 502
 y = 244
+cardtype = "Infantry"
 connections = [10, 2, 4, 3]
 
 [[countries]]
@@ -94,6 +95,7 @@ name = "Black_lake"
 continent = 1
 x = 596
 y = 315
+cardtype = "Cannon"
 connections = [1, 4]
 
 [[countries]]
@@ -102,6 +104,7 @@ name = "Anfalas"
 continent = 4
 x = 323
 y = 332
+cardtype = "Cavalry"
 connections = [11, 8]
 
 [[countries]]
@@ -110,6 +113,7 @@ name = "Lebennin"
 continent = 4
 x = 410
 y = 336
+cardtype = "Infantry"
 connections = [11, 7, 9]
 
 [[countries]]
@@ -118,6 +122,7 @@ name = "South_Ithilien"
 continent = 4
 x = 451
 y = 352
+cardtype = "Cannon"
 connections = [11, 8]
 
 [[countries]]
@@ -126,6 +131,7 @@ name = "North_Ithilien"
 continent = 4
 x = 432
 y = 258
+cardtype = "Cavalry"
 connections = [12, 5, 11]
 
 [[countries]]
@@ -134,6 +140,7 @@ name = "Mountains_of_Gondor"
 continent = 4
 x = 318
 y = 263
+cardtype = "Infantry"
 connections = [10, 18, 26, 7, 8, 9]
 
 [[countries]]
@@ -142,6 +149,7 @@ name = "The_Brown_Lands"
 continent = 2
 x = 440
 y = 216
+cardtype = "Cannon"
 connections = [15, 20, 18, 10]
 
 [[countries]]
@@ -150,6 +158,7 @@ name = "Dur_Guldur"
 continent = 2
 x = 439
 y = 170
+cardtype = "Cavalry"
 connections = [15, 14, 20]
 
 [[countries]]
@@ -158,6 +167,7 @@ name = "Mirkwood"
 continent = 2
 x = 438
 y = 132
+cardtype = "Infantry"
 connections = [15, 13, 20]
 
 [[countries]]
@@ -166,6 +176,7 @@ name = "East_Bright"
 continent = 2
 x = 480
 y = 148
+cardtype = "Cannon"
 connections = [16, 14, 13, 12]
 
 [[countries]]
@@ -174,6 +185,7 @@ name = "Erareth_on_the_long_lake"
 continent = 2
 x = 495
 y = 89
+cardtype = "Cavalry"
 connections = [21, 17, 15]
 
 [[countries]]
@@ -182,6 +194,7 @@ name = "Erebor(the_lonely_mountain)"
 continent = 2
 x = 494
 y = 69
+cardtype = "Infantry"
 connections = [21, 22, 16]
 
 [[countries]]
@@ -190,6 +203,7 @@ name = "Helmsdeep"
 continent = 5
 x = 376
 y = 236
+cardtype = "Cannon"
 connections = [20, 19, 12, 11]
 
 [[countries]]
@@ -198,6 +212,7 @@ name = "Fangorn"
 continent = 5
 x = 342
 y = 212
+cardtype = "Cavalry"
 connections = [20, 18]
 
 [[countries]]
@@ -206,6 +221,7 @@ name = "Lorien"
 continent = 5
 x = 370
 y = 177
+cardtype = "Infantry"
 connections = [14, 13, 12, 19, 18]
 
 [[countries]]
@@ -214,6 +230,7 @@ name = "Iron_Hills"
 continent = 3
 x = 575
 y = 32
+cardtype = "Cannon"
 connections = [17, 43, 16]
 
 [[countries]]
@@ -222,6 +239,7 @@ name = "Ered_Mithrin"
 continent = 3
 x = 452
 y = 21
+cardtype = "Cavalry"
 connections = [17, 24]
 
 [[countries]]
@@ -230,6 +248,7 @@ name = "Mount_Gunduband"
 continent = 3
 x = 387
 y = 41
+cardtype = "Infantry"
 connections = [24]
 
 [[countries]]
@@ -238,6 +257,7 @@ name = "Angmar"
 continent = 3
 x = 347
 y = 22
+cardtype = "Cannon"
 connections = [30, 29, 23, 22]
 
 [[countries]]
@@ -246,6 +266,7 @@ name = "Enedwaight"
 continent = 5
 x = 230
 y = 244
+cardtype = "Cavalry"
 connections = [26, 36, 27]
 
 [[countries]]
@@ -254,6 +275,7 @@ name = "Isengard"
 continent = 5
 x = 277
 y = 220
+cardtype = "Infantry"
 connections = [11, 25, 27, 28]
 
 [[countries]]
@@ -262,6 +284,7 @@ name = "Dunland"
 continent = 5
 x = 273
 y = 190
+cardtype = "Cannon"
 connections = [25, 26, 28, 42, 41, 40]
 
 [[countries]]
@@ -270,6 +293,7 @@ name = "Eregion"
 continent = 5
 x = 296
 y = 173
+cardtype = "Cavalry"
 connections = [26, 27]
 
 [[countries]]
@@ -278,6 +302,7 @@ name = "Forodwaight"
 continent = 7
 x = 277
 y = 16
+cardtype = "Infantry"
 connections = [30, 24, 31]
 
 [[countries]]
@@ -286,6 +311,7 @@ name = "Hithaeglir"
 continent = 7
 x = 288
 y = 64
+cardtype = "Cannon"
 connections = [41, 33, 34, 29, 24]
 
 [[countries]]
@@ -294,6 +320,7 @@ name = "Ereth_Luin"
 continent = 7
 x = 99
 y = 81
+cardtype = "Cavalry"
 connections = [29, 32]
 
 [[countries]]
@@ -302,6 +329,7 @@ name = "Forlindon"
 continent = 7
 x = 22
 y = 104
+cardtype = "Infantry"
 connections = [31]
 
 [[countries]]
@@ -310,6 +338,7 @@ name = "Ettenmoors"
 continent = 7
 x = 322
 y = 85
+cardtype = "Cannon"
 connections = [30, 34, 35]
 
 [[countries]]
@@ -318,6 +347,7 @@ name = "Weather_Hills"
 continent = 7
 x = 307
 y = 111
+cardtype = "Cavalry"
 connections = [30, 33, 35]
 
 [[countries]]
@@ -326,6 +356,7 @@ name = "Ruhdaur"
 continent = 7
 x = 339
 y = 118
+cardtype = "Infantry"
 connections = [33, 34]
 
 [[countries]]
@@ -334,6 +365,7 @@ name = "Minhiriath"
 continent = 6
 x = 180
 y = 195
+cardtype = "Cannon"
 connections = [25, 40, 38, 37]
 
 [[countries]]
@@ -342,6 +374,7 @@ name = "Halindon"
 continent = 6
 x = 66
 y = 166
+cardtype = "Cavalry"
 connections = [36]
 
 [[countries]]
@@ -350,6 +383,7 @@ name = "Bleu_Mountains"
 continent = 6
 x = 148
 y = 158
+cardtype = "Infantry"
 connections = [36, 39, 40]
 
 [[countries]]
@@ -358,6 +392,7 @@ name = "Arthedian"
 continent = 6
 x = 150
 y = 125
+cardtype = "Cannon"
 connections = [38, 40, 41]
 
 [[countries]]
@@ -366,6 +401,7 @@ name = "The_shire"
 continent = 6
 x = 210
 y = 142
+cardtype = "Cavalry"
 connections = [27, 36, 38, 39, 41]
 
 [[countries]]
@@ -374,6 +410,7 @@ name = "Old_Forest"
 continent = 6
 x = 239
 y = 122
+cardtype = "Infantry"
 connections = [27, 40, 39, 30]
 
 [[countries]]
@@ -382,6 +419,7 @@ name = "Bree"
 continent = 6
 x = 285
 y = 136
+cardtype = "Cannon"
 connections = [27]
 
 [[countries]]
@@ -390,4 +428,5 @@ name = "Sea_of_Rhûn"
 continent = 3
 x = 620
 y = 171
+cardtype = "Cavalry"
 connections = [21]

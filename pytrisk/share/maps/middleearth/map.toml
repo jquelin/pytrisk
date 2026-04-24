@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "middleearth_pic.jpg"
-map = "middleearth_map.gif"
-crd = "middleearth.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -60,6 +56,7 @@ name = "North_Lindon"
 continent = 1
 x = 115
 y = 40
+cardtype = "Infantry"
 connections = [2]
 
 [[countries]]
@@ -68,6 +65,7 @@ name = "South_Lindon"
 continent = 1
 x = 111
 y = 110
+cardtype = "Cannon"
 connections = [1, 3, 12]
 
 [[countries]]
@@ -76,6 +74,7 @@ name = "Numeriador"
 continent = 1
 x = 156
 y = 67
+cardtype = "Cavalry"
 connections = [2, 4, 5]
 
 [[countries]]
@@ -84,6 +83,7 @@ name = "Forochiel"
 continent = 1
 x = 230
 y = 31
+cardtype = "Infantry"
 connections = [3, 5, 6, 7]
 
 [[countries]]
@@ -92,6 +92,7 @@ name = "Northwest_Arthedain"
 continent = 1
 x = 185
 y = 97
+cardtype = "Cannon"
 connections = [3, 4, 7, 9, 11]
 
 [[countries]]
@@ -100,6 +101,7 @@ name = "Angmar"
 continent = 2
 x = 294
 y = 49
+cardtype = "Cavalry"
 connections = [4, 8, 27]
 
 [[countries]]
@@ -108,6 +110,7 @@ name = "Northeast_Arthedain"
 continent = 2
 x = 249
 y = 72
+cardtype = "Infantry"
 connections = [4, 5, 8, 9, 10]
 
 [[countries]]
@@ -116,6 +119,7 @@ name = "Rhudaur"
 continent = 2
 x = 319
 y = 96
+cardtype = "Cannon"
 connections = [6, 7, 10, 14]
 
 [[countries]]
@@ -124,6 +128,7 @@ name = "The_Shire"
 continent = 2
 x = 222
 y = 120
+cardtype = "Cavalry"
 connections = [5, 7, 10, 11, 13]
 
 [[countries]]
@@ -132,6 +137,7 @@ name = "North_Cardolan"
 continent = 2
 x = 269
 y = 137
+cardtype = "Infantry"
 connections = [7, 8, 9, 13, 14, 16]
 
 [[countries]]
@@ -140,6 +146,7 @@ name = "South_Arthedain"
 continent = 2
 x = 194
 y = 154
+cardtype = "Cannon"
 connections = [5, 9, 12, 13]
 
 [[countries]]
@@ -148,6 +155,7 @@ name = "Harlindon"
 continent = 2
 x = 147
 y = 163
+cardtype = "Cavalry"
 connections = [2, 11, 13]
 
 [[countries]]
@@ -156,6 +164,7 @@ name = "South_Cardolan"
 continent = 2
 x = 226
 y = 185
+cardtype = "Infantry"
 connections = [9, 10, 11, 12, 16, 17]
 
 [[countries]]
@@ -164,6 +173,7 @@ name = "Hulsten"
 continent = 3
 x = 312
 y = 157
+cardtype = "Cannon"
 connections = [8, 10, 15, 16]
 
 [[countries]]
@@ -172,6 +182,7 @@ name = "Redhorn_Pass"
 continent = 3
 x = 342
 y = 170
+cardtype = "Cavalry"
 connections = [14, 35]
 
 [[countries]]
@@ -180,6 +191,7 @@ name = "Dunland"
 continent = 3
 x = 292
 y = 196
+cardtype = "Infantry"
 connections = [10, 13, 14, 17]
 
 [[countries]]
@@ -188,6 +200,7 @@ name = "Enedwaith"
 continent = 3
 x = 265
 y = 238
+cardtype = "Cannon"
 connections = [13, 16, 18, 19]
 
 [[countries]]
@@ -196,6 +209,7 @@ name = "Isengart"
 continent = 3
 x = 314
 y = 252
+cardtype = "Cavalry"
 connections = [17, 19, 45, 46]
 
 [[countries]]
@@ -204,6 +218,7 @@ name = "North_Pukel-lands"
 continent = 3
 x = 253
 y = 277
+cardtype = "Infantry"
 connections = [17, 18, 20, 21]
 
 [[countries]]
@@ -212,6 +227,7 @@ name = "Andrast"
 continent = 4
 x = 237
 y = 327
+cardtype = "Cannon"
 connections = [19, 21, 22]
 
 [[countries]]
@@ -220,6 +236,7 @@ name = "South_Pukel-lands"
 continent = 4
 x = 267
 y = 297
+cardtype = "Cavalry"
 connections = [19, 20, 22]
 
 [[countries]]
@@ -228,6 +245,7 @@ name = "Anfalas"
 continent = 4
 x = 299
 y = 316
+cardtype = "Infantry"
 connections = [20, 21, 23, 24]
 
 [[countries]]
@@ -236,6 +254,7 @@ name = "Lamedon"
 continent = 4
 x = 377
 y = 315
+cardtype = "Cannon"
 connections = [22, 24, 26]
 
 [[countries]]
@@ -244,6 +263,7 @@ name = "Belfalas"
 continent = 4
 x = 360
 y = 341
+cardtype = "Cavalry"
 connections = [22, 23, 26, 25]
 
 [[countries]]
@@ -252,6 +272,7 @@ name = "Tolfalas"
 continent = 4
 x = 363
 y = 377
+cardtype = "Infantry"
 connections = [24, 55]
 
 [[countries]]
@@ -260,6 +281,7 @@ name = "Lebennin"
 continent = 4
 x = 411
 y = 334
+cardtype = "Cannon"
 connections = [23, 24, 48]
 
 [[countries]]
@@ -268,6 +290,7 @@ name = "Gundabad"
 continent = 5
 x = 356
 y = 53
+cardtype = "Cavalry"
 connections = [6, 28, 29, 31]
 
 [[countries]]
@@ -276,6 +299,7 @@ name = "Grey_Mountains"
 continent = 5
 x = 407
 y = 46
+cardtype = "Infantry"
 connections = [27, 29, 31, 37, 38]
 
 [[countries]]
@@ -284,6 +308,7 @@ name = "Northern_Anduin"
 continent = 5
 x = 379
 y = 94
+cardtype = "Cannon"
 connections = [27, 28, 30, 31, 32]
 
 [[countries]]
@@ -292,6 +317,7 @@ name = "Southern_Anduin"
 continent = 5
 x = 384
 y = 143
+cardtype = "Cavalry"
 connections = [29, 32, 33, 34, 35]
 
 [[countries]]
@@ -300,6 +326,7 @@ name = "Forest_Kingdom"
 continent = 5
 x = 417
 y = 74
+cardtype = "Infantry"
 connections = [27, 28, 29, 32, 33, 38]
 
 [[countries]]
@@ -308,6 +335,7 @@ name = "West_Mirkwood"
 continent = 5
 x = 414
 y = 125
+cardtype = "Cannon"
 connections = [29, 30, 31, 33, 34]
 
 [[countries]]
@@ -316,6 +344,7 @@ name = "East_Mirkwood"
 continent = 5
 x = 443
 y = 131
+cardtype = "Cavalry"
 connections = [30, 31, 32, 34, 40]
 
 [[countries]]
@@ -324,6 +353,7 @@ name = "South_Mirkwood"
 continent = 5
 x = 424
 y = 177
+cardtype = "Infantry"
 connections = [30, 32, 33, 36, 40, 42]
 
 [[countries]]
@@ -332,6 +362,7 @@ name = "Lorien"
 continent = 5
 x = 360
 y = 191
+cardtype = "Cannon"
 connections = [15, 30, 36, 43, 45, 46]
 
 [[countries]]
@@ -340,6 +371,7 @@ name = "Brown_Lands"
 continent = 5
 x = 402
 y = 204
+cardtype = "Cavalry"
 connections = [34, 35, 42, 43]
 
 [[countries]]
@@ -348,6 +380,7 @@ name = "Ulund"
 continent = 6
 x = 484
 y = 40
+cardtype = "Infantry"
 connections = [28, 38, 39]
 
 [[countries]]
@@ -356,6 +389,7 @@ name = "North_Rhovanion"
 continent = 6
 x = 488
 y = 100
+cardtype = "Cannon"
 connections = [28, 31, 37, 39, 40, 41]
 
 [[countries]]
@@ -364,6 +398,7 @@ name = "Iron_Mountains"
 continent = 6
 x = 521
 y = 74
+cardtype = "Cavalry"
 connections = [37, 38]
 
 [[countries]]
@@ -372,6 +407,7 @@ name = "Middle_Rhovanion"
 continent = 6
 x = 495
 y = 163
+cardtype = "Infantry"
 connections = [33, 34, 38, 41, 42]
 
 [[countries]]
@@ -380,6 +416,7 @@ name = "Dorwinion"
 continent = 6
 x = 565
 y = 143
+cardtype = "Cannon"
 connections = [38, 40]
 
 [[countries]]
@@ -388,6 +425,7 @@ name = "South_Rhovanion"
 continent = 6
 x = 500
 y = 228
+cardtype = "Cavalry"
 connections = [34, 36, 40, 43, 44]
 
 [[countries]]
@@ -396,6 +434,7 @@ name = "Dagorlands"
 continent = 6
 x = 433
 y = 253
+cardtype = "Infantry"
 connections = [35, 36, 42, 44, 46, 48, 49]
 
 [[countries]]
@@ -404,6 +443,7 @@ name = "Horseplains"
 continent = 6
 x = 578
 y = 243
+cardtype = "Cannon"
 connections = [42, 43]
 
 [[countries]]
@@ -412,6 +452,7 @@ name = "Fangorn"
 continent = 7
 x = 343
 y = 223
+cardtype = "Cavalry"
 connections = [18, 35, 46]
 
 [[countries]]
@@ -420,6 +461,7 @@ name = "Rohan"
 continent = 7
 x = 376
 y = 254
+cardtype = "Infantry"
 connections = [18, 35, 43, 45, 47]
 
 [[countries]]
@@ -428,6 +470,7 @@ name = "Anorien"
 continent = 7
 x = 403
 y = 292
+cardtype = "Cannon"
 connections = [46, 48]
 
 [[countries]]
@@ -436,6 +479,7 @@ name = "North_Ithilien"
 continent = 7
 x = 446
 y = 324
+cardtype = "Cavalry"
 connections = [26, 43, 47, 50, 54]
 
 [[countries]]
@@ -444,6 +488,7 @@ name = "Udun"
 continent = 8
 x = 464
 y = 275
+cardtype = "Infantry"
 connections = [43, 51]
 
 [[countries]]
@@ -452,6 +497,7 @@ name = "Minas_Morgul"
 continent = 8
 x = 459
 y = 307
+cardtype = "Cannon"
 connections = [48, 51]
 
 [[countries]]
@@ -460,6 +506,7 @@ name = "Gorgoroth"
 continent = 8
 x = 491
 y = 308
+cardtype = "Cavalry"
 connections = [49, 50, 52]
 
 [[countries]]
@@ -468,6 +515,7 @@ name = "West_Nurn"
 continent = 8
 x = 519
 y = 346
+cardtype = "Infantry"
 connections = [51, 53]
 
 [[countries]]
@@ -476,6 +524,7 @@ name = "East_Nurn"
 continent = 8
 x = 581
 y = 310
+cardtype = "Cannon"
 connections = [52]
 
 [[countries]]
@@ -484,6 +533,7 @@ name = "South_Ithilien"
 continent = 8
 x = 435
 y = 354
+cardtype = "Cavalry"
 connections = [48, 55]
 
 [[countries]]
@@ -492,6 +542,7 @@ name = "Harondor"
 continent = 8
 x = 425
 y = 394
+cardtype = "Infantry"
 connections = [25, 54, 56]
 
 [[countries]]
@@ -500,4 +551,5 @@ name = "Khand"
 continent = 8
 x = 555
 y = 404
+cardtype = "Cannon"
 connections = [55]

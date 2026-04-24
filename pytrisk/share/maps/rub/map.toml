@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "rub_pic.jpg"
-map = "rub_map.gif"
-crd = "rub.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -42,6 +38,7 @@ name = "HMA"
 continent = 1
 x = 188
 y = 122
+cardtype = "Infantry"
 connections = [2]
 
 [[countries]]
@@ -50,6 +47,7 @@ name = "MA"
 continent = 1
 x = 221
 y = 101
+cardtype = "Cannon"
 connections = [1, 14, 16, 28, 30]
 
 [[countries]]
@@ -58,6 +56,7 @@ name = "IAN"
 continent = 2
 x = 404
 y = 36
+cardtype = "Infantry"
 connections = [4, 6, 29]
 
 [[countries]]
@@ -66,6 +65,7 @@ name = "IA"
 continent = 2
 x = 439
 y = 122
+cardtype = "Infantry"
 connections = [3, 5, 7, 29, 31]
 
 [[countries]]
@@ -74,6 +74,7 @@ name = "HIA"
 continent = 2
 x = 475
 y = 162
+cardtype = "Cavalry"
 connections = [4, 20, 22]
 
 [[countries]]
@@ -82,6 +83,7 @@ name = "IBN"
 continent = 2
 x = 479
 y = 32
+cardtype = "Cavalry"
 connections = [3, 7, 9]
 
 [[countries]]
@@ -90,6 +92,7 @@ name = "IB"
 continent = 2
 x = 510
 y = 122
+cardtype = "Cavalry"
 connections = [4, 6, 8, 10]
 
 [[countries]]
@@ -98,6 +101,7 @@ name = "HIB"
 continent = 2
 x = 539
 y = 157
+cardtype = "Cannon"
 connections = [7, 10, 22]
 
 [[countries]]
@@ -106,6 +110,7 @@ name = "ICN"
 continent = 2
 x = 549
 y = 48
+cardtype = "Cannon"
 connections = [6, 10]
 
 [[countries]]
@@ -114,6 +119,7 @@ name = "IC"
 continent = 2
 x = 583
 y = 122
+cardtype = "Cannon"
 connections = [7, 9, 11]
 
 [[countries]]
@@ -122,6 +128,7 @@ name = "HIC"
 continent = 2
 x = 612
 y = 162
+cardtype = "Cavalry"
 connections = [10, 24]
 
 [[countries]]
@@ -130,6 +137,7 @@ name = "GC"
 continent = 3
 x = 53
 y = 276
+cardtype = "Cannon"
 connections = [13, 14]
 
 [[countries]]
@@ -138,6 +146,7 @@ name = "HGC"
 continent = 3
 x = 87
 y = 230
+cardtype = "Infantry"
 connections = [12, 14]
 
 [[countries]]
@@ -146,6 +155,7 @@ name = "GB"
 continent = 3
 x = 120
 y = 276
+cardtype = "Infantry"
 connections = [2, 12, 13, 15, 16]
 
 [[countries]]
@@ -154,6 +164,7 @@ name = "HGB"
 continent = 3
 x = 156
 y = 230
+cardtype = "Cannon"
 connections = [14, 16]
 
 [[countries]]
@@ -162,6 +173,7 @@ name = "GA"
 continent = 3
 x = 190
 y = 276
+cardtype = "Cannon"
 connections = [2, 14, 15, 17, 33]
 
 [[countries]]
@@ -170,6 +182,7 @@ name = "HGA"
 continent = 3
 x = 227
 y = 230
+cardtype = "Cavalry"
 connections = [16, 33]
 
 [[countries]]
@@ -178,6 +191,7 @@ name = "RZ"
 continent = 4
 x = 378
 y = 266
+cardtype = "Cavalry"
 connections = [19, 32, 33]
 
 [[countries]]
@@ -186,6 +200,7 @@ name = "NA"
 continent = 4
 x = 408
 y = 303
+cardtype = "Infantry"
 connections = [18, 20, 24]
 
 [[countries]]
@@ -194,6 +209,7 @@ name = "HNA"
 continent = 4
 x = 442
 y = 266
+cardtype = "Cavalry"
 connections = [5, 19, 21]
 
 [[countries]]
@@ -202,6 +218,7 @@ name = "NB"
 continent = 4
 x = 475
 y = 303
+cardtype = "Infantry"
 connections = [20, 22, 26]
 
 [[countries]]
@@ -210,6 +227,7 @@ name = "HNB"
 continent = 4
 x = 516
 y = 266
+cardtype = "Infantry"
 connections = [5, 8, 21, 23]
 
 [[countries]]
@@ -218,6 +236,7 @@ name = "NC"
 continent = 4
 x = 550
 y = 303
+cardtype = "Cavalry"
 connections = [22, 24, 26]
 
 [[countries]]
@@ -226,6 +245,7 @@ name = "HNC"
 continent = 4
 x = 578
 y = 266
+cardtype = "Cannon"
 connections = [11, 23, 25]
 
 [[countries]]
@@ -234,6 +254,7 @@ name = "ND"
 continent = 4
 x = 616
 y = 303
+cardtype = "Cannon"
 connections = [24, 26]
 
 [[countries]]
@@ -242,6 +263,7 @@ name = "Isolab"
 continent = 4
 x = 530
 y = 390
+cardtype = "Infantry"
 connections = [21, 23, 25]
 
 [[countries]]
@@ -250,6 +272,7 @@ name = "MZ"
 continent = 5
 x = 303
 y = 40
+cardtype = "Cannon"
 connections = [28]
 
 [[countries]]
@@ -258,6 +281,7 @@ name = "Studentenhaus"
 continent = 5
 x = 288
 y = 90
+cardtype = "Cavalry"
 connections = [2, 27, 29]
 
 [[countries]]
@@ -266,6 +290,7 @@ name = "Verwaltung"
 continent = 5
 x = 351
 y = 95
+cardtype = "Cavalry"
 connections = [3, 4, 28, 30]
 
 [[countries]]
@@ -274,6 +299,7 @@ name = "Bibliothek"
 continent = 5
 x = 308
 y = 146
+cardtype = "Infantry"
 connections = [2, 31, 33]
 
 [[countries]]
@@ -282,6 +308,7 @@ name = "FNO"
 continent = 5
 x = 387
 y = 159
+cardtype = ""
 connections = [4, 5, 30, 32]
 
 [[countries]]
@@ -290,6 +317,7 @@ name = "HZO"
 continent = 5
 x = 385
 y = 215
+cardtype = ""
 connections = [18, 31]
 
 [[countries]]
@@ -298,6 +326,7 @@ name = "Audimax"
 continent = 5
 x = 316
 y = 273
+cardtype = ""
 connections = [16, 17, 18, 34]
 
 [[countries]]
@@ -306,4 +335,5 @@ name = "Mensa"
 continent = 5
 x = 313
 y = 341
+cardtype = ""
 connections = [19, 33]

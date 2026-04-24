@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "Nuremberg_Public_Transit_pic.png"
-map = "Nuremberg_Public_Transit_map.gif"
-crd = "Nuremberg_Public_Transit.cards"
+nb_wildcards = 0
 
 [[continents]]
 id = 1
@@ -126,6 +122,7 @@ name = "Fürth_Hauptbahnhof"
 continent = 1
 x = 130
 y = 162
+cardtype = ""
 connections = [8, 10, 6, 2, 13, 49]
 
 [[countries]]
@@ -134,6 +131,7 @@ name = "Rathaus"
 continent = 1
 x = 114
 y = 130
+cardtype = ""
 connections = [1, 3]
 
 [[countries]]
@@ -142,6 +140,7 @@ name = "Stadthalle"
 continent = 1
 x = 93
 y = 116
+cardtype = ""
 connections = [2, 4]
 
 [[countries]]
@@ -150,6 +149,7 @@ name = "Klinikum"
 continent = 1
 x = 74
 y = 107
+cardtype = ""
 connections = [3, 5]
 
 [[countries]]
@@ -158,6 +158,7 @@ name = "Hardhöhe"
 continent = 1
 x = 49
 y = 106
+cardtype = ""
 connections = [4]
 
 [[countries]]
@@ -166,6 +167,7 @@ name = "Unterfarrnbach"
 continent = 1
 x = 67
 y = 100
+cardtype = ""
 connections = [1, 7]
 
 [[countries]]
@@ -174,6 +176,7 @@ name = "Vach"
 continent = 1
 x = 67
 y = 78
+cardtype = ""
 connections = [6]
 
 [[countries]]
@@ -182,6 +185,7 @@ name = "Unterfürberg"
 continent = 1
 x = 57
 y = 168
+cardtype = ""
 connections = [1, 9]
 
 [[countries]]
@@ -190,6 +194,7 @@ name = "Burgfarrnbach"
 continent = 1
 x = 34
 y = 168
+cardtype = ""
 connections = [8]
 
 [[countries]]
@@ -198,6 +203,7 @@ name = "Westvorstadt"
 continent = 1
 x = 68
 y = 183
+cardtype = ""
 connections = [1, 11]
 
 [[countries]]
@@ -206,6 +212,7 @@ name = "Dambach"
 continent = 1
 x = 68
 y = 196
+cardtype = ""
 connections = [10, 12]
 
 [[countries]]
@@ -214,6 +221,7 @@ name = "Alte_Veste"
 continent = 1
 x = 68
 y = 209
+cardtype = ""
 connections = [11]
 
 [[countries]]
@@ -222,6 +230,7 @@ name = "Jakobinenstraße"
 continent = 1
 x = 152
 y = 156
+cardtype = ""
 connections = [1, 43]
 
 [[countries]]
@@ -230,6 +239,7 @@ name = "Lorenzkirche"
 continent = 2
 x = 348
 y = 198
+cardtype = ""
 connections = [21, 15]
 
 [[countries]]
@@ -238,6 +248,7 @@ name = "Weißer_Turm"
 continent = 2
 x = 326
 y = 198
+cardtype = ""
 connections = [14, 22]
 
 [[countries]]
@@ -246,6 +257,7 @@ name = "Opernhaus"
 continent = 2
 x = 337
 y = 222
+cardtype = ""
 connections = [21, 22]
 
 [[countries]]
@@ -254,6 +266,7 @@ name = "Marientor"
 continent = 2
 x = 397
 y = 195
+cardtype = ""
 connections = [136, 21]
 
 [[countries]]
@@ -262,6 +275,7 @@ name = "Obere_Turnstraße"
 continent = 2
 x = 286
 y = 191
+cardtype = ""
 connections = [19, 22]
 
 [[countries]]
@@ -270,6 +284,7 @@ name = "Hallertor"
 continent = 2
 x = 286
 y = 175
+cardtype = ""
 connections = [20, 42, 18]
 
 [[countries]]
@@ -278,6 +293,7 @@ name = "Tiergärtnertor"
 continent = 2
 x = 284
 y = 160
+cardtype = ""
 connections = [23, 19]
 
 [[countries]]
@@ -286,6 +302,7 @@ name = "Nürnberg_Hauptbahnhof"
 continent = 3
 x = 379
 y = 238
+cardtype = ""
 connections = [49, 53, 59, 82, 113, 115, 116, 103, 122, 132, 17, 16, 14]
 
 [[countries]]
@@ -294,6 +311,7 @@ name = "Plärrer"
 continent = 4
 x = 285
 y = 217
+cardtype = ""
 connections = [48, 49, 58, 16, 15, 18]
 
 [[countries]]
@@ -302,6 +320,7 @@ name = "Friedrich-Ebert-Platz"
 continent = 5
 x = 285
 y = 142
+cardtype = ""
 connections = [24, 38, 20]
 
 [[countries]]
@@ -310,6 +329,7 @@ name = "Krelingstraße"
 continent = 5
 x = 310
 y = 142
+cardtype = ""
 connections = [25, 23]
 
 [[countries]]
@@ -318,6 +338,7 @@ name = "Maxfeldstraße"
 continent = 5
 x = 333
 y = 142
+cardtype = ""
 connections = [26, 24]
 
 [[countries]]
@@ -326,6 +347,7 @@ name = "Wurzelbauerstraße"
 continent = 5
 x = 356
 y = 142
+cardtype = ""
 connections = [30, 25]
 
 [[countries]]
@@ -334,6 +356,7 @@ name = "Maxfeld"
 continent = 5
 x = 362
 y = 124
+cardtype = ""
 connections = [31]
 
 [[countries]]
@@ -342,6 +365,7 @@ name = "Schoppershof"
 continent = 5
 x = 383
 y = 113
+cardtype = ""
 connections = [30, 29]
 
 [[countries]]
@@ -350,6 +374,7 @@ name = "Nordostbahnhof"
 continent = 5
 x = 385
 y = 95
+cardtype = ""
 connections = [28, 35]
 
 [[countries]]
@@ -358,6 +383,7 @@ name = "Rennweg"
 continent = 5
 x = 382
 y = 142
+cardtype = ""
 connections = [31, 28, 26]
 
 [[countries]]
@@ -366,6 +392,7 @@ name = "Rathenauplatz"
 continent = 5
 x = 384
 y = 160
+cardtype = ""
 connections = [32, 136, 30, 27]
 
 [[countries]]
@@ -374,6 +401,7 @@ name = "Stresemannplatz"
 continent = 5
 x = 428
 y = 160
+cardtype = ""
 connections = [129, 31]
 
 [[countries]]
@@ -382,6 +410,7 @@ name = "Flughafen"
 continent = 6
 x = 350
 y = 50
+cardtype = ""
 connections = [34]
 
 [[countries]]
@@ -390,6 +419,7 @@ name = "Ziegelstein"
 continent = 6
 x = 372
 y = 60
+cardtype = ""
 connections = [35, 33]
 
 [[countries]]
@@ -398,6 +428,7 @@ name = "Herrnhütte"
 continent = 6
 x = 384
 y = 77
+cardtype = ""
 connections = [29, 34]
 
 [[countries]]
@@ -406,6 +437,7 @@ name = "Thon"
 continent = 7
 x = 285
 y = 89
+cardtype = ""
 connections = [37]
 
 [[countries]]
@@ -414,6 +446,7 @@ name = "Bucher_Straße/Nordring"
 continent = 7
 x = 286
 y = 107
+cardtype = ""
 connections = [38, 36]
 
 [[countries]]
@@ -422,6 +455,7 @@ name = "Juvenellstraße"
 continent = 7
 x = 286
 y = 124
+cardtype = ""
 connections = [23, 37]
 
 [[countries]]
@@ -430,6 +464,7 @@ name = "Westfriedhof"
 continent = 8
 x = 228
 y = 137
+cardtype = ""
 connections = [40]
 
 [[countries]]
@@ -438,6 +473,7 @@ name = "Julienstraße"
 continent = 8
 x = 243
 y = 144
+cardtype = ""
 connections = [41, 39]
 
 [[countries]]
@@ -446,6 +482,7 @@ name = "Brückenstraße"
 continent = 8
 x = 260
 y = 154
+cardtype = ""
 connections = [42, 40]
 
 [[countries]]
@@ -454,6 +491,7 @@ name = "Hallerstraße"
 continent = 8
 x = 274
 y = 164
+cardtype = ""
 connections = [19, 41]
 
 [[countries]]
@@ -462,6 +500,7 @@ name = "Stadtgrenze"
 continent = 8
 x = 172
 y = 157
+cardtype = ""
 connections = [13, 44]
 
 [[countries]]
@@ -470,6 +509,7 @@ name = "Muggenhof"
 continent = 8
 x = 190
 y = 164
+cardtype = ""
 connections = [43, 45]
 
 [[countries]]
@@ -478,6 +518,7 @@ name = "Eberhardshof"
 continent = 8
 x = 208
 y = 172
+cardtype = ""
 connections = [44, 46]
 
 [[countries]]
@@ -486,6 +527,7 @@ name = "Maximilianstraße"
 continent = 8
 x = 223
 y = 181
+cardtype = ""
 connections = [45, 47]
 
 [[countries]]
@@ -494,6 +536,7 @@ name = "Bärenschanze"
 continent = 8
 x = 238
 y = 191
+cardtype = ""
 connections = [46, 48]
 
 [[countries]]
@@ -502,6 +545,7 @@ name = "Gostenhof"
 continent = 8
 x = 255
 y = 200
+cardtype = ""
 connections = [47, 22]
 
 [[countries]]
@@ -510,6 +554,7 @@ name = "Rothenburger_Straße"
 continent = 9
 x = 253
 y = 235
+cardtype = ""
 connections = [1, 21, 22, 50, 52]
 
 [[countries]]
@@ -518,6 +563,7 @@ name = "Sündersbühl"
 continent = 9
 x = 216
 y = 240
+cardtype = ""
 connections = [51, 49]
 
 [[countries]]
@@ -526,6 +572,7 @@ name = "Gustav-Adolf-Straße"
 continent = 9
 x = 198
 y = 240
+cardtype = ""
 connections = [50]
 
 [[countries]]
@@ -534,6 +581,7 @@ name = "Sankt_Leonhard"
 continent = 9
 x = 246
 y = 247
+cardtype = ""
 connections = [49, 53]
 
 [[countries]]
@@ -542,6 +590,7 @@ name = "Schweinau"
 continent = 9
 x = 245
 y = 261
+cardtype = ""
 connections = [52, 56, 54, 21]
 
 [[countries]]
@@ -550,6 +599,7 @@ name = "Stein"
 continent = 9
 x = 218
 y = 276
+cardtype = ""
 connections = [53, 55]
 
 [[countries]]
@@ -558,6 +608,7 @@ name = "Unterasbach"
 continent = 9
 x = 196
 y = 289
+cardtype = ""
 connections = [54]
 
 [[countries]]
@@ -566,6 +617,7 @@ name = "Hohe_Marter"
 continent = 9
 x = 245
 y = 279
+cardtype = ""
 connections = [53, 57]
 
 [[countries]]
@@ -574,6 +626,7 @@ name = "Röthenbach"
 continent = 9
 x = 229
 y = 306
+cardtype = ""
 connections = [56]
 
 [[countries]]
@@ -582,6 +635,7 @@ name = "Kohlenhof"
 continent = 10
 x = 286
 y = 236
+cardtype = ""
 connections = [22, 59]
 
 [[countries]]
@@ -590,6 +644,7 @@ name = "Steinbühl"
 continent = 10
 x = 286
 y = 248
+cardtype = ""
 connections = [58, 60, 71, 21]
 
 [[countries]]
@@ -598,6 +653,7 @@ name = "Landgrabenstraße"
 continent = 10
 x = 286
 y = 281
+cardtype = ""
 connections = [59, 61, 65]
 
 [[countries]]
@@ -606,6 +662,7 @@ name = "Brehmstraße"
 continent = 10
 x = 283
 y = 295
+cardtype = ""
 connections = [60, 62]
 
 [[countries]]
@@ -614,6 +671,7 @@ name = "Alemannenstraße"
 continent = 10
 x = 283
 y = 307
+cardtype = ""
 connections = [61, 63]
 
 [[countries]]
@@ -622,6 +680,7 @@ name = "Dianaplatz"
 continent = 10
 x = 283
 y = 318
+cardtype = ""
 connections = [62, 64]
 
 [[countries]]
@@ -630,6 +689,7 @@ name = "Gibitzenhof"
 continent = 10
 x = 283
 y = 330
+cardtype = ""
 connections = [63]
 
 [[countries]]
@@ -638,6 +698,7 @@ name = "Heinestraße"
 continent = 10
 x = 309
 y = 281
+cardtype = ""
 connections = [60, 66]
 
 [[countries]]
@@ -646,6 +707,7 @@ name = "Christuskirche"
 continent = 10
 x = 327
 y = 283
+cardtype = ""
 connections = [65, 82, 67]
 
 [[countries]]
@@ -654,6 +716,7 @@ name = "Humboldtstraße"
 continent = 10
 x = 327
 y = 296
+cardtype = ""
 connections = [66, 68]
 
 [[countries]]
@@ -662,6 +725,7 @@ name = "Schuckertstraße"
 continent = 10
 x = 327
 y = 306
+cardtype = ""
 connections = [67, 69]
 
 [[countries]]
@@ -670,6 +734,7 @@ name = "Siemensstraße"
 continent = 10
 x = 327
 y = 315
+cardtype = ""
 connections = [68, 70]
 
 [[countries]]
@@ -678,6 +743,7 @@ name = "Lothringer_Straße"
 continent = 10
 x = 327
 y = 325
+cardtype = ""
 connections = [69, 84]
 
 [[countries]]
@@ -686,6 +752,7 @@ name = "Sandreuth"
 continent = 11
 x = 262
 y = 322
+cardtype = ""
 connections = [59, 72]
 
 [[countries]]
@@ -694,6 +761,7 @@ name = "Eibach"
 continent = 11
 x = 262
 y = 337
+cardtype = ""
 connections = [71, 73]
 
 [[countries]]
@@ -702,6 +770,7 @@ name = "Reichelsdorf"
 continent = 11
 x = 262
 y = 353
+cardtype = ""
 connections = [72, 74]
 
 [[countries]]
@@ -710,6 +779,7 @@ name = "Reichelsorfer_Keller"
 continent = 11
 x = 262
 y = 369
+cardtype = ""
 connections = [73, 75]
 
 [[countries]]
@@ -718,6 +788,7 @@ name = "Katzwang"
 continent = 11
 x = 262
 y = 384
+cardtype = ""
 connections = [74]
 
 [[countries]]
@@ -726,6 +797,7 @@ name = "Trafowerk"
 continent = 12
 x = 356
 y = 338
+cardtype = ""
 connections = [84, 77]
 
 [[countries]]
@@ -734,6 +806,7 @@ name = "Am_Rangierbahnhof"
 continent = 12
 x = 356
 y = 350
+cardtype = ""
 connections = [76, 78]
 
 [[countries]]
@@ -742,6 +815,7 @@ name = "Finkenbrunn"
 continent = 12
 x = 357
 y = 362
+cardtype = ""
 connections = [77, 79]
 
 [[countries]]
@@ -750,6 +824,7 @@ name = "Südfriedhof"
 continent = 12
 x = 357
 y = 373
+cardtype = ""
 connections = [78, 80]
 
 [[countries]]
@@ -758,6 +833,7 @@ name = "Saarbrückener_Straße"
 continent = 12
 x = 357
 y = 385
+cardtype = ""
 connections = [79, 81]
 
 [[countries]]
@@ -766,6 +842,7 @@ name = "Worzeldorfer_Straße"
 continent = 12
 x = 371
 y = 385
+cardtype = ""
 connections = [80]
 
 [[countries]]
@@ -774,6 +851,7 @@ name = "Aufsessplatz"
 continent = 13
 x = 366
 y = 283
+cardtype = ""
 connections = [66, 21, 83, 88]
 
 [[countries]]
@@ -782,6 +860,7 @@ name = "Maffeiplatz"
 continent = 13
 x = 366
 y = 306
+cardtype = ""
 connections = [82, 84]
 
 [[countries]]
@@ -790,6 +869,7 @@ name = "Frankenstraße"
 continent = 13
 x = 366
 y = 324
+cardtype = ""
 connections = [70, 83, 76, 85]
 
 [[countries]]
@@ -798,6 +878,7 @@ name = "Hasenbuck"
 continent = 13
 x = 383
 y = 339
+cardtype = ""
 connections = [84, 86]
 
 [[countries]]
@@ -806,6 +887,7 @@ name = "Bauernfeindtraße"
 continent = 13
 x = 398
 y = 348
+cardtype = ""
 connections = [85, 87]
 
 [[countries]]
@@ -814,6 +896,7 @@ name = "Messe"
 continent = 13
 x = 415
 y = 357
+cardtype = ""
 connections = [86, 96]
 
 [[countries]]
@@ -822,6 +905,7 @@ name = "Hummelsteiner_Weg"
 continent = 13
 x = 393
 y = 284
+cardtype = ""
 connections = [82, 89]
 
 [[countries]]
@@ -830,6 +914,7 @@ name = "Schweiggerstraße"
 continent = 13
 x = 431
 y = 285
+cardtype = ""
 connections = [88, 113, 114, 90, 92]
 
 [[countries]]
@@ -838,6 +923,7 @@ name = "Harsdörfferplatz"
 continent = 13
 x = 453
 y = 282
+cardtype = ""
 connections = [89, 91]
 
 [[countries]]
@@ -846,6 +932,7 @@ name = "Peterskirche"
 continent = 13
 x = 470
 y = 282
+cardtype = ""
 connections = [90, 105]
 
 [[countries]]
@@ -854,6 +941,7 @@ name = "Wodanstraße"
 continent = 13
 x = 432
 y = 312
+cardtype = ""
 connections = [89, 93, 94]
 
 [[countries]]
@@ -862,6 +950,7 @@ name = "Holzgartenstraße"
 continent = 13
 x = 461
 y = 312
+cardtype = ""
 connections = [112, 92]
 
 [[countries]]
@@ -870,6 +959,7 @@ name = "Tristanstraße"
 continent = 13
 x = 443
 y = 323
+cardtype = ""
 connections = [92, 95]
 
 [[countries]]
@@ -878,6 +968,7 @@ name = "Bayernstraße"
 continent = 13
 x = 458
 y = 334
+cardtype = ""
 connections = [94]
 
 [[countries]]
@@ -886,6 +977,7 @@ name = "Langwasser_Nord"
 continent = 14
 x = 429
 y = 367
+cardtype = ""
 connections = [87, 97]
 
 [[countries]]
@@ -894,6 +986,7 @@ name = "Scharfreiterring"
 continent = 14
 x = 446
 y = 377
+cardtype = ""
 connections = [96, 98]
 
 [[countries]]
@@ -902,6 +995,7 @@ name = "Langwasser_Mitte"
 continent = 14
 x = 463
 y = 387
+cardtype = ""
 connections = [97, 99]
 
 [[countries]]
@@ -910,6 +1004,7 @@ name = "Gemeinschaftshaus"
 continent = 14
 x = 478
 y = 396
+cardtype = ""
 connections = [98, 100]
 
 [[countries]]
@@ -918,6 +1013,7 @@ name = "Langwasser_Süd"
 continent = 14
 x = 494
 y = 406
+cardtype = ""
 connections = [99]
 
 [[countries]]
@@ -926,6 +1022,7 @@ name = "Gleißhammer"
 continent = 15
 x = 530
 y = 258
+cardtype = ""
 connections = [116, 102]
 
 [[countries]]
@@ -934,6 +1031,7 @@ name = "Am_Dutzendteich"
 continent = 15
 x = 550
 y = 270
+cardtype = ""
 connections = [101, 103]
 
 [[countries]]
@@ -942,6 +1040,7 @@ name = "Frankenstadion"
 continent = 15
 x = 568
 y = 285
+cardtype = ""
 connections = [21, 102, 104]
 
 [[countries]]
@@ -950,6 +1049,7 @@ name = "Fischbach"
 continent = 15
 x = 591
 y = 293
+cardtype = ""
 connections = [103]
 
 [[countries]]
@@ -958,6 +1058,7 @@ name = "Scharrerstraße"
 continent = 15
 x = 485
 y = 282
+cardtype = ""
 connections = [91, 106]
 
 [[countries]]
@@ -966,6 +1067,7 @@ name = "Immelmannstraße"
 continent = 15
 x = 505
 y = 282
+cardtype = ""
 connections = [105, 107]
 
 [[countries]]
@@ -974,6 +1076,7 @@ name = "Fliegerstraße/EWF"
 continent = 15
 x = 521
 y = 282
+cardtype = ""
 connections = [106, 108]
 
 [[countries]]
@@ -982,6 +1085,7 @@ name = "Dutzendteich"
 continent = 15
 x = 537
 y = 282
+cardtype = ""
 connections = [107, 109]
 
 [[countries]]
@@ -990,6 +1094,7 @@ name = "Dokumentationszentrum"
 continent = 15
 x = 539
 y = 298
+cardtype = ""
 connections = [108, 110]
 
 [[countries]]
@@ -998,6 +1103,7 @@ name = "Luitpoldhain"
 continent = 15
 x = 537
 y = 312
+cardtype = ""
 connections = [109, 111]
 
 [[countries]]
@@ -1006,6 +1112,7 @@ name = "Meistersingerhalle"
 continent = 15
 x = 512
 y = 312
+cardtype = ""
 connections = [110, 112]
 
 [[countries]]
@@ -1014,6 +1121,7 @@ name = "Platz_der_Opfer_des_Faschismus"
 continent = 15
 x = 487
 y = 312
+cardtype = ""
 connections = [111, 93]
 
 [[countries]]
@@ -1022,6 +1130,7 @@ name = "Widhalmstraße"
 continent = 16
 x = 429
 y = 263
+cardtype = ""
 connections = [89, 21]
 
 [[countries]]
@@ -1030,6 +1139,7 @@ name = "Scheurlstraße"
 continent = 16
 x = 437
 y = 254
+cardtype = ""
 connections = [89, 115]
 
 [[countries]]
@@ -1038,6 +1148,7 @@ name = "Marientunnel"
 continent = 16
 x = 428
 y = 231
+cardtype = ""
 connections = [114, 21, 116]
 
 [[countries]]
@@ -1046,6 +1157,7 @@ name = "Dürrenhof"
 continent = 16
 x = 448
 y = 234
+cardtype = ""
 connections = [115, 21, 117, 126, 101]
 
 [[countries]]
@@ -1054,6 +1166,7 @@ name = "Norikerstraße"
 continent = 16
 x = 461
 y = 234
+cardtype = ""
 connections = [116, 118]
 
 [[countries]]
@@ -1062,6 +1175,7 @@ name = "Arminiusstraße"
 continent = 16
 x = 483
 y = 231
+cardtype = ""
 connections = [117, 119]
 
 [[countries]]
@@ -1070,6 +1184,7 @@ name = "Marthastraße"
 continent = 17
 x = 513
 y = 215
+cardtype = ""
 connections = [118, 120]
 
 [[countries]]
@@ -1078,6 +1193,7 @@ name = "Erhardstraße"
 continent = 17
 x = 534
 y = 205
+cardtype = ""
 connections = [119, 121]
 
 [[countries]]
@@ -1086,6 +1202,7 @@ name = "Lechnerstraße"
 continent = 17
 x = 555
 y = 195
+cardtype = ""
 connections = [120, 122]
 
 [[countries]]
@@ -1094,6 +1211,7 @@ name = "Mögeldorf"
 continent = 17
 x = 570
 y = 198
+cardtype = ""
 connections = [121, 126, 127, 128, 123, 21]
 
 [[countries]]
@@ -1102,6 +1220,7 @@ name = "Balthasar-Neumann-Straße"
 continent = 17
 x = 570
 y = 216
+cardtype = ""
 connections = [122, 124]
 
 [[countries]]
@@ -1110,6 +1229,7 @@ name = "Siedlerstraße"
 continent = 17
 x = 570
 y = 229
+cardtype = ""
 connections = [123, 125]
 
 [[countries]]
@@ -1118,6 +1238,7 @@ name = "Tiergarten"
 continent = 17
 x = 571
 y = 243
+cardtype = ""
 connections = [124]
 
 [[countries]]
@@ -1126,6 +1247,7 @@ name = "Ostring"
 continent = 17
 x = 538
 y = 217
+cardtype = ""
 connections = [116, 122]
 
 [[countries]]
@@ -1134,6 +1256,7 @@ name = "Rehhof"
 continent = 17
 x = 587
 y = 196
+cardtype = ""
 connections = [122, 128]
 
 [[countries]]
@@ -1142,6 +1265,7 @@ name = "Laufamholz"
 continent = 17
 x = 605
 y = 198
+cardtype = ""
 connections = [122, 127]
 
 [[countries]]
@@ -1150,6 +1274,7 @@ name = "Deichslerstraße"
 continent = 18
 x = 456
 y = 159
+cardtype = ""
 connections = [130, 32]
 
 [[countries]]
@@ -1158,6 +1283,7 @@ name = "Tauroggenstraße"
 continent = 18
 x = 487
 y = 159
+cardtype = ""
 connections = [131, 129]
 
 [[countries]]
@@ -1166,6 +1292,7 @@ name = "Tafelwerk"
 continent = 18
 x = 517
 y = 159
+cardtype = ""
 connections = [132, 130]
 
 [[countries]]
@@ -1174,6 +1301,7 @@ name = "Ostbahnhof"
 continent = 19
 x = 540
 y = 161
+cardtype = ""
 connections = [21, 135, 133, 131]
 
 [[countries]]
@@ -1182,6 +1310,7 @@ name = "Thumenberger_Weg"
 continent = 19
 x = 556
 y = 146
+cardtype = ""
 connections = [132, 134]
 
 [[countries]]
@@ -1190,6 +1319,7 @@ name = "Platnersberg"
 continent = 19
 x = 576
 y = 136
+cardtype = ""
 connections = [133, 135]
 
 [[countries]]
@@ -1198,6 +1328,7 @@ name = "Erlenstegen"
 continent = 19
 x = 597
 y = 136
+cardtype = ""
 connections = [132, 134]
 
 [[countries]]
@@ -1206,4 +1337,5 @@ name = "Wörder_Wiese"
 continent = 2
 x = 384
 y = 177
+cardtype = ""
 connections = [31, 17]

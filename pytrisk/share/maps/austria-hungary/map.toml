@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "austria-hungary_pic.png"
-map = "austria-hungary_map.gif"
-crd = "austria-hungary.cards"
+nb_wildcards = 1
 
 [[continents]]
 id = 1
@@ -30,6 +26,7 @@ name = "Bohemia_(Praha)"
 continent = 1
 x = 248
 y = 47
+cardtype = "Cavalry"
 connections = [10, 9, 2]
 
 [[countries]]
@@ -38,6 +35,7 @@ name = "Moravia_(Brno)"
 continent = 1
 x = 325
 y = 92
+cardtype = "Infantry"
 connections = [1, 9, 3, 18]
 
 [[countries]]
@@ -46,6 +44,7 @@ name = "Silesia_(Opava)"
 continent = 1
 x = 385
 y = 34
+cardtype = "Cannon"
 connections = [2, 7, 18]
 
 [[countries]]
@@ -54,6 +53,7 @@ name = "Dalmatia_(Spalato)"
 continent = 1
 x = 314
 y = 350
+cardtype = "Cavalry"
 connections = [5, 6]
 
 [[countries]]
@@ -62,6 +62,7 @@ name = "Croatia_and_Slavonia_(Agram)"
 continent = 2
 x = 299
 y = 247
+cardtype = "Infantry"
 connections = [6, 4, 17, 12, 14, 19]
 
 [[countries]]
@@ -70,6 +71,7 @@ name = "Bosnia_and_Herzegovina_(Sarajevo)"
 continent = 3
 x = 389
 y = 336
+cardtype = "Cannon"
 connections = [4, 5]
 
 [[countries]]
@@ -78,6 +80,7 @@ name = "Galicia_(Lemberg)"
 continent = 1
 x = 568
 y = 47
+cardtype = "Cavalry"
 connections = [3, 8, 18]
 
 [[countries]]
@@ -86,6 +89,7 @@ name = "Bucovina_(Czernowitz)"
 continent = 1
 x = 647
 y = 118
+cardtype = "Infantry"
 connections = [7, 19]
 
 [[countries]]
@@ -94,6 +98,7 @@ name = "Lower_Austria_(Wien)"
 continent = 1
 x = 315
 y = 131
+cardtype = "Cannon"
 connections = [2, 10, 1, 18]
 
 [[countries]]
@@ -102,6 +107,7 @@ name = "Upper_Austria_(Linz)"
 continent = 1
 x = 236
 y = 128
+cardtype = "Cavalry"
 connections = [9, 13, 14, 1]
 
 [[countries]]
@@ -110,6 +116,7 @@ name = "Carinthia_(Klagenfurt)"
 continent = 1
 x = 236
 y = 203
+cardtype = "Infantry"
 connections = [14, 12, 17, 15, 13]
 
 [[countries]]
@@ -118,6 +125,7 @@ name = "Carniola_(Laibach)"
 continent = 1
 x = 249
 y = 237
+cardtype = "Cannon"
 connections = [17, 5, 14, 11]
 
 [[countries]]
@@ -126,6 +134,7 @@ name = "Salzburg_(Salzburg)"
 continent = 1
 x = 199
 y = 152
+cardtype = "Cavalry"
 connections = [15, 11, 14, 10]
 
 [[countries]]
@@ -134,6 +143,7 @@ name = "Styria_(Graz)"
 continent = 1
 x = 279
 y = 186
+cardtype = "Infantry"
 connections = [12, 5, 13, 10, 11, 18]
 
 [[countries]]
@@ -142,6 +152,7 @@ name = "Tyrol_(Innsbruck)"
 continent = 1
 x = 136
 y = 176
+cardtype = "Cannon"
 connections = [16, 11, 13]
 
 [[countries]]
@@ -150,6 +161,7 @@ name = "Voralberg_(Bregenz)"
 continent = 1
 x = 112
 y = 133
+cardtype = "Cavalry"
 connections = [15]
 
 [[countries]]
@@ -158,6 +170,7 @@ name = "Küstenland_(Terst)"
 continent = 1
 x = 223
 y = 265
+cardtype = "Infantry"
 connections = [5, 12, 11]
 
 [[countries]]
@@ -166,6 +179,7 @@ name = "West_Hungary_(West_Budapest)"
 continent = 2
 x = 395
 y = 162
+cardtype = "Cannon"
 connections = [19, 7, 14, 9, 2, 3]
 
 [[countries]]
@@ -174,4 +188,5 @@ name = "East_Hungary_(East_Budapest)"
 continent = 2
 x = 415
 y = 177
+cardtype = "Cavalry"
 connections = [18, 8, 5]

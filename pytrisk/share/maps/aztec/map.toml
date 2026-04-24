@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "aztec_pic.jpg"
-map = "aztec_map.gif"
-crd = "aztec.cards"
+nb_wildcards = 3
 
 [[continents]]
 id = 1
@@ -78,6 +74,7 @@ name = "CTBase-East"
 continent = 1
 x = 99
 y = 299
+cardtype = "Cavalry"
 connections = [2, 4]
 
 [[countries]]
@@ -86,6 +83,7 @@ name = "CTBase-Center"
 continent = 1
 x = 46
 y = 284
+cardtype = "Infantry"
 connections = [1, 3]
 
 [[countries]]
@@ -94,6 +92,7 @@ name = "CTBase-North"
 continent = 1
 x = 42
 y = 176
+cardtype = "Cannon"
 connections = [2, 6]
 
 [[countries]]
@@ -102,6 +101,7 @@ name = "CTHallway-West"
 continent = 2
 x = 158
 y = 317
+cardtype = "Cavalry"
 connections = [1, 5]
 
 [[countries]]
@@ -110,6 +110,7 @@ name = "CTHallway-East"
 continent = 2
 x = 227
 y = 331
+cardtype = "Infantry"
 connections = [4, 23]
 
 [[countries]]
@@ -118,6 +119,7 @@ name = "BombspotA-West"
 continent = 3
 x = 69
 y = 88
+cardtype = "Cannon"
 connections = [3, 7]
 
 [[countries]]
@@ -126,6 +128,7 @@ name = "BombspotA-Center"
 continent = 3
 x = 149
 y = 99
+cardtype = "Cavalry"
 connections = [6, 8, 12]
 
 [[countries]]
@@ -134,6 +137,7 @@ name = "BombspotA-South"
 continent = 3
 x = 152
 y = 158
+cardtype = "Infantry"
 connections = [7, 9]
 
 [[countries]]
@@ -142,6 +146,7 @@ name = "Courtyard-West"
 continent = 4
 x = 156
 y = 222
+cardtype = "Cannon"
 connections = [8, 10]
 
 [[countries]]
@@ -150,6 +155,7 @@ name = "Courtyard-Center"
 continent = 4
 x = 215
 y = 229
+cardtype = "Cavalry"
 connections = [9, 11, 12, 26]
 
 [[countries]]
@@ -158,6 +164,7 @@ name = "Courtyard-East"
 continent = 4
 x = 310
 y = 234
+cardtype = "Infantry"
 connections = [10, 22]
 
 [[countries]]
@@ -166,6 +173,7 @@ name = "Bridgehouse-West"
 continent = 5
 x = 212
 y = 114
+cardtype = "Cannon"
 connections = [7, 10, 13]
 
 [[countries]]
@@ -174,6 +182,7 @@ name = "Bridge"
 continent = 5
 x = 303
 y = 116
+cardtype = "Cavalry"
 connections = [12, 14]
 
 [[countries]]
@@ -182,6 +191,7 @@ name = "Bridgehouse-East"
 continent = 5
 x = 385
 y = 116
+cardtype = "Infantry"
 connections = [13, 21]
 
 [[countries]]
@@ -190,6 +200,7 @@ name = "Water-North"
 continent = 6
 x = 556
 y = 51
+cardtype = "Cannon"
 connections = [16]
 
 [[countries]]
@@ -198,6 +209,7 @@ name = "Water-East"
 continent = 6
 x = 535
 y = 112
+cardtype = "Cavalry"
 connections = [15, 17, 30]
 
 [[countries]]
@@ -206,6 +218,7 @@ name = "Water-Center"
 continent = 6
 x = 449
 y = 114
+cardtype = "Infantry"
 connections = [16, 18, 21]
 
 [[countries]]
@@ -214,6 +227,7 @@ name = "Water-West"
 continent = 6
 x = 343
 y = 76
+cardtype = "Cannon"
 connections = [17, 19]
 
 [[countries]]
@@ -222,6 +236,7 @@ name = "Water-South"
 continent = 6
 x = 302
 y = 179
+cardtype = "Cavalry"
 connections = [18, 26]
 
 [[countries]]
@@ -230,6 +245,7 @@ name = "DoubleDoors-East"
 continent = 7
 x = 462
 y = 174
+cardtype = "Infantry"
 connections = [21, 33]
 
 [[countries]]
@@ -238,6 +254,7 @@ name = "DoubleDoors-Center"
 continent = 7
 x = 383
 y = 173
+cardtype = "Cannon"
 connections = [14, 17, 20, 22]
 
 [[countries]]
@@ -246,6 +263,7 @@ name = "DoubleDoors-South"
 continent = 7
 x = 382
 y = 231
+cardtype = "Cavalry"
 connections = [11, 21, 25]
 
 [[countries]]
@@ -254,6 +272,7 @@ name = "BombspotB-West"
 continent = 8
 x = 297
 y = 358
+cardtype = "Infantry"
 connections = [5, 24, 27]
 
 [[countries]]
@@ -262,6 +281,7 @@ name = "BombspotB-Center"
 continent = 8
 x = 383
 y = 341
+cardtype = "Cannon"
 connections = [23, 25, 27]
 
 [[countries]]
@@ -270,6 +290,7 @@ name = "BombspotC-North"
 continent = 8
 x = 394
 y = 271
+cardtype = "Cavalry"
 connections = [24, 22]
 
 [[countries]]
@@ -278,6 +299,7 @@ name = "Waterfront"
 continent = 9
 x = 295
 y = 292
+cardtype = "Infantry"
 connections = [10, 19, 27]
 
 [[countries]]
@@ -286,6 +308,7 @@ name = "Stairs"
 continent = 9
 x = 347
 y = 292
+cardtype = "Cannon"
 connections = [23, 24, 26]
 
 [[countries]]
@@ -294,6 +317,7 @@ name = "THallway-East"
 continent = 10
 x = 629
 y = 103
+cardtype = "Cavalry"
 connections = [29, 31]
 
 [[countries]]
@@ -302,6 +326,7 @@ name = "THallway-North"
 continent = 10
 x = 615
 y = 47
+cardtype = "Infantry"
 connections = [28, 30]
 
 [[countries]]
@@ -310,6 +335,7 @@ name = "THallway-West"
 continent = 10
 x = 598
 y = 111
+cardtype = "Cannon"
 connections = [16, 29]
 
 [[countries]]
@@ -318,6 +344,7 @@ name = "TBase-North"
 continent = 11
 x = 627
 y = 170
+cardtype = "Cavalry"
 connections = [28, 32]
 
 [[countries]]
@@ -326,6 +353,7 @@ name = "TBase-Center"
 continent = 11
 x = 629
 y = 234
+cardtype = "Infantry"
 connections = [31, 33]
 
 [[countries]]
@@ -334,4 +362,5 @@ name = "TBase-West"
 continent = 11
 x = 547
 y = 234
+cardtype = "Cannon"
 connections = [20, 32]

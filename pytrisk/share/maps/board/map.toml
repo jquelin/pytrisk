@@ -1,11 +1,6 @@
 [info]
 name = "Risk Board Map"
-
-[files]
-pic = "board_pic.jpg"
-map = "board_map.gif"
-crd = "risk.cards"
-prv = "board.jpg"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -49,6 +44,7 @@ name = "Alaska"
 continent = 1
 x = 43
 y = 67
+cardtype = "Infantry"
 connections = [2, 3, 38]
 
 [[countries]]
@@ -57,6 +53,7 @@ name = "North-West-Territory"
 continent = 1
 x = 106
 y = 69
+cardtype = "Cannon"
 connections = [1, 3, 7, 6]
 
 [[countries]]
@@ -65,6 +62,7 @@ name = "Alberta"
 continent = 1
 x = 106
 y = 105
+cardtype = "Infantry"
 connections = [1, 2, 7, 4]
 
 [[countries]]
@@ -73,6 +71,7 @@ name = "Western-United-States"
 continent = 1
 x = 109
 y = 149
+cardtype = "Infantry"
 connections = [3, 7, 5, 9]
 
 [[countries]]
@@ -81,6 +80,7 @@ name = "Central-America"
 continent = 1
 x = 118
 y = 205
+cardtype = "Cavalry"
 connections = [4, 9, 10]
 
 [[countries]]
@@ -89,6 +89,7 @@ name = "Greenland"
 continent = 1
 x = 258
 y = 35
+cardtype = "Cavalry"
 connections = [2, 7, 8, 14]
 
 [[countries]]
@@ -97,6 +98,7 @@ name = "Ontario"
 continent = 1
 x = 152
 y = 107
+cardtype = "Cavalry"
 connections = [2, 3, 4, 6, 8, 9]
 
 [[countries]]
@@ -105,6 +107,7 @@ name = "Quebec"
 continent = 1
 x = 206
 y = 110
+cardtype = "Cannon"
 connections = [6, 7, 9]
 
 [[countries]]
@@ -113,6 +116,7 @@ name = "Eastern-United-States"
 continent = 1
 x = 160
 y = 159
+cardtype = "Cannon"
 connections = [4, 5, 7, 8]
 
 [[countries]]
@@ -121,6 +125,7 @@ name = "Venezuela"
 continent = 2
 x = 164
 y = 237
+cardtype = "Cannon"
 connections = [5, 11, 12]
 
 [[countries]]
@@ -129,6 +134,7 @@ name = "Peru"
 continent = 2
 x = 177
 y = 301
+cardtype = "Cavalry"
 connections = [10, 12, 13]
 
 [[countries]]
@@ -137,6 +143,7 @@ name = "Brazil"
 continent = 2
 x = 216
 y = 284
+cardtype = "Cannon"
 connections = [10, 11, 13, 21]
 
 [[countries]]
@@ -145,6 +152,7 @@ name = "Argentina"
 continent = 2
 x = 186
 y = 347
+cardtype = "Infantry"
 connections = [11, 12]
 
 [[countries]]
@@ -153,6 +161,7 @@ name = "Iceland"
 continent = 3
 x = 286
 y = 89
+cardtype = "Infantry"
 connections = [6, 17, 15]
 
 [[countries]]
@@ -161,6 +170,7 @@ name = "Scandinavia"
 continent = 3
 x = 346
 y = 72
+cardtype = "Cannon"
 connections = [16, 18, 14, 17]
 
 [[countries]]
@@ -169,6 +179,7 @@ name = "Ukraine"
 continent = 3
 x = 400
 y = 105
+cardtype = "Cannon"
 connections = [15, 28, 30, 31, 18, 20]
 
 [[countries]]
@@ -177,6 +188,7 @@ name = "Great-Britain"
 continent = 3
 x = 289
 y = 118
+cardtype = "Cavalry"
 connections = [14, 18, 19, 15]
 
 [[countries]]
@@ -185,6 +197,7 @@ name = "Northern-Europe"
 continent = 3
 x = 336
 y = 129
+cardtype = "Cavalry"
 connections = [15, 16, 17, 19, 20]
 
 [[countries]]
@@ -193,6 +206,7 @@ name = "Western-Europe"
 continent = 3
 x = 300
 y = 163
+cardtype = "Infantry"
 connections = [17, 18, 20, 21]
 
 [[countries]]
@@ -201,6 +215,7 @@ name = "Southern-Europe"
 continent = 3
 x = 348
 y = 165
+cardtype = "Cavalry"
 connections = [16, 18, 19, 21, 22, 31]
 
 [[countries]]
@@ -209,6 +224,7 @@ name = "North-Africa"
 continent = 4
 x = 313
 y = 246
+cardtype = "Infantry"
 connections = [12, 19, 20, 22, 23, 24]
 
 [[countries]]
@@ -217,6 +233,7 @@ name = "Egypt"
 continent = 4
 x = 361
 y = 216
+cardtype = "Infantry"
 connections = [20, 21, 24, 31]
 
 [[countries]]
@@ -225,6 +242,7 @@ name = "Congo"
 continent = 4
 x = 363
 y = 304
+cardtype = "Cavalry"
 connections = [21, 24, 25]
 
 [[countries]]
@@ -233,6 +251,7 @@ name = "East-Africa"
 continent = 4
 x = 395
 y = 274
+cardtype = "Cannon"
 connections = [21, 22, 23, 25, 26]
 
 [[countries]]
@@ -241,6 +260,7 @@ name = "South-Africa"
 continent = 4
 x = 369
 y = 369
+cardtype = "Cannon"
 connections = [23, 24, 26]
 
 [[countries]]
@@ -249,6 +269,7 @@ name = "Madagascar"
 continent = 4
 x = 427
 y = 366
+cardtype = "Infantry"
 connections = [24, 25]
 
 [[countries]]
@@ -257,6 +278,7 @@ name = "Siberia"
 continent = 5
 x = 500
 y = 58
+cardtype = "Cannon"
 connections = [28, 29, 34, 35, 36]
 
 [[countries]]
@@ -265,6 +287,7 @@ name = "Ural"
 continent = 5
 x = 470
 y = 97
+cardtype = "Cavalry"
 connections = [16, 27, 29, 30]
 
 [[countries]]
@@ -273,6 +296,7 @@ name = "China"
 continent = 5
 x = 550
 y = 182
+cardtype = "Cavalry"
 connections = [27, 28, 30, 32, 33, 36]
 
 [[countries]]
@@ -281,6 +305,7 @@ name = "Afghanistan"
 continent = 5
 x = 457
 y = 150
+cardtype = "Infantry"
 connections = [16, 28, 29, 31, 32]
 
 [[countries]]
@@ -289,6 +314,7 @@ name = "Middle-East"
 continent = 5
 x = 410
 y = 194
+cardtype = "Cannon"
 connections = [16, 22, 30, 32, 20]
 
 [[countries]]
@@ -297,6 +323,7 @@ name = "India"
 continent = 5
 x = 496
 y = 222
+cardtype = "Infantry"
 connections = [29, 30, 31, 33]
 
 [[countries]]
@@ -305,6 +332,7 @@ name = "Siam"
 continent = 5
 x = 556
 y = 242
+cardtype = "Cannon"
 connections = [29, 32, 39]
 
 [[countries]]
@@ -313,6 +341,7 @@ name = "Yakutsk"
 continent = 5
 x = 565
 y = 62
+cardtype = "Cavalry"
 connections = [27, 35, 38]
 
 [[countries]]
@@ -321,6 +350,7 @@ name = "Irkutsk"
 continent = 5
 x = 554
 y = 107
+cardtype = "Infantry"
 connections = [27, 34, 36, 38]
 
 [[countries]]
@@ -329,6 +359,7 @@ name = "Mongolia"
 continent = 5
 x = 563
 y = 143
+cardtype = "Cannon"
 connections = [29, 35, 37, 38, 27]
 
 [[countries]]
@@ -337,6 +368,7 @@ name = "Japan"
 continent = 5
 x = 632
 y = 139
+cardtype = "Infantry"
 connections = [36, 38]
 
 [[countries]]
@@ -345,6 +377,7 @@ name = "Kamchatka"
 continent = 5
 x = 629
 y = 62
+cardtype = "Cavalry"
 connections = [1, 34, 35, 36, 37]
 
 [[countries]]
@@ -353,6 +386,7 @@ name = "Indonesia"
 continent = 6
 x = 585
 y = 297
+cardtype = "Cavalry"
 connections = [33, 41, 40]
 
 [[countries]]
@@ -361,6 +395,7 @@ name = "New-Guinea"
 continent = 6
 x = 651
 y = 294
+cardtype = "Cavalry"
 connections = [39, 41, 42]
 
 [[countries]]
@@ -369,6 +404,7 @@ name = "Western-Australia"
 continent = 6
 x = 595
 y = 375
+cardtype = "Cannon"
 connections = [39, 40, 42]
 
 [[countries]]
@@ -377,4 +413,5 @@ name = "Eastern-Australia"
 continent = 6
 x = 637
 y = 353
+cardtype = "Infantry"
 connections = [40, 41]

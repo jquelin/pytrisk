@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "Castle_pic.jpg"
-map = "Castle_map.gif"
-crd = "Castle.cards"
+nb_wildcards = 4
 
 [[continents]]
 id = 1
@@ -48,6 +44,7 @@ name = "Alberton"
 continent = 1
 x = 70
 y = 265
+cardtype = "Cavalry"
 connections = [2, 6, 3]
 
 [[countries]]
@@ -56,6 +53,7 @@ name = "West_Bacon_Bridge"
 continent = 1
 x = 101
 y = 215
+cardtype = "Infantry"
 connections = [1, 19, 20, 6]
 
 [[countries]]
@@ -64,6 +62,7 @@ name = "Queen's_Town"
 continent = 1
 x = 87
 y = 342
+cardtype = "Cannon"
 connections = [1, 6, 4, 5, 7]
 
 [[countries]]
@@ -72,6 +71,7 @@ name = "Endon"
 continent = 1
 x = 151
 y = 397
+cardtype = "Cavalry"
 connections = [3, 7, 5]
 
 [[countries]]
@@ -80,6 +80,7 @@ name = "Oakhill"
 continent = 1
 x = 20
 y = 393
+cardtype = "Infantry"
 connections = [3, 4]
 
 [[countries]]
@@ -88,6 +89,7 @@ name = "Nottingham"
 continent = 1
 x = 148
 y = 294
+cardtype = "Cannon"
 connections = [1, 2, 3, 7]
 
 [[countries]]
@@ -96,6 +98,7 @@ name = "Adler_Marsh"
 continent = 1
 x = 221
 y = 351
+cardtype = "Cavalry"
 connections = [3, 4, 6, 8, 9]
 
 [[countries]]
@@ -104,6 +107,7 @@ name = "Connover"
 continent = 1
 x = 315
 y = 327
+cardtype = "Infantry"
 connections = [7, 15, 9]
 
 [[countries]]
@@ -112,6 +116,7 @@ name = "Great_Rowley"
 continent = 1
 x = 299
 y = 401
+cardtype = "Cannon"
 connections = [7, 8, 15]
 
 [[countries]]
@@ -120,6 +125,7 @@ name = "North_Castle"
 continent = 2
 x = 305
 y = 175
+cardtype = "Cavalry"
 connections = [11, 12, 13, 35, 36]
 
 [[countries]]
@@ -128,6 +134,7 @@ name = "Upper_Castle"
 continent = 2
 x = 348
 y = 156
+cardtype = "Infantry"
 connections = [10, 12]
 
 [[countries]]
@@ -136,6 +143,7 @@ name = "South_Castle"
 continent = 2
 x = 339
 y = 218
+cardtype = "Cannon"
 connections = [10, 11, 14, 13]
 
 [[countries]]
@@ -144,6 +152,7 @@ name = "West_Garden"
 continent = 2
 x = 255
 y = 226
+cardtype = "Cavalry"
 connections = [10, 12]
 
 [[countries]]
@@ -152,6 +161,7 @@ name = "Grand_Bridge"
 continent = 2
 x = 357
 y = 257
+cardtype = "Infantry"
 connections = [12, 15, 16]
 
 [[countries]]
@@ -160,6 +170,7 @@ name = "Ingleshire"
 continent = 2
 x = 384
 y = 302
+cardtype = "Cannon"
 connections = [8, 14, 16, 9]
 
 [[countries]]
@@ -168,6 +179,7 @@ name = "Shortbend"
 continent = 2
 x = 489
 y = 251
+cardtype = "Cavalry"
 connections = [14, 15, 21]
 
 [[countries]]
@@ -176,6 +188,7 @@ name = "Easthope"
 continent = 3
 x = 25
 y = 134
+cardtype = "Infantry"
 connections = [19]
 
 [[countries]]
@@ -184,6 +197,7 @@ name = "Nickleridge"
 continent = 3
 x = 195
 y = 176
+cardtype = "Cannon"
 connections = [20, 31, 35]
 
 [[countries]]
@@ -192,6 +206,7 @@ name = "Westminister"
 continent = 3
 x = 74
 y = 167
+cardtype = "Cavalry"
 connections = [17, 2, 20]
 
 [[countries]]
@@ -200,6 +215,7 @@ name = "Ipshire"
 continent = 3
 x = 138
 y = 189
+cardtype = "Infantry"
 connections = [2, 18, 19, 31]
 
 [[countries]]
@@ -208,6 +224,7 @@ name = "Middle_Bank"
 continent = 4
 x = 553
 y = 208
+cardtype = "Cannon"
 connections = [16, 23, 22]
 
 [[countries]]
@@ -216,6 +233,7 @@ name = "Crow_Hill"
 continent = 4
 x = 644
 y = 201
+cardtype = "Cavalry"
 connections = [21, 23, 28]
 
 [[countries]]
@@ -224,6 +242,7 @@ name = "Earls_Acre"
 continent = 4
 x = 593
 y = 142
+cardtype = "Infantry"
 connections = [21, 22, 24, 25, 26]
 
 [[countries]]
@@ -232,6 +251,7 @@ name = "East_Bacon_Bridge"
 continent = 4
 x = 513
 y = 103
+cardtype = "Cannon"
 connections = [23, 42, 41]
 
 [[countries]]
@@ -240,6 +260,7 @@ name = "Sheep_Meadow"
 continent = 4
 x = 572
 y = 61
+cardtype = "Cavalry"
 connections = [23, 26]
 
 [[countries]]
@@ -248,6 +269,7 @@ name = "North_Pasture"
 continent = 4
 x = 632
 y = 78
+cardtype = "Infantry"
 connections = [23, 25]
 
 [[countries]]
@@ -256,6 +278,7 @@ name = "Bob_Haven"
 continent = 5
 x = 658
 y = 383
+cardtype = "Cannon"
 connections = [28, 30, 29]
 
 [[countries]]
@@ -264,6 +287,7 @@ name = "Valleys_End"
 continent = 5
 x = 646
 y = 298
+cardtype = "Cavalry"
 connections = [22, 27, 30, 29]
 
 [[countries]]
@@ -272,6 +296,7 @@ name = "Pattington_Field"
 continent = 5
 x = 579
 y = 398
+cardtype = "Infantry"
 connections = [27, 30, 28]
 
 [[countries]]
@@ -280,6 +305,7 @@ name = "Anderton"
 continent = 5
 x = 566
 y = 345
+cardtype = "Cannon"
 connections = [27, 28, 29]
 
 [[countries]]
@@ -288,6 +314,7 @@ name = "Monte"
 continent = 6
 x = 188
 y = 127
+cardtype = "Cavalry"
 connections = [18, 20, 33, 35]
 
 [[countries]]
@@ -296,6 +323,7 @@ name = "Santiago"
 continent = 6
 x = 169
 y = 29
+cardtype = "Infantry"
 connections = [33, 34]
 
 [[countries]]
@@ -304,6 +332,7 @@ name = "Innerwood"
 continent = 6
 x = 175
 y = 72
+cardtype = "Cannon"
 connections = [31, 32, 34, 35]
 
 [[countries]]
@@ -312,6 +341,7 @@ name = "Chorley"
 continent = 6
 x = 256
 y = 38
+cardtype = "Cavalry"
 connections = [32, 33, 36, 35, 38, 37]
 
 [[countries]]
@@ -320,6 +350,7 @@ name = "Aston"
 continent = 6
 x = 240
 y = 92
+cardtype = "Infantry"
 connections = [10, 18, 31, 33, 34, 36]
 
 [[countries]]
@@ -328,6 +359,7 @@ name = "Kings_Cross"
 continent = 6
 x = 307
 y = 98
+cardtype = "Cannon"
 connections = [10, 34, 35, 37]
 
 [[countries]]
@@ -336,6 +368,7 @@ name = "Sibberhold"
 continent = 6
 x = 370
 y = 72
+cardtype = "Cavalry"
 connections = [34, 36, 39, 38, 40]
 
 [[countries]]
@@ -344,6 +377,7 @@ name = "Yellowmoor"
 continent = 6
 x = 361
 y = 21
+cardtype = "Infantry"
 connections = [34, 37, 39]
 
 [[countries]]
@@ -352,6 +386,7 @@ name = "Upton"
 continent = 6
 x = 425
 y = 21
+cardtype = "Cannon"
 connections = [37, 38, 40, 42]
 
 [[countries]]
@@ -360,6 +395,7 @@ name = "Middleton"
 continent = 6
 x = 424
 y = 98
+cardtype = "Cavalry"
 connections = [37, 39, 42, 41]
 
 [[countries]]
@@ -368,6 +404,7 @@ name = "Junction_Pass"
 continent = 6
 x = 473
 y = 165
+cardtype = "Infantry"
 connections = [24, 40, 42]
 
 [[countries]]
@@ -376,4 +413,5 @@ name = "Ironflatts"
 continent = 6
 x = 489
 y = 66
+cardtype = "Cannon"
 connections = [24, 39, 40, 41]

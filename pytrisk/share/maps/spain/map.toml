@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "spain_pic.jpg"
-map = "spain_map.gif"
-crd = "spain.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -126,6 +122,7 @@ name = "La-Coruna"
 continent = 1
 x = 59
 y = 39
+cardtype = "Infantry"
 connections = [2, 3]
 
 [[countries]]
@@ -134,6 +131,7 @@ name = "Lugo"
 continent = 1
 x = 98
 y = 42
+cardtype = "Cannon"
 connections = [1, 3, 4, 5, 18]
 
 [[countries]]
@@ -142,6 +140,7 @@ name = "Pontevedra"
 continent = 1
 x = 63
 y = 65
+cardtype = "Infantry"
 connections = [1, 2, 4]
 
 [[countries]]
@@ -150,6 +149,7 @@ name = "Orense"
 continent = 1
 x = 91
 y = 80
+cardtype = "Infantry"
 connections = [3, 2, 18, 21]
 
 [[countries]]
@@ -158,6 +158,7 @@ name = "Asturias"
 continent = 2
 x = 143
 y = 32
+cardtype = "Cavalry"
 connections = [2, 6, 18]
 
 [[countries]]
@@ -166,6 +167,7 @@ name = "Cantabria"
 continent = 3
 x = 204
 y = 32
+cardtype = "Cavalry"
 connections = [5, 7, 18, 19, 20]
 
 [[countries]]
@@ -174,6 +176,7 @@ name = "Vizcaya"
 continent = 4
 x = 244
 y = 33
+cardtype = "Cavalry"
 connections = [6, 8, 9, 20]
 
 [[countries]]
@@ -182,6 +185,7 @@ name = "Guipuzcoa"
 continent = 4
 x = 270
 y = 39
+cardtype = "Cannon"
 connections = [7, 9, 10]
 
 [[countries]]
@@ -190,6 +194,7 @@ name = "Alava"
 continent = 4
 x = 253
 y = 55
+cardtype = "Cannon"
 connections = [7, 8, 10, 20, 27]
 
 [[countries]]
@@ -198,6 +203,7 @@ name = "Navarra"
 continent = 5
 x = 286
 y = 59
+cardtype = "Cannon"
 connections = [8, 9, 11, 12, 27]
 
 [[countries]]
@@ -206,6 +212,7 @@ name = "Zaragoza"
 continent = 6
 x = 304
 y = 106
+cardtype = "Cavalry"
 connections = [10, 12, 13, 14, 17, 26, 27, 29]
 
 [[countries]]
@@ -214,6 +221,7 @@ name = "Huesca"
 continent = 6
 x = 338
 y = 74
+cardtype = "Cannon"
 connections = [10, 11, 14, 17]
 
 [[countries]]
@@ -222,6 +230,7 @@ name = "Teruel"
 continent = 6
 x = 310
 y = 144
+cardtype = "Infantry"
 connections = [11, 17, 29, 31, 34, 35]
 
 [[countries]]
@@ -230,6 +239,7 @@ name = "Lerida"
 continent = 7
 x = 376
 y = 81
+cardtype = "Infantry"
 connections = [11, 12, 15, 16, 17]
 
 [[countries]]
@@ -238,6 +248,7 @@ name = "Gerona"
 continent = 7
 x = 434
 y = 80
+cardtype = "Cannon"
 connections = [14, 16]
 
 [[countries]]
@@ -246,6 +257,7 @@ name = "Barcelona"
 continent = 7
 x = 408
 y = 97
+cardtype = "Cannon"
 connections = [14, 15, 17, 48]
 
 [[countries]]
@@ -254,6 +266,7 @@ name = "Tarragona"
 continent = 7
 x = 360
 y = 131
+cardtype = "Cavalry"
 connections = [11, 12, 13, 14, 16, 34]
 
 [[countries]]
@@ -262,6 +275,7 @@ name = "Leon"
 continent = 8
 x = 145
 y = 56
+cardtype = "Cavalry"
 connections = [2, 4, 5, 6, 19, 21, 22]
 
 [[countries]]
@@ -270,6 +284,7 @@ name = "Palencia"
 continent = 8
 x = 192
 y = 64
+cardtype = "Infantry"
 connections = [6, 18, 20, 22]
 
 [[countries]]
@@ -278,6 +293,7 @@ name = "Burgos"
 continent = 8
 x = 222
 y = 79
+cardtype = "Cavalry"
 connections = [6, 7, 9, 19, 22, 23, 26, 27]
 
 [[countries]]
@@ -286,6 +302,7 @@ name = "Zamora"
 continent = 8
 x = 134
 y = 92
+cardtype = "Infantry"
 connections = [4, 18, 22, 24]
 
 [[countries]]
@@ -294,6 +311,7 @@ name = "Valladolid"
 continent = 8
 x = 179
 y = 106
+cardtype = "Infantry"
 connections = [18, 19, 20, 21, 23, 24, 25]
 
 [[countries]]
@@ -302,6 +320,7 @@ name = "Segovia"
 continent = 8
 x = 206
 y = 135
+cardtype = "Cavalry"
 connections = [20, 22, 25, 26, 28, 29]
 
 [[countries]]
@@ -310,6 +329,7 @@ name = "Salamanca"
 continent = 8
 x = 139
 y = 136
+cardtype = "Cannon"
 connections = [21, 22, 25, 37]
 
 [[countries]]
@@ -318,6 +338,7 @@ name = "Avila"
 continent = 8
 x = 183
 y = 151
+cardtype = "Cannon"
 connections = [22, 23, 24, 28, 30, 37]
 
 [[countries]]
@@ -326,6 +347,7 @@ name = "Soria"
 continent = 8
 x = 262
 y = 106
+cardtype = "Infantry"
 connections = [20, 23, 27, 11, 29]
 
 [[countries]]
@@ -334,6 +356,7 @@ name = "La-Rioja"
 continent = 9
 x = 262
 y = 77
+cardtype = "Cannon"
 connections = [9, 10, 11, 20, 26]
 
 [[countries]]
@@ -342,6 +365,7 @@ name = "Madrid"
 continent = 10
 x = 219
 y = 159
+cardtype = "Cavalry"
 connections = [23, 25, 29, 30, 31]
 
 [[countries]]
@@ -350,6 +374,7 @@ name = "Guadalajara"
 continent = 11
 x = 249
 y = 143
+cardtype = "Cavalry"
 connections = [11, 13, 23, 26, 28, 31]
 
 [[countries]]
@@ -358,6 +383,7 @@ name = "Toledo"
 continent = 11
 x = 201
 y = 187
+cardtype = "Infantry"
 connections = [25, 28, 31, 32, 37, 38]
 
 [[countries]]
@@ -366,6 +392,7 @@ name = "Cuenca"
 continent = 11
 x = 265
 y = 179
+cardtype = "Cannon"
 connections = [13, 28, 29, 30, 32, 33, 35]
 
 [[countries]]
@@ -374,6 +401,7 @@ name = "Ciudad-Real"
 continent = 11
 x = 204
 y = 228
+cardtype = "Infantry"
 connections = [30, 31, 33, 38, 42, 43]
 
 [[countries]]
@@ -382,6 +410,7 @@ name = "Albacete"
 continent = 11
 x = 274
 y = 237
+cardtype = "Cannon"
 connections = [31, 32, 35, 36, 39, 43, 46]
 
 [[countries]]
@@ -390,6 +419,7 @@ name = "Castellon"
 continent = 12
 x = 346
 y = 165
+cardtype = "Cavalry"
 connections = [13, 17, 35]
 
 [[countries]]
@@ -398,6 +428,7 @@ name = "Valencia"
 continent = 12
 x = 319
 y = 207
+cardtype = "Infantry"
 connections = [13, 31, 33, 34, 36, 48]
 
 [[countries]]
@@ -406,6 +437,7 @@ name = "Alicante"
 continent = 12
 x = 329
 y = 246
+cardtype = "Cannon"
 connections = [33, 35, 39]
 
 [[countries]]
@@ -414,6 +446,7 @@ name = "Caceres"
 continent = 13
 x = 131
 y = 186
+cardtype = "Infantry"
 connections = [24, 25, 30, 38]
 
 [[countries]]
@@ -422,6 +455,7 @@ name = "Badajoz"
 continent = 13
 x = 123
 y = 235
+cardtype = "Cavalry"
 connections = [30, 32, 37, 40, 41, 42]
 
 [[countries]]
@@ -430,6 +464,7 @@ name = "Murcia"
 continent = 14
 x = 298
 y = 270
+cardtype = "Cavalry"
 connections = [33, 36, 46, 47]
 
 [[countries]]
@@ -438,6 +473,7 @@ name = "Huelva"
 continent = 15
 x = 105
 y = 274
+cardtype = "Cavalry"
 connections = [38, 41, 44]
 
 [[countries]]
@@ -446,6 +482,7 @@ name = "Sevilla"
 continent = 15
 x = 145
 y = 287
+cardtype = "Cannon"
 connections = [38, 40, 42, 44, 45]
 
 [[countries]]
@@ -454,6 +491,7 @@ name = "Cordoba"
 continent = 15
 x = 179
 y = 261
+cardtype = "Infantry"
 connections = [32, 38, 41, 43, 45, 46]
 
 [[countries]]
@@ -462,6 +500,7 @@ name = "Jaen"
 continent = 15
 x = 225
 y = 267
+cardtype = "Infantry"
 connections = [32, 33, 42, 46]
 
 [[countries]]
@@ -470,6 +509,7 @@ name = "Cadiz"
 continent = 15
 x = 140
 y = 328
+cardtype = "Infantry"
 connections = [40, 41, 45, 49, 50, 51]
 
 [[countries]]
@@ -478,6 +518,7 @@ name = "Malaga"
 continent = 15
 x = 183
 y = 316
+cardtype = "Infantry"
 connections = [41, 42, 44, 46, 51, 52]
 
 [[countries]]
@@ -486,6 +527,7 @@ name = "Granada"
 continent = 15
 x = 229
 y = 309
+cardtype = "Infantry"
 connections = [33, 39, 42, 43, 45, 47]
 
 [[countries]]
@@ -494,6 +536,7 @@ name = "Almeria"
 continent = 15
 x = 274
 y = 298
+cardtype = "Infantry"
 connections = [39, 46]
 
 [[countries]]
@@ -502,6 +545,7 @@ name = "Baleares"
 continent = 16
 x = 442
 y = 186
+cardtype = "Infantry"
 connections = [16, 35]
 
 [[countries]]
@@ -510,6 +554,7 @@ name = "Tenerife"
 continent = 17
 x = 531
 y = 359
+cardtype = "Cavalry"
 connections = [44, 50]
 
 [[countries]]
@@ -518,6 +563,7 @@ name = "Las-Palmas"
 continent = 17
 x = 563
 y = 373
+cardtype = "Cavalry"
 connections = [44, 49]
 
 [[countries]]
@@ -526,6 +572,7 @@ name = "Ceuta"
 continent = 18
 x = 165
 y = 373
+cardtype = "Cavalry"
 connections = [52, 44, 45]
 
 [[countries]]
@@ -534,4 +581,5 @@ name = "Melilla"
 continent = 19
 x = 235
 y = 402
+cardtype = "Cavalry"
 connections = [51, 45]

@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "DiscWorld_pic.jpg"
-map = "DiscWorld_map.gif"
-crd = "DiscWorld.cards"
+nb_wildcards = 4
 
 [[continents]]
 id = 1
@@ -48,6 +44,7 @@ name = "Tito-Desert"
 continent = 1
 x = 102
 y = 60
+cardtype = "Infantry"
 connections = [2, 5, 4, 6]
 
 [[countries]]
@@ -56,6 +53,7 @@ name = "W'ung-District"
 continent = 1
 x = 62
 y = 109
+cardtype = "Cannon"
 connections = [1, 5, 3]
 
 [[countries]]
@@ -64,6 +62,7 @@ name = "Bes_Pelargic"
 continent = 1
 x = 121
 y = 143
+cardtype = "Cavalry"
 connections = [2, 5, 6, 30]
 
 [[countries]]
@@ -72,6 +71,7 @@ name = "Nafooi"
 continent = 1
 x = 234
 y = 23
+cardtype = "Infantry"
 connections = [1, 7]
 
 [[countries]]
@@ -80,6 +80,7 @@ name = "Hunghung"
 continent = 1
 x = 129
 y = 102
+cardtype = "Cannon"
 connections = [1, 2, 3, 6]
 
 [[countries]]
@@ -88,6 +89,7 @@ name = "Sum_Dim"
 continent = 1
 x = 216
 y = 90
+cardtype = "Cavalry"
 connections = [11, 1, 5, 3]
 
 [[countries]]
@@ -96,6 +98,7 @@ name = "Land_of_Fog"
 continent = 2
 x = 436
 y = 19
+cardtype = "Infantry"
 connections = [9, 4]
 
 [[countries]]
@@ -104,6 +107,7 @@ name = "Swamp_Region"
 continent = 2
 x = 547
 y = 63
+cardtype = "Cannon"
 connections = [9, 10, 40]
 
 [[countries]]
@@ -112,6 +116,7 @@ name = "Mountain_Region"
 continent = 2
 x = 508
 y = 22
+cardtype = "Cavalry"
 connections = [7, 8, 10]
 
 [[countries]]
@@ -120,6 +125,7 @@ name = "Desert_Region"
 continent = 2
 x = 591
 y = 33
+cardtype = "Infantry"
 connections = [8, 9]
 
 [[countries]]
@@ -128,6 +134,7 @@ name = "Slakki"
 continent = 3
 x = 315
 y = 66
+cardtype = "Cannon"
 connections = [14, 12, 6]
 
 [[countries]]
@@ -136,6 +143,7 @@ name = "Ice_Shield"
 continent = 3
 x = 359
 y = 113
+cardtype = "Cavalry"
 connections = [13, 15, 11, 14]
 
 [[countries]]
@@ -144,6 +152,7 @@ name = "Vortex_Plains"
 continent = 3
 x = 428
 y = 138
+cardtype = "Infantry"
 connections = [12, 15, 39]
 
 [[countries]]
@@ -152,6 +161,7 @@ name = "Ecalpon"
 continent = 3
 x = 297
 y = 125
+cardtype = "Cannon"
 connections = [11, 15, 16, 12, 17]
 
 [[countries]]
@@ -160,6 +170,7 @@ name = "Hubland"
 continent = 3
 x = 360
 y = 157
+cardtype = "Cavalry"
 connections = [12, 13, 14, 17]
 
 [[countries]]
@@ -168,6 +179,7 @@ name = "Godrim"
 continent = 3
 x = 224
 y = 174
+cardtype = "Infantry"
 connections = [14, 17, 18]
 
 [[countries]]
@@ -176,6 +188,7 @@ name = "Llamedos"
 continent = 3
 x = 295
 y = 177
+cardtype = "Cannon"
 connections = [15, 16, 14, 18]
 
 [[countries]]
@@ -184,6 +197,7 @@ name = "Hergen"
 continent = 3
 x = 242
 y = 207
+cardtype = "Cavalry"
 connections = [17, 16, 21]
 
 [[countries]]
@@ -192,6 +206,7 @@ name = "Ramtop"
 continent = 4
 x = 357
 y = 201
+cardtype = "Infantry"
 connections = [22, 20, 25, 23]
 
 [[countries]]
@@ -200,6 +215,7 @@ name = "Trollbone_Mountains"
 continent = 4
 x = 432
 y = 187
+cardtype = "Cannon"
 connections = [19, 25]
 
 [[countries]]
@@ -208,6 +224,7 @@ name = "Chimeria"
 continent = 4
 x = 275
 y = 244
+cardtype = "Cavalry"
 connections = [18, 22, 27]
 
 [[countries]]
@@ -216,6 +233,7 @@ name = "Octarine_Gras_Country"
 continent = 4
 x = 310
 y = 227
+cardtype = "Infantry"
 connections = [21, 19, 23, 24]
 
 [[countries]]
@@ -224,6 +242,7 @@ name = "Lancre"
 continent = 4
 x = 364
 y = 234
+cardtype = "Cannon"
 connections = [22, 19, 24, 25]
 
 [[countries]]
@@ -232,6 +251,7 @@ name = "Ankh-Morpork"
 continent = 4
 x = 379
 y = 273
+cardtype = "Cavalry"
 connections = [22, 23, 25, 28]
 
 [[countries]]
@@ -240,6 +260,7 @@ name = "Überwald"
 continent = 4
 x = 426
 y = 223
+cardtype = "Infantry"
 connections = [19, 20, 23, 24, 26, 44]
 
 [[countries]]
@@ -248,6 +269,7 @@ name = "Slobenia"
 continent = 4
 x = 445
 y = 269
+cardtype = "Cannon"
 connections = [25, 29]
 
 [[countries]]
@@ -256,6 +278,7 @@ name = "Brown_Islands"
 continent = 4
 x = 254
 y = 277
+cardtype = "Cavalry"
 connections = [21]
 
 [[countries]]
@@ -264,6 +287,7 @@ name = "Istanzia"
 continent = 6
 x = 415
 y = 304
+cardtype = "Infantry"
 connections = [24, 29, 32, 31]
 
 [[countries]]
@@ -272,6 +296,7 @@ name = "Klatshistan"
 continent = 6
 x = 459
 y = 308
+cardtype = "Cannon"
 connections = [28, 33, 32, 26]
 
 [[countries]]
@@ -280,6 +305,7 @@ name = "Klatch"
 continent = 6
 x = 290
 y = 325
+cardtype = "Cavalry"
 connections = [3, 31, 35, 34]
 
 [[countries]]
@@ -288,6 +314,7 @@ name = "Omnia"
 continent = 6
 x = 361
 y = 335
+cardtype = "Infantry"
 connections = [28, 30, 32, 36, 35]
 
 [[countries]]
@@ -296,6 +323,7 @@ name = "Ushistan"
 continent = 6
 x = 412
 y = 339
+cardtype = "Cannon"
 connections = [28, 29, 31, 33, 37, 36]
 
 [[countries]]
@@ -304,6 +332,7 @@ name = "Khanli"
 continent = 6
 x = 473
 y = 347
+cardtype = "Cavalry"
 connections = [29, 32, 37, 46]
 
 [[countries]]
@@ -312,6 +341,7 @@ name = "Howondaland"
 continent = 6
 x = 251
 y = 365
+cardtype = "Infantry"
 connections = [30, 38, 35]
 
 [[countries]]
@@ -320,6 +350,7 @@ name = "Laotan"
 continent = 6
 x = 302
 y = 372
+cardtype = "Cannon"
 connections = [30, 31, 34, 36]
 
 [[countries]]
@@ -328,6 +359,7 @@ name = "Great_Nef"
 continent = 6
 x = 356
 y = 384
+cardtype = "Cavalry"
 connections = [31, 32, 35, 37]
 
 [[countries]]
@@ -336,6 +368,7 @@ name = "Tzumen_Empire"
 continent = 6
 x = 425
 y = 382
+cardtype = "Infantry"
 connections = [32, 33, 36]
 
 [[countries]]
@@ -344,6 +377,7 @@ name = "Krull"
 continent = 6
 x = 189
 y = 392
+cardtype = "Cannon"
 connections = [34]
 
 [[countries]]
@@ -352,6 +386,7 @@ name = "Rammerock_Mountains"
 continent = 5
 x = 502
 y = 148
+cardtype = "Cavalry"
 connections = [13, 40, 41, 42]
 
 [[countries]]
@@ -360,6 +395,7 @@ name = "Blade_Mountains"
 continent = 5
 x = 576
 y = 145
+cardtype = "Infantry"
 connections = [39, 8, 42]
 
 [[countries]]
@@ -368,6 +404,7 @@ name = "Vieux_River"
 continent = 5
 x = 505
 y = 199
+cardtype = "Cavalry"
 connections = [39, 42, 43, 44]
 
 [[countries]]
@@ -376,6 +413,7 @@ name = "Kythia"
 continent = 5
 x = 609
 y = 183
+cardtype = "Infantry"
 connections = [39, 40, 41, 43]
 
 [[countries]]
@@ -384,6 +422,7 @@ name = "Genua"
 continent = 5
 x = 563
 y = 212
+cardtype = "Infantry"
 connections = [41, 42, 45]
 
 [[countries]]
@@ -392,6 +431,7 @@ name = "Borogravia"
 continent = 5
 x = 501
 y = 259
+cardtype = "Cannon"
 connections = [41, 25, 46]
 
 [[countries]]
@@ -400,6 +440,7 @@ name = "Brindisi"
 continent = 5
 x = 561
 y = 269
+cardtype = "Cavalry"
 connections = [43, 46, 47]
 
 [[countries]]
@@ -408,6 +449,7 @@ name = "Muntab"
 continent = 5
 x = 514
 y = 307
+cardtype = "Infantry"
 connections = [44, 45, 33, 47]
 
 [[countries]]
@@ -416,6 +458,7 @@ name = "Rehigreed"
 continent = 5
 x = 602
 y = 297
+cardtype = "Cannon"
 connections = [45, 46, 48]
 
 [[countries]]
@@ -424,4 +467,5 @@ name = "Orohai"
 continent = 5
 x = 648
 y = 249
+cardtype = "Cavalry"
 connections = [47]

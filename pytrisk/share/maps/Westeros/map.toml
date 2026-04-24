@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "Westeros_pic.png"
-map = "Westeros_map.gif"
-crd = "Westeros.cards"
+nb_wildcards = 10
 
 [[continents]]
 id = 1
@@ -66,6 +62,7 @@ name = "Skagos"
 continent = 1
 x = 70
 y = 70
+cardtype = "Cannon"
 connections = [11, 18, 4, 10, 31]
 
 [[countries]]
@@ -74,6 +71,7 @@ name = "Bear_Island"
 continent = 1
 x = 92
 y = 271
+cardtype = "Cannon"
 connections = [18, 12, 17, 5, 19, 20, 21, 22]
 
 [[countries]]
@@ -82,6 +80,7 @@ name = "Last_Hearth"
 continent = 1
 x = 97
 y = 133
+cardtype = "Cavalry"
 connections = [18, 9, 7, 4, 6]
 
 [[countries]]
@@ -90,6 +89,7 @@ name = "Karhold"
 continent = 1
 x = 128
 y = 70
+cardtype = "Cavalry"
 connections = [3, 6]
 
 [[countries]]
@@ -98,6 +98,7 @@ name = "Deepwood_Motte"
 continent = 1
 x = 140
 y = 227
+cardtype = "Infantry"
 connections = [9, 7, 13, 12, 2]
 
 [[countries]]
@@ -106,6 +107,7 @@ name = "The_Dreadfort"
 continent = 1
 x = 154
 y = 103
+cardtype = "Infantry"
 connections = [3, 4, 10, 11, 8, 7]
 
 [[countries]]
@@ -114,6 +116,7 @@ name = "Winterfell"
 continent = 1
 x = 164
 y = 195
+cardtype = "Cavalry"
 connections = [3, 5, 6, 8, 9, 15, 11, 13]
 
 [[countries]]
@@ -122,6 +125,7 @@ name = "Hornwood"
 continent = 1
 x = 167
 y = 160
+cardtype = "Infantry"
 connections = [6, 7, 11]
 
 [[countries]]
@@ -130,6 +134,7 @@ name = "Wolfswood"
 continent = 1
 x = 120
 y = 203
+cardtype = "Cannon"
 connections = [3, 5, 7]
 
 [[countries]]
@@ -138,6 +143,7 @@ name = "Widow's_Watch"
 continent = 1
 x = 228
 y = 72
+cardtype = "Cavalry"
 connections = [6, 11]
 
 [[countries]]
@@ -146,6 +152,7 @@ name = "White_Harbor"
 continent = 1
 x = 237
 y = 159
+cardtype = "Infantry"
 connections = [1, 6, 7, 8, 10, 15, 16, 31, 23, 24, 25, 26, 27, 28, 29, 30, 61]
 
 [[countries]]
@@ -154,6 +161,7 @@ name = "Stony_Shore"
 continent = 1
 x = 197
 y = 306
+cardtype = "Cannon"
 connections = [5, 13, 14]
 
 [[countries]]
@@ -162,6 +170,7 @@ name = "Torrhen's_Square"
 continent = 1
 x = 187
 y = 242
+cardtype = "Cavalry"
 connections = [5, 7, 12, 14, 15]
 
 [[countries]]
@@ -170,6 +179,7 @@ name = "The_Rills"
 continent = 1
 x = 235
 y = 255
+cardtype = "Infantry"
 connections = [12, 13, 15]
 
 [[countries]]
@@ -178,6 +188,7 @@ name = "Barrowlands"
 continent = 1
 x = 237
 y = 207
+cardtype = "Cannon"
 connections = [7, 11, 13, 14, 16]
 
 [[countries]]
@@ -186,6 +197,7 @@ name = "The_Neck"
 continent = 1
 x = 269
 y = 216
+cardtype = "Cavalry"
 connections = [11, 15, 17, 35]
 
 [[countries]]
@@ -194,6 +206,7 @@ name = "Cape_Kraken"
 continent = 1
 x = 291
 y = 302
+cardtype = "Infantry"
 connections = [16]
 
 [[countries]]
@@ -202,6 +215,7 @@ name = "The_Wall"
 continent = 1
 x = 70
 y = 159
+cardtype = "Cannon"
 connections = [3]
 
 [[countries]]
@@ -210,6 +224,7 @@ name = "Pyke"
 continent = 2
 x = 387
 y = 289
+cardtype = "Cavalry"
 connections = [20, 22, 21, 2, 17, 12, 14, 15, 41, 38, 37, 39, 36, 50]
 
 [[countries]]
@@ -218,6 +233,7 @@ name = "Harlaw"
 continent = 2
 x = 360
 y = 245
+cardtype = "Infantry"
 connections = [19, 22, 21, 2, 17, 14, 12, 15, 36, 41, 37, 38, 39, 50]
 
 [[countries]]
@@ -226,6 +242,7 @@ name = "Great_Wyk"
 continent = 2
 x = 340
 y = 316
+cardtype = "Cannon"
 connections = [19, 20, 22, 2, 12, 17, 14, 15, 41, 37, 39, 36, 50]
 
 [[countries]]
@@ -234,6 +251,7 @@ name = "Orkmont"
 continent = 2
 x = 332
 y = 263
+cardtype = "Cavalry"
 connections = [19, 20, 21, 12, 17, 14, 15, 2, 36, 41, 37, 39, 50]
 
 [[countries]]
@@ -242,6 +260,7 @@ name = "Three_Sisters"
 continent = 3
 x = 279
 y = 160
+cardtype = "Infantry"
 connections = [31, 26, 11, 24]
 
 [[countries]]
@@ -250,6 +269,7 @@ name = "Rebble"
 continent = 3
 x = 266
 y = 95
+cardtype = "Cannon"
 connections = [31, 26, 11, 25, 23]
 
 [[countries]]
@@ -258,6 +278,7 @@ name = "The_Paps"
 continent = 3
 x = 258
 y = 50
+cardtype = "Cavalry"
 connections = [31, 26, 11, 61, 24]
 
 [[countries]]
@@ -266,6 +287,7 @@ name = "The_Fingers"
 continent = 3
 x = 305
 y = 99
+cardtype = "Infantry"
 connections = [34, 31, 25, 24, 23, 27]
 
 [[countries]]
@@ -274,6 +296,7 @@ name = "Longbow_Hall"
 continent = 3
 x = 324
 y = 75
+cardtype = "Cannon"
 connections = [31, 29, 28, 26]
 
 [[countries]]
@@ -282,6 +305,7 @@ name = "Old_Anchor"
 continent = 3
 x = 335
 y = 60
+cardtype = "Cavalry"
 connections = [31, 29, 27, 30]
 
 [[countries]]
@@ -290,6 +314,7 @@ name = "Ironoaks"
 continent = 3
 x = 342
 y = 76
+cardtype = "Infantry"
 connections = [31, 28, 27]
 
 [[countries]]
@@ -298,6 +323,7 @@ name = "Runestone"
 continent = 3
 x = 355
 y = 44
+cardtype = "Cannon"
 connections = [31, 28]
 
 [[countries]]
@@ -306,6 +332,7 @@ name = "Gull_Town"
 continent = 3
 x = 364
 y = 60
+cardtype = "Cavalry"
 connections = [34, 1, 11, 25, 24, 23, 26, 30, 28, 27, 29, 61, 63, 90, 57]
 
 [[countries]]
@@ -314,6 +341,7 @@ name = "The_Eyrie"
 continent = 3
 x = 340
 y = 107
+cardtype = "Infantry"
 connections = [33]
 
 [[countries]]
@@ -322,6 +350,7 @@ name = "Bloody_Gate"
 continent = 3
 x = 365
 y = 122
+cardtype = "Cannon"
 connections = [34, 32, 40]
 
 [[countries]]
@@ -330,6 +359,7 @@ name = "Mountains_of_the_Moon"
 continent = 3
 x = 320
 y = 139
+cardtype = "Cavalry"
 connections = [33, 26, 31]
 
 [[countries]]
@@ -338,6 +368,7 @@ name = "The_Twins"
 continent = 7
 x = 317
 y = 206
+cardtype = "Infantry"
 connections = [16, 41, 37, 36]
 
 [[countries]]
@@ -346,6 +377,7 @@ name = "Seagard"
 continent = 7
 x = 335
 y = 226
+cardtype = "Cannon"
 connections = [35, 41, 22, 20, 21, 19]
 
 [[countries]]
@@ -354,6 +386,7 @@ name = "Green_Fork"
 continent = 7
 x = 330
 y = 181
+cardtype = "Cavalry"
 connections = [35, 41, 39, 38]
 
 [[countries]]
@@ -362,6 +395,7 @@ name = "Blue_Fork"
 continent = 7
 x = 358
 y = 196
+cardtype = "Infantry"
 connections = [41, 37, 39, 43, 42]
 
 [[countries]]
@@ -370,6 +404,7 @@ name = "The_Trident"
 continent = 7
 x = 377
 y = 161
+cardtype = "Cannon"
 connections = [37, 38, 43, 40, 45]
 
 [[countries]]
@@ -378,6 +413,7 @@ name = "Saltpans"
 continent = 7
 x = 393
 y = 141
+cardtype = "Cavalry"
 connections = [39, 33, 45, 46]
 
 [[countries]]
@@ -386,6 +422,7 @@ name = "Oldstones"
 continent = 7
 x = 342
 y = 204
+cardtype = "Infantry"
 connections = [35, 36, 37, 38, 42]
 
 [[countries]]
@@ -394,6 +431,7 @@ name = "Riverrun"
 continent = 7
 x = 395
 y = 204
+cardtype = "Cannon"
 connections = [38, 43, 44, 51, 54, 41]
 
 [[countries]]
@@ -402,6 +440,7 @@ name = "Red_Fork"
 continent = 7
 x = 387
 y = 182
+cardtype = "Cavalry"
 connections = [38, 39, 42, 44, 45]
 
 [[countries]]
@@ -410,6 +449,7 @@ name = "Stony_Sept"
 continent = 7
 x = 431
 y = 186
+cardtype = "Infantry"
 connections = [42, 43, 45, 47, 86, 52]
 
 [[countries]]
@@ -418,6 +458,7 @@ name = "Harrenhal"
 continent = 7
 x = 406
 y = 155
+cardtype = "Cannon"
 connections = [39, 44, 43, 40, 46, 47]
 
 [[countries]]
@@ -426,6 +467,7 @@ name = "Maidenpool"
 continent = 7
 x = 413
 y = 124
+cardtype = "Cavalry"
 connections = [45, 47, 40, 58, 59]
 
 [[countries]]
@@ -434,6 +476,7 @@ name = "Godseye"
 continent = 7
 x = 434
 y = 149
+cardtype = "Infantry"
 connections = [44, 45, 46, 86, 57, 58]
 
 [[countries]]
@@ -442,6 +485,7 @@ name = "Lannisport"
 continent = 6
 x = 464
 y = 275
+cardtype = "Cannon"
 connections = [78, 74, 49, 53, 80, 79, 50]
 
 [[countries]]
@@ -450,6 +494,7 @@ name = "Casterly_Rock"
 continent = 6
 x = 437
 y = 277
+cardtype = "Cavalry"
 connections = [48, 53, 55, 54, 52, 56]
 
 [[countries]]
@@ -458,6 +503,7 @@ name = "Fair_Isle"
 continent = 6
 x = 414
 y = 297
+cardtype = "Infantry"
 connections = [19, 21, 20, 22, 79, 78, 56, 48]
 
 [[countries]]
@@ -466,6 +512,7 @@ name = "The_Crag"
 continent = 6
 x = 391
 y = 242
+cardtype = "Cannon"
 connections = [55, 42, 54]
 
 [[countries]]
@@ -474,6 +521,7 @@ name = "Gold_Road"
 continent = 6
 x = 444
 y = 211
+cardtype = "Cavalry"
 connections = [54, 53, 86, 44, 49, 82]
 
 [[countries]]
@@ -482,6 +530,7 @@ name = "Silverhill"
 continent = 6
 x = 468
 y = 247
+cardtype = "Infantry"
 connections = [52, 80, 81, 49, 48]
 
 [[countries]]
@@ -490,6 +539,7 @@ name = "Golden_Tooth"
 continent = 6
 x = 415
 y = 236
+cardtype = "Cannon"
 connections = [51, 55, 52, 42, 49]
 
 [[countries]]
@@ -498,6 +548,7 @@ name = "Ashemark"
 continent = 6
 x = 405
 y = 259
+cardtype = "Cavalry"
 connections = [51, 54, 49]
 
 [[countries]]
@@ -506,6 +557,7 @@ name = "Kayce"
 continent = 6
 x = 447
 y = 301
+cardtype = "Infantry"
 connections = [49]
 
 [[countries]]
@@ -514,6 +566,7 @@ name = "King's_Landing"
 continent = 9
 x = 463
 y = 135
+cardtype = "Cannon"
 connections = [61, 58, 62, 85, 86, 47, 70, 90, 69, 63, 64, 31, 87]
 
 [[countries]]
@@ -522,6 +575,7 @@ name = "Rosby"
 continent = 9
 x = 448
 y = 117
+cardtype = "Cavalry"
 connections = [57, 59, 47, 46]
 
 [[countries]]
@@ -530,6 +584,7 @@ name = "Duskendale"
 continent = 9
 x = 424
 y = 106
+cardtype = "Infantry"
 connections = [58, 60, 46]
 
 [[countries]]
@@ -538,6 +593,7 @@ name = "Crack_Claw_Point"
 continent = 9
 x = 408
 y = 75
+cardtype = "Cannon"
 connections = [59]
 
 [[countries]]
@@ -546,6 +602,7 @@ name = "Dragonstone"
 continent = 9
 x = 418
 y = 46
+cardtype = "Cavalry"
 connections = [57, 62, 58, 59, 60, 31, 63, 25, 30, 11, 10, 4, 71, 64, 69, 90]
 
 [[countries]]
@@ -554,6 +611,7 @@ name = "Blackwater_Bay"
 continent = 9
 x = 464
 y = 81
+cardtype = "Infantry"
 connections = [57, 71, 70]
 
 [[countries]]
@@ -562,6 +620,7 @@ name = "Tarth"
 continent = 4
 x = 509
 y = 52
+cardtype = "Cannon"
 connections = [61, 69, 64, 90, 31, 71, 65, 57]
 
 [[countries]]
@@ -570,6 +629,7 @@ name = "Estermont"
 continent = 4
 x = 566
 y = 37
+cardtype = "Cavalry"
 connections = [61, 63, 90, 69, 65, 57]
 
 [[countries]]
@@ -578,6 +638,7 @@ name = "Cape_Wrath"
 continent = 4
 x = 552
 y = 76
+cardtype = "Infantry"
 connections = [69, 66]
 
 [[countries]]
@@ -586,6 +647,7 @@ name = "Summerhall"
 continent = 4
 x = 539
 y = 131
+cardtype = "Cannon"
 connections = [69, 65, 70, 67, 84]
 
 [[countries]]
@@ -594,6 +656,7 @@ name = "Blackhaven"
 continent = 4
 x = 550
 y = 157
+cardtype = "Cavalry"
 connections = [66, 68, 84, 88, 89]
 
 [[countries]]
@@ -602,6 +665,7 @@ name = "Nightsong"
 continent = 4
 x = 561
 y = 191
+cardtype = "Infantry"
 connections = [67, 101, 76, 77, 88]
 
 [[countries]]
@@ -610,6 +674,7 @@ name = "Storm's_End"
 continent = 4
 x = 516
 y = 93
+cardtype = "Cannon"
 connections = [61, 63, 64, 90, 71, 65, 70, 66, 57]
 
 [[countries]]
@@ -618,6 +683,7 @@ name = "Kingswood"
 continent = 4
 x = 490
 y = 118
+cardtype = "Cavalry"
 connections = [57, 62, 69, 66, 85, 71]
 
 [[countries]]
@@ -626,6 +692,7 @@ name = "Bronzegate"
 continent = 4
 x = 493
 y = 81
+cardtype = "Infantry"
 connections = [62, 69, 70]
 
 [[countries]]
@@ -634,6 +701,7 @@ name = "Old_Town"
 continent = 5
 x = 598
 y = 277
+cardtype = "Cannon"
 connections = [74, 73, 75, 76, 78]
 
 [[countries]]
@@ -642,6 +710,7 @@ name = "Three_Towers"
 continent = 5
 x = 628
 y = 263
+cardtype = "Cavalry"
 connections = [72, 76]
 
 [[countries]]
@@ -650,6 +719,7 @@ name = "The_Arbor"
 continent = 5
 x = 655
 y = 299
+cardtype = "Infantry"
 connections = [72, 73, 78, 56, 99, 90, 48]
 
 [[countries]]
@@ -658,6 +728,7 @@ name = "Brightwater_Keep"
 continent = 5
 x = 566
 y = 272
+cardtype = "Cannon"
 connections = [72, 78, 76, 79, 77]
 
 [[countries]]
@@ -666,6 +737,7 @@ name = "Horn_Hill"
 continent = 5
 x = 570
 y = 236
+cardtype = "Cavalry"
 connections = [68, 72, 73, 75, 77]
 
 [[countries]]
@@ -674,6 +746,7 @@ name = "Highgarden"
 continent = 5
 x = 547
 y = 237
+cardtype = "Infantry"
 connections = [68, 75, 76, 80, 79, 81, 83]
 
 [[countries]]
@@ -682,6 +755,7 @@ name = "Honeyholt"
 continent = 5
 x = 583
 y = 290
+cardtype = "Cannon"
 connections = [72, 75]
 
 [[countries]]
@@ -690,6 +764,7 @@ name = "Ocean_Road"
 continent = 5
 x = 511
 y = 282
+cardtype = "Cavalry"
 connections = [75, 77, 80, 48]
 
 [[countries]]
@@ -698,6 +773,7 @@ name = "Red_Lake"
 continent = 5
 x = 495
 y = 251
+cardtype = "Infantry"
 connections = [53, 77, 79, 81, 48]
 
 [[countries]]
@@ -706,6 +782,7 @@ name = "Goldengrove"
 continent = 5
 x = 494
 y = 226
+cardtype = "Cannon"
 connections = [53, 82, 83, 80, 77]
 
 [[countries]]
@@ -714,6 +791,7 @@ name = "Bitterbridge"
 continent = 5
 x = 500
 y = 204
+cardtype = "Cavalry"
 connections = [87, 88, 89, 81, 83, 86, 85, 52]
 
 [[countries]]
@@ -722,6 +800,7 @@ name = "Cider_Hall"
 continent = 5
 x = 529
 y = 215
+cardtype = "Infantry"
 connections = [88, 81, 82, 77]
 
 [[countries]]
@@ -730,6 +809,7 @@ name = "Grassy_Vale"
 continent = 5
 x = 524
 y = 150
+cardtype = "Cannon"
 connections = [85, 89, 66, 67]
 
 [[countries]]
@@ -738,6 +818,7 @@ name = "Rose_Road"
 continent = 5
 x = 497
 y = 146
+cardtype = "Cavalry"
 connections = [57, 70, 84, 87, 82]
 
 [[countries]]
@@ -746,6 +827,7 @@ name = "Blackwater_Rush"
 continent = 5
 x = 463
 y = 181
+cardtype = "Infantry"
 connections = [52, 44, 47, 87, 57, 82]
 
 [[countries]]
@@ -754,6 +836,7 @@ name = "Mander"
 continent = 5
 x = 484
 y = 170
+cardtype = "Cannon"
 connections = [86, 82, 85, 57]
 
 [[countries]]
@@ -762,6 +845,7 @@ name = "Ashford"
 continent = 5
 x = 538
 y = 188
+cardtype = "Cavalry"
 connections = [89, 82, 83, 68, 67]
 
 [[countries]]
@@ -770,6 +854,7 @@ name = "Longtable"
 continent = 5
 x = 523
 y = 173
+cardtype = "Infantry"
 connections = [84, 88, 82, 67]
 
 [[countries]]
@@ -778,6 +863,7 @@ name = "Sunspear"
 continent = 8
 x = 627
 y = 67
+cardtype = "Cannon"
 connections = [57, 61, 63, 64, 69, 74, 92, 91, 93, 31]
 
 [[countries]]
@@ -786,6 +872,7 @@ name = "Lemonwood"
 continent = 8
 x = 640
 y = 80
+cardtype = "Cavalry"
 connections = [90, 93, 94]
 
 [[countries]]
@@ -794,6 +881,7 @@ name = "Ghost_Hill"
 continent = 8
 x = 611
 y = 56
+cardtype = "Infantry"
 connections = [90]
 
 [[countries]]
@@ -802,6 +890,7 @@ name = "Godsgrace"
 continent = 8
 x = 625
 y = 97
+cardtype = "Cannon"
 connections = [90, 91, 95, 94]
 
 [[countries]]
@@ -810,6 +899,7 @@ name = "Salt_Shore"
 continent = 8
 x = 639
 y = 107
+cardtype = "Cavalry"
 connections = [91, 93, 95, 97, 96]
 
 [[countries]]
@@ -818,6 +908,7 @@ name = "The_Tor"
 continent = 8
 x = 615
 y = 117
+cardtype = "Infantry"
 connections = [93, 94, 96, 97]
 
 [[countries]]
@@ -826,6 +917,7 @@ name = "Yronwood"
 continent = 8
 x = 610
 y = 158
+cardtype = "Cannon"
 connections = [102, 95, 97, 94, 101]
 
 [[countries]]
@@ -834,6 +926,7 @@ name = "Hell_Holt"
 continent = 8
 x = 634
 y = 168
+cardtype = "Cavalry"
 connections = [94, 96, 95, 98]
 
 [[countries]]
@@ -842,6 +935,7 @@ name = "Sanderstone"
 continent = 8
 x = 640
 y = 199
+cardtype = "Infantry"
 connections = [97, 99, 101]
 
 [[countries]]
@@ -850,6 +944,7 @@ name = "Starfall"
 continent = 8
 x = 624
 y = 230
+cardtype = "Cannon"
 connections = [74, 98, 100]
 
 [[countries]]
@@ -858,6 +953,7 @@ name = "Blackmont"
 continent = 8
 x = 595
 y = 220
+cardtype = "Cavalry"
 connections = [99, 101]
 
 [[countries]]
@@ -866,6 +962,7 @@ name = "Kingsgrave"
 continent = 8
 x = 591
 y = 195
+cardtype = "Infantry"
 connections = [68, 102, 98, 100, 96]
 
 [[countries]]
@@ -874,4 +971,5 @@ name = "Wyl"
 continent = 8
 x = 573
 y = 159
+cardtype = "Cannon"
 connections = [96, 101]

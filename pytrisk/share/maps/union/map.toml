@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "union.jpg"
-map = "union.gif"
-crd = "union.cards"
+nb_wildcards = 3
 
 [[continents]]
 id = 1
@@ -42,6 +38,7 @@ name = "LUSH"
 continent = 1
 x = 112
 y = 38
+cardtype = "Infantry"
 connections = [2]
 
 [[countries]]
@@ -50,6 +47,7 @@ name = "2nd-Floor-Corridor"
 continent = 1
 x = 124
 y = 84
+cardtype = "Cannon"
 connections = [1, 3, 4, 6]
 
 [[countries]]
@@ -58,6 +56,7 @@ name = "Ghandi-Room"
 continent = 1
 x = 143
 y = 120
+cardtype = "Infantry"
 connections = [2, 4]
 
 [[countries]]
@@ -66,6 +65,7 @@ name = "Mandela-Room"
 continent = 1
 x = 110
 y = 120
+cardtype = "Infantry"
 connections = [2, 3]
 
 [[countries]]
@@ -74,6 +74,7 @@ name = "Shop"
 continent = 2
 x = 41
 y = 215
+cardtype = "Cavalry"
 connections = [6]
 
 [[countries]]
@@ -82,6 +83,7 @@ name = "Queens-Hall-Foyer"
 continent = 2
 x = 41
 y = 318
+cardtype = "Cavalry"
 connections = [7, 28, 2, 5, 8]
 
 [[countries]]
@@ -90,6 +92,7 @@ name = "Queen-Hall"
 continent = 2
 x = 108
 y = 348
+cardtype = "Cavalry"
 connections = [6, 8, 15]
 
 [[countries]]
@@ -98,6 +101,7 @@ name = "Ground-Floor-Corridor"
 continent = 2
 x = 147
 y = 350
+cardtype = "Cannon"
 connections = [6, 7, 9, 10, 11, 12, 13, 14, 28, 15]
 
 [[countries]]
@@ -106,6 +110,7 @@ name = "Reception"
 continent = 2
 x = 64
 y = 400
+cardtype = "Cannon"
 connections = [8, 10]
 
 [[countries]]
@@ -114,6 +119,7 @@ name = "Print-Shop"
 continent = 2
 x = 93
 y = 400
+cardtype = "Cannon"
 connections = [8, 9, 11]
 
 [[countries]]
@@ -122,6 +128,7 @@ name = "Marketing-Office"
 continent = 2
 x = 120
 y = 400
+cardtype = "Cavalry"
 connections = [8, 10, 12]
 
 [[countries]]
@@ -130,6 +137,7 @@ name = "Travel-Shop"
 continent = 2
 x = 155
 y = 400
+cardtype = "Cannon"
 connections = [8, 11]
 
 [[countries]]
@@ -138,6 +146,7 @@ name = "Ripple-Office"
 continent = 2
 x = 180
 y = 363
+cardtype = "Infantry"
 connections = [8, 14]
 
 [[countries]]
@@ -146,6 +155,7 @@ name = "RAG"
 continent = 2
 x = 180
 y = 333
+cardtype = "Infantry"
 connections = [8, 13, 15]
 
 [[countries]]
@@ -154,6 +164,7 @@ name = "Side-Entrance"
 continent = 2
 x = 212
 y = 296
+cardtype = "Cannon"
 connections = [8, 26, 39, 40, 7, 14, 16, 17, 28]
 
 [[countries]]
@@ -162,6 +173,7 @@ name = "Element"
 continent = 2
 x = 177
 y = 283
+cardtype = "Cannon"
 connections = [15]
 
 [[countries]]
@@ -170,6 +182,7 @@ name = "NatWest"
 continent = 2
 x = 226
 y = 223
+cardtype = "Cavalry"
 connections = [15]
 
 [[countries]]
@@ -178,6 +191,7 @@ name = "Sabb-Offices"
 continent = 3
 x = 294
 y = 23
+cardtype = "Cavalry"
 connections = [19, 20, 23]
 
 [[countries]]
@@ -186,6 +200,7 @@ name = "Part-Time-Officers"
 continent = 3
 x = 271
 y = 75
+cardtype = "Infantry"
 connections = [18, 21, 23]
 
 [[countries]]
@@ -194,6 +209,7 @@ name = "Welfare"
 continent = 3
 x = 319
 y = 75
+cardtype = "Cavalry"
 connections = [18, 22, 23]
 
 [[countries]]
@@ -202,6 +218,7 @@ name = "Secretary"
 continent = 3
 x = 271
 y = 109
+cardtype = "Infantry"
 connections = [19, 23]
 
 [[countries]]
@@ -210,6 +227,7 @@ name = "Aung-San-Suu-Kyi"
 continent = 3
 x = 319
 y = 75
+cardtype = "Infantry"
 connections = [20, 23]
 
 [[countries]]
@@ -218,6 +236,7 @@ name = "Sabb-Corridor"
 continent = 3
 x = 296
 y = 124
+cardtype = "Cavalry"
 connections = [18, 19, 20, 21, 22, 24, 32]
 
 [[countries]]
@@ -226,6 +245,7 @@ name = "Disabled-Access"
 continent = 3
 x = 362
 y = 136
+cardtype = "Cannon"
 connections = [23, 25]
 
 [[countries]]
@@ -234,6 +254,7 @@ name = "Redfearn"
 continent = 3
 x = 461
 y = 101
+cardtype = "Cannon"
 connections = [24, 26]
 
 [[countries]]
@@ -242,6 +263,7 @@ name = "Redfearn-Steps"
 continent = 3
 x = 433
 y = 181
+cardtype = "Infantry"
 connections = [15, 25, 27, 28]
 
 [[countries]]
@@ -250,6 +272,7 @@ name = "Green-Room"
 continent = 3
 x = 433
 y = 216
+cardtype = "Cannon"
 connections = [26, 28]
 
 [[countries]]
@@ -258,6 +281,7 @@ name = "1st-Floor-Corridor"
 continent = 3
 x = 392
 y = 231
+cardtype = "Cavalry"
 connections = [15, 26, 27, 29, 30, 31, 32, 6, 8, 36]
 
 [[countries]]
@@ -266,6 +290,7 @@ name = "Advisory-Services"
 continent = 3
 x = 372
 y = 284
+cardtype = "Cavalry"
 connections = [28, 30]
 
 [[countries]]
@@ -274,6 +299,7 @@ name = "Accommodation"
 continent = 3
 x = 329
 y = 284
+cardtype = "Infantry"
 connections = [28, 29, 31]
 
 [[countries]]
@@ -282,6 +308,7 @@ name = "Sports-Office"
 continent = 3
 x = 284
 y = 284
+cardtype = "Cannon"
 connections = [28, 30]
 
 [[countries]]
@@ -290,6 +317,7 @@ name = "Queens-Hall-Stage"
 continent = 3
 x = 283
 y = 208
+cardtype = "Infantry"
 connections = [23, 28]
 
 [[countries]]
@@ -298,6 +326,7 @@ name = "CFS"
 continent = 4
 x = 601
 y = 30
+cardtype = "Cannon"
 connections = [34, 36]
 
 [[countries]]
@@ -306,6 +335,7 @@ name = "Contact"
 continent = 4
 x = 602
 y = 61
+cardtype = "Cavalry"
 connections = [33, 35, 36]
 
 [[countries]]
@@ -314,6 +344,7 @@ name = "ISA"
 continent = 4
 x = 602
 y = 90
+cardtype = "Infantry"
 connections = [34, 36]
 
 [[countries]]
@@ -322,6 +353,7 @@ name = "Societies-Resources"
 continent = 4
 x = 577
 y = 83
+cardtype = "Cannon"
 connections = [28, 33, 34, 35, 37]
 
 [[countries]]
@@ -330,6 +362,7 @@ name = "Finance"
 continent = 4
 x = 549
 y = 130
+cardtype = "Infantry"
 connections = [36]
 
 [[countries]]
@@ -338,6 +371,7 @@ name = "Oasis"
 continent = 5
 x = 493
 y = 274
+cardtype = "Cavalry"
 connections = [39, 43]
 
 [[countries]]
@@ -346,6 +380,7 @@ name = "Mirage"
 continent = 5
 x = 577
 y = 260
+cardtype = "Cavalry"
 connections = [38, 40, 43, 15]
 
 [[countries]]
@@ -354,6 +389,7 @@ name = "Lower-Corridor"
 continent = 5
 x = 644
 y = 311
+cardtype = "Cavalry"
 connections = [15, 39, 41, 42, 43]
 
 [[countries]]
@@ -362,6 +398,7 @@ name = "Martin-Johnson-Room"
 continent = 5
 x = 625
 y = 387
+cardtype = "Cannon"
 connections = [40, 42]
 
 [[countries]]
@@ -370,6 +407,7 @@ name = "Workbank"
 continent = 5
 x = 610
 y = 354
+cardtype = "Infantry"
 connections = [40, 41, 43]
 
 [[countries]]
@@ -378,6 +416,7 @@ name = "The-Concourse"
 continent = 5
 x = 562
 y = 317
+cardtype = "Infantry"
 connections = [38, 39, 40, 42, 44, 45]
 
 [[countries]]
@@ -386,6 +425,7 @@ name = "Luther-King-Room"
 continent = 5
 x = 549
 y = 362
+cardtype = "Cannon"
 connections = [43, 45]
 
 [[countries]]
@@ -394,4 +434,5 @@ name = "Corridor"
 continent = 5
 x = 504
 y = 379
+cardtype = "Cannon"
 connections = [43, 44]

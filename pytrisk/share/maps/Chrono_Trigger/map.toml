@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "Chrono_Trigger_pic.png"
-map = "Chrono_Trigger_map.gif"
-crd = "Chrono_Trigger.cards"
+nb_wildcards = 2
 
 [[continents]]
 id = 1
@@ -54,6 +50,7 @@ name = "Castle"
 continent = 1
 x = 102
 y = 53
+cardtype = "Cavalry"
 connections = [2]
 
 [[countries]]
@@ -62,6 +59,7 @@ name = "Forrest"
 continent = 1
 x = 99
 y = 93
+cardtype = "Infantry"
 connections = [1, 10]
 
 [[countries]]
@@ -70,6 +68,7 @@ name = "Millenial_Fair"
 continent = 1
 x = 173
 y = 64
+cardtype = "Cannon"
 connections = [6]
 
 [[countries]]
@@ -78,6 +77,7 @@ name = "Chrono's_House"
 continent = 2
 x = 178
 y = 94
+cardtype = "Cavalry"
 connections = [6]
 
 [[countries]]
@@ -86,6 +86,7 @@ name = "Lucca's_House"
 continent = 2
 x = 136
 y = 168
+cardtype = "Infantry"
 connections = [6, 20]
 
 [[countries]]
@@ -94,6 +95,7 @@ name = "Town_Square"
 continent = 2
 x = 155
 y = 112
+cardtype = "Cannon"
 connections = [7, 4, 3, 9, 8, 5, 10]
 
 [[countries]]
@@ -102,6 +104,7 @@ name = "Market"
 continent = 2
 x = 136
 y = 103
+cardtype = "Cavalry"
 connections = [6]
 
 [[countries]]
@@ -110,6 +113,7 @@ name = "Docks"
 continent = 2
 x = 211
 y = 126
+cardtype = "Infantry"
 connections = [6, 34]
 
 [[countries]]
@@ -118,6 +122,7 @@ name = "Mayor's_House"
 continent = 2
 x = 162
 y = 131
+cardtype = "Cannon"
 connections = [6]
 
 [[countries]]
@@ -126,6 +131,7 @@ name = "Path"
 continent = 3
 x = 87
 y = 134
+cardtype = "Cavalry"
 connections = [6, 2, 11]
 
 [[countries]]
@@ -134,6 +140,7 @@ name = "Zenan_Bridge"
 continent = 3
 x = 87
 y = 197
+cardtype = "Infantry"
 connections = [10, 12]
 
 [[countries]]
@@ -142,6 +149,7 @@ name = "Barren_Land"
 continent = 3
 x = 141
 y = 273
+cardtype = "Cannon"
 connections = [11, 13, 14, 15, 17, 19, 18, 16]
 
 [[countries]]
@@ -150,6 +158,7 @@ name = "Mountains"
 continent = 3
 x = 133
 y = 224
+cardtype = "Cavalry"
 connections = [12]
 
 [[countries]]
@@ -158,6 +167,7 @@ name = "Mountains"
 continent = 3
 x = 89
 y = 281
+cardtype = "Infantry"
 connections = [12]
 
 [[countries]]
@@ -166,6 +176,7 @@ name = "Magic_Cave"
 continent = 3
 x = 232
 y = 274
+cardtype = "Cannon"
 connections = [12]
 
 [[countries]]
@@ -174,6 +185,7 @@ name = "Docks"
 continent = 4
 x = 162
 y = 409
+cardtype = "Cavalry"
 connections = [12, 17, 19, 18, 34]
 
 [[countries]]
@@ -182,6 +194,7 @@ name = "Mayor's_House"
 continent = 4
 x = 127
 y = 362
+cardtype = "Infantry"
 connections = [12, 19, 18, 16]
 
 [[countries]]
@@ -190,6 +203,7 @@ name = "Inn"
 continent = 4
 x = 190
 y = 376
+cardtype = "Cannon"
 connections = [12, 17, 16, 19]
 
 [[countries]]
@@ -198,6 +212,7 @@ name = "Snail_Stop"
 continent = 4
 x = 173
 y = 346
+cardtype = "Cavalry"
 connections = [12, 17, 16, 18]
 
 [[countries]]
@@ -206,6 +221,7 @@ name = "Vortex"
 continent = 5
 x = 183
 y = 159
+cardtype = "Infantry"
 connections = [5, 22]
 
 [[countries]]
@@ -214,6 +230,7 @@ name = "Melchior's_Hut"
 continent = 5
 x = 312
 y = 205
+cardtype = "Cannon"
 connections = [23, 22]
 
 [[countries]]
@@ -222,6 +239,7 @@ name = "Mountain"
 continent = 5
 x = 306
 y = 171
+cardtype = "Cavalry"
 connections = [23, 20, 21]
 
 [[countries]]
@@ -230,6 +248,7 @@ name = "Town_Square"
 continent = 5
 x = 442
 y = 148
+cardtype = "Infantry"
 connections = [36, 21, 22, 25, 24, 26]
 
 [[countries]]
@@ -238,6 +257,7 @@ name = "Shop"
 continent = 5
 x = 461
 y = 159
+cardtype = "Cannon"
 connections = [23]
 
 [[countries]]
@@ -246,6 +266,7 @@ name = "Residence"
 continent = 5
 x = 422
 y = 139
+cardtype = "Cavalry"
 connections = [23]
 
 [[countries]]
@@ -254,6 +275,7 @@ name = "Sealed_Pyramid"
 continent = 5
 x = 463
 y = 91
+cardtype = "Infantry"
 connections = [23]
 
 [[countries]]
@@ -262,6 +284,7 @@ name = "Sun_Keep"
 continent = 6
 x = 593
 y = 39
+cardtype = "Cannon"
 connections = [35]
 
 [[countries]]
@@ -270,6 +293,7 @@ name = "Toma's_Grave"
 continent = 7
 x = 484
 y = 311
+cardtype = "Cavalry"
 connections = [31]
 
 [[countries]]
@@ -278,6 +302,7 @@ name = "Ruins"
 continent = 7
 x = 585
 y = 282
+cardtype = "Infantry"
 connections = [31]
 
 [[countries]]
@@ -286,6 +311,7 @@ name = "Cafe"
 continent = 7
 x = 553
 y = 365
+cardtype = "Cannon"
 connections = [31]
 
 [[countries]]
@@ -294,6 +320,7 @@ name = "Town_Square"
 continent = 7
 x = 542
 y = 351
+cardtype = "Cavalry"
 connections = [33, 30, 32, 28, 29]
 
 [[countries]]
@@ -302,6 +329,7 @@ name = "Mayor's_House"
 continent = 7
 x = 555
 y = 337
+cardtype = "Infantry"
 connections = [31]
 
 [[countries]]
@@ -310,6 +338,7 @@ name = "Harbor"
 continent = 7
 x = 557
 y = 386
+cardtype = "Cannon"
 connections = [34, 31]
 
 [[countries]]
@@ -318,6 +347,7 @@ name = "Shipping_Lane"
 continent = 3
 x = 343
 y = 335
+cardtype = "Cavalry"
 connections = [16, 33, 35, 8, 36]
 
 [[countries]]
@@ -326,6 +356,7 @@ name = "Landing"
 continent = 3
 x = 594
 y = 78
+cardtype = "Infantry"
 connections = [34, 27]
 
 [[countries]]
@@ -334,4 +365,5 @@ name = "Harbor"
 continent = 5
 x = 434
 y = 176
+cardtype = "Cannon"
 connections = [34, 23]

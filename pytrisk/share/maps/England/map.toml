@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "England_pic.jpg"
-map = "England_map.gif"
-crd = "England.cards"
+nb_wildcards = 3
 
 [[continents]]
 id = 1
@@ -42,6 +38,7 @@ name = "Cornwall"
 continent = 4
 x = 72
 y = 383
+cardtype = "Cavalry"
 connections = [2]
 
 [[countries]]
@@ -50,6 +47,7 @@ name = "Devon"
 continent = 4
 x = 104
 y = 356
+cardtype = "Infantry"
 connections = [4, 3, 1]
 
 [[countries]]
@@ -58,6 +56,7 @@ name = "Dorset"
 continent = 4
 x = 186
 y = 357
+cardtype = "Cannon"
 connections = [5, 4, 2, 12]
 
 [[countries]]
@@ -66,6 +65,7 @@ name = "Somerset"
 continent = 4
 x = 162
 y = 337
+cardtype = "Cavalry"
 connections = [5, 3, 43, 2]
 
 [[countries]]
@@ -74,6 +74,7 @@ name = "Wiltshire"
 continent = 5
 x = 207
 y = 319
+cardtype = "Infantry"
 connections = [6, 14, 12, 4, 3, 43, 55]
 
 [[countries]]
@@ -82,6 +83,7 @@ name = "gloucestershire"
 continent = 5
 x = 198
 y = 283
+cardtype = "Cannon"
 connections = [21, 20, 14, 47, 43, 5]
 
 [[countries]]
@@ -90,6 +92,7 @@ name = "Kent"
 continent = 5
 x = 328
 y = 322
+cardtype = "Cavalry"
 connections = [10, 8, 11]
 
 [[countries]]
@@ -98,6 +101,7 @@ name = "East_Sussex"
 continent = 5
 x = 316
 y = 342
+cardtype = "Infantry"
 connections = [9, 7]
 
 [[countries]]
@@ -106,6 +110,7 @@ name = "West_Sussex"
 continent = 5
 x = 274
 y = 345
+cardtype = "Cannon"
 connections = [12, 8, 11]
 
 [[countries]]
@@ -114,6 +119,7 @@ name = "Greater_London"
 continent = 5
 x = 295
 y = 304
+cardtype = "Cavalry"
 connections = [16, 17, 7, 11]
 
 [[countries]]
@@ -122,6 +128,7 @@ name = "Surrey"
 continent = 5
 x = 279
 y = 321
+cardtype = "Infantry"
 connections = [10, 12, 9, 7, 55]
 
 [[countries]]
@@ -130,6 +137,7 @@ name = "Hampshire"
 continent = 5
 x = 239
 y = 334
+cardtype = "Cannon"
 connections = [5, 13, 9, 11, 3, 55]
 
 [[countries]]
@@ -138,6 +146,7 @@ name = "Isle_Of_White"
 continent = 5
 x = 241
 y = 365
+cardtype = "Cavalry"
 connections = [12]
 
 [[countries]]
@@ -146,6 +155,7 @@ name = "Oxfordshire"
 continent = 5
 x = 234
 y = 292
+cardtype = "Cannon"
 connections = [22, 6, 15, 5, 55, 21]
 
 [[countries]]
@@ -154,6 +164,7 @@ name = "Buckinghamshire"
 continent = 5
 x = 257
 y = 281
+cardtype = "Cavalry"
 connections = [22, 14, 18, 17, 55]
 
 [[countries]]
@@ -162,6 +173,7 @@ name = "essex"
 continent = 5
 x = 321
 y = 281
+cardtype = "Infantry"
 connections = [29, 17, 19, 10]
 
 [[countries]]
@@ -170,6 +182,7 @@ name = "Hertfordshire"
 continent = 5
 x = 288
 y = 282
+cardtype = "Cannon"
 connections = [29, 18, 16, 10, 15]
 
 [[countries]]
@@ -178,6 +191,7 @@ name = "Bedfordshire"
 continent = 5
 x = 279
 y = 263
+cardtype = "Cavalry"
 connections = [22, 29, 15, 17]
 
 [[countries]]
@@ -186,6 +200,7 @@ name = "Suffolk"
 continent = 5
 x = 350
 y = 253
+cardtype = "Infantry"
 connections = [29, 16]
 
 [[countries]]
@@ -194,6 +209,7 @@ name = "worcestershire"
 continent = 2
 x = 171
 y = 265
+cardtype = "Cannon"
 connections = [23, 6, 51, 52, 47]
 
 [[countries]]
@@ -202,6 +218,7 @@ name = "Warickshire"
 continent = 2
 x = 221
 y = 257
+cardtype = "Cavalry"
 connections = [23, 22, 6, 25, 14]
 
 [[countries]]
@@ -210,6 +227,7 @@ name = "Northamptonshire"
 continent = 2
 x = 255
 y = 251
+cardtype = "Infantry"
 connections = [21, 25, 29, 18, 15, 14]
 
 [[countries]]
@@ -218,6 +236,7 @@ name = "West_Middlands"
 continent = 2
 x = 203
 y = 237
+cardtype = "Cannon"
 connections = [24, 20, 21, 52]
 
 [[countries]]
@@ -226,6 +245,7 @@ name = "Staffordshire"
 continent = 2
 x = 199
 y = 213
+cardtype = "Cavalry"
 connections = [31, 26, 23, 52]
 
 [[countries]]
@@ -234,6 +254,7 @@ name = "Leicestershire"
 continent = 2
 x = 241
 y = 228
+cardtype = "Infantry"
 connections = [26, 27, 28, 22, 21]
 
 [[countries]]
@@ -242,6 +263,7 @@ name = "Derbyshire"
 continent = 2
 x = 222
 y = 193
+cardtype = "Cannon"
 connections = [34, 32, 27, 31, 24, 25]
 
 [[countries]]
@@ -250,6 +272,7 @@ name = "Nottinghamshire"
 continent = 2
 x = 248
 y = 192
+cardtype = "Cavalry"
 connections = [49, 32, 26, 28, 25]
 
 [[countries]]
@@ -258,6 +281,7 @@ name = "Linconshire"
 continent = 2
 x = 286
 y = 188
+cardtype = "Infantry"
 connections = [49, 27, 25, 29]
 
 [[countries]]
@@ -266,6 +290,7 @@ name = "Camebridgeshire"
 continent = 2
 x = 296
 y = 239
+cardtype = "Cannon"
 connections = [28, 22, 30, 19, 18, 16, 17]
 
 [[countries]]
@@ -274,6 +299,7 @@ name = "Norfolk"
 continent = 2
 x = 338
 y = 219
+cardtype = "Cavalry"
 connections = [29]
 
 [[countries]]
@@ -282,6 +308,7 @@ name = "Cheshire"
 continent = 2
 x = 177
 y = 190
+cardtype = "Cannon"
 connections = [33, 34, 45, 24, 26, 52]
 
 [[countries]]
@@ -290,6 +317,7 @@ name = "South_Yorkshire"
 continent = 2
 x = 229
 y = 172
+cardtype = "Cavalry"
 connections = [35, 49, 26, 27]
 
 [[countries]]
@@ -298,6 +326,7 @@ name = "Merseyside"
 continent = 2
 x = 155
 y = 172
+cardtype = "Infantry"
 connections = [37, 34, 31]
 
 [[countries]]
@@ -306,6 +335,7 @@ name = "Greater_Manchester"
 continent = 2
 x = 186
 y = 167
+cardtype = "Cannon"
 connections = [37, 35, 33, 31, 26]
 
 [[countries]]
@@ -314,6 +344,7 @@ name = "West_Yorkshire"
 continent = 1
 x = 211
 y = 153
+cardtype = "Cavalry"
 connections = [36, 37, 34, 32]
 
 [[countries]]
@@ -322,6 +353,7 @@ name = "North_Yorkshire"
 continent = 1
 x = 217
 y = 118
+cardtype = "Infantry"
 connections = [38, 39, 50, 37, 35, 49]
 
 [[countries]]
@@ -330,6 +362,7 @@ name = "Lancashire"
 continent = 1
 x = 163
 y = 152
+cardtype = "Cannon"
 connections = [38, 48, 36, 35, 34, 33]
 
 [[countries]]
@@ -338,6 +371,7 @@ name = "Cumbria"
 continent = 1
 x = 148
 y = 102
+cardtype = "Cavalry"
 connections = [41, 39, 37, 36, 48]
 
 [[countries]]
@@ -346,6 +380,7 @@ name = "County_Durham"
 continent = 1
 x = 201
 y = 88
+cardtype = "Infantry"
 connections = [41, 40, 38, 36, 50]
 
 [[countries]]
@@ -354,6 +389,7 @@ name = "Tyne_And_Wear"
 continent = 1
 x = 222
 y = 66
+cardtype = "Cannon"
 connections = [41, 39]
 
 [[countries]]
@@ -362,6 +398,7 @@ name = "Northumberland"
 continent = 1
 x = 194
 y = 46
+cardtype = "Cavalry"
 connections = [40, 39, 38]
 
 [[countries]]
@@ -370,6 +407,7 @@ name = "Anglesey"
 continent = 3
 x = 89
 y = 185
+cardtype = "Infantry"
 connections = [48, 44]
 
 [[countries]]
@@ -378,6 +416,7 @@ name = "Avon"
 continent = 4
 x = 177
 y = 312
+cardtype = "Cavalry"
 connections = [6, 4, 5, 47]
 
 [[countries]]
@@ -386,6 +425,7 @@ name = "Gwynedd"
 continent = 3
 x = 109
 y = 205
+cardtype = "Infantry"
 connections = [45, 42, 51, 53]
 
 [[countries]]
@@ -394,6 +434,7 @@ name = "Clwyd"
 continent = 3
 x = 141
 y = 200
+cardtype = "Cannon"
 connections = [31, 44, 51, 52]
 
 [[countries]]
@@ -402,6 +443,7 @@ name = "Glamorgan"
 continent = 3
 x = 128
 y = 302
+cardtype = "Cannon"
 connections = [47, 51, 53]
 
 [[countries]]
@@ -410,6 +452,7 @@ name = "Gwent"
 continent = 3
 x = 162
 y = 291
+cardtype = "Cavalry"
 connections = [46, 6, 51, 43, 20]
 
 [[countries]]
@@ -418,6 +461,7 @@ name = "Isle_of_Man"
 continent = 1
 x = 82
 y = 122
+cardtype = "Infantry"
 connections = [38, 37, 42]
 
 [[countries]]
@@ -426,6 +470,7 @@ name = "Humberside"
 continent = 3
 x = 267
 y = 141
+cardtype = "Cannon"
 connections = [36, 32, 27, 28]
 
 [[countries]]
@@ -434,6 +479,7 @@ name = "Clevland"
 continent = 1
 x = 239
 y = 88
+cardtype = "Cannon"
 connections = [39, 36]
 
 [[countries]]
@@ -442,6 +488,7 @@ name = "Powys"
 continent = 3
 x = 136
 y = 250
+cardtype = "Cavalry"
 connections = [45, 44, 46, 47, 20, 52, 53]
 
 [[countries]]
@@ -450,6 +497,7 @@ name = "Shropshire"
 continent = 2
 x = 170
 y = 228
+cardtype = "Infantry"
 connections = [51, 45, 31, 24, 23, 20]
 
 [[countries]]
@@ -458,6 +506,7 @@ name = "Dyfed"
 continent = 3
 x = 99
 y = 273
+cardtype = "Cannon"
 connections = [46, 51, 44, 54]
 
 [[countries]]
@@ -466,6 +515,7 @@ name = "Pembrokeshire"
 continent = 3
 x = 63
 y = 285
+cardtype = "Cavalry"
 connections = [53]
 
 [[countries]]
@@ -474,4 +524,5 @@ name = "Berkshire"
 continent = 5
 x = 250
 y = 308
+cardtype = ""
 connections = [14, 15, 11, 12, 5]

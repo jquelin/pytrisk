@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "northern-europe_pic.png"
-map = "northern-europe_map.gif"
-crd = "northern-europe.cards"
+nb_wildcards = 3
 
 [[continents]]
 id = 1
@@ -54,6 +50,7 @@ name = "Vilnius"
 continent = 1
 x = 45
 y = 345
+cardtype = "Infantry"
 connections = [2, 4]
 
 [[countries]]
@@ -62,6 +59,7 @@ name = "Kaunas"
 continent = 1
 x = 50
 y = 310
+cardtype = "Infantry"
 connections = [1, 3, 4]
 
 [[countries]]
@@ -70,6 +68,7 @@ name = "Klaipeda"
 continent = 1
 x = 75
 y = 275
+cardtype = "Infantry"
 connections = [2, 4, 5]
 
 [[countries]]
@@ -78,6 +77,7 @@ name = "Siauliai"
 continent = 1
 x = 90
 y = 315
+cardtype = "Cavalry"
 connections = [1, 2, 3, 5, 6, 7]
 
 [[countries]]
@@ -86,6 +86,7 @@ name = "Liepaja"
 continent = 2
 x = 120
 y = 270
+cardtype = "Cavalry"
 connections = [3, 4, 6, 12, 43]
 
 [[countries]]
@@ -94,6 +95,7 @@ name = "Riga"
 continent = 2
 x = 130
 y = 320
+cardtype = "Cavalry"
 connections = [4, 5, 7, 8]
 
 [[countries]]
@@ -102,6 +104,7 @@ name = "Daugavpils"
 continent = 2
 x = 100
 y = 365
+cardtype = "Cannon"
 connections = [4, 6, 8]
 
 [[countries]]
@@ -110,6 +113,7 @@ name = "Valmiera"
 continent = 2
 x = 155
 y = 330
+cardtype = "Cannon"
 connections = [6, 7, 9, 10, 11]
 
 [[countries]]
@@ -118,6 +122,7 @@ name = "Valga"
 continent = 3
 x = 165
 y = 360
+cardtype = "Cannon"
 connections = [8, 10]
 
 [[countries]]
@@ -126,6 +131,7 @@ name = "Viljandi"
 continent = 3
 x = 185
 y = 345
+cardtype = "Infantry"
 connections = [8, 9, 11, 13]
 
 [[countries]]
@@ -134,6 +140,7 @@ name = "Paernu"
 continent = 3
 x = 190
 y = 315
+cardtype = "Infantry"
 connections = [8, 10, 12, 13]
 
 [[countries]]
@@ -142,6 +149,7 @@ name = "Saaremaa-Hiiumaa"
 continent = 3
 x = 180
 y = 280
+cardtype = "Infantry"
 connections = [5, 11, 13, 41]
 
 [[countries]]
@@ -150,6 +158,7 @@ name = "Tallinn"
 continent = 3
 x = 225
 y = 335
+cardtype = "Cavalry"
 connections = [10, 11, 12, 14, 15]
 
 [[countries]]
@@ -158,6 +167,7 @@ name = "Helsinki"
 continent = 4
 x = 250
 y = 310
+cardtype = "Cavalry"
 connections = [13, 15, 16, 17]
 
 [[countries]]
@@ -166,6 +176,7 @@ name = "Kymi"
 continent = 4
 x = 275
 y = 355
+cardtype = "Cavalry"
 connections = [13, 14, 16, 20, 21]
 
 [[countries]]
@@ -174,6 +185,7 @@ name = "Hame"
 continent = 4
 x = 285
 y = 310
+cardtype = "Cannon"
 connections = [14, 15, 17, 18, 19, 20]
 
 [[countries]]
@@ -182,6 +194,7 @@ name = "Turku-ja-Pori"
 continent = 4
 x = 270
 y = 270
+cardtype = "Cannon"
 connections = [14, 16, 18, 41]
 
 [[countries]]
@@ -190,6 +203,7 @@ name = "Vaasa"
 continent = 4
 x = 355
 y = 280
+cardtype = "Cannon"
 connections = [16, 17, 19, 23, 38]
 
 [[countries]]
@@ -198,6 +212,7 @@ name = "Keski-Suomi"
 continent = 4
 x = 325
 y = 310
+cardtype = "Infantry"
 connections = [16, 18, 20, 22, 23]
 
 [[countries]]
@@ -206,6 +221,7 @@ name = "Mikkeli"
 continent = 4
 x = 300
 y = 340
+cardtype = "Infantry"
 connections = [15, 16, 19, 21, 22]
 
 [[countries]]
@@ -214,6 +230,7 @@ name = "Pohjois-Karjala"
 continent = 4
 x = 340
 y = 380
+cardtype = "Infantry"
 connections = [15, 20, 22, 23]
 
 [[countries]]
@@ -222,6 +239,7 @@ name = "Kuopio"
 continent = 4
 x = 350
 y = 340
+cardtype = "Cavalry"
 connections = [19, 20, 21, 23]
 
 [[countries]]
@@ -230,6 +248,7 @@ name = "Oulu"
 continent = 4
 x = 425
 y = 345
+cardtype = "Cavalry"
 connections = [18, 19, 21, 22, 24]
 
 [[countries]]
@@ -238,6 +257,7 @@ name = "Lappi"
 continent = 4
 x = 515
 y = 320
+cardtype = "Cavalry"
 connections = [23, 25, 26, 35]
 
 [[countries]]
@@ -246,6 +266,7 @@ name = "Finmark"
 continent = 5
 x = 590
 y = 290
+cardtype = "Cannon"
 connections = [24, 26]
 
 [[countries]]
@@ -254,6 +275,7 @@ name = "Tromsoe"
 continent = 5
 x = 565
 y = 240
+cardtype = "Cannon"
 connections = [24, 25, 27, 35]
 
 [[countries]]
@@ -262,6 +284,7 @@ name = "Nordland"
 continent = 5
 x = 485
 y = 180
+cardtype = "Cannon"
 connections = [26, 28, 35, 36]
 
 [[countries]]
@@ -270,6 +293,7 @@ name = "Trondheim"
 continent = 5
 x = 405
 y = 150
+cardtype = "Infantry"
 connections = [27, 29, 30, 36, 37]
 
 [[countries]]
@@ -278,6 +302,7 @@ name = "Molde"
 continent = 5
 x = 330
 y = 65
+cardtype = "Infantry"
 connections = [28, 30, 31]
 
 [[countries]]
@@ -286,6 +311,7 @@ name = "Oppland"
 continent = 5
 x = 300
 y = 110
+cardtype = "Infantry"
 connections = [28, 29, 31, 33, 34, 37, 40]
 
 [[countries]]
@@ -294,6 +320,7 @@ name = "Hordaland"
 continent = 5
 x = 285
 y = 40
+cardtype = "Cavalry"
 connections = [29, 30, 32, 33]
 
 [[countries]]
@@ -302,6 +329,7 @@ name = "Agder"
 continent = 5
 x = 210
 y = 40
+cardtype = "Cavalry"
 connections = [31, 33, 44]
 
 [[countries]]
@@ -310,6 +338,7 @@ name = "Vestfold"
 continent = 5
 x = 240
 y = 75
+cardtype = "Cavalry"
 connections = [30, 31, 32, 34]
 
 [[countries]]
@@ -318,6 +347,7 @@ name = "Oslo"
 continent = 5
 x = 245
 y = 115
+cardtype = "Cannon"
 connections = [30, 33, 40, 42]
 
 [[countries]]
@@ -326,6 +356,7 @@ name = "Norrbottens"
 continent = 6
 x = 480
 y = 255
+cardtype = "Cannon"
 connections = [24, 26, 27, 36]
 
 [[countries]]
@@ -334,6 +365,7 @@ name = "Veasterbottens"
 continent = 6
 x = 425
 y = 225
+cardtype = "Cannon"
 connections = [27, 28, 35, 37, 38]
 
 [[countries]]
@@ -342,6 +374,7 @@ name = "Jaemtlands"
 continent = 6
 x = 335
 y = 160
+cardtype = "Infantry"
 connections = [28, 30, 36, 38, 39, 40]
 
 [[countries]]
@@ -350,6 +383,7 @@ name = "Vaesternorrlands"
 continent = 6
 x = 360
 y = 220
+cardtype = "Infantry"
 connections = [18, 36, 37, 39]
 
 [[countries]]
@@ -358,6 +392,7 @@ name = "Gaevleborgs"
 continent = 6
 x = 290
 y = 200
+cardtype = "Infantry"
 connections = [37, 38, 40, 41]
 
 [[countries]]
@@ -366,6 +401,7 @@ name = "Karlstad"
 continent = 6
 x = 225
 y = 160
+cardtype = "Cavalry"
 connections = [30, 34, 37, 39, 41, 42, 43]
 
 [[countries]]
@@ -374,6 +410,7 @@ name = "Stockholm"
 continent = 6
 x = 215
 y = 215
+cardtype = "Cavalry"
 connections = [12, 17, 39, 40, 43]
 
 [[countries]]
@@ -382,6 +419,7 @@ name = "Goeteborg"
 continent = 6
 x = 165
 y = 135
+cardtype = "Cavalry"
 connections = [34, 40, 43, 44]
 
 [[countries]]
@@ -390,6 +428,7 @@ name = "Halmstad"
 continent = 6
 x = 135
 y = 175
+cardtype = "Cannon"
 connections = [5, 40, 41, 42, 50]
 
 [[countries]]
@@ -398,6 +437,7 @@ name = "Nordjuetland"
 continent = 7
 x = 155
 y = 85
+cardtype = "Cannon"
 connections = [32, 42, 45, 46]
 
 [[countries]]
@@ -406,6 +446,7 @@ name = "Westjuetland"
 continent = 7
 x = 120
 y = 50
+cardtype = "Cannon"
 connections = [44, 46, 47]
 
 [[countries]]
@@ -414,6 +455,7 @@ name = "Ostjuetland"
 continent = 7
 x = 115
 y = 80
+cardtype = "Infantry"
 connections = [44, 45, 47, 48, 50]
 
 [[countries]]
@@ -422,6 +464,7 @@ name = "Suedjuetland"
 continent = 7
 x = 75
 y = 55
+cardtype = "Infantry"
 connections = [45, 46, 48, 49]
 
 [[countries]]
@@ -430,6 +473,7 @@ name = "Langeland"
 continent = 7
 x = 90
 y = 80
+cardtype = "Infantry"
 connections = [46, 47, 49, 50]
 
 [[countries]]
@@ -438,6 +482,7 @@ name = "Lolland"
 continent = 7
 x = 55
 y = 100
+cardtype = "Cavalry"
 connections = [47, 48, 50]
 
 [[countries]]
@@ -446,4 +491,5 @@ name = "Seeland"
 continent = 7
 x = 85
 y = 110
+cardtype = ""
 connections = [43, 46, 48, 49]

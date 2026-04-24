@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "mexico_pic.png"
-map = "mexico_map.gif"
-crd = "mexico.cards"
+nb_wildcards = 1
 
 [[continents]]
 id = 1
@@ -42,6 +38,7 @@ name = "Baja_California_Sur"
 continent = 1
 x = 134
 y = 181
+cardtype = "Infantry"
 connections = [2]
 
 [[countries]]
@@ -50,6 +47,7 @@ name = "Baja_California"
 continent = 1
 x = 68
 y = 30
+cardtype = "Cannon"
 connections = [1, 3]
 
 [[countries]]
@@ -58,6 +56,7 @@ name = "Sonora"
 continent = 1
 x = 162
 y = 79
+cardtype = "Infantry"
 connections = [2, 4, 6]
 
 [[countries]]
@@ -66,6 +65,7 @@ name = "Sinaloa"
 continent = 1
 x = 203
 y = 173
+cardtype = "Infantry"
 connections = [3, 5, 6, 14]
 
 [[countries]]
@@ -74,6 +74,7 @@ name = "Durango"
 continent = 1
 x = 265
 y = 192
+cardtype = "Cavalry"
 connections = [4, 14, 13, 7, 6]
 
 [[countries]]
@@ -82,6 +83,7 @@ name = "Chihuahua"
 continent = 1
 x = 242
 y = 110
+cardtype = "Cavalry"
 connections = [3, 4, 5, 7]
 
 [[countries]]
@@ -90,6 +92,7 @@ name = "Coahuila"
 continent = 1
 x = 322
 y = 145
+cardtype = "Cavalry"
 connections = [5, 6, 13, 8]
 
 [[countries]]
@@ -98,6 +101,7 @@ name = "Nuevo_Leon"
 continent = 1
 x = 369
 y = 180
+cardtype = "Cannon"
 connections = [7, 9, 10]
 
 [[countries]]
@@ -106,6 +110,7 @@ name = "Tamaulipas"
 continent = 1
 x = 391
 y = 220
+cardtype = "Cannon"
 connections = [8, 27, 10]
 
 [[countries]]
@@ -114,6 +119,7 @@ name = "San_Luis_Potosi"
 continent = 2
 x = 352
 y = 250
+cardtype = "Cannon"
 connections = [8, 9, 13, 11, 27, 19, 20]
 
 [[countries]]
@@ -122,6 +128,7 @@ name = "Guanajuato"
 continent = 2
 x = 339
 y = 284
+cardtype = "Cavalry"
 connections = [10, 17, 15, 13, 19]
 
 [[countries]]
@@ -130,6 +137,7 @@ name = "Aguascalientes"
 continent = 2
 x = 315
 y = 267
+cardtype = "Cannon"
 connections = [13, 15]
 
 [[countries]]
@@ -138,6 +146,7 @@ name = "Zacatecas"
 continent = 2
 x = 301
 y = 229
+cardtype = "Infantry"
 connections = [5, 7, 10, 11, 12, 15, 14]
 
 [[countries]]
@@ -146,6 +155,7 @@ name = "Nayarit"
 continent = 3
 x = 263
 y = 262
+cardtype = "Infantry"
 connections = [4, 5, 13, 15]
 
 [[countries]]
@@ -154,6 +164,7 @@ name = "Jalisco"
 continent = 3
 x = 276
 y = 299
+cardtype = "Cannon"
 connections = [11, 12, 13, 14, 16, 17]
 
 [[countries]]
@@ -162,6 +173,7 @@ name = "Colima"
 continent = 3
 x = 273
 y = 333
+cardtype = "Cannon"
 connections = [15, 17]
 
 [[countries]]
@@ -170,6 +182,7 @@ name = "Michoacan"
 continent = 3
 x = 322
 y = 325
+cardtype = "Cavalry"
 connections = [11, 15, 16, 25, 18, 19]
 
 [[countries]]
@@ -178,6 +191,7 @@ name = "Mexico"
 continent = 4
 x = 369
 y = 314
+cardtype = "Cavalry"
 connections = [17, 25, 19, 20, 24, 21, 23, 22]
 
 [[countries]]
@@ -186,6 +200,7 @@ name = "Queretaro"
 continent = 4
 x = 361
 y = 285
+cardtype = "Infantry"
 connections = [18, 11, 17, 20, 10]
 
 [[countries]]
@@ -194,6 +209,7 @@ name = "Hidalgo"
 continent = 4
 x = 383
 y = 294
+cardtype = "Cavalry"
 connections = [18, 19, 27, 21, 10, 22]
 
 [[countries]]
@@ -202,6 +218,7 @@ name = "Tlaxcala"
 continent = 4
 x = 485
 y = 287
+cardtype = "Infantry"
 connections = [18, 20, 22]
 
 [[countries]]
@@ -210,6 +227,7 @@ name = "Puebla"
 continent = 4
 x = 408
 y = 334
+cardtype = "Infantry"
 connections = [18, 20, 21, 23, 25, 27, 26]
 
 [[countries]]
@@ -218,6 +236,7 @@ name = "Morelos"
 continent = 4
 x = 485
 y = 308
+cardtype = "Cavalry"
 connections = [18, 22, 25, 24]
 
 [[countries]]
@@ -226,6 +245,7 @@ name = "Distrito_Federal"
 continent = 4
 x = 485
 y = 266
+cardtype = "Cannon"
 connections = [18, 23]
 
 [[countries]]
@@ -234,6 +254,7 @@ name = "Guerrero"
 continent = 5
 x = 367
 y = 362
+cardtype = "Cannon"
 connections = [17, 26, 18, 22, 23]
 
 [[countries]]
@@ -242,6 +263,7 @@ name = "Oaxaca"
 continent = 5
 x = 440
 y = 375
+cardtype = "Infantry"
 connections = [25, 27, 28, 22]
 
 [[countries]]
@@ -250,6 +272,7 @@ name = "Veracruz"
 continent = 5
 x = 463
 y = 342
+cardtype = "Cannon"
 connections = [9, 10, 26, 28, 29, 20, 22]
 
 [[countries]]
@@ -258,6 +281,7 @@ name = "Chiapas"
 continent = 5
 x = 526
 y = 379
+cardtype = "Cavalry"
 connections = [26, 27, 29]
 
 [[countries]]
@@ -266,6 +290,7 @@ name = "Tabasco"
 continent = 5
 x = 519
 y = 344
+cardtype = "Cavalry"
 connections = [27, 28, 30]
 
 [[countries]]
@@ -274,6 +299,7 @@ name = "Campeche"
 continent = 5
 x = 566
 y = 326
+cardtype = "Infantry"
 connections = [29, 31, 32]
 
 [[countries]]
@@ -282,6 +308,7 @@ name = "Quintana_Roo"
 continent = 5
 x = 605
 y = 308
+cardtype = "Cannon"
 connections = [30, 32]
 
 [[countries]]
@@ -290,4 +317,5 @@ name = "Yucatan"
 continent = 5
 x = 589
 y = 279
+cardtype = "Infantry"
 connections = [30, 31]

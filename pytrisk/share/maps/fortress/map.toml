@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "fortress.png"
-map = "fortress.gif"
-crd = "fortress.cards"
+nb_wildcards = 5
 
 [[continents]]
 id = 1
@@ -108,6 +104,7 @@ name = "Core"
 continent = 1
 x = 335
 y = 212
+cardtype = "Infantry"
 connections = [2, 3, 4, 5, 6, 7, 8, 9]
 
 [[countries]]
@@ -116,6 +113,7 @@ name = "Core_Alpha"
 continent = 1
 x = 356
 y = 185
+cardtype = "Cavalry"
 connections = [1, 3, 9, 10]
 
 [[countries]]
@@ -124,6 +122,7 @@ name = "Core_Beta"
 continent = 1
 x = 390
 y = 200
+cardtype = "Cannon"
 connections = [1, 2, 4, 11]
 
 [[countries]]
@@ -132,6 +131,7 @@ name = "Core_Gamma"
 continent = 1
 x = 390
 y = 224
+cardtype = "Infantry"
 connections = [1, 3, 5, 12]
 
 [[countries]]
@@ -140,6 +140,7 @@ name = "Core_Delta"
 continent = 1
 x = 356
 y = 241
+cardtype = "Cavalry"
 connections = [1, 4, 6, 13]
 
 [[countries]]
@@ -148,6 +149,7 @@ name = "Core_Epsilon"
 continent = 1
 x = 314
 y = 241
+cardtype = "Cannon"
 connections = [1, 5, 7, 14]
 
 [[countries]]
@@ -156,6 +158,7 @@ name = "Core_Zeta"
 continent = 1
 x = 280
 y = 224
+cardtype = "Infantry"
 connections = [1, 6, 8, 15]
 
 [[countries]]
@@ -164,6 +167,7 @@ name = "Core_Eta"
 continent = 1
 x = 280
 y = 200
+cardtype = "Cavalry"
 connections = [1, 7, 9, 16]
 
 [[countries]]
@@ -172,6 +176,7 @@ name = "Core_Theta"
 continent = 1
 x = 314
 y = 185
+cardtype = "Cannon"
 connections = [1, 2, 8, 17]
 
 [[countries]]
@@ -180,6 +185,7 @@ name = "Inner_Wall_NNE"
 continent = 2
 x = 374
 y = 159
+cardtype = "Infantry"
 connections = [2, 11, 17, 18, 19]
 
 [[countries]]
@@ -188,6 +194,7 @@ name = "Inner_Wall_ENE"
 continent = 2
 x = 421
 y = 195
+cardtype = "Cavalry"
 connections = [3, 10, 12, 19, 20]
 
 [[countries]]
@@ -196,6 +203,7 @@ name = "Inner_Wall_ESE"
 continent = 2
 x = 421
 y = 232
+cardtype = "Cannon"
 connections = [4, 11, 13, 20, 21]
 
 [[countries]]
@@ -204,6 +212,7 @@ name = "Inner_Wall_SSE"
 continent = 2
 x = 372
 y = 265
+cardtype = "Infantry"
 connections = [5, 12, 14, 21, 22]
 
 [[countries]]
@@ -212,6 +221,7 @@ name = "Inner_Wall_SSW"
 continent = 2
 x = 292
 y = 265
+cardtype = "Cavalry"
 connections = [6, 13, 15, 22, 23]
 
 [[countries]]
@@ -220,6 +230,7 @@ name = "Inner_Wall_WSW"
 continent = 2
 x = 246
 y = 230
+cardtype = "Cannon"
 connections = [7, 14, 16, 23, 24]
 
 [[countries]]
@@ -228,6 +239,7 @@ name = "Inner_Wall_WNW"
 continent = 2
 x = 246
 y = 194
+cardtype = "Infantry"
 connections = [8, 15, 17, 24, 25]
 
 [[countries]]
@@ -236,6 +248,7 @@ name = "Inner_Wall_NNW"
 continent = 2
 x = 293
 y = 159
+cardtype = "Cavalry"
 connections = [9, 16, 10, 18, 25]
 
 [[countries]]
@@ -244,6 +257,7 @@ name = "Gate_N"
 continent = 2
 x = 337
 y = 146
+cardtype = "Cannon"
 connections = [10, 17, 30]
 
 [[countries]]
@@ -252,6 +266,7 @@ name = "Gate_NE"
 continent = 2
 x = 417
 y = 164
+cardtype = "Infantry"
 connections = [10, 11, 61]
 
 [[countries]]
@@ -260,6 +275,7 @@ name = "Gate_E"
 continent = 2
 x = 447
 y = 212
+cardtype = "Cavalry"
 connections = [11, 12, 37]
 
 [[countries]]
@@ -268,6 +284,7 @@ name = "Gate_SE"
 continent = 2
 x = 413
 y = 261
+cardtype = "Cannon"
 connections = [12, 13, 71]
 
 [[countries]]
@@ -276,6 +293,7 @@ name = "Gate_S"
 continent = 2
 x = 336
 y = 279
+cardtype = "Infantry"
 connections = [13, 14, 44]
 
 [[countries]]
@@ -284,6 +302,7 @@ name = "Gate_SW"
 continent = 2
 x = 248
 y = 258
+cardtype = "Cavalry"
 connections = [14, 15, 81]
 
 [[countries]]
@@ -292,6 +311,7 @@ name = "Gate_W"
 continent = 2
 x = 218
 y = 212
+cardtype = "Cannon"
 connections = [15, 16, 51]
 
 [[countries]]
@@ -300,6 +320,7 @@ name = "Gate_NW"
 continent = 2
 x = 250
 y = 166
+cardtype = "Infantry"
 connections = [16, 17, 91]
 
 [[countries]]
@@ -308,6 +329,7 @@ name = "Northern_Left_Wing"
 continent = 3
 x = 228
 y = 118
+cardtype = "Cavalry"
 connections = [27, 28]
 
 [[countries]]
@@ -316,6 +338,7 @@ name = "Northern_Landing_Zone_1"
 continent = 3
 x = 247
 y = 95
+cardtype = "Cannon"
 connections = [26, 28, 29, 97]
 
 [[countries]]
@@ -324,6 +347,7 @@ name = "Northern_Beach_1"
 continent = 3
 x = 277
 y = 109
+cardtype = "Infantry"
 connections = [26, 27, 29, 30]
 
 [[countries]]
@@ -332,6 +356,7 @@ name = "Northern_Backyard_1"
 continent = 3
 x = 308
 y = 96
+cardtype = "Cavalry"
 connections = [27, 28, 30, 31]
 
 [[countries]]
@@ -340,6 +365,7 @@ name = "Northern_Port"
 continent = 3
 x = 337
 y = 110
+cardtype = "Cannon"
 connections = [18, 28, 29, 31, 32]
 
 [[countries]]
@@ -348,6 +374,7 @@ name = "Northern_Backyard_2"
 continent = 3
 x = 367
 y = 96
+cardtype = "Infantry"
 connections = [29, 30, 32, 33]
 
 [[countries]]
@@ -356,6 +383,7 @@ name = "Northern_Beach_2"
 continent = 3
 x = 398
 y = 109
+cardtype = "Cavalry"
 connections = [30, 31, 33, 34]
 
 [[countries]]
@@ -364,6 +392,7 @@ name = "Northern_Landing_Zone_2"
 continent = 3
 x = 424
 y = 96
+cardtype = "Cannon"
 connections = [31, 32, 34, 101]
 
 [[countries]]
@@ -372,6 +401,7 @@ name = "Northern_Right_Wing"
 continent = 3
 x = 444
 y = 118
+cardtype = "Infantry"
 connections = [32, 33]
 
 [[countries]]
@@ -380,6 +410,7 @@ name = "Eastern_Bulwark_1"
 continent = 4
 x = 496
 y = 161
+cardtype = "Cavalry"
 connections = [36, 37]
 
 [[countries]]
@@ -388,6 +419,7 @@ name = "Eastern-Landing_Zone_1"
 continent = 4
 x = 516
 y = 179
+cardtype = "Cannon"
 connections = [35, 37, 128]
 
 [[countries]]
@@ -396,6 +428,7 @@ name = "Eastern_Port"
 continent = 4
 x = 499
 y = 214
+cardtype = "Infantry"
 connections = [20, 35, 36, 38, 39]
 
 [[countries]]
@@ -404,6 +437,7 @@ name = "Eastern-Landing_Zone_2"
 continent = 4
 x = 517
 y = 247
+cardtype = "Cavalry"
 connections = [37, 39, 139]
 
 [[countries]]
@@ -412,6 +446,7 @@ name = "Eastern_Bulwark_2"
 continent = 4
 x = 496
 y = 267
+cardtype = "Cannon"
 connections = [37, 38]
 
 [[countries]]
@@ -420,6 +455,7 @@ name = "Southern_Right_Wing"
 continent = 5
 x = 443
 y = 311
+cardtype = "Infantry"
 connections = [41, 42]
 
 [[countries]]
@@ -428,6 +464,7 @@ name = "Southern_Landing_Zone_2"
 continent = 5
 x = 424
 y = 333
+cardtype = "Cavalry"
 connections = [40, 42, 43, 111]
 
 [[countries]]
@@ -436,6 +473,7 @@ name = "Southern_Beach_2"
 continent = 5
 x = 394
 y = 319
+cardtype = "Cannon"
 connections = [40, 41, 43, 44]
 
 [[countries]]
@@ -444,6 +482,7 @@ name = "Southern_Backyard_2"
 continent = 5
 x = 369
 y = 334
+cardtype = "Infantry"
 connections = [41, 42, 44, 45]
 
 [[countries]]
@@ -452,6 +491,7 @@ name = "Southern_Port"
 continent = 5
 x = 336
 y = 318
+cardtype = "Cavalry"
 connections = [22, 42, 43, 45, 46]
 
 [[countries]]
@@ -460,6 +500,7 @@ name = "Southern_Backyard_1"
 continent = 5
 x = 301
 y = 333
+cardtype = "Cannon"
 connections = [43, 44, 46, 47]
 
 [[countries]]
@@ -468,6 +509,7 @@ name = "Southern_Beach_1"
 continent = 5
 x = 276
 y = 319
+cardtype = "Infantry"
 connections = [44, 45, 47, 48]
 
 [[countries]]
@@ -476,6 +518,7 @@ name = "Southern_Landing_Zone_1"
 continent = 5
 x = 245
 y = 334
+cardtype = "Cavalry"
 connections = [45, 46, 48, 115]
 
 [[countries]]
@@ -484,6 +527,7 @@ name = "Southern_Left_Wing"
 continent = 5
 x = 232
 y = 311
+cardtype = "Cannon"
 connections = [46, 47]
 
 [[countries]]
@@ -492,6 +536,7 @@ name = "Western_Bulwark_2"
 continent = 6
 x = 172
 y = 267
+cardtype = "Infantry"
 connections = [50, 51]
 
 [[countries]]
@@ -500,6 +545,7 @@ name = "Western-Landing_Zone_2"
 continent = 6
 x = 151
 y = 247
+cardtype = "Cavalry"
 connections = [49, 51, 150]
 
 [[countries]]
@@ -508,6 +554,7 @@ name = "Western_Port"
 continent = 6
 x = 171
 y = 212
+cardtype = "Cannon"
 connections = [24, 49, 50, 52, 53]
 
 [[countries]]
@@ -516,6 +563,7 @@ name = "Western-Landing_Zone_1"
 continent = 6
 x = 151
 y = 180
+cardtype = "Infantry"
 connections = [51, 53, 161]
 
 [[countries]]
@@ -524,6 +572,7 @@ name = "Western_Bulwark_1"
 continent = 6
 x = 173
 y = 163
+cardtype = "Cavalry"
 connections = [51, 52]
 
 [[countries]]
@@ -532,6 +581,7 @@ name = "Outpost_A_Core"
 continent = 7
 x = 534
 y = 94
+cardtype = "Cannon"
 connections = [55, 56, 57, 58, 59, 60]
 
 [[countries]]
@@ -540,6 +590,7 @@ name = "Outpost_A_Lambda"
 continent = 7
 x = 570
 y = 63
+cardtype = "Infantry"
 connections = [54, 56, 60, 63]
 
 [[countries]]
@@ -548,6 +599,7 @@ name = "Outpost_A_Pi"
 continent = 7
 x = 572
 y = 117
+cardtype = "Cavalry"
 connections = [54, 55, 57, 63]
 
 [[countries]]
@@ -556,6 +608,7 @@ name = "Outpost_A_Rho"
 continent = 7
 x = 537
 y = 129
+cardtype = "Cannon"
 connections = [54, 56, 58, 61]
 
 [[countries]]
@@ -564,6 +617,7 @@ name = "Outpost_A_Sigma"
 continent = 7
 x = 484
 y = 97
+cardtype = "Infantry"
 connections = [54, 57, 59, 61]
 
 [[countries]]
@@ -572,6 +626,7 @@ name = "Outpost_A_Tau"
 continent = 7
 x = 491
 y = 74
+cardtype = "Cavalry"
 connections = [54, 58, 60, 62]
 
 [[countries]]
@@ -580,6 +635,7 @@ name = "Outpost_A_Omega"
 continent = 7
 x = 547
 y = 54
+cardtype = "Cannon"
 connections = [54, 55, 59, 62]
 
 [[countries]]
@@ -588,6 +644,7 @@ name = "Outpost_A_Dock_1"
 continent = 7
 x = 499
 y = 122
+cardtype = "Infantry"
 connections = [19, 57, 58]
 
 [[countries]]
@@ -596,6 +653,7 @@ name = "Outpost_A_Dock_2"
 continent = 7
 x = 515
 y = 56
+cardtype = "Cavalry"
 connections = [59, 60, 103]
 
 [[countries]]
@@ -604,6 +662,7 @@ name = "Outpost_A_Dock_3"
 continent = 7
 x = 581
 y = 86
+cardtype = "Cannon"
 connections = [55, 56, 124]
 
 [[countries]]
@@ -612,6 +671,7 @@ name = "Outpost_B_Core"
 continent = 8
 x = 537
 y = 335
+cardtype = "Infantry"
 connections = [65, 66, 67, 68, 69, 70]
 
 [[countries]]
@@ -620,6 +680,7 @@ name = "Outpost_B_Lambda"
 continent = 8
 x = 549
 y = 377
+cardtype = "Cavalry"
 connections = [64, 66, 70, 73]
 
 [[countries]]
@@ -628,6 +689,7 @@ name = "Outpost_B_Pi"
 continent = 8
 x = 491
 y = 355
+cardtype = "Cannon"
 connections = [64, 65, 67, 73]
 
 [[countries]]
@@ -636,6 +698,7 @@ name = "Outpost_B_Rho"
 continent = 8
 x = 486
 y = 331
+cardtype = "Infantry"
 connections = [64, 66, 68, 71]
 
 [[countries]]
@@ -644,6 +707,7 @@ name = "Outpost_B_Sigma"
 continent = 8
 x = 539
 y = 300
+cardtype = "Cavalry"
 connections = [64, 67, 69, 71]
 
 [[countries]]
@@ -652,6 +716,7 @@ name = "Outpost_B_Tau"
 continent = 8
 x = 571
 y = 313
+cardtype = "Cannon"
 connections = [64, 68, 70, 72]
 
 [[countries]]
@@ -660,6 +725,7 @@ name = "Outpost_B_Omega"
 continent = 8
 x = 570
 y = 369
+cardtype = "Infantry"
 connections = [64, 65, 69, 72]
 
 [[countries]]
@@ -668,6 +734,7 @@ name = "Outpost_B_Dock_1"
 continent = 8
 x = 504
 y = 308
+cardtype = "Cavalry"
 connections = [21, 67, 68]
 
 [[countries]]
@@ -676,6 +743,7 @@ name = "Outpost_B_Dock_2"
 continent = 8
 x = 582
 y = 344
+cardtype = "Cannon"
 connections = [69, 70, 135]
 
 [[countries]]
@@ -684,6 +752,7 @@ name = "Outpost_B_Dock_3"
 continent = 8
 x = 517
 y = 373
+cardtype = "Infantry"
 connections = [65, 66, 109]
 
 [[countries]]
@@ -692,6 +761,7 @@ name = "Outpost_C_Core"
 continent = 9
 x = 137
 y = 340
+cardtype = "Cavalry"
 connections = [75, 76, 77, 78, 79, 80]
 
 [[countries]]
@@ -700,6 +770,7 @@ name = "Outpost_C_Lambda"
 continent = 9
 x = 105
 y = 372
+cardtype = "Cannon"
 connections = [74, 76, 80, 83]
 
 [[countries]]
@@ -708,6 +779,7 @@ name = "Outpost_C_Pi"
 continent = 9
 x = 105
 y = 314
+cardtype = "Infantry"
 connections = [74, 75, 77, 83]
 
 [[countries]]
@@ -716,6 +788,7 @@ name = "Outpost_C_Rho"
 continent = 9
 x = 135
 y = 302
+cardtype = "Cavalry"
 connections = [74, 76, 78, 81]
 
 [[countries]]
@@ -724,6 +797,7 @@ name = "Outpost_C_Sigma"
 continent = 9
 x = 189
 y = 334
+cardtype = "Cannon"
 connections = [74, 77, 79, 81]
 
 [[countries]]
@@ -732,6 +806,7 @@ name = "Outpost_C_Tau"
 continent = 9
 x = 182
 y = 358
+cardtype = "Infantry"
 connections = [74, 78, 80, 82]
 
 [[countries]]
@@ -740,6 +815,7 @@ name = "Outpost_C_Omega"
 continent = 9
 x = 128
 y = 381
+cardtype = "Cavalry"
 connections = [74, 75, 79, 82]
 
 [[countries]]
@@ -748,6 +824,7 @@ name = "Outpost_C_Dock_1"
 continent = 9
 x = 170
 y = 311
+cardtype = "Cannon"
 connections = [23, 77, 78]
 
 [[countries]]
@@ -756,6 +833,7 @@ name = "Outpost_C_Dock_2"
 continent = 9
 x = 156
 y = 375
+cardtype = "Infantry"
 connections = [79, 80, 117]
 
 [[countries]]
@@ -764,6 +842,7 @@ name = "Outpost_C_Dock_3"
 continent = 9
 x = 95
 y = 346
+cardtype = "Cavalry"
 connections = [75, 76, 146]
 
 [[countries]]
@@ -772,6 +851,7 @@ name = "Outpost_D_Core"
 continent = 10
 x = 138
 y = 92
+cardtype = "Cannon"
 connections = [85, 86, 87, 88, 89, 90]
 
 [[countries]]
@@ -780,6 +860,7 @@ name = "Outpost_D_Lambda"
 continent = 10
 x = 122
 y = 53
+cardtype = "Infantry"
 connections = [84, 86, 90, 93]
 
 [[countries]]
@@ -788,6 +869,7 @@ name = "Outpost_D_Pi"
 continent = 10
 x = 179
 y = 70
+cardtype = "Cavalry"
 connections = [84, 85, 87, 93]
 
 [[countries]]
@@ -796,6 +878,7 @@ name = "Outpost_D_Rho"
 continent = 10
 x = 187
 y = 94
+cardtype = "Cannon"
 connections = [84, 86, 88, 91]
 
 [[countries]]
@@ -804,6 +887,7 @@ name = "Outpost_D_Sigma"
 continent = 10
 x = 142
 y = 129
+cardtype = "Infantry"
 connections = [84, 87, 89, 91]
 
 [[countries]]
@@ -812,6 +896,7 @@ name = "Outpost_D_Tau"
 continent = 10
 x = 107
 y = 119
+cardtype = "Cavalry"
 connections = [84, 88, 90, 92]
 
 [[countries]]
@@ -820,6 +905,7 @@ name = "Outpost_D_Omega"
 continent = 10
 x = 101
 y = 65
+cardtype = "Cannon"
 connections = [84, 85, 89, 92]
 
 [[countries]]
@@ -828,6 +914,7 @@ name = "Outpost_D_Dock_1"
 continent = 10
 x = 174
 y = 120
+cardtype = "Infantry"
 connections = [25, 87, 88]
 
 [[countries]]
@@ -836,6 +923,7 @@ name = "Outpost_D_Dock_2"
 continent = 10
 x = 92
 y = 89
+cardtype = "Cavalry"
 connections = [89, 90, 157]
 
 [[countries]]
@@ -844,6 +932,7 @@ name = "Outpost_D_Dock_3"
 continent = 10
 x = 150
 y = 53
+cardtype = "Cannon"
 connections = [85, 86, 95]
 
 [[countries]]
@@ -852,6 +941,7 @@ name = "Northern_Core"
 continent = 11
 x = 337
 y = 22
+cardtype = ""
 connections = [99, 105, 106]
 
 [[countries]]
@@ -860,6 +950,7 @@ name = "Northern_West_Dock"
 continent = 11
 x = 176
 y = 20
+cardtype = ""
 connections = [93, 96, 104]
 
 [[countries]]
@@ -868,6 +959,7 @@ name = "Northern_Shore_Alpha"
 continent = 11
 x = 216
 y = 41
+cardtype = ""
 connections = [95, 97, 98, 104]
 
 [[countries]]
@@ -876,6 +968,7 @@ name = "Northern_Harbor_1"
 continent = 11
 x = 247
 y = 58
+cardtype = ""
 connections = [27, 96, 98]
 
 [[countries]]
@@ -884,6 +977,7 @@ name = "Northern_Shore_Beta"
 continent = 11
 x = 282
 y = 50
+cardtype = ""
 connections = [96, 97, 99, 104, 105]
 
 [[countries]]
@@ -892,6 +986,7 @@ name = "Northern_Thorn"
 continent = 11
 x = 338
 y = 54
+cardtype = ""
 connections = [94, 98, 100, 105, 106]
 
 [[countries]]
@@ -900,6 +995,7 @@ name = "Northern_Shore_Gamma"
 continent = 11
 x = 387
 y = 51
+cardtype = ""
 connections = [99, 101, 102, 106, 107]
 
 [[countries]]
@@ -908,6 +1004,7 @@ name = "Northern_Harbor_2"
 continent = 11
 x = 424
 y = 58
+cardtype = ""
 connections = [33, 100, 102]
 
 [[countries]]
@@ -916,6 +1013,7 @@ name = "Northern_Shore_Delta"
 continent = 11
 x = 453
 y = 42
+cardtype = ""
 connections = [100, 101, 103, 107]
 
 [[countries]]
@@ -924,6 +1022,7 @@ name = "Northern_East_Dock"
 continent = 11
 x = 491
 y = 23
+cardtype = ""
 connections = [62, 102, 107]
 
 [[countries]]
@@ -932,6 +1031,7 @@ name = "Northern_Outback_Alpha"
 continent = 11
 x = 246
 y = 21
+cardtype = ""
 connections = [95, 96, 98, 105]
 
 [[countries]]
@@ -940,6 +1040,7 @@ name = "Northern_Outback_Beta"
 continent = 11
 x = 292
 y = 23
+cardtype = ""
 connections = [94, 98, 99, 104]
 
 [[countries]]
@@ -948,6 +1049,7 @@ name = "Northern_Outback_Gamma"
 continent = 11
 x = 382
 y = 23
+cardtype = ""
 connections = [94, 99, 100, 107]
 
 [[countries]]
@@ -956,6 +1058,7 @@ name = "Northern_Outback_Delta"
 continent = 11
 x = 429
 y = 21
+cardtype = ""
 connections = [100, 102, 103, 106]
 
 [[countries]]
@@ -964,6 +1067,7 @@ name = "Southern_Core"
 continent = 12
 x = 328
 y = 402
+cardtype = ""
 connections = [113, 119, 120]
 
 [[countries]]
@@ -972,6 +1076,7 @@ name = "Southern_East_Dock"
 continent = 12
 x = 495
 y = 404
+cardtype = ""
 connections = [73, 110, 118]
 
 [[countries]]
@@ -980,6 +1085,7 @@ name = "Southern_Shore_Delta"
 continent = 12
 x = 456
 y = 383
+cardtype = ""
 connections = [109, 111, 112, 118]
 
 [[countries]]
@@ -988,6 +1094,7 @@ name = "Southern_Harbor_2"
 continent = 12
 x = 424
 y = 369
+cardtype = ""
 connections = [41, 110, 112]
 
 [[countries]]
@@ -996,6 +1103,7 @@ name = "Southern_Shore_Gamma"
 continent = 12
 x = 383
 y = 374
+cardtype = ""
 connections = [110, 111, 113, 118, 119]
 
 [[countries]]
@@ -1004,6 +1112,7 @@ name = "Southern_Thorn"
 continent = 12
 x = 330
 y = 372
+cardtype = ""
 connections = [108, 112, 114, 119, 120]
 
 [[countries]]
@@ -1012,6 +1121,7 @@ name = "Southern_Shore_Beta"
 continent = 12
 x = 279
 y = 374
+cardtype = ""
 connections = [113, 115, 116, 120, 121]
 
 [[countries]]
@@ -1020,6 +1130,7 @@ name = "Southern_Harbor_1"
 continent = 12
 x = 244
 y = 368
+cardtype = ""
 connections = [47, 114, 116]
 
 [[countries]]
@@ -1028,6 +1139,7 @@ name = "Southern_Shore_Alpha"
 continent = 12
 x = 212
 y = 382
+cardtype = ""
 connections = [114, 115, 117, 121]
 
 [[countries]]
@@ -1036,6 +1148,7 @@ name = "Southern_West_Dock"
 continent = 12
 x = 174
 y = 405
+cardtype = ""
 connections = [82, 116, 121]
 
 [[countries]]
@@ -1044,6 +1157,7 @@ name = "Southern_Outback_Delta"
 continent = 12
 x = 423
 y = 403
+cardtype = ""
 connections = [109, 110, 112, 119]
 
 [[countries]]
@@ -1052,6 +1166,7 @@ name = "Southern_Outback_Gamma"
 continent = 12
 x = 374
 y = 402
+cardtype = ""
 connections = [108, 112, 113, 118]
 
 [[countries]]
@@ -1060,6 +1175,7 @@ name = "Southern_Outback_Beta"
 continent = 12
 x = 282
 y = 402
+cardtype = ""
 connections = [108, 113, 114, 121]
 
 [[countries]]
@@ -1068,6 +1184,7 @@ name = "Southern_Outback_Alpha"
 continent = 12
 x = 237
 y = 404
+cardtype = ""
 connections = [114, 116, 117, 120]
 
 [[countries]]
@@ -1076,6 +1193,7 @@ name = "R1_Core"
 continent = 15
 x = 620
 y = 147
+cardtype = ""
 connections = [126, 127, 129, 131, 132]
 
 [[countries]]
@@ -1084,6 +1202,7 @@ name = "R1_Lands_End"
 continent = 15
 x = 649
 y = 52
+cardtype = ""
 connections = [124, 125]
 
 [[countries]]
@@ -1092,6 +1211,7 @@ name = "R1_Northern_Port"
 continent = 15
 x = 635
 y = 80
+cardtype = ""
 connections = [63, 123, 125, 126]
 
 [[countries]]
@@ -1100,6 +1220,7 @@ name = "R1_Thorn_I"
 continent = 15
 x = 649
 y = 110
+cardtype = ""
 connections = [123, 124, 126, 132]
 
 [[countries]]
@@ -1108,6 +1229,7 @@ name = "R1_Beach_Alpha"
 continent = 15
 x = 619
 y = 118
+cardtype = ""
 connections = [122, 124, 125, 127, 132]
 
 [[countries]]
@@ -1116,6 +1238,7 @@ name = "R1_Beach_Beta"
 continent = 15
 x = 581
 y = 155
+cardtype = ""
 connections = [122, 126, 128, 129]
 
 [[countries]]
@@ -1124,6 +1247,7 @@ name = "R1_Western_Port"
 continent = 15
 x = 552
 y = 180
+cardtype = ""
 connections = [36, 127, 129]
 
 [[countries]]
@@ -1132,6 +1256,7 @@ name = "R1_Beach_Gamma"
 continent = 15
 x = 581
 y = 186
+cardtype = ""
 connections = [122, 127, 128, 130, 131]
 
 [[countries]]
@@ -1140,6 +1265,7 @@ name = "R1_Southern_Port"
 continent = 15
 x = 615
 y = 190
+cardtype = ""
 connections = [129, 131, 141]
 
 [[countries]]
@@ -1148,6 +1274,7 @@ name = "R1_Beach_Delta"
 continent = 15
 x = 648
 y = 187
+cardtype = ""
 connections = [122, 129, 130, 132]
 
 [[countries]]
@@ -1156,6 +1283,7 @@ name = "R1_Thorn_II"
 continent = 15
 x = 653
 y = 154
+cardtype = ""
 connections = [122, 125, 126, 131]
 
 [[countries]]
@@ -1164,6 +1292,7 @@ name = "R2_Core"
 continent = 16
 x = 616
 y = 278
+cardtype = ""
 connections = [137, 138, 140, 142, 143]
 
 [[countries]]
@@ -1172,6 +1301,7 @@ name = "R2_Lands_End"
 continent = 16
 x = 649
 y = 380
+cardtype = ""
 connections = [135, 136]
 
 [[countries]]
@@ -1180,6 +1310,7 @@ name = "R2_Southern_Port"
 continent = 16
 x = 634
 y = 350
+cardtype = ""
 connections = [72, 134, 136, 137]
 
 [[countries]]
@@ -1188,6 +1319,7 @@ name = "R2_Thorn_I"
 continent = 16
 x = 647
 y = 317
+cardtype = ""
 connections = [134, 135, 137, 143]
 
 [[countries]]
@@ -1196,6 +1328,7 @@ name = "R2_Beach_Alpha"
 continent = 16
 x = 615
 y = 309
+cardtype = ""
 connections = [133, 135, 136, 138, 143]
 
 [[countries]]
@@ -1204,6 +1337,7 @@ name = "R2_Beach_Beta"
 continent = 16
 x = 579
 y = 274
+cardtype = ""
 connections = [133, 137, 139, 140]
 
 [[countries]]
@@ -1212,6 +1346,7 @@ name = "R2_Western_Port"
 continent = 16
 x = 555
 y = 248
+cardtype = ""
 connections = [38, 138, 140]
 
 [[countries]]
@@ -1220,6 +1355,7 @@ name = "R2_Beach_Gamma"
 continent = 16
 x = 584
 y = 237
+cardtype = ""
 connections = [133, 138, 139, 141, 142]
 
 [[countries]]
@@ -1228,6 +1364,7 @@ name = "R2_Northern_Port"
 continent = 16
 x = 615
 y = 231
+cardtype = ""
 connections = [130, 140, 142]
 
 [[countries]]
@@ -1236,6 +1373,7 @@ name = "R2_Beach_Delta"
 continent = 16
 x = 648
 y = 238
+cardtype = ""
 connections = [133, 140, 141, 143]
 
 [[countries]]
@@ -1244,6 +1382,7 @@ name = "R2_Thorn_II"
 continent = 16
 x = 652
 y = 273
+cardtype = ""
 connections = [133, 136, 137, 142]
 
 [[countries]]
@@ -1252,6 +1391,7 @@ name = "L2_Core"
 continent = 14
 x = 59
 y = 272
+cardtype = ""
 connections = [148, 149, 151, 153, 154]
 
 [[countries]]
@@ -1260,6 +1400,7 @@ name = "L2_Lands_End"
 continent = 14
 x = 27
 y = 383
+cardtype = ""
 connections = [146, 147]
 
 [[countries]]
@@ -1268,6 +1409,7 @@ name = "L2_Southern_Port"
 continent = 14
 x = 42
 y = 349
+cardtype = ""
 connections = [83, 145, 147, 148]
 
 [[countries]]
@@ -1276,6 +1418,7 @@ name = "L2_Thorn_I"
 continent = 14
 x = 27
 y = 311
+cardtype = ""
 connections = [145, 146, 148, 154]
 
 [[countries]]
@@ -1284,6 +1427,7 @@ name = "L2_Beach_Alpha"
 continent = 14
 x = 59
 y = 306
+cardtype = ""
 connections = [144, 146, 147, 149, 154]
 
 [[countries]]
@@ -1292,6 +1436,7 @@ name = "L2_Beach_Beta"
 continent = 14
 x = 92
 y = 274
+cardtype = ""
 connections = [144, 148, 150, 151]
 
 [[countries]]
@@ -1300,6 +1445,7 @@ name = "L2_Eastern_Port"
 continent = 14
 x = 113
 y = 247
+cardtype = ""
 connections = [50, 149, 151]
 
 [[countries]]
@@ -1308,6 +1454,7 @@ name = "L2_Beach_Gamma"
 continent = 14
 x = 87
 y = 237
+cardtype = ""
 connections = [144, 149, 150, 152, 153]
 
 [[countries]]
@@ -1316,6 +1463,7 @@ name = "L2_Norhern_Port"
 continent = 14
 x = 56
 y = 232
+cardtype = ""
 connections = [151, 153, 163]
 
 [[countries]]
@@ -1324,6 +1472,7 @@ name = "L2_Beach_Delta"
 continent = 14
 x = 26
 y = 241
+cardtype = ""
 connections = [144, 151, 152, 154]
 
 [[countries]]
@@ -1332,6 +1481,7 @@ name = "L2_Thorn_II"
 continent = 14
 x = 26
 y = 277
+cardtype = ""
 connections = [144, 147, 148, 153]
 
 [[countries]]
@@ -1340,6 +1490,7 @@ name = "L1_Core"
 continent = 13
 x = 60
 y = 153
+cardtype = ""
 connections = [159, 160, 162, 164, 165]
 
 [[countries]]
@@ -1348,6 +1499,7 @@ name = "L1_Lands_End"
 continent = 13
 x = 28
 y = 54
+cardtype = ""
 connections = [157, 158]
 
 [[countries]]
@@ -1356,6 +1508,7 @@ name = "L1_Northern_Port"
 continent = 13
 x = 42
 y = 85
+cardtype = ""
 connections = [92, 156, 158, 159]
 
 [[countries]]
@@ -1364,6 +1517,7 @@ name = "L1_Thorn_I"
 continent = 13
 x = 27
 y = 115
+cardtype = ""
 connections = [156, 157, 159, 165]
 
 [[countries]]
@@ -1372,6 +1526,7 @@ name = "L1_Beach_Alpha"
 continent = 13
 x = 57
 y = 122
+cardtype = ""
 connections = [155, 157, 158, 160, 165]
 
 [[countries]]
@@ -1380,6 +1535,7 @@ name = "L1_Beach_Beta"
 continent = 13
 x = 92
 y = 157
+cardtype = ""
 connections = [155, 159, 161, 162]
 
 [[countries]]
@@ -1388,6 +1544,7 @@ name = "L1_Eastern_Port"
 continent = 13
 x = 115
 y = 181
+cardtype = ""
 connections = [52, 160, 162]
 
 [[countries]]
@@ -1396,6 +1553,7 @@ name = "L1_Beach_Gamma"
 continent = 13
 x = 86
 y = 186
+cardtype = ""
 connections = [155, 160, 161, 163, 164]
 
 [[countries]]
@@ -1404,6 +1562,7 @@ name = "L1_Southern_Port"
 continent = 13
 x = 56
 y = 192
+cardtype = ""
 connections = [152, 162, 164]
 
 [[countries]]
@@ -1412,6 +1571,7 @@ name = "L1_Beach_Delta"
 continent = 13
 x = 27
 y = 185
+cardtype = ""
 connections = [155, 162, 163, 165]
 
 [[countries]]
@@ -1420,4 +1580,5 @@ name = "L1_Thorn_II"
 continent = 13
 x = 28
 y = 151
+cardtype = ""
 connections = [155, 158, 159, 164]

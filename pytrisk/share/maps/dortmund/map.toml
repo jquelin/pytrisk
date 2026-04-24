@@ -1,10 +1,6 @@
 [info]
 name = "unknown"
-
-[files]
-pic = "dortmund_pic.png"
-map = "dortmund_map.gif"
-crd = "dortmund.cards"
+nb_wildcards = 3
 
 [[continents]]
 id = 1
@@ -84,6 +80,7 @@ name = "Bodelschwingh"
 continent = 1
 x = 244
 y = 111
+cardtype = "Cavalry"
 connections = [11, 10, 3, 2]
 
 [[countries]]
@@ -92,6 +89,7 @@ name = "Westerfilde"
 continent = 1
 x = 254
 y = 138
+cardtype = "Infantry"
 connections = [3, 1, 38, 39, 40]
 
 [[countries]]
@@ -100,6 +98,7 @@ name = "Nette"
 continent = 1
 x = 285
 y = 109
+cardtype = "Cannon"
 connections = [11, 4, 2, 1, 41]
 
 [[countries]]
@@ -108,6 +107,7 @@ name = "Niedernette"
 continent = 1
 x = 307
 y = 94
+cardtype = "Cavalry"
 connections = [12, 5, 3, 42]
 
 [[countries]]
@@ -116,6 +116,7 @@ name = "Ellinghausen"
 continent = 1
 x = 325
 y = 74
+cardtype = "Infantry"
 connections = [12, 8, 7, 6, 4, 13, 42]
 
 [[countries]]
@@ -124,6 +125,7 @@ name = "Schwieringhausen"
 continent = 1
 x = 321
 y = 43
+cardtype = "Cannon"
 connections = [7, 5, 13]
 
 [[countries]]
@@ -132,6 +134,7 @@ name = "Groppenbruch"
 continent = 1
 x = 307
 y = 26
+cardtype = "Cavalry"
 connections = [8, 5, 6]
 
 [[countries]]
@@ -140,6 +143,7 @@ name = "Mengeder_Heide"
 continent = 1
 x = 263
 y = 43
+cardtype = "Infantry"
 connections = [12, 9, 5, 7]
 
 [[countries]]
@@ -148,6 +152,7 @@ name = "Brüninghausen/Knepper"
 continent = 1
 x = 227
 y = 53
+cardtype = "Cannon"
 connections = [12, 10, 8]
 
 [[countries]]
@@ -156,6 +161,7 @@ name = "Oestrich"
 continent = 1
 x = 238
 y = 80
+cardtype = "Cavalry"
 connections = [12, 11, 9, 1]
 
 [[countries]]
@@ -164,6 +170,7 @@ name = "Alte_Kolonie"
 continent = 1
 x = 270
 y = 82
+cardtype = "Infantry"
 connections = [12, 10, 1, 3]
 
 [[countries]]
@@ -172,6 +179,7 @@ name = "Mengede_Mitte"
 continent = 1
 x = 282
 y = 67
+cardtype = "Cannon"
 connections = [11, 10, 9, 8, 5, 4]
 
 [[countries]]
@@ -180,6 +188,7 @@ name = "Holthausen"
 continent = 2
 x = 356
 y = 66
+cardtype = "Cavalry"
 connections = [5, 6, 14, 15, 20, 18, 19]
 
 [[countries]]
@@ -188,6 +197,7 @@ name = "Brechten-Nord"
 continent = 2
 x = 402
 y = 38
+cardtype = "Infantry"
 connections = [13, 15, 16]
 
 [[countries]]
@@ -196,6 +206,7 @@ name = "Brechten-Süd"
 continent = 2
 x = 393
 y = 65
+cardtype = "Cannon"
 connections = [13, 14, 16, 17, 20]
 
 [[countries]]
@@ -204,6 +215,7 @@ name = "Altenderne"
 continent = 2
 x = 446
 y = 59
+cardtype = "Cavalry"
 connections = [14, 15, 17, 22, 23]
 
 [[countries]]
@@ -212,6 +224,7 @@ name = "Kemminghausen"
 continent = 2
 x = 424
 y = 79
+cardtype = "Infantry"
 connections = [15, 16, 21, 22, 20]
 
 [[countries]]
@@ -220,6 +233,7 @@ name = "Lindenhorst"
 continent = 2
 x = 360
 y = 123
+cardtype = "Cannon"
 connections = [13, 19, 20, 42, 48, 49]
 
 [[countries]]
@@ -228,6 +242,7 @@ name = "Niedereving"
 continent = 2
 x = 382
 y = 110
+cardtype = "Cavalry"
 connections = [18, 20, 13]
 
 [[countries]]
@@ -236,6 +251,7 @@ name = "Eving"
 continent = 2
 x = 398
 y = 91
+cardtype = "Infantry"
 connections = [13, 15, 17, 18, 19, 21, 50]
 
 [[countries]]
@@ -244,6 +260,7 @@ name = "Obereving"
 continent = 2
 x = 414
 y = 112
+cardtype = "Cannon"
 connections = [17, 20, 22, 51]
 
 [[countries]]
@@ -252,6 +269,7 @@ name = "Franz-Zimmer-Siedlung"
 continent = 2
 x = 446
 y = 99
+cardtype = "Cavalry"
 connections = [16, 17, 21, 27, 51]
 
 [[countries]]
@@ -260,6 +278,7 @@ name = "Derne"
 continent = 3
 x = 468
 y = 65
+cardtype = "Infantry"
 connections = [16, 27, 24]
 
 [[countries]]
@@ -268,6 +287,7 @@ name = "Hostede"
 continent = 3
 x = 488
 y = 68
+cardtype = "Cannon"
 connections = [23, 27, 25, 28, 30]
 
 [[countries]]
@@ -276,6 +296,7 @@ name = "Lanstrop-Neu"
 continent = 3
 x = 515
 y = 43
+cardtype = "Cavalry"
 connections = [24, 26, 28]
 
 [[countries]]
@@ -284,6 +305,7 @@ name = "Lanstrop-Alt"
 continent = 3
 x = 548
 y = 59
+cardtype = "Infantry"
 connections = [25, 28, 33, 34]
 
 [[countries]]
@@ -292,6 +314,7 @@ name = "Kirchderne"
 continent = 3
 x = 464
 y = 94
+cardtype = "Cannon"
 connections = [23, 24, 22, 30, 29, 51]
 
 [[countries]]
@@ -300,6 +323,7 @@ name = "Grevel"
 continent = 3
 x = 514
 y = 79
+cardtype = "Cavalry"
 connections = [24, 25, 26, 32, 33]
 
 [[countries]]
@@ -308,6 +332,7 @@ name = "Alt-Scharnhorst"
 continent = 3
 x = 468
 y = 136
+cardtype = "Infantry"
 connections = [30, 31, 27, 51, 57, 58]
 
 [[countries]]
@@ -316,6 +341,7 @@ name = "MSA-Siedlung"
 continent = 3
 x = 480
 y = 109
+cardtype = "Cannon"
 connections = [24, 27, 29, 31, 32]
 
 [[countries]]
@@ -324,6 +350,7 @@ name = "Westholz"
 continent = 3
 x = 495
 y = 128
+cardtype = "Cavalry"
 connections = [29, 30, 32, 58]
 
 [[countries]]
@@ -332,6 +359,7 @@ name = "Scharnhorst-Ost"
 continent = 3
 x = 513
 y = 106
+cardtype = "Infantry"
 connections = [28, 30, 31, 35, 33, 58, 59]
 
 [[countries]]
@@ -340,6 +368,7 @@ name = "Kurl-Nord"
 continent = 3
 x = 551
 y = 90
+cardtype = "Cannon"
 connections = [26, 28, 32, 35, 36, 34]
 
 [[countries]]
@@ -348,6 +377,7 @@ name = "Husen-Nord"
 continent = 3
 x = 581
 y = 76
+cardtype = "Cavalry"
 connections = [26, 33, 36]
 
 [[countries]]
@@ -356,6 +386,7 @@ name = "Kurl-Süd"
 continent = 3
 x = 553
 y = 119
+cardtype = "Infantry"
 connections = [32, 33, 36, 59, 60]
 
 [[countries]]
@@ -364,6 +395,7 @@ name = "Husen-Süd"
 continent = 3
 x = 581
 y = 96
+cardtype = "Cannon"
 connections = [33, 34, 35, 61]
 
 [[countries]]
@@ -372,6 +404,7 @@ name = "Siedlung_Siepmannstraße"
 continent = 4
 x = 239
 y = 178
+cardtype = "Cavalry"
 connections = [43, 38, 162]
 
 [[countries]]
@@ -380,6 +413,7 @@ name = "Kirchlinde_Alt"
 continent = 4
 x = 253
 y = 166
+cardtype = "Infantry"
 connections = [37, 2, 39, 43]
 
 [[countries]]
@@ -388,6 +422,7 @@ name = "Jungferntal"
 continent = 4
 x = 269
 y = 164
+cardtype = "Cannon"
 connections = [38, 44, 40, 45, 2]
 
 [[countries]]
@@ -396,6 +431,7 @@ name = "Erpinghofsiedlung"
 continent = 4
 x = 285
 y = 154
+cardtype = "Cavalry"
 connections = [39, 2, 41, 45]
 
 [[countries]]
@@ -404,6 +440,7 @@ name = "Mailoh"
 continent = 4
 x = 307
 y = 137
+cardtype = "Infantry"
 connections = [40, 3, 42, 46, 48, 52]
 
 [[countries]]
@@ -412,6 +449,7 @@ name = "Deusen"
 continent = 4
 x = 331
 y = 123
+cardtype = "Cannon"
 connections = [41, 4, 18, 5, 48]
 
 [[countries]]
@@ -420,6 +458,7 @@ name = "Hangeney"
 continent = 4
 x = 252
 y = 193
+cardtype = "Cavalry"
 connections = [37, 38, 44, 162, 167]
 
 [[countries]]
@@ -428,6 +467,7 @@ name = "Rahm"
 continent = 4
 x = 282
 y = 183
+cardtype = "Infantry"
 connections = [39, 43, 45, 167, 168]
 
 [[countries]]
@@ -436,6 +476,7 @@ name = "Wischlingen"
 continent = 4
 x = 302
 y = 178
+cardtype = "Cannon"
 connections = [39, 40, 44, 46, 47, 77]
 
 [[countries]]
@@ -444,6 +485,7 @@ name = "Huckarde"
 continent = 4
 x = 315
 y = 163
+cardtype = "Cavalry"
 connections = [41, 45, 47]
 
 [[countries]]
@@ -452,6 +494,7 @@ name = "Insterburgsiedlung"
 continent = 4
 x = 325
 y = 172
+cardtype = "Infantry"
 connections = [45, 46, 52, 77, 78]
 
 [[countries]]
@@ -460,6 +503,7 @@ name = "Hafen"
 continent = 5
 x = 360
 y = 154
+cardtype = "Cannon"
 connections = [18, 42, 41, 49, 52, 53]
 
 [[countries]]
@@ -468,6 +512,7 @@ name = "Nordmarkt_West"
 continent = 5
 x = 382
 y = 153
+cardtype = "Cavalry"
 connections = [48, 18, 50, 55, 54]
 
 [[countries]]
@@ -476,6 +521,7 @@ name = "Nordmarkt_Ost"
 continent = 5
 x = 403
 y = 150
+cardtype = "Infantry"
 connections = [49, 20, 51, 55, 54]
 
 [[countries]]
@@ -484,6 +530,7 @@ name = "Westfalenhütte"
 continent = 5
 x = 435
 y = 145
+cardtype = "Cannon"
 connections = [50, 21, 22, 27, 29, 56, 57, 110]
 
 [[countries]]
@@ -492,6 +539,7 @@ name = "Hafen_Süd"
 continent = 5
 x = 356
 y = 183
+cardtype = "Cavalry"
 connections = [48, 41, 47, 53, 78]
 
 [[countries]]
@@ -500,6 +548,7 @@ name = "Hafen_Südost"
 continent = 5
 x = 139
 y = 92
+cardtype = "Infantry"
 connections = [48, 52, 54, 78, 81]
 
 [[countries]]
@@ -508,6 +557,7 @@ name = "Nordmarkt_Süd"
 continent = 5
 x = 171
 y = 89
+cardtype = "Cannon"
 connections = [53, 50, 49, 55, 81, 82]
 
 [[countries]]
@@ -516,6 +566,7 @@ name = "Nordmarkt_Südost"
 continent = 5
 x = 197
 y = 88
+cardtype = "Cavalry"
 connections = [49, 50, 54, 56, 82]
 
 [[countries]]
@@ -524,6 +575,7 @@ name = "Borsigplatz"
 continent = 5
 x = 415
 y = 176
+cardtype = "Infantry"
 connections = [51, 55, 109]
 
 [[countries]]
@@ -532,6 +584,7 @@ name = "Wambel_Dorf"
 continent = 6
 x = 466
 y = 165
+cardtype = "Cannon"
 connections = [51, 29, 58, 62, 63, 110]
 
 [[countries]]
@@ -540,6 +593,7 @@ name = "Westheck"
 continent = 6
 x = 491
 y = 153
+cardtype = "Cavalry"
 connections = [57, 63, 59, 32, 31, 29]
 
 [[countries]]
@@ -548,6 +602,7 @@ name = "Brackeler_Feld"
 continent = 6
 x = 522
 y = 140
+cardtype = "Infantry"
 connections = [58, 35, 32, 65, 60]
 
 [[countries]]
@@ -556,6 +611,7 @@ name = "Asselburg"
 continent = 6
 x = 566
 y = 141
+cardtype = "Cannon"
 connections = [59, 35, 61, 69, 67]
 
 [[countries]]
@@ -564,6 +620,7 @@ name = "Wickeder_Feld"
 continent = 6
 x = 606
 y = 123
+cardtype = "Cavalry"
 connections = [60, 36, 69, 70]
 
 [[countries]]
@@ -572,6 +629,7 @@ name = "Breierspfad"
 continent = 6
 x = 469
 y = 184
+cardtype = "Infantry"
 connections = [57, 64, 71, 110, 115]
 
 [[countries]]
@@ -580,6 +638,7 @@ name = "Reichshof"
 continent = 6
 x = 490
 y = 169
+cardtype = "Cannon"
 connections = [57, 58, 64, 65]
 
 [[countries]]
@@ -588,6 +647,7 @@ name = "Knappschaftskrankenhaus"
 continent = 6
 x = 505
 y = 177
+cardtype = "Cavalry"
 connections = [62, 63, 72, 71, 66]
 
 [[countries]]
@@ -596,6 +656,7 @@ name = "Brackel_Dorf"
 continent = 6
 x = 516
 y = 165
+cardtype = "Infantry"
 connections = [59, 63, 66, 67]
 
 [[countries]]
@@ -604,6 +665,7 @@ name = "Brackel_Hellweg"
 continent = 6
 x = 535
 y = 169
+cardtype = "Cannon"
 connections = [64, 65, 68, 73, 72]
 
 [[countries]]
@@ -612,6 +674,7 @@ name = "Asseln_Dorf"
 continent = 6
 x = 548
 y = 157
+cardtype = "Cavalry"
 connections = [60, 65, 69, 68]
 
 [[countries]]
@@ -620,6 +683,7 @@ name = "Asseln_Hellweg"
 continent = 6
 x = 568
 y = 162
+cardtype = "Infantry"
 connections = [66, 67, 69, 75, 74]
 
 [[countries]]
@@ -628,6 +692,7 @@ name = "Wickede_Dorf"
 continent = 6
 x = 595
 y = 148
+cardtype = "Cannon"
 connections = [60, 61, 67, 68, 70, 76, 75]
 
 [[countries]]
@@ -636,6 +701,7 @@ name = "Dollersweg"
 continent = 6
 x = 618
 y = 139
+cardtype = "Cavalry"
 connections = [61, 69, 76]
 
 [[countries]]
@@ -644,6 +710,7 @@ name = "Pferderennbahn"
 continent = 6
 x = 484
 y = 199
+cardtype = "Infantry"
 connections = [62, 64, 72, 92, 115]
 
 [[countries]]
@@ -652,6 +719,7 @@ name = "Hauptfriedhof"
 continent = 6
 x = 508
 y = 193
+cardtype = "Cannon"
 connections = [64, 66, 71, 73, 93]
 
 [[countries]]
@@ -660,6 +728,7 @@ name = "Funkturmsiedlung"
 continent = 6
 x = 534
 y = 186
+cardtype = "Cavalry"
 connections = [66, 72, 74, 94]
 
 [[countries]]
@@ -668,6 +737,7 @@ name = "Neuasseln"
 continent = 6
 x = 549
 y = 197
+cardtype = "Infantry"
 connections = [68, 73, 75, 94, 95]
 
 [[countries]]
@@ -676,6 +746,7 @@ name = "Kolonie_Holstein"
 continent = 6
 x = 573
 y = 185
+cardtype = "Cannon"
 connections = [68, 69, 74, 76, 95]
 
 [[countries]]
@@ -684,6 +755,7 @@ name = "Flughafen"
 continent = 6
 x = 612
 y = 169
+cardtype = "Cavalry"
 connections = [69, 70, 75]
 
 [[countries]]
@@ -692,6 +764,7 @@ name = "Hallerey"
 continent = 7
 x = 311
 y = 194
+cardtype = "Infantry"
 connections = [47, 45, 87, 88, 78, 168]
 
 [[countries]]
@@ -700,6 +773,7 @@ name = "Union"
 continent = 7
 x = 345
 y = 194
+cardtype = "Cannon"
 connections = [77, 47, 88, 89, 79, 80, 52, 53, 81]
 
 [[countries]]
@@ -708,6 +782,7 @@ name = "Dorstfelder_Brücke"
 continent = 7
 x = 358
 y = 202
+cardtype = "Cavalry"
 connections = [78, 89, 80]
 
 [[countries]]
@@ -716,6 +791,7 @@ name = "Westpark"
 continent = 7
 x = 133
 y = 143
+cardtype = "Infantry"
 connections = [78, 79, 91, 81, 83]
 
 [[countries]]
@@ -724,6 +800,7 @@ name = "Cityring_Nordwest"
 continent = 7
 x = 150
 y = 113
+cardtype = "Cannon"
 connections = [78, 80, 54, 53, 85, 82, 86]
 
 [[countries]]
@@ -732,6 +809,7 @@ name = "Cityring_Nordost"
 continent = 7
 x = 194
 y = 112
+cardtype = "Cavalry"
 connections = [81, 86, 54, 55, 84, 108]
 
 [[countries]]
@@ -740,6 +818,7 @@ name = "Cityring_Südwest"
 continent = 7
 x = 156
 y = 151
+cardtype = "Infantry"
 connections = [80, 85, 86, 84, 91, 111]
 
 [[countries]]
@@ -748,6 +827,7 @@ name = "Cityring_Südost"
 continent = 7
 x = 197
 y = 143
+cardtype = "Cannon"
 connections = [82, 83, 86, 108, 112]
 
 [[countries]]
@@ -756,6 +836,7 @@ name = "City_West"
 continent = 7
 x = 163
 y = 128
+cardtype = "Cavalry"
 connections = [81, 83, 86]
 
 [[countries]]
@@ -764,6 +845,7 @@ name = "City_Ost"
 continent = 7
 x = 182
 y = 130
+cardtype = "Infantry"
 connections = [81, 82, 83, 84, 85]
 
 [[countries]]
@@ -772,6 +854,7 @@ name = "Oberdorstfeld"
 continent = 7
 x = 300
 y = 221
+cardtype = "Cannon"
 connections = [77, 88, 132, 168, 172]
 
 [[countries]]
@@ -780,6 +863,7 @@ name = "Dorstfeld"
 continent = 7
 x = 330
 y = 220
+cardtype = "Cavalry"
 connections = [77, 78, 87, 89, 132, 133]
 
 [[countries]]
@@ -788,6 +872,7 @@ name = "Tremonia"
 continent = 7
 x = 350
 y = 219
+cardtype = "Infantry"
 connections = [78, 79, 88, 90]
 
 [[countries]]
@@ -796,6 +881,7 @@ name = "Südwestfriedhof"
 continent = 7
 x = 362
 y = 228
+cardtype = "Cannon"
 connections = [89, 91]
 
 [[countries]]
@@ -804,6 +890,7 @@ name = "Westfalenhalle"
 continent = 7
 x = 374
 y = 243
+cardtype = "Cavalry"
 connections = [80, 83, 90, 111, 133, 135, 136]
 
 [[countries]]
@@ -812,6 +899,7 @@ name = "Schüren_Neu"
 continent = 8
 x = 487
 y = 222
+cardtype = "Infantry"
 connections = [71, 93, 96, 97, 118]
 
 [[countries]]
@@ -820,6 +908,7 @@ name = "Marsbruchstraße"
 continent = 8
 x = 515
 y = 216
+cardtype = "Cannon"
 connections = [92, 72, 94, 97]
 
 [[countries]]
@@ -828,6 +917,7 @@ name = "Aplerbecker_Straße"
 continent = 8
 x = 539
 y = 219
+cardtype = "Cavalry"
 connections = [93, 73, 74, 95, 98, 97]
 
 [[countries]]
@@ -836,6 +926,7 @@ name = "Sölde_Nord"
 continent = 8
 x = 568
 y = 222
+cardtype = "Infantry"
 connections = [94, 74, 75, 98, 107]
 
 [[countries]]
@@ -844,6 +935,7 @@ name = "Schüren_Alt"
 continent = 8
 x = 491
 y = 246
+cardtype = "Cannon"
 connections = [92, 97, 101, 100, 99, 119, 117]
 
 [[countries]]
@@ -852,6 +944,7 @@ name = "Aplerbecker_Markt"
 continent = 8
 x = 520
 y = 242
+cardtype = "Cavalry"
 connections = [92, 93, 94, 96, 101, 98]
 
 [[countries]]
@@ -860,6 +953,7 @@ name = "Vieselerhofstraße"
 continent = 8
 x = 545
 y = 239
+cardtype = "Infantry"
 connections = [94, 95, 97, 102, 107]
 
 [[countries]]
@@ -868,6 +962,7 @@ name = "Berghofen_Dorf"
 continent = 8
 x = 482
 y = 280
+cardtype = "Cannon"
 connections = [96, 105, 100, 104, 126, 124, 122, 119]
 
 [[countries]]
@@ -876,6 +971,7 @@ name = "Ostkirchstraße"
 continent = 8
 x = 502
 y = 265
+cardtype = "Cavalry"
 connections = [96, 99, 101, 105]
 
 [[countries]]
@@ -884,6 +980,7 @@ name = "Aplerbecker_Bahnhof_Süd"
 continent = 8
 x = 523
 y = 259
+cardtype = "Infantry"
 connections = [96, 97, 100, 102, 105]
 
 [[countries]]
@@ -892,6 +989,7 @@ name = "Schwerter_Straße"
 continent = 8
 x = 546
 y = 265
+cardtype = "Cannon"
 connections = [98, 101, 107, 103, 106, 105]
 
 [[countries]]
@@ -900,6 +998,7 @@ name = "Sölderholz"
 continent = 8
 x = 574
 y = 262
+cardtype = "Cavalry"
 connections = [102, 107, 106]
 
 [[countries]]
@@ -908,6 +1007,7 @@ name = "Berghofer_Mark"
 continent = 8
 x = 496
 y = 302
+cardtype = "Infantry"
 connections = [99, 105, 131, 128]
 
 [[countries]]
@@ -916,6 +1016,7 @@ name = "Aplerbecker_Mark"
 continent = 8
 x = 527
 y = 283
+cardtype = "Cannon"
 connections = [99, 100, 101, 102, 104]
 
 [[countries]]
@@ -924,6 +1025,7 @@ name = "Lichtendorf"
 continent = 8
 x = 571
 y = 289
+cardtype = "Cavalry"
 connections = [102, 103]
 
 [[countries]]
@@ -932,6 +1034,7 @@ name = "Sölde_Süd"
 continent = 8
 x = 564
 y = 242
+cardtype = "Infantry"
 connections = [95, 98, 102, 103]
 
 [[countries]]
@@ -940,6 +1043,7 @@ name = "Kaiserbrunnen"
 continent = 9
 x = 412
 y = 199
+cardtype = "Cannon"
 connections = [109, 113, 82, 84]
 
 [[countries]]
@@ -948,6 +1052,7 @@ name = "Funkenburg"
 continent = 9
 x = 429
 y = 190
+cardtype = "Cavalry"
 connections = [108, 56, 110, 115]
 
 [[countries]]
@@ -956,6 +1061,7 @@ name = "Körne"
 continent = 9
 x = 447
 y = 186
+cardtype = "Infantry"
 connections = [109, 113, 115, 62, 57, 51]
 
 [[countries]]
@@ -964,6 +1070,7 @@ name = "Ruhralle_West"
 continent = 9
 x = 388
 y = 233
+cardtype = "Cannon"
 connections = [91, 112, 83, 136]
 
 [[countries]]
@@ -972,6 +1079,7 @@ name = "Ruhralle_Ost"
 continent = 9
 x = 405
 y = 236
+cardtype = "Cavalry"
 connections = [111, 114, 113, 84, 117, 116]
 
 [[countries]]
@@ -980,6 +1088,7 @@ name = "Westfalendamm_Nord"
 continent = 9
 x = 420
 y = 216
+cardtype = "Infantry"
 connections = [108, 110, 112, 115, 114]
 
 [[countries]]
@@ -988,6 +1097,7 @@ name = "Westfalendamm_Süd"
 continent = 9
 x = 425
 y = 233
+cardtype = "Cannon"
 connections = [112, 113, 118, 117]
 
 [[countries]]
@@ -996,6 +1106,7 @@ name = "Gartenstadt_Nord"
 continent = 9
 x = 458
 y = 209
+cardtype = "Cavalry"
 connections = [109, 110, 113, 71, 62, 118]
 
 [[countries]]
@@ -1004,6 +1115,7 @@ name = "Phönix-West"
 continent = 10
 x = 414
 y = 259
+cardtype = "Infantry"
 connections = [121, 120, 119, 117, 112, 142, 143]
 
 [[countries]]
@@ -1012,6 +1124,7 @@ name = "Remberg"
 continent = 10
 x = 442
 y = 238
+cardtype = "Cannon"
 connections = [119, 118, 96, 114, 112, 116]
 
 [[countries]]
@@ -1020,6 +1133,7 @@ name = "Gartenstadt-Süd"
 continent = 10
 x = 459
 y = 224
+cardtype = "Cavalry"
 connections = [115, 92, 117, 114]
 
 [[countries]]
@@ -1028,6 +1142,7 @@ name = "Hörde"
 continent = 10
 x = 458
 y = 252
+cardtype = "Infantry"
 connections = [122, 121, 117, 116, 96, 99]
 
 [[countries]]
@@ -1036,6 +1151,7 @@ name = "Pferdebachtal"
 continent = 10
 x = 421
 y = 278
+cardtype = "Cannon"
 connections = [123, 121, 116, 143]
 
 [[countries]]
@@ -1044,6 +1160,7 @@ name = "Brücherhof"
 continent = 10
 x = 437
 y = 270
+cardtype = "Cavalry"
 connections = [124, 122, 116, 120, 119, 123]
 
 [[countries]]
@@ -1052,6 +1169,7 @@ name = "Clarenberg"
 continent = 10
 x = 458
 y = 266
+cardtype = "Infantry"
 connections = [124, 119, 121, 99]
 
 [[countries]]
@@ -1060,6 +1178,7 @@ name = "Wellinghofen"
 continent = 10
 x = 431
 y = 300
+cardtype = "Cannon"
 connections = [126, 125, 124, 120, 121, 152]
 
 [[countries]]
@@ -1068,6 +1187,7 @@ name = "Benninghofen"
 continent = 10
 x = 451
 y = 284
+cardtype = "Cavalry"
 connections = [126, 122, 121, 99, 123]
 
 [[countries]]
@@ -1076,6 +1196,7 @@ name = "Durchstraße"
 continent = 10
 x = 432
 y = 316
+cardtype = "Infantry"
 connections = [128, 127, 126, 123, 152]
 
 [[countries]]
@@ -1084,6 +1205,7 @@ name = "Loh"
 continent = 10
 x = 462
 y = 299
+cardtype = "Cannon"
 connections = [128, 125, 124, 99, 123]
 
 [[countries]]
@@ -1092,6 +1214,7 @@ name = "Wichlinghofen"
 continent = 10
 x = 434
 y = 341
+cardtype = "Cavalry"
 connections = [129, 128, 131, 125, 160]
 
 [[countries]]
@@ -1100,6 +1223,7 @@ name = "Höchsten"
 continent = 10
 x = 463
 y = 326
+cardtype = "Infantry"
 connections = [131, 127, 125, 126, 104]
 
 [[countries]]
@@ -1108,6 +1232,7 @@ name = "Syburg"
 continent = 10
 x = 417
 y = 398
+cardtype = "Cannon"
 connections = [130, 127, 131, 160]
 
 [[countries]]
@@ -1116,6 +1241,7 @@ name = "Buchholz"
 continent = 10
 x = 452
 y = 382
+cardtype = "Cavalry"
 connections = [131, 129]
 
 [[countries]]
@@ -1124,6 +1250,7 @@ name = "Holzen"
 continent = 10
 x = 480
 y = 347
+cardtype = "Infantry"
 connections = [130, 128, 104, 129, 127]
 
 [[countries]]
@@ -1132,6 +1259,7 @@ name = "Universität"
 continent = 11
 x = 324
 y = 252
+cardtype = "Cannon"
 connections = [87, 88, 133, 134, 137, 172]
 
 [[countries]]
@@ -1140,6 +1268,7 @@ name = "Schönau"
 continent = 11
 x = 350
 y = 247
+cardtype = "Cavalry"
 connections = [132, 88, 135, 91]
 
 [[countries]]
@@ -1148,6 +1277,7 @@ name = "Ostenbergstraße"
 continent = 11
 x = 235
 y = 339
+cardtype = "Infantry"
 connections = [132, 135, 138]
 
 [[countries]]
@@ -1156,6 +1286,7 @@ name = "Krückenweg"
 continent = 11
 x = 356
 y = 264
+cardtype = "Cannon"
 connections = [133, 134, 140, 139, 136, 91]
 
 [[countries]]
@@ -1164,6 +1295,7 @@ name = "Brünninghausen"
 continent = 11
 x = 375
 y = 268
+cardtype = "Cavalry"
 connections = [135, 91, 111, 142, 141, 140]
 
 [[countries]]
@@ -1172,6 +1304,7 @@ name = "Eichlinghofen"
 continent = 11
 x = 304
 y = 279
+cardtype = "Infantry"
 connections = [132, 144, 147, 138, 148, 172]
 
 [[countries]]
@@ -1180,6 +1313,7 @@ name = "Baroper_Markt"
 continent = 11
 x = 232
 y = 362
+cardtype = "Cannon"
 connections = [134, 137, 140, 139, 144]
 
 [[countries]]
@@ -1188,6 +1322,7 @@ name = "Zechenplatz"
 continent = 11
 x = 252
 y = 356
+cardtype = "Cavalry"
 connections = [135, 138, 140]
 
 [[countries]]
@@ -1196,6 +1331,7 @@ name = "Hombruch"
 continent = 11
 x = 270
 y = 374
+cardtype = "Infantry"
 connections = [135, 136, 138, 139, 146, 145, 144, 141]
 
 [[countries]]
@@ -1204,6 +1340,7 @@ name = "Renninghausen"
 continent = 11
 x = 382
 y = 289
+cardtype = "Cannon"
 connections = [136, 140, 142, 152, 146, 151]
 
 [[countries]]
@@ -1212,6 +1349,7 @@ name = "Rombergpark"
 continent = 11
 x = 395
 y = 280
+cardtype = "Cavalry"
 connections = [136, 141, 143, 116, 152]
 
 [[countries]]
@@ -1220,6 +1358,7 @@ name = "Schulzentrum_Hacheney"
 continent = 11
 x = 413
 y = 290
+cardtype = "Infantry"
 connections = [142, 116, 120, 152]
 
 [[countries]]
@@ -1228,6 +1367,7 @@ name = "Menglinghausen"
 continent = 11
 x = 327
 y = 298
+cardtype = "Cavalry"
 connections = [137, 138, 140, 147, 148, 145]
 
 [[countries]]
@@ -1236,6 +1376,7 @@ name = "Deutsch-Luxemburger-Straße"
 continent = 11
 x = 355
 y = 299
+cardtype = "Infantry"
 connections = [140, 144, 149, 150, 146]
 
 [[countries]]
@@ -1244,6 +1385,7 @@ name = "Siedlung_Rotkehlchenweg"
 continent = 11
 x = 300
 y = 406
+cardtype = "Cannon"
 connections = [140, 141, 145, 151]
 
 [[countries]]
@@ -1252,6 +1394,7 @@ name = "Salingen"
 continent = 11
 x = 289
 y = 301
+cardtype = "Cavalry"
 connections = [137, 144, 148, 172]
 
 [[countries]]
@@ -1260,6 +1403,7 @@ name = "Persebeck"
 continent = 11
 x = 311
 y = 319
+cardtype = "Infantry"
 connections = [144, 147, 153, 149, 137]
 
 [[countries]]
@@ -1268,6 +1412,7 @@ name = "Großholthausen"
 continent = 11
 x = 339
 y = 329
+cardtype = "Cannon"
 connections = [145, 148, 153, 157, 154, 158, 150]
 
 [[countries]]
@@ -1276,6 +1421,7 @@ name = "Kirchhörde-Nord"
 continent = 11
 x = 365
 y = 317
+cardtype = "Cavalry"
 connections = [145, 149, 151, 155, 154]
 
 [[countries]]
@@ -1284,6 +1430,7 @@ name = "Kleinholthausen"
 continent = 11
 x = 378
 y = 310
+cardtype = "Infantry"
 connections = [141, 146, 150, 156, 155]
 
 [[countries]]
@@ -1292,6 +1439,7 @@ name = "Lücklemberg"
 continent = 11
 x = 404
 y = 315
+cardtype = "Cannon"
 connections = [141, 142, 143, 125, 160, 156, 123]
 
 [[countries]]
@@ -1300,6 +1448,7 @@ name = "Kruckel"
 continent = 11
 x = 324
 y = 335
+cardtype = "Cavalry"
 connections = [148, 149, 157]
 
 [[countries]]
@@ -1308,6 +1457,7 @@ name = "Lötringhausen-Nord"
 continent = 11
 x = 356
 y = 334
+cardtype = "Infantry"
 connections = [149, 150, 158, 155]
 
 [[countries]]
@@ -1316,6 +1466,7 @@ name = "Kirchhörde-West"
 continent = 11
 x = 375
 y = 339
+cardtype = "Cannon"
 connections = [150, 151, 154, 156, 158, 159, 160]
 
 [[countries]]
@@ -1324,6 +1475,7 @@ name = "Kirchhörde-Ost"
 continent = 11
 x = 386
 y = 329
+cardtype = "Cavalry"
 connections = [151, 152, 155, 160]
 
 [[countries]]
@@ -1332,6 +1484,7 @@ name = "Schnee"
 continent = 11
 x = 341
 y = 365
+cardtype = "Infantry"
 connections = [149, 153, 158, 159]
 
 [[countries]]
@@ -1340,6 +1493,7 @@ name = "Löttringhausen-Süd"
 continent = 11
 x = 363
 y = 353
+cardtype = "Cannon"
 connections = [149, 154, 155, 157]
 
 [[countries]]
@@ -1348,6 +1502,7 @@ name = "Schanze"
 continent = 11
 x = 378
 y = 370
+cardtype = "Cavalry"
 connections = [155, 157, 160]
 
 [[countries]]
@@ -1356,6 +1511,7 @@ name = "Bittermark"
 continent = 11
 x = 405
 y = 353
+cardtype = "Infantry"
 connections = [152, 155, 156, 159, 127, 129]
 
 [[countries]]
@@ -1364,6 +1520,7 @@ name = "Bövinghausen"
 continent = 12
 x = 183
 y = 191
+cardtype = "Infantry"
 connections = [162, 164, 163]
 
 [[countries]]
@@ -1372,6 +1529,7 @@ name = "Westrich"
 continent = 12
 x = 224
 y = 199
+cardtype = "Cannon"
 connections = [161, 37, 43, 167, 165]
 
 [[countries]]
@@ -1380,6 +1538,7 @@ name = "Holte-Kreta"
 continent = 12
 x = 167
 y = 213
+cardtype = "Cavalry"
 connections = [161, 164]
 
 [[countries]]
@@ -1388,6 +1547,7 @@ name = "Deipenbeck"
 continent = 12
 x = 188
 y = 217
+cardtype = "Infantry"
 connections = [161, 163, 169, 165]
 
 [[countries]]
@@ -1396,6 +1556,7 @@ name = "Lütgendortmund-Mitte"
 continent = 12
 x = 205
 y = 227
+cardtype = "Cannon"
 connections = [162, 164, 169, 166, 167]
 
 [[countries]]
@@ -1404,6 +1565,7 @@ name = "Lütgendortmund-Ost"
 continent = 12
 x = 230
 y = 238
+cardtype = "Cavalry"
 connections = [165, 170, 171, 172, 168, 167]
 
 [[countries]]
@@ -1412,6 +1574,7 @@ name = "Germania"
 continent = 12
 x = 246
 y = 221
+cardtype = "Infantry"
 connections = [162, 165, 166, 43, 44, 168]
 
 [[countries]]
@@ -1420,6 +1583,7 @@ name = "Marten"
 continent = 12
 x = 269
 y = 217
+cardtype = "Cannon"
 connections = [166, 167, 172, 87, 44, 77]
 
 [[countries]]
@@ -1428,6 +1592,7 @@ name = "Lütgendortmund-West"
 continent = 12
 x = 191
 y = 248
+cardtype = "Cavalry"
 connections = [164, 165]
 
 [[countries]]
@@ -1436,6 +1601,7 @@ name = "Somborn"
 continent = 12
 x = 220
 y = 259
+cardtype = "Infantry"
 connections = [166, 171]
 
 [[countries]]
@@ -1444,6 +1610,7 @@ name = "Kley"
 continent = 12
 x = 246
 y = 261
+cardtype = "Cannon"
 connections = [166, 170, 172]
 
 [[countries]]
@@ -1452,4 +1619,5 @@ name = "Oespel"
 continent = 12
 x = 275
 y = 258
+cardtype = "Cavalry"
 connections = [166, 168, 171, 147, 137, 132, 87]
