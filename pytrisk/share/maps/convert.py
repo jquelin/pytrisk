@@ -144,11 +144,12 @@ def parse_map(content: str) -> ParseResult:
 
             # borders
             elif section == "borders":
-                if len(parts) < 2:
-                    raise ValueError("borders: not enough fields")
-
                 cid = int(parts[0])
-                connections = list(map(int, parts[1:]))
+
+                if len(parts) < 2:
+                    connections = []
+                else:
+                    connections = list(map(int, parts[1:]))
 
                 # check if country exists
                 if cid not in countries:
