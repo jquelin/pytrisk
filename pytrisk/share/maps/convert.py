@@ -263,8 +263,13 @@ def convert(mapfile: Path, force: bool = False):
         return
 
     # parse the map file
-    with mapfile.open("r", encoding="utf-8") as f:
-        content = f.read()
+    raw = mapfile.read_bytes()
+    for enc in ("utf-8", "cp1252", "latin-1"):
+        try:
+            content = raw.decode(enc)
+            break
+        except UnicodeDecodeError:
+            continue
     parsed = parse_map(content)
     parse_errors = parsed.errors
     validation_errors = validate(parsed)
