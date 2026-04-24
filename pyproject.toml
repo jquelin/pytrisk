@@ -33,3 +33,8 @@ pytrisk = "pytrisk.__main__:run"
 "Homepage" = "https://github.com/jquelin/pytrisk"
 "Bug Tracker" = "https://github.com/jquelin/pytrisk/issues"
 
+[dependency-groups]
+dev = [
+    "tomlkit>=0.12.5",
+]
+
