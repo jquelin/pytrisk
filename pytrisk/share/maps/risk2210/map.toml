@@ -1,0 +1,514 @@
+[info]
+name = "Risk 2210 Map"
+
+[files]
+pic = "risk2210_pic.jpg"
+map = "risk2210_map.gif"
+crd = "risk2210.cards"
+prv = "risk2210.jpg"
+
+[[continents]]
+id = 1
+name = "North-America"
+bonus = 5
+color = "yellow"
+
+[[continents]]
+id = 2
+name = "South-America"
+bonus = 2
+color = "red"
+
+[[continents]]
+id = 3
+name = "Europe"
+bonus = 5
+color = "blue"
+
+[[continents]]
+id = 4
+name = "Africa"
+bonus = 3
+color = "orange"
+
+[[continents]]
+id = 5
+name = "Asia"
+bonus = 7
+color = "green"
+
+[[continents]]
+id = 6
+name = "Australia"
+bonus = 2
+color = "magenta"
+
+[[continents]]
+id = 7
+name = "Asia_Pacific"
+bonus = 1
+color = "yellow"
+
+[[continents]]
+id = 8
+name = "US_Pacific"
+bonus = 2
+color = "blue"
+
+[[continents]]
+id = 9
+name = "North_Atlantic"
+bonus = 2
+color = "red"
+
+[[continents]]
+id = 10
+name = "South_Atlantic"
+bonus = 1
+color = "green"
+
+[[continents]]
+id = 11
+name = "Indian"
+bonus = 2
+color = "orange"
+
+[[countries]]
+id = 1
+name = "Northwestern_Oil_Emirate"
+continent = 1
+x = 47
+y = 19
+connections = [2, 4, 38]
+
+[[countries]]
+id = 2
+name = "Nunavut"
+continent = 1
+x = 105
+y = 23
+connections = [1, 4, 5, 3]
+
+[[countries]]
+id = 3
+name = "Exiled_States_of_America"
+continent = 1
+x = 222
+y = 23
+connections = [2, 6, 14]
+
+[[countries]]
+id = 4
+name = "Alberta"
+continent = 1
+x = 85
+y = 57
+connections = [1, 2, 5, 7]
+
+[[countries]]
+id = 5
+name = "Canada"
+continent = 1
+x = 125
+y = 67
+connections = [2, 4, 6, 7, 8]
+
+[[countries]]
+id = 6
+name = "Republique_du_Quebec"
+continent = 1
+x = 175
+y = 75
+connections = [3, 5, 8]
+
+[[countries]]
+id = 7
+name = "Continental_Biospheres"
+continent = 1
+x = 80
+y = 100
+connections = [4, 5, 8, 9, 45]
+
+[[countries]]
+id = 8
+name = "American_Republic"
+continent = 1
+x = 117
+y = 121
+connections = [5, 6, 7, 9, 49]
+
+[[countries]]
+id = 9
+name = "Mexico"
+continent = 1
+x = 81
+y = 161
+connections = [7, 8, 10]
+
+[[countries]]
+id = 10
+name = "Nuevo_Timoto"
+continent = 2
+x = 115
+y = 216
+connections = [9, 11, 12, 47]
+
+[[countries]]
+id = 11
+name = "Andean_Nations"
+continent = 2
+x = 94
+y = 257
+connections = [10, 12, 13]
+
+[[countries]]
+id = 12
+name = "Amazon_Desert"
+continent = 2
+x = 145
+y = 265
+connections = [10, 11, 13, 21, 50, 51]
+
+[[countries]]
+id = 13
+name = "Argentina"
+continent = 2
+x = 90
+y = 325
+connections = [11, 12]
+
+[[countries]]
+id = 14
+name = "Iceland_GRC"
+continent = 3
+x = 268
+y = 47
+connections = [3, 17, 15]
+
+[[countries]]
+id = 15
+name = "Jotenheim"
+continent = 3
+x = 328
+y = 28
+connections = [16, 18, 14, 17]
+
+[[countries]]
+id = 16
+name = "Ukrayina"
+continent = 3
+x = 412
+y = 70
+connections = [15, 28, 30, 31, 18, 20]
+
+[[countries]]
+id = 17
+name = "New_Avalon"
+continent = 3
+x = 272
+y = 84
+connections = [14, 18, 19, 15, 48]
+
+[[countries]]
+id = 18
+name = "Warsaw_Republic"
+continent = 3
+x = 333
+y = 89
+connections = [15, 16, 17, 19, 20]
+
+[[countries]]
+id = 19
+name = "Andorra"
+continent = 3
+x = 270
+y = 132
+connections = [17, 18, 20, 21]
+
+[[countries]]
+id = 20
+name = "Imperial_Balkania"
+continent = 3
+x = 340
+y = 116
+connections = [16, 18, 19, 21, 22, 31]
+
+[[countries]]
+id = 21
+name = "Saharan_Empire"
+continent = 4
+x = 280
+y = 211
+connections = [12, 19, 20, 22, 23, 24, 52]
+
+[[countries]]
+id = 22
+name = "Egypt"
+continent = 4
+x = 350
+y = 180
+connections = [20, 21, 24, 31]
+
+[[countries]]
+id = 23
+name = "Zaire_Military_Zone"
+continent = 4
+x = 349
+y = 274
+connections = [21, 24, 25]
+
+[[countries]]
+id = 24
+name = "Ministry_of_Djibouti"
+continent = 4
+x = 395
+y = 245
+connections = [21, 22, 23, 25, 26]
+
+[[countries]]
+id = 25
+name = "Lesotho"
+continent = 4
+x = 357
+y = 347
+connections = [23, 24, 26]
+
+[[countries]]
+id = 26
+name = "Madagascar"
+continent = 4
+x = 417
+y = 332
+connections = [24, 25, 54]
+
+[[countries]]
+id = 27
+name = "Siberia"
+continent = 5
+x = 520
+y = 32
+connections = [28, 29, 34, 35, 36]
+
+[[countries]]
+id = 28
+name = "Enclave_of_the_Bear"
+continent = 5
+x = 475
+y = 65
+connections = [16, 27, 29, 30]
+
+[[countries]]
+id = 29
+name = "Hong_Kong"
+continent = 5
+x = 555
+y = 145
+connections = [27, 28, 30, 32, 33, 36, 44]
+
+[[countries]]
+id = 30
+name = "Afghanistan"
+continent = 5
+x = 466
+y = 117
+connections = [16, 28, 29, 31, 32]
+
+[[countries]]
+id = 31
+name = "Middle_East"
+continent = 5
+x = 427
+y = 179
+connections = [16, 22, 30, 32, 20]
+
+[[countries]]
+id = 32
+name = "United_Indiastan"
+continent = 5
+x = 511
+y = 189
+connections = [29, 30, 31, 33, 53]
+
+[[countries]]
+id = 33
+name = "Angkhor_Wat"
+continent = 5
+x = 577
+y = 207
+connections = [29, 32, 39]
+
+[[countries]]
+id = 34
+name = "Sakha"
+continent = 5
+x = 580
+y = 23
+connections = [27, 35, 38]
+
+[[countries]]
+id = 35
+name = "Alden"
+continent = 5
+x = 570
+y = 70
+connections = [27, 34, 36, 38]
+
+[[countries]]
+id = 36
+name = "Khan_Industrial_State"
+continent = 5
+x = 577
+y = 107
+connections = [29, 35, 37, 38, 27]
+
+[[countries]]
+id = 37
+name = "Japan"
+continent = 5
+x = 650
+y = 114
+connections = [36, 38, 44]
+
+[[countries]]
+id = 38
+name = "Pevek"
+continent = 5
+x = 630
+y = 26
+connections = [1, 34, 35, 36, 37]
+
+[[countries]]
+id = 39
+name = "Java_Cartel"
+continent = 6
+x = 605
+y = 270
+connections = [33, 41, 40, 43]
+
+[[countries]]
+id = 40
+name = "New_Guinea"
+continent = 6
+x = 660
+y = 284
+connections = [39, 41, 42]
+
+[[countries]]
+id = 41
+name = "Aboriginal_League"
+continent = 6
+x = 595
+y = 365
+connections = [39, 40, 42, 55]
+
+[[countries]]
+id = 42
+name = "Australian_Testing_Ground"
+continent = 6
+x = 650
+y = 352
+connections = [40, 41]
+
+[[countries]]
+id = 43
+name = "Sung_Tzu"
+continent = 7
+x = 652
+y = 228
+connections = [39, 44]
+
+[[countries]]
+id = 44
+name = "Neo_Tokyo"
+continent = 7
+x = 648
+y = 172
+connections = [29, 37, 43, 47]
+
+[[countries]]
+id = 45
+name = "Poseidon"
+continent = 8
+x = 31
+y = 88
+connections = [7, 46]
+
+[[countries]]
+id = 46
+name = "Hawaiian_Preserve"
+continent = 8
+x = 33
+y = 145
+connections = [45, 47]
+
+[[countries]]
+id = 47
+name = "New_Atlantis"
+continent = 8
+x = 49
+y = 198
+connections = [10, 44, 46]
+
+[[countries]]
+id = 48
+name = "Western_Ireland"
+continent = 9
+x = 217
+y = 133
+connections = [17, 49]
+
+[[countries]]
+id = 49
+name = "New_York"
+continent = 9
+x = 163
+y = 159
+connections = [8, 48, 50]
+
+[[countries]]
+id = 50
+name = "Nova_Brasilia"
+continent = 9
+x = 187
+y = 212
+connections = [12, 49]
+
+[[countries]]
+id = 51
+name = "Neo_Paulo"
+continent = 10
+x = 206
+y = 307
+connections = [12, 52]
+
+[[countries]]
+id = 52
+name = "The_Ivory_Reef"
+continent = 10
+x = 269
+y = 293
+connections = [21, 51]
+
+[[countries]]
+id = 53
+name = "South_Ceylon"
+continent = 11
+x = 483
+y = 268
+connections = [32, 54]
+
+[[countries]]
+id = 54
+name = "Microcorp"
+continent = 11
+x = 473
+y = 327
+connections = [26, 53, 55]
+
+[[countries]]
+id = 55
+name = "Akara"
+continent = 11
+x = 527
+y = 359
+connections = [41, 54]

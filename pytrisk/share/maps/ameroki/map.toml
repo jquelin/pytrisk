@@ -1,0 +1,380 @@
+[info]
+name = "Ameroki Map"
+
+[files]
+pic = "ameroki_pic.png"
+map = "ameroki_map.gif"
+crd = "ameroki.cards"
+prv = "ameroki.jpg"
+
+[[continents]]
+id = 1
+name = "azio"
+bonus = 5
+color = "#9aff80"
+
+[[continents]]
+id = 2
+name = "ameroki"
+bonus = 10
+color = "yellow"
+
+[[continents]]
+id = 3
+name = "utropa"
+bonus = 10
+color = "#a980ff"
+
+[[continents]]
+id = 4
+name = "amerpoll"
+bonus = 5
+color = "red"
+
+[[continents]]
+id = 5
+name = "afrori"
+bonus = 5
+color = "#ffd780"
+
+[[continents]]
+id = 6
+name = "ulstrailia"
+bonus = 5
+color = "magenta"
+
+[[countries]]
+id = 1
+name = "siberia"
+continent = 1
+x = 329
+y = 152
+connections = [20, 32, 2]
+
+[[countries]]
+id = 2
+name = "worrick"
+continent = 1
+x = 308
+y = 199
+connections = [1, 10, 35, 3]
+
+[[countries]]
+id = 3
+name = "yazteck"
+continent = 1
+x = 284
+y = 260
+connections = [2, 4, 6, 35]
+
+[[countries]]
+id = 4
+name = "kongrolo"
+continent = 1
+x = 278
+y = 295
+connections = [3, 35, 5, 6]
+
+[[countries]]
+id = 5
+name = "china"
+continent = 1
+x = 311
+y = 350
+connections = [4, 6, 42, 7, 9]
+
+[[countries]]
+id = 6
+name = "middle_east"
+continent = 1
+x = 339
+y = 299
+connections = [3, 5, 9, 4]
+
+[[countries]]
+id = 7
+name = "sluci"
+continent = 1
+x = 358
+y = 376
+connections = [5, 9, 8]
+
+[[countries]]
+id = 8
+name = "afganistan"
+continent = 1
+x = 400
+y = 350
+connections = [9, 7]
+
+[[countries]]
+id = 9
+name = "kancheria"
+continent = 1
+x = 388
+y = 313
+connections = [5, 8, 7, 6, 10]
+
+[[countries]]
+id = 10
+name = "india"
+continent = 1
+x = 405
+y = 229
+connections = [11, 2, 9]
+
+[[countries]]
+id = 11
+name = "japan"
+continent = 1
+x = 462
+y = 236
+connections = [17, 10]
+
+[[countries]]
+id = 12
+name = "new_guinia"
+continent = 6
+x = 513
+y = 314
+connections = [15, 13]
+
+[[countries]]
+id = 13
+name = "western_ulstrailia"
+continent = 6
+x = 525
+y = 340
+connections = [15, 14, 12]
+
+[[countries]]
+id = 14
+name = "eastern_ulstarilia"
+continent = 6
+x = 567
+y = 355
+connections = [15, 13]
+
+[[countries]]
+id = 15
+name = "jacuncail"
+continent = 6
+x = 561
+y = 300
+connections = [17, 12, 13, 14]
+
+[[countries]]
+id = 16
+name = "tungu"
+continent = 5
+x = 537
+y = 178
+connections = [18, 17, 19]
+
+[[countries]]
+id = 17
+name = "south_afrori"
+continent = 5
+x = 538
+y = 210
+connections = [16, 15, 11]
+
+[[countries]]
+id = 18
+name = "north_afrori"
+continent = 5
+x = 486
+y = 131
+connections = [20, 19, 16]
+
+[[countries]]
+id = 19
+name = "east_afrori"
+continent = 5
+x = 540
+y = 144
+connections = [18, 21, 16]
+
+[[countries]]
+id = 20
+name = "egypt"
+continent = 5
+x = 443
+y = 100
+connections = [23, 1, 18]
+
+[[countries]]
+id = 21
+name = "maganar"
+continent = 5
+x = 578
+y = 110
+connections = [19, 27]
+
+[[countries]]
+id = 22
+name = "pero"
+continent = 4
+x = 374
+y = 25
+connections = [24, 23]
+
+[[countries]]
+id = 23
+name = "heaurt"
+continent = 4
+x = 428
+y = 32
+connections = [22, 24, 20]
+
+[[countries]]
+id = 24
+name = "vagnagale"
+continent = 4
+x = 327
+y = 40
+connections = [25, 22, 23]
+
+[[countries]]
+id = 25
+name = "argentina"
+continent = 4
+x = 277
+y = 36
+connections = [30, 24]
+
+[[countries]]
+id = 26
+name = "ireland"
+continent = 3
+x = 128
+y = 127
+connections = [27, 31]
+
+[[countries]]
+id = 27
+name = "ihesia"
+continent = 3
+x = 130
+y = 96
+connections = [26, 28, 21, 31]
+
+[[countries]]
+id = 28
+name = "western_utropa"
+continent = 3
+x = 181
+y = 112
+connections = [27, 31, 29, 32, 30]
+
+[[countries]]
+id = 29
+name = "souther_utropa"
+continent = 3
+x = 235
+y = 133
+connections = [28, 32, 30]
+
+[[countries]]
+id = 30
+name = "northern_utropa"
+continent = 3
+x = 253
+y = 82
+connections = [28, 25, 29]
+
+[[countries]]
+id = 31
+name = "senadlavin"
+continent = 3
+x = 177
+y = 155
+connections = [28, 34, 32, 26, 27]
+
+[[countries]]
+id = 32
+name = "great_britain"
+continent = 3
+x = 244
+y = 168
+connections = [28, 1, 34, 29, 31]
+
+[[countries]]
+id = 33
+name = "teramar"
+continent = 2
+x = 103
+y = 249
+connections = [34, 36]
+
+[[countries]]
+id = 34
+name = "western_united_states"
+continent = 2
+x = 164
+y = 235
+connections = [38, 35, 33, 36, 37, 31, 32]
+
+[[countries]]
+id = 35
+name = "czeck"
+continent = 2
+x = 222
+y = 257
+connections = [2, 4, 38, 34, 3]
+
+[[countries]]
+id = 36
+name = "alberta"
+continent = 2
+x = 122
+y = 295
+connections = [34, 37, 41, 33, 39]
+
+[[countries]]
+id = 37
+name = "central_ameroki"
+continent = 2
+x = 182
+y = 329
+connections = [40, 38, 34, 36, 39]
+
+[[countries]]
+id = 38
+name = "albania"
+continent = 2
+x = 205
+y = 305
+connections = [40, 35, 34, 37]
+
+[[countries]]
+id = 39
+name = "duiestie"
+continent = 2
+x = 164
+y = 355
+connections = [40, 37, 41, 36]
+
+[[countries]]
+id = 40
+name = "Quebeck"
+continent = 2
+x = 203
+y = 366
+connections = [42, 39, 37, 38]
+
+[[countries]]
+id = 41
+name = "vinenlant"
+continent = 2
+x = 128
+y = 373
+connections = [36, 39]
+
+[[countries]]
+id = 42
+name = "heal"
+continent = 1
+x = 271
+y = 397
+connections = [5, 40]

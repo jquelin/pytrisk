@@ -1,0 +1,644 @@
+[info]
+name = "UK Map"
+
+[files]
+pic = "uk_pic.png"
+map = "uk_map.gif"
+crd = "nomission.cards"
+prv = "uk.jpg"
+
+[[continents]]
+id = 1
+name = "North-Scotland"
+bonus = 2
+color = "blue"
+
+[[continents]]
+id = 2
+name = "South-Scotland"
+bonus = 4
+color = "green"
+
+[[continents]]
+id = 3
+name = "North-England"
+bonus = 4
+color = "red"
+
+[[continents]]
+id = 4
+name = "Wales"
+bonus = 3
+color = "cyan"
+
+[[continents]]
+id = 5
+name = "South-West-England"
+bonus = 1
+color = "yellow"
+
+[[continents]]
+id = 6
+name = "South-England"
+bonus = 6
+color = "gray"
+
+[[countries]]
+id = 1
+name = "Ross-shire"
+continent = 1
+x = 640
+y = 60
+connections = [2, 5]
+
+[[countries]]
+id = 2
+name = "Sutherland"
+continent = 1
+x = 644
+y = 175
+connections = [1, 3, 5]
+
+[[countries]]
+id = 3
+name = "Caithness"
+continent = 1
+x = 657
+y = 230
+connections = [2, 4]
+
+[[countries]]
+id = 4
+name = "Shetland"
+continent = 1
+x = 618
+y = 408
+connections = [3, 8, 9, 33]
+
+[[countries]]
+id = 5
+name = "Ross-shire-and-Chromartyshire"
+continent = 1
+x = 603
+y = 148
+connections = [1, 2, 10]
+
+[[countries]]
+id = 6
+name = "Morayshire"
+continent = 1
+x = 584
+y = 202
+connections = [7, 10]
+
+[[countries]]
+id = 7
+name = "Banffshire"
+continent = 1
+x = 583
+y = 238
+connections = [6, 8, 10]
+
+[[countries]]
+id = 8
+name = "Aberdeenshire"
+continent = 1
+x = 556
+y = 246
+connections = [7, 10, 11, 12, 13, 4, 9]
+
+[[countries]]
+id = 9
+name = "Orkney"
+continent = 1
+x = 512
+y = 332
+connections = [8, 12, 4]
+
+[[countries]]
+id = 10
+name = "Inverness-shire"
+continent = 1
+x = 555
+y = 154
+connections = [5, 6, 7, 8, 11, 14]
+
+[[countries]]
+id = 11
+name = "Perthshire"
+continent = 1
+x = 506
+y = 173
+connections = [8, 10, 12, 14, 15, 16]
+
+[[countries]]
+id = 12
+name = "Angus"
+continent = 1
+x = 512
+y = 222
+connections = [8, 11, 13, 16, 9]
+
+[[countries]]
+id = 13
+name = "Kincardine-shire"
+continent = 1
+x = 522
+y = 251
+connections = [8, 12]
+
+[[countries]]
+id = 14
+name = "Argyllshire"
+continent = 2
+x = 498
+y = 105
+connections = [10, 11, 15]
+
+[[countries]]
+id = 15
+name = "Stirlingshire"
+continent = 2
+x = 472
+y = 142
+connections = [11, 14, 16, 19, 20]
+
+[[countries]]
+id = 16
+name = "Fife"
+continent = 2
+x = 472
+y = 205
+connections = [11, 12, 15]
+
+[[countries]]
+id = 17
+name = "Bute-shire"
+continent = 2
+x = 428
+y = 103
+connections = [18, 24]
+
+[[countries]]
+id = 18
+name = "Ayrshire"
+continent = 2
+x = 423
+y = 136
+connections = [19, 20, 24, 25, 26, 17]
+
+[[countries]]
+id = 19
+name = "Renfrew-shire"
+continent = 2
+x = 453
+y = 137
+connections = [15, 18, 20]
+
+[[countries]]
+id = 20
+name = "Lanarkshire"
+continent = 2
+x = 433
+y = 166
+connections = [15, 18, 19, 21, 23, 26]
+
+[[countries]]
+id = 21
+name = "Midlothian"
+continent = 2
+x = 446
+y = 196
+connections = [20, 22, 23, 27]
+
+[[countries]]
+id = 22
+name = "Berwickshire"
+continent = 2
+x = 442
+y = 227
+connections = [21, 27, 29]
+
+[[countries]]
+id = 23
+name = "Peebles-shire"
+continent = 2
+x = 421
+y = 193
+connections = [20, 21, 26, 27]
+
+[[countries]]
+id = 24
+name = "Wigtown-shire"
+continent = 2
+x = 375
+y = 111
+connections = [17, 18, 25]
+
+[[countries]]
+id = 25
+name = "Kirkcudbright-shire"
+continent = 2
+x = 384
+y = 144
+connections = [18, 24, 26]
+
+[[countries]]
+id = 26
+name = "Dumfriesshire"
+continent = 2
+x = 395
+y = 179
+connections = [18, 20, 23, 25, 27, 28]
+
+[[countries]]
+id = 27
+name = "Roxburghshire"
+continent = 2
+x = 408
+y = 216
+connections = [21, 22, 23, 26, 28, 29]
+
+[[countries]]
+id = 28
+name = "Cumberland"
+continent = 3
+x = 359
+y = 193
+connections = [26, 27, 29, 30, 31]
+
+[[countries]]
+id = 29
+name = "Northumberland"
+continent = 3
+x = 387
+y = 241
+connections = [27, 28, 31, 22]
+
+[[countries]]
+id = 30
+name = "Westmorland"
+continent = 3
+x = 329
+y = 202
+connections = [28, 31, 32, 33]
+
+[[countries]]
+id = 31
+name = "Durham"
+continent = 3
+x = 347
+y = 254
+connections = [28, 29, 30, 33]
+
+[[countries]]
+id = 32
+name = "Lancashire"
+continent = 3
+x = 268
+y = 200
+connections = [30, 33, 34]
+
+[[countries]]
+id = 33
+name = "Yorkshire"
+continent = 3
+x = 291
+y = 259
+connections = [4, 30, 31, 32, 34, 37, 38, 39]
+
+[[countries]]
+id = 34
+name = "Cheshire"
+continent = 3
+x = 233
+y = 199
+connections = [32, 33, 35, 36, 37, 42]
+
+[[countries]]
+id = 35
+name = "Shropshire"
+continent = 3
+x = 183
+y = 183
+connections = [34, 36, 42, 44, 51, 56, 57]
+
+[[countries]]
+id = 36
+name = "Staffordshire"
+continent = 3
+x = 199
+y = 216
+connections = [34, 35, 37, 57, 58]
+
+[[countries]]
+id = 37
+name = "Derbyshire"
+continent = 3
+x = 222
+y = 241
+connections = [33, 34, 36, 38, 59]
+
+[[countries]]
+id = 38
+name = "Nottinghamshire"
+continent = 3
+x = 217
+y = 267
+connections = [33, 37, 39, 59]
+
+[[countries]]
+id = 39
+name = "Lincolnshire"
+continent = 3
+x = 215
+y = 305
+connections = [33, 38, 59, 62, 64, 65]
+
+[[countries]]
+id = 40
+name = "Anglese"
+continent = 4
+x = 260
+y = 105
+connections = [41]
+
+[[countries]]
+id = 41
+name = "Caernarfonshire"
+continent = 4
+x = 224
+y = 96
+connections = [40, 42, 43]
+
+[[countries]]
+id = 42
+name = "Denbighshire"
+continent = 4
+x = 237
+y = 154
+connections = [34, 35, 41, 43, 44]
+
+[[countries]]
+id = 43
+name = "Merioneth"
+continent = 4
+x = 210
+y = 124
+connections = [41, 42, 44, 45]
+
+[[countries]]
+id = 44
+name = "Montgomery-shire"
+continent = 4
+x = 191
+y = 145
+connections = [35, 42, 43, 45, 51]
+
+[[countries]]
+id = 45
+name = "Cardiganshire"
+continent = 4
+x = 169
+y = 107
+connections = [44, 46, 47, 48, 51, 43]
+
+[[countries]]
+id = 46
+name = "Pembroke-shire"
+continent = 4
+x = 151
+y = 58
+connections = [45, 47]
+
+[[countries]]
+id = 47
+name = "Carmarthenshire"
+continent = 4
+x = 141
+y = 101
+connections = [45, 46, 48, 49]
+
+[[countries]]
+id = 48
+name = "Brecknockshire"
+continent = 4
+x = 140
+y = 138
+connections = [45, 47, 49, 50, 51, 56]
+
+[[countries]]
+id = 49
+name = "Glamorgan"
+continent = 4
+x = 109
+y = 128
+connections = [47, 48, 50]
+
+[[countries]]
+id = 50
+name = "Monmouth-shire"
+continent = 4
+x = 116
+y = 157
+connections = [48, 49, 56, 60, 54]
+
+[[countries]]
+id = 51
+name = "Radnor-shire"
+continent = 4
+x = 165
+y = 148
+connections = [35, 44, 45, 48, 56]
+
+[[countries]]
+id = 52
+name = "Cornwall"
+continent = 5
+x = 34
+y = 50
+connections = [53]
+
+[[countries]]
+id = 53
+name = "Devon"
+continent = 5
+x = 51
+y = 103
+connections = [52, 54, 55]
+
+[[countries]]
+id = 54
+name = "Somerset"
+continent = 5
+x = 73
+y = 152
+connections = [53, 55, 60, 66, 50]
+
+[[countries]]
+id = 55
+name = "Dorset"
+continent = 5
+x = 39
+y = 178
+connections = [53, 54, 66, 72]
+
+[[countries]]
+id = 56
+name = "Herefordshire"
+continent = 6
+x = 147
+y = 171
+connections = [35, 48, 50, 51, 57, 60]
+
+[[countries]]
+id = 57
+name = "Worcester-shire"
+continent = 6
+x = 151
+y = 202
+connections = [35, 36, 56, 58, 60]
+
+[[countries]]
+id = 58
+name = "Warwickshire"
+continent = 6
+x = 157
+y = 234
+connections = [36, 57, 59, 60, 61, 62]
+
+[[countries]]
+id = 59
+name = "Leicestershire"
+continent = 6
+x = 175
+y = 256
+connections = [37, 38, 39, 58, 62]
+
+[[countries]]
+id = 60
+name = "Gloucestershire"
+continent = 6
+x = 121
+y = 202
+connections = [56, 57, 58, 61, 66, 50, 54]
+
+[[countries]]
+id = 61
+name = "Oxfordshire"
+continent = 6
+x = 117
+y = 237
+connections = [58, 60, 62, 67, 68]
+
+[[countries]]
+id = 62
+name = "Northamptonshire"
+continent = 6
+x = 149
+y = 265
+connections = [39, 58, 59, 61, 63, 64, 68]
+
+[[countries]]
+id = 63
+name = "Bedford-shire"
+continent = 6
+x = 141
+y = 289
+connections = [62, 64, 68, 69]
+
+[[countries]]
+id = 64
+name = "Cambridgeshire"
+continent = 6
+x = 147
+y = 317
+connections = [39, 63, 65, 69, 70, 71, 62]
+
+[[countries]]
+id = 65
+name = "Norfolk"
+continent = 6
+x = 168
+y = 355
+connections = [39, 64, 70]
+
+[[countries]]
+id = 66
+name = "Wiltshire"
+continent = 6
+x = 79
+y = 204
+connections = [54, 55, 60, 67, 72]
+
+[[countries]]
+id = 67
+name = "Berkshire"
+continent = 6
+x = 89
+y = 235
+connections = [61, 66, 68, 72, 73]
+
+[[countries]]
+id = 68
+name = "Buckinghamshire"
+continent = 6
+x = 118
+y = 262
+connections = [61, 62, 63, 67, 69, 73]
+
+[[countries]]
+id = 69
+name = "Hertfordshire"
+continent = 6
+x = 96
+y = 288
+connections = [63, 64, 68, 71, 73]
+
+[[countries]]
+id = 70
+name = "Suffolk"
+continent = 6
+x = 132
+y = 354
+connections = [64, 65, 71]
+
+[[countries]]
+id = 71
+name = "Essex"
+continent = 6
+x = 100
+y = 327
+connections = [64, 69, 70, 75]
+
+[[countries]]
+id = 72
+name = "Hampshire"
+continent = 6
+x = 56
+y = 235
+connections = [55, 66, 67, 73, 74]
+
+[[countries]]
+id = 73
+name = "Surrey"
+continent = 6
+x = 66
+y = 280
+connections = [67, 68, 69, 72, 74, 75]
+
+[[countries]]
+id = 74
+name = "Sussex"
+continent = 6
+x = 38
+y = 288
+connections = [72, 73, 75]
+
+[[countries]]
+id = 75
+name = "Kent"
+continent = 6
+x = 57
+y = 333
+connections = [73, 74, 71]

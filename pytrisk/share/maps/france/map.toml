@@ -1,0 +1,907 @@
+[info]
+name = "unknown"
+
+[files]
+pic = "france.jpg"
+map = "france.gif"
+crd = "france.cards"
+
+[[continents]]
+id = 1
+name = "Bretagne"
+bonus = 3
+color = "col1"
+
+[[continents]]
+id = 2
+name = "Basse-Normandie"
+bonus = 2
+color = "col2"
+
+[[continents]]
+id = 3
+name = "Haute-Normandie"
+bonus = 2
+color = "col3"
+
+[[continents]]
+id = 4
+name = "Picardie"
+bonus = 2
+color = "col4"
+
+[[continents]]
+id = 5
+name = "Nord-Pas-de-Calais"
+bonus = 5
+color = "col5"
+
+[[continents]]
+id = 6
+name = "Champagne-Ardenne"
+bonus = 2
+color = "col6"
+
+[[continents]]
+id = 7
+name = "Lorraine"
+bonus = 3
+color = "col7"
+
+[[continents]]
+id = 8
+name = "Alsace"
+bonus = 2
+color = "col8"
+
+[[continents]]
+id = 9
+name = "Franche-Comte"
+bonus = 2
+color = "col9"
+
+[[continents]]
+id = 10
+name = "Rhone-Alpes"
+bonus = 6
+color = "col10"
+
+[[continents]]
+id = 11
+name = "Provence-Alpes-Cote-d-Azur"
+bonus = 5
+color = "col11"
+
+[[continents]]
+id = 12
+name = "Corse"
+bonus = 1
+color = "col12"
+
+[[continents]]
+id = 13
+name = "Languedoc-Roussillon"
+bonus = 3
+color = "col13"
+
+[[continents]]
+id = 14
+name = "Midi-Pyrenees"
+bonus = 3
+color = "col14"
+
+[[continents]]
+id = 15
+name = "Aquitaine"
+bonus = 3
+color = "col15"
+
+[[continents]]
+id = 16
+name = "Poitou-Charente"
+bonus = 2
+color = "col16"
+
+[[continents]]
+id = 17
+name = "Pays-de-la-Loire"
+bonus = 4
+color = "col17"
+
+[[continents]]
+id = 18
+name = "Centre"
+bonus = 3
+color = "col18"
+
+[[continents]]
+id = 19
+name = "Ile-de-France"
+bonus = 11
+color = "col19"
+
+[[continents]]
+id = 20
+name = "Bourgogne"
+bonus = 2
+color = "col20"
+
+[[continents]]
+id = 21
+name = "Auvergne"
+bonus = 2
+color = "col21"
+
+[[continents]]
+id = 22
+name = "Limousin"
+bonus = 1
+color = "col22"
+
+[[countries]]
+id = 1
+name = "Ain"
+continent = 10
+x = 343
+y = 230
+connections = [39, 74, 73, 38, 69, 71]
+
+[[countries]]
+id = 2
+name = "Aisne"
+continent = 4
+x = 290
+y = 77
+connections = [59, 8, 51, 77, 60, 80]
+
+[[countries]]
+id = 3
+name = "Allier"
+continent = 21
+x = 284
+y = 216
+connections = [18, 58, 71, 63, 23, 42]
+
+[[countries]]
+id = 4
+name = "Alpes-de-Haute-Provence"
+continent = 11
+x = 381
+y = 323
+connections = [5, 6, 83, 13, 84, 26]
+
+[[countries]]
+id = 5
+name = "Hautes-Alpes"
+continent = 11
+x = 380
+y = 301
+connections = [38, 73, 4, 26]
+
+[[countries]]
+id = 6
+name = "Alpes-Maritimes"
+continent = 11
+x = 414
+y = 333
+connections = [4, 83, 96]
+
+[[countries]]
+id = 7
+name = "Ardeche"
+continent = 10
+x = 324
+y = 298
+connections = [43, 42, 26, 84, 30, 48]
+
+[[countries]]
+id = 8
+name = "Ardennes"
+continent = 6
+x = 321
+y = 71
+connections = [2, 55, 51]
+
+[[countries]]
+id = 9
+name = "Ariege"
+continent = 14
+x = 226
+y = 378
+connections = [31, 11, 66]
+
+[[countries]]
+id = 10
+name = "Aube"
+continent = 6
+x = 305
+y = 136
+connections = [51, 52, 21, 89, 77]
+
+[[countries]]
+id = 11
+name = "Aude"
+continent = 13
+x = 254
+y = 369
+connections = [81, 34, 66, 9, 31]
+
+[[countries]]
+id = 12
+name = "Aveyron"
+continent = 14
+x = 261
+y = 317
+connections = [15, 48, 30, 34, 81, 82, 46]
+
+[[countries]]
+id = 13
+name = "Bouches-du-Rhone"
+continent = 11
+x = 354
+y = 354
+connections = [20, 30, 84, 4, 83]
+
+[[countries]]
+id = 14
+name = "Calvados"
+continent = 2
+x = 172
+y = 97
+connections = [50, 27, 61]
+
+[[countries]]
+id = 15
+name = "Cantal"
+continent = 21
+x = 256
+y = 288
+connections = [63, 43, 48, 12, 46, 19]
+
+[[countries]]
+id = 16
+name = "Charente"
+continent = 16
+x = 182
+y = 254
+connections = [17, 79, 86, 87, 24]
+
+[[countries]]
+id = 17
+name = "Charente-Maritime"
+continent = 16
+x = 151
+y = 246
+connections = [85, 79, 16, 33]
+
+[[countries]]
+id = 18
+name = "Cher"
+continent = 18
+x = 258
+y = 191
+connections = [45, 58, 3, 23, 36, 41]
+
+[[countries]]
+id = 19
+name = "Correze"
+continent = 22
+x = 235
+y = 271
+connections = [87, 23, 63, 15, 46, 24]
+
+[[countries]]
+id = 20
+name = "Corse-du-Sud"
+continent = 12
+x = 443
+y = 398
+connections = [96, 13, 83]
+
+[[countries]]
+id = 21
+name = "Cote-d-Or"
+continent = 20
+x = 335
+y = 178
+connections = [10, 52, 70, 39, 71, 58, 89]
+
+[[countries]]
+id = 22
+name = "Cotes-d-Armor"
+continent = 1
+x = 100
+y = 128
+connections = [29, 56, 35]
+
+[[countries]]
+id = 23
+name = "Creuse"
+continent = 22
+x = 247
+y = 237
+connections = [19, 87, 36, 18, 3, 63]
+
+[[countries]]
+id = 24
+name = "Dordogne"
+continent = 15
+x = 202
+y = 281
+connections = [87, 19, 46, 47, 33, 16]
+
+[[countries]]
+id = 25
+name = "Doubs"
+continent = 9
+x = 376
+y = 182
+connections = [70, 90, 39]
+
+[[countries]]
+id = 26
+name = "Drome"
+continent = 10
+x = 342
+y = 301
+connections = [4, 7, 42, 38, 5, 84]
+
+[[countries]]
+id = 27
+name = "Eure"
+continent = 3
+x = 212
+y = 103
+connections = [76, 95, 78, 28, 61, 14, 60]
+
+[[countries]]
+id = 28
+name = "Eure-et-Loire"
+continent = 18
+x = 224
+y = 131
+connections = [27, 78, 91, 45, 41, 72, 61]
+
+[[countries]]
+id = 29
+name = "Finistere"
+continent = 1
+x = 63
+y = 126
+connections = [22, 56]
+
+[[countries]]
+id = 30
+name = "Gard"
+continent = 13
+x = 320
+y = 336
+connections = [48, 7, 84, 13, 34, 12]
+
+[[countries]]
+id = 31
+name = "Haute-Garonne"
+continent = 14
+x = 223
+y = 351
+connections = [65, 32, 82, 81, 11, 9]
+
+[[countries]]
+id = 32
+name = "Gers"
+continent = 14
+x = 195
+y = 344
+connections = [40, 47, 82, 31, 65, 64]
+
+[[countries]]
+id = 33
+name = "Gironde"
+continent = 15
+x = 155
+y = 299
+connections = [17, 24, 47, 40]
+
+[[countries]]
+id = 34
+name = "Herault"
+continent = 13
+x = 296
+y = 346
+connections = [81, 12, 30, 11]
+
+[[countries]]
+id = 35
+name = "Ille-et-Vilaine"
+continent = 1
+x = 131
+y = 141
+connections = [22, 50, 53, 44, 56]
+
+[[countries]]
+id = 36
+name = "Indre"
+continent = 18
+x = 233
+y = 203
+connections = [37, 41, 18, 23, 87, 86]
+
+[[countries]]
+id = 37
+name = "Indre-et-Loire"
+continent = 18
+x = 201
+y = 181
+connections = [72, 41, 36, 86, 49]
+
+[[countries]]
+id = 38
+name = "Isere"
+continent = 10
+x = 363
+y = 276
+connections = [1, 73, 5, 26, 42, 69]
+
+[[countries]]
+id = 39
+name = "Jura"
+continent = 9
+x = 360
+y = 208
+connections = [1, 71, 21, 70, 25]
+
+[[countries]]
+id = 40
+name = "Landes"
+continent = 15
+x = 150
+y = 335
+connections = [33, 47, 32, 64]
+
+[[countries]]
+id = 41
+name = "Loire-et-Cher"
+continent = 18
+x = 221
+y = 165
+connections = [28, 45, 18, 36, 37, 72]
+
+[[countries]]
+id = 42
+name = "Loire"
+continent = 10
+x = 315
+y = 261
+connections = [69, 38, 26, 7, 43, 63, 3, 71]
+
+[[countries]]
+id = 43
+name = "Haute-Loire"
+continent = 21
+x = 304
+y = 281
+connections = [42, 7, 48, 15, 63]
+
+[[countries]]
+id = 44
+name = "Loire-Atlantique"
+continent = 17
+x = 132
+y = 176
+connections = [56, 35, 49, 85]
+
+[[countries]]
+id = 45
+name = "Loiret"
+continent = 18
+x = 248
+y = 155
+connections = [28, 91, 77, 89, 18, 41, 58]
+
+[[countries]]
+id = 46
+name = "Lot"
+continent = 14
+x = 226
+y = 309
+connections = [24, 19, 15, 12, 82, 47]
+
+[[countries]]
+id = 47
+name = "Lot-et-Garonne"
+continent = 15
+x = 190
+y = 317
+connections = [24, 46, 82, 32, 40, 33]
+
+[[countries]]
+id = 48
+name = "Lozere"
+continent = 13
+x = 292
+y = 308
+connections = [15, 43, 7, 30, 12]
+
+[[countries]]
+id = 49
+name = "Maine-et-Loire"
+continent = 17
+x = 168
+y = 175
+connections = [44, 53, 72, 37, 86, 79, 85]
+
+[[countries]]
+id = 50
+name = "Manche"
+continent = 2
+x = 143
+y = 94
+connections = [14, 61, 53, 35]
+
+[[countries]]
+id = 51
+name = "Marne"
+continent = 6
+x = 314
+y = 106
+connections = [2, 8, 55, 52, 10, 77]
+
+[[countries]]
+id = 52
+name = "Haute-Marne"
+continent = 6
+x = 342
+y = 145
+connections = [51, 55, 88, 70, 21, 10]
+
+[[countries]]
+id = 53
+name = "Mayenne"
+continent = 17
+x = 161
+y = 144
+connections = [35, 50, 61, 72, 49]
+
+[[countries]]
+id = 54
+name = "Meurthe-et-Moselle"
+continent = 7
+x = 370
+y = 115
+connections = [55, 57, 67, 88]
+
+[[countries]]
+id = 55
+name = "Meuse"
+continent = 7
+x = 344
+y = 99
+connections = [8, 54, 88, 52, 51]
+
+[[countries]]
+id = 56
+name = "Morbihan"
+continent = 1
+x = 102
+y = 153
+connections = [29, 22, 35, 44]
+
+[[countries]]
+id = 57
+name = "Moselle"
+continent = 7
+x = 379
+y = 94
+connections = [54, 67]
+
+[[countries]]
+id = 58
+name = "Nievre"
+continent = 20
+x = 292
+y = 191
+connections = [89, 21, 71, 3, 18, 45]
+
+[[countries]]
+id = 59
+name = "Nord"
+continent = 5
+x = 274
+y = 29
+connections = [2, 80, 62]
+
+[[countries]]
+id = 60
+name = "Oise"
+continent = 4
+x = 251
+y = 85
+connections = [2, 77, 95, 27, 76, 80]
+
+[[countries]]
+id = 61
+name = "Orne"
+continent = 2
+x = 191
+y = 117
+connections = [14, 27, 28, 72, 53, 50]
+
+[[countries]]
+id = 62
+name = "Pas-de-Calais"
+continent = 5
+x = 262
+y = 45
+connections = [59, 80]
+
+[[countries]]
+id = 63
+name = "Puy-de-Dome"
+continent = 21
+x = 278
+y = 249
+connections = [3, 42, 43, 15, 19, 23]
+
+[[countries]]
+id = 64
+name = "Pyrenees-Atlantiques"
+continent = 15
+x = 159
+y = 360
+connections = [40, 32, 65]
+
+[[countries]]
+id = 65
+name = "Hautes-Pyrenees"
+continent = 14
+x = 187
+y = 378
+connections = [64, 32, 31]
+
+[[countries]]
+id = 66
+name = "Pyrenees-Orientales"
+continent = 13
+x = 261
+y = 395
+connections = [9, 11]
+
+[[countries]]
+id = 67
+name = "Bas-Rhin"
+continent = 8
+x = 410
+y = 112
+connections = [57, 54, 68]
+
+[[countries]]
+id = 68
+name = "Haut-Rhin"
+continent = 8
+x = 404
+y = 146
+connections = [67, 88, 90]
+
+[[countries]]
+id = 69
+name = "Rhone"
+continent = 10
+x = 329
+y = 250
+connections = [1, 38, 42, 71]
+
+[[countries]]
+id = 70
+name = "Haute-Saone"
+continent = 9
+x = 368
+y = 160
+connections = [88, 90, 25, 21, 52, 39]
+
+[[countries]]
+id = 71
+name = "Saone-et-Loire"
+continent = 20
+x = 323
+y = 208
+connections = [1, 69, 42, 3, 58, 21, 39]
+
+[[countries]]
+id = 72
+name = "Sarthe"
+continent = 17
+x = 190
+y = 147
+connections = [53, 61, 28, 41, 37, 49]
+
+[[countries]]
+id = 73
+name = "Savoie"
+continent = 10
+x = 388
+y = 264
+connections = [1, 74, 38, 5]
+
+[[countries]]
+id = 74
+name = "Haute-Savoie"
+continent = 10
+x = 382
+y = 236
+connections = [1, 73]
+
+[[countries]]
+id = 75
+name = "Paris"
+continent = 19
+x = 49
+y = 208
+connections = [92, 93, 94]
+
+[[countries]]
+id = 76
+name = "Seine-Maritime"
+continent = 3
+x = 216
+y = 74
+connections = [80, 60, 27]
+
+[[countries]]
+id = 77
+name = "Seine-et-Marne"
+continent = 19
+x = 271
+y = 118
+connections = [2, 60, 51, 10, 89, 45, 91, 94, 93, 95]
+
+[[countries]]
+id = 78
+name = "Yvelines"
+continent = 19
+x = 239
+y = 116
+connections = [27, 95, 92, 91, 28]
+
+[[countries]]
+id = 79
+name = "Deux-Sevres"
+continent = 16
+x = 170
+y = 224
+connections = [86, 16, 17, 85, 49]
+
+[[countries]]
+id = 80
+name = "Somme"
+continent = 4
+x = 252
+y = 63
+connections = [2, 62, 60, 76, 59]
+
+[[countries]]
+id = 81
+name = "Tarn"
+continent = 14
+x = 249
+y = 341
+connections = [82, 12, 34, 11, 31]
+
+[[countries]]
+id = 82
+name = "Tarn-et-Garonne"
+continent = 14
+x = 216
+y = 330
+connections = [46, 12, 81, 31, 32, 47]
+
+[[countries]]
+id = 83
+name = "Var"
+continent = 11
+x = 381
+y = 361
+connections = [13, 84, 4, 6, 20, 96]
+
+[[countries]]
+id = 84
+name = "Vaucluse"
+continent = 11
+x = 346
+y = 333
+connections = [30, 7, 26, 4, 83, 13]
+
+[[countries]]
+id = 85
+name = "Vendee"
+continent = 17
+x = 142
+y = 211
+connections = [44, 49, 79, 17]
+
+[[countries]]
+id = 86
+name = "Vienne"
+continent = 16
+x = 193
+y = 215
+connections = [37, 36, 87, 16, 79, 49]
+
+[[countries]]
+id = 87
+name = "Haute-Vienne"
+continent = 22
+x = 218
+y = 249
+connections = [23, 19, 24, 16, 86, 36]
+
+[[countries]]
+id = 88
+name = "Vosges"
+continent = 7
+x = 378
+y = 139
+connections = [54, 55, 90, 52, 68, 70]
+
+[[countries]]
+id = 89
+name = "Yonne"
+continent = 20
+x = 291
+y = 157
+connections = [10, 21, 58, 45, 77]
+
+[[countries]]
+id = 90
+name = "Territoire-de-Belfort"
+continent = 9
+x = 395
+y = 163
+connections = [88, 68, 25, 70]
+
+[[countries]]
+id = 91
+name = "Essonne"
+continent = 19
+x = 252
+y = 124
+connections = [78, 92, 94, 77, 45, 28]
+
+[[countries]]
+id = 92
+name = "Hauts-de-Seine"
+continent = 19
+x = 15
+y = 204
+connections = [75, 94, 93, 91, 78, 95]
+
+[[countries]]
+id = 93
+name = "Seine-Saint-Denis"
+continent = 19
+x = 71
+y = 189
+connections = [95, 77, 75, 92, 94]
+
+[[countries]]
+id = 94
+name = "Val-de-Marne"
+continent = 19
+x = 64
+y = 233
+connections = [75, 93, 77, 91, 92]
+
+[[countries]]
+id = 95
+name = "Val-d-Oise"
+continent = 19
+x = 252
+y = 101
+connections = [60, 77, 93, 92, 78, 27]
+
+[[countries]]
+id = 96
+name = "Haute-Corse"
+continent = 12
+x = 447
+y = 366
+connections = [20, 83, 6]

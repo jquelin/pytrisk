@@ -1,0 +1,396 @@
+[info]
+name = "Roman Empire Map"
+
+[files]
+pic = "roman_empire_pic.png"
+map = "roman_empire_map.gif"
+crd = "roman_empire.cards"
+prv = "roman_empire.jpg"
+
+[[continents]]
+id = 1
+name = "Africa"
+bonus = 3
+color = "blue"
+
+[[continents]]
+id = 2
+name = "Asia"
+bonus = 5
+color = "magenta"
+
+[[continents]]
+id = 3
+name = "Gallia"
+bonus = 4
+color = "yellow"
+
+[[continents]]
+id = 4
+name = "Hispania"
+bonus = 2
+color = "green"
+
+[[continents]]
+id = 5
+name = "Illyrium"
+bonus = 7
+color = "red"
+
+[[continents]]
+id = 6
+name = "Italia"
+bonus = 6
+color = "cyan"
+
+[[countries]]
+id = 1
+name = "Aegyptus"
+continent = 1
+x = 466
+y = 403
+connections = [3, 6, 12]
+
+[[countries]]
+id = 2
+name = "Africa_proconsularis"
+continent = 1
+x = 239
+y = 303
+connections = [3, 4, 5, 44]
+
+[[countries]]
+id = 3
+name = "Cyrenaica"
+continent = 1
+x = 368
+y = 366
+connections = [1, 2]
+
+[[countries]]
+id = 4
+name = "Numidia_inf."
+continent = 1
+x = 217
+y = 297
+connections = [2, 5]
+
+[[countries]]
+id = 5
+name = "Numidia_sup."
+continent = 1
+x = 203
+y = 323
+connections = [2, 4, 27]
+
+[[countries]]
+id = 6
+name = "Arabia"
+continent = 2
+x = 526
+y = 386
+connections = [1, 12, 15]
+
+[[countries]]
+id = 7
+name = "Bithynia"
+continent = 2
+x = 490
+y = 239
+connections = [10, 13, 14, 37]
+
+[[countries]]
+id = 8
+name = "Cappadocia"
+continent = 2
+x = 538
+y = 263
+connections = [9, 10, 14, 15]
+
+[[countries]]
+id = 9
+name = "Cilicia"
+continent = 2
+x = 520
+y = 304
+connections = [8, 10, 11, 12, 15]
+
+[[countries]]
+id = 10
+name = "Galatia"
+continent = 2
+x = 508
+y = 271
+connections = [7, 8, 9, 11, 13, 14]
+
+[[countries]]
+id = 11
+name = "Lycia"
+continent = 2
+x = 490
+y = 287
+connections = [9, 10, 13]
+
+[[countries]]
+id = 12
+name = "Palestina"
+continent = 2
+x = 537
+y = 354
+connections = [1, 6, 9, 15]
+
+[[countries]]
+id = 13
+name = "Phrygia"
+continent = 2
+x = 463
+y = 275
+connections = [7, 10, 11, 29, 33, 37]
+
+[[countries]]
+id = 14
+name = "Pontus"
+continent = 2
+x = 548
+y = 234
+connections = [7, 8, 10]
+
+[[countries]]
+id = 15
+name = "Syria"
+continent = 2
+x = 594
+y = 297
+connections = [6, 8, 9, 12]
+
+[[countries]]
+id = 16
+name = "Aquitania"
+continent = 3
+x = 122
+y = 182
+connections = [21, 22, 28]
+
+[[countries]]
+id = 17
+name = "Belgica"
+continent = 3
+x = 171
+y = 115
+connections = [18, 19, 20, 21]
+
+[[countries]]
+id = 18
+name = "Britannia"
+continent = 3
+x = 101
+y = 37
+connections = [17, 21]
+
+[[countries]]
+id = 19
+name = "Germania_inf."
+continent = 3
+x = 182
+y = 86
+connections = [17, 20]
+
+[[countries]]
+id = 20
+name = "Germania_sup."
+continent = 3
+x = 205
+y = 141
+connections = [17, 19, 21, 22, 39, 41]
+
+[[countries]]
+id = 21
+name = "Lugdunensis"
+continent = 3
+x = 133
+y = 112
+connections = [16, 17, 18, 20, 22]
+
+[[countries]]
+id = 22
+name = "Narbonensis"
+continent = 3
+x = 183
+y = 180
+connections = [16, 20, 21, 28, 38, 39]
+
+[[countries]]
+id = 23
+name = "Baetica"
+continent = 4
+x = 55
+y = 274
+connections = [26, 27, 28]
+
+[[countries]]
+id = 24
+name = "Baleares"
+continent = 4
+x = 161
+y = 240
+connections = [28]
+
+[[countries]]
+id = 25
+name = "Gallaecia_et_Asturia"
+continent = 4
+x = 30
+y = 219
+connections = [26, 28]
+
+[[countries]]
+id = 26
+name = "Lusitania"
+continent = 4
+x = 23
+y = 267
+connections = [23, 25, 28]
+
+[[countries]]
+id = 27
+name = "Mauretania"
+continent = 4
+x = 134
+y = 305
+connections = [5, 23]
+
+[[countries]]
+id = 28
+name = "Terraconensis"
+continent = 4
+x = 99
+y = 253
+connections = [16, 22, 23, 24, 25, 26]
+
+[[countries]]
+id = 29
+name = "Achaia"
+continent = 5
+x = 389
+y = 280
+connections = [13, 32, 33]
+
+[[countries]]
+id = 30
+name = "Dacia"
+continent = 5
+x = 403
+y = 173
+connections = [34, 35, 36]
+
+[[countries]]
+id = 31
+name = "Dalmatia"
+continent = 5
+x = 349
+y = 206
+connections = [32, 33, 35, 36, 39, 42]
+
+[[countries]]
+id = 32
+name = "Epirus"
+continent = 5
+x = 368
+y = 251
+connections = [29, 31, 33, 42]
+
+[[countries]]
+id = 33
+name = "Macedonia"
+continent = 5
+x = 392
+y = 249
+connections = [13, 29, 31, 32, 35, 37]
+
+[[countries]]
+id = 34
+name = "Moesia_inf."
+continent = 5
+x = 445
+y = 201
+connections = [30, 35, 37]
+
+[[countries]]
+id = 35
+name = "Moesia_sup."
+continent = 5
+x = 392
+y = 210
+connections = [30, 31, 33, 34, 36, 37]
+
+[[countries]]
+id = 36
+name = "Pannonia"
+continent = 5
+x = 334
+y = 144
+connections = [30, 31, 35, 39, 40]
+
+[[countries]]
+id = 37
+name = "Thracia"
+continent = 5
+x = 436
+y = 228
+connections = [7, 13, 33, 34, 35]
+
+[[countries]]
+id = 38
+name = "Corsica"
+continent = 6
+x = 234
+y = 205
+connections = [22, 39, 42, 43]
+
+[[countries]]
+id = 39
+name = "Gallia_Cisalpinia"
+continent = 6
+x = 256
+y = 162
+connections = [20, 22, 31, 36, 38, 40, 41, 42]
+
+[[countries]]
+id = 40
+name = "Noricum"
+continent = 6
+x = 287
+y = 129
+connections = [36, 39, 41]
+
+[[countries]]
+id = 41
+name = "Raetia"
+continent = 6
+x = 241
+y = 139
+connections = [20, 39, 40]
+
+[[countries]]
+id = 42
+name = "Roma"
+continent = 6
+x = 307
+y = 236
+connections = [31, 32, 38, 39, 44]
+
+[[countries]]
+id = 43
+name = "Sardinia"
+continent = 6
+x = 235
+y = 256
+connections = [38]
+
+[[countries]]
+id = 44
+name = "Sicilia"
+continent = 6
+x = 286
+y = 274
+connections = [2, 42]

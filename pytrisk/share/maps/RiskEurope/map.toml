@@ -1,0 +1,430 @@
+[info]
+name = "Europe Map"
+
+[files]
+pic = "RiskEurope_pic.jpg"
+map = "RiskEurope_map.gif"
+crd = "RiskEurope.cards"
+prv = "riskeurope.jpg"
+
+[[continents]]
+id = 1
+name = "North_Africa"
+bonus = 2
+color = "yellow"
+
+[[continents]]
+id = 2
+name = "Iberia"
+bonus = 1
+color = "orange"
+
+[[continents]]
+id = 3
+name = "Benelux_States"
+bonus = 2
+color = "blue"
+
+[[continents]]
+id = 4
+name = "Great_Britain"
+bonus = 3
+color = "green"
+
+[[continents]]
+id = 5
+name = "Scandinavia"
+bonus = 3
+color = "cyan"
+
+[[continents]]
+id = 6
+name = "Central_Europe"
+bonus = 5
+color = "red"
+
+[[continents]]
+id = 7
+name = "Adria_States"
+bonus = 4
+color = "green"
+
+[[continents]]
+id = 8
+name = "The_Balkans"
+bonus = 4
+color = "blue"
+
+[[continents]]
+id = 9
+name = "East_Europe"
+bonus = 4
+color = "magenta"
+
+[[countries]]
+id = 1
+name = "Malta"
+continent = 1
+x = 564
+y = 416
+connections = [39, 2, 27]
+
+[[countries]]
+id = 2
+name = "Tunisia"
+continent = 1
+x = 514
+y = 411
+connections = [1, 27, 3]
+
+[[countries]]
+id = 3
+name = "Algeria"
+continent = 1
+x = 451
+y = 411
+connections = [2, 4]
+
+[[countries]]
+id = 4
+name = "Morocco"
+continent = 1
+x = 380
+y = 412
+connections = [3, 5]
+
+[[countries]]
+id = 5
+name = "Spain"
+continent = 2
+x = 405
+y = 350
+connections = [4, 6, 7]
+
+[[countries]]
+id = 6
+name = "Portugal"
+continent = 2
+x = 358
+y = 347
+connections = [5]
+
+[[countries]]
+id = 7
+name = "France"
+continent = 3
+x = 459
+y = 291
+connections = [5, 26, 27, 25, 8, 9, 11]
+
+[[countries]]
+id = 8
+name = "Luxembourg"
+continent = 3
+x = 503
+y = 259
+connections = [7, 25, 9]
+
+[[countries]]
+id = 9
+name = "Belgium"
+continent = 3
+x = 472
+y = 249
+connections = [7, 8, 10, 25]
+
+[[countries]]
+id = 10
+name = "Netherlands"
+continent = 3
+x = 483
+y = 222
+connections = [9, 25]
+
+[[countries]]
+id = 11
+name = "England"
+continent = 4
+x = 448
+y = 229
+connections = [7, 12, 13]
+
+[[countries]]
+id = 12
+name = "Wales"
+continent = 4
+x = 425
+y = 214
+connections = [11, 15]
+
+[[countries]]
+id = 13
+name = "Scotland"
+continent = 4
+x = 432
+y = 177
+connections = [11, 14, 18, 20]
+
+[[countries]]
+id = 14
+name = "Northern_Ireland"
+continent = 4
+x = 402
+y = 183
+connections = [15, 13]
+
+[[countries]]
+id = 15
+name = "Ireland"
+continent = 4
+x = 397
+y = 214
+connections = [12, 14]
+
+[[countries]]
+id = 16
+name = "Finland"
+continent = 5
+x = 593
+y = 111
+connections = [18, 17, 41]
+
+[[countries]]
+id = 17
+name = "Sweden"
+continent = 5
+x = 546
+y = 151
+connections = [18, 16, 19]
+
+[[countries]]
+id = 18
+name = "Norway"
+continent = 5
+x = 509
+y = 136
+connections = [13, 20, 17, 16, 41]
+
+[[countries]]
+id = 19
+name = "Denmark"
+continent = 5
+x = 506
+y = 186
+connections = [17, 25]
+
+[[countries]]
+id = 20
+name = "Iceland"
+continent = 5
+x = 385
+y = 74
+connections = [13, 18]
+
+[[countries]]
+id = 21
+name = "Poland"
+continent = 6
+x = 573
+y = 228
+connections = [46, 45, 44, 25, 23, 22]
+
+[[countries]]
+id = 22
+name = "Slovakia"
+continent = 6
+x = 590
+y = 259
+connections = [46, 21, 23, 24, 33]
+
+[[countries]]
+id = 23
+name = "Czech_Republic"
+continent = 6
+x = 550
+y = 257
+connections = [21, 25, 24, 22]
+
+[[countries]]
+id = 24
+name = "Austria"
+continent = 6
+x = 543
+y = 280
+connections = [23, 26, 25, 28, 27, 22, 33]
+
+[[countries]]
+id = 25
+name = "Germany"
+continent = 6
+x = 520
+y = 245
+connections = [7, 8, 9, 10, 19, 21, 23, 26, 24]
+
+[[countries]]
+id = 26
+name = "Switzerland"
+continent = 6
+x = 491
+y = 289
+connections = [7, 25, 24, 27]
+
+[[countries]]
+id = 27
+name = "Italy"
+continent = 7
+x = 533
+y = 338
+connections = [1, 2, 7, 26, 24, 28, 29]
+
+[[countries]]
+id = 28
+name = "Slovenia"
+continent = 7
+x = 560
+y = 293
+connections = [24, 33, 27, 29]
+
+[[countries]]
+id = 29
+name = "Croatia"
+continent = 7
+x = 550
+y = 316
+connections = [33, 30, 28, 27]
+
+[[countries]]
+id = 30
+name = "Bosnia_and_Herzegovina"
+continent = 7
+x = 576
+y = 313
+connections = [29, 36, 31]
+
+[[countries]]
+id = 31
+name = "Serbia_and_Montenegro"
+continent = 7
+x = 581
+y = 337
+connections = [30, 36, 32]
+
+[[countries]]
+id = 32
+name = "Albania"
+continent = 7
+x = 589
+y = 358
+connections = [31, 38, 39]
+
+[[countries]]
+id = 33
+name = "Hungary"
+continent = 8
+x = 586
+y = 280
+connections = [46, 24, 22, 28, 29, 34, 36]
+
+[[countries]]
+id = 34
+name = "Romania"
+continent = 8
+x = 625
+y = 285
+connections = [46, 33, 37, 36, 35]
+
+[[countries]]
+id = 35
+name = "Moldova"
+continent = 8
+x = 657
+y = 262
+connections = [46, 34]
+
+[[countries]]
+id = 36
+name = "Serbia"
+continent = 8
+x = 600
+y = 315
+connections = [33, 30, 31, 38, 34]
+
+[[countries]]
+id = 37
+name = "Bulgaria"
+continent = 8
+x = 633
+y = 322
+connections = [40, 38, 39, 34]
+
+[[countries]]
+id = 38
+name = "Former_Yugoslav_Republic_of_Macedonia"
+continent = 8
+x = 617
+y = 349
+connections = [32, 36, 37, 39]
+
+[[countries]]
+id = 39
+name = "Greece"
+continent = 8
+x = 625
+y = 381
+connections = [1, 32, 40, 38, 37]
+
+[[countries]]
+id = 40
+name = "Turkey"
+continent = 8
+x = 663
+y = 350
+connections = [37, 39]
+
+[[countries]]
+id = 41
+name = "Russia"
+continent = 9
+x = 639
+y = 150
+connections = [18, 16, 42, 43, 44, 45, 46]
+
+[[countries]]
+id = 42
+name = "Estonia"
+continent = 9
+x = 599
+y = 150
+connections = [41, 43]
+
+[[countries]]
+id = 43
+name = "Latvia"
+continent = 9
+x = 606
+y = 174
+connections = [41, 44, 42]
+
+[[countries]]
+id = 44
+name = "Lithuania"
+continent = 9
+x = 598
+y = 194
+connections = [41, 45, 43, 21]
+
+[[countries]]
+id = 45
+name = "Belarus"
+continent = 9
+x = 633
+y = 208
+connections = [41, 46, 21, 44]
+
+[[countries]]
+id = 46
+name = "Ukraine"
+continent = 9
+x = 637
+y = 240
+connections = [41, 45, 21, 22, 33, 34, 35]
