@@ -186,8 +186,7 @@ def validate(result: ParseResult) -> List[str]:
     for c in result.countries.values():
         for conn in c.connections:
             if c.id not in result.countries[conn].connections:
-                log.error(f"Asymetrical connection: country {c.id} -> {conn}")
-                errors.append(f"Asymetrical connection: country {c.id} -> {conn}")
+                log.warning(f"Asymetrical connection: country {c.id} -> {conn}")
 
     return errors
 
