@@ -245,7 +245,6 @@ def convert(mapfile: Path, force: bool = False):
     log.info(f"Converting {mapname}")
     log.debug(f"source: {mapfile}")
     log.debug(f"dst: {mapdir}")
-    mapdir.mkdir(exist_ok=True)
 
     # first check if mapdir is a directory
     if mapdir.is_dir():
@@ -277,6 +276,8 @@ def convert(mapfile: Path, force: bool = False):
             print(" -", e)
 
     # write the result
+    mapdir.mkdir(exist_ok=True)
+
     outfile = mapdir / "map.toml"
     log.info(f"Writing to {outfile.as_posix()}")
     toml_data = to_toml(parsed)
