@@ -23,134 +23,36 @@ import tkinter.font as tkfont
 
 from pytrisk.locale    import _
 from pytrisk.logger    import log
+from pytrisk.ui.views.startup_maps import StartupMapsView
 
 
-
-@dataclass
-class Column:
-    attr: str
-    type: type = str
 
 class StartupView(tk.Frame):
     def __init__(self, parent, controller, event_bus):
         super().__init__(parent)
 
-       # Subscribe to events & store the controller for later use.
+        # Subscribe to events & store the controller for later use.
         event_bus.subscribe(self)
         self.controller = controller
+        self.event_bus  = event_bus
 
-        self._create_treeview()
+        # GUI creation
+        log.info('creating startup frame')
+        self._create_views()
+
+
+    def _create_views(self):
+        """Create the various views and assemble them."""
+        controller = self.controller
+        event_bus  = self.event_bus
+
+        lab = tk.Label(self, text=_('New game'), bg='black', fg='white', font=('TkDefaultFont', 14, 'bold'))
+        lab.pack(side=tk.TOP, fill=tk.X, padx=20, pady=20)
+
+        # Create the maps view
+        fmaps = StartupMapsView(self, controller, event_bus)
+        fmaps.pack(side=tk.LEFT, fill=tk.Y, expand=False)
 
 
     # -- Private methods
 
-    def _create_treeview(self):
-        """Create the treeview to show the maps."""
-
-        # Prepare the treeview columns.
-        self._map_columns = {
-            "id"   : Column("id", str),
-            "Name" : Column("name", str),
-            "#C"   : Column("nb_continents", int),
-            "#c"   : Column("nb_countries", int),
-        }
-
-        # Prepare the treeview data.
-        maps = self.controller.get_maps()
-        self._maps = sorted(maps, key=lambda x: x.id)
-
-        # Prepare the treeview headers, longest strings and alignments.
-        font = tkfont.nametofont('TkHeadingFont')
-        headers = list(self._map_columns.keys())
-        longest = [
-            font.measure(max([m.id for m in maps], key=len)) + 10,
-            font.measure(max([m.name for m in maps], key=len)) + 10,
-            font.measure('XXX') + 10,
-            font.measure('XXX') + 10
-        ]
-        aligns  = [tk.W, tk.W, tk.CENTER, tk.CENTER]
-
-        # Create the treeview to show the maps.
-        tv = ttk.Treeview(self, columns=headers, height=20, show='headings',
-                          selectmode=tk.BROWSE)
-        self.tv = tv
-        tv.pack(side=tk.LEFT, fill=tk.Y)
-        tv.bind('<<TreeviewSelect>>', self._on_tv_map_selection)
-        tv.bind('<Button-1>', self._on_tv_map_click)
-        tv.tag_configure("odd", background='#DDDDDD')
-
-        # Adjust the column's width to the header string
-        for col, longest, anchor in zip(headers, longest, aligns):
-            tv.heading(col, text=col, command=lambda c=col:
-                       self._on_tv_map_sort(c, False))
-            tv.column(col, width=longest, anchor=anchor)
-
-        # Add a vertical scrollbar to the treeview.
-        vsb = ttk.Scrollbar(self, orient="vertical", command=tv.yview)
-        vsb.pack(side=tk.LEFT, fill=tk.Y)
-        tv.configure(yscrollcommand=vsb.set)
-
-        # Fill the treeview with the data.
-        self._reload_treeview()
-
-
-    def _reload_treeview(self):
-        """Reload the treeview with the data."""
-        tv = self.tv
-        tv.delete(*tv.get_children())
-
-        for i, m in enumerate(self._maps):
-            tags = [] if i % 2 == 0 else ['odd']
-            tv.insert(
-                '', tk.END, tags=(tags), iid=m.id,
-                values=tuple(getattr(m, c.attr) for c in self._map_columns.values()),
-            )
-
-
-    # -- Event handlers
-
-    def _on_tv_map_click(self, ev):
-        """Event handler for treeview click.
-
-        It is only used to prevent column resizing when the user clicks on the
-        separator between columns, which would be annoying since the columns
-        are automatically sized to fit their content, and the user doesn't need
-        to resize them.
-        """
-        # prevent column resizing
-        if self.tv.identify_region(ev.x, ev.y) == "separator":
-             return "break"
-
-
-    def _on_tv_map_selection(self, event):
-        pass
-
-    def _on_tv_map_sort(self, col: str, descending: bool):
-        """Event handler for treeview column sorting. Sort the map list by the
-        selected column. Then update the treeview so that heading click will
-        sort in the opposite direction.
-
-        Args:
-            col (str): column to sort
-            descending (bool): sort direction
-        """
-        log.info(f'Sorting map list by {col} {"descending" if descending else "ascending"}')
-
-        # Get selected item
-        tv = self.tv
-        selected = tv.selection()
-        curitem  = selected[0] if selected else None
-
-        # Sort the map list
-        col_def = self._map_columns[col]
-        self._maps.sort(key=lambda x: getattr(x, col_def.attr), reverse=descending)
-        self._reload_treeview()
-
-        # Toggle sort
-        tv.heading(col, command=lambda col=col: self._on_tv_map_sort(col, not descending))
-
-        # Restore selection
-        if curitem:
-            tv.selection_set(curitem)
-            tv.focus(curitem)
-            tv.see(curitem)

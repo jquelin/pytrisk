@@ -35,7 +35,8 @@ class MainWindow(tk.Tk):
     def __init__(self, controller, event_bus):
         super().__init__()
 
-        # Store controller & event bus
+        # Subscribe to events & store the controller for later use.
+        event_bus.subscribe(self)
         self.controller = controller
         self.event_bus  = event_bus
 
@@ -48,10 +49,6 @@ class MainWindow(tk.Tk):
         # Add some bindings
         self.protocol('WM_DELETE_WINDOW', self._on_quit)
         self.bind('<Control-q>', self._on_quit)
-
-        # Subscribe to controller events
-        event_bus.subscribe(self)
-
 
 
     # -- gui construction
@@ -71,27 +68,12 @@ class MainWindow(tk.Tk):
         statusbar = StatusbarView(self, controller, event_bus)
         statusbar.pack(side=tk.BOTTOM, fill=tk.X)
 
+        # Startup view
         startup_frame = StartupView(self, self.controller, self.event_bus)
         startup_frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
 
+
     def _build_startup_frame(self):
-        frame = tk.Frame(self)
-        frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
-
-        return
-
-        f = tk.Frame(frame)
-        f.pack(side=tk.LEFT, expand=True, fill=tk.Y)
-
-        lab = tk.Label(f, text=_('Map'))
-        lab.pack(side=tk.TOP)
-        lb_maps = tk.Listbox(f)
-        lb_maps.pack(side=tk.TOP, expand=True, fill=tk.Y)
-
-        maps = sorted(pytrisk.data.all_maps(), key=lambda x: x.title)
-        for m in maps:
-            lb_maps.insert(tk.END, m.title)
-
         f_players = tk.Frame(frame)
         f_players.pack(side=tk.LEFT, expand=True, fill=tk.BOTH)
         lab = tk.Label(f_players, text=_('Players'))
