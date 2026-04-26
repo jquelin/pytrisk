@@ -56,7 +56,7 @@ class StartupView(tk.Frame):
 
         for col, longest, anchor in zip(headers, longest, aligns):
             tv.heading(col, text=col, command=lambda c=col:
-                       self._on_tv_map_sort(c, 0))
+                       self._on_tv_map_sort(c, False))
             # adjust the column's width to the header string
             tv.column(col, width=longest, anchor=anchor)
 
@@ -65,11 +65,14 @@ class StartupView(tk.Frame):
         vsb.pack(side=tk.LEFT, fill=tk.Y)
         tv.configure(yscrollcommand=vsb.set)
 
-        # Finally, fill the treeview with the data.
-        for i, d in enumerate(maps):
+        # Fill the treeview with the data.
+        for i, d in enumerate(sorted(maps, key=lambda x: x.id)):
             tags = [] if i % 2 == 0 else ['odd']
             tv.insert('', tk.END, tags=(tags), values=[d.id, d.name])
 
+
+
+    # -- Event handlers
 
     def _on_tv_map_click(self, ev):
         """Event handler for treeview click.
@@ -86,8 +89,32 @@ class StartupView(tk.Frame):
 
     def _on_tv_map_selection(self, event):
         pass
-#        self.controller.select_map(self.tv.item(self.tv.focus())['values'][0])
 
-    def _on_tv_map_sort(self, col, direction):
-        pass
+    def _on_tv_map_sort(self, col: str, descending: bool):
+        """Event handler for treeview column sorting. Sort the map list by the
+        selected column. Then update the treeview so that heading click will
+        sort in the opposite direction.
 
+        Args:
+            col (str): column to sort
+            descending (bool): sort direction
+        """
+        log.info(f'Sorting map list by {col} {"descending" if descending else "ascending"}')
+        tv = self.tv
+
+        # Grab values to sort
+        data = [(tv.set(child, col), child) for child in tv.get_children('')]
+
+        # Now sort the data in place
+        data.sort(reverse=descending)
+        for ix, item in enumerate(data):
+            tv.move(item[1], '', ix)
+        # Switch the heading so it will sort in the opposite direction
+        tv.heading(col, command=lambda col=col: self._on_tv_map_sort(col, not descending))
+
+        # Now we need to recolorize the lines to have alternating colors
+        line = 1
+        for c in tv.get_children():
+            tags = [] if line % 2 == 0 else ['odd']
+            tv.item(c, tags=(tags))
+            line += 1
