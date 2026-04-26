@@ -25,6 +25,8 @@ class Map:
 
     def __init__(self, dirname):
         log.info(f'Creating map from {dirname}')
+
+        # Map files
         self.dir = dirname
         self.file = dirname / 'map.toml'
         self.background  = dirname / 'background.png'
@@ -34,8 +36,10 @@ class Map:
         log.debug(f'Loading map file {self.file}')
         self._data = tomllib.loads(self.file.read_text())
 
-        self.id = dirname.name
+        # Extract general information
+        self.id   = dirname.name
         self.info = self._data['info']
         self.name = self.info['name']
-#        self.continents = self._data['continents']
-#        self.countries = self._data['countries']
+
+        self.nb_continents = len(self._data['continents'])
+        self.nb_countries  = len(self._data['countries'])

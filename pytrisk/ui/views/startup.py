@@ -34,15 +34,18 @@ class StartupView(tk.Frame):
 
         # Prepare the treeview data.
         maps = controller.get_maps()
+        self.maps = sorted(maps, key=lambda x: x.id)
         font = tkfont.nametofont('TkHeadingFont')
+        headers = ['Name', 'Description', '#C', '#c']
         longest = [
             font.measure(max([m.id for m in maps], key=len)) + 10,
-            font.measure(max([m.name for m in maps], key=len)) + 10
+            font.measure(max([m.name for m in maps], key=len)) + 10,
+            font.measure('XXX') + 10,
+            font.measure('XXX') + 10
         ]
 
         # Prepare the treeview headers, longest strings and alignments.
-        headers = ['Name', 'Description']
-        aligns  = [tk.W, tk.W]
+        aligns  = [tk.W, tk.W, tk.CENTER, tk.CENTER]
 
         # Create the treeview to show the maps.
         tv = ttk.Treeview(self, columns=headers, height=20, show='headings',
@@ -66,11 +69,19 @@ class StartupView(tk.Frame):
         tv.configure(yscrollcommand=vsb.set)
 
         # Fill the treeview with the data.
-        for i, d in enumerate(sorted(maps, key=lambda x: x.id)):
+        self._reload_treeview()
+
+
+    def _reload_treeview(self):
+        """Reload the treeview with the data."""
+        tv = self.tv
+        tv.delete(*tv.get_children())
+
+        for i, d in enumerate(self.maps):
             tags = [] if i % 2 == 0 else ['odd']
-            tv.insert('', tk.END, tags=(tags), values=[d.id, d.name])
-
-
+            tv.insert('', tk.END, tags=(tags),
+                        iid=d.id,
+                        values=[d.id, d.name, d.nb_continents, d.nb_countries])
 
     # -- Event handlers
 
@@ -100,21 +111,31 @@ class StartupView(tk.Frame):
             descending (bool): sort direction
         """
         log.info(f'Sorting map list by {col} {"descending" if descending else "ascending"}')
+
+        # Get selected item
         tv = self.tv
+        selected = tv.selection()
+        curitem  = selected[0] if selected else None
 
-        # Grab values to sort
-        data = [(tv.set(child, col), child) for child in tv.get_children('')]
+        attribute = {
+            'Name': 'id',
+            'Description': 'name',
+            '#C': 'nb_continents',
+            '#c': 'nb_countries'
+        }
 
-        # Now sort the data in place
-        data.sort(reverse=descending)
-        for ix, item in enumerate(data):
-            tv.move(item[1], '', ix)
-        # Switch the heading so it will sort in the opposite direction
+        # Sort
+        self.maps.sort(
+            key=lambda m: getattr(m, attribute[col]),
+            reverse=descending
+        )
+        self._reload_treeview()
+
+        # Toggle sort
         tv.heading(col, command=lambda col=col: self._on_tv_map_sort(col, not descending))
 
-        # Now we need to recolorize the lines to have alternating colors
-        line = 1
-        for c in tv.get_children():
-            tags = [] if line % 2 == 0 else ['odd']
-            tv.item(c, tags=(tags))
-            line += 1
+        # Restore selection
+        if curitem:
+            tv.selection_set(curitem)
+            tv.focus(curitem)
+            tv.see(curitem)
