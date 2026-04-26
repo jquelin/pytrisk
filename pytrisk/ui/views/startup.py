@@ -15,6 +15,7 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
+from dataclasses import dataclass
 from pathlib import Path
 import tkinter as tk
 from tkinter import ttk
@@ -24,6 +25,12 @@ from pytrisk.locale    import _
 from pytrisk.logger    import log
 
 
+
+@dataclass
+class Column:
+    attr: str
+    type: type = str
+
 class StartupView(tk.Frame):
     def __init__(self, parent, controller, event_bus):
         super().__init__(parent)
@@ -32,19 +39,35 @@ class StartupView(tk.Frame):
         event_bus.subscribe(self)
         self.controller = controller
 
+        self._create_treeview()
+
+
+    # -- Private methods
+
+    def _create_treeview(self):
+        """Create the treeview to show the maps."""
+
+        # Prepare the treeview columns.
+        self._map_columns = {
+            "id"   : Column("id", str),
+            "Name" : Column("name", str),
+            "#C"   : Column("nb_continents", int),
+            "#c"   : Column("nb_countries", int),
+        }
+
         # Prepare the treeview data.
-        maps = controller.get_maps()
-        self.maps = sorted(maps, key=lambda x: x.id)
+        maps = self.controller.get_maps()
+        self._maps = sorted(maps, key=lambda x: x.id)
+
+        # Prepare the treeview headers, longest strings and alignments.
         font = tkfont.nametofont('TkHeadingFont')
-        headers = ['Name', 'Description', '#C', '#c']
+        headers = list(self._map_columns.keys())
         longest = [
             font.measure(max([m.id for m in maps], key=len)) + 10,
             font.measure(max([m.name for m in maps], key=len)) + 10,
             font.measure('XXX') + 10,
             font.measure('XXX') + 10
         ]
-
-        # Prepare the treeview headers, longest strings and alignments.
         aligns  = [tk.W, tk.W, tk.CENTER, tk.CENTER]
 
         # Create the treeview to show the maps.
@@ -54,13 +77,12 @@ class StartupView(tk.Frame):
         tv.pack(side=tk.LEFT, fill=tk.Y)
         tv.bind('<<TreeviewSelect>>', self._on_tv_map_selection)
         tv.bind('<Button-1>', self._on_tv_map_click)
-
         tv.tag_configure("odd", background='#DDDDDD')
 
+        # Adjust the column's width to the header string
         for col, longest, anchor in zip(headers, longest, aligns):
             tv.heading(col, text=col, command=lambda c=col:
                        self._on_tv_map_sort(c, False))
-            # adjust the column's width to the header string
             tv.column(col, width=longest, anchor=anchor)
 
         # Add a vertical scrollbar to the treeview.
@@ -77,11 +99,13 @@ class StartupView(tk.Frame):
         tv = self.tv
         tv.delete(*tv.get_children())
 
-        for i, d in enumerate(self.maps):
+        for i, m in enumerate(self._maps):
             tags = [] if i % 2 == 0 else ['odd']
-            tv.insert('', tk.END, tags=(tags),
-                        iid=d.id,
-                        values=[d.id, d.name, d.nb_continents, d.nb_countries])
+            tv.insert(
+                '', tk.END, tags=(tags), iid=m.id,
+                values=tuple(getattr(m, c.attr) for c in self._map_columns.values()),
+            )
+
 
     # -- Event handlers
 
@@ -117,18 +141,9 @@ class StartupView(tk.Frame):
         selected = tv.selection()
         curitem  = selected[0] if selected else None
 
-        attribute = {
-            'Name': 'id',
-            'Description': 'name',
-            '#C': 'nb_continents',
-            '#c': 'nb_countries'
-        }
-
-        # Sort
-        self.maps.sort(
-            key=lambda m: getattr(m, attribute[col]),
-            reverse=descending
-        )
+        # Sort the map list
+        col_def = self._map_columns[col]
+        self._maps.sort(key=lambda x: getattr(x, col_def.attr), reverse=descending)
         self._reload_treeview()
 
         # Toggle sort
