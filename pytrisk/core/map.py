@@ -15,27 +15,27 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
+import tomllib
 
-from pytrisk.constants import appinfo
-from pytrisk.core.map import Map
 from pytrisk.logger import log
 
 
-class Application:
-    """ Application class, main entry point for the controller. """
+class Map:
+    '''Map representation.'''
 
-    def __init__(self):
-        # initialize data and game
-        self._load_maps()
+    def __init__(self, dirname):
+        log.info(f'Creating map from {dirname}')
+        self.dir = dirname
+        self.file = dirname / 'map.toml'
+        self.background  = dirname / 'background.png'
+        self.territories = dirname / 'territories.png'
 
-    # -- Private maps
+        # Load map file
+        log.debug(f'Loading map file {self.file}')
+        self._data = tomllib.loads(self.file.read_text())
 
-    def _load_maps(self):
-        '''List available maps. They are not loaded at this time.
-        '''
-        log.info('Creating maps')
-        mapdir = appinfo.dirs.share / 'maps'
-        self.maps = {}
-        for f in mapdir.iterdir():
-            if f.is_dir():
-                self.maps[f.name] = Map(f)
+        self.id = dirname.name
+        self.info = self._data['info']
+        self.name = self.info['name']
+#        self.continents = self._data['continents']
+#        self.countries = self._data['countries']

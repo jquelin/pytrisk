@@ -24,10 +24,11 @@ import pytrisk.data
 from pytrisk.locale    import _
 from pytrisk.logger    import log
 from pytrisk.constants import appinfo
-from pytrisk.ui.utils           import Icons
-from pytrisk.ui.views.menu      import MenuView
-from pytrisk.ui.views.statusbar import StatusbarView
-from pytrisk.ui.views.toolbar   import ToolbarView
+from pytrisk.ui.utils              import Icons
+from pytrisk.ui.views.menu         import MenuView
+from pytrisk.ui.views.startup      import StartupView
+from pytrisk.ui.views.statusbar    import StatusbarView
+from pytrisk.ui.views.toolbar      import ToolbarView
 
 
 class MainWindow(tk.Tk):
@@ -43,8 +44,6 @@ class MainWindow(tk.Tk):
         self.title(appinfo.title)
         self.iconphoto(True, Icons.load(appinfo.name, 32))
         self._create_views()
-
-        self._build_startup_frame()
 
         # Add some bindings
         self.protocol('WM_DELETE_WINDOW', self._on_quit)
@@ -72,10 +71,14 @@ class MainWindow(tk.Tk):
         statusbar = StatusbarView(self, controller, event_bus)
         statusbar.pack(side=tk.BOTTOM, fill=tk.X)
 
+        startup_frame = StartupView(self, self.controller, self.event_bus)
+        startup_frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
 
     def _build_startup_frame(self):
         frame = tk.Frame(self)
         frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
+
+        return
 
         f = tk.Frame(frame)
         f.pack(side=tk.LEFT, expand=True, fill=tk.Y)

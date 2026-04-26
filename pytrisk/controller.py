@@ -33,7 +33,11 @@ class Controller:
 
     # -- Data retrieval
 
-    # -- Event handlers
+    def get_maps(self):
+        """Return the list of available maps."""
+        return self.app.maps.values()
+
+    # -- Action handlers
 
     def do_quit(self):
         """Quit the application."""
