@@ -46,7 +46,7 @@ class Logger:
         formatter = colorlog.ColoredFormatter(
             colored('s%(asctime)s ', 'dark_grey') +
             colored('[%(filename)s:%(lineno)d:%(funcName)s] ', 'yellow') +
-            '%(log_color)s%(levelname)-8s%(reset)s '
+            '%(log_color)s%(levelname)s%(reset)s '
             '%(message)s',
             datefmt='%Y-%m-%d %H:%M:%S',
             log_colors=colors
