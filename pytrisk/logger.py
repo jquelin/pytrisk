@@ -17,6 +17,7 @@
 
 import colorlog
 import logging
+from termcolor import colored
 
 from .constants import appinfo
 
@@ -43,8 +44,8 @@ class Logger:
         colors['DEBUG'] = 'blue'
         #colors['INFO']  = 'white'
         formatter = colorlog.ColoredFormatter(
-            '%(asctime)s '
-            '[%(filename)s:%(lineno)d:%(funcName)s] '
+            colored('s%(asctime)s ', 'dark_grey') +
+            colored('[%(filename)s:%(lineno)d:%(funcName)s] ', 'yellow') +
             '%(log_color)s%(levelname)-8s%(reset)s '
             '%(message)s',
             datefmt='%Y-%m-%d %H:%M:%S',
