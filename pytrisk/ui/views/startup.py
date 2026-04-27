@@ -24,6 +24,7 @@ import tkinter.font as tkfont
 from pytrisk.locale    import _
 from pytrisk.logger    import log
 from pytrisk.ui.views.startup_maps import StartupMapsView
+from pytrisk.ui.views.startup_players import StartupPlayersView
 from pytrisk.ui.widgets.heading    import Heading
 
 
@@ -55,6 +56,9 @@ class StartupView(tk.Frame):
         fmaps = StartupMapsView(self, controller, event_bus)
         fmaps.pack(side=tk.LEFT, fill=tk.Y, expand=False)
 
+        # Create the players view
+        fplayers = StartupPlayersView(self, controller, event_bus)
+        fplayers.pack(side=tk.LEFT, fill=tk.Y, expand=False, padx=10)
+
 
     # -- Private methods
-
