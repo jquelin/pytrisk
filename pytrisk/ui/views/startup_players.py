@@ -109,6 +109,13 @@ class StartupPlayersView(tk.LabelFrame):
             # fallback
             self._nb_players.trace('w', self._on_nb_players_change)
 
+        # Allow controlling the spinbox with the mouse wheel across platforms.
+        # - Windows & macOS: <MouseWheel> with event.delta > 0 or < 0
+        # - X11 (many Linux): <Button-4> (up) and <Button-5> (down)
+        sp.bind('<MouseWheel>', self._on_spinbox_mousewheel)
+        sp.bind('<Button-4>', self._on_spinbox_mousewheel)
+        sp.bind('<Button-5>', self._on_spinbox_mousewheel)
+
         # Create the rows for up to 6 players
         self._rows = []  # list of StartupPlayerDefinition instances
 
@@ -142,6 +149,44 @@ class StartupPlayersView(tk.LabelFrame):
 
         log.info(f'number of players set to {n}')
         self._update_rows()
+
+    def _on_spinbox_mousewheel(self, event):
+        """Handle mouse wheel events on the spinbox in a cross-platform way.
+
+        Return "break" to stop propagation so the main window doesn't scroll
+        or receive the same wheel event.
+        """
+        try:
+            cur = int(self._nb_players.get())
+        except Exception:
+            cur = 2
+
+        # X11 mouse wheel events use Button-4/5
+        delta = 0
+        if hasattr(event, 'num') and event.num in (4, 5):
+            delta = 1 if event.num == 4 else -1
+        else:
+            # Windows and macOS: event.delta positive/negative
+            try:
+                delta = 1 if event.delta > 0 else -1
+            except Exception:
+                delta = 0
+
+        if delta == 0:
+            return "break"
+
+        new = cur + delta
+        if new < 2:
+            new = 2
+        if new > 6:
+            new = 6
+
+        if new != cur:
+            # Setting the IntVar triggers the trace handler which updates rows
+            self._nb_players.set(new)
+
+        # prevent other handlers from also processing the event
+        return "break"
 
     def _update_rows(self):
         """Enable or disable rows depending on the selected number of players.
