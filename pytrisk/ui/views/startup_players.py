@@ -22,6 +22,55 @@ from pytrisk.locale import _
 from pytrisk.logger import log
 
 
+class StartupPlayerDefinition(tk.Frame):
+    """A single player row: label, name entry and type combobox.
+
+    Provides enable() / disable() methods to change the state of contained
+    widgets without the parent needing to track them individually.
+    """
+
+    def __init__(self, parent, idx: int):
+        super().__init__(parent)
+
+        self.idx = idx
+
+        # Player label
+        labp = tk.Label(self, text=f'{_('Player')} {idx}:', width=10, anchor=tk.W)
+        labp.pack(side=tk.LEFT)
+
+        # Name entry
+        self.name_var = tk.StringVar()
+        default_name = _('Player') + f' {idx}' if idx == 1 else _('AI') + f' {idx-1}'
+        self.name_var.set(default_name)
+        self.name_entry = ttk.Entry(self, textvariable=self.name_var)
+        self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
+
+        # Type combobox (Human / AI)
+        self.type_cb = ttk.Combobox(self, values=[_('Human'), _('AI')], width=8, state='readonly')
+        if idx == 1:
+            self.type_cb.set(_('Human'))
+            # first player always human and not editable
+            self.type_cb.configure(state='disabled')
+        else:
+            self.type_cb.set(_('AI'))
+
+        self.type_cb.pack(side=tk.LEFT, padx=6)
+
+    def enable(self):
+        """Enable this player row."""
+        self.name_entry.configure(state=tk.NORMAL)
+        if self.idx == 1:
+            self.type_cb.configure(state='disabled')
+            self.type_cb.set(_('Human'))
+        else:
+            self.type_cb.configure(state='readonly')
+
+    def disable(self):
+        """Disable this player row (keeps it visible)."""
+        self.name_entry.configure(state=tk.DISABLED)
+        self.type_cb.configure(state=tk.DISABLED)
+
+
 class StartupPlayersView(tk.LabelFrame):
     """View to select players and number of players.
 
@@ -61,43 +110,15 @@ class StartupPlayersView(tk.LabelFrame):
             self._nb_players.trace('w', self._on_nb_players_change)
 
         # Create the rows for up to 6 players
-        self._rows = []  # list of dicts {frame, name_entry, type_cb}
+        self._rows = []  # list of StartupPlayerDefinition instances
 
         body = tk.Frame(self)
         body.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=6, pady=6)
 
         for i in range(1, 7):
-            row = tk.Frame(body)
+            row = StartupPlayerDefinition(body, i)
             row.pack(side=tk.TOP, fill=tk.X, pady=2)
-
-            # Player label
-            labp = tk.Label(row, text=f'{_('Player')} {i}:', width=10, anchor=tk.W)
-            labp.pack(side=tk.LEFT)
-
-            # Name entry
-            name_var = tk.StringVar()
-            default_name = _('Player') + f' {i}' if i == 1 else _('AI') + f' {i-1}'
-            name_var.set(default_name)
-            name_entry = ttk.Entry(row, textvariable=name_var)
-            name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
-
-            # Type combobox (Human / AI)
-            type_cb = ttk.Combobox(row, values=[_('Human'), _('AI')], width=8, state='readonly')
-            if i == 1:
-                type_cb.set(_('Human'))
-                # first player always human and not editable
-                type_cb.configure(state='disabled')
-            else:
-                type_cb.set(_('AI'))
-
-            type_cb.pack(side=tk.LEFT, padx=6)
-
-            self._rows.append({
-                'frame': row,
-                'name_var': name_var,
-                'name_entry': name_entry,
-                'type_cb': type_cb,
-            })
+            self._rows.append(row)
 
         # Initialize rows state according to initial nb players
         self._update_rows()
@@ -130,21 +151,7 @@ class StartupPlayersView(tk.LabelFrame):
         n = int(self._nb_players.get())
 
         for idx, r in enumerate(self._rows, start=1):
-            name_entry = r['name_entry']
-            type_cb = r['type_cb']
-
             if idx <= n:
-                # enable
-                name_entry.configure(state=tk.NORMAL)
-                # first player's type combobox remains disabled (always human)
-                if idx == 1:
-                    type_cb.configure(state=tk.DISABLED)
-                    type_cb.set(_('Human'))
-                else:
-                    # allow selecting AI/human if desired
-                    type_cb.configure(state=tk.READONLY)
+                r.enable()
             else:
-                # disable but keep visible
-                name_entry.configure(state=tk.DISABLED)
-                # keep combobox disabled as well
-                type_cb.configure(state=tk.DISABLED)
+                r.disable()
