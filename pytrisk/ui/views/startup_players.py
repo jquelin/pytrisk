@@ -23,70 +23,92 @@ from pytrisk.logger import log
 
 
 class StartupPlayerDefinition(tk.Frame):
-    """A single player row: human player (name) or AI player (difficulty).
+    """Base class for a single player row.
 
     Provides enable() / disable() methods to change the state of contained
-    widgets without the parent needing to track them individually.
+    widgets. Subclasses implement specific UI for human or AI players.
 
     Args:
         parent: parent widget
-        idx: player index (1 = human, 2+ = AI)
     """
 
-    def __init__(self, parent, idx: int):
+    def __init__(self, parent):
         super().__init__(parent)
 
-        self.idx = idx
-        is_human = (idx == 1)
-
-        if is_human:
-            # Human player: static label + editable name
-            lab = tk.Label(self, text=_('Human player'), width=12, anchor=tk.W)
-            lab.pack(side=tk.LEFT)
-
-            self.name_var = tk.StringVar()
-            default_name = _('Player')
-            self.name_var.set(default_name)
-            self.name_entry = ttk.Entry(self, textvariable=self.name_var)
-            self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
-
-            # No difficulty for human
-            self.difficulty_cb = None
-        else:
-            # AI player: label with index + difficulty selector
-            ai_label = _('AI player') + f' {idx - 1}'
-            lab = tk.Label(self, text=ai_label, width=12, anchor=tk.W)
-            lab.pack(side=tk.LEFT)
-
-            # No name entry for AI
-            self.name_var = None
-            self.name_entry = None
-
-            # Difficulty combobox
-            self.difficulty_var = tk.StringVar()
-            self.difficulty_cb = ttk.Combobox(
-                self,
-                values=[_('Easy'), _('Hard')],
-                textvariable=self.difficulty_var,
-                width=8,
-                state='readonly'
-            )
-            self.difficulty_cb.set(_('Easy'))
-            self.difficulty_cb.pack(side=tk.LEFT, padx=6)
-
     def enable(self):
-        """Enable this player row."""
-        if self.name_entry is not None:
-            self.name_entry.configure(state=tk.NORMAL)
-        if self.difficulty_cb is not None:
-            self.difficulty_cb.configure(state='readonly')
+        """Enable this player row (subclasses must implement)."""
+        raise NotImplementedError
 
     def disable(self):
         """Disable this player row (keeps it visible)."""
-        if self.name_entry is not None:
-            self.name_entry.configure(state=tk.DISABLED)
-        if self.difficulty_cb is not None:
-            self.difficulty_cb.configure(state=tk.DISABLED)
+        raise NotImplementedError
+
+
+class StartupHumanPlayerDefinition(StartupPlayerDefinition):
+    """A human player row: static label + editable name entry."""
+
+    def __init__(self, parent):
+        super().__init__(parent)
+
+        lab = tk.Label(self, text=_('Human player'), width=12, anchor=tk.W)
+        lab.pack(side=tk.LEFT)
+
+        self.name_var = tk.StringVar()
+        default_name = _('Player')
+        self.name_var.set(default_name)
+        self.name_entry = ttk.Entry(self, textvariable=self.name_var)
+        self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
+
+    def enable(self):
+        """Enable the name entry."""
+        self.name_entry.configure(state=tk.NORMAL)
+
+    def disable(self):
+        """Disable the name entry (keep the row visible)."""
+        self.name_entry.configure(state=tk.DISABLED)
+
+    def get_name(self):
+        """Return the player's name."""
+        return self.name_var.get()
+
+
+class StartupAIPlayerDefinition(StartupPlayerDefinition):
+    """An AI player row: label with index + difficulty selector.
+
+    Args:
+        parent: parent widget
+        ai_index: index number for this AI player (1, 2, 3, ...)
+    """
+
+    def __init__(self, parent, ai_index: int):
+        super().__init__(parent)
+
+        ai_label = _('AI player') + f' {ai_index}'
+        lab = tk.Label(self, text=ai_label, width=12, anchor=tk.W)
+        lab.pack(side=tk.LEFT)
+
+        self.difficulty_var = tk.StringVar()
+        self.difficulty_cb = ttk.Combobox(
+            self,
+            values=[_('Easy'), _('Hard')],
+            textvariable=self.difficulty_var,
+            width=8,
+            state='readonly'
+        )
+        self.difficulty_cb.set(_('Easy'))
+        self.difficulty_cb.pack(side=tk.LEFT, padx=6)
+
+    def enable(self):
+        """Enable the difficulty combobox."""
+        self.difficulty_cb.configure(state='readonly')
+
+    def disable(self):
+        """Disable the difficulty combobox (keep the row visible)."""
+        self.difficulty_cb.configure(state=tk.DISABLED)
+
+    def get_difficulty(self):
+        """Return the difficulty ('Easy' or 'Hard')."""
+        return self.difficulty_var.get()
 
 
 class StartupPlayersView(tk.LabelFrame):
@@ -141,10 +163,16 @@ class StartupPlayersView(tk.LabelFrame):
         body = tk.Frame(self)
         body.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=6, pady=6)
 
+        # Human player (always first)
+        human = StartupHumanPlayerDefinition(body)
+        human.pack(side=tk.TOP, fill=tk.X, pady=2)
+        self._rows.append(human)
+
+        # AI players
         for i in range(1, 7):
-            row = StartupPlayerDefinition(body, i)
-            row.pack(side=tk.TOP, fill=tk.X, pady=2)
-            self._rows.append(row)
+            ai = StartupAIPlayerDefinition(body, i)
+            ai.pack(side=tk.TOP, fill=tk.X, pady=2)
+            self._rows.append(ai)
 
         # Initialize rows state according to initial nb players
         self._update_rows()
@@ -214,8 +242,12 @@ class StartupPlayersView(tk.LabelFrame):
         """
         n = int(self._nb_players.get())
 
-        for idx, r in enumerate(self._rows, start=1):
-            if idx <= n:
-                r.enable()
+        # Index 0 is human player, always enabled
+        self._rows[0].enable()
+
+        # AI players: first (n-1) are enabled, rest disabled
+        for idx in range(1, 7):
+            if idx < n:
+                self._rows[idx].enable()
             else:
-                r.disable()
+                self._rows[idx].disable()
