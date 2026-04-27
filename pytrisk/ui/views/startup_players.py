@@ -23,62 +23,81 @@ from pytrisk.logger import log
 
 
 class StartupPlayerDefinition(tk.Frame):
-    """A single player row: label, name entry and type combobox.
+    """A single player row: human player (name) or AI player (difficulty).
 
     Provides enable() / disable() methods to change the state of contained
     widgets without the parent needing to track them individually.
+
+    Args:
+        parent: parent widget
+        idx: player index (1 = human, 2+ = AI)
     """
 
     def __init__(self, parent, idx: int):
         super().__init__(parent)
 
         self.idx = idx
+        is_human = (idx == 1)
 
-        # Player label
-        labp = tk.Label(self, text=f'{_('Player')} {idx}:', width=10, anchor=tk.W)
-        labp.pack(side=tk.LEFT)
+        if is_human:
+            # Human player: static label + editable name
+            lab = tk.Label(self, text=_('Human player'), width=12, anchor=tk.W)
+            lab.pack(side=tk.LEFT)
 
-        # Name entry
-        self.name_var = tk.StringVar()
-        default_name = _('Player') + f' {idx}' if idx == 1 else _('AI') + f' {idx-1}'
-        self.name_var.set(default_name)
-        self.name_entry = ttk.Entry(self, textvariable=self.name_var)
-        self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
+            self.name_var = tk.StringVar()
+            default_name = _('Player')
+            self.name_var.set(default_name)
+            self.name_entry = ttk.Entry(self, textvariable=self.name_var)
+            self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
 
-        # Type combobox (Human / AI)
-        self.type_cb = ttk.Combobox(self, values=[_('Human'), _('AI')], width=8, state='readonly')
-        if idx == 1:
-            self.type_cb.set(_('Human'))
-            # first player always human and not editable
-            self.type_cb.configure(state='disabled')
+            # No difficulty for human
+            self.difficulty_cb = None
         else:
-            self.type_cb.set(_('AI'))
+            # AI player: label with index + difficulty selector
+            ai_label = _('AI player') + f' {idx - 1}'
+            lab = tk.Label(self, text=ai_label, width=12, anchor=tk.W)
+            lab.pack(side=tk.LEFT)
 
-        self.type_cb.pack(side=tk.LEFT, padx=6)
+            # No name entry for AI
+            self.name_var = None
+            self.name_entry = None
+
+            # Difficulty combobox
+            self.difficulty_var = tk.StringVar()
+            self.difficulty_cb = ttk.Combobox(
+                self,
+                values=[_('Easy'), _('Hard')],
+                textvariable=self.difficulty_var,
+                width=8,
+                state='readonly'
+            )
+            self.difficulty_cb.set(_('Easy'))
+            self.difficulty_cb.pack(side=tk.LEFT, padx=6)
 
     def enable(self):
         """Enable this player row."""
-        self.name_entry.configure(state=tk.NORMAL)
-        if self.idx == 1:
-            self.type_cb.configure(state='disabled')
-            self.type_cb.set(_('Human'))
-        else:
-            self.type_cb.configure(state='readonly')
+        if self.name_entry is not None:
+            self.name_entry.configure(state=tk.NORMAL)
+        if self.difficulty_cb is not None:
+            self.difficulty_cb.configure(state='readonly')
 
     def disable(self):
         """Disable this player row (keeps it visible)."""
-        self.name_entry.configure(state=tk.DISABLED)
-        self.type_cb.configure(state=tk.DISABLED)
+        if self.name_entry is not None:
+            self.name_entry.configure(state=tk.DISABLED)
+        if self.difficulty_cb is not None:
+            self.difficulty_cb.configure(state=tk.DISABLED)
 
 
 class StartupPlayersView(tk.LabelFrame):
     """View to select players and number of players.
 
-    It shows up to 6 player rows. The first player is always human. The
-    following players default to AI. The user can choose the number of
-    players (2..6) using a spin control. When the number of players is
-    changed, rows for existing players are enabled (state normal) and the
-    extra rows are disabled (state disabled) but not removed.
+    It shows up to 6 player rows. The first player is always human (editable
+    name). The following players are AI with a difficulty selector (Easy/Hard).
+    The user can choose the number of players (2..6) using a spin control.
+    When the number of players is changed, rows for existing players are enabled
+    (state normal) and the extra rows are disabled (state disabled) but not
+    removed.
     """
 
     def __init__(self, parent, controller, event_bus):
@@ -116,7 +135,7 @@ class StartupPlayersView(tk.LabelFrame):
         sp.bind('<Button-4>', self._on_spinbox_mousewheel)
         sp.bind('<Button-5>', self._on_spinbox_mousewheel)
 
-        # Create the rows for up to 6 players
+        # Create the rows: first is human, the rest are AI
         self._rows = []  # list of StartupPlayerDefinition instances
 
         body = tk.Frame(self)
