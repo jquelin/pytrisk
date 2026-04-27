@@ -52,6 +52,11 @@ class StartupView(tk.Frame):
         heading = Heading(self, text=_('New game'))
         heading.pack(side=tk.TOP, fill=tk.X)
 
+        # The button to actually start the new game
+        but = tk.Button(self, text=_('Start'), bg='black', fg='white',
+                        command=None)
+        but.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=10)
+
         # Create the maps view
         fmaps = StartupMapsView(self, controller, event_bus)
         fmaps.pack(side=tk.LEFT, fill=tk.Y, expand=False)
