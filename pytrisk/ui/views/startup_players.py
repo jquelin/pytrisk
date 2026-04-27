@@ -35,14 +35,6 @@ class StartupPlayerDefinition(tk.Frame):
     def __init__(self, parent):
         super().__init__(parent)
 
-    def enable(self):
-        """Enable this player row (subclasses must implement)."""
-        raise NotImplementedError
-
-    def disable(self):
-        """Disable this player row (keeps it visible)."""
-        raise NotImplementedError
-
 
 class StartupHumanPlayerDefinition(StartupPlayerDefinition):
     """A human player row: static label + editable name entry."""
@@ -58,14 +50,6 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         self.name_var.set(default_name)
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
-
-    def enable(self):
-        """Enable the name entry."""
-        self.name_entry.configure(state=tk.NORMAL)
-
-    def disable(self):
-        """Disable the name entry (keep the row visible)."""
-        self.name_entry.configure(state=tk.DISABLED)
 
     def get_name(self):
         """Return the player's name."""
@@ -241,9 +225,6 @@ class StartupPlayersView(tk.LabelFrame):
         Rows beyond the selected number are kept visible but disabled.
         """
         n = int(self._nb_players.get())
-
-        # Index 0 is human player, always enabled
-        self._rows[0].enable()
 
         # AI players: first (n-1) are enabled, rest disabled
         for idx in range(1, 6):
