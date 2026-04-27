@@ -24,6 +24,7 @@ import tkinter.font as tkfont
 from pytrisk.locale    import _
 from pytrisk.logger    import log
 from pytrisk.ui.views.startup_maps import StartupMapsView
+from pytrisk.ui.widgets.heading    import Heading
 
 
 
@@ -46,8 +47,9 @@ class StartupView(tk.Frame):
         controller = self.controller
         event_bus  = self.event_bus
 
-        lab = tk.Label(self, text=_('New game'), bg='black', fg='white', font=('TkDefaultFont', 14, 'bold'))
-        lab.pack(side=tk.TOP, fill=tk.X, padx=20, pady=20)
+        # The view heading
+        heading = Heading(self, text=_('New game'))
+        heading.pack(side=tk.TOP, fill=tk.X)
 
         # Create the maps view
         fmaps = StartupMapsView(self, controller, event_bus)
