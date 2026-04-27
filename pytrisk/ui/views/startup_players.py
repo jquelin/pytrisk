@@ -169,7 +169,7 @@ class StartupPlayersView(tk.LabelFrame):
         self._rows.append(human)
 
         # AI players
-        for i in range(1, 7):
+        for i in range(1, 6):
             ai = StartupAIPlayerDefinition(body, i)
             ai.pack(side=tk.TOP, fill=tk.X, pady=2)
             self._rows.append(ai)
@@ -246,7 +246,7 @@ class StartupPlayersView(tk.LabelFrame):
         self._rows[0].enable()
 
         # AI players: first (n-1) are enabled, rest disabled
-        for idx in range(1, 7):
+        for idx in range(1, 6):
             if idx < n:
                 self._rows[idx].enable()
             else:
