@@ -55,15 +55,12 @@ class ColorSelector(tk.Frame):
             self._color_buttons[color] = btn
 
         # Update color display
-        self._update_color_display()
+        self._select_color(initial)
+
 
     def _select_color(self, color):
         """Select a color."""
         self._color_var.set(color)
-        self._update_color_display()
-
-    def _update_color_display(self):
-        """Update the icon overlay on the selected color."""
         selected = self._color_var.get()
         for color, btn in self._color_buttons.items():
             for child in btn.winfo_children():
