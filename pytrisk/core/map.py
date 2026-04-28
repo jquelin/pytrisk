@@ -29,8 +29,8 @@ class Map:
         # Map files
         self.dir = dirname
         self.file = dirname / 'map.toml'
-        self.background  = dirname / 'background.png'
-        self.territories = dirname / 'territories.png'
+        self.background = dirname / 'background.png'
+        self.overlay    = dirname / 'overlay.png'
 
         # Load map file
         log.debug(f'Loading map file {self.file}')

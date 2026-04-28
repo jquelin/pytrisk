@@ -368,7 +368,7 @@ def convert(mapfile: Path, force: bool = False):
 
     shutil.copy(src.as_posix(), dst.as_posix())
     src = srcdir / parsed.files["map"]
-    dst = dstdir / "territories.png"
+    dst = dstdir / "overlay.png"
     log.info(f"Copying/converting {src.as_posix()} to {dst.as_posix()}")
     img = Image.open(src.as_posix())
     img.save(dst.as_posix(), "PNG")
