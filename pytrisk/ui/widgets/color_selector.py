@@ -18,73 +18,121 @@
 import tkinter as tk
 from tkinter import ttk
 
-from pytrisk.locale import _
-from pytrisk.logger import log
 from pytrisk.ui.utils import Icons
 
 
 class ColorSelector(tk.Frame):
-    """A color selector grid with icon overlay on selected color.
-
-    Args:
-        parent: parent widget
-        colors: list of available colors
-        initial: initial selected color
-        nbcols: number of columns (default: 5)
-    """
-
-    def __init__(self, parent, colors, initial, nbcols=5):
+    def __init__(self, parent, colors, initial, command=None, nbcols=5):
         super().__init__(parent)
 
-        # Prepare color selector
-        self._color_var = tk.StringVar(value=initial)
-        self._color_buttons = {}
-        self._icon = Icons.load('player-active')
+        # store variables
+        self._colors  = colors
+        self._nbcols  = nbcols
+        self._command = command
+        self._color   = initial
+        self._popup   = None
 
-        # Build selector
+        # create main button
+        self._button = tk.Button(self,
+            bg               = initial,
+            activebackground = initial,
+            command          = self._toggle_popup,
+            image            = Icons.load('paintbrush')
+        )
+        self._button.pack()
+
+
+    # -- Private methods: popup management
+
+    def _toggle_popup(self):
+        if self._popup and self._popup.winfo_exists():
+            self._close_popup()
+        else:
+            self._open_popup()
+
+    def _open_popup(self):
+        if self._popup:
+            return
+
+        # create a toplevel window with no border
+        self._popup = tk.Toplevel(self)
+        self._popup.overrideredirect(True)
+
+        # position at the right of the button
+        x = self._button.winfo_rootx() + self._button.winfo_width()
+        y = self._button.winfo_rooty()
+        self._popup.geometry(f"+{x}+{y}")
+
+        # construct the grid
         size = 16
-        for idx, color in enumerate(colors):
-            row = idx // nbcols
-            col = idx % nbcols
-            btn = tk.Frame(self, width=size, height=size,
-                           bg=color, relief=tk.RAISED, bd=1)
-            btn.grid(row=row, column=col)
-            btn.bind('<Button-1>', lambda e, c=color: self._select_color(c))
+        for idx, color in enumerate(self._colors):
+            row = idx // self._nbcols
+            col = idx % self._nbcols
+
+            f = tk.Frame(self._popup, width=size, height=size)
+            f.grid(row=row, column=col)
+            f.pack_propagate(False)
+
+            btn = tk.Button(f, bg=color, activebackground=color)
+            btn.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+
             btn.color = color
-
-            self._color_buttons[color] = btn
-
-        # Update color display
-        self._select_color(initial)
+            btn.bind('<Button-1>', lambda e, c=color: self._on_color_selected(c))
 
 
-    def _select_color(self, color):
-        """Select a color."""
-        self._color_var.set(color)
-        selected = self._color_var.get()
-        for color, btn in self._color_buttons.items():
-            for child in btn.winfo_children():
-                child.destroy()
-            if color == selected:
-                lbl = tk.Label(btn, image=self._icon, bg=color)
-                lbl.image = self._icon
-                lbl.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+        # close if clicked outside
+        self.winfo_toplevel().bind('<Button-1>', self._click_outside)
 
-    # -- Public methods
+
+    def _close_popup(self):
+        if self._popup:
+            self._popup.destroy()
+            self._popup = None
+            self.winfo_toplevel().unbind('<Button-1>')
+
+    def _click_outside(self, event):
+        if not self._popup:
+            return
+
+        widget = event.widget
+        if widget is self._button:
+            return
+
+        if str(widget).startswith(str(self._popup)):
+            return
+
+        self._close_popup()
+
+    # ------------------------------------------------------------------
+    # Selection
+    # ------------------------------------------------------------------
+
+    def _on_color_selected(self, color):
+        if self._color == color:
+            self._close_popup()
+            return
+
+        self._color = color
+        self._button.configure(bg=color, activebackground=color)
+        self._close_popup()
+
+        # callback MVC
+        if self._command:
+            self._command(color)
+
+    # ------------------------------------------------------------------
+    # Public API
+    # ------------------------------------------------------------------
 
     def get_color(self):
-        """Return the selected color."""
-        return self._color_var.get()
+        return self._color
+
+    def set_color(self, color):
+        self._color.set(color)
+        self._button.configure(bg=color, activebackground=color)
 
     def enable(self):
-        """Enable the color selector buttons."""
-        for btn in self._color_buttons.values():
-            btn.bind('<Button-1>', lambda e, c=btn.color: self._select_color(c))
-            btn.configure(cursor='hand2')
+        self._button.configure(state=tk.NORMAL)
 
     def disable(self):
-        """Disable the color selector buttons."""
-        for btn in self._color_buttons.values():
-            btn.unbind('<Button-1>')
-            btn.configure(cursor='')
-
+        self._button.configure(state=tk.DISABLED)
