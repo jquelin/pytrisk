@@ -15,6 +15,7 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
+import colorsys
 import tkinter as tk
 from tkinter import ttk
 
@@ -113,9 +114,21 @@ class ColorSelector(tk.Frame):
         if self._command:
             self._command(color)
 
-    # ------------------------------------------------------------------
-    # Public API
-    # ------------------------------------------------------------------
+    def _desaturate(self, color, factor=0.1):
+        """Return a desaturated version of a Tk color."""
+        r, g, b = self.winfo_rgb(color)
+        r /= 65535
+        g /= 65535
+        b /= 65535
+
+        h, l, s = colorsys.rgb_to_hls(r, g, b)
+        s *= factor  # reduce saturation
+
+        r, g, b = colorsys.hls_to_rgb(h, l, s)
+
+        return "#%02x%02x%02x" % (int(r*255), int(g*255), int(b*255))
+
+    # -- Public API
 
     def get_color(self):
         return self._color
@@ -125,7 +138,7 @@ class ColorSelector(tk.Frame):
         self._button.configure(bg=color, activebackground=color)
 
     def enable(self):
-        self._button.configure(state=tk.NORMAL)
+        self._button.configure(state=tk.NORMAL, bg=self._color)
 
     def disable(self):
-        self._button.configure(state=tk.DISABLED)
+        self._button.configure(state=tk.DISABLED, bg=self._desaturate(self._color))
