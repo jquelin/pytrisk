@@ -23,10 +23,26 @@ from pytrisk.ui.utils import Icons
 
 
 class ColorSelector(tk.Frame):
+    """A Tkinter widget for selecting a color from a predefined palette.
+
+    Displays a button showing the currently selected color. Clicking the button
+    opens a popup window with a grid of available colors. Selecting a color
+    updates the button appearance and triggers an optional callback.
+    """
+
     def __init__(self, parent, colors, initial, command=None, nbcols=5):
+        """Initialize the ColorSelector widget.
+
+        Args:
+            parent: The parent Tkinter widget.
+            colors: List of color strings (e.g., '#ff0000', 'red') available for selection.
+            initial: The initial selected color (should be present in colors).
+            command: Optional callback function invoked with the selected color as argument when a new color is chosen.
+            nbcols: Number of columns in the color grid popup (default: 5).
+        """
         super().__init__(parent)
 
-        # store variables
+        # store variables
         self._colors  = colors
         self._nbcols  = nbcols
         self._command = command
@@ -46,12 +62,22 @@ class ColorSelector(tk.Frame):
     # -- Private methods: popup management
 
     def _toggle_popup(self):
+        """Toggle the visibility of the color selection popup.
+
+        Closes the popup if it is currently open, otherwise opens it.
+        """
         if self._popup and self._popup.winfo_exists():
             self._close_popup()
         else:
             self._open_popup()
 
     def _open_popup(self):
+        """Open the color selection popup.
+
+        Creates a borderless Toplevel window positioned to the right of the main
+        button, containing a grid of color swatches. Binds a global click handler
+        to close the popup when clicking outside of it or the button.
+        """
         if self._popup:
             return
 
@@ -78,12 +104,22 @@ class ColorSelector(tk.Frame):
 
 
     def _close_popup(self):
+        """Close and destroy the color selection popup.
+
+        Destroys the popup window and unbinds the global click handler used to
+        detect outside clicks.
+        """
         if self._popup:
             self._popup.destroy()
             self._popup = None
             self.winfo_toplevel().unbind('<Button-1>')
 
     def _click_outside(self, event):
+        """Handle click events to close the popup when clicking outside.
+
+        Args:
+            event: The Tkinter Button-1 event object.
+        """
         if not self._popup:
             return
 
@@ -100,6 +136,14 @@ class ColorSelector(tk.Frame):
     # -- Private method: selection
 
     def _on_color_selected(self, color):
+        """Handle selection of a color swatch from the popup grid.
+
+        Updates the current color, refreshes the main button appearance, closes
+        the popup, and invokes the callback function if the selected color is new.
+
+        Args:
+            color: The color string selected by the user.
+        """
         # ignore if already selected
         if self._color == color:
             self._close_popup()
@@ -115,7 +159,18 @@ class ColorSelector(tk.Frame):
             self._command(color)
 
     def _desaturate(self, color, factor=0.1):
-        """Return a desaturated version of a Tk color."""
+        """Return a desaturated version of a Tk color string.
+
+        Converts the input color to RGB, transforms to HLS color space to reduce
+        saturation, then converts back to a hex color string.
+
+        Args:
+            color: Tk color string (e.g., '#ff0000', 'red').
+            factor: Saturation multiplier (0.0 to 1.0). Lower values produce more desaturated colors (default: 0.1).
+
+        Returns:
+            Desaturated color as a hex string (e.g., '#cc3333').
+        """
         r, g, b = self.winfo_rgb(color)
         r /= 65535
         g /= 65535
@@ -131,14 +186,22 @@ class ColorSelector(tk.Frame):
     # -- Public API
 
     def get_color(self):
+        """Return the currently selected color string."""
         return self._color
 
     def set_color(self, color):
+        """Set the currently selected color and update the button.
+
+        Args:
+            color: The new color string to select.
+        """
         self._color.set(color)
         self._button.configure(bg=color, activebackground=color)
 
     def enable(self):
+        """Enable the color selector button, allowing user interaction."""
         self._button.configure(state=tk.NORMAL, bg=self._color)
 
     def disable(self):
+        """Disable the color selector button and desaturate its background."""
         self._button.configure(state=tk.DISABLED, bg=self._desaturate(self._color))
