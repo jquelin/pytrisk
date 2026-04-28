@@ -35,7 +35,5 @@ pytrisk = "pytrisk.__main__:run"
 "Bug Tracker" = "https://github.com/jquelin/pytrisk/issues"
 
 [dependency-groups]
-dev = [
-    "tomlkit>=0.12.5",
-]
+dev = []
 
