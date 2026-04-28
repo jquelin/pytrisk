@@ -21,22 +21,28 @@ from tkinter import ttk
 from pytrisk.locale import _
 from pytrisk.logger import log
 
+PLAYER_COLORS = [
+    '#333333',  # grey20
+    '#FF2052',  # awesome
+    '#01A368',  # green
+    '#0066FF',  # blue
+    '#9E5B40',  # sepia
+    '#A9B2C3',  # cadet blue
+    '#BB3385',  # red violet
+    '#FF681F',  # orange
+    '#DCB63B',  # ~ dirty yellow
+    '#00CCCC',  # robin's egg blue
+    #'#1560BD',  # denim
+    #'#33CC99',  # shamrock
+    #'#FF9966',  # atomic tangerine
+    #'#00755E',  # tropical rain forest
+    #'#A50B5E',  # jazzberry jam
+    #'#A3E3ED',  # blizzard blue
+]
 
-class StartupPlayerDefinition(tk.Frame):
-    """Base class for a single player row.
-
-    Provides enable() / disable() methods to change the state of contained
-    widgets. Subclasses implement specific UI for human or AI players.
-
-    Args:
-        parent: parent widget
-    """
-
-    def __init__(self, parent):
-        super().__init__(parent)
 
 
-class StartupHumanPlayerDefinition(StartupPlayerDefinition):
+class StartupHumanPlayerDefinition(tk.Frame):
     """A human player row: static label + editable name entry."""
 
     def __init__(self, parent):
@@ -56,7 +62,7 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         return self.name_var.get()
 
 
-class StartupAIPlayerDefinition(StartupPlayerDefinition):
+class StartupAIPlayerDefinition(tk.Frame):
     """An AI player row: label with index + difficulty selector.
 
     Args:
