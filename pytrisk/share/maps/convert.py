@@ -18,11 +18,11 @@
 
 import argparse
 from dataclasses import dataclass, field
+import json
 from pathlib import Path
 from PIL import Image
 import shutil
 import sys
-from tomlkit import document, table, aot, dumps
 from typing import Dict, List, Tuple
 
 # Add pytrisk to sys.path
@@ -48,9 +48,22 @@ class Country:
     continent: int
     x: int
     y: int
-    cardtype: str
     connections: List[int] = field(default_factory=list)
 
+@dataclass
+class Card:
+    type: str
+    id: int
+
+@dataclass
+class Mission:
+    target: int
+    nbcountries: int
+    nbarmies: int
+    continent_1: str
+    continent_2: str
+    continent_3: str
+    description: str
 
 @dataclass
 class ParseResult:
@@ -58,6 +71,8 @@ class ParseResult:
     files: Dict[str, str]
     continents: Dict[str, List[str]]
     countries: Dict[int, Country]
+    cards: List[Card]
+    missions: List[Mission]
     errors: List[str]
 
 
@@ -66,7 +81,6 @@ class ParseResult:
 def parse_cards(parsed: ParseResult, content: str) -> ParseResult:
     log.info('Parsing card file')
 
-    nb_wildcards = 0
     lines = content.splitlines()
     for lineno, raw in enumerate(lines, 1):
         line = raw.strip()
@@ -84,24 +98,30 @@ def parse_cards(parsed: ParseResult, content: str) -> ParseResult:
             if section == 'cards':
                 if parts[0] not in ['Cannon', 'Infantry', 'Cavalry', 'wildcard']:
                     raise ValueError(f"info: unknown key {parts[0]}")
-                if parts[0] == 'wildcard':
-                    nb_wildcards += 1
 
                 else:
-                    cid = int(parts[1])
-                    parsed.countries[cid].cardtype = parts[0]
+                    cid = int(parts[1]) if len(parts) > 1 else None
+                    card = Card(type=parts[0].lower(), id=cid)
+                    parsed.cards.append(card)
 
             # missions
             elif section == "missions":
-                pass
+                mission = Mission(
+                    target=int(parts[0]),
+                    nbcountries=int(parts[1]),
+                    nbarmies=int(parts[2]),
+                    continent_1=int(parts[3]) if parts[3] != '*' else '"*"',
+                    continent_2=int(parts[4]) if parts[4] != '*' else '"*"',
+                    continent_3=int(parts[5]) if parts[5] != '*' else '"*"',
+                    description=' '.join(parts[6:]),
+                )
+                parsed.missions.append(mission)
 
             else:
                 raise ValueError(f"unknown section {section}")
 
         except Exception as e:
-            errors.append(f"Line {lineno}: {e} -> {raw}")
-
-    parsed.info['nb_wildcards'] = nb_wildcards
+            log.error(f"Line {lineno}: {e} -> {raw}")
 
     return parsed
 
@@ -112,6 +132,8 @@ def parse_map(content: str) -> ParseResult:
     info       = { "name": "unknown" }
     countries  = {}
     continents = {}
+    cards      = []
+    missions   = []
     files      = {}
     errors     = []
     continent_id = 1
@@ -183,7 +205,6 @@ def parse_map(content: str) -> ParseResult:
                     continent=continent,
                     x=x,
                     y=y,
-                    cardtype="",
                     connections=[]
                 )
 
@@ -220,7 +241,7 @@ def parse_map(content: str) -> ParseResult:
         except Exception as e:
             errors.append(f"Line {lineno}: {e} -> {raw}")
 
-    return ParseResult(info, files, continents, countries, errors)
+    return ParseResult(info, files, continents, countries, cards, missions, errors)
 
 
 # -- Graph validation
@@ -229,10 +250,6 @@ def validate(result: ParseResult) -> List[str]:
     errors = []
 
     for c in result.countries.values():
-        # check if missing card types
-        if c.cardtype == "":
-            log.warning(f"country {c.id} has no card type")
-
         # check asymetric connections
         for conn in c.connections:
             if c.id not in result.countries[conn].connections:
@@ -242,54 +259,56 @@ def validate(result: ParseResult) -> List[str]:
     return errors
 
 
-# -- Export TOML
+# -- Export
 
-def to_toml(result: ParseResult) -> dict:
-    doc = document()
+def to_json(result: ParseResult) -> dict:
+    # manual dump instead of json.dumps to allow pretty printing as we want.
+    out = []
+    out.append( '{')
+    out.append(f'  "name": "{result.info["name"]}",')
+    out.append( '  "category": "unknown",')
 
-    # info
-    t_info = table()
-    for k, v in result.info.items():
-        t_info[k] = result.info[k]
-    doc["info"] = t_info
+    out.append( '  "continents": [')
+    continents = []
+    for c in result.continents.values():
+        continents.append(f'    {{ "id": {c.id}, "name": "{c.name}", "color": "{c.color}", "bonus": {c.bonus} }}')
+    out.append( ',\n'.join(continents))
+    out.append( '  ],')
 
-    # files
-#    t_files = table()
-#    for k, v in result.files.items():
-#        t_files[k] = v
-#    doc["files"] = t_files
+    out.append( '  "countries": [')
+    countries = []
+    for c in result.countries.values():
+        countries.append(f'    {{ "id": {c.id}, '
+                         f'"x": {c.x}, "y": {c.y}, '
+                         f'"continent": {c.continent}, '
+                         f'"name": {json.dumps(c.name)}, '
+                         f'"connections": {c.connections} }}')
+    out.append( ',\n'.join(countries))
+    out.append( '  ],')
 
-    # continents
-    continents_aot = aot()
-    for c in sorted(result.continents.values(), key=lambda x: x.id):
-        t = table()
-        t["id"] = c.id
-        t["name"] = c.name
-        t["bonus"] = c.bonus
-        t["color"] = c.color
-        continents_aot.append(t)
+    out.append( '  "cards": [')
+    cards = []
+    for c in result.cards:
+        if c.id is None:
+            cards.append(f'    {{ "type": "{c.type}" }} ')
+        else:
+            cards.append(f'    {{ "type": "{c.type}", "id": {c.id} }} ')
+    out.append( ',\n'.join(cards))
+    out.append( '  ],')
 
-    doc["continents"] = continents_aot
+    out.append( '  "missions": [')
+    missions = []
+    for m in result.missions:
+        curmission  = f'    {{ "target": {m.target}, '
+        curmission += f'"countries": [{m.nbcountries}, {m.nbarmies}], '
+        curmission += f'"continents": [{json.dumps(m.continent_1)}, {json.dumps(m.continent_2)}, {json.dumps(m.continent_3)}], '
+        curmission += f'"description": {json.dumps(m.description)} }} '
+        missions.append(curmission)
+    out.append( ',\n'.join(missions))
+    out.append( '  ]')
 
-    # countries
-    countries_aot = aot()
-    for c in sorted(result.countries.values(), key=lambda x: x.id):
-        t = table()
-
-        t["id"] = c.id
-        t["name"] = c.name
-        t["continent"] = c.continent
-        t["x"] = c.x
-        t["y"] = c.y
-        t["cardtype"] = c.cardtype
-        t["connections"] = c.connections
-
-        countries_aot.append(t)
-
-    doc["countries"] = countries_aot
-
-    return doc
-
+    out.append( '}')
+    return '\n'.join(out)
 
 def convert(mapfile: Path, force: bool = False):
     mapname = mapfile.stem
@@ -351,12 +370,18 @@ def convert(mapfile: Path, force: bool = False):
     # write the result
     dstdir.mkdir(exist_ok=True)
 
-    outfile = dstdir / "map.toml"
+    outfile = dstdir / "map.json"
     log.info(f"Writing to {outfile.as_posix()}")
-    toml_data = to_toml(parsed)
+    data = to_json(parsed)
 
     with outfile.open("w", encoding="utf-8") as f:
-        f.write(dumps(toml_data))
+        f.write(data)
+    # try to load it, if it fails, it's not valid json
+    try:
+        json.loads(data)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Invalid json: {e}")
+
 
     # copy files
 

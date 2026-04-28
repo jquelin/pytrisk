@@ -1,0 +1,55 @@
+{
+  "name": "unknown",
+  "category": "unknown",
+  "continents": [
+    { "id": 1, "name": "Oberstufenpavillon", "color": "white", "bonus": 5 },
+    { "id": 2, "name": "Sporthalle/Mensa/Froum", "color": "white", "bonus": 5 },
+    { "id": 3, "name": "Erdkunde/Musik/Kunst/Technik/5erund6er_-_Pavillon", "color": "white", "bonus": 5 },
+    { "id": 4, "name": "Miteelstufenpavillon", "color": "white", "bonus": 5 },
+    { "id": 5, "name": "Naturwisschaftspavillon", "color": "white", "bonus": 5 },
+    { "id": 6, "name": "Lehrerpavillon", "color": "white", "bonus": 5 }
+  ],
+  "countries": [
+    { "id": 1, "x": 209, "y": 144, "continent": 1, "name": "Oberstufenraum", "connections": [2, 16] },
+    { "id": 2, "x": 237, "y": 142, "continent": 1, "name": "Toilette", "connections": [3, 1, 16, 14, 12, 9] },
+    { "id": 3, "x": 290, "y": 134, "continent": 1, "name": "Computerraum", "connections": [2] },
+    { "id": 4, "x": 429, "y": 151, "continent": 2, "name": "Sporthalle", "connections": [5] },
+    { "id": 5, "x": 410, "y": 206, "continent": 2, "name": "Mensa", "connections": [16, 14, 12, 9, 6, 4] },
+    { "id": 6, "x": 317, "y": 205, "continent": 2, "name": "Forum", "connections": [5] },
+    { "id": 7, "x": 458, "y": 260, "continent": 3, "name": "Erdkunde/Kunst", "connections": [9] },
+    { "id": 8, "x": 545, "y": 225, "continent": 3, "name": "Musik", "connections": [9] },
+    { "id": 9, "x": 521, "y": 248, "continent": 3, "name": "Toilette", "connections": [16, 14, 12, 5, 2, 8, 7] },
+    { "id": 10, "x": 288, "y": 308, "continent": 4, "name": "6", "connections": [12] },
+    { "id": 11, "x": 388, "y": 278, "continent": 4, "name": "7", "connections": [12] },
+    { "id": 12, "x": 334, "y": 291, "continent": 4, "name": "Toillette_", "connections": [16, 14, 5, 2, 9, 11, 10] },
+    { "id": 13, "x": 173, "y": 336, "continent": 5, "name": "Chemie/Bio", "connections": [14] },
+    { "id": 14, "x": 131, "y": 275, "continent": 5, "name": "Physik/Computerraum(Neu)", "connections": [16, 12, 13, 5, 2, 9] },
+    { "id": 15, "x": 104, "y": 223, "continent": 6, "name": "Bibliothek", "connections": [16] },
+    { "id": 16, "x": 174, "y": 195, "continent": 6, "name": "Lehrerzimmer/Sekreteriat", "connections": [2, 15, 14, 12, 5, 9, 1] }
+  ],
+  "cards": [
+    { "type": "cavalry", "id": 1 } ,
+    { "type": "infantry", "id": 2 } ,
+    { "type": "cannon", "id": 3 } ,
+    { "type": "cavalry", "id": 4 } ,
+    { "type": "infantry", "id": 5 } ,
+    { "type": "cannon", "id": 6 } ,
+    { "type": "cavalry", "id": 7 } ,
+    { "type": "infantry", "id": 8 } ,
+    { "type": "cannon", "id": 9 } ,
+    { "type": "cavalry", "id": 10 } ,
+    { "type": "infantry", "id": 11 } ,
+    { "type": "cannon", "id": 12 } ,
+    { "type": "cavalry", "id": 13 } ,
+    { "type": "infantry", "id": 14 } ,
+    { "type": "cannon", "id": 15 } ,
+    { "type": "cavalry", "id": 16 } ,
+    { "type": "wildcard" } ,
+    { "type": "wildcard" } ,
+    { "type": "wildcard" } ,
+    { "type": "wildcard" } 
+  ],
+  "missions": [
+
+  ]
+}

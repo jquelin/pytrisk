@@ -1,0 +1,55 @@
+{
+  "name": "unknown",
+  "category": "unknown",
+  "continents": [
+    { "id": 1, "name": "Austria", "color": "#ffcc00", "bonus": 15 },
+    { "id": 2, "name": "Hungary", "color": "#0099cc", "bonus": 3 },
+    { "id": 3, "name": "Bosnia_and_Herzegovina", "color": "#00cc66", "bonus": 1 }
+  ],
+  "countries": [
+    { "id": 1, "x": 248, "y": 47, "continent": 1, "name": "Bohemia_(Praha)", "connections": [10, 9, 2] },
+    { "id": 2, "x": 325, "y": 92, "continent": 1, "name": "Moravia_(Brno)", "connections": [1, 9, 3, 18] },
+    { "id": 3, "x": 385, "y": 34, "continent": 1, "name": "Silesia_(Opava)", "connections": [2, 7, 18] },
+    { "id": 4, "x": 314, "y": 350, "continent": 1, "name": "Dalmatia_(Spalato)", "connections": [5, 6] },
+    { "id": 5, "x": 299, "y": 247, "continent": 2, "name": "Croatia_and_Slavonia_(Agram)", "connections": [6, 4, 17, 12, 14, 19] },
+    { "id": 6, "x": 389, "y": 336, "continent": 3, "name": "Bosnia_and_Herzegovina_(Sarajevo)", "connections": [4, 5] },
+    { "id": 7, "x": 568, "y": 47, "continent": 1, "name": "Galicia_(Lemberg)", "connections": [3, 8, 18] },
+    { "id": 8, "x": 647, "y": 118, "continent": 1, "name": "Bucovina_(Czernowitz)", "connections": [7, 19] },
+    { "id": 9, "x": 315, "y": 131, "continent": 1, "name": "Lower_Austria_(Wien)", "connections": [2, 10, 1, 18] },
+    { "id": 10, "x": 236, "y": 128, "continent": 1, "name": "Upper_Austria_(Linz)", "connections": [9, 13, 14, 1] },
+    { "id": 11, "x": 236, "y": 203, "continent": 1, "name": "Carinthia_(Klagenfurt)", "connections": [14, 12, 17, 15, 13] },
+    { "id": 12, "x": 249, "y": 237, "continent": 1, "name": "Carniola_(Laibach)", "connections": [17, 5, 14, 11] },
+    { "id": 13, "x": 199, "y": 152, "continent": 1, "name": "Salzburg_(Salzburg)", "connections": [15, 11, 14, 10] },
+    { "id": 14, "x": 279, "y": 186, "continent": 1, "name": "Styria_(Graz)", "connections": [12, 5, 13, 10, 11, 18] },
+    { "id": 15, "x": 136, "y": 176, "continent": 1, "name": "Tyrol_(Innsbruck)", "connections": [16, 11, 13] },
+    { "id": 16, "x": 112, "y": 133, "continent": 1, "name": "Voralberg_(Bregenz)", "connections": [15] },
+    { "id": 17, "x": 223, "y": 265, "continent": 1, "name": "K\u00fcstenland_(Terst)", "connections": [5, 12, 11] },
+    { "id": 18, "x": 395, "y": 162, "continent": 2, "name": "West_Hungary_(West_Budapest)", "connections": [19, 7, 14, 9, 2, 3] },
+    { "id": 19, "x": 415, "y": 177, "continent": 2, "name": "East_Hungary_(East_Budapest)", "connections": [18, 8, 5] }
+  ],
+  "cards": [
+    { "type": "cavalry", "id": 1 } ,
+    { "type": "infantry", "id": 2 } ,
+    { "type": "cannon", "id": 3 } ,
+    { "type": "cavalry", "id": 4 } ,
+    { "type": "infantry", "id": 5 } ,
+    { "type": "cannon", "id": 6 } ,
+    { "type": "cavalry", "id": 7 } ,
+    { "type": "infantry", "id": 8 } ,
+    { "type": "cannon", "id": 9 } ,
+    { "type": "cavalry", "id": 10 } ,
+    { "type": "infantry", "id": 11 } ,
+    { "type": "cannon", "id": 12 } ,
+    { "type": "cavalry", "id": 13 } ,
+    { "type": "infantry", "id": 14 } ,
+    { "type": "cannon", "id": 15 } ,
+    { "type": "cavalry", "id": 16 } ,
+    { "type": "infantry", "id": 17 } ,
+    { "type": "cannon", "id": 18 } ,
+    { "type": "cavalry", "id": 19 } ,
+    { "type": "wildcard" } 
+  ],
+  "missions": [
+
+  ]
+}

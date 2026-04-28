@@ -15,6 +15,7 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
+import time
 
 from pytrisk.constants import appinfo
 from pytrisk.core.map import Map
@@ -26,16 +27,20 @@ class Application:
 
     def __init__(self):
         # initialize data and game
-        self._load_maps()
+        self._create_maps()
 
     # -- Private maps
 
-    def _load_maps(self):
-        '''List available maps. They are not loaded at this time.
+    def _create_maps(self):
+        '''Create maps from map definition. It is not yet fully loaded.
         '''
         log.info('Creating maps')
+        start = time.perf_counter()
         mapdir = appinfo.dirs.share / 'maps'
         self.maps = {}
         for f in mapdir.iterdir():
             if f.is_dir():
                 self.maps[f.name] = Map(f)
+
+        end = time.perf_counter()
+        log.info(f'Created {len(self.maps)} maps in {end - start:.2f} seconds')

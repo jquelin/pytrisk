@@ -15,7 +15,7 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-import tomllib
+import json
 
 from pytrisk.logger import log
 
@@ -28,18 +28,17 @@ class Map:
 
         # Map files
         self.dir = dirname
-        self.file = dirname / 'map.toml'
+        self.file = dirname / 'map.json'
         self.background = dirname / 'background.png'
         self.overlay    = dirname / 'overlay.png'
 
         # Load map file
         log.debug(f'Loading map file {self.file}')
-        self._data = tomllib.loads(self.file.read_text())
+        self._data = json.loads(self.file.read_text())
 
         # Extract general information
         self.id   = dirname.name
-        self.info = self._data['info']
-        self.name = self.info['name']
+        self.name = self._data['name']
 
         self.nb_continents = len(self._data['continents'])
         self.nb_countries  = len(self._data['countries'])

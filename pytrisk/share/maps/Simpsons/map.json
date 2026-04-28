@@ -1,0 +1,55 @@
+{
+  "name": "unknown",
+  "category": "unknown",
+  "continents": [
+    { "id": 1, "name": "Rez_de_Chaussée", "color": "#cc0000", "bonus": 5 },
+    { "id": 2, "name": "1er_étage", "color": "white", "bonus": 5 }
+  ],
+  "countries": [
+    { "id": 1, "x": 105, "y": 237, "continent": 1, "name": "Entry", "connections": [7, 6, 17] },
+    { "id": 2, "x": 206, "y": 312, "continent": 1, "name": "Garage", "connections": [3] },
+    { "id": 3, "x": 230, "y": 219, "continent": 1, "name": "Laundry", "connections": [2, 4] },
+    { "id": 4, "x": 233, "y": 144, "continent": 1, "name": "Rumpus_room", "connections": [3, 5] },
+    { "id": 5, "x": 149, "y": 109, "continent": 1, "name": "Kitchen", "connections": [4, 6, 8] },
+    { "id": 6, "x": 159, "y": 200, "continent": 1, "name": "Dining_room", "connections": [1, 5] },
+    { "id": 7, "x": 51, "y": 217, "continent": 1, "name": "Living_room", "connections": [1, 8] },
+    { "id": 8, "x": 56, "y": 131, "continent": 1, "name": "TV_room", "connections": [5, 7] },
+    { "id": 9, "x": 354, "y": 226, "continent": 2, "name": "Bart's_room", "connections": [17] },
+    { "id": 10, "x": 505, "y": 233, "continent": 2, "name": "Lisa's_room", "connections": [17] },
+    { "id": 11, "x": 610, "y": 221, "continent": 2, "name": "Homer_&_Marge's_room", "connections": [17, 12, 13] },
+    { "id": 12, "x": 628, "y": 95, "continent": 2, "name": "Homer_&_Marge's_closet", "connections": [11] },
+    { "id": 13, "x": 543, "y": 76, "continent": 2, "name": "Homer_et_Marge's_bathroom", "connections": [11] },
+    { "id": 14, "x": 473, "y": 79, "continent": 2, "name": "Maggie's_room", "connections": [17, 15] },
+    { "id": 15, "x": 407, "y": 96, "continent": 2, "name": "Maggie's_closet", "connections": [14] },
+    { "id": 16, "x": 347, "y": 104, "continent": 2, "name": "Bathroom", "connections": [17] },
+    { "id": 17, "x": 448, "y": 138, "continent": 2, "name": "Hall", "connections": [1, 9, 10, 11, 14, 16] }
+  ],
+  "cards": [
+    { "type": "infantry", "id": 1 } ,
+    { "type": "cannon", "id": 2 } ,
+    { "type": "cavalry", "id": 3 } ,
+    { "type": "infantry", "id": 4 } ,
+    { "type": "cannon", "id": 5 } ,
+    { "type": "cavalry", "id": 6 } ,
+    { "type": "infantry", "id": 7 } ,
+    { "type": "cannon", "id": 8 } ,
+    { "type": "cavalry", "id": 9 } ,
+    { "type": "infantry", "id": 10 } ,
+    { "type": "cannon", "id": 11 } ,
+    { "type": "cavalry", "id": 12 } ,
+    { "type": "infantry", "id": 13 } ,
+    { "type": "cannon", "id": 14 } ,
+    { "type": "cavalry", "id": 15 } ,
+    { "type": "infantry", "id": 16 } ,
+    { "type": "cannon", "id": 17 } ,
+    { "type": "wildcard" } ,
+    { "type": "wildcard" } ,
+    { "type": "wildcard" } ,
+    { "type": "wildcard" } ,
+    { "type": "wildcard" } ,
+    { "type": "wildcard" } 
+  ],
+  "missions": [
+
+  ]
+}
