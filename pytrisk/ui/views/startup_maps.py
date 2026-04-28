@@ -50,10 +50,11 @@ class StartupMapsView(tk.LabelFrame):
 
         # Prepare the treeview columns.
         self._map_columns = {
-            "id"   : Column("id", str),
-            "Name" : Column("name", str),
-            "#C"   : Column("nb_continents", int),
-            "#c"   : Column("nb_countries", int),
+            "id"       : Column("id", str),
+            "Name"     : Column("name", str),
+            "Category" : Column("category", str),
+            "#C"       : Column("nb_continents", int),
+            "#c"       : Column("nb_countries", int),
         }
 
         # Prepare the treeview data.
@@ -66,10 +67,11 @@ class StartupMapsView(tk.LabelFrame):
         longest = [
             font.measure(max([m.id for m in maps], key=len)) + 10,
             font.measure(max([m.name for m in maps], key=len)) + 10,
-            font.measure('XXX') + 10,
-            font.measure('XXX') + 10
+            font.measure(max([m.category for m in maps], key=len)) + 10,
+            font.measure('XXX') + 10, # nb continents is a number
+            font.measure('XXX') + 10  # nb countries is a number
         ]
-        aligns  = [tk.W, tk.W, tk.CENTER, tk.CENTER]
+        aligns  = [tk.W, tk.W, tk.W, tk.CENTER, tk.CENTER]
 
         # Create the treeview to show the maps.
         tv = ttk.Treeview(self, columns=headers, height=20, show='headings',

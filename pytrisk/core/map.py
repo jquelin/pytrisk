@@ -37,8 +37,9 @@ class Map:
         self._data = json.loads(self.file.read_text())
 
         # Extract general information
-        self.id   = dirname.name
-        self.name = self._data['name']
+        self.id       = dirname.name
+        self.name     = self._data['name']
+        self.category = self._data['category']
 
         self.nb_continents = len(self._data['continents'])
         self.nb_countries  = len(self._data['countries'])
