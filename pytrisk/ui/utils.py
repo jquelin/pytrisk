@@ -26,17 +26,15 @@ class Icons:
     _cache = {}
 
     @classmethod
-    def load(cls, name, size=24):
+    def load(cls, name):
         """Load an icon and return it ready to be used by tk"""
-        size = str(size)
 
         # check if icon is already loaded
-        cached = name + '_' + size
-        if cached in cls._cache:
-            return cls._cache[cached]
+        if name in cls._cache:
+            return cls._cache[name]
 
         # icon not loaded, first compute path
-        path = appinfo.dirs.share / 'icons' / size / f'{name}.png'
+        path = appinfo.dirs.share / 'icons' / f'{name}.png'
         path = path.absolute().as_posix()
         log.debug(f'loading icon {path}')
 
@@ -47,7 +45,6 @@ class Icons:
 
         # create the icon ready to be used by tk, store it and return it
         icon = PIL.ImageTk.PhotoImage(img)
-        cls._cache[cached] = icon
+        cls._cache[name] = icon
         return icon
-
 

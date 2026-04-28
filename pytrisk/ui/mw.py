@@ -43,7 +43,7 @@ class MainWindow(tk.Tk):
         # GUI creation
         log.info('creating main window')
         self.title(appinfo.title)
-        self.iconphoto(True, Icons.load(appinfo.name, 32))
+        self.iconphoto(True, Icons.load(appinfo.name))
         self._create_views()
 
         # Add some bindings

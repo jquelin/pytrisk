@@ -28,14 +28,13 @@ class ToolbarView(tk.Frame):
         super().__init__(parent)
 
         self.controller = controller
-        iconsize = 16
 
-        icon = Icons.load('quit', iconsize)
+        icon = Icons.load('quit')
         but = tk.Button(self, image=icon, command=self._on_quit)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('Quit'))
 
-        icon = Icons.load('close', iconsize)
+        icon = Icons.load('close')
         but = tk.Button(self, image=icon, state=tk.DISABLED,
                         command=self._on_nothing)
         but.pack(side=tk.LEFT)
@@ -52,13 +51,13 @@ class ToolbarView(tk.Frame):
         lab = tk.Label(self, text=_('place armies'), state=tk.DISABLED)
         lab.pack(side=tk.LEFT)
 
-        icon = Icons.load('undo', iconsize)
+        icon = Icons.load('undo')
         but = tk.Button(self, image=icon, state=tk.DISABLED,
                         command=self._on_nothing)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('undo all'))
 
-        icon = Icons.load('next', iconsize)
+        icon = Icons.load('next')
         but = tk.Button(self, image=icon, state=tk.DISABLED,
                         command=self._on_nothing)
         but.pack(side=tk.LEFT)
@@ -67,13 +66,13 @@ class ToolbarView(tk.Frame):
         lab = tk.Label(self, text=_('attack'), state=tk.DISABLED)
         lab.pack(side=tk.LEFT)
 
-        icon = Icons.load('redo', iconsize)
+        icon = Icons.load('redo')
         but = tk.Button(self, image=icon, state=tk.DISABLED,
                         command=self._on_nothing)
         but.pack(side=tk.LEFT)
         tooltip = ToolTip(but, msg=_('attack again'))
 
-        icon = Icons.load('next', iconsize)
+        icon = Icons.load('next')
         but = tk.Button(self, image=icon, state=tk.DISABLED,
                         command=self._on_nothing)
         but.pack(side=tk.LEFT)
@@ -82,7 +81,7 @@ class ToolbarView(tk.Frame):
         lab = tk.Label(self, text=_('move armies'), state=tk.DISABLED)
         lab.pack(side=tk.LEFT)
 
-        icon = Icons.load('stop', iconsize)
+        icon = Icons.load('stop')
         but = tk.Button(self, image=icon, state=tk.DISABLED,
                         command=self._on_nothing)
         but.pack(side=tk.LEFT)

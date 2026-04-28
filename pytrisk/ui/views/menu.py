@@ -25,19 +25,18 @@ class MenuView(tk.Menu):
         super().__init__(parent)
 
         self.controller = controller
-        iconsize = 16
 
         # Menu: game
         menu = tk.Menu(self, tearoff=False)
         self.add_cascade(label=_('Game'), underline=0, menu=menu)
         label = _('Close')
-        icon  = Icons.load('close', iconsize)
+        icon  = Icons.load('close')
         menu.add_command(
                 label=label, underline=0, accelerator='Ctrl+W',
                 image=icon, compound=tk.LEFT,
                 state=tk.DISABLED, command=self._on_close)
         menu.add_separator()
-        icon  = Icons.load('quit', iconsize)
+        icon  = Icons.load('quit')
         menu.add_command(
                 label=_('Quit'), underline=0, accelerator='Ctrl+Q',
                 image=icon, compound=tk.LEFT,
@@ -47,31 +46,31 @@ class MenuView(tk.Menu):
         menu = tk.Menu(self, tearoff=False)
         self.add_cascade(label=_('Actions'), underline=0, menu=menu)
         label = _('Undo all')
-        icon  = Icons.load('undo', iconsize)
+        icon  = Icons.load('undo')
         menu.add_command(
                 label=label, underline=0, accelerator='u',
                 image=icon, compound=tk.LEFT,
                 state=tk.DISABLED, command=self._on_close)
         label = _('Attack')
-        icon  = Icons.load('next', iconsize)
+        icon  = Icons.load('next')
         menu.add_command(
                 label=label, underline=0, accelerator='a',
                 image=icon, compound=tk.LEFT,
                 state=tk.DISABLED, command=self._on_close)
         label = _('Re-attack')
-        icon  = Icons.load('redo', iconsize)
+        icon  = Icons.load('redo')
         menu.add_command(
                 label=label, underline=0, accelerator='r',
                 image=icon, compound=tk.LEFT,
                 state=tk.DISABLED, command=self._on_close)
         label = _('Consolidate')
-        icon  = Icons.load('next', iconsize)
+        icon  = Icons.load('next')
         menu.add_command(
                 label=label, underline=0, accelerator='c',
                 image=icon, compound=tk.LEFT,
                 state=tk.DISABLED, command=self._on_close)
         label = _('Finish turn')
-        icon  = Icons.load('stop', iconsize)
+        icon  = Icons.load('stop')
         menu.add_command(
                 label=label, underline=0, accelerator='f',
                 image=icon, compound=tk.LEFT,
