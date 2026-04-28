@@ -69,7 +69,7 @@ class ColorSelector(tk.Frame):
         for idx, color in enumerate(self._colors):
             row = idx // self._nbcols
             col = idx % self._nbcols
-            f = tk.Frame(self._popup, width=size, height=size, bg=color)
+            f = tk.Frame(self._popup, width=size, height=size, bg=color, cursor='hand2')
             f.grid(row=row, column=col)
             f.bind('<Button-1>', lambda e, c=color: self._on_color_selected(c))
 
