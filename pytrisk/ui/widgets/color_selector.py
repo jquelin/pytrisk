@@ -68,17 +68,9 @@ class ColorSelector(tk.Frame):
         for idx, color in enumerate(self._colors):
             row = idx // self._nbcols
             col = idx % self._nbcols
-
-            f = tk.Frame(self._popup, width=size, height=size)
+            f = tk.Frame(self._popup, width=size, height=size, bg=color)
             f.grid(row=row, column=col)
-            f.pack_propagate(False)
-
-            btn = tk.Button(f, bg=color, activebackground=color)
-            btn.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
-
-            btn.color = color
-            btn.bind('<Button-1>', lambda e, c=color: self._on_color_selected(c))
-
+            f.bind('<Button-1>', lambda e, c=color: self._on_color_selected(c))
 
         # close if clicked outside
         self.winfo_toplevel().bind('<Button-1>', self._click_outside)
@@ -103,20 +95,21 @@ class ColorSelector(tk.Frame):
 
         self._close_popup()
 
-    # ------------------------------------------------------------------
-    # Selection
-    # ------------------------------------------------------------------
+
+    # -- Private method: selection
 
     def _on_color_selected(self, color):
+        # ignore if already selected
         if self._color == color:
             self._close_popup()
             return
 
+        # store new color, update and close popup
         self._color = color
         self._button.configure(bg=color, activebackground=color)
         self._close_popup()
 
-        # callback MVC
+        # callback if any
         if self._command:
             self._command(color)
 
