@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Troisdorf",
+  "category": "unclassified",
   "continents": [
     { "id": 1, "name": "Müllekoven", "color": "#80ff81", "bonus": 2 },
     { "id": 2, "name": "Altenrath", "color": "#ff8082", "bonus": 2 },

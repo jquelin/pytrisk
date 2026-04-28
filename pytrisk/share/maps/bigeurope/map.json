@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Europe (big)",
+  "category": "continent",
   "continents": [
     { "id": 1, "name": "Scandinavia", "color": "#fff780", "bonus": 5 },
     { "id": 2, "name": "Britian", "color": "#ff8097", "bonus": 5 },

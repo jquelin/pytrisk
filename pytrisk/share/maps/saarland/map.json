@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Saarland",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "Merzig", "color": "yellow", "bonus": 3 },
     { "id": 2, "name": "Neunkirchen", "color": "red", "bonus": 4 },

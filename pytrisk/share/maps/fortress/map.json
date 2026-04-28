@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Fortress",
+  "category": "unclassified",
   "continents": [
     { "id": 1, "name": "The_Core", "color": "yellow", "bonus": 5 },
     { "id": 2, "name": "Inner_Wall", "color": "light_yellow", "bonus": 4 },

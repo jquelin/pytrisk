@@ -1,6 +1,6 @@
 {
   "name": "Risk GodStorm",
-  "category": "unknown",
+  "category": "imaginary",
   "continents": [
     { "id": 1, "name": "Germania", "color": "green", "bonus": 5 },
     { "id": 2, "name": "Atlantis", "color": "magenta", "bonus": 3 },

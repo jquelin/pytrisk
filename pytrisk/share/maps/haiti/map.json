@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Haiti",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Artibonite", "color": "gray", "bonus": 5 },
     { "id": 2, "name": "Centre", "color": "gray", "bonus": 3 },

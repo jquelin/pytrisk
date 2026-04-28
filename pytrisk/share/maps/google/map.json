@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Google Europa",
+  "category": "continent",
   "continents": [
     { "id": 1, "name": "Western_States", "color": "red", "bonus": 4 },
     { "id": 2, "name": "Central_States", "color": "yellow", "bonus": 6 },

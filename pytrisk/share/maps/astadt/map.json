@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Altenstadt",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "West-Altenstadt", "color": "#ffff99", "bonus": 4 },
     { "id": 2, "name": "Nordwest-Altenstadt", "color": "#33ccff", "bonus": 2 },

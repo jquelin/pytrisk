@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Dortmund",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "Mengede", "color": "#ffffcc", "bonus": 7 },
     { "id": 2, "name": "Eving", "color": "#ccccff", "bonus": 5 },

@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Middle Europe",
+  "category": "region",
   "continents": [
     { "id": 1, "name": "Österreich", "color": "white", "bonus": 5 },
     { "id": 2, "name": "Slowakei", "color": "white", "bonus": 2 },

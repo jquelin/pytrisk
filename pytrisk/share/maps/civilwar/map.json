@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Civil War",
+  "category": "USA",
   "continents": [
     { "id": 1, "name": "Free_States", "color": "blue", "bonus": 8 },
     { "id": 2, "name": "Border_States", "color": "green", "bonus": 4 },

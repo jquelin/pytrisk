@@ -1,6 +1,6 @@
 {
-  "name": "Ameroki Map",
-  "category": "unknown",
+  "name": "Ameroki",
+  "category": "imaginary",
   "continents": [
     { "id": 1, "name": "azio", "color": "#9aff80", "bonus": 5 },
     { "id": 2, "name": "ameroki", "color": "yellow", "bonus": 10 },

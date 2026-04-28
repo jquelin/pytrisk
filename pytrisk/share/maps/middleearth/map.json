@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Middle Earth",
+  "category": "imaginary",
   "continents": [
     { "id": 1, "name": "Northern_Eriador", "color": "Light", "bonus": 2 },
     { "id": 2, "name": "Middle_Eriador", "color": "Orange", "bonus": 5 },

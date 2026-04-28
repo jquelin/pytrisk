@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Wuppertal",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "Vohwinkel", "color": "orange", "bonus": 3 },
     { "id": 2, "name": "Uellendahl-Katernberg", "color": "blue", "bonus": 4 },

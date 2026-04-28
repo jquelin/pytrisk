@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "France",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Bretagne", "color": "col1", "bonus": 3 },
     { "id": 2, "name": "Basse-Normandie", "color": "col2", "bonus": 2 },

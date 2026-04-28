@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Startrek Enterprise",
+  "category": "game",
   "continents": [
     { "id": 1, "name": "Rear_Section", "color": "#bf889f", "bonus": 2 },
     { "id": 2, "name": "Engineering", "color": "#f39438", "bonus": 5 },

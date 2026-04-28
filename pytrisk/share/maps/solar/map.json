@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Solar System",
+  "category": "region",
   "continents": [
     { "id": 1, "name": "Mercury", "color": "yellow", "bonus": 6 },
     { "id": 2, "name": "Venus", "color": "yellow", "bonus": 8 },

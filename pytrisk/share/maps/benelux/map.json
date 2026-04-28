@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Benelux",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Holland", "color": "#ff3333", "bonus": 4 },
     { "id": 2, "name": "Oost_nederland", "color": "green", "bonus": 5 },

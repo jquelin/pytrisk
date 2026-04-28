@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Navarra",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "Merindad_Pamplona", "color": "#ffe180", "bonus": 5 },
     { "id": 2, "name": "Merindad_Sangüesa", "color": "#80feff", "bonus": 6 },

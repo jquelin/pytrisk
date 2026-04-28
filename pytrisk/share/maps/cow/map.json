@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Cow",
+  "category": "unclassified",
   "continents": [
     { "id": 1, "name": "Head", "color": "red", "bonus": 7 },
     { "id": 2, "name": "Chuck", "color": "red", "bonus": 4 },

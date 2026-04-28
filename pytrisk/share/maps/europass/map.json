@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Europass",
+  "category": "continent",
   "continents": [
     { "id": 1, "name": "Skandinavien", "color": "yellow", "bonus": 4 },
     { "id": 2, "name": "Westeuropa", "color": "red", "bonus": 5 },

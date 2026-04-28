@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Caribbean",
+  "category": "region",
   "continents": [
     { "id": 1, "name": "Southern_Spain", "color": "#33ff33", "bonus": 5 },
     { "id": 2, "name": "Holland", "color": "#ff9900", "bonus": 5 },

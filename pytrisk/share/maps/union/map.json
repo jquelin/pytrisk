@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "University of Leicester Students Union",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "2nd-Floor-(a)", "color": "orange", "bonus": 2 },
     { "id": 2, "name": "Ground-Floor", "color": "blue", "bonus": 8 },

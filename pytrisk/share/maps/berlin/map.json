@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Berlin",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "Stadtmitte", "color": "white", "bonus": 8 },
     { "id": 2, "name": "Nord", "color": "white", "bonus": 6 },

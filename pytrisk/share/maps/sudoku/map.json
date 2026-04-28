@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Sudoku",
+  "category": "game",
   "continents": [
     { "id": 1, "name": "A", "color": "yellow", "bonus": 5 },
     { "id": 2, "name": "B", "color": "red", "bonus": 5 },

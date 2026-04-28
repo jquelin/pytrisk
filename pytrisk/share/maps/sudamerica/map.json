@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "South America",
+  "category": "continent",
   "continents": [
     { "id": 1, "name": "Argentina", "color": "#ff80d9", "bonus": 4 },
     { "id": 2, "name": "Uruguay", "color": "#ff9680", "bonus": 1 },

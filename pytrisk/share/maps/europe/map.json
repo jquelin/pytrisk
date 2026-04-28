@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Europe",
+  "category": "continent",
   "continents": [
     { "id": 1, "name": "North_Europe", "color": "red", "bonus": 5 },
     { "id": 2, "name": "East_Europe", "color": "magenta", "bonus": 4 },

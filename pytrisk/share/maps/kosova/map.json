@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Kosova",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Mitrovicë", "color": "#666666", "bonus": 5 },
     { "id": 2, "name": "Prishtinë", "color": "#000066", "bonus": 7 },

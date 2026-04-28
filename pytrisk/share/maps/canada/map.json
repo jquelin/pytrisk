@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Canada",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Atlantic_Provinces", "color": "blue", "bonus": 3 },
     { "id": 2, "name": "Ontario_and_Quebec", "color": "cyan", "bonus": 4 },

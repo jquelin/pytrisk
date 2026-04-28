@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Aztec",
+  "category": "game",
   "continents": [
     { "id": 1, "name": "CTBase", "color": "#ffff99", "bonus": 2 },
     { "id": 2, "name": "CTHallway", "color": "#33ccff", "bonus": 1 },

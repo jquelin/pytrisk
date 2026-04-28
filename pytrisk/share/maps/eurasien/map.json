@@ -1,6 +1,6 @@
 {
-  "name": "Eurasien Map",
-  "category": "unknown",
+  "name": "Eurasien",
+  "category": "region",
   "continents": [
     { "id": 1, "name": "West_Europa", "color": "green", "bonus": 8 },
     { "id": 2, "name": "Nord_Afrika", "color": "orange", "bonus": 6 },

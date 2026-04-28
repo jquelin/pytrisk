@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Austria-Hungary",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Austria", "color": "#ffcc00", "bonus": 15 },
     { "id": 2, "name": "Hungary", "color": "#0099cc", "bonus": 3 },

@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Greece",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Makedonia", "color": "green", "bonus": 4 },
     { "id": 2, "name": "Thessalia", "color": "red", "bonus": 6 },

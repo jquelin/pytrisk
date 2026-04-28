@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Spain",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Galicia", "color": "verde", "bonus": 2 },
     { "id": 2, "name": "Asturias", "color": "azul", "bonus": 1 },

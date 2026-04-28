@@ -1,6 +1,6 @@
 {
-  "name": "Risk II Map",
-  "category": "unknown",
+  "name": "Risk II",
+  "category": "world",
   "continents": [
     { "id": 1, "name": "North-America", "color": "yellow", "bonus": 6 },
     { "id": 2, "name": "South-America", "color": "red", "bonus": 4 },

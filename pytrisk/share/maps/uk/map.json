@@ -1,6 +1,6 @@
 {
-  "name": "UK Map",
-  "category": "unknown",
+  "name": "United Kingdom",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "North-Scotland", "color": "blue", "bonus": 2 },
     { "id": 2, "name": "South-Scotland", "color": "green", "bonus": 4 },

@@ -1,6 +1,6 @@
 {
-  "name": "Axis and Allies Map",
-  "category": "unknown",
+  "name": "Axis and Allies",
+  "category": "history",
   "continents": [
     { "id": 1, "name": "America", "color": "green", "bonus": 5 },
     { "id": 2, "name": "Germany", "color": "blue", "bonus": 3 },

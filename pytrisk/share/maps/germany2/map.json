@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Deutschland",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Nord-Deutschland", "color": "yellow", "bonus": 4 },
     { "id": 2, "name": "West-Deutschland", "color": "purple", "bonus": 5 },

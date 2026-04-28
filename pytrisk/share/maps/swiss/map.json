@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Switzerland",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "GE-VD-NE-FR", "color": "red", "bonus": 3 },
     { "id": 2, "name": "JU-BS-BL-SO", "color": "orange", "bonus": 2 },

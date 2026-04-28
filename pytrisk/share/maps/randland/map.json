@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Randland",
+  "category": "game",
   "continents": [
     { "id": 1, "name": "Borderlands", "color": "brown", "bonus": 9 },
     { "id": 2, "name": "Aryth_Coast", "color": "violet", "bonus": 5 },

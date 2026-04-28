@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Trivial Pursuit",
+  "category": "game",
   "continents": [
     { "id": 1, "name": "Yellow-Pie", "color": "yellow", "bonus": 5 },
     { "id": 2, "name": "Purple-Pie", "color": "purple", "bonus": 5 },

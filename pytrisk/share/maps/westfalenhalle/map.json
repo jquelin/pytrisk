@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Westfalenhalle",
+  "category": "unclassified",
   "continents": [
     { "id": 1, "name": "Bühne", "color": "white", "bonus": 2 },
     { "id": 2, "name": "Innenraum_Sued", "color": "#ffff99", "bonus": 5 },

@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Periodic Table",
+  "category": "unclassified",
   "continents": [
     { "id": 1, "name": "AlkaliEarth", "color": "yellow", "bonus": 6 },
     { "id": 2, "name": "TheSeries", "color": "blue", "bonus": 8 },

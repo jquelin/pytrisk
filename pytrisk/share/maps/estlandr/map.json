@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Estlandr",
+  "category": "unclassified",
   "continents": [
     { "id": 1, "name": "Bapnimal", "color": "white", "bonus": 6 },
     { "id": 2, "name": "Kravirk", "color": "white", "bonus": 3 },

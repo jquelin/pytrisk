@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Cologne",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "Chorweiler", "color": "yellow", "bonus": 6 },
     { "id": 2, "name": "Ehrenfeld", "color": "red", "bonus": 3 },

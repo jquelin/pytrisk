@@ -1,6 +1,6 @@
 {
-  "name": "Geoscape Map",
-  "category": "unknown",
+  "name": "Geoscape",
+  "category": "world",
   "continents": [
     { "id": 1, "name": "North-America", "color": "yellow", "bonus": 5 },
     { "id": 2, "name": "South-America", "color": "red", "bonus": 2 },

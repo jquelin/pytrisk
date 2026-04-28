@@ -1,6 +1,6 @@
 {
-  "name": "Tube Map",
-  "category": "unknown",
+  "name": "Tube",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "London", "color": "red", "bonus": 10 }
   ],

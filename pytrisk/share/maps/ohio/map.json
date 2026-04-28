@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Ohio",
+  "category": "USA",
   "continents": [
     { "id": 1, "name": "Toledo_Region", "color": "green", "bonus": 7 },
     { "id": 2, "name": "Cincinnati_Region", "color": "blue", "bonus": 5 },

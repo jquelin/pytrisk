@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Zertina",
+  "category": "unclassified",
   "continents": [
     { "id": 1, "name": "Lugor", "color": "blue", "bonus": 6 },
     { "id": 2, "name": "Jakohl", "color": "red", "bonus": 6 },

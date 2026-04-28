@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Estonia",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Lääne_Eesti", "color": "green", "bonus": 5 },
     { "id": 2, "name": "Kesk_Eesti", "color": "yellow", "bonus": 3 },

@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Chutes",
+  "category": "game",
   "continents": [
     { "id": 1, "name": "AB", "color": "yellow", "bonus": 3 },
     { "id": 2, "name": "CDE", "color": "red", "bonus": 5 },

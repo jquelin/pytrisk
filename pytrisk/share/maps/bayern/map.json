@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Bayern",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "Unterfranken", "color": "white", "bonus": 5 },
     { "id": 2, "name": "Mittelfranken", "color": "white", "bonus": 10 },

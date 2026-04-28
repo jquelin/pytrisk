@@ -1,6 +1,6 @@
 {
-  "name": "LOTR Map",
-  "category": "unknown",
+  "name": "Lord of the Rings",
+  "category": "imaginary",
   "continents": [
     { "id": 1, "name": "Gondor", "color": "#663300", "bonus": 7 },
     { "id": 2, "name": "Mirkwood", "color": "#009900", "bonus": 4 },

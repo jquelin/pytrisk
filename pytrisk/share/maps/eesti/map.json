@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Eesti",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Hiiumaa", "color": "white", "bonus": 5 },
     { "id": 2, "name": "Saaremaa", "color": "white", "bonus": 16 },

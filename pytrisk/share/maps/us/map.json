@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "United States",
+  "category": "USA",
   "continents": [
     { "id": 1, "name": "NORTH", "color": "blue", "bonus": 5 },
     { "id": 2, "name": "SOUTH", "color": "green", "bonus": 8 },

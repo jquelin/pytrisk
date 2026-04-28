@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Eire",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Connacht", "color": "Blue", "bonus": 2 },
     { "id": 2, "name": "Munster", "color": "Green", "bonus": 2 },

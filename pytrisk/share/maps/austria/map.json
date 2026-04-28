@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Austria",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Vorarlberg", "color": "blue", "bonus": 1 },
     { "id": 2, "name": "Tirol", "color": "blue", "bonus": 3 },

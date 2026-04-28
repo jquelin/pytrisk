@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Serbia",
+  "category": "country",
   "continents": [
     { "id": 1, "name": "Vojvodina", "color": "yellow", "bonus": 5 },
     { "id": 2, "name": "Bosna_i_Hercegovina", "color": "red", "bonus": 2 },

@@ -1,6 +1,6 @@
 {
-  "name": "unknown",
-  "category": "unknown",
+  "name": "Ruhr Universität Bochum",
+  "category": "place",
   "continents": [
     { "id": 1, "name": "Medizin", "color": "red", "bonus": 2 },
     { "id": 2, "name": "Ingenieurwissenschaften", "color": "blue", "bonus": 4 },
