@@ -20,96 +20,13 @@ from tkinter import ttk
 
 from pytrisk.locale import _
 from pytrisk.logger import log
-from pytrisk.ui.utils import Icons
-
-PLAYER_COLORS = [
-    '#333333',  # grey20
-    '#FF2052',  # awesome
-    '#01A368',  # green
-    '#0066FF',  # blue
-    '#9E5B40',  # sepia
-    '#A9B2C3',  # cadet blue
-    '#BB3385',  # red violet
-    '#FF681F',  # orange
-    '#DCB63B',  # ~ dirty yellow
-    '#00CCCC',  # robin's egg blue
-    #'#1560BD',  # denim
-    #'#33CC99',  # shamrock
-    #'#FF9966',  # atomic tangerine
-    #'#00755E',  # tropical rain forest
-    #'#A50B5E',  # jazzberry jam
-    #'#A3E3ED',  # blizzard blue
-]
-
-COLOR_SIZE = 16
-COLOR_ROWS = 2
-COLOR_COLS = 5
-
-
-class ColorSelector(tk.Frame):
-    """A 2x5 color selector grid with icon overlay on selected color."""
-
-    def __init__(self, parent, initial_color=None):
-        super().__init__(parent)
-        self._color_var = tk.StringVar(value=initial_color or PLAYER_COLORS[0])
-        self._icon = Icons.load('player-active')
-        self._color_buttons = {}
-        self._build_selector()
-
-    def _build_selector(self):
-        """Build the 2x5 color selector grid."""
-        for idx, color in enumerate(PLAYER_COLORS):
-            row = idx // COLOR_COLS
-            col = idx % COLOR_COLS
-
-            btn = tk.Frame(self, width=COLOR_SIZE, height=COLOR_SIZE,
-                           bg=color, relief=tk.RAISED, bd=1)
-            btn.grid(row=row, column=col)
-            btn.bind('<Button-1>', lambda e, c=color: self._select_color(c))
-            btn.color = color
-
-            self._color_buttons[color] = btn
-
-        self._update_color_display()
-
-    def _select_color(self, color):
-        """Select a color."""
-        self._color_var.set(color)
-        self._update_color_display()
-
-    def _update_color_display(self):
-        """Update the icon overlay on the selected color."""
-        selected = self._color_var.get()
-        for color, btn in self._color_buttons.items():
-            for child in btn.winfo_children():
-                child.destroy()
-            if color == selected:
-                lbl = tk.Label(btn, image=self._icon, bg=color)
-                lbl.image = self._icon
-                lbl.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
-
-    def get_color(self):
-        """Return the selected color."""
-        return self._color_var.get()
-
-    def enable(self):
-        """Enable the color selector buttons."""
-        for btn in self._color_buttons.values():
-            btn.bind('<Button-1>', lambda e, c=btn.color: self._select_color(c))
-            btn.configure(cursor='hand2')
-
-    def disable(self):
-        """Disable the color selector buttons."""
-        for btn in self._color_buttons.values():
-            btn.unbind('<Button-1>')
-            btn.configure(cursor='')
-
+from pytrisk.ui.widgets.color_selector import ColorSelector
 
 
 class StartupHumanPlayerDefinition(tk.Frame):
     """A human player row: static label + editable name entry + color selector."""
 
-    def __init__(self, parent):
+    def __init__(self, parent, controller):
         super().__init__(parent)
 
         lab = tk.Label(self, text=_('Human player'), width=12, anchor=tk.W)
@@ -121,7 +38,8 @@ class StartupHumanPlayerDefinition(tk.Frame):
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
 
-        self.color_selector = ColorSelector(self)
+        all_colors = controller.get_player_colors()
+        self.color_selector = ColorSelector(self, all_colors, all_colors[0])
         self.color_selector.pack(side=tk.RIGHT, padx=6)
 
     def get_name(self):
@@ -141,7 +59,7 @@ class StartupAIPlayerDefinition(tk.Frame):
         ai_index: index number for this AI player (1, 2, 3, ...)
     """
 
-    def __init__(self, parent, ai_index: int):
+    def __init__(self, parent, controller, ai_index: int):
         super().__init__(parent)
 
         ai_label = _('AI player') + f' {ai_index}'
@@ -159,7 +77,9 @@ class StartupAIPlayerDefinition(tk.Frame):
         self.difficulty_cb.set(_('Easy'))
         self.difficulty_cb.pack(side=tk.LEFT, padx=6)
 
-        self.color_selector = ColorSelector(self, initial_color=PLAYER_COLORS[ai_index])
+        all_colors = controller.get_player_colors()
+        self.color_selector = ColorSelector(self, all_colors,
+                                            all_colors[ai_index])
         self.color_selector.pack(side=tk.RIGHT, padx=6)
 
     def enable(self):
@@ -234,13 +154,13 @@ class StartupPlayersView(tk.LabelFrame):
         body.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=6, pady=6)
 
         # Human player (always first)
-        human = StartupHumanPlayerDefinition(body)
+        human = StartupHumanPlayerDefinition(body, controller)
         human.pack(side=tk.TOP, fill=tk.X, pady=2)
         self._rows.append(human)
 
         # AI players
         for i in range(1, 6):
-            ai = StartupAIPlayerDefinition(body, i)
+            ai = StartupAIPlayerDefinition(body, controller, i)
             ai.pack(side=tk.TOP, fill=tk.X, pady=2)
             self._rows.append(ai)
 
