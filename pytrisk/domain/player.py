@@ -17,17 +17,17 @@
 
 import getpass
 
-from pytrisk.config        import config
-from pytrisk.constants     import appinfo
-from pytrisk.domain.colors import PLAYER_COLORS
-from pytrisk.logger        import log
+from pytrisk.config          import config
+from pytrisk.constants       import appinfo
+from pytrisk.domain.settings import settings
+from pytrisk.logger          import log
 
 
 class Player:
     def __init__(self, nb: int):
         self.nb = nb
         self.name  = None
-        self.color = PLAYER_COLORS[nb]
+        self.color = settings.players.colors[nb]
 
     @property
     def is_human(self):

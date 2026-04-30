@@ -16,7 +16,7 @@
 #
 
 
-from pytrisk.domain.colors import PLAYER_COLORS
+from pytrisk.domain.settings import settings
 from pytrisk.events import Events
 from pytrisk.logger import log
 
@@ -33,7 +33,7 @@ class Controller:
 
     def get_player_colors(self):
         """Return the list of available player colors."""
-        return PLAYER_COLORS
+        return settings.players.colors
 
     def get_maps(self):
         """Return the list of available maps."""
