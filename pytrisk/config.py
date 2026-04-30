@@ -21,6 +21,14 @@ from pathlib import Path
 from collections.abc import Mapping
 
 from pytrisk.constants import appinfo
+from pytrisk.logger    import log
+
+class NullConfig:
+    def __getattr__(self, name):
+        return self
+
+    def __bool__(self):
+        return False
 
 class ConfigStore:
     """
@@ -138,6 +146,19 @@ class ConfigView:
                               otherwise returns the value.
         """
         path = self._path + [name]
+        try:
+            value = self._config._get(path)
+        except KeyError:
+            log.warning(f'unknown config path: {".".join(path)}, returning None')
+            return NullConfig()
+
+        if isinstance(value, Mapping):
+            return ConfigView(self._config, path)
+
+        return value
+
+    def __getitem__(self, key):
+        path = self._path + [key]
         value = self._config._get(path)
 
         if isinstance(value, Mapping):
