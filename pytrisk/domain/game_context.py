@@ -17,17 +17,26 @@
 
 import time
 
-from pytrisk.constants  import appinfo
-from pytrisk.domain.map import Map
-from pytrisk.logger     import log
+from pytrisk.constants   import appinfo
+from pytrisk.domain.game import Game
+from pytrisk.domain.map  import Map
+from pytrisk.logger      import log
 
 
 class GameContext:
-    """ Application class, main entry point for the controller. """
+    """ GameContext class, main entry point for the controller. """
 
     def __init__(self):
         # initialize data and game
         self._create_maps()
+        self.new_game()
+
+        # other stuff that may come later on
+        #self.settings = Settings()
+        #self.available_ai = AIRegistry()
+        #self.statistics = Statistics()
+
+
 
     # -- Private maps
 
@@ -44,3 +53,14 @@ class GameContext:
 
         end = time.perf_counter()
         log.info(f'Created {len(self.maps)} maps in {end - start:.2f} seconds')
+
+
+    # -- Public methods
+
+    def new_game(self):
+        log.info("Creating new game")
+        self.game = Game()
+
+    def end_game(self):
+        log.info("Ending game")
+        self.game = None
