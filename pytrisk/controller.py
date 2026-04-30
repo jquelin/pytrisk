@@ -35,26 +35,6 @@ class Controller:
 
     def get_player_colors(self):
         """Return the list of available player colors."""
-        return [
-            '#333333',  # grey20
-            '#FF2052',  # awesome
-            '#01A368',  # green
-            '#0066FF',  # blue
-            '#9E5B40',  # sepia
-            '#A9B2C3',  # cadet blue
-            '#BB3385',  # red violet
-            '#FF681F',  # orange
-            '#DCB63B',  # ~ dirty yellow
-            '#00CCCC',  # robin's egg blue
-            #'#1560BD',  # denim
-            #'#33CC99',  # shamrock
-            #'#FF9966',  # atomic tangerine
-            #'#00755E',  # tropical rain forest
-            #'#A50B5E',  # jazzberry jam
-            #'#A3E3ED',  # blizzard blue
-        ]
-
-
     def get_maps(self):
         """Return the list of available maps."""
         return self.app.maps.values()

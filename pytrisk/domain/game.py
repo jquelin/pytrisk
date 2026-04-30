@@ -15,8 +15,9 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-from pytrisk.constants  import appinfo
-from pytrisk.logger     import log
+from pytrisk.constants     import appinfo
+from pytrisk.domain.player import HumanPlayer
+from pytrisk.logger        import log
 
 
 class Game:
@@ -36,6 +37,8 @@ class Game:
         '''
         log.info('Creating players')
 
+        self._players = []
+        self._players.append(HumanPlayer())
 
 
     # -- Public methods
