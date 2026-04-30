@@ -24,9 +24,10 @@ from pytrisk.constants import appinfo
 from pytrisk.logger    import log
 
 class NullConfig:
+    def __getitem__(self, name):
+        return self
     def __getattr__(self, name):
         return self
-
     def __bool__(self):
         return False
 

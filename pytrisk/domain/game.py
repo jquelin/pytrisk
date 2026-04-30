@@ -16,7 +16,8 @@
 #
 
 from pytrisk.constants     import appinfo
-from pytrisk.domain.player import HumanPlayer
+from pytrisk.config        import config
+from pytrisk.domain.player import AIPlayer, HumanPlayer
 from pytrisk.logger        import log
 
 
@@ -39,6 +40,8 @@ class Game:
 
         self._players = []
         self._players.append(HumanPlayer())
+        for i in range(1, config.startup.players.count + 1):
+            self._players.append(AIPlayer(i))
 
 
     # -- Public methods
