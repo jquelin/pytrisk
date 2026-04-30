@@ -20,16 +20,18 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import ttk
 import tkinter.font as tkfont
+from typing import Literal
 
 from pytrisk.locale    import _
 from pytrisk.logger    import log
 
+Anchor = Literal['nw','n','ne','w','center','e','sw','s','se']
 
 
 @dataclass
 class Column:
     attr: str
-    type: type = str
+    ctype: type = str
 
 
 class StartupMapsView(tk.LabelFrame):
@@ -71,7 +73,9 @@ class StartupMapsView(tk.LabelFrame):
             font.measure('XXX') + 10, # nb continents is a number
             font.measure('XXX') + 10  # nb countries is a number
         ]
-        aligns  = [tk.W, tk.W, tk.W, tk.CENTER, tk.CENTER]
+
+
+        aligns: list[Anchor] = [tk.W, tk.W, tk.W, tk.CENTER, tk.CENTER]
 
         # Create the treeview to show the maps.
         tv = ttk.Treeview(self, columns=headers, height=20, show='headings',
@@ -86,7 +90,7 @@ class StartupMapsView(tk.LabelFrame):
         for col, longest, anchor in zip(headers, longest, aligns):
             tv.heading(col, text=col, command=lambda c=col:
                        self._on_tv_map_sort(c, False))
-            tv.column(col, width=longest, anchor=anchor)
+            tv.column(col, width=longest, anchor=anchor) # type: ignore
 
         # Add a vertical scrollbar to the treeview.
         vsb = ttk.Scrollbar(self, orient="vertical", command=tv.yview)

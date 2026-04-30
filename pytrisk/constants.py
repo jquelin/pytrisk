@@ -15,29 +15,20 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-from dataclasses import dataclass
 import appdirs
+from dataclasses import dataclass
+from importlib.metadata import version
 from pathlib import Path
-
-
-# -- Application metadata
-
-@dataclass(frozen=True)
-class AppInfo:
-    name: str
-    title: str
-    dirs: "AppDirs | None" = None
 
 
 # -- Application directories
 
 @dataclass(frozen=True)
 class AppDirs:
-    local: Path
-    cache: Path
-    logs: Path
-    share: Path
-
+    local : Path
+    cache : Path
+    logs  : Path
+    share : Path
 
 def _create_dirs(app_name: str) -> AppDirs:
     local = Path(appdirs.user_config_dir(app_name)).absolute()
@@ -55,6 +46,18 @@ def _create_dirs(app_name: str) -> AppDirs:
         logs  = logs,
         share = share,
     )
+
+
+# -- Application metadata
+
+@dataclass(frozen=True)
+class AppInfo:
+    name    : str
+    title   : str
+    dirs    : AppDirs
+    version : str = version("pytrisk")
+
+
 
 # -- Public API
 

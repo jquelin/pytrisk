@@ -18,6 +18,7 @@
 from pathlib import Path
 import tkinter as tk
 from tkinter import ttk
+from typing import cast
 
 from pytrisk.config import config
 import pytrisk.data
@@ -29,7 +30,6 @@ from pytrisk.ui.views.menu         import MenuView
 from pytrisk.ui.views.startup      import StartupView
 from pytrisk.ui.views.statusbar    import StatusbarView
 from pytrisk.ui.views.toolbar      import ToolbarView
-
 
 class MainWindow(tk.Tk):
     def __init__(self, controller, event_bus):
@@ -43,7 +43,8 @@ class MainWindow(tk.Tk):
         # GUI creation
         log.info('creating main window')
         self.title(appinfo.title)
-        self.iconphoto(True, Icons.load(appinfo.name))
+        icon = cast(tk.PhotoImage, Icons.load(appinfo.name))
+        self.iconphoto(True, icon)
         self._create_views()
 
         # Add some bindings
@@ -71,20 +72,6 @@ class MainWindow(tk.Tk):
         # Startup view
         startup_frame = StartupView(self, self.controller, self.event_bus)
         startup_frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
-
-
-    def _build_startup_frame(self):
-        f_players = tk.Frame(frame)
-        f_players.pack(side=tk.LEFT, expand=True, fill=tk.BOTH)
-        lab = tk.Label(f_players, text=_('Players'))
-        lab.pack(side=tk.TOP)
-        f = tk.Frame(f_players)
-        f.pack(side=tk.TOP, fill=tk.X)
-        lab = tk.Label(f, text=_('Number of players'))
-        lab.pack(side=tk.LEFT)
-        scale = tk.Scale(f, orient=tk.HORIZONTAL, from_=2, to=10)
-        scale.set(3)
-        scale.pack(side=tk.LEFT, fill=tk.X)
 
 
 

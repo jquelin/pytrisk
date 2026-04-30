@@ -15,36 +15,41 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-import PIL.Image
-import PIL.ImageTk
+from PIL import Image, ImageTk
+from PIL.ImageTk import PhotoImage
+from pathlib import Path
 
 from pytrisk.constants import appinfo
 from pytrisk.logger    import log
 
 
 class Icons:
-    _cache = {}
+    _cache: dict[str, PhotoImage] = {}
 
     @classmethod
-    def load(cls, name):
-        """Load an icon and return it ready to be used by tk"""
+    def load(cls, name: str) -> PhotoImage:
+        """Load an icon and return it ready to be used by tk."""
 
-        # check if icon is already loaded
-        if name in cls._cache:
-            return cls._cache[name]
+        # cache hit
+        cached = cls._cache.get(name)
+        if cached is not None:
+            return cached
 
-        # icon not loaded, first compute path
-        path = appinfo.dirs.share / 'icons' / f'{name}.png'
-        path = path.absolute().as_posix()
-        log.debug(f'loading icon {path}')
+        # build path
+        path: Path = appinfo.dirs.share / "icons" / f"{name}.png"
+        filename = path.resolve().as_posix()
+        log.debug(f"loading icon {filename}")
 
-        # load image and convert to RGBA if needed
-        img = PIL.Image.open(path)
-        if img.mode != 'RGBA':
-            img = img.convert(mode="RGBA")
+        # load image via PIL
+        img = Image.open(filename)
+        if img.mode != "RGBA":
+            img = img.convert("RGBA")
 
-        # create the icon ready to be used by tk, store it and return it
-        icon = PIL.ImageTk.PhotoImage(img)
+        # convert to Tk-compatible image
+        icon = ImageTk.PhotoImage(img)
+
+        # store in cache
         cls._cache[name] = icon
+
         return icon
 
