@@ -54,8 +54,8 @@ class StartupView(tk.Frame):
 
         # The button to actually start the new game
         but = tk.Button(self, text=_('Start'), bg='black', fg='white',
-                        command=None)
-        but.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=10)
+                        command=self._on_btn_start_click)
+        but.pack(side='bottom', fill=tk.X, padx=10, pady=10)
 
         # Create the maps view
         fmaps = StartupMapsView(self, controller, event_bus)
@@ -67,3 +67,6 @@ class StartupView(tk.Frame):
 
 
     # -- Private methods
+
+    def _on_btn_start_click(self):
+        log.info('starting new game')

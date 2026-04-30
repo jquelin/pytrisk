@@ -25,9 +25,6 @@ from typing import Literal
 from pytrisk.locale    import _
 from pytrisk.logger    import log
 
-Anchor = Literal['nw','n','ne','w','center','e','sw','s','se']
-
-
 @dataclass
 class Column:
     attr: str
@@ -75,7 +72,7 @@ class StartupMapsView(tk.LabelFrame):
         ]
 
 
-        aligns: list[Anchor] = [tk.W, tk.W, tk.W, tk.CENTER, tk.CENTER]
+        aligns = [tk.W, tk.W, tk.W, tk.CENTER, tk.CENTER]
 
         # Create the treeview to show the maps.
         tv = ttk.Treeview(self, columns=headers, height=20, show='headings',
@@ -90,7 +87,7 @@ class StartupMapsView(tk.LabelFrame):
         for col, longest, anchor in zip(headers, longest, aligns):
             tv.heading(col, text=col, command=lambda c=col:
                        self._on_tv_map_sort(c, False))
-            tv.column(col, width=longest, anchor=anchor) # type: ignore
+            tv.column(col, width=longest, anchor=anchor)  # type: ignore
 
         # Add a vertical scrollbar to the treeview.
         vsb = ttk.Scrollbar(self, orient="vertical", command=tv.yview)
