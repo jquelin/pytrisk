@@ -24,7 +24,7 @@ class Map:
     '''Map representation.'''
 
     def __init__(self, dirname):
-        log.info(f'Creating map from {dirname}')
+        log.info(f'Creating map {dirname.name}')
 
         # Map files
         self.dir = dirname
@@ -43,3 +43,5 @@ class Map:
 
         self.nb_continents = len(self._data['continents'])
         self.nb_countries  = len(self._data['countries'])
+        log.debug(f'Map {self.id}: {self.category} "{self.name}" '
+                 f'({self.nb_continents} continents, {self.nb_countries} countries)')
