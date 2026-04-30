@@ -50,7 +50,3 @@ def run():
     # create the gui and start the main loop
     ui = pytrisk.ui.mw.MainWindow(controller, event_bus)
     ui.mainloop()
-
-
-if __name__ == '__main__':
-    run()

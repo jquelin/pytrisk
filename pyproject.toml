@@ -28,7 +28,7 @@ dependencies = [
 ]
 
 [project.scripts]
-pytrisk = "pytrisk.__main__:run"
+pytrisk = "pytrisk.cli:run"
 
 [project.urls]
 "Homepage" = "https://github.com/jquelin/pytrisk"
