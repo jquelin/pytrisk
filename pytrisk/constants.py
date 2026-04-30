@@ -15,23 +15,51 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
+from dataclasses import dataclass
 import appdirs
 from pathlib import Path
 
 
-class appinfo:
-    name  = "pytrisk"
-    title = 'pytrisk'
+# -- Application metadata
+
+@dataclass(frozen=True)
+class AppInfo:
+    name: str
+    title: str
+    dirs: "AppDirs | None" = None
+
 
 # -- Application directories
 
-class dirs:
-    local = Path(appdirs.user_config_dir(appinfo.name)).absolute()
-    cache = Path(appdirs.user_cache_dir(appinfo.name)).absolute()
-    logs  = Path(appdirs.user_log_dir(appinfo.name)).absolute()
-    share = Path(__file__).parent / "share"
-appinfo.dirs = dirs
+@dataclass(frozen=True)
+class AppDirs:
+    local: Path
+    cache: Path
+    logs: Path
+    share: Path
 
-appinfo.dirs.local.mkdir(parents=True, exist_ok=True)
-appinfo.dirs.cache.mkdir(parents=True, exist_ok=True)
-appinfo.dirs.logs.mkdir(parents=True, exist_ok=True)
+
+def _create_dirs(app_name: str) -> AppDirs:
+    local = Path(appdirs.user_config_dir(app_name)).absolute()
+    cache = Path(appdirs.user_cache_dir(app_name)).absolute()
+    logs  = Path(appdirs.user_log_dir(app_name)).absolute()
+    share = Path(__file__).parent / "share"
+
+    local.mkdir(parents=True, exist_ok=True)
+    cache.mkdir(parents=True, exist_ok=True)
+    logs.mkdir(parents=True, exist_ok=True)
+
+    return AppDirs(
+        local = local,
+        cache = cache,
+        logs  = logs,
+        share = share,
+    )
+
+# -- Public API
+
+appinfo = AppInfo(
+    name  = "pytrisk",
+    title = "pytrisk",
+    dirs  = _create_dirs("pytrisk"),
+)
