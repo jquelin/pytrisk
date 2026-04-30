@@ -18,11 +18,11 @@
 
 import argparse
 
-from pytrisk.constants import appinfo
-from pytrisk.core.app   import Application
-from pytrisk.controller import Controller
-from pytrisk.events     import EventBus
-from pytrisk.logger    import log
+from pytrisk.constants           import appinfo
+from pytrisk.domain.game_context import GameContext
+from pytrisk.controller          import Controller
+from pytrisk.events              import EventBus
+from pytrisk.logger              import log
 import pytrisk.ui.mw
 
 def run():
@@ -42,11 +42,12 @@ def run():
     for _ in range(args.verbose):
         log.increase_verbosity()
 
-    # create the application, event bus and controller
-    app        = Application()
+    # create the game context, event bus and controller
+    context    = GameContext()
     event_bus  = EventBus()
-    controller = Controller(app, event_bus)
+    controller = Controller(context, event_bus)
 
+    # create the gui and start the main loop
     ui = pytrisk.ui.mw.MainWindow(controller, event_bus)
     ui.mainloop()
 

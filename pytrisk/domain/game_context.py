@@ -17,12 +17,12 @@
 
 import time
 
-from pytrisk.constants import appinfo
-from pytrisk.core.map import Map
-from pytrisk.logger import log
+from pytrisk.constants  import appinfo
+from pytrisk.domain.map import Map
+from pytrisk.logger     import log
 
 
-class Application:
+class GameContext:
     """ Application class, main entry point for the controller. """
 
     def __init__(self):
