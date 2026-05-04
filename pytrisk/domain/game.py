@@ -28,7 +28,7 @@ class Game:
     def __init__(self):
         log.info("Creating game")
 
-        # initialize data and game
+        # initialize game
         self._create_players()
 
 

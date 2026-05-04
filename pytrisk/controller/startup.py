@@ -49,6 +49,11 @@ class StartupController:
         """Return the list of available maps."""
         return self.context.maps.values()
 
+    def get_default_map_name(self):
+        """Return the default map."""
+        return config.startup.map
+
+
     # -- Action handlers
 
     def set_player_color(self, index, color):

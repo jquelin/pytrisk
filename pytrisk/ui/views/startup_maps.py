@@ -95,6 +95,8 @@ class StartupMapsView(tk.LabelFrame):
         tv.configure(yscrollcommand=vsb.set)
 
         # Fill the treeview with the data.
+        self._map_name = self.controller.startup.get_default_map_name()
+        log.info(f'Setting default map to {self._map_name}')
         self._reload_treeview()
 
 
@@ -102,15 +104,22 @@ class StartupMapsView(tk.LabelFrame):
 
     def _reload_treeview(self):
         """Reload the treeview with the data."""
+
+        # First clear the treeview
         tv = self.tv
         tv.delete(*tv.get_children())
 
+        # Then insert the data
         for i, m in enumerate(self._maps):
             tags = [] if i % 2 == 0 else ['odd']
             tv.insert(
                 '', tk.END, tags=(tags), iid=m.id,
                 values=tuple(getattr(m, c.attr) for c in self._map_columns.values()),
             )
+
+        # Now select the default map and scroll to it
+        tv.selection_set(self._map_name)
+        tv.see(self._map_name)
 
 
     # -- Event handlers
