@@ -35,22 +35,25 @@ class StartupPlayerDefinition(tk.Frame):
 
         # Color selector at the right
         all_colors = controller.get_available_player_colors()
-        initial_color = controller.get_default_player_color(0)
+        initial_color = controller.get_default_player_color(index)
         self.color_selector = ColorSelector(self, all_colors, initial_color,
                                             command=self._on_color_selected)
         self.color_selector.pack(side=tk.RIGHT, padx=6)
 
 
+    # -- tk events
+
     def _on_color_selected(self, color):
         log.info(f'User wants to change player {self.index} color to {color}')
-        self.controller.set_player_color(0, color)
+        self.controller.set_player_color(self.index, color)
 
     # -- Controller events
 
     def on_player_color_changed(self, index, color):
+        if index != self.index:
+            return
         log.info(f'Player {index} color changed to {color}')
-        if index == self.index:
-            self.color_selector.set_color(color)
+        self.color_selector.set_color(color)
 
 
 class StartupHumanPlayerDefinition(StartupPlayerDefinition):
@@ -69,30 +72,24 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
 
-    def get_name(self):
-        """Return the player's name."""
-        return self.name_var.get()
 
-    def get_color(self):
-        """Return the player's selected color."""
-        return self.color_selector.get_color()
-
-
-class StartupAIPlayerDefinition(tk.Frame):
-    """An AI player row: label with index + difficulty selector + color selector.
+class StartupAIPlayerDefinition(StartupPlayerDefinition):
+    """An AI player row: label with difficulty selector + color selector.
 
     Args:
         parent: parent widget
-        ai_index: index number for this AI player (1, 2, 3, ...)
+        index: index number for this AI player (1, 2, 3, ...)
     """
 
-    def __init__(self, parent, controller, ai_index: int):
-        super().__init__(parent)
+    def __init__(self, parent, controller, event_bus, index: int):
+        super().__init__(parent, controller, event_bus, index)
 
-        ai_label = _('AI player') + f' {ai_index}'
+        # Label
+        ai_label = _('AI player') + f' {index}'
         lab = tk.Label(self, text=ai_label, width=12, anchor=tk.W)
         lab.pack(side=tk.LEFT)
 
+        # Difficulty setting
         self.difficulty_var = tk.StringVar()
         self.difficulty_cb = ttk.Combobox(
             self,
@@ -104,10 +101,6 @@ class StartupAIPlayerDefinition(tk.Frame):
         self.difficulty_cb.set(_('Easy'))
         self.difficulty_cb.pack(side=tk.LEFT, padx=6)
 
-        all_colors = controller.get_available_player_colors()
-        initial_color = controller.get_default_player_color(ai_index)
-        self.color_selector = ColorSelector(self, all_colors, initial_color)
-        self.color_selector.pack(side=tk.RIGHT, padx=6)
 
     def enable(self):
         """Enable the difficulty combobox and color selector."""
@@ -122,10 +115,6 @@ class StartupAIPlayerDefinition(tk.Frame):
     def get_difficulty(self):
         """Return the difficulty ('Easy' or 'Hard')."""
         return self.difficulty_var.get()
-
-    def get_color(self):
-        """Return the player's selected color."""
-        return self.color_selector.get_color()
 
 
 class StartupPlayersView(tk.LabelFrame):
@@ -188,7 +177,7 @@ class StartupPlayersView(tk.LabelFrame):
 
         # AI players
         for i in range(1, 6):
-            ai = StartupAIPlayerDefinition(body, controller, i)
+            ai = StartupAIPlayerDefinition(body, controller, event_bus, i)
             ai.pack(side=tk.TOP, fill=tk.X, pady=2)
             self._rows.append(ai)
 
