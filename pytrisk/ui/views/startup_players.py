@@ -72,6 +72,27 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         self.name_var.set(default_name)
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
+        self.name_var.trace_add("write", self._on_name_changed)
+
+
+    # -- tk events
+
+    def _on_name_changed(self, *args):
+        """Called when the name of the human player has changed in the UI. Warn
+        the controller."""
+        name = self.name_var.get()
+        log.info(f'User wants to change player 0 name to {name}')
+        self.controller.set_player_name(0, name)
+
+
+    # -- Controller events
+
+    def on_player_name_changed(self, index, name):
+        """Called when the name of a player has changed in the controller."""
+        if index != 0:
+            return
+        log.info(f'Player 0 name changed to {name}')
+        self.name_var.set(name)
 
 
 class StartupAIPlayerDefinition(StartupPlayerDefinition):

@@ -63,6 +63,19 @@ class Controller:
         config.startup.players[key].color = color
         self.event_bus.emit(Events.player_color_changed, index, color)
 
+    def set_player_name(self, index, name):
+        """Set the name of a player.
+
+        Args:
+            index: player index
+            name: player name
+        """
+        log.info(f'Setting player {index} name to {name}')
+        key = f"player{index}"
+        self.context.game.players[index].name = name
+        config.startup.players[key].name      = name
+        self.event_bus.emit(Events.player_name_changed, index, name)
+
 
     # -- Preferences retrieval / setting
 
