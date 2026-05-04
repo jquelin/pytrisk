@@ -42,13 +42,13 @@ class Game:
         self.players.append(HumanPlayer())
         max_count = settings.players.max_count
         log.debug(f'max number of players: {max_count}')
-        for i in range(1, max_count + 1):
+        for i in range(1, max_count):
             self.players.append(AIPlayer(i))
 
         # disable players to match the configuration
         count = int(config.startup.players.count)
         log.debug(f'current number of players: {count}')
-        for i in range(count + 1, max_count + 1):
+        for i in range(count + 1, max_count):
             self.players[i].enabled = False
 
 

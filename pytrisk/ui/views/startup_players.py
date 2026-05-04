@@ -23,11 +23,42 @@ from pytrisk.logger import log
 from pytrisk.ui.widgets.color_selector import ColorSelector
 
 
-class StartupHumanPlayerDefinition(tk.Frame):
+class StartupPlayerDefinition(tk.Frame):
+    def __init__(self, parent, controller, event_bus, index):
+        super().__init__(parent)
+        self.controller = controller
+        self.event_bus  = event_bus
+        self.index      = index
+
+        # Subscribe to events
+        event_bus.subscribe(self)
+
+        # Color selector at the right
+        all_colors = controller.get_available_player_colors()
+        initial_color = controller.get_default_player_color(0)
+        self.color_selector = ColorSelector(self, all_colors, initial_color,
+                                            command=self._on_color_selected)
+        self.color_selector.pack(side=tk.RIGHT, padx=6)
+
+
+    def _on_color_selected(self, color):
+        log.info(f'User wants to change player {self.index} color to {color}')
+        self.controller.set_player_color(0, color)
+
+    # -- Controller events
+
+    def on_player_color_changed(self, index, color):
+        log.info(f'Player {index} color changed to {color}')
+        if index == self.index:
+            self.color_selector.set_color(color)
+
+
+class StartupHumanPlayerDefinition(StartupPlayerDefinition):
     """A human player row: static label + editable name entry + color selector."""
 
-    def __init__(self, parent, controller):
-        super().__init__(parent)
+    def __init__(self, parent, controller, event_bus):
+        # human player is always at index 0
+        super().__init__(parent, controller, event_bus, 0)
 
         lab = tk.Label(self, text=_('Human player'), width=12, anchor=tk.W)
         lab.pack(side=tk.LEFT)
@@ -37,11 +68,6 @@ class StartupHumanPlayerDefinition(tk.Frame):
         self.name_var.set(default_name)
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
-
-        all_colors = controller.get_available_player_colors()
-        initial_color = controller.get_default_player_color(0)
-        self.color_selector = ColorSelector(self, all_colors, initial_color)
-        self.color_selector.pack(side=tk.RIGHT, padx=6)
 
     def get_name(self):
         """Return the player's name."""
@@ -118,6 +144,7 @@ class StartupPlayersView(tk.LabelFrame):
 
         event_bus.subscribe(self)
         self.controller = controller
+        self.event_bus  = event_bus
 
         # Number of players variable
         self._nb_players = tk.IntVar(value=2)
@@ -155,7 +182,7 @@ class StartupPlayersView(tk.LabelFrame):
         body.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=6, pady=6)
 
         # Human player (always first)
-        human = StartupHumanPlayerDefinition(body, controller)
+        human = StartupHumanPlayerDefinition(body, controller, event_bus)
         human.pack(side=tk.TOP, fill=tk.X, pady=2)
         self._rows.append(human)
 

@@ -151,7 +151,7 @@ class ConfigView:
             value = self._config._get(path)
         except KeyError:
             log.warning(f'unknown config path: {".".join(path)}, returning None')
-            return NullConfig()
+            # return NullConfig()
 
         if isinstance(value, Mapping):
             return ConfigView(self._config, path)

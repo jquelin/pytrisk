@@ -16,6 +16,7 @@
 #
 
 
+from pytrisk.config import config
 from pytrisk.domain.settings import settings
 from pytrisk.events import Events
 from pytrisk.logger import log
@@ -35,9 +36,10 @@ class Controller:
         """Return the list of available player colors."""
         return settings.players.colors
 
-    def get_default_player_color(self, id):
+    def get_default_player_color(self, index):
         """Return the color of a player."""
-        return self.context.game.players[id].color
+        key = f"player{index}"
+        return config.startup.players[key].color
 
     def get_maps(self):
         """Return the list of available maps."""
@@ -49,6 +51,13 @@ class Controller:
         """Quit the application."""
         log.info('Request to quit')
         self.event_bus.emit(Events.action_quit)
+
+    def set_player_color(self, index, color):
+        log.info(f'Setting player {index} color to {color}')
+        key = f"player{index}"
+        self.context.game.players[index].color     = color
+        config.startup.players[key].color = color
+        self.event_bus.emit(Events.player_color_changed, index, color)
 
 
     # -- Preferences retrieval / setting

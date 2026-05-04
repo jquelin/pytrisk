@@ -33,6 +33,9 @@ class ColorSelector(tk.Frame):
     def __init__(self, parent, colors, initial, command=None, nbcols=5):
         """Initialize the ColorSelector widget.
 
+        Note that if command is provided, ColorSelector will *not* update the
+        button appearance. You will be responsible to set it via `set_color()`.
+
         Args:
             parent: The parent Tkinter widget.
             colors: List of color strings (e.g., '#ff0000', 'red') available for selection.
@@ -149,14 +152,14 @@ class ColorSelector(tk.Frame):
             self._close_popup()
             return
 
-        # store new color, update and close popup
-        self._color = color
-        self._button.configure(bg=color, activebackground=color)
+        # close popup
         self._close_popup()
 
-        # callback if any
+        # callback if any, otherwise proceed with color change
         if self._command:
             self._command(color)
+        else:
+            self.set_color(color)
 
     def _desaturate(self, color, factor=0.1):
         """Return a desaturated version of a Tk color string.
@@ -195,7 +198,7 @@ class ColorSelector(tk.Frame):
         Args:
             color: The new color string to select.
         """
-        self._color.set(color)
+        self._color = color
         self._button.configure(bg=color, activebackground=color)
 
     def enable(self):
