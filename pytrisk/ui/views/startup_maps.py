@@ -138,7 +138,13 @@ class StartupMapsView(tk.LabelFrame):
 
 
     def _on_tv_map_selection(self, event):
-        pass
+        """Event handler for treeview selection. Warn the controller that the
+        user wants to select a map."""
+        selected = self.tv.selection()
+        map_name = selected[0]
+        log.info(f'User wants to select map {map_name}')
+        self.controller.startup.set_map_name(map_name)
+
 
     def _on_tv_map_sort(self, col: str, descending: bool):
         """Event handler for treeview column sorting. Sort the map list by the

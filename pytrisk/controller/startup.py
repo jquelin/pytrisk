@@ -56,6 +56,17 @@ class StartupController:
 
     # -- Action handlers
 
+    def set_map_name(self, name: str):
+        """Select the map.
+
+        Args:
+            name: map name
+        """
+        log.info(f'Setting map to {name}')
+        config.startup.map = name
+        self.context.game.map_name = name
+
+
     def set_player_color(self, index, color):
         log.info(f'Setting player {index} color to {color}')
         key = f"player{index}"
