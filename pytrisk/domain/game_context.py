@@ -17,19 +17,22 @@
 
 import time
 
-from pytrisk.constants   import appinfo
-from pytrisk.domain.game import Game
-from pytrisk.domain.map  import Map
-from pytrisk.logger      import log
+from pytrisk.constants      import appinfo
+from pytrisk.domain.game    import Game
+from pytrisk.domain.map     import Map
+from pytrisk.domain.startup import StartupConfig
+from pytrisk.logger         import log
 
 
 class GameContext:
     """ GameContext class, main entry point for the controller. """
 
     def __init__(self):
-        # initialize data and game
+        # Load maps
         self._create_maps()
-        self.new_game()
+
+        # Create a startup configuration
+        self.startup = StartupConfig()
 
         # other stuff that may come later on
         #self.settings = Settings()
@@ -59,8 +62,8 @@ class GameContext:
 
     def new_game(self):
         log.info("Creating new game")
-        self.game = Game()
+        # self.game = Game()
 
     def end_game(self):
         log.info("Ending game")
-        self.game = None
+        # self.game = None

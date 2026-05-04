@@ -25,7 +25,7 @@ from pytrisk.logger import log
 class StartupController:
     def __init__(self, context, event_bus):
         # Store the app and event bus
-        self.context = context
+        self.context   = context
         self.event_bus = event_bus
 
     # -- Current state retrieval
@@ -38,7 +38,7 @@ class StartupController:
 
     def get_player_name(self, index):
         """Return the name of a player."""
-        return self.context.game.players[index].name
+        return self.context.startup.players[index].name
 
     def get_default_player_color(self, index):
         """Return the color of a player."""
@@ -64,14 +64,14 @@ class StartupController:
         """
         log.info(f'Setting map to {name}')
         config.startup.map = name
-        self.context.game.map_name = name
+        self.context.startup.map_name = name
 
 
     def set_player_color(self, index, color):
         log.info(f'Setting player {index} color to {color}')
         key = f"player{index}"
-        self.context.game.players[index].color     = color
-        config.startup.players[key].color = color
+        self.context.startup.players[index].color = color
+        config.startup.players[key].color         = color
         self.event_bus.emit(Events.player_color_changed, index, color)
 
     def set_player_name(self, index, name):
@@ -82,7 +82,7 @@ class StartupController:
             name: player name
         """
         log.info(f'Setting player {index} name to {name}')
-        player = self.context.game.players[index]
+        player = self.context.startup.players[index]
 
         # Human player is special
         if player.is_human:
