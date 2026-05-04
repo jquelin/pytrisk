@@ -57,7 +57,7 @@ class StartupMapsView(tk.LabelFrame):
         }
 
         # Prepare the treeview data.
-        maps = self.controller.get_maps()
+        maps = self.controller.startup.get_maps()
         self._maps = sorted(maps, key=lambda x: x.id)
 
         # Prepare the treeview headers, longest strings and alignments.

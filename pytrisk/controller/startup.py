@@ -22,7 +22,7 @@ from pytrisk.events import Events
 from pytrisk.logger import log
 
 
-class Controller:
+class StartupController:
     def __init__(self, context, event_bus):
         # Store the app and event bus
         self.context = context
@@ -50,11 +50,6 @@ class Controller:
         return self.context.maps.values()
 
     # -- Action handlers
-
-    def do_quit(self):
-        """Quit the application."""
-        log.info('Request to quit')
-        self.event_bus.emit(Events.action_quit)
 
     def set_player_color(self, index, color):
         log.info(f'Setting player {index} color to {color}')

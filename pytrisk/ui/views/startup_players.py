@@ -34,8 +34,8 @@ class StartupPlayerDefinition(tk.Frame):
         event_bus.subscribe(self)
 
         # Color selector at the right
-        all_colors = controller.get_available_player_colors()
-        initial_color = controller.get_default_player_color(index)
+        all_colors = controller.startup.get_available_player_colors()
+        initial_color = controller.startup.get_default_player_color(index)
         self.color_selector = ColorSelector(self, all_colors, initial_color,
                                             command=self._on_color_selected)
         self.color_selector.pack(side=tk.RIGHT, padx=6)
@@ -45,7 +45,7 @@ class StartupPlayerDefinition(tk.Frame):
 
     def _on_color_selected(self, color):
         log.info(f'User wants to change player {self.index} color to {color}')
-        self.controller.set_player_color(self.index, color)
+        self.controller.startup.set_player_color(self.index, color)
 
     # -- Controller events
 
@@ -68,7 +68,7 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         lab.pack(side=tk.LEFT)
 
         self.name_var = tk.StringVar()
-        default_name = controller.get_player_name(0)
+        default_name = controller.startup.get_player_name(0)
         self.name_var.set(default_name)
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
@@ -91,7 +91,7 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         """Called when the name of the human player has changed in the UI. Warn
         the controller."""
         log.info(f'User wants to change player 0 name to {name}')
-        self.controller.set_player_name(self.index, name)
+        self.controller.startup.set_player_name(self.index, name)
 
 
     # -- Controller events
