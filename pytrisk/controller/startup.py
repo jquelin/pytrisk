@@ -45,6 +45,10 @@ class StartupController:
         key = f"player{index}"
         return config.startup.players[key].color
 
+    def get_max_players(self):
+        """Return the maximum number of players."""
+        return settings.players.max_count
+
     def get_maps(self):
         """Return the list of available maps."""
         return self.context.maps.values()

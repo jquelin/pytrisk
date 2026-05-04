@@ -170,6 +170,7 @@ class StartupPlayersView(tk.LabelFrame):
         self.event_bus  = event_bus
 
         # Number of players variable
+        self.max_players = self.controller.startup.get_max_players()
         self._nb_players = tk.IntVar(value=2)
 
         # Header with spinbox to select number of players
@@ -180,7 +181,7 @@ class StartupPlayersView(tk.LabelFrame):
         lab.pack(side=tk.LEFT)
 
         # Use a small spinbox for selecting 2..6
-        sp = tk.Spinbox(hdr, from_=2, to=6, width=3, textvariable=self._nb_players)
+        sp = tk.Spinbox(hdr, from_=2, to=self.max_players, width=3, textvariable=self._nb_players)
         sp.pack(side=tk.LEFT, padx=6)
 
         # Trace changes to number of players
@@ -210,7 +211,7 @@ class StartupPlayersView(tk.LabelFrame):
         self._rows.append(human)
 
         # AI players
-        for i in range(1, 6):
+        for i in range(1, self.max_players):
             ai = StartupAIPlayerDefinition(body, controller, event_bus, i)
             ai.pack(side=tk.TOP, fill=tk.X, pady=2)
             self._rows.append(ai)
@@ -231,8 +232,8 @@ class StartupPlayersView(tk.LabelFrame):
         if n < 2:
             n = 2
             self._nb_players.set(n)
-        if n > 6:
-            n = 6
+        if n > self.max_players:
+            n = self.max_players
             self._nb_players.set(n)
 
         log.info(f'number of players set to {n}')
@@ -266,8 +267,8 @@ class StartupPlayersView(tk.LabelFrame):
         new = cur + delta
         if new < 2:
             new = 2
-        if new > 6:
-            new = 6
+        if new > self.max_players:
+            new = self.max_players
 
         if new != cur:
             # Setting the IntVar triggers the trace handler which updates rows
@@ -284,7 +285,7 @@ class StartupPlayersView(tk.LabelFrame):
         n = int(self._nb_players.get())
 
         # AI players: first (n-1) are enabled, rest disabled
-        for idx in range(1, 6):
+        for idx in range(1, self.max_players):
             if idx < n:
                 self._rows[idx].enable()
             else:
