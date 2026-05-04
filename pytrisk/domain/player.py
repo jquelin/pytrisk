@@ -48,5 +48,6 @@ class AIPlayer(Player):
 class HumanPlayer(Player):
     def __init__(self):
         super().__init__(index=0)
-        self.name = config.startup.players[self.key].name or getpass.getuser()
+        self.default_name = getpass.getuser()
+        self.name = config.startup.players[self.key].name or self.default_name
 

@@ -71,9 +71,20 @@ class Controller:
             name: player name
         """
         log.info(f'Setting player {index} name to {name}')
-        key = f"player{index}"
-        self.context.game.players[index].name = name
-        config.startup.players[key].name      = name
+        player = self.context.game.players[index]
+
+        # Human player is special
+        if player.is_human:
+            # store new name
+            key = f"player{index}"
+            config.startup.players[key].name = name
+            # if name is empty, use default
+            if name == '':
+                name = player.default_name
+            log.warning(f'Empty name, defaulting to username {name}')
+
+        # Store new name
+        player.name = name
         self.event_bus.emit(Events.player_name_changed, index, name)
 
 

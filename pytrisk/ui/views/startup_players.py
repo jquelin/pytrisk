@@ -72,27 +72,39 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         self.name_var.set(default_name)
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
-        self.name_var.trace_add("write", self._on_name_changed)
+        self._trace_id = self.name_var.trace_add("write", self._on_name_changed)
 
 
     # -- tk events
 
     def _on_name_changed(self, *args):
+        """Called when the name of the human player has changed in the UI. Wait
+        some time before sending the change to the controller."""
+        name = self.name_var.get()
+        log.debug(f'Tentative name change to: {name}')
+        if hasattr(self, "_after_id"):
+            self.after_cancel(self._after_id)
+        self._after_id = self.after(300, self._on_name_changed_final, name)
+
+
+    def _on_name_changed_final(self, name):
         """Called when the name of the human player has changed in the UI. Warn
         the controller."""
-        name = self.name_var.get()
         log.info(f'User wants to change player 0 name to {name}')
-        self.controller.set_player_name(0, name)
+        self.controller.set_player_name(self.index, name)
 
 
     # -- Controller events
 
     def on_player_name_changed(self, index, name):
         """Called when the name of a player has changed in the controller."""
-        if index != 0:
+        if index != self.index:
             return
-        log.info(f'Player 0 name changed to {name}')
+        log.info(f'Player {index} name changed to {name}')
+        self.name_var.trace_remove("write", self._trace_id)
         self.name_var.set(name)
+        self._trace_id = self.name_var.trace_add("write", self._on_name_changed)
+
 
 
 class StartupAIPlayerDefinition(StartupPlayerDefinition):
