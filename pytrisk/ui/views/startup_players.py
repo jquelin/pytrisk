@@ -38,8 +38,9 @@ class StartupHumanPlayerDefinition(tk.Frame):
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
 
-        all_colors = controller.get_player_colors()
-        self.color_selector = ColorSelector(self, all_colors, all_colors[0])
+        all_colors = controller.get_available_player_colors()
+        initial_color = controller.get_default_player_color(0)
+        self.color_selector = ColorSelector(self, all_colors, initial_color)
         self.color_selector.pack(side=tk.RIGHT, padx=6)
 
     def get_name(self):
@@ -77,9 +78,9 @@ class StartupAIPlayerDefinition(tk.Frame):
         self.difficulty_cb.set(_('Easy'))
         self.difficulty_cb.pack(side=tk.LEFT, padx=6)
 
-        all_colors = controller.get_player_colors()
-        self.color_selector = ColorSelector(self, all_colors,
-                                            all_colors[ai_index])
+        all_colors = controller.get_available_player_colors()
+        initial_color = controller.get_default_player_color(ai_index)
+        self.color_selector = ColorSelector(self, all_colors, initial_color)
         self.color_selector.pack(side=tk.RIGHT, padx=6)
 
     def enable(self):

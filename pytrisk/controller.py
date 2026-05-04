@@ -31,9 +31,13 @@ class Controller:
 
     # -- Data retrieval
 
-    def get_player_colors(self):
+    def get_available_player_colors(self):
         """Return the list of available player colors."""
         return settings.players.colors
+
+    def get_default_player_color(self, id):
+        """Return the color of a player."""
+        return self.context.game.players[id].color
 
     def get_maps(self):
         """Return the list of available maps."""

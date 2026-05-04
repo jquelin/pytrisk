@@ -1,2 +1,12 @@
 [startup]
 map = "risk"
+
+[startup.players]
+count = 4
+
+human.color = '#333333'
+ai1.color = '#FF2052'
+ai2.color = '#01A368'
+ai3.color = '#0066FF'
+ai4.color = '#DCB63B'
+ai5.color = '#9E5B40'

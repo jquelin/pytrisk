@@ -24,10 +24,11 @@ from pytrisk.logger          import log
 
 
 class Player:
-    def __init__(self, nb: int):
-        self.nb = nb
-        self.name  = None
-        self.color = settings.players.colors[nb]
+    def __init__(self, id: int):
+        self.id      = id
+        self.name    = None
+        self.color   = settings.players.colors[id]
+        self.enabled = True
 
     @property
     def is_human(self):
@@ -42,12 +43,12 @@ class AIPlayer(Player):
     def __init__(self, nb: int):
         super().__init__(nb)
         config_key = f"ai{nb}"
-        self.color = config.startup.player.ai[config_key].color or self.color
+        self.color = config.startup.players.ai[config_key].color or self.color
 
 
 class HumanPlayer(Player):
     def __init__(self):
-        super().__init__(nb=0)
-        self.name  = config.startup.player.human.name or getpass.getuser()
-        self.color = config.startup.player.human.color or self.color
+        super().__init__(id=0)
+        self.name  = config.startup.players.human.name or getpass.getuser()
+        self.color = config.startup.players.human.color or self.color
 

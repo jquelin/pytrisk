@@ -87,7 +87,7 @@ class StartupMapsView(tk.LabelFrame):
         for col, longest, anchor in zip(headers, longest, aligns):
             tv.heading(col, text=col, command=lambda c=col:
                        self._on_tv_map_sort(c, False))
-            tv.column(col, width=longest, anchor=anchor)  # type: ignore
+            tv.column(col, width=longest, anchor=anchor)
 
         # Add a vertical scrollbar to the treeview.
         vsb = ttk.Scrollbar(self, orient="vertical", command=tv.yview)

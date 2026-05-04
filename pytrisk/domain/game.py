@@ -15,10 +15,11 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-from pytrisk.constants     import appinfo
-from pytrisk.config        import config
-from pytrisk.domain.player import AIPlayer, HumanPlayer
-from pytrisk.logger        import log
+from pytrisk.constants       import appinfo
+from pytrisk.config          import config
+from pytrisk.domain.player   import AIPlayer, HumanPlayer
+from pytrisk.domain.settings import settings
+from pytrisk.logger          import log
 
 
 class Game:
@@ -37,11 +38,18 @@ class Game:
         '''Create players from previous configuration.
         '''
         log.info('Creating players')
+        self.players = []
+        self.players.append(HumanPlayer())
+        max_count = settings.players.max_count
+        log.debug(f'max number of players: {max_count}')
+        for i in range(1, max_count + 1):
+            self.players.append(AIPlayer(i))
 
-        self._players = []
-        self._players.append(HumanPlayer())
-        for i in range(1, config.startup.players.count + 1):
-            self._players.append(AIPlayer(i))
+        # disable players to match the configuration
+        count = int(config.startup.players.count)
+        log.debug(f'current number of players: {count}')
+        for i in range(count + 1, max_count + 1):
+            self.players[i].enabled = False
 
 
     # -- Public methods
