@@ -43,16 +43,10 @@ class Player:
 class AIPlayer(Player):
     def __init__(self, nb: int):
         super().__init__(nb)
-        # config_key = f"ai{nb}"
-        # self.color = config.startup.players.ai[config_key].color or self.color
 
 
 class HumanPlayer(Player):
     def __init__(self):
         super().__init__(index=0)
-        try:
-            self.name = config.startup.players[self.key].name
-        except KeyError:
-            self.name = getpass.getuser()
-        # self.color = config.startup.players.human.color or self.color
+        self.name = config.startup.players[self.key].name or getpass.getuser()
 

@@ -50,6 +50,7 @@ class StartupPlayerDefinition(tk.Frame):
     # -- Controller events
 
     def on_player_color_changed(self, index, color):
+        """Called when the color of a player has changed."""
         if index != self.index:
             return
         log.info(f'Player {index} color changed to {color}')
@@ -67,7 +68,7 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         lab.pack(side=tk.LEFT)
 
         self.name_var = tk.StringVar()
-        default_name = _('Player')
+        default_name = controller.get_player_name(0)
         self.name_var.set(default_name)
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)

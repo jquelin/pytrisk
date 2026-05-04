@@ -36,6 +36,10 @@ class Controller:
         """Return the list of available player colors."""
         return settings.players.colors
 
+    def get_player_name(self, index):
+        """Return the name of a player."""
+        return self.context.game.players[index].name
+
     def get_default_player_color(self, index):
         """Return the color of a player."""
         key = f"player{index}"
