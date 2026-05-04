@@ -37,3 +37,6 @@ pytrisk = "pytrisk.cli:run"
 [dependency-groups]
 dev = []
 
+[tool.pyright]
+typeCheckingMode = "basic"
+reportArgumentType = "none"

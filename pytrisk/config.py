@@ -23,14 +23,6 @@ from collections.abc import Mapping
 from pytrisk.constants import appinfo
 from pytrisk.logger    import log
 
-class NullConfig:
-    def __getitem__(self, name):
-        return self
-    def __getattr__(self, name):
-        return self
-    def __bool__(self):
-        return False
-
 class ConfigStore:
     """
     Storage layer for configuration data.
@@ -151,7 +143,7 @@ class ConfigView:
             value = self._config._get(path)
         except KeyError:
             log.warning(f'unknown config path: {".".join(path)}, returning None')
-            # return NullConfig()
+            raise
 
         if isinstance(value, Mapping):
             return ConfigView(self._config, path)
