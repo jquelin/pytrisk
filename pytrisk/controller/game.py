@@ -17,24 +17,16 @@
 
 
 from pytrisk.config import config
-from pytrisk.controller.game    import GameController
-from pytrisk.controller.startup import StartupController
 from pytrisk.domain.settings import settings
 from pytrisk.events import Events
 from pytrisk.logger import log
 
 
-class Controller:
+class GameController:
     def __init__(self, context, event_bus):
         # Store the app and event bus
-        self.context = context
+        self.context   = context
         self.event_bus = event_bus
-
-        # subcontrollers
-        self.startup = StartupController(context, event_bus)
-        self.game    = GameController(context, event_bus)
-        self.in_game = False
-
 
     # -- Current state retrieval
 
@@ -42,34 +34,11 @@ class Controller:
 
     # -- Action handlers
 
-    def do_close_game(self):
-        """Close the current game."""
-        log.info('Request to close game')
-        if not self.in_game:
-            log.info('No game to close')
-            return
-
-        self.in_game = False
-        # self.game.do_close_game()
-
-    def do_quit(self):
-        """Quit the application."""
-        log.info('Request to quit')
-        self.event_bus.emit(Events.action_quit)
-
     def do_start_new_game(self):
         """Start a new game."""
-        log.info('Starting a new game')
-        self.in_game = True
-        self.event_bus.emit(Events.new_game)
-        self.game.do_start_new_game()
+        log.info('Actually starting a new game')
 
     # -- Preferences retrieval / setting
-
-    def get_gui_wait_time(self) -> int:
-        """Get the GUI wait validation time."""
-        log.debug('Getting GUI wait validation time')
-        return settings.gui.wait_validate
 
     # -- Private methods
 

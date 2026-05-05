@@ -49,10 +49,12 @@ class MainWindow(tk.Tk):
 
         # Add some bindings
         self.protocol('WM_DELETE_WINDOW', self._on_quit)
-        self.bind('<Control-q>', self._on_quit)
+        self.bind_all('<Control-q>', self._on_quit)
+        self.bind_all('<Control-w>', self._on_close)
 
 
     # -- gui construction
+
 
     def _create_views(self):
         """Create the various views and assemble them."""
@@ -83,6 +85,10 @@ class MainWindow(tk.Tk):
 
 
     # -- gui callbacks
+
+    def _on_close(self, event=None):
+        """Signal the controller we want to close the current game."""
+        self.controller.do_close_game()
 
     def _on_quit(self, event=None):
         """Signal the controller we want to quit the application."""

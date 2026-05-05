@@ -69,4 +69,7 @@ class StartupView(tk.Frame):
     # -- Private methods
 
     def _on_btn_start_click(self):
-        log.info('starting new game')
+        """Request to start a new game."""
+        log.info('user wants to start new game')
+        self.controller.do_start_new_game()
+
