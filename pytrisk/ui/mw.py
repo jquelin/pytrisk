@@ -42,10 +42,22 @@ class MainWindow(tk.Tk):
 
         # GUI creation
         log.info('creating main window')
+        self.withdraw()
         self.title(appinfo.title)
         icon = cast(tk.PhotoImage, Icons.load(appinfo.name))
         self.iconphoto(True, icon)
         self._create_views()
+
+        # Ensure minimum window size
+        self.update_idletasks()
+        self.pack_propagate(False) # prevent main window from being resized by other widgets
+        w = self.winfo_reqwidth()
+        h = self.winfo_reqheight()
+        self.geometry(f"{w}x{h}")
+        self.minsize(w, h)
+        self.deiconify()
+        self.lift()                # raise the window
+        self.focus_force()
 
         # Add some bindings
         self.protocol('WM_DELETE_WINDOW', self._on_quit)
@@ -54,7 +66,6 @@ class MainWindow(tk.Tk):
 
 
     # -- gui construction
-
 
     def _create_views(self):
         """Create the various views and assemble them."""
@@ -76,7 +87,6 @@ class MainWindow(tk.Tk):
         startup_frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
 
 
-
     # -- Controller events
 
     def on_action_quit(self):
@@ -86,7 +96,7 @@ class MainWindow(tk.Tk):
 
     # -- gui callbacks
 
-    def _on_close(self, event=None):
+    def _on_close(self, _):
         """Signal the controller we want to close the current game."""
         self.controller.do_close_game()
 

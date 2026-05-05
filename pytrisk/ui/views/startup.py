@@ -73,3 +73,8 @@ class StartupView(tk.Frame):
         log.info('user wants to start new game')
         self.controller.do_start_new_game()
 
+    # -- Event handlers
+
+    def on_new_game(self):
+        """Close the startup frame when a new game is started."""
+        self.destroy()
