@@ -18,7 +18,6 @@
 from pathlib import Path
 import tkinter as tk
 from tkinter import ttk
-from typing import cast
 
 from pytrisk.config import config
 import pytrisk.data
@@ -44,28 +43,21 @@ class MainWindow(tk.Tk):
         log.info('creating main window')
         self.withdraw()
         self.title(appinfo.title)
-        icon = cast(tk.PhotoImage, Icons.load(appinfo.name))
+        icon = Icons.load(appinfo.name)
         self.iconphoto(True, icon)
         self._create_views()
+        self._lock_window()
 
-        # Ensure minimum window size
-        self.update_idletasks()
-        self.pack_propagate(False) # prevent main window from being resized by other widgets
-        w = self.winfo_reqwidth()
-        h = self.winfo_reqheight()
-        self.geometry(f"{w}x{h}")
-        self.minsize(w, h)
-        self.deiconify()
-        self.lift()                # raise the window
-        self.focus_force()
 
+    # -- gui construction
+
+    def _create_bindings(self):
+        """Create the global bindings for the main window."""
         # Add some bindings
         self.protocol('WM_DELETE_WINDOW', self._on_quit)
         self.bind_all('<Control-q>', self._on_quit)
         self.bind_all('<Control-w>', self._on_close)
 
-
-    # -- gui construction
 
     def _create_views(self):
         """Create the various views and assemble them."""
@@ -85,6 +77,20 @@ class MainWindow(tk.Tk):
         # Startup view
         startup_frame = StartupView(self, self.controller, self.event_bus)
         startup_frame.pack(side=tk.TOP, expand=True, fill=tk.BOTH)
+
+
+    def _lock_window(self):
+        """Lock the window to its current size."""
+        # Ensure minimum window size
+        self.update_idletasks()
+        self.pack_propagate(False) # prevent main window from being resized by other widgets
+        w = self.winfo_reqwidth()
+        h = self.winfo_reqheight()
+        self.geometry(f"{w}x{h}")
+        self.minsize(w, h)
+        self.deiconify()
+        self.lift()                # raise the window
+        self.focus_force()
 
 
     # -- Controller events
