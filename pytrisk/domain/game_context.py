@@ -33,12 +33,19 @@ class GameContext:
 
         # Create a startup configuration
         self.startup = StartupConfig()
+        self.game    = None
 
         # other stuff that may come later on
         #self.settings = Settings()
         #self.available_ai = AIRegistry()
         #self.statistics = Statistics()
 
+
+    # -- Public properties
+
+    @property
+    def in_game(self):
+        return self.game is not None
 
 
     # -- Private maps

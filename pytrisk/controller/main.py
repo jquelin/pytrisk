@@ -15,6 +15,7 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
+import types
 
 from pytrisk.config import config
 from pytrisk.controller.game    import GameController
@@ -31,9 +32,10 @@ class Controller:
         self.event_bus = event_bus
 
         # subcontrollers
-        self.startup = StartupController(context, event_bus)
-        self.game    = GameController(context, event_bus)
-        self.in_game = False
+        self.sub = types.SimpleNamespace(
+            startup = StartupController(context, event_bus),
+            game    = GameController(context, event_bus)
+        )
 
 
     # -- Current state retrieval

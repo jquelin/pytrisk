@@ -17,7 +17,6 @@
 
 from pytrisk.constants       import appinfo
 from pytrisk.config          import config
-from pytrisk.domain.player   import AIPlayer, HumanPlayer
 from pytrisk.domain.settings import settings
 from pytrisk.logger          import log
 
@@ -25,31 +24,19 @@ from pytrisk.logger          import log
 class Game:
     """ Game class, managing a single game. """
 
-    def __init__(self):
+    def __init__(self, startup):
+        """ Constructor.
+
+        Args:
+            startup (StartupConfig): Startup configuration.
+        """
         log.info("Creating game")
 
         # initialize game
-        self._create_players()
+        # self._create_players()
 
 
     # -- Private maps
-
-    def _create_players(self):
-        '''Create players from previous configuration.
-        '''
-        log.info('Creating players')
-        self.players = []
-        self.players.append(HumanPlayer())
-        max_count = settings.players.max_count
-        log.debug(f'max number of players: {max_count}')
-        for i in range(1, max_count):
-            self.players.append(AIPlayer(i))
-
-        # disable players to match the configuration
-        count = int(config.startup.players.count)
-        log.debug(f'current number of players: {count}')
-        for i in range(count + 1, max_count):
-            self.players[i].enabled = False
 
 
     # -- Public methods
