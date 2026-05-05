@@ -15,24 +15,30 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-import types
+from dataclasses import dataclass
 
 from pytrisk.config import config
-from pytrisk.controller.game    import GameController
-from pytrisk.controller.startup import StartupController
+from pytrisk.controller.game     import GameController
+from pytrisk.controller.startup  import StartupController
+from pytrisk.domain.game_context import GameContext
 from pytrisk.domain.settings import settings
 from pytrisk.events import Events
 from pytrisk.logger import log
 
 
+@dataclass
+class SubControllers:
+    startup : StartupController
+    game    : GameController
+
 class Controller:
     def __init__(self, context, event_bus):
         # Store the app and event bus
-        self.context = context
-        self.event_bus = event_bus
+        self.context   : GameContext = context
+        self.event_bus : Events      = event_bus
 
         # subcontrollers
-        self.sub = types.SimpleNamespace(
+        self.sub = SubControllers(
             startup = StartupController(context, event_bus),
             game    = GameController(context, event_bus)
         )
@@ -47,9 +53,10 @@ class Controller:
     def do_close_game(self):
         """Close the current game."""
         log.info('Request to close game')
-        if not self.in_game:
+        if not self.context.in_game:
             log.info('No game to close')
             return
+        # self.sub.game.do_close_game()
 
         self.in_game = False
         # self.game.do_close_game()
@@ -59,12 +66,12 @@ class Controller:
         log.info('Request to quit')
         self.event_bus.emit(Events.action_quit)
 
+
     def do_start_new_game(self):
         """Start a new game."""
-        log.info('Starting a new game')
-        self.in_game = True
-        self.event_bus.emit(Events.new_game)
-        self.game.do_start_new_game()
+        log.info('Delegating to subcontroller to start new game')
+        self.sub.game.do_start_new_game()
+
 
     # -- Preferences retrieval / setting
 
