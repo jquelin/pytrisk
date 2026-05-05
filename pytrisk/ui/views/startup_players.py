@@ -168,10 +168,12 @@ class StartupPlayersView(tk.LabelFrame):
         event_bus.subscribe(self)
         self.controller = controller
         self.event_bus  = event_bus
+        event_bus.subscribe(self)
 
         # Number of players variable
         self.max_players = self.controller.startup.get_max_players()
-        self._nb_players = tk.IntVar(value=2)
+        curnb = self.controller.startup.get_nb_players()
+        self._nb_players = tk.IntVar(value=curnb)
 
         # Header with spinbox to select number of players
         hdr = tk.Frame(self)
@@ -181,16 +183,12 @@ class StartupPlayersView(tk.LabelFrame):
         lab.pack(side=tk.LEFT)
 
         # Use a small spinbox for selecting 2..6
-        sp = tk.Spinbox(hdr, from_=2, to=self.max_players, width=3, textvariable=self._nb_players)
+        sp = tk.Spinbox(hdr, from_=2, to=self.max_players, width=3,
+                        textvariable=self._nb_players)
         sp.pack(side=tk.LEFT, padx=6)
 
         # Trace changes to number of players
-        try:
-            # modern tkinter
-            self._nb_players.trace_add('write', self._on_nb_players_change)
-        except Exception:
-            # fallback
-            self._nb_players.trace('w', self._on_nb_players_change)
+        self._trace_id = self._nb_players.trace_add('write', self._on_nb_players_changed)
 
         # Allow controlling the spinbox with the mouse wheel across platforms.
         # - Windows & macOS: <MouseWheel> with event.delta > 0 or < 0
@@ -219,25 +217,25 @@ class StartupPlayersView(tk.LabelFrame):
         # Initialize rows state according to initial nb players
         self._update_rows()
 
-    # -- Private methods
 
-    def _on_nb_players_change(self, *args):
-        """Callback when the spinbox number changes."""
-        try:
-            n = int(self._nb_players.get())
-        except Exception:
-            log.warning('invalid number of players')
-            return
+    # -- Private methods: GUI callbacks
 
-        if n < 2:
-            n = 2
-            self._nb_players.set(n)
-        if n > self.max_players:
-            n = self.max_players
-            self._nb_players.set(n)
+    def _on_nb_players_changed(self, *args):
+        """Called when the number of players has changed in the UI. Wait
+        some time before sending the change to the controller."""
+        nb_players = self._nb_players.get()
+        log.debug(f'Tentative name change to: {nb_players}')
+        if hasattr(self, "_after_id"):
+            self.after_cancel(self._after_id)
+        self._after_id = self.after(300, self._on_nb_players_changed_final, nb_players)
 
-        log.info(f'number of players set to {n}')
-        self._update_rows()
+
+    def _on_nb_players_changed_final(self, nb_players):
+        """Called when the number of players has changed in the UI. Warn
+        the controller."""
+        log.info(f'User wants to change number of players to {nb_players}')
+        self.controller.startup.set_nb_players(nb_players)
+
 
     def _on_spinbox_mousewheel(self, event):
         """Handle mouse wheel events on the spinbox in a cross-platform way.
@@ -246,9 +244,9 @@ class StartupPlayersView(tk.LabelFrame):
         or receive the same wheel event.
         """
         try:
-            cur = int(self._nb_players.get())
+            curnb = int(self._nb_players.get())
         except Exception:
-            cur = 2
+            curnb = self.controller.startup.get_nb_players()
 
         # X11 mouse wheel events use Button-4/5
         delta = 0
@@ -256,26 +254,15 @@ class StartupPlayersView(tk.LabelFrame):
             delta = 1 if event.num == 4 else -1
         else:
             # Windows and macOS: event.delta positive/negative
-            try:
-                delta = 1 if event.delta > 0 else -1
-            except Exception:
-                delta = 0
+            delta = 1 if event.delta > 0 else -1
 
+        # If no change, do nothing
         if delta == 0:
             return "break"
 
-        new = cur + delta
-        if new < 2:
-            new = 2
-        if new > self.max_players:
-            new = self.max_players
-
-        if new != cur:
-            # Setting the IntVar triggers the trace handler which updates rows
-            self._nb_players.set(new)
-
-        # prevent other handlers from also processing the event
+        self._nb_players.set(curnb + delta)
         return "break"
+
 
     def _update_rows(self):
         """Enable or disable rows depending on the selected number of players.
@@ -290,3 +277,17 @@ class StartupPlayersView(tk.LabelFrame):
                 self._rows[idx].enable()
             else:
                 self._rows[idx].disable()
+
+
+    # -- Public methods: controller events
+
+    def on_nb_players_changed(self, nb_players):
+        """Called when the number of players has changed in the controller. Update
+        the spinbox and rows accordingly."""
+        log.info(f'Number of players changed to {nb_players}')
+        self._nb_players.trace_remove("write", self._trace_id)
+        self._nb_players.set(nb_players)
+        self._trace_id = self._nb_players.trace_add('write', self._on_nb_players_changed)
+        self._update_rows()
+
+

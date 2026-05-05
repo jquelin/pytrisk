@@ -49,6 +49,10 @@ class StartupController:
         """Return the maximum number of players."""
         return settings.players.max_count
 
+    def get_nb_players(self):
+        """Return the number of players."""
+        return self.context.startup.nb_players
+
     def get_maps(self):
         """Return the list of available maps."""
         return self.context.maps.values()
@@ -69,6 +73,32 @@ class StartupController:
         log.info(f'Setting map to {name}')
         config.startup.map = name
         self.context.startup.map_name = name
+
+    def set_nb_players(self, nb_players):
+        log.info(f'Setting number of players to {nb_players}')
+        curnb = self.context.startup.nb_players
+
+        # First check if it's a valid number
+        try:
+            nb_players = int(nb_players)
+        except Exception:
+            log.warning(f'Not a valid number, reverting to {curnb}')
+            self.event_bus.emit(Events.nb_players_changed, curnb)
+            return
+
+        # Then validate if it's within bounds
+        if nb_players < 2:
+            log.warning('Too few players, setting to 2')
+            self.event_bus.emit(Events.nb_players_changed, 2)
+            return
+
+        max_players = self.get_max_players()
+        if nb_players > max_players:
+            log.warning(f'Too many players, setting to max players ({max_players})')
+            self.event_bus.emit(Events.nb_players_changed, max_players)
+            return
+        # self.controller.startup.set_nb_players(nb_players)
+
 
 
     def set_player_color(self, index, color):

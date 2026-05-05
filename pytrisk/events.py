@@ -23,6 +23,7 @@ from pytrisk.logger import log
 
 class Events(StrEnum):
     action_quit          = auto()
+    nb_players_changed   = auto()
     player_color_changed = auto()
     player_name_changed  = auto()
     status_clear         = auto()

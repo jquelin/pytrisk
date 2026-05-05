@@ -50,9 +50,14 @@ class StartupConfig:
         # Disable AI players to match the configuration
         count = int(config.startup.players.count)
         log.debug(f'current number of players: {count}')
-        for i in range(count + 1, max_count):
+        for i in range(count, max_count):
             self.players[i].enabled = False
 
 
     # -- Public methods
 
+    @property
+    def nb_players(self):
+        """Return the number of enabled players."""
+        enabled = [i for i in self.players if i.enabled]
+        return len(enabled)
