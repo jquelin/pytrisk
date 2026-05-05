@@ -77,7 +77,7 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
 
     # -- tk events
 
-    def _on_name_changed(self, *args):
+    def _on_name_changed(self, *_):
         """Called when the name of the human player has changed in the UI. Wait
         some time before sending the change to the controller."""
         name = self.name_var.get()
@@ -220,7 +220,7 @@ class StartupPlayersView(tk.LabelFrame):
 
     # -- Private methods: GUI callbacks
 
-    def _on_nb_players_changed(self, *args):
+    def _on_nb_players_changed(self, *_):
         """Called when the number of players has changed in the UI. Wait
         some time before sending the change to the controller."""
         nb_players = self._nb_players.get()
