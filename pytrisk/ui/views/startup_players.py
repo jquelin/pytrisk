@@ -84,7 +84,8 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         log.debug(f'Tentative name change to: {name}')
         if hasattr(self, "_after_id"):
             self.after_cancel(self._after_id)
-        self._after_id = self.after(300, self._on_name_changed_final, name)
+        waitms = self.controller.get_gui_wait_time()
+        self._after_id = self.after(waitms, self._on_name_changed_final, name)
 
 
     def _on_name_changed_final(self, name):
@@ -227,7 +228,8 @@ class StartupPlayersView(tk.LabelFrame):
         log.debug(f'Tentative name change to: {nb_players}')
         if hasattr(self, "_after_id"):
             self.after_cancel(self._after_id)
-        self._after_id = self.after(300, self._on_nb_players_changed_final, nb_players)
+        waitms = self.controller.get_gui_wait_time()
+        self._after_id = self.after(waitms, self._on_nb_players_changed_final, nb_players)
 
 
     def _on_nb_players_changed_final(self, nb_players):

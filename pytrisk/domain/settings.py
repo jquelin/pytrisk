@@ -19,17 +19,24 @@
 from dataclasses import dataclass
 
 @dataclass(frozen=True)
-class PlayerSettings:
-    colors: list[str]
-    max_count: int
+class GUISettings:
+    wait_validate: int
 
+@dataclass(frozen=True)
+class PlayerSettings:
+    colors    : list[str]
+    max_count : int
 
 @dataclass(frozen=True)
 class Settings:
-    players: PlayerSettings
+    gui     : GUISettings
+    players : PlayerSettings
 
 
 settings = Settings(
+    gui = GUISettings(
+        wait_validate = 250,    # ms
+    ),
     players = PlayerSettings(
         colors = [
             '#333333',  # grey20
