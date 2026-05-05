@@ -17,6 +17,7 @@
 
 
 from enum import StrEnum, auto
+import weakref
 
 from pytrisk.logger import log
 
@@ -45,15 +46,26 @@ class EventBus:
         for event in Events:
             method_name = f'on_{event.name}'
             if hasattr(listener, method_name):
-                cb = getattr(listener, method_name)
+                method = getattr(listener, method_name)
+                wm = weakref.WeakMethod(method)
                 log.debug(f'Auto-subscribed: {event} -> {listener.__class__.__name__}.{method_name}')
-                self.listeners.setdefault(event, []).append(cb)
+                self.listeners.setdefault(event, []).append(wm)
 
 
     def emit(self, event, *args, **kwargs):
         """Emit an event with the given arguments. All callbacks subscribed to
         this event will be called with the provided arguments."""
         log.info(f'Event emitted: {event}')
-        for cb in self.listeners.get(event, []):
-            log.debug(f'calling callback: {cb.__qualname__}')
-            cb(*args, **kwargs)
+
+        # Call callbacks
+        callbacks = self.listeners.get(event, [])
+        alive = []
+        for wm in callbacks:
+            cb = wm()
+            if cb is not None:
+                log.debug(f'calling callback: {cb.__qualname__}')
+                cb(*args, **kwargs)
+                alive.append(wm)
+
+        # Purge dead callbacks
+        self.listeners[event] = alive
