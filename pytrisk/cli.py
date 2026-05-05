@@ -15,8 +15,8 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-
 import argparse
+import signal
 
 from pytrisk.constants           import appinfo
 from pytrisk.domain.game_context import GameContext
@@ -49,4 +49,9 @@ def run():
 
     # create the gui and start the main loop
     ui = pytrisk.ui.mw.MainWindow(controller, event_bus)
+    def _poll_sigint():
+        # Poll for SIGINT
+        ui.after(100, _poll_sigint)
+    ui.after(100, _poll_sigint)
+    # create the gui and start the main loop
     ui.mainloop()
