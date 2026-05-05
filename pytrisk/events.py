@@ -67,6 +67,8 @@ class EventBus:
                 log.debug(f'calling callback: {cb.__qualname__}')
                 cb(*args, **kwargs)
                 alive.append(wm)
+            else:
+                log.debug(f'callback dead: {wm}')
 
         # Purge dead callbacks
         self.listeners[event] = alive
