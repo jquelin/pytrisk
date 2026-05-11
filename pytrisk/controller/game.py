@@ -19,7 +19,7 @@
 from pytrisk.config import config
 from pytrisk.domain.game_context import GameContext
 from pytrisk.domain.settings import settings
-from pytrisk.events import Events
+from pytrisk.events import EventBus, Events
 from pytrisk.logger import log
 
 
@@ -27,7 +27,7 @@ class GameController:
     def __init__(self, context, event_bus):
         # Store the app and event bus
         self.context   : GameContext = context
-        self.event_bus : Events      = event_bus
+        self.event_bus : EventBus    = event_bus
 
     # -- Current state retrieval
 
