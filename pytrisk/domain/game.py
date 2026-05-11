@@ -24,16 +24,15 @@ from pytrisk.logger          import log
 class Game:
     """ Game class, managing a single game. """
 
-    def __init__(self, startup):
+    def __init__(self, map, players):
         """ Constructor.
 
         Args:
             startup (StartupConfig): Startup configuration.
         """
-        log.info("Creating game")
-
-        # initialize game
-        # self._create_players()
+        log.info("Creating game object")
+        self.map     = map
+        self.players = players
 
 
     # -- Private maps

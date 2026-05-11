@@ -61,3 +61,13 @@ class StartupConfig:
         """Return the number of enabled players."""
         enabled = [i for i in self.players if i.enabled]
         return len(enabled)
+
+
+    def get_final_players(self) -> list:
+        """Return the list of players ready for the game.
+
+        Returns:
+            list: List of enabled players
+        """
+        log.debug(f'final number of players: {self.nb_players}')
+        return [p for p in self.players if p.enabled]

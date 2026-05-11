@@ -68,8 +68,12 @@ class GameContext:
     # -- Public methods
 
     def new_game(self):
+        """Start a new game."""
         log.info("Creating new game")
-        # self.game = Game()
+        map     = self.maps[self.startup.map_name]
+        players = self.startup.get_final_players()
+        self.game : Game = Game(map, players)
+
 
     def end_game(self):
         log.info("Ending game")

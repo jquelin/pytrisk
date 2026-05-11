@@ -58,8 +58,6 @@ class Controller:
             return
         # self.sub.game.do_close_game()
 
-        self.in_game = False
-        # self.game.do_close_game()
 
     def do_quit(self):
         """Quit the application."""

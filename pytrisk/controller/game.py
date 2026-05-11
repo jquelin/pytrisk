@@ -39,6 +39,11 @@ class GameController:
         """Start a new game."""
         log.info('Actually starting a new game')
 
+        # First create a new game
+        self.context.new_game()
+        # self.context.game.map.load()
+
+
     # -- Preferences retrieval / setting
 
     # -- Private methods
