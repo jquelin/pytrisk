@@ -134,7 +134,10 @@ class GameCanvasView(tk.LabelFrame):
         # Draw background on canvas
         canvas = self._canvas
         canvas.delete('background')
-        canvas.create_image(0, 0, image=self._background, anchor=tk.NW, tag='background')
+        # center background
+        x = (width - neww) // 2
+        y = (height - newh) // 2
+        canvas.create_image(x, y, image=self._background, anchor=tk.NW, tag='background')
         canvas.lower('background', tk.ALL)
 
 
