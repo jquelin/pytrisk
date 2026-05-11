@@ -26,6 +26,12 @@ class MenuView(tk.Menu):
 
         self.controller = controller
 
+        self._create_menu_game()
+        self._create_menu_actions()
+
+    # -- Private methods
+
+    def _create_menu_game(self):
         # Menu: game
         menu = tk.Menu(self, tearoff=False)
         self.add_cascade(label=_('Game'), underline=0, menu=menu)
@@ -42,6 +48,7 @@ class MenuView(tk.Menu):
                 image=icon, compound=tk.LEFT,
                 command=self._on_quit)
 
+    def _create_menu_actions(self):
         # Menu: actions
         menu = tk.Menu(self, tearoff=False)
         self.add_cascade(label=_('Actions'), underline=0, menu=menu)
