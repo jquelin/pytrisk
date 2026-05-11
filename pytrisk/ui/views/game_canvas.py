@@ -44,6 +44,9 @@ class GameCanvasView(tk.LabelFrame):
         self.controller = controller
         self.event_bus  = event_bus
 
+        # Variables
+        self._resize_job = None
+
         # Store the map files
         self._load_map_images()
 
@@ -95,9 +98,16 @@ class GameCanvasView(tk.LabelFrame):
         """Event handler for canvas configure event - ie, when size changes.
 
         This also gets called when the canvas is first created."""
+        # Cancel previous resize job
+        if self._resize_job:
+            self.after_cancel(self._resize_job)
+        # Do not resize too often
+        self._resize_job = self.after( 50,
+            lambda: self._do_resize(event.width, event.height),
+        )
+
+    def _do_resize(self, width, height):
         # Get canvas size
-        width  = event.width
-        height = event.height
         log.info(f'Canvas configure event: {width}x{height}')
 
         # Compute zoom
