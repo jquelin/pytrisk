@@ -35,6 +35,7 @@ class GameView(tk.Frame):
         log.info('Creating game frame')
         self._create_views()
 
+    # -- Private methods
 
     def _create_views(self):
         """Create the various views and assemble them."""

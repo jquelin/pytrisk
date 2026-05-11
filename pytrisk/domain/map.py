@@ -17,6 +17,8 @@
 
 import json
 
+from pytrisk.domain.continent import Continent
+from pytrisk.domain.country   import Country
 from pytrisk.logger import log
 
 
@@ -32,8 +34,8 @@ class Map:
         self.background = dirname / 'background.png'
         self.overlay    = dirname / 'overlay.png'
 
-        # Load map file
-        log.debug(f'Loading map file {self.file}')
+        # Read map file
+        log.debug(f'Reading map file {self.file}')
         self._data = json.loads(self.file.read_text())
 
         # Extract general information
@@ -45,3 +47,14 @@ class Map:
         self.nb_countries  = len(self._data['countries'])
         log.debug(f'Map {self.id}: {self.category} "{self.name}" '
                  f'({self.nb_continents} continents, {self.nb_countries} countries)')
+
+
+    # -- Public method
+
+    def load(self):
+        """Load the map and instantiate the continents and countries. Before
+        this, the map is a just the data read from the map definition."""
+        log.info(f'Loading map {self.id}')
+        self.continents = [Continent(self, c) for c in self._data['continents']]
+        self.countries  = [Country(self, c) for c in self._data['countries']]
+
