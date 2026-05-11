@@ -1,5 +1,5 @@
 [startup]
-map = "risk"
+map = "board"
 
 [startup.players]
 count = 4
