@@ -33,6 +33,14 @@ class GameController:
 
     # -- Data retrieval
 
+    def get_map_image_files(self):
+        """Return the map image files.
+
+        Returns:
+            tuple: (background, overlay)
+        """
+        return self.context.game.map.background, self.context.game.map.overlay
+
     # -- Action handlers
 
     def do_start_new_game(self):
