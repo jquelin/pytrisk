@@ -42,6 +42,7 @@ class GameController:
         # First create a new game
         self.context.new_game()
         # self.context.game.map.load()
+        self.event_bus.emit(Events.new_game)
 
 
     # -- Preferences retrieval / setting
