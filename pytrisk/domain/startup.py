@@ -27,7 +27,7 @@ class StartupConfig:
 
     def __init__(self):
         log.info("Creating startup config")
-        self.map_name = config.startup.map
+        self.map_name = config.get("startup.map")
         self._create_players()
 
 
@@ -48,7 +48,7 @@ class StartupConfig:
             self.players.append(AIPlayer(i))
 
         # Disable AI players to match the configuration
-        count = int(config.startup.players.count)
+        count = config.get('startup.players.count')
         log.debug(f'current number of players: {count}')
         for i in range(count, max_count):
             self.players[i].enabled = False

@@ -44,8 +44,7 @@ class StartupController:
 
     def get_default_player_color(self, index):
         """Return the color of a player."""
-        key = f"player{index}"
-        return config.startup.players[key].color
+        return config.get(f"startup.player.{index}.color")
 
     def get_max_players(self):
         """Return the maximum number of players."""
@@ -61,7 +60,7 @@ class StartupController:
 
     def get_default_map_name(self):
         """Return the default map."""
-        return config.startup.map
+        return config.get("startup.map")
 
 
     # -- Action handlers
@@ -73,7 +72,7 @@ class StartupController:
             name: map name
         """
         log.info(f'Setting map to {name}')
-        config.startup.map = name
+        config.set("startup.map", name)
         self.context.startup.map_name = name
 
     def set_nb_players(self, nb_players):
@@ -100,15 +99,14 @@ class StartupController:
             newnb = max_players
 
         # Store new number & inform the view
-        config.startup.players.count = newnb
+        config.set("startup.players.count", newnb)
         self.event_bus.emit(Events.nb_players_changed, newnb)
 
 
     def set_player_color(self, index, color):
         log.info(f'Setting player {index} color to {color}')
-        key = f"player{index}"
         self.context.startup.players[index].color = color
-        config.startup.players[key].color         = color
+        config.set(f"startup.player.{index}.color", color)
         self.event_bus.emit(Events.player_color_changed, index, color)
 
     def set_player_name(self, index, name):
@@ -125,7 +123,7 @@ class StartupController:
         if player.is_human:
             # store new name
             key = f"player{index}"
-            config.startup.players[key].name = name
+            config.set(f"startup.player.{key}.name", name)
             # if name is empty, use default
             if name == '':
                 name = player.default_name

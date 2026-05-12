@@ -28,7 +28,7 @@ class Player:
         self.index   = index
         self.name    = None
         self.key     = f'player{index}'
-        self.color   = config.startup.players[self.key].color
+        self.color   = config.get(f"startup.player.{index}.color")
         self.enabled = True
 
     @property
@@ -49,5 +49,5 @@ class HumanPlayer(Player):
     def __init__(self):
         super().__init__(index=0)
         self.default_name = getpass.getuser()
-        self.name = config.startup.players[self.key].name or self.default_name
+        self.name = config.get(f"startup.player.{self.index}.name") or self.default_name
 

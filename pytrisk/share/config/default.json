@@ -1,0 +1,11 @@
+{
+    "startup.map": "board",
+    "startup.players.count": 4,
+    "startup.player.0.name": "",
+    "startup.player.0.color": "#333333",
+    "startup.player.1.color": "#FF2052",
+    "startup.player.2.color": "#01A368",
+    "startup.player.3.color": "#0066FF",
+    "startup.player.4.color": "#DCB63B",
+    "startup.player.5.color": "#9E5B40"
+}
