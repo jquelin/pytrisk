@@ -53,8 +53,18 @@ class GameController:
         self.context.game.map.load()
         self.event_bus.emit(Events.new_game)
 
-
     # -- Preferences retrieval / setting
+
+    def set_aspect_ratio(self, ratio: bool):
+        """Set the aspect ratio of the map.
+
+        Args:
+            ratio: whether to keep the aspect ratio
+        """
+        log.info(f'Setting aspect ratio to {ratio}')
+        config.set('gui.aspect.keep_ratio', ratio)
+        self.event_bus.emit(Events.aspect_ratio_changed)
+
 
     # -- Private methods
 

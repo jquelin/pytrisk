@@ -20,6 +20,7 @@ from pathlib import Path
 from PIL import Image, ImageTk
 import tkinter as tk
 
+from pytrisk.config    import config
 from pytrisk.locale    import _
 from pytrisk.logger    import log
 
@@ -103,20 +104,24 @@ class GameCanvasView(tk.LabelFrame):
             self.after_cancel(self._resize_job)
         # Do not resize too often
         self._resize_job = self.after( 50,
-            lambda: self._do_resize(event.width, event.height),
+            lambda: self._canvas_configure_real(event.width, event.height),
         )
 
-    def _do_resize(self, width, height):
+    def _canvas_configure_real(self, width, height):
         # Get canvas size
         log.info(f'Canvas configure event: {width}x{height}')
 
         # Compute zoom
-        self._zoom = min(width / self._size.x, height / self._size.y)
+        self._zoom = Point(width / self._size.x, height / self._size.y)
+        if config.get('gui.aspect.keep_ratio'):
+            log.debug('Keeping aspect ratio')
+            minzoom = min(self._zoom.x, self._zoom.y)
+            self._zoom = Point(minzoom, minzoom)
         log.debug(f'Zoom: {self._zoom}')
 
         # Resize background image
-        neww = int(self._size.x * self._zoom)
-        newh = int(self._size.y * self._zoom)
+        neww = int(self._size.x * self._zoom.x)
+        newh = int(self._size.y * self._zoom.y)
         resized = self._bg.image.resize(
             (neww, newh),
             Image.Resampling.LANCZOS,
@@ -147,3 +152,7 @@ class GameCanvasView(tk.LabelFrame):
         log.info(f'Canvas motion event: ({x}, {y})')
 
 
+    # -- Public methods: event bus handlers
+
+    def on_aspect_ratio_changed(self):
+        self._canvas_configure_real(self.winfo_width(), self.winfo_height())

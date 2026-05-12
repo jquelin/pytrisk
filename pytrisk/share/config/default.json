@@ -1,4 +1,5 @@
 {
+    "gui.aspect.keep_ratio": true,
     "startup.map": "board",
     "startup.players.count": 4,
     "startup.player.0.name": "",
