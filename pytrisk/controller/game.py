@@ -24,8 +24,9 @@ from pytrisk.logger import log
 
 
 class GameController:
-    def __init__(self, context, event_bus):
+    def __init__(self, controller, context, event_bus):
         # Store the app and event bus
+        self.controller              = controller
         self.context   : GameContext = context
         self.event_bus : EventBus    = event_bus
 

@@ -18,11 +18,11 @@
 import argparse
 import signal
 
-from pytrisk.constants           import appinfo
-from pytrisk.domain.game_context import GameContext
-from pytrisk.controller.main     import Controller
-from pytrisk.events              import EventBus
-from pytrisk.logger              import log
+from pytrisk.constants             import appinfo
+from pytrisk.domain.game_context   import GameContext
+from pytrisk.controller.dispatcher import Controller
+from pytrisk.events                import EventBus
+from pytrisk.logger                import log
 import pytrisk.ui.mw
 
 def run():

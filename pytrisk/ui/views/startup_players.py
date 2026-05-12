@@ -34,8 +34,8 @@ class StartupPlayerDefinition(tk.Frame):
         event_bus.subscribe(self)
 
         # Color selector at the right
-        all_colors = controller.sub.startup.get_available_player_colors()
-        initial_color = controller.sub.startup.get_default_player_color(index)
+        all_colors = controller.get_available_player_colors()
+        initial_color = controller.get_default_player_color(index)
         self.color_selector = ColorSelector(self, all_colors, initial_color,
                                             command=self._on_color_selected)
         self.color_selector.pack(side=tk.RIGHT, padx=6)
@@ -45,7 +45,7 @@ class StartupPlayerDefinition(tk.Frame):
 
     def _on_color_selected(self, color):
         log.info(f'User wants to change player {self.index} color to {color}')
-        self.controller.sub.startup.set_player_color(self.index, color)
+        self.controller.set_player_color(self.index, color)
 
     # -- Controller events
 
@@ -68,7 +68,7 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         lab.pack(side=tk.LEFT)
 
         self.name_var = tk.StringVar()
-        default_name = controller.sub.startup.get_player_name(0)
+        default_name = controller.get_player_name(0)
         self.name_var.set(default_name)
         self.name_entry = ttk.Entry(self, textvariable=self.name_var)
         self.name_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=6)
@@ -92,7 +92,7 @@ class StartupHumanPlayerDefinition(StartupPlayerDefinition):
         """Called when the name of the human player has changed in the UI. Warn
         the controller."""
         log.info(f'User wants to change player 0 name to {name}')
-        self.controller.sub.startup.set_player_name(self.index, name)
+        self.controller.set_player_name(self.index, name)
 
 
     # -- Controller events
@@ -172,8 +172,8 @@ class StartupPlayersView(tk.LabelFrame):
         event_bus.subscribe(self)
 
         # Number of players variable
-        self.max_players = self.controller.sub.startup.get_max_players()
-        curnb = self.controller.sub.startup.get_nb_players()
+        self.max_players = self.controller.get_max_players()
+        curnb = self.controller.get_nb_players()
         self._nb_players = tk.IntVar(value=curnb)
 
         # Header with spinbox to select number of players
@@ -236,7 +236,7 @@ class StartupPlayersView(tk.LabelFrame):
         """Called when the number of players has changed in the UI. Warn
         the controller."""
         log.info(f'User wants to change number of players to {nb_players}')
-        self.controller.sub.startup.set_nb_players(nb_players)
+        self.controller.set_nb_players(nb_players)
 
 
     def _on_spinbox_mousewheel(self, event):
@@ -248,7 +248,7 @@ class StartupPlayersView(tk.LabelFrame):
         try:
             curnb = int(self._nb_players.get())
         except Exception:
-            curnb = self.controller.sub.startup.get_nb_players()
+            curnb = self.controller.get_nb_players()
 
         # X11 mouse wheel events use Button-4/5
         delta = 0

@@ -57,7 +57,7 @@ class StartupMapsView(tk.LabelFrame):
         }
 
         # Prepare the treeview data.
-        maps = self.controller.sub.startup.get_maps()
+        maps = self.controller.get_maps()
         self._maps = sorted(maps, key=lambda x: x.id)
 
         # Prepare the treeview headers, longest strings and alignments.
@@ -95,7 +95,7 @@ class StartupMapsView(tk.LabelFrame):
         tv.configure(yscrollcommand=vsb.set)
 
         # Fill the treeview with the data.
-        self._map_name = self.controller.sub.startup.get_default_map_name()
+        self._map_name = self.controller.get_default_map_name()
         log.info(f'Setting default map to {self._map_name}')
         self._reload_treeview()
 
@@ -143,7 +143,7 @@ class StartupMapsView(tk.LabelFrame):
         selected = self.tv.selection()
         map_name = selected[0]
         log.info(f'User wants to select map {map_name}')
-        self.controller.sub.startup.set_map_name(map_name)
+        self.controller.set_map_name(map_name)
 
 
     def _on_tv_map_sort(self, col: str, descending: bool):

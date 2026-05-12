@@ -80,7 +80,7 @@ class GameCanvasView(tk.LabelFrame):
         on."""
         # Load map images
         log.info('Loading map images')
-        bg, overlay = self.controller.sub.game.get_map_image_files()
+        bg, overlay = self.controller.get_map_image_files()
         log.debug(f'Background: {bg}')
         log.debug(f'overlay: {overlay}')
         self._bg = MapImage(bg, Image.open(bg))

@@ -15,33 +15,18 @@
 # along with pytrisk. If not, see <https://www.gnu.org/licenses/>.
 #
 
-from dataclasses import dataclass
-
-from pytrisk.config import config
-from pytrisk.controller.game     import GameController
-from pytrisk.controller.startup  import StartupController
 from pytrisk.domain.game_context import GameContext
 from pytrisk.domain.settings import settings
 from pytrisk.events import Events, EventBus
 from pytrisk.logger import log
 
 
-@dataclass
-class SubControllers:
-    startup : StartupController
-    game    : GameController
-
-class Controller:
-    def __init__(self, context, event_bus):
+class MainController:
+    def __init__(self, controller, context, event_bus):
         # Store the app and event bus
+        self.controller              = controller
         self.context   : GameContext = context
         self.event_bus : EventBus    = event_bus
-
-        # subcontrollers
-        self.sub = SubControllers(
-            startup = StartupController(context, event_bus),
-            game    = GameController(context, event_bus)
-        )
 
 
     # -- Current state retrieval
@@ -56,19 +41,12 @@ class Controller:
         if not self.context.in_game:
             log.info('No game to close')
             return
-        # self.sub.game.do_close_game()
 
 
     def do_quit(self):
         """Quit the application."""
         log.info('Request to quit')
         self.event_bus.emit(Events.action_quit)
-
-
-    def do_start_new_game(self):
-        """Start a new game."""
-        log.info('Delegating to subcontroller to start new game')
-        self.sub.game.do_start_new_game()
 
 
     # -- Preferences retrieval / setting
