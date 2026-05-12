@@ -3,9 +3,9 @@
 # This file is part of pytrisk.
 
 from pytrisk.domain.game_context import GameContext
-from pytrisk import settings
 from pytrisk.events import Events, EventBus
 from pytrisk.logger import log
+import pytrisk.settings as settings
 
 
 class MainController:

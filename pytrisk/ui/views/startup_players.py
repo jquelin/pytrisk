@@ -8,7 +8,6 @@ from tkinter import ttk
 from pytrisk.config import config
 from pytrisk.locale import _
 from pytrisk.logger import log
-from pytrisk        import settings
 from pytrisk.ui.widgets.color_selector import ColorSelector
 
 

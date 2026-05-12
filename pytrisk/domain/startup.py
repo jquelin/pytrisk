@@ -2,11 +2,10 @@
 # Copyright (c) 2026 Jerome Quelin
 # This file is part of pytrisk.
 
-from pytrisk.constants       import appinfo
-from pytrisk.config          import config
-from pytrisk.domain.player   import AIPlayer, HumanPlayer
-from pytrisk import settings
-from pytrisk.logger          import log
+from pytrisk.config        import config
+from pytrisk.domain.player import AIPlayer, HumanPlayer
+from pytrisk.logger        import log
+import pytrisk.settings as settings
 
 
 class StartupConfig:

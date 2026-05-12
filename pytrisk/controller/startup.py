@@ -2,12 +2,11 @@
 # Copyright (c) 2026 Jerome Quelin
 # This file is part of pytrisk.
 
-
 from pytrisk.config import config
 from pytrisk.domain.game_context import GameContext
-from pytrisk import settings
 from pytrisk.events import EventBus, Events
 from pytrisk.logger import log
+import pytrisk.settings as settings
 
 
 class StartupController:

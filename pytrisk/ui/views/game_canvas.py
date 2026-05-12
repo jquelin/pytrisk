@@ -10,6 +10,7 @@ import tkinter as tk
 from pytrisk.config    import config
 from pytrisk.locale    import _
 from pytrisk.logger    import log
+import pytrisk.settings as settings
 
 
 @dataclass
@@ -90,7 +91,7 @@ class GameCanvasView(tk.LabelFrame):
         if self._resize_job:
             self.after_cancel(self._resize_job)
         # Do not resize too often
-        self._resize_job = self.after( 50,
+        self._resize_job = self.after(settings.gui.wait_redraw,
             lambda: self._canvas_configure_real(event.width, event.height),
         )
 

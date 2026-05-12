@@ -7,7 +7,8 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class GUISettings:
-    wait_validate: int = 250  # ms
+    wait_redraw   : int = 100  # ms
+    wait_validate : int = 250  # ms
 
 gui = GUISettings()
 
