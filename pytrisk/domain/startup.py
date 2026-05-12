@@ -18,7 +18,7 @@
 from pytrisk.constants       import appinfo
 from pytrisk.config          import config
 from pytrisk.domain.player   import AIPlayer, HumanPlayer
-from pytrisk.domain.settings import settings
+from pytrisk import settings
 from pytrisk.logger          import log
 
 

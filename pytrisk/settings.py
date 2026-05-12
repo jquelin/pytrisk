@@ -20,25 +20,16 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class GUISettings:
-    wait_validate: int
+    wait_validate: int = 250  # ms
+
+gui = GUISettings()
+
+# --
 
 @dataclass(frozen=True)
 class PlayerSettings:
-    colors    : list[str]
-    max_count : int
-
-@dataclass(frozen=True)
-class Settings:
-    gui     : GUISettings
-    players : PlayerSettings
-
-
-settings = Settings(
-    gui = GUISettings(
-        wait_validate = 250,    # ms
-    ),
-    players = PlayerSettings(
-        colors = [
+    max_count : int = 6
+    colors    : tuple[str, ...] = (
             '#333333',  # grey20
             '#FF2052',  # awesome
             '#01A368',  # green
@@ -59,7 +50,7 @@ settings = Settings(
             '#40E0D0',  # turquoise
             '#8A2BE2',  # blue violet
             '#CCCCCC',  # light gray
-        ],
-        max_count = 6,
-    )
-)
+        )
+
+players = PlayerSettings()
+

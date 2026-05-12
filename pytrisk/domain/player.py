@@ -19,7 +19,6 @@ import getpass
 
 from pytrisk.config          import config
 from pytrisk.constants       import appinfo
-from pytrisk.domain.settings import settings
 from pytrisk.logger          import log
 
 

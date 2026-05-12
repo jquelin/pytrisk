@@ -16,7 +16,7 @@
 #
 
 from pytrisk.domain.game_context import GameContext
-from pytrisk.domain.settings import settings
+from pytrisk import settings
 from pytrisk.events import Events, EventBus
 from pytrisk.logger import log
 
