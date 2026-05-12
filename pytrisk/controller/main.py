@@ -38,10 +38,6 @@ class MainController:
 
     # -- Preferences retrieval / setting
 
-    def get_gui_wait_time(self) -> int:
-        """Get the GUI wait validation time."""
-        log.debug('Getting GUI wait validation time')
-        return settings.gui.wait_validate
 
     # -- Private methods
 

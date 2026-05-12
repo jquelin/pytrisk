@@ -97,8 +97,7 @@ class StartupController:
         # Human player is special
         if player.is_human:
             # store new name
-            key = f"player{index}"
-            config.set(f"startup.player.{key}.name", name)
+            config.set(f"startup.player.{index}.name", name)
             # if name is empty, use default
             if name == '':
                 name = player.default_name
