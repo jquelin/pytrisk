@@ -9,6 +9,7 @@ from pytrisk.config import config
 from pytrisk.locale import _
 from pytrisk.logger import log
 from pytrisk.ui.widgets.color_selector import ColorSelector
+import pytrisk.settings as settings
 
 
 class StartupPlayerDefinition(tk.Frame):
@@ -22,7 +23,7 @@ class StartupPlayerDefinition(tk.Frame):
         event_bus.subscribe(self)
 
         # Color selector at the right
-        all_colors    = controller.get_available_player_colors()
+        all_colors    = settings.players.colors
         initial_color = config.get(f"startup.player.{index}.color")
         self.color_selector = ColorSelector(self, all_colors, initial_color,
                                             command=self._on_color_selected)
@@ -160,7 +161,7 @@ class StartupPlayersView(tk.LabelFrame):
         event_bus.subscribe(self)
 
         # Number of players variable
-        self.max_players = self.controller.get_max_players()
+        self.max_players = settings.players.max_count
         curnb = self.controller.get_nb_players()
         self._nb_players = tk.IntVar(value=curnb)
 

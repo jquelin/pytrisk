@@ -21,17 +21,9 @@ class StartupController:
 
     # -- Data retrieval
 
-    def get_available_player_colors(self):
-        """Return the list of available player colors."""
-        return settings.players.colors
-
     def get_player_name(self, index):
         """Return the name of a player."""
         return self.context.startup.players[index].name
-
-    def get_max_players(self):
-        """Return the maximum number of players."""
-        return settings.players.max_count
 
     def get_nb_players(self):
         """Return the number of players."""
@@ -76,7 +68,7 @@ class StartupController:
             log.warning('Too few players, setting to 2')
             newnb = 2
 
-        max_players = self.get_max_players()
+        max_players = settings.players.max_count
         if nb_players > max_players:
             log.warning(f'Too many players, setting to max players ({max_players})')
             newnb = max_players
