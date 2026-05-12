@@ -18,6 +18,7 @@
 import tkinter as tk
 from tkinter import ttk
 
+from pytrisk.config import config
 from pytrisk.locale import _
 from pytrisk.logger import log
 from pytrisk.ui.widgets.color_selector import ColorSelector
@@ -34,8 +35,8 @@ class StartupPlayerDefinition(tk.Frame):
         event_bus.subscribe(self)
 
         # Color selector at the right
-        all_colors = controller.get_available_player_colors()
-        initial_color = controller.get_default_player_color(index)
+        all_colors    = controller.get_available_player_colors()
+        initial_color = config.get(f"startup.player.{index}.color")
         self.color_selector = ColorSelector(self, all_colors, initial_color,
                                             command=self._on_color_selected)
         self.color_selector.pack(side=tk.RIGHT, padx=6)

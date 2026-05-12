@@ -43,10 +43,6 @@ class StartupController:
         """Return the name of a player."""
         return self.context.startup.players[index].name
 
-    def get_default_player_color(self, index):
-        """Return the color of a player."""
-        return config.get(f"startup.player.{index}.color")
-
     def get_max_players(self):
         """Return the maximum number of players."""
         return settings.players.max_count
