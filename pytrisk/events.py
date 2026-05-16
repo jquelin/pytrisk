@@ -50,14 +50,15 @@ class EventBus:
         # Call callbacks
         callbacks = self.listeners.get(event, [])
         alive = []
-        for wm in callbacks:
+        nb_callbacks = len(callbacks)
+        for idx, wm in enumerate(callbacks):
             cb = wm()
             if cb is not None:
-                log.debug(f'calling callback: {cb.__qualname__}')
+                log.debug(f'callback {idx+1}/{nb_callbacks}: calling {cb.__qualname__}')
                 cb(*args, **kwargs)
                 alive.append(wm)
             else:
-                log.debug(f'callback dead: {wm}')
+                log.debug(f'callback {idx+1}/{nb_callbacks}: dead (was {wm})')
 
         # Purge dead callbacks
         self.listeners[event] = alive
