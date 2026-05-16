@@ -7,6 +7,7 @@ import tkinter as tk
 from pytrisk.locale    import _
 from pytrisk.logger    import log
 from pytrisk.ui.views.game_canvas import GameCanvasView
+from pytrisk.ui.views.players     import PlayersView
 
 
 class GameView(tk.Frame):
@@ -31,7 +32,15 @@ class GameView(tk.Frame):
 
         # Create the game canvas
         canvas = GameCanvasView(self, controller, event_bus)
-        canvas.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        # Create the info frame
+        info = tk.Frame(self)
+        info.pack(side=tk.RIGHT, fill=tk.Y, expand=False)
+
+        # Create the player frame
+        players = PlayersView(info, controller, event_bus)
+        players.pack(side=tk.TOP, fill=tk.X, expand=False)
 
 
     # -- Private methods
