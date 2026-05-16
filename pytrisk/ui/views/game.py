@@ -6,6 +6,7 @@ import tkinter as tk
 
 from pytrisk.locale    import _
 from pytrisk.logger    import log
+from pytrisk.ui.views.continents  import ContinentsView
 from pytrisk.ui.views.game_canvas import GameCanvasView
 from pytrisk.ui.views.players     import PlayersView
 
@@ -41,6 +42,10 @@ class GameView(tk.Frame):
         # Create the player frame
         players = PlayersView(info, controller, event_bus)
         players.pack(side=tk.TOP, fill=tk.X, expand=False)
+
+        # Create the continents frame
+        continents = ContinentsView(info, controller, event_bus)
+        continents.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
 
     # -- Private methods
