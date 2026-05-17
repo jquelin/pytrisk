@@ -27,6 +27,7 @@ class Point:
 class GameCanvasView(tk.LabelFrame):
     def __init__(self, parent, controller, event_bus):
         super().__init__(parent, text=' ' + _('Map') + ' ')
+        log.info('Creating canvas')
 
         # Subscribe to events & store the controller for later use.
         event_bus.subscribe(self)
@@ -40,7 +41,6 @@ class GameCanvasView(tk.LabelFrame):
         self._load_map_images()
 
         # GUI creation
-        log.info('Creating canvas')
         self._create_canvas()
 
 

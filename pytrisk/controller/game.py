@@ -20,6 +20,11 @@ class GameController:
 
     # -- Data retrieval
 
+    def get_continents(self):
+        """Return the list of continents."""
+        return self.context.game.map.continents
+
+
     def get_map_image_files(self):
         """Return the map image files.
 
@@ -27,6 +32,11 @@ class GameController:
             tuple: (background, overlay)
         """
         return self.context.game.map.background, self.context.game.map.overlay
+
+
+    def get_players(self):
+        """Return the list of players."""
+        return self.context.game.players
 
     # -- Action handlers
 
@@ -37,7 +47,11 @@ class GameController:
         # First create a new game
         self.context.new_game()
         self.context.game.map.load()
+        # TODO: randomize player order
+
+        # Once everything is ready, signal the GUI
         self.event_bus.emit(Events.new_game)
+
 
     # -- Preferences retrieval / setting
 

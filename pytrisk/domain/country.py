@@ -18,11 +18,13 @@ class Country:
         self.id           = c['id']            # Country id
         self.x            = c['x']             # Country x
         self.y            = c['y']             # Country y
-        self._continent   = c['continent']     # Id of continent
+        self.continent_id = c['continent']     # Id of continent
         self.name         = c['name']          # Country name
         self._connections = c['connections']   # List of connections
 
 
     # -- Private methods
+
+
     # -- Public methods
 

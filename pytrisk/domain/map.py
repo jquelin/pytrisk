@@ -39,13 +39,19 @@ class Map:
     # -- Public method
 
     @property
-    def all_continents(self):
-        return list(self.continents.values())
+    def continents(self):
+        """Return the list of continents."""
+        return list(self._continents.values())
+
+    @property
+    def countries(self):
+        """Return the list of continents."""
+        return list(self._countries.values())
 
     def load(self):
         """Load the map and instantiate the continents and countries. Before
         this, the map is a just the data read from the map definition."""
         log.info(f'Loading map {self.id}')
-        self.continents = {c["id"] : Continent(self, c) for c in self._data['continents']}
-        self.countries  = {c["id"] : Country(self, c) for c in self._data['countries']}
+        self._continents = {c["id"] : Continent(self, c) for c in self._data['continents']}
+        self._countries  = {c["id"] : Country(self, c) for c in self._data['countries']}
 
