@@ -5,6 +5,7 @@
 
 from pytrisk.config import config
 from pytrisk.domain.continent import Continent
+from pytrisk.domain.country import Country
 from pytrisk.domain.game_context import GameContext
 from pytrisk.domain.player import Player
 from pytrisk.events import EventBus, Events
@@ -25,6 +26,10 @@ class GameController:
     def get_continents(self) -> list[Continent]:
         """Return the list of continents."""
         return self.context.game.map.continents
+
+    def get_countries(self) -> list[Country]:
+        """Return the list of continents."""
+        return self.context.game.map.countries
 
 
     def get_map_image_files(self):
