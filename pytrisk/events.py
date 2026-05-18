@@ -11,7 +11,7 @@ from pytrisk.logger import log
 class Events(StrEnum):
     action_quit          = auto()
     aspect_ratio_changed = auto()
-    country_chown        = auto()       # country, old_owner, new_owner
+    country_chown        = auto()       # country, old_owner
     nb_players_changed   = auto()
     new_game             = auto()
     player_color_changed = auto()

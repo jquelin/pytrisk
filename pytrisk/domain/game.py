@@ -54,6 +54,6 @@ class Game:
             log.debug(f"Assigning country {country.id} to player {owner}")
             country.set_owner(owner)
             country.armies = 1
-            events.append((Events.country_chown, country, None, owner))
+            events.append((Events.country_chown, country, None))
 
         return events
