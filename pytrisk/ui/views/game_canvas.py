@@ -35,6 +35,7 @@ class GameCanvasView(tk.LabelFrame):
         self.event_bus  = event_bus
 
         # Variables
+        self._ready      = False
         self._resize_job = None
         self._topleft    = Point(0, 0)  # top left corner of background
         self._zoom       = Point(1, 1)
@@ -83,6 +84,49 @@ class GameCanvasView(tk.LabelFrame):
         log.debug(f'Image size: {self._size}')
 
 
+    def _redraw_country(self, country):
+        '''Redraw a country'''
+        log.debug(f'Redrawing country {country}')
+        owner  = country.owner
+        id     = country.id
+        armies = country.armies or 0
+
+        # Change radius to reflect number of armies
+        if owner is None:
+            radius = 6
+            color = 'white'
+            text = ''
+        else:
+            radius = 8 + min(16, armies-1) / 2
+            color = owner.color
+            text = armies
+
+        # Compute position
+        center = Point(
+            country.x * self._zoom.x + self._topleft.x,
+            country.y * self._zoom.y + self._topleft.y,
+        )
+        c1 = Point(center.x - radius, center.y - radius)
+        c2 = Point(center.x + radius, center.y + radius)
+
+        # Update canvas
+        c = self._canvas
+        c.delete(f"country{id}")
+        c.create_oval(
+            c1.x, c1.y, c2.x, c2.y,
+            fill=color, outline='black',
+            tags=[f"country{id}", 'circle'],
+        )
+        c.create_text(
+            center.x, center.y + 1,
+            fill='white',
+            tags=[f"country{id}", 'text'],
+            text=text
+        )
+
+        # Raise the country info
+        c.tag_raise(f"country{id}",tk.ALL)
+
 
     # -- GUI event handlers
 
@@ -90,6 +134,7 @@ class GameCanvasView(tk.LabelFrame):
         """Event handler for canvas configure event - ie, when size changes.
 
         This also gets called when the canvas is first created."""
+
         # Cancel previous resize job
         if self._resize_job:
             self.after_cancel(self._resize_job)
@@ -140,6 +185,12 @@ class GameCanvasView(tk.LabelFrame):
         canvas.create_image(topleft.x, topleft.y, image=self._background, anchor=tk.NW, tag='background')
         canvas.lower('background', tk.ALL)
 
+        # Redraw all countries
+        for country in self.controller.get_countries():
+            self._redraw_country(country)
+
+        self._ready = True
+
 
     def _canvas_motion(self, event):
         x = event.x
@@ -150,4 +201,16 @@ class GameCanvasView(tk.LabelFrame):
     # -- Public methods: event bus handlers
 
     def on_aspect_ratio_changed(self):
+        """Called when the aspect ratio has changed."""
+        log.info('Forcing canvas redraw')
         self._canvas_configure_real(self.winfo_width(), self.winfo_height())
+
+    def on_country_chown(self, country, _):
+        """Called when a country has changed owner."""
+        if not self._ready:
+            log.debug('Not ready yet')
+            return
+        log.info(f'Redrawing country {country.name}')
+        self.after_idle(lambda c=country: self._redraw_country(c))
+
+
