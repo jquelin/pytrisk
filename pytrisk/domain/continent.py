@@ -13,23 +13,23 @@ class Continent:
         log.info(f'Creating continent {c["name"]}')
 
         # Record attributes
-        self._map  = weakref.ref(map)   # weak reference to map
-        self.id    = c['id']            # Continent id
-        self.name  = c['name']          # Continent name
-        self.color = c['color']         # Continent color
-        self.bonus = c['bonus']         # Continent bonus
+        self._mapref = weakref.ref(map)   # weak reference to map
+        self.id      = c['id']            # Continent id
+        self.name    = c['name']          # Continent name
+        self.color   = c['color']         # Continent color
+        self.bonus   = c['bonus']         # Continent bonus
 
         # Fix colors if needed
         self._fix_colors()
 
     @property
     def countries(self):
-        all_countries = self.map.countries
+        all_countries = self._map.countries
         return [c for c in all_countries if c.continent_id == self.id]
 
     @property
-    def map(self):
-        return self._map()
+    def _map(self):
+        return self._mapref()
 
     # -- Private methods
 

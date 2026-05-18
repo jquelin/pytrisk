@@ -14,7 +14,7 @@ class Country:
         log.info(f'Creating country {c["name"]}')
 
         # Record attributes
-        self._map         = weakref.ref(map)   # weak reference to map
+        self._mapref      = weakref.ref(map)   # weak reference to map
         self.id           = c['id']            # Country id
         self.x            = c['x']             # Country x
         self.y            = c['y']             # Country y
