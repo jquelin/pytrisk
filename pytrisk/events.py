@@ -11,6 +11,7 @@ from pytrisk.logger import log
 class Events(StrEnum):
     action_quit          = auto()
     aspect_ratio_changed = auto()
+    country_chown        = auto()       # country, old_owner, new_owner
     nb_players_changed   = auto()
     new_game             = auto()
     player_color_changed = auto()
@@ -45,7 +46,7 @@ class EventBus:
     def emit(self, event, *args, **kwargs):
         """Emit an event with the given arguments. All callbacks subscribed to
         this event will be called with the provided arguments."""
-        log.info(f'Event emitted: {event}')
+        log.info(f'Event emitted: {event} args: {args} kwargs: {kwargs}')
 
         # Call callbacks
         callbacks = self.listeners.get(event, [])

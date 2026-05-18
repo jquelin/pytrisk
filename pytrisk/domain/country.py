@@ -21,6 +21,19 @@ class Country:
         self.continent_id = c['continent']     # Id of continent
         self.name         = c['name']          # Country name
         self._connections = c['connections']   # List of connections
+        self._owner       = None               # Country owner
+        self.armies       = 0                  # Number of armies
+
+
+    def __repr__(self):
+        return f"Country({self.id}, {self.name})"
+
+    # -- Attributes
+    @property
+    def owner(self):
+        if self._owner is None:
+            return None
+        return self._owner()
 
 
     # -- Private methods
@@ -28,3 +41,5 @@ class Country:
 
     # -- Public methods
 
+    def set_owner(self, player):
+        self._owner = weakref.ref(player)

@@ -12,10 +12,15 @@ from pytrisk.logger          import log
 class Player:
     def __init__(self, index: int):
         self.index   = index
-        self.name    = None
+        self.name    = ''
         self.key     = f'player{index}'
         self.color   = config.get(f"startup.player.{index}.color")
         self.enabled = True
+
+    def __repr__(self):
+        return f'Player({self.index}, {self.name})'
+
+    # -- Attributes
 
     @property
     def is_human(self):

@@ -9,6 +9,7 @@ from pytrisk.logger          import log
 from pytrisk.domain.ai       import AINames
 from pytrisk.domain.map      import Map
 from pytrisk.domain.player   import Player
+from pytrisk.events          import Events
 
 class Game:
     """ Game class, managing a single game. """
@@ -40,3 +41,19 @@ class Game:
 
     # -- Public methods
 
+    def distribute_initial_territories(self):
+        """ Distribute initial territories among players, one by one."""
+
+        nb_players = len(self.players)
+        nb_countries = len(self.map.countries)
+        log.info(f"Distributing {nb_countries} initial territories to {nb_players} players")
+        events = []
+
+        for country in self.map.countries:
+            owner = self.players[country.id % nb_players]
+            log.debug(f"Assigning country {country.id} to player {owner}")
+            country.set_owner(owner)
+            country.armies = 1
+            events.append((Events.country_chown, country, None, owner))
+
+        return events

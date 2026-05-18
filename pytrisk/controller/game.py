@@ -51,8 +51,17 @@ class GameController:
         self.context.game.map.load()
         # TODO: randomize player order
 
-        # Once everything is ready, signal the GUI
+        # Once the game is initialized, signal the GUI
         self.event_bus.emit(Events.new_game)
+
+        # Now, distribute the initial territories
+        events = self.context.game.distribute_initial_territories()
+        for e in events:
+            self.event_bus.emit(*e)
+
+        # TODO: check if distribution is equal
+
+
 
 
     # -- Preferences retrieval / setting
