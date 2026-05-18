@@ -137,7 +137,7 @@ class GameCanvasView(tk.LabelFrame):
     def _canvas_motion(self, event):
         x = event.x
         y = event.y
-        log.info(f'Canvas motion event: ({x}, {y})')
+        log.debug(f'Canvas motion event: ({x}, {y})')
 
 
     # -- Public methods: event bus handlers

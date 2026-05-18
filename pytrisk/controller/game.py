@@ -4,7 +4,9 @@
 
 
 from pytrisk.config import config
+from pytrisk.domain.continent import Continent
 from pytrisk.domain.game_context import GameContext
+from pytrisk.domain.player import Player
 from pytrisk.events import EventBus, Events
 from pytrisk.logger import log
 
@@ -20,7 +22,7 @@ class GameController:
 
     # -- Data retrieval
 
-    def get_continents(self):
+    def get_continents(self) -> list[Continent]:
         """Return the list of continents."""
         return self.context.game.map.continents
 
@@ -34,7 +36,7 @@ class GameController:
         return self.context.game.map.background, self.context.game.map.overlay
 
 
-    def get_players(self):
+    def get_players(self) -> list[Player]:
         """Return the list of players."""
         return self.context.game.players
 

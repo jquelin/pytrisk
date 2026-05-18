@@ -36,7 +36,7 @@ class Map:
                  f'({self.nb_continents} continents, {self.nb_countries} countries)')
 
 
-    # -- Public method
+    # -- Attributes
 
     @property
     def continents(self):
@@ -47,6 +47,8 @@ class Map:
     def countries(self):
         """Return the list of continents."""
         return list(self._countries.values())
+
+    # -- Public methods
 
     def load(self):
         """Load the map and instantiate the continents and countries. Before
