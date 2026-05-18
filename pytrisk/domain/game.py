@@ -6,6 +6,7 @@ from pytrisk.constants       import appinfo
 from pytrisk.config          import config
 from pytrisk.logger          import log
 
+from pytrisk.domain.ai       import AINames
 from pytrisk.domain.map      import Map
 from pytrisk.domain.player   import Player
 
@@ -22,8 +23,19 @@ class Game:
         self.map     : Map          = map
         self.players : list[Player] = players
 
+        self._assign_ai_names()
 
-    # -- Private maps
+
+    # -- Private methods
+
+    def _assign_ai_names(self):
+        """Assign names to AI players."""
+        ainames = AINames()
+        for player in self.players:
+            if player.is_computer:
+                newname = ainames.get_name()
+                player.name = newname
+                log.debug(f'Assigning AI name: {player.index} is now called {newname}')
 
 
     # -- Public methods
