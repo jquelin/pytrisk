@@ -36,6 +36,8 @@ class GameCanvasView(tk.LabelFrame):
 
         # Variables
         self._resize_job = None
+        self._topleft    = Point(0, 0)  # top left corner of background
+        self._zoom       = Point(1, 1)
 
         # Store the map files
         self._load_map_images()
@@ -63,6 +65,7 @@ class GameCanvasView(tk.LabelFrame):
         # Adding canvas bindings
         canvas.bind('<Configure>', self._canvas_configure)
         canvas.bind('<Motion>',    self._canvas_motion)
+
 
     def _load_map_images(self):
         """Load map images (background and overlay) to be reused later
@@ -98,6 +101,7 @@ class GameCanvasView(tk.LabelFrame):
     def _canvas_configure_real(self, width, height):
         # Get canvas size
         log.info(f'Canvas configure event: {width}x{height}')
+        self._resize_job = None
 
         # Compute zoom
         self._zoom = Point(width / self._size.x, height / self._size.y)
@@ -128,9 +132,12 @@ class GameCanvasView(tk.LabelFrame):
         canvas = self._canvas
         canvas.delete('background')
         # center background
-        x = (width - neww) // 2
-        y = (height - newh) // 2
-        canvas.create_image(x, y, image=self._background, anchor=tk.NW, tag='background')
+        self._topleft = Point(
+            (width - neww) // 2,
+            (height - newh) // 2
+        )
+        topleft = self._topleft
+        canvas.create_image(topleft.x, topleft.y, image=self._background, anchor=tk.NW, tag='background')
         canvas.lower('background', tk.ALL)
 
 
